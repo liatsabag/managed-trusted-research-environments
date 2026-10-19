@@ -1,4 +1,4 @@
-# GCP Health Data Platform — Research Room Management System
+# Managed Trusted Research Environments (TRE) on GCP
 
 [![Google Cloud Platform](https://img.shields.io/badge/GCP-Enterprise%20TRE-4285F4?logo=googlecloud&logoColor=white)](https://cloud.google.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -6,7 +6,7 @@
 [![Vertex AI](https://img.shields.io/badge/Vertex%20AI-Gemini%203.7%20Flash-FF6F00?logo=google&logoColor=white)](https://cloud.google.com/vertex-ai)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-An enterprise-grade, zero-trust **Multi-Tenant Trusted Research Environment (TRE)** and centralized governance management platform on Google Cloud Platform. 
+An enterprise-grade, zero-trust **Managed Multi-Tenant Trusted Research Environment (TRE)** and centralized governance platform on Google Cloud Platform. 
 
 Designed for hospital networks, clinical research consortia, and life sciences organizations to deploy isolated research workspaces ("Research Rooms") with automated statutory ethics gating (Helsinki IRB, DUAs), dual-bucket Air-Lock egress protection, and FinOps cost accountability.
 
@@ -14,21 +14,23 @@ Designed for hospital networks, clinical research consortia, and life sciences o
 
 ## 📖 Primary Documentation & Visual Runbooks
 
-* 🏛️ **[System Architecture Specification (`ARCHITECTURE.md`)](file:///Users/liatsabag/research-room/ARCHITECTURE.md)**:
+* 🏛️ **[System Architecture Specification (`ARCHITECTURE.md`)](./ARCHITECTURE.md)**:
   - Complete project mission, isolation perimeters, and **VPC Service Controls (VPC-SC)** security model.
   - Comprehensive high-level and detailed multi-project visual topology.
-  - Detailed visual sequence flows and cloud resource breakdowns for all 5 core backend processes (AI Compliance Scanning & IAM Soft-Downgrade, Real-Time Telemetry & Storage Ingestion, Two-Tiered FinOps Attribution, Air-Lock Egress DLP Review, and Governed Colab Execution).
+  - Detailed visual sequence flows and cloud resource breakdowns for all 5 core backend processes.
   - Dynamic usage-based cost model explanation and Architectural Decision Records (ADRs).
-* 🖥️ **[Visual Presentation Deck (`docs/gcp_tre_presentation.html`)](file:///Users/liatsabag/research-room/docs/gcp_tre_presentation.html)**:
-  - Interactive 7-slide visual slide deck with modern light styling introducing the GCP TRE project vision, dual governance & FinOps control plane, entity model, AI compliance, and Air-Lock protection.
-* 🎨 **[Technical Visual Diagrams (`docs/TECHNICAL_DIAGRAMS.md`)](file:///Users/liatsabag/research-room/docs/TECHNICAL_DIAGRAMS.md)**:
+* ⚙️ **[CLI & Operations Runbook (`scripts/README.md`)](./scripts/README.md)**:
+  - Master operations lifecycle matrix, script triggers, prerequisites, and copy-pasteable CLI commands for all 24 automation scripts.
+* 🚀 **[Zero-to-Production Deployment Guide (`DEPLOYMENT.md`)](./DEPLOYMENT.md)**:
+  - Step-by-step provisioning guide with immediate verification commands for every infrastructure step.
+  - **Traffic Generation & Workload Operations**: CLI instructions to run synthetic and genuine multi-tenant researcher traffic.
+* 🖥️ **[Visual Presentation Deck (`docs/gcp_tre_presentation.html`)](./docs/gcp_tre_presentation.html)**:
+  - Interactive visual slide deck introducing the GCP TRE project vision, dual governance & FinOps control plane, and Air-Lock protection.
+* 🎨 **[Technical Visual Diagrams (`docs/TECHNICAL_DIAGRAMS.md`)](./docs/TECHNICAL_DIAGRAMS.md)**:
   - Multi-colored Mermaid sequence diagrams and high-contrast system architecture maps.
-* 🚀 **[Zero-to-Production Deployment Runbook & Traffic Manual (`DEPLOYMENT.md`)](file:///Users/liatsabag/research-room/DEPLOYMENT.md)**:
-  - Step-by-step copy-pasteable provisioning guide with immediate verification commands for every step.
-  - **Traffic Generation & Workload Operations Manual**: Detailed CLI instructions to run synthetic and genuine multi-tenant researcher traffic across BigQuery, Vertex AI, GCS, and Colab Enterprise runtimes.
-* 📊 **[FinOps Feature Summary (`FINOPS_FEATURE_SUMMARY.md`)](file:///Users/liatsabag/research-room/FINOPS_FEATURE_SUMMARY.md)**:
-  - Detailed two-tiered proportional cost attribution engine rules, mathematical invariant proofs, and BigQuery billing export integration.
-* 📋 **[Core Feature Summary (`FEATURE_SUMMARY.md`)](file:///Users/liatsabag/research-room/FEATURE_SUMMARY.md)**:
+* 📊 **[FinOps Feature Summary (`FINOPS_FEATURE_SUMMARY.md`)](./FINOPS_FEATURE_SUMMARY.md)**:
+  - Two-tiered proportional cost attribution engine rules, mathematical invariant proofs, and BigQuery billing export integration.
+* 📋 **[Core Feature Summary (`FEATURE_SUMMARY.md`)](./FEATURE_SUMMARY.md)**:
   - Summary of telemetry tables, stored procedures, scheduled queries, and REST APIs.
 
 ---

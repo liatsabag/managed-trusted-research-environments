@@ -1,0 +1,4502 @@
+[
+  {
+    "phenotype_id": "PHE-00001",
+    "subject_id": "SUBJ-100",
+    "hpo_id": "HP:0006465",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00002",
+    "subject_id": "SUBJ-101",
+    "hpo_id": "HP:0008844",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 16.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00003",
+    "subject_id": "SUBJ-102",
+    "hpo_id": "HP:0009434",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00004",
+    "subject_id": "SUBJ-103",
+    "hpo_id": "HP:0003383",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00005",
+    "subject_id": "SUBJ-104",
+    "hpo_id": "HP:0002596",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00006",
+    "subject_id": "SUBJ-105",
+    "hpo_id": "HP:0002396",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 16.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00007",
+    "subject_id": "SUBJ-106",
+    "hpo_id": "HP:0009444",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00008",
+    "subject_id": "SUBJ-107",
+    "hpo_id": "HP:0009037",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00009",
+    "subject_id": "SUBJ-108",
+    "hpo_id": "HP:0008938",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00010",
+    "subject_id": "SUBJ-109",
+    "hpo_id": "HP:0006712",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 5.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00011",
+    "subject_id": "SUBJ-110",
+    "hpo_id": "HP:0006004",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 14.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00012",
+    "subject_id": "SUBJ-111",
+    "hpo_id": "HP:0004517",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00013",
+    "subject_id": "SUBJ-112",
+    "hpo_id": "HP:0004428",
+    "hpo_term": "Seizures",
+    "onset_age_years": 4.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00014",
+    "subject_id": "SUBJ-113",
+    "hpo_id": "HP:0003538",
+    "hpo_term": "Seizures",
+    "onset_age_years": 8.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00015",
+    "subject_id": "SUBJ-114",
+    "hpo_id": "HP:0005285",
+    "hpo_term": "Seizures",
+    "onset_age_years": 15.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00016",
+    "subject_id": "SUBJ-115",
+    "hpo_id": "HP:0008813",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 1.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00017",
+    "subject_id": "SUBJ-116",
+    "hpo_id": "HP:0006776",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00018",
+    "subject_id": "SUBJ-117",
+    "hpo_id": "HP:0003958",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 6.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00019",
+    "subject_id": "SUBJ-118",
+    "hpo_id": "HP:0003711",
+    "hpo_term": "Seizures",
+    "onset_age_years": 13.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00020",
+    "subject_id": "SUBJ-119",
+    "hpo_id": "HP:0002977",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 9.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00021",
+    "subject_id": "SUBJ-120",
+    "hpo_id": "HP:0006804",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00022",
+    "subject_id": "SUBJ-121",
+    "hpo_id": "HP:0001391",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00023",
+    "subject_id": "SUBJ-122",
+    "hpo_id": "HP:0005147",
+    "hpo_term": "Seizures",
+    "onset_age_years": 12.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00024",
+    "subject_id": "SUBJ-123",
+    "hpo_id": "HP:0003880",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00025",
+    "subject_id": "SUBJ-124",
+    "hpo_id": "HP:0005367",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 1.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00026",
+    "subject_id": "SUBJ-125",
+    "hpo_id": "HP:0005246",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 9.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00027",
+    "subject_id": "SUBJ-126",
+    "hpo_id": "HP:0009751",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 13.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00028",
+    "subject_id": "SUBJ-127",
+    "hpo_id": "HP:0005852",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00029",
+    "subject_id": "SUBJ-128",
+    "hpo_id": "HP:0005669",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 2.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00030",
+    "subject_id": "SUBJ-129",
+    "hpo_id": "HP:0006752",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 8.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00031",
+    "subject_id": "SUBJ-130",
+    "hpo_id": "HP:0005050",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00032",
+    "subject_id": "SUBJ-131",
+    "hpo_id": "HP:0006276",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00033",
+    "subject_id": "SUBJ-132",
+    "hpo_id": "HP:0007401",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00034",
+    "subject_id": "SUBJ-133",
+    "hpo_id": "HP:0002960",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00035",
+    "subject_id": "SUBJ-134",
+    "hpo_id": "HP:0006791",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 17.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00036",
+    "subject_id": "SUBJ-135",
+    "hpo_id": "HP:0002814",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 1.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00037",
+    "subject_id": "SUBJ-136",
+    "hpo_id": "HP:0005124",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 2.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00038",
+    "subject_id": "SUBJ-137",
+    "hpo_id": "HP:0004088",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00039",
+    "subject_id": "SUBJ-138",
+    "hpo_id": "HP:0006908",
+    "hpo_term": "Seizures",
+    "onset_age_years": 9.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00040",
+    "subject_id": "SUBJ-139",
+    "hpo_id": "HP:0002721",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00041",
+    "subject_id": "SUBJ-140",
+    "hpo_id": "HP:0009396",
+    "hpo_term": "Seizures",
+    "onset_age_years": 13.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00042",
+    "subject_id": "SUBJ-141",
+    "hpo_id": "HP:0005556",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 12.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00043",
+    "subject_id": "SUBJ-142",
+    "hpo_id": "HP:0007113",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 6.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00044",
+    "subject_id": "SUBJ-143",
+    "hpo_id": "HP:0003460",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 0.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00045",
+    "subject_id": "SUBJ-144",
+    "hpo_id": "HP:0004118",
+    "hpo_term": "Seizures",
+    "onset_age_years": 8.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00046",
+    "subject_id": "SUBJ-145",
+    "hpo_id": "HP:0004777",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00047",
+    "subject_id": "SUBJ-146",
+    "hpo_id": "HP:0007123",
+    "hpo_term": "Seizures",
+    "onset_age_years": 9.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00048",
+    "subject_id": "SUBJ-147",
+    "hpo_id": "HP:0002607",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 7.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00049",
+    "subject_id": "SUBJ-148",
+    "hpo_id": "HP:0009176",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 11.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00050",
+    "subject_id": "SUBJ-149",
+    "hpo_id": "HP:0006384",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00051",
+    "subject_id": "SUBJ-150",
+    "hpo_id": "HP:0005215",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00052",
+    "subject_id": "SUBJ-151",
+    "hpo_id": "HP:0007431",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00053",
+    "subject_id": "SUBJ-152",
+    "hpo_id": "HP:0001814",
+    "hpo_term": "Seizures",
+    "onset_age_years": 7.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00054",
+    "subject_id": "SUBJ-153",
+    "hpo_id": "HP:0006239",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00055",
+    "subject_id": "SUBJ-154",
+    "hpo_id": "HP:0005771",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00056",
+    "subject_id": "SUBJ-155",
+    "hpo_id": "HP:0009036",
+    "hpo_term": "Seizures",
+    "onset_age_years": 6.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00057",
+    "subject_id": "SUBJ-156",
+    "hpo_id": "HP:0002628",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 0.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00058",
+    "subject_id": "SUBJ-157",
+    "hpo_id": "HP:0005880",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00059",
+    "subject_id": "SUBJ-158",
+    "hpo_id": "HP:0008472",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00060",
+    "subject_id": "SUBJ-159",
+    "hpo_id": "HP:0004470",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00061",
+    "subject_id": "SUBJ-160",
+    "hpo_id": "HP:0007408",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 8.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00062",
+    "subject_id": "SUBJ-161",
+    "hpo_id": "HP:0004217",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00063",
+    "subject_id": "SUBJ-162",
+    "hpo_id": "HP:0006504",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00064",
+    "subject_id": "SUBJ-163",
+    "hpo_id": "HP:0006319",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 3.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00065",
+    "subject_id": "SUBJ-164",
+    "hpo_id": "HP:0003187",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00066",
+    "subject_id": "SUBJ-165",
+    "hpo_id": "HP:0009611",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00067",
+    "subject_id": "SUBJ-166",
+    "hpo_id": "HP:0003588",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 13.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00068",
+    "subject_id": "SUBJ-167",
+    "hpo_id": "HP:0002471",
+    "hpo_term": "Seizures",
+    "onset_age_years": 8.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00069",
+    "subject_id": "SUBJ-168",
+    "hpo_id": "HP:0002511",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 7.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00070",
+    "subject_id": "SUBJ-169",
+    "hpo_id": "HP:0004053",
+    "hpo_term": "Seizures",
+    "onset_age_years": 2.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00071",
+    "subject_id": "SUBJ-170",
+    "hpo_id": "HP:0008497",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 17.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00072",
+    "subject_id": "SUBJ-171",
+    "hpo_id": "HP:0005537",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00073",
+    "subject_id": "SUBJ-172",
+    "hpo_id": "HP:0008850",
+    "hpo_term": "Seizures",
+    "onset_age_years": 0.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00074",
+    "subject_id": "SUBJ-173",
+    "hpo_id": "HP:0006597",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00075",
+    "subject_id": "SUBJ-174",
+    "hpo_id": "HP:0007345",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 14.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00076",
+    "subject_id": "SUBJ-175",
+    "hpo_id": "HP:0002658",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 2.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00077",
+    "subject_id": "SUBJ-176",
+    "hpo_id": "HP:0003463",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00078",
+    "subject_id": "SUBJ-177",
+    "hpo_id": "HP:0001819",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00079",
+    "subject_id": "SUBJ-178",
+    "hpo_id": "HP:0008630",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 9.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00080",
+    "subject_id": "SUBJ-179",
+    "hpo_id": "HP:0004404",
+    "hpo_term": "Seizures",
+    "onset_age_years": 11.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00081",
+    "subject_id": "SUBJ-180",
+    "hpo_id": "HP:0002248",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00082",
+    "subject_id": "SUBJ-181",
+    "hpo_id": "HP:0006979",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00083",
+    "subject_id": "SUBJ-182",
+    "hpo_id": "HP:0002216",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 9.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00084",
+    "subject_id": "SUBJ-183",
+    "hpo_id": "HP:0002695",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00085",
+    "subject_id": "SUBJ-184",
+    "hpo_id": "HP:0009617",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00086",
+    "subject_id": "SUBJ-185",
+    "hpo_id": "HP:0002919",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 6.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00087",
+    "subject_id": "SUBJ-186",
+    "hpo_id": "HP:0008573",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00088",
+    "subject_id": "SUBJ-187",
+    "hpo_id": "HP:0009574",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00089",
+    "subject_id": "SUBJ-188",
+    "hpo_id": "HP:0001603",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 5.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00090",
+    "subject_id": "SUBJ-189",
+    "hpo_id": "HP:0005276",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 13.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00091",
+    "subject_id": "SUBJ-190",
+    "hpo_id": "HP:0003681",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00092",
+    "subject_id": "SUBJ-191",
+    "hpo_id": "HP:0007531",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00093",
+    "subject_id": "SUBJ-192",
+    "hpo_id": "HP:0003526",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00094",
+    "subject_id": "SUBJ-193",
+    "hpo_id": "HP:0008289",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 16.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00095",
+    "subject_id": "SUBJ-194",
+    "hpo_id": "HP:0007450",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00096",
+    "subject_id": "SUBJ-195",
+    "hpo_id": "HP:0004806",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 13.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00097",
+    "subject_id": "SUBJ-196",
+    "hpo_id": "HP:0008420",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00098",
+    "subject_id": "SUBJ-197",
+    "hpo_id": "HP:0007319",
+    "hpo_term": "Seizures",
+    "onset_age_years": 15.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00099",
+    "subject_id": "SUBJ-198",
+    "hpo_id": "HP:0008784",
+    "hpo_term": "Seizures",
+    "onset_age_years": 7.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00100",
+    "subject_id": "SUBJ-199",
+    "hpo_id": "HP:0008419",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 6.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00101",
+    "subject_id": "SUBJ-200",
+    "hpo_id": "HP:0001148",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 5.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00102",
+    "subject_id": "SUBJ-201",
+    "hpo_id": "HP:0004207",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00103",
+    "subject_id": "SUBJ-202",
+    "hpo_id": "HP:0001833",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 1.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00104",
+    "subject_id": "SUBJ-203",
+    "hpo_id": "HP:0003444",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00105",
+    "subject_id": "SUBJ-204",
+    "hpo_id": "HP:0008686",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 0.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00106",
+    "subject_id": "SUBJ-205",
+    "hpo_id": "HP:0008919",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 12.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00107",
+    "subject_id": "SUBJ-206",
+    "hpo_id": "HP:0009798",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 2.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00108",
+    "subject_id": "SUBJ-207",
+    "hpo_id": "HP:0003853",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 7.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00109",
+    "subject_id": "SUBJ-208",
+    "hpo_id": "HP:0007786",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00110",
+    "subject_id": "SUBJ-209",
+    "hpo_id": "HP:0001060",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00111",
+    "subject_id": "SUBJ-210",
+    "hpo_id": "HP:0001428",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00112",
+    "subject_id": "SUBJ-211",
+    "hpo_id": "HP:0005929",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 15.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00113",
+    "subject_id": "SUBJ-212",
+    "hpo_id": "HP:0002366",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 6.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00114",
+    "subject_id": "SUBJ-213",
+    "hpo_id": "HP:0006888",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00115",
+    "subject_id": "SUBJ-214",
+    "hpo_id": "HP:0004001",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 6.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00116",
+    "subject_id": "SUBJ-215",
+    "hpo_id": "HP:0001859",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 16.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00117",
+    "subject_id": "SUBJ-216",
+    "hpo_id": "HP:0009682",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00118",
+    "subject_id": "SUBJ-217",
+    "hpo_id": "HP:0003876",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00119",
+    "subject_id": "SUBJ-218",
+    "hpo_id": "HP:0009553",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 0.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00120",
+    "subject_id": "SUBJ-219",
+    "hpo_id": "HP:0002939",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00121",
+    "subject_id": "SUBJ-220",
+    "hpo_id": "HP:0002272",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 7.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00122",
+    "subject_id": "SUBJ-221",
+    "hpo_id": "HP:0006985",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00123",
+    "subject_id": "SUBJ-222",
+    "hpo_id": "HP:0003744",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00124",
+    "subject_id": "SUBJ-223",
+    "hpo_id": "HP:0005290",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 12.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00125",
+    "subject_id": "SUBJ-224",
+    "hpo_id": "HP:0008487",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 13.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00126",
+    "subject_id": "SUBJ-225",
+    "hpo_id": "HP:0005914",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00127",
+    "subject_id": "SUBJ-226",
+    "hpo_id": "HP:0003185",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00128",
+    "subject_id": "SUBJ-227",
+    "hpo_id": "HP:0006363",
+    "hpo_term": "Seizures",
+    "onset_age_years": 10.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00129",
+    "subject_id": "SUBJ-228",
+    "hpo_id": "HP:0008525",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 14.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00130",
+    "subject_id": "SUBJ-229",
+    "hpo_id": "HP:0002814",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00131",
+    "subject_id": "SUBJ-230",
+    "hpo_id": "HP:0008035",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00132",
+    "subject_id": "SUBJ-231",
+    "hpo_id": "HP:0004806",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 13.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00133",
+    "subject_id": "SUBJ-232",
+    "hpo_id": "HP:0001470",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 16.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00134",
+    "subject_id": "SUBJ-233",
+    "hpo_id": "HP:0008717",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 7.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00135",
+    "subject_id": "SUBJ-234",
+    "hpo_id": "HP:0001761",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00136",
+    "subject_id": "SUBJ-235",
+    "hpo_id": "HP:0001407",
+    "hpo_term": "Seizures",
+    "onset_age_years": 12.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00137",
+    "subject_id": "SUBJ-236",
+    "hpo_id": "HP:0006045",
+    "hpo_term": "Seizures",
+    "onset_age_years": 4.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00138",
+    "subject_id": "SUBJ-237",
+    "hpo_id": "HP:0003236",
+    "hpo_term": "Seizures",
+    "onset_age_years": 6.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00139",
+    "subject_id": "SUBJ-238",
+    "hpo_id": "HP:0003310",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 11.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00140",
+    "subject_id": "SUBJ-239",
+    "hpo_id": "HP:0003706",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 17.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00141",
+    "subject_id": "SUBJ-240",
+    "hpo_id": "HP:0007576",
+    "hpo_term": "Seizures",
+    "onset_age_years": 11.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00142",
+    "subject_id": "SUBJ-241",
+    "hpo_id": "HP:0003422",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00143",
+    "subject_id": "SUBJ-242",
+    "hpo_id": "HP:0001431",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00144",
+    "subject_id": "SUBJ-243",
+    "hpo_id": "HP:0004099",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 14.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00145",
+    "subject_id": "SUBJ-244",
+    "hpo_id": "HP:0005275",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 3.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00146",
+    "subject_id": "SUBJ-245",
+    "hpo_id": "HP:0006130",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 8.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00147",
+    "subject_id": "SUBJ-246",
+    "hpo_id": "HP:0006234",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 13.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00148",
+    "subject_id": "SUBJ-247",
+    "hpo_id": "HP:0004609",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00149",
+    "subject_id": "SUBJ-248",
+    "hpo_id": "HP:0006301",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00150",
+    "subject_id": "SUBJ-249",
+    "hpo_id": "HP:0003895",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00151",
+    "subject_id": "SUBJ-250",
+    "hpo_id": "HP:0008898",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 12.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00152",
+    "subject_id": "SUBJ-251",
+    "hpo_id": "HP:0003500",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 17.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00153",
+    "subject_id": "SUBJ-252",
+    "hpo_id": "HP:0004139",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00154",
+    "subject_id": "SUBJ-253",
+    "hpo_id": "HP:0001164",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 2.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00155",
+    "subject_id": "SUBJ-254",
+    "hpo_id": "HP:0003905",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 9.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00156",
+    "subject_id": "SUBJ-255",
+    "hpo_id": "HP:0009659",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00157",
+    "subject_id": "SUBJ-256",
+    "hpo_id": "HP:0001640",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 12.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00158",
+    "subject_id": "SUBJ-257",
+    "hpo_id": "HP:0007791",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 10.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00159",
+    "subject_id": "SUBJ-258",
+    "hpo_id": "HP:0009964",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 10.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00160",
+    "subject_id": "SUBJ-259",
+    "hpo_id": "HP:0004654",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00161",
+    "subject_id": "SUBJ-260",
+    "hpo_id": "HP:0005969",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 1.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00162",
+    "subject_id": "SUBJ-261",
+    "hpo_id": "HP:0002712",
+    "hpo_term": "Seizures",
+    "onset_age_years": 12.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00163",
+    "subject_id": "SUBJ-262",
+    "hpo_id": "HP:0007945",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00164",
+    "subject_id": "SUBJ-263",
+    "hpo_id": "HP:0007307",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 16.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00165",
+    "subject_id": "SUBJ-264",
+    "hpo_id": "HP:0009433",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 9.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00166",
+    "subject_id": "SUBJ-265",
+    "hpo_id": "HP:0004102",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 2.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00167",
+    "subject_id": "SUBJ-266",
+    "hpo_id": "HP:0008546",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 11.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00168",
+    "subject_id": "SUBJ-267",
+    "hpo_id": "HP:0006510",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00169",
+    "subject_id": "SUBJ-268",
+    "hpo_id": "HP:0009184",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 1.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00170",
+    "subject_id": "SUBJ-269",
+    "hpo_id": "HP:0009307",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 6.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00171",
+    "subject_id": "SUBJ-270",
+    "hpo_id": "HP:0005123",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00172",
+    "subject_id": "SUBJ-271",
+    "hpo_id": "HP:0008397",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 4.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00173",
+    "subject_id": "SUBJ-272",
+    "hpo_id": "HP:0008578",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00174",
+    "subject_id": "SUBJ-273",
+    "hpo_id": "HP:0001052",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 4.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00175",
+    "subject_id": "SUBJ-274",
+    "hpo_id": "HP:0005197",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00176",
+    "subject_id": "SUBJ-275",
+    "hpo_id": "HP:0007845",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 16.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00177",
+    "subject_id": "SUBJ-276",
+    "hpo_id": "HP:0005928",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 14.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00178",
+    "subject_id": "SUBJ-277",
+    "hpo_id": "HP:0003184",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00179",
+    "subject_id": "SUBJ-278",
+    "hpo_id": "HP:0001549",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00180",
+    "subject_id": "SUBJ-279",
+    "hpo_id": "HP:0009952",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00181",
+    "subject_id": "SUBJ-280",
+    "hpo_id": "HP:0004112",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00182",
+    "subject_id": "SUBJ-281",
+    "hpo_id": "HP:0009583",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 11.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00183",
+    "subject_id": "SUBJ-282",
+    "hpo_id": "HP:0003739",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 1.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00184",
+    "subject_id": "SUBJ-283",
+    "hpo_id": "HP:0008175",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 7.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00185",
+    "subject_id": "SUBJ-284",
+    "hpo_id": "HP:0008968",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00186",
+    "subject_id": "SUBJ-285",
+    "hpo_id": "HP:0002385",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00187",
+    "subject_id": "SUBJ-286",
+    "hpo_id": "HP:0002146",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 16.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00188",
+    "subject_id": "SUBJ-287",
+    "hpo_id": "HP:0003908",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00189",
+    "subject_id": "SUBJ-288",
+    "hpo_id": "HP:0008506",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00190",
+    "subject_id": "SUBJ-289",
+    "hpo_id": "HP:0008761",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 17.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00191",
+    "subject_id": "SUBJ-290",
+    "hpo_id": "HP:0005487",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 4.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00192",
+    "subject_id": "SUBJ-291",
+    "hpo_id": "HP:0004347",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 1.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00193",
+    "subject_id": "SUBJ-292",
+    "hpo_id": "HP:0007284",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00194",
+    "subject_id": "SUBJ-293",
+    "hpo_id": "HP:0008355",
+    "hpo_term": "Seizures",
+    "onset_age_years": 9.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00195",
+    "subject_id": "SUBJ-294",
+    "hpo_id": "HP:0001913",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00196",
+    "subject_id": "SUBJ-295",
+    "hpo_id": "HP:0006402",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00197",
+    "subject_id": "SUBJ-296",
+    "hpo_id": "HP:0007289",
+    "hpo_term": "Seizures",
+    "onset_age_years": 13.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00198",
+    "subject_id": "SUBJ-297",
+    "hpo_id": "HP:0002684",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 16.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00199",
+    "subject_id": "SUBJ-298",
+    "hpo_id": "HP:0003159",
+    "hpo_term": "Seizures",
+    "onset_age_years": 11.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00200",
+    "subject_id": "SUBJ-299",
+    "hpo_id": "HP:0001734",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 3.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00201",
+    "subject_id": "SUBJ-100",
+    "hpo_id": "HP:0004678",
+    "hpo_term": "Seizures",
+    "onset_age_years": 15.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00202",
+    "subject_id": "SUBJ-101",
+    "hpo_id": "HP:0005145",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00203",
+    "subject_id": "SUBJ-102",
+    "hpo_id": "HP:0004548",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 7.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00204",
+    "subject_id": "SUBJ-103",
+    "hpo_id": "HP:0009130",
+    "hpo_term": "Seizures",
+    "onset_age_years": 11.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00205",
+    "subject_id": "SUBJ-104",
+    "hpo_id": "HP:0001571",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 2.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00206",
+    "subject_id": "SUBJ-105",
+    "hpo_id": "HP:0004075",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 6.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00207",
+    "subject_id": "SUBJ-106",
+    "hpo_id": "HP:0007048",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 11.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00208",
+    "subject_id": "SUBJ-107",
+    "hpo_id": "HP:0003390",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00209",
+    "subject_id": "SUBJ-108",
+    "hpo_id": "HP:0009892",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00210",
+    "subject_id": "SUBJ-109",
+    "hpo_id": "HP:0004965",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00211",
+    "subject_id": "SUBJ-110",
+    "hpo_id": "HP:0003530",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00212",
+    "subject_id": "SUBJ-111",
+    "hpo_id": "HP:0005848",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 16.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00213",
+    "subject_id": "SUBJ-112",
+    "hpo_id": "HP:0006924",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 17.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00214",
+    "subject_id": "SUBJ-113",
+    "hpo_id": "HP:0002566",
+    "hpo_term": "Seizures",
+    "onset_age_years": 9.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00215",
+    "subject_id": "SUBJ-114",
+    "hpo_id": "HP:0007688",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00216",
+    "subject_id": "SUBJ-115",
+    "hpo_id": "HP:0006209",
+    "hpo_term": "Seizures",
+    "onset_age_years": 15.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00217",
+    "subject_id": "SUBJ-116",
+    "hpo_id": "HP:0001583",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00218",
+    "subject_id": "SUBJ-117",
+    "hpo_id": "HP:0002295",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 15.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00219",
+    "subject_id": "SUBJ-118",
+    "hpo_id": "HP:0007264",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00220",
+    "subject_id": "SUBJ-119",
+    "hpo_id": "HP:0006528",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00221",
+    "subject_id": "SUBJ-120",
+    "hpo_id": "HP:0004456",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 1.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00222",
+    "subject_id": "SUBJ-121",
+    "hpo_id": "HP:0003415",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 12.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00223",
+    "subject_id": "SUBJ-122",
+    "hpo_id": "HP:0002099",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00224",
+    "subject_id": "SUBJ-123",
+    "hpo_id": "HP:0006316",
+    "hpo_term": "Seizures",
+    "onset_age_years": 4.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00225",
+    "subject_id": "SUBJ-124",
+    "hpo_id": "HP:0007559",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 12.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00226",
+    "subject_id": "SUBJ-125",
+    "hpo_id": "HP:0005751",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 1.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00227",
+    "subject_id": "SUBJ-126",
+    "hpo_id": "HP:0006300",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 5.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00228",
+    "subject_id": "SUBJ-127",
+    "hpo_id": "HP:0006503",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 9.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00229",
+    "subject_id": "SUBJ-128",
+    "hpo_id": "HP:0001719",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00230",
+    "subject_id": "SUBJ-129",
+    "hpo_id": "HP:0004937",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 14.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00231",
+    "subject_id": "SUBJ-130",
+    "hpo_id": "HP:0009438",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 9.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00232",
+    "subject_id": "SUBJ-131",
+    "hpo_id": "HP:0005728",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00233",
+    "subject_id": "SUBJ-132",
+    "hpo_id": "HP:0005989",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 15.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00234",
+    "subject_id": "SUBJ-133",
+    "hpo_id": "HP:0001635",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00235",
+    "subject_id": "SUBJ-134",
+    "hpo_id": "HP:0001572",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00236",
+    "subject_id": "SUBJ-135",
+    "hpo_id": "HP:0006037",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 6.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00237",
+    "subject_id": "SUBJ-136",
+    "hpo_id": "HP:0003174",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 17.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00238",
+    "subject_id": "SUBJ-137",
+    "hpo_id": "HP:0001302",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00239",
+    "subject_id": "SUBJ-138",
+    "hpo_id": "HP:0008617",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00240",
+    "subject_id": "SUBJ-139",
+    "hpo_id": "HP:0009240",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 6.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00241",
+    "subject_id": "SUBJ-140",
+    "hpo_id": "HP:0003667",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00242",
+    "subject_id": "SUBJ-141",
+    "hpo_id": "HP:0007346",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00243",
+    "subject_id": "SUBJ-142",
+    "hpo_id": "HP:0003311",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 9.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00244",
+    "subject_id": "SUBJ-143",
+    "hpo_id": "HP:0006790",
+    "hpo_term": "Seizures",
+    "onset_age_years": 10.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00245",
+    "subject_id": "SUBJ-144",
+    "hpo_id": "HP:0003362",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00246",
+    "subject_id": "SUBJ-145",
+    "hpo_id": "HP:0004675",
+    "hpo_term": "Seizures",
+    "onset_age_years": 7.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00247",
+    "subject_id": "SUBJ-146",
+    "hpo_id": "HP:0003292",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 9.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00248",
+    "subject_id": "SUBJ-147",
+    "hpo_id": "HP:0009343",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00249",
+    "subject_id": "SUBJ-148",
+    "hpo_id": "HP:0001284",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00250",
+    "subject_id": "SUBJ-149",
+    "hpo_id": "HP:0003831",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00251",
+    "subject_id": "SUBJ-150",
+    "hpo_id": "HP:0002592",
+    "hpo_term": "Seizures",
+    "onset_age_years": 12.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00252",
+    "subject_id": "SUBJ-151",
+    "hpo_id": "HP:0002446",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 5.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00253",
+    "subject_id": "SUBJ-152",
+    "hpo_id": "HP:0006079",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00254",
+    "subject_id": "SUBJ-153",
+    "hpo_id": "HP:0003387",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00255",
+    "subject_id": "SUBJ-154",
+    "hpo_id": "HP:0002199",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 12.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00256",
+    "subject_id": "SUBJ-155",
+    "hpo_id": "HP:0007371",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 2.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00257",
+    "subject_id": "SUBJ-156",
+    "hpo_id": "HP:0009106",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 4.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00258",
+    "subject_id": "SUBJ-157",
+    "hpo_id": "HP:0008939",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00259",
+    "subject_id": "SUBJ-158",
+    "hpo_id": "HP:0004792",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 17.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00260",
+    "subject_id": "SUBJ-159",
+    "hpo_id": "HP:0006486",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 12.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00261",
+    "subject_id": "SUBJ-160",
+    "hpo_id": "HP:0007451",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 8.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00262",
+    "subject_id": "SUBJ-161",
+    "hpo_id": "HP:0003817",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00263",
+    "subject_id": "SUBJ-162",
+    "hpo_id": "HP:0003916",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 0.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00264",
+    "subject_id": "SUBJ-163",
+    "hpo_id": "HP:0001335",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00265",
+    "subject_id": "SUBJ-164",
+    "hpo_id": "HP:0006610",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 17.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00266",
+    "subject_id": "SUBJ-165",
+    "hpo_id": "HP:0004362",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00267",
+    "subject_id": "SUBJ-166",
+    "hpo_id": "HP:0005487",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 6.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00268",
+    "subject_id": "SUBJ-167",
+    "hpo_id": "HP:0002389",
+    "hpo_term": "Seizures",
+    "onset_age_years": 11.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00269",
+    "subject_id": "SUBJ-168",
+    "hpo_id": "HP:0004912",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 16.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00270",
+    "subject_id": "SUBJ-169",
+    "hpo_id": "HP:0008123",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00271",
+    "subject_id": "SUBJ-170",
+    "hpo_id": "HP:0008491",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 6.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00272",
+    "subject_id": "SUBJ-171",
+    "hpo_id": "HP:0007543",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00273",
+    "subject_id": "SUBJ-172",
+    "hpo_id": "HP:0004297",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00274",
+    "subject_id": "SUBJ-173",
+    "hpo_id": "HP:0001569",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 5.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00275",
+    "subject_id": "SUBJ-174",
+    "hpo_id": "HP:0002550",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00276",
+    "subject_id": "SUBJ-175",
+    "hpo_id": "HP:0004122",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 16.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00277",
+    "subject_id": "SUBJ-176",
+    "hpo_id": "HP:0001027",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00278",
+    "subject_id": "SUBJ-177",
+    "hpo_id": "HP:0002101",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 7.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00279",
+    "subject_id": "SUBJ-178",
+    "hpo_id": "HP:0008694",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 14.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00280",
+    "subject_id": "SUBJ-179",
+    "hpo_id": "HP:0003680",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00281",
+    "subject_id": "SUBJ-180",
+    "hpo_id": "HP:0003120",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00282",
+    "subject_id": "SUBJ-181",
+    "hpo_id": "HP:0009817",
+    "hpo_term": "Seizures",
+    "onset_age_years": 2.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00283",
+    "subject_id": "SUBJ-182",
+    "hpo_id": "HP:0007358",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 3.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00284",
+    "subject_id": "SUBJ-183",
+    "hpo_id": "HP:0009325",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00285",
+    "subject_id": "SUBJ-184",
+    "hpo_id": "HP:0003316",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 11.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00286",
+    "subject_id": "SUBJ-185",
+    "hpo_id": "HP:0007732",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00287",
+    "subject_id": "SUBJ-186",
+    "hpo_id": "HP:0005999",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00288",
+    "subject_id": "SUBJ-187",
+    "hpo_id": "HP:0004489",
+    "hpo_term": "Seizures",
+    "onset_age_years": 4.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00289",
+    "subject_id": "SUBJ-188",
+    "hpo_id": "HP:0005189",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00290",
+    "subject_id": "SUBJ-189",
+    "hpo_id": "HP:0003714",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 4.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00291",
+    "subject_id": "SUBJ-190",
+    "hpo_id": "HP:0006009",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 16.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00292",
+    "subject_id": "SUBJ-191",
+    "hpo_id": "HP:0009470",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00293",
+    "subject_id": "SUBJ-192",
+    "hpo_id": "HP:0005728",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 0.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00294",
+    "subject_id": "SUBJ-193",
+    "hpo_id": "HP:0003449",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 4.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00295",
+    "subject_id": "SUBJ-194",
+    "hpo_id": "HP:0001442",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00296",
+    "subject_id": "SUBJ-195",
+    "hpo_id": "HP:0006874",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 3.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00297",
+    "subject_id": "SUBJ-196",
+    "hpo_id": "HP:0008036",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 2.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00298",
+    "subject_id": "SUBJ-197",
+    "hpo_id": "HP:0004644",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 12.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00299",
+    "subject_id": "SUBJ-198",
+    "hpo_id": "HP:0003558",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00300",
+    "subject_id": "SUBJ-199",
+    "hpo_id": "HP:0004037",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 15.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00301",
+    "subject_id": "SUBJ-200",
+    "hpo_id": "HP:0002365",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00302",
+    "subject_id": "SUBJ-201",
+    "hpo_id": "HP:0008140",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00303",
+    "subject_id": "SUBJ-202",
+    "hpo_id": "HP:0001955",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 3.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00304",
+    "subject_id": "SUBJ-203",
+    "hpo_id": "HP:0005728",
+    "hpo_term": "Seizures",
+    "onset_age_years": 12.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00305",
+    "subject_id": "SUBJ-204",
+    "hpo_id": "HP:0006162",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00306",
+    "subject_id": "SUBJ-205",
+    "hpo_id": "HP:0007473",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00307",
+    "subject_id": "SUBJ-206",
+    "hpo_id": "HP:0005034",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00308",
+    "subject_id": "SUBJ-207",
+    "hpo_id": "HP:0008187",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00309",
+    "subject_id": "SUBJ-208",
+    "hpo_id": "HP:0007340",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 17.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00310",
+    "subject_id": "SUBJ-209",
+    "hpo_id": "HP:0004570",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00311",
+    "subject_id": "SUBJ-210",
+    "hpo_id": "HP:0008875",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 4.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00312",
+    "subject_id": "SUBJ-211",
+    "hpo_id": "HP:0008827",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 7.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00313",
+    "subject_id": "SUBJ-212",
+    "hpo_id": "HP:0004674",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00314",
+    "subject_id": "SUBJ-213",
+    "hpo_id": "HP:0004038",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00315",
+    "subject_id": "SUBJ-214",
+    "hpo_id": "HP:0005209",
+    "hpo_term": "Seizures",
+    "onset_age_years": 8.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00316",
+    "subject_id": "SUBJ-215",
+    "hpo_id": "HP:0002181",
+    "hpo_term": "Seizures",
+    "onset_age_years": 15.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00317",
+    "subject_id": "SUBJ-216",
+    "hpo_id": "HP:0009053",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 14.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00318",
+    "subject_id": "SUBJ-217",
+    "hpo_id": "HP:0003189",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 3.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00319",
+    "subject_id": "SUBJ-218",
+    "hpo_id": "HP:0003612",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 15.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00320",
+    "subject_id": "SUBJ-219",
+    "hpo_id": "HP:0008562",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 11.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00321",
+    "subject_id": "SUBJ-220",
+    "hpo_id": "HP:0005695",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 1.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00322",
+    "subject_id": "SUBJ-221",
+    "hpo_id": "HP:0001609",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00323",
+    "subject_id": "SUBJ-222",
+    "hpo_id": "HP:0003908",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 6.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00324",
+    "subject_id": "SUBJ-223",
+    "hpo_id": "HP:0001175",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 16.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00325",
+    "subject_id": "SUBJ-224",
+    "hpo_id": "HP:0007969",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 15.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00326",
+    "subject_id": "SUBJ-225",
+    "hpo_id": "HP:0003346",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00327",
+    "subject_id": "SUBJ-226",
+    "hpo_id": "HP:0009246",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 9.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00328",
+    "subject_id": "SUBJ-227",
+    "hpo_id": "HP:0007200",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00329",
+    "subject_id": "SUBJ-228",
+    "hpo_id": "HP:0007343",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 16.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00330",
+    "subject_id": "SUBJ-229",
+    "hpo_id": "HP:0004182",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00331",
+    "subject_id": "SUBJ-230",
+    "hpo_id": "HP:0002139",
+    "hpo_term": "Seizures",
+    "onset_age_years": 0.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00332",
+    "subject_id": "SUBJ-231",
+    "hpo_id": "HP:0002816",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00333",
+    "subject_id": "SUBJ-232",
+    "hpo_id": "HP:0001431",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00334",
+    "subject_id": "SUBJ-233",
+    "hpo_id": "HP:0008611",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 0.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00335",
+    "subject_id": "SUBJ-234",
+    "hpo_id": "HP:0007149",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00336",
+    "subject_id": "SUBJ-235",
+    "hpo_id": "HP:0003473",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00337",
+    "subject_id": "SUBJ-236",
+    "hpo_id": "HP:0009054",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00338",
+    "subject_id": "SUBJ-237",
+    "hpo_id": "HP:0002182",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00339",
+    "subject_id": "SUBJ-238",
+    "hpo_id": "HP:0006423",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00340",
+    "subject_id": "SUBJ-239",
+    "hpo_id": "HP:0006370",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 15.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00341",
+    "subject_id": "SUBJ-240",
+    "hpo_id": "HP:0002111",
+    "hpo_term": "Seizures",
+    "onset_age_years": 10.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00342",
+    "subject_id": "SUBJ-241",
+    "hpo_id": "HP:0006102",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00343",
+    "subject_id": "SUBJ-242",
+    "hpo_id": "HP:0007809",
+    "hpo_term": "Seizures",
+    "onset_age_years": 12.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00344",
+    "subject_id": "SUBJ-243",
+    "hpo_id": "HP:0006961",
+    "hpo_term": "Seizures",
+    "onset_age_years": 5.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00345",
+    "subject_id": "SUBJ-244",
+    "hpo_id": "HP:0006563",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 1.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00346",
+    "subject_id": "SUBJ-245",
+    "hpo_id": "HP:0002436",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 13.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00347",
+    "subject_id": "SUBJ-246",
+    "hpo_id": "HP:0007246",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 0.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00348",
+    "subject_id": "SUBJ-247",
+    "hpo_id": "HP:0009413",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 10.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00349",
+    "subject_id": "SUBJ-248",
+    "hpo_id": "HP:0003562",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00350",
+    "subject_id": "SUBJ-249",
+    "hpo_id": "HP:0009255",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 6.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00351",
+    "subject_id": "SUBJ-250",
+    "hpo_id": "HP:0009378",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00352",
+    "subject_id": "SUBJ-251",
+    "hpo_id": "HP:0009013",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00353",
+    "subject_id": "SUBJ-252",
+    "hpo_id": "HP:0007745",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00354",
+    "subject_id": "SUBJ-253",
+    "hpo_id": "HP:0001709",
+    "hpo_term": "Seizures",
+    "onset_age_years": 14.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00355",
+    "subject_id": "SUBJ-254",
+    "hpo_id": "HP:0003980",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00356",
+    "subject_id": "SUBJ-255",
+    "hpo_id": "HP:0005215",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 9.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00357",
+    "subject_id": "SUBJ-256",
+    "hpo_id": "HP:0006732",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 15.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00358",
+    "subject_id": "SUBJ-257",
+    "hpo_id": "HP:0002548",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00359",
+    "subject_id": "SUBJ-258",
+    "hpo_id": "HP:0005229",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 12.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00360",
+    "subject_id": "SUBJ-259",
+    "hpo_id": "HP:0002420",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 6.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00361",
+    "subject_id": "SUBJ-260",
+    "hpo_id": "HP:0004611",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00362",
+    "subject_id": "SUBJ-261",
+    "hpo_id": "HP:0006007",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00363",
+    "subject_id": "SUBJ-262",
+    "hpo_id": "HP:0008640",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00364",
+    "subject_id": "SUBJ-263",
+    "hpo_id": "HP:0005824",
+    "hpo_term": "Seizures",
+    "onset_age_years": 8.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00365",
+    "subject_id": "SUBJ-264",
+    "hpo_id": "HP:0009966",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00366",
+    "subject_id": "SUBJ-265",
+    "hpo_id": "HP:0008114",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 2.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00367",
+    "subject_id": "SUBJ-266",
+    "hpo_id": "HP:0006736",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00368",
+    "subject_id": "SUBJ-267",
+    "hpo_id": "HP:0007702",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 10.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00369",
+    "subject_id": "SUBJ-268",
+    "hpo_id": "HP:0006035",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00370",
+    "subject_id": "SUBJ-269",
+    "hpo_id": "HP:0009083",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 7.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00371",
+    "subject_id": "SUBJ-270",
+    "hpo_id": "HP:0002247",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 16.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00372",
+    "subject_id": "SUBJ-271",
+    "hpo_id": "HP:0007240",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00373",
+    "subject_id": "SUBJ-272",
+    "hpo_id": "HP:0008718",
+    "hpo_term": "Seizures",
+    "onset_age_years": 0.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00374",
+    "subject_id": "SUBJ-273",
+    "hpo_id": "HP:0009867",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00375",
+    "subject_id": "SUBJ-274",
+    "hpo_id": "HP:0009159",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00376",
+    "subject_id": "SUBJ-275",
+    "hpo_id": "HP:0004314",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 2.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00377",
+    "subject_id": "SUBJ-276",
+    "hpo_id": "HP:0008001",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 14.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00378",
+    "subject_id": "SUBJ-277",
+    "hpo_id": "HP:0005993",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 15.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00379",
+    "subject_id": "SUBJ-278",
+    "hpo_id": "HP:0002731",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00380",
+    "subject_id": "SUBJ-279",
+    "hpo_id": "HP:0007415",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00381",
+    "subject_id": "SUBJ-280",
+    "hpo_id": "HP:0009947",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 5.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00382",
+    "subject_id": "SUBJ-281",
+    "hpo_id": "HP:0007942",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 5.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00383",
+    "subject_id": "SUBJ-282",
+    "hpo_id": "HP:0004708",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 0.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00384",
+    "subject_id": "SUBJ-283",
+    "hpo_id": "HP:0009560",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00385",
+    "subject_id": "SUBJ-284",
+    "hpo_id": "HP:0007125",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 16.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00386",
+    "subject_id": "SUBJ-285",
+    "hpo_id": "HP:0006689",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00387",
+    "subject_id": "SUBJ-286",
+    "hpo_id": "HP:0006608",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 13.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00388",
+    "subject_id": "SUBJ-287",
+    "hpo_id": "HP:0008681",
+    "hpo_term": "Seizures",
+    "onset_age_years": 9.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00389",
+    "subject_id": "SUBJ-288",
+    "hpo_id": "HP:0007953",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00390",
+    "subject_id": "SUBJ-289",
+    "hpo_id": "HP:0003049",
+    "hpo_term": "Seizures",
+    "onset_age_years": 15.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00391",
+    "subject_id": "SUBJ-290",
+    "hpo_id": "HP:0007597",
+    "hpo_term": "Seizures",
+    "onset_age_years": 10.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00392",
+    "subject_id": "SUBJ-291",
+    "hpo_id": "HP:0007460",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 5.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00393",
+    "subject_id": "SUBJ-292",
+    "hpo_id": "HP:0009181",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00394",
+    "subject_id": "SUBJ-293",
+    "hpo_id": "HP:0008386",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00395",
+    "subject_id": "SUBJ-294",
+    "hpo_id": "HP:0007281",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00396",
+    "subject_id": "SUBJ-295",
+    "hpo_id": "HP:0005841",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 2.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00397",
+    "subject_id": "SUBJ-296",
+    "hpo_id": "HP:0008902",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 17.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00398",
+    "subject_id": "SUBJ-297",
+    "hpo_id": "HP:0001638",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.1,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00399",
+    "subject_id": "SUBJ-298",
+    "hpo_id": "HP:0008228",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00400",
+    "subject_id": "SUBJ-299",
+    "hpo_id": "HP:0006178",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 17.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00401",
+    "subject_id": "SUBJ-100",
+    "hpo_id": "HP:0005576",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00402",
+    "subject_id": "SUBJ-101",
+    "hpo_id": "HP:0002931",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 10.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00403",
+    "subject_id": "SUBJ-102",
+    "hpo_id": "HP:0003991",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 11.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00404",
+    "subject_id": "SUBJ-103",
+    "hpo_id": "HP:0007876",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.3,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00405",
+    "subject_id": "SUBJ-104",
+    "hpo_id": "HP:0009262",
+    "hpo_term": "Seizures",
+    "onset_age_years": 4.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00406",
+    "subject_id": "SUBJ-105",
+    "hpo_id": "HP:0007214",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00407",
+    "subject_id": "SUBJ-106",
+    "hpo_id": "HP:0002067",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 7.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00408",
+    "subject_id": "SUBJ-107",
+    "hpo_id": "HP:0003856",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 3.9,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00409",
+    "subject_id": "SUBJ-108",
+    "hpo_id": "HP:0009194",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 13.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00410",
+    "subject_id": "SUBJ-109",
+    "hpo_id": "HP:0001732",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.8,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00411",
+    "subject_id": "SUBJ-110",
+    "hpo_id": "HP:0008352",
+    "hpo_term": "Seizures",
+    "onset_age_years": 7.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00412",
+    "subject_id": "SUBJ-111",
+    "hpo_id": "HP:0007069",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00413",
+    "subject_id": "SUBJ-112",
+    "hpo_id": "HP:0005943",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 14.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00414",
+    "subject_id": "SUBJ-113",
+    "hpo_id": "HP:0002194",
+    "hpo_term": "Seizures",
+    "onset_age_years": 11.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00415",
+    "subject_id": "SUBJ-114",
+    "hpo_id": "HP:0004463",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 13.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00416",
+    "subject_id": "SUBJ-115",
+    "hpo_id": "HP:0006845",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 1.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00417",
+    "subject_id": "SUBJ-116",
+    "hpo_id": "HP:0005516",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00418",
+    "subject_id": "SUBJ-117",
+    "hpo_id": "HP:0002761",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 1.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00419",
+    "subject_id": "SUBJ-118",
+    "hpo_id": "HP:0007444",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 16.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00420",
+    "subject_id": "SUBJ-119",
+    "hpo_id": "HP:0006433",
+    "hpo_term": "Seizures",
+    "onset_age_years": 1.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00421",
+    "subject_id": "SUBJ-120",
+    "hpo_id": "HP:0006370",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 8.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00422",
+    "subject_id": "SUBJ-121",
+    "hpo_id": "HP:0009342",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00423",
+    "subject_id": "SUBJ-122",
+    "hpo_id": "HP:0003987",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00424",
+    "subject_id": "SUBJ-123",
+    "hpo_id": "HP:0001856",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 14.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00425",
+    "subject_id": "SUBJ-124",
+    "hpo_id": "HP:0008836",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 5.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00426",
+    "subject_id": "SUBJ-125",
+    "hpo_id": "HP:0005864",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00427",
+    "subject_id": "SUBJ-126",
+    "hpo_id": "HP:0002359",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 12.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00428",
+    "subject_id": "SUBJ-127",
+    "hpo_id": "HP:0004455",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 17.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00429",
+    "subject_id": "SUBJ-128",
+    "hpo_id": "HP:0007202",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00430",
+    "subject_id": "SUBJ-129",
+    "hpo_id": "HP:0002108",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.0,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00431",
+    "subject_id": "SUBJ-130",
+    "hpo_id": "HP:0008029",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00432",
+    "subject_id": "SUBJ-131",
+    "hpo_id": "HP:0001450",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 2.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00433",
+    "subject_id": "SUBJ-132",
+    "hpo_id": "HP:0007353",
+    "hpo_term": "Seizures",
+    "onset_age_years": 2.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00434",
+    "subject_id": "SUBJ-133",
+    "hpo_id": "HP:0008920",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 3.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00435",
+    "subject_id": "SUBJ-134",
+    "hpo_id": "HP:0005345",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00436",
+    "subject_id": "SUBJ-135",
+    "hpo_id": "HP:0004702",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 14.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00437",
+    "subject_id": "SUBJ-136",
+    "hpo_id": "HP:0009837",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 13.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00438",
+    "subject_id": "SUBJ-137",
+    "hpo_id": "HP:0002573",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00439",
+    "subject_id": "SUBJ-138",
+    "hpo_id": "HP:0009942",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00440",
+    "subject_id": "SUBJ-139",
+    "hpo_id": "HP:0007679",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.4,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00441",
+    "subject_id": "SUBJ-140",
+    "hpo_id": "HP:0001631",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 7.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00442",
+    "subject_id": "SUBJ-141",
+    "hpo_id": "HP:0001451",
+    "hpo_term": "Seizures",
+    "onset_age_years": 2.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00443",
+    "subject_id": "SUBJ-142",
+    "hpo_id": "HP:0006955",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00444",
+    "subject_id": "SUBJ-143",
+    "hpo_id": "HP:0004870",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 10.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00445",
+    "subject_id": "SUBJ-144",
+    "hpo_id": "HP:0004181",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 9.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00446",
+    "subject_id": "SUBJ-145",
+    "hpo_id": "HP:0005359",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 0.6,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00447",
+    "subject_id": "SUBJ-146",
+    "hpo_id": "HP:0003383",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 12.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00448",
+    "subject_id": "SUBJ-147",
+    "hpo_id": "HP:0001253",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 10.4,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00449",
+    "subject_id": "SUBJ-148",
+    "hpo_id": "HP:0004401",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 6.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00450",
+    "subject_id": "SUBJ-149",
+    "hpo_id": "HP:0008652",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 7.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00451",
+    "subject_id": "SUBJ-150",
+    "hpo_id": "HP:0002463",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 7.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00452",
+    "subject_id": "SUBJ-151",
+    "hpo_id": "HP:0004645",
+    "hpo_term": "Seizures",
+    "onset_age_years": 17.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00453",
+    "subject_id": "SUBJ-152",
+    "hpo_id": "HP:0003958",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 7.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00454",
+    "subject_id": "SUBJ-153",
+    "hpo_id": "HP:0008918",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00455",
+    "subject_id": "SUBJ-154",
+    "hpo_id": "HP:0003205",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00456",
+    "subject_id": "SUBJ-155",
+    "hpo_id": "HP:0001075",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00457",
+    "subject_id": "SUBJ-156",
+    "hpo_id": "HP:0008798",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 15.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00458",
+    "subject_id": "SUBJ-157",
+    "hpo_id": "HP:0002240",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 11.3,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00459",
+    "subject_id": "SUBJ-158",
+    "hpo_id": "HP:0009768",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.8,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00460",
+    "subject_id": "SUBJ-159",
+    "hpo_id": "HP:0001303",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 6.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00461",
+    "subject_id": "SUBJ-160",
+    "hpo_id": "HP:0002433",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.1,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00462",
+    "subject_id": "SUBJ-161",
+    "hpo_id": "HP:0004057",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 15.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00463",
+    "subject_id": "SUBJ-162",
+    "hpo_id": "HP:0004982",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 5.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00464",
+    "subject_id": "SUBJ-163",
+    "hpo_id": "HP:0002434",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 6.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00465",
+    "subject_id": "SUBJ-164",
+    "hpo_id": "HP:0006731",
+    "hpo_term": "Seizures",
+    "onset_age_years": 8.9,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00466",
+    "subject_id": "SUBJ-165",
+    "hpo_id": "HP:0002281",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 8.2,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00467",
+    "subject_id": "SUBJ-166",
+    "hpo_id": "HP:0006752",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 9.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00468",
+    "subject_id": "SUBJ-167",
+    "hpo_id": "HP:0004043",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 2.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00469",
+    "subject_id": "SUBJ-168",
+    "hpo_id": "HP:0007382",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 13.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00470",
+    "subject_id": "SUBJ-169",
+    "hpo_id": "HP:0005069",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 6.0,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00471",
+    "subject_id": "SUBJ-170",
+    "hpo_id": "HP:0002571",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 6.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00472",
+    "subject_id": "SUBJ-171",
+    "hpo_id": "HP:0004059",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.7,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00473",
+    "subject_id": "SUBJ-172",
+    "hpo_id": "HP:0003918",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 5.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00474",
+    "subject_id": "SUBJ-173",
+    "hpo_id": "HP:0001448",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 8.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00475",
+    "subject_id": "SUBJ-174",
+    "hpo_id": "HP:0006662",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 11.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00476",
+    "subject_id": "SUBJ-175",
+    "hpo_id": "HP:0003096",
+    "hpo_term": "Seizures",
+    "onset_age_years": 1.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00477",
+    "subject_id": "SUBJ-176",
+    "hpo_id": "HP:0009039",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 12.8,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00478",
+    "subject_id": "SUBJ-177",
+    "hpo_id": "HP:0009853",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00479",
+    "subject_id": "SUBJ-178",
+    "hpo_id": "HP:0003752",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 14.6,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00480",
+    "subject_id": "SUBJ-179",
+    "hpo_id": "HP:0002946",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.3,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00481",
+    "subject_id": "SUBJ-180",
+    "hpo_id": "HP:0002873",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00482",
+    "subject_id": "SUBJ-181",
+    "hpo_id": "HP:0007184",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 14.1,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00483",
+    "subject_id": "SUBJ-182",
+    "hpo_id": "HP:0009384",
+    "hpo_term": "Seizures",
+    "onset_age_years": 1.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00484",
+    "subject_id": "SUBJ-183",
+    "hpo_id": "HP:0001626",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 7.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00485",
+    "subject_id": "SUBJ-184",
+    "hpo_id": "HP:0009410",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 9.7,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00486",
+    "subject_id": "SUBJ-185",
+    "hpo_id": "HP:0004272",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 4.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00487",
+    "subject_id": "SUBJ-186",
+    "hpo_id": "HP:0006028",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 15.6,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00488",
+    "subject_id": "SUBJ-187",
+    "hpo_id": "HP:0005344",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00489",
+    "subject_id": "SUBJ-188",
+    "hpo_id": "HP:0006865",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.5,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00490",
+    "subject_id": "SUBJ-189",
+    "hpo_id": "HP:0008058",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 10.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00491",
+    "subject_id": "SUBJ-190",
+    "hpo_id": "HP:0004060",
+    "hpo_term": "Ataxia",
+    "onset_age_years": 8.9,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00492",
+    "subject_id": "SUBJ-191",
+    "hpo_id": "HP:0004061",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 15.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00493",
+    "subject_id": "SUBJ-192",
+    "hpo_id": "HP:0003574",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 0.5,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00494",
+    "subject_id": "SUBJ-193",
+    "hpo_id": "HP:0008052",
+    "hpo_term": "Cardiomyopathy",
+    "onset_age_years": 17.2,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00495",
+    "subject_id": "SUBJ-194",
+    "hpo_id": "HP:0009815",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 16.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00496",
+    "subject_id": "SUBJ-195",
+    "hpo_id": "HP:0008168",
+    "hpo_term": "Seizures",
+    "onset_age_years": 16.5,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00497",
+    "subject_id": "SUBJ-196",
+    "hpo_id": "HP:0004734",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 1.4,
+    "modifier": "Mild",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00498",
+    "subject_id": "SUBJ-197",
+    "hpo_id": "HP:0008063",
+    "hpo_term": "Muscular dystrophy",
+    "onset_age_years": 7.2,
+    "modifier": "Severe",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00499",
+    "subject_id": "SUBJ-198",
+    "hpo_id": "HP:0007328",
+    "hpo_term": "Microcephaly",
+    "onset_age_years": 3.7,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  },
+  {
+    "phenotype_id": "PHE-00500",
+    "subject_id": "SUBJ-199",
+    "hpo_id": "HP:0001876",
+    "hpo_term": "Seizures",
+    "onset_age_years": 3.0,
+    "modifier": "Moderate",
+    "confirmed_flag": true
+  }
+]

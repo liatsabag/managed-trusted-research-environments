@@ -1,0 +1,19 @@
+================================================================================
+DE-IDENTIFICATION & EXTRACTION QUERY PROTOCOL SPECIFICATION
+================================================================================
+Room Identifier: rr-neurology-04
+Study Title: Neurodegenerative Biomarkers and Cognitive Trajectories
+Query Protocol ID: EXT-NEUR-2025-09
+Item Type: Extraction_Protocol
+Item Name: De-identification and Extraction Query Protocol
+
+STATUS: APPROVED
+Approval Date: 2025-02-01
+Expiration Date: 2027-08-30
+Review Authority: Security & Data Privacy Review Board
+Privacy Officer: Eng. Tamar Cohen, CISO & Privacy Officer
+
+EXTRACTION CRITERIA:
+1. Direct identifiers (Name, MRN, National ID, Phone) stripped prior to ingestion.
+2. Minimum k-anonymity threshold enforced (k >= 5) on exported summary strata.
+================================================================================

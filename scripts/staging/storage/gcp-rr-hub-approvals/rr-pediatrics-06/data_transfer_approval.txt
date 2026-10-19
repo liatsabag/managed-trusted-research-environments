@@ -1,0 +1,19 @@
+================================================================================
+DATA TRANSFER COMMITTEE (DTC) STATUTORY SIGN-OFF
+================================================================================
+Room Identifier: rr-pediatrics-06
+Study Title: Pediatric Rare Disorders Longitudinal Study
+Transfer Clearance Ref: DTC-MOH-2024-080
+Item Type: Data_Transfer
+Item Name: Statutory Data Transfer Committee Approval
+
+STATUS: APPROVED
+Approval Date: 2024-01-15
+Expiration Date: 2027-12-31
+Statutory Body: Ministry of Health & Hospital Data Transfer Directorate
+Authorized Officer: Adv. Michael Bar, Statutory Data Commissioner
+
+TRANSFER SPECIFICATIONS:
+1. Data source tables authorized for replication into Spoke Inbound Storage.
+2. Cross-border transmission is strictly restricted.
+================================================================================

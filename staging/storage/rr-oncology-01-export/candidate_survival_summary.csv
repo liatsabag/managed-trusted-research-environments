@@ -1,0 +1,4 @@
+strata_group,biomarker_subgroup,rare_mutation_subgroup_count,cohort_mean,ci_lower,ci_upper
+Strata-1,EGFR_T790M,3,45.2,38.1,52.3
+Strata-2,KRAS_G12D,4,39.8,32.4,47.1
+Strata-3,BRAF_V600E,142,51.0,48.2,53.8

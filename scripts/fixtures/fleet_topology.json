@@ -1,0 +1,507 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "organization": {
+    "org_id": "548464744236",
+    "folder_id": "752086743397",
+    "domain": "liatsabag.altostrat.com",
+    "folder_name": "research-rooms"
+  },
+  "hub_project": {
+    "project_id": "gcp-rr-hub-core",
+    "region": "me-west1",
+    "shared_datasets": [
+      {
+        "dataset_id": "hub_shared_clinical",
+        "description": "Cross-spoke sanitized clinical terminology and reference catalogs",
+        "tables": [
+          {
+            "table_id": "icd10_catalogs",
+            "target_row_count": 500,
+            "description": "Standardized ICD-10 diagnostic coding reference"
+          },
+          {
+            "table_id": "omop_vocabulary",
+            "target_row_count": 800,
+            "description": "OMOP Common Data Model concept vocabulary"
+          }
+        ]
+      },
+      {
+        "dataset_id": "hub_shared_reference",
+        "description": "Genomic panels and standardized physiological reference ranges",
+        "tables": [
+          {
+            "table_id": "reference_gene_panel",
+            "target_row_count": 250,
+            "description": "ClinVar and ACMG actionable biomarker panel"
+          },
+          {
+            "table_id": "standard_lab_ranges",
+            "target_row_count": 150,
+            "description": "Standard adult physiological laboratory reference ranges"
+          }
+        ]
+      }
+    ]
+  },
+  "billing_configuration": {
+    "billing_account_id": "017F5D-25BB78-C82332",
+    "billing_source_project_id": "majestic-energy-353306",
+    "billing_dataset_id": "billing",
+    "billing_export_table": "gcp_billing_export_v1",
+    "authorized_view_name": "view_billing_export"
+  },
+  "institutes": [
+    {
+      "institute_id": "inst-mskcc",
+      "name": "Memorial Sloan Kettering Research Institute",
+      "contact_email": "admin@mskcc-research.org",
+      "country": "USA"
+    },
+    {
+      "institute_id": "inst-broad",
+      "name": "Broad Institute of MIT and Harvard",
+      "contact_email": "compliance@broadinstitute.org",
+      "country": "USA"
+    },
+    {
+      "institute_id": "inst-hopkins",
+      "name": "Johns Hopkins Medicine Health Systems",
+      "contact_email": "irb@jhmi.edu",
+      "country": "USA"
+    },
+    {
+      "institute_id": "inst-oxford",
+      "name": "Oxford University Biomedical Research Centre",
+      "contact_email": "data-access@ox.ac.uk",
+      "country": "GBR"
+    }
+  ],
+  "research_rooms": [
+    {
+      "room_id": "rr-oncology-01",
+      "room_name": "Immuno-Oncology Biomarker Study",
+      "institute_id": "inst-mskcc",
+      "spoke_project_id": "gcp-rr-spoke-oncology-01",
+      "status": "ACTIVE",
+      "helsinki_expiry_date": "2027-10-15",
+      "dua_expiry_date": "2028-04-30",
+      "inbound_bucket": "gs://rr-oncology-01-inbound",
+      "export_bucket": "gs://rr-oncology-01-export",
+      "cloud_identity_group": "tre-onco-researchers@liatsabag.altostrat.com",
+      "shared_dataset_subscriptions": [
+        "hub_shared_clinical",
+        "hub_shared_reference"
+      ],
+      "researchers": [
+        {
+          "researcher_id": "res-onc-01",
+          "first_name": "Oren",
+          "last_name": "Katz",
+          "primary_email": "dr.oren.katz@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Principal Investigator",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Oncology"
+        },
+        {
+          "researcher_id": "res-onc-02",
+          "first_name": "Miriam",
+          "last_name": "Levy",
+          "primary_email": "prof.miriam.levy@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Oncologist",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Oncology"
+        }
+      ],
+      "local_dataset": {
+        "dataset_id": "spoke_local_oncology",
+        "tables": [
+          {
+            "table_id": "patient_cohort",
+            "target_row_count": 650
+          },
+          {
+            "table_id": "tumor_markers",
+            "target_row_count": 1000
+          },
+          {
+            "table_id": "treatment_outcomes",
+            "target_row_count": 450
+          },
+          {
+            "table_id": "immunotherapy_response",
+            "target_row_count": 300
+          }
+        ]
+      },
+      "notebooks": [
+        {
+          "filename": "01_exploratory_cohort_analysis.ipynb",
+          "title": "Oncology Cohort Exploration & Kaplan-Meier Prep"
+        },
+        {
+          "filename": "02_statistical_risk_model.ipynb",
+          "title": "Immune Checkpoint Biomarker Predictive Model"
+        }
+      ],
+      "inbound_files": [
+        {
+          "filename": "baseline_demographics.csv",
+          "rows": 650,
+          "description": "De-identified oncology cohort demographics"
+        },
+        {
+          "filename": "lab_observations.csv",
+          "rows": 800,
+          "description": "Pre-treatment serum and immune markers"
+        },
+        {
+          "filename": "tumor_panel_mutations.csv",
+          "rows": 400,
+          "description": "Targeted next-gen sequencing panel results"
+        },
+        {
+          "filename": "treatment_history.csv",
+          "rows": 500,
+          "description": "Prior chemotherapy and radiation regiments"
+        }
+      ],
+      "quarantine_candidates": [
+        {
+          "filename": "candidate_survival_summary.csv",
+          "has_pii": false,
+          "has_small_cell_count": true,
+          "small_cell_columns": [
+            "rare_mutation_subgroup_count"
+          ],
+          "description": "Aggregated overall survival table with subgroup cells having n=3 (k < 5 risk)"
+        }
+      ]
+    },
+    {
+      "room_id": "rr-genomics-02",
+      "room_name": "Rare Disease Whole-Genome Sequencing",
+      "institute_id": "inst-broad",
+      "spoke_project_id": "gcp-rr-spoke-genomics-02",
+      "status": "ACTIVE",
+      "helsinki_expiry_date": "2027-11-20",
+      "dua_expiry_date": "2028-06-15",
+      "inbound_bucket": "gs://rr-genomics-02-inbound",
+      "export_bucket": "gs://rr-genomics-02-export",
+      "cloud_identity_group": "tre-genom-researchers@liatsabag.altostrat.com",
+      "shared_dataset_subscriptions": [
+        "hub_shared_clinical",
+        "hub_shared_reference"
+      ],
+      "researchers": [
+        {
+          "researcher_id": "res-gen-01",
+          "first_name": "Eitan",
+          "last_name": "Rosen",
+          "primary_email": "dr.eitan.rosen@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Genomics Lead",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Genomics"
+        },
+        {
+          "researcher_id": "res-gen-02",
+          "first_name": "Anat",
+          "last_name": "Shapiro",
+          "primary_email": "prof.anat.shapiro@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Computational Geneticist",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Genomics"
+        }
+      ],
+      "local_dataset": {
+        "dataset_id": "spoke_local_genomics",
+        "tables": [
+          {
+            "table_id": "variant_calls",
+            "target_row_count": 1000
+          },
+          {
+            "table_id": "sample_manifests",
+            "target_row_count": 200
+          },
+          {
+            "table_id": "phenotype_mapping",
+            "target_row_count": 500
+          }
+        ]
+      },
+      "notebooks": [
+        {
+          "filename": "01_variant_qc_and_filtering.ipynb",
+          "title": "Whole Genome VCF Quality Control & Allele Frequency"
+        },
+        {
+          "filename": "02_pathogenicity_clustering.ipynb",
+          "title": "ACMG Classification & Rare Disease Variant Clustering"
+        }
+      ],
+      "inbound_files": [
+        {
+          "filename": "sample_metadata.csv",
+          "rows": 200,
+          "description": "Pedigree manifests and sequencing quality metrics"
+        },
+        {
+          "filename": "pathogenic_variants.csv",
+          "rows": 750,
+          "description": "Curated pathogenic and likely-pathogenic variants"
+        },
+        {
+          "filename": "phenotype_hpo_terms.csv",
+          "rows": 500,
+          "description": "Human Phenotype Ontology (HPO) mapped symptoms"
+        }
+      ],
+      "quarantine_candidates": [
+        {
+          "filename": "rare_variant_frequency_report.csv",
+          "has_pii": false,
+          "has_small_cell_count": false,
+          "description": "Safe aggregated allele frequency cohort report"
+        }
+      ]
+    },
+    {
+      "room_id": "rr-cardio-03",
+      "room_name": "Cardiovascular Risk Prediction Cohort",
+      "institute_id": "inst-hopkins",
+      "spoke_project_id": "gcp-rr-spoke-cardio-03",
+      "status": "ACTIVE",
+      "helsinki_expiry_date": "2027-11-01",
+      "dua_expiry_date": "2028-01-10",
+      "inbound_bucket": "gs://rr-cardio-03-inbound",
+      "export_bucket": "gs://rr-cardio-03-export",
+      "cloud_identity_group": "tre-cardio-researchers@liatsabag.altostrat.com",
+      "shared_dataset_subscriptions": [
+        "hub_shared_clinical",
+        "hub_shared_reference"
+      ],
+      "researchers": [
+        {
+          "researcher_id": "res-card-01",
+          "first_name": "Maya",
+          "last_name": "Lin",
+          "primary_email": "dr.maya.lin@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Cardiology Lead",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Cardio"
+        },
+        {
+          "researcher_id": "res-card-02",
+          "first_name": "Daniel",
+          "last_name": "Cohen",
+          "primary_email": "dr.daniel.cohen@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Epidemiologist",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Cardio"
+        }
+      ],
+      "local_dataset": {
+        "dataset_id": "spoke_local_cardio",
+        "tables": [
+          {
+            "table_id": "ecg_telemetry_metrics",
+            "target_row_count": 800
+          },
+          {
+            "table_id": "lipid_profiles",
+            "target_row_count": 600
+          },
+          {
+            "table_id": "patient_registry",
+            "target_row_count": 400
+          },
+          {
+            "table_id": "cardiac_events",
+            "target_row_count": 250
+          }
+        ]
+      },
+      "notebooks": [
+        {
+          "filename": "01_telemetry_feature_extraction.ipynb",
+          "title": "ECG Telemetry Time-Series & QTc Interval Analysis"
+        },
+        {
+          "filename": "02_framingham_risk_model.ipynb",
+          "title": "Multivariable Logistic Regression for 10-Year MACE Risk"
+        }
+      ],
+      "inbound_files": [
+        {
+          "filename": "cardiac_registry.csv",
+          "rows": 400,
+          "description": "Longitudinal cardiovascular patient registry"
+        },
+        {
+          "filename": "lipid_telemetry.csv",
+          "rows": 600,
+          "description": "Fasting lipid panels and hs-CRP measurements"
+        },
+        {
+          "filename": "ecg_waveform_features.csv",
+          "rows": 800,
+          "description": "Extracted morphological ECG parameters"
+        }
+      ],
+      "quarantine_candidates": [
+        {
+          "filename": "mace_prediction_findings.csv",
+          "has_pii": true,
+          "has_small_cell_count": true,
+          "pii_columns": [
+            "subject_mrn",
+            "physician_notes"
+          ],
+          "small_cell_columns": [
+            "incident_stroke_count"
+          ],
+          "description": "Model validation output containing unmasked patient MRN and small cell count (n=2)"
+        }
+      ]
+    },
+    {
+      "room_id": "rr-neurology-04",
+      "room_name": "Neurodegenerative Imaging & Clinical Trial",
+      "institute_id": "inst-oxford",
+      "spoke_project_id": "gcp-rr-spoke-neurology-04",
+      "status": "ACTIVE",
+      "helsinki_expiry_date": "2027-02-28",
+      "dua_expiry_date": "2027-08-30",
+      "inbound_bucket": "gs://rr-neurology-04-inbound",
+      "export_bucket": "gs://rr-neurology-04-export",
+      "cloud_identity_group": "tre-neuro-researchers@liatsabag.altostrat.com",
+      "shared_dataset_subscriptions": [
+        "hub_shared_clinical",
+        "hub_shared_reference"
+      ],
+      "researchers": [
+        {
+          "researcher_id": "res-neur-01",
+          "first_name": "Noa",
+          "last_name": "Shapira",
+          "primary_email": "dr.noa.shapira@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Neuroimaging Specialist",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Neurology"
+        },
+        {
+          "researcher_id": "res-neur-02",
+          "first_name": "Rami",
+          "last_name": "Friedman",
+          "primary_email": "dr.rami.friedman@liatsabag.altostrat.com",
+          "create_cloud_identity_user": true,
+          "role": "Cognitive Neurologist",
+          "access_state": "ACTIVE",
+          "org_unit_path": "/Researchers/Neurology"
+        }
+      ],
+      "local_dataset": {
+        "dataset_id": "spoke_local_neurology",
+        "tables": [
+          {
+            "table_id": "cognitive_assessments",
+            "target_row_count": 550
+          },
+          {
+            "table_id": "mri_volumetric_features",
+            "target_row_count": 350
+          },
+          {
+            "table_id": "clinical_trial_registry",
+            "target_row_count": 200
+          }
+        ]
+      },
+      "notebooks": [
+        {
+          "filename": "01_volumetric_mri_analysis.ipynb",
+          "title": "Hippocampal Volume Loss vs MMSE Trajectory"
+        },
+        {
+          "filename": "02_biomarker_correlation.ipynb",
+          "title": "Amyloid Beta & Tau PET SUVr Biomarker Correlation"
+        }
+      ],
+      "inbound_files": [
+        {
+          "filename": "cognitive_scores.csv",
+          "rows": 550,
+          "description": "MMSE and ADAS-Cog longitudinal scores"
+        },
+        {
+          "filename": "mri_cortical_thickness.csv",
+          "rows": 350,
+          "description": "FreeSurfer cortical parcellation metrics"
+        },
+        {
+          "filename": "csf_biomarkers.csv",
+          "rows": 200,
+          "description": "CSF Abeta42 and p-tau181 concentrations"
+        }
+      ],
+      "quarantine_candidates": [
+        {
+          "filename": "trial_phase2_endpoints.csv",
+          "has_pii": false,
+          "has_small_cell_count": false,
+          "description": "Clean aggregate trial outcome metrics ready for DPO approval"
+        }
+      ]
+    }
+  ],
+  "room_requests": [
+    {
+      "request_id": "req-immunology-05",
+      "proposed_room_id": "rr-immunology-05",
+      "room_name": "Immunology Research Room",
+      "institute_id": "inst-mskcc",
+      "requested_by": "dr.chen@liatsabag.altostrat.com",
+      "main_researcher": "Dr. Wei Chen, PhD",
+      "purpose_of_research": "Investigate novel autoimmune biomarkers, cytokine profiling, and targeted biological therapeutics for rheumatoid arthritis.",
+      "location": "New York, USA (MSKCC)",
+      "expected_funds_usd": 450000.0,
+      "expected_time_range": "2026-11-01 to 2028-10-31 (24 months)",
+      "document_folder_uri": "gs://gcp-rr-hub-approvals/rr-immunology-05/",
+      "status": "PENDING_SCAN",
+      "gate_decision": "GATE_BLOCKED",
+      "missing_items": ["Data_Transfer"],
+      "expired_items": [],
+      "warning_items": [],
+      "summary_reason": "Statutory Data Transfer Committee Sign-Off document is missing from folder."
+    },
+    {
+      "request_id": "req-pediatrics-06",
+      "proposed_room_id": "rr-pediatrics-06",
+      "room_name": "Pediatrics Research Room",
+      "institute_id": "inst-broad",
+      "requested_by": "dr.vance@liatsabag.altostrat.com",
+      "main_researcher": "Dr. Sarah Vance, MD",
+      "purpose_of_research": "Longitudinal pediatric genomic screening and rare genetic metabolic disorder therapeutic response tracking.",
+      "location": "Cambridge, MA, USA (Broad Institute)",
+      "expected_funds_usd": 620000.0,
+      "expected_time_range": "2026-10-15 to 2029-04-30 (30 months)",
+      "document_folder_uri": "gs://gcp-rr-hub-approvals/rr-pediatrics-06/",
+      "status": "PENDING_SCAN",
+      "gate_decision": "GATE_BLOCKED",
+      "missing_items": [],
+      "expired_items": ["Helsinki_IRB"],
+      "warning_items": [],
+      "summary_reason": "Helsinki Ethics Committee / IRB Approval certificate expired on 2026-06-30."
+    }
+  ],
+  "admin_domain": "liatsabag.altostrat.com"
+}

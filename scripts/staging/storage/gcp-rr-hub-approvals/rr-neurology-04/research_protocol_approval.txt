@@ -1,0 +1,20 @@
+================================================================================
+GCP HEALTH DATA PLATFORM - SCIENTIFIC RESEARCH PROTOCOL APPROVAL
+================================================================================
+Room Identifier: rr-neurology-04
+Study Title: Neurodegenerative Biomarkers and Cognitive Trajectories
+Protocol Reference: NEUR-2025-303
+Item Type: Research_Protocol
+Item Name: Scientific Research Protocol Sign-Off
+
+STATUS: APPROVED
+Approval Date: 2025-02-01
+Expiration Date: 2027-08-30
+Approving Body: Institutional Scientific Oversight Committee
+Approver Name: Prof. M. Stern, Neurological Research Center
+
+TERMS OF RESEARCH:
+1. The research team is authorized to perform computational analysis on cohort data.
+2. Direct raw data egress is prohibited. All analytical outputs must undergo automated quarantine review.
+3. Protocol revisions require formal addenda submission.
+================================================================================

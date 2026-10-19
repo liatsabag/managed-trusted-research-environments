@@ -1,0 +1,42 @@
+[
+  {
+    "request_id": "req-immunology-05",
+    "proposed_room_id": "rr-immunology-05",
+    "room_name": "Immunology Research Room",
+    "institute_id": "inst-mskcc",
+    "requested_by": "dr.chen@liatsabag.altostrat.com",
+    "main_researcher": "Dr. Wei Chen, PhD",
+    "purpose_of_research": "Investigate novel autoimmune biomarkers, cytokine profiling, and targeted biological therapeutics for rheumatoid arthritis.",
+    "location": "New York, USA (MSKCC)",
+    "expected_funds_usd": 450000.0,
+    "budget_limit_usd": 450000.0,
+    "expected_time_range": "2026-11-01 to 2028-10-31 (24 months)",
+    "document_folder_uri": "gs://gcp-rr-hub-approvals/rr-immunology-05/",
+    "status": "PENDING_SCAN",
+    "gate_decision": "GATE_BLOCKED",
+    "missing_items": "[\"Data_Transfer\"]",
+    "expired_items": "[]",
+    "warning_items": "[]",
+    "summary_reason": "Statutory Data Transfer Committee Sign-Off document is missing from folder."
+  },
+  {
+    "request_id": "req-pediatrics-06",
+    "proposed_room_id": "rr-pediatrics-06",
+    "room_name": "Pediatrics Research Room",
+    "institute_id": "inst-broad",
+    "requested_by": "dr.vance@liatsabag.altostrat.com",
+    "main_researcher": "Dr. Sarah Vance, MD",
+    "purpose_of_research": "Longitudinal pediatric genomic screening and rare genetic metabolic disorder therapeutic response tracking.",
+    "location": "Cambridge, MA, USA (Broad Institute)",
+    "expected_funds_usd": 620000.0,
+    "budget_limit_usd": 620000.0,
+    "expected_time_range": "2026-10-15 to 2029-04-30 (30 months)",
+    "document_folder_uri": "gs://gcp-rr-hub-approvals/rr-pediatrics-06/",
+    "status": "PENDING_SCAN",
+    "gate_decision": "GATE_BLOCKED",
+    "missing_items": "[]",
+    "expired_items": "[\"Helsinki_IRB\"]",
+    "warning_items": "[]",
+    "summary_reason": "Helsinki Ethics Committee / IRB Approval certificate expired on 2026-06-30."
+  }
+]

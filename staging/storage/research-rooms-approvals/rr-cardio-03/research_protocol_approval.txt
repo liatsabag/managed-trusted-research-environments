@@ -1,0 +1,20 @@
+================================================================================
+GCP HEALTH DATA PLATFORM - SCIENTIFIC RESEARCH PROTOCOL APPROVAL
+================================================================================
+Room Identifier: rr-cardio-03
+Study Title: Cardiovascular Risk Stratification & MACE Cohort
+Protocol Reference: CARD-2024-512
+Item Type: Research_Protocol
+Item Name: Scientific Research Protocol Sign-Off
+
+STATUS: APPROVED
+Approval Date: 2024-11-01
+Expiration Date: 2027-11-01
+Approving Body: Institutional Scientific Oversight Committee
+Approver Name: Prof. A. Goldstein, Cardiology Board
+
+TERMS OF RESEARCH:
+1. The research team is authorized to perform computational analysis on cohort data.
+2. Direct raw data egress is prohibited. All analytical outputs must undergo automated quarantine review.
+3. Protocol revisions require formal addenda submission.
+================================================================================

@@ -1,0 +1,19 @@
+================================================================================
+DE-IDENTIFICATION & EXTRACTION QUERY PROTOCOL SPECIFICATION
+================================================================================
+Room Identifier: rr-cardiology-02
+Study Title: Cardiovascular Risk Stratification & MACE Cohort
+Query Protocol ID: EXT-CARD-2024-05
+Item Type: Extraction_Protocol
+Item Name: De-identification and Extraction Query Protocol
+
+STATUS: APPROVED
+Approval Date: 2024-11-01
+Expiration Date: 2027-11-01
+Review Authority: Security & Data Privacy Review Board
+Privacy Officer: Eng. Tamar Cohen, CISO & Privacy Officer
+
+EXTRACTION CRITERIA:
+1. Direct identifiers (Name, MRN, National ID, Phone) stripped prior to ingestion.
+2. Minimum k-anonymity threshold enforced (k >= 5) on exported summary strata.
+================================================================================

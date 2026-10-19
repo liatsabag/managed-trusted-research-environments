@@ -1,0 +1,26 @@
+[
+  {
+    "institute_id": "inst-mskcc",
+    "name": "Memorial Sloan Kettering Research Institute",
+    "contact_email": "admin@mskcc-research.org",
+    "country": "USA"
+  },
+  {
+    "institute_id": "inst-broad",
+    "name": "Broad Institute of MIT and Harvard",
+    "contact_email": "compliance@broadinstitute.org",
+    "country": "USA"
+  },
+  {
+    "institute_id": "inst-hopkins",
+    "name": "Johns Hopkins Medicine Health Systems",
+    "contact_email": "irb@jhmi.edu",
+    "country": "USA"
+  },
+  {
+    "institute_id": "inst-oxford",
+    "name": "Oxford University Biomedical Research Centre",
+    "contact_email": "data-access@ox.ac.uk",
+    "country": "GBR"
+  }
+]

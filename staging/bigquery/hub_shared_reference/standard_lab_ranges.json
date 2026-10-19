@@ -1,0 +1,1502 @@
+[
+  {
+    "test_code": "WBC_1",
+    "test_name": "White Blood Cells Panel Variant 1",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_2",
+    "test_name": "Red Blood Cells Panel Variant 2",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_3",
+    "test_name": "Platelets Panel Variant 3",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_4",
+    "test_name": "Alanine Aminotransferase Panel Variant 4",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_5",
+    "test_name": "Creatinine Panel Variant 5",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_6",
+    "test_name": "C-Reactive Protein Panel Variant 6",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_7",
+    "test_name": "Fasting Glucose Panel Variant 7",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_8",
+    "test_name": "White Blood Cells Panel Variant 8",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_9",
+    "test_name": "Red Blood Cells Panel Variant 9",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_10",
+    "test_name": "Platelets Panel Variant 10",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_11",
+    "test_name": "Alanine Aminotransferase Panel Variant 11",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_12",
+    "test_name": "Creatinine Panel Variant 12",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_13",
+    "test_name": "C-Reactive Protein Panel Variant 13",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_14",
+    "test_name": "Fasting Glucose Panel Variant 14",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_15",
+    "test_name": "White Blood Cells Panel Variant 15",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_16",
+    "test_name": "Red Blood Cells Panel Variant 16",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_17",
+    "test_name": "Platelets Panel Variant 17",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_18",
+    "test_name": "Alanine Aminotransferase Panel Variant 18",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_19",
+    "test_name": "Creatinine Panel Variant 19",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_20",
+    "test_name": "C-Reactive Protein Panel Variant 20",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_21",
+    "test_name": "Fasting Glucose Panel Variant 21",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_22",
+    "test_name": "White Blood Cells Panel Variant 22",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_23",
+    "test_name": "Red Blood Cells Panel Variant 23",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_24",
+    "test_name": "Platelets Panel Variant 24",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_25",
+    "test_name": "Alanine Aminotransferase Panel Variant 25",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_26",
+    "test_name": "Creatinine Panel Variant 26",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_27",
+    "test_name": "C-Reactive Protein Panel Variant 27",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_28",
+    "test_name": "Fasting Glucose Panel Variant 28",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_29",
+    "test_name": "White Blood Cells Panel Variant 29",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_30",
+    "test_name": "Red Blood Cells Panel Variant 30",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_31",
+    "test_name": "Platelets Panel Variant 31",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_32",
+    "test_name": "Alanine Aminotransferase Panel Variant 32",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_33",
+    "test_name": "Creatinine Panel Variant 33",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_34",
+    "test_name": "C-Reactive Protein Panel Variant 34",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_35",
+    "test_name": "Fasting Glucose Panel Variant 35",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_36",
+    "test_name": "White Blood Cells Panel Variant 36",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_37",
+    "test_name": "Red Blood Cells Panel Variant 37",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_38",
+    "test_name": "Platelets Panel Variant 38",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_39",
+    "test_name": "Alanine Aminotransferase Panel Variant 39",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_40",
+    "test_name": "Creatinine Panel Variant 40",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_41",
+    "test_name": "C-Reactive Protein Panel Variant 41",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_42",
+    "test_name": "Fasting Glucose Panel Variant 42",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_43",
+    "test_name": "White Blood Cells Panel Variant 43",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_44",
+    "test_name": "Red Blood Cells Panel Variant 44",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_45",
+    "test_name": "Platelets Panel Variant 45",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_46",
+    "test_name": "Alanine Aminotransferase Panel Variant 46",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_47",
+    "test_name": "Creatinine Panel Variant 47",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_48",
+    "test_name": "C-Reactive Protein Panel Variant 48",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_49",
+    "test_name": "Fasting Glucose Panel Variant 49",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_50",
+    "test_name": "White Blood Cells Panel Variant 50",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_51",
+    "test_name": "Red Blood Cells Panel Variant 51",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_52",
+    "test_name": "Platelets Panel Variant 52",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_53",
+    "test_name": "Alanine Aminotransferase Panel Variant 53",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_54",
+    "test_name": "Creatinine Panel Variant 54",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_55",
+    "test_name": "C-Reactive Protein Panel Variant 55",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_56",
+    "test_name": "Fasting Glucose Panel Variant 56",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_57",
+    "test_name": "White Blood Cells Panel Variant 57",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_58",
+    "test_name": "Red Blood Cells Panel Variant 58",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_59",
+    "test_name": "Platelets Panel Variant 59",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_60",
+    "test_name": "Alanine Aminotransferase Panel Variant 60",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_61",
+    "test_name": "Creatinine Panel Variant 61",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_62",
+    "test_name": "C-Reactive Protein Panel Variant 62",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_63",
+    "test_name": "Fasting Glucose Panel Variant 63",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_64",
+    "test_name": "White Blood Cells Panel Variant 64",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_65",
+    "test_name": "Red Blood Cells Panel Variant 65",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_66",
+    "test_name": "Platelets Panel Variant 66",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_67",
+    "test_name": "Alanine Aminotransferase Panel Variant 67",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_68",
+    "test_name": "Creatinine Panel Variant 68",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_69",
+    "test_name": "C-Reactive Protein Panel Variant 69",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_70",
+    "test_name": "Fasting Glucose Panel Variant 70",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_71",
+    "test_name": "White Blood Cells Panel Variant 71",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_72",
+    "test_name": "Red Blood Cells Panel Variant 72",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_73",
+    "test_name": "Platelets Panel Variant 73",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_74",
+    "test_name": "Alanine Aminotransferase Panel Variant 74",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_75",
+    "test_name": "Creatinine Panel Variant 75",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_76",
+    "test_name": "C-Reactive Protein Panel Variant 76",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_77",
+    "test_name": "Fasting Glucose Panel Variant 77",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_78",
+    "test_name": "White Blood Cells Panel Variant 78",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_79",
+    "test_name": "Red Blood Cells Panel Variant 79",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_80",
+    "test_name": "Platelets Panel Variant 80",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_81",
+    "test_name": "Alanine Aminotransferase Panel Variant 81",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_82",
+    "test_name": "Creatinine Panel Variant 82",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_83",
+    "test_name": "C-Reactive Protein Panel Variant 83",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_84",
+    "test_name": "Fasting Glucose Panel Variant 84",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_85",
+    "test_name": "White Blood Cells Panel Variant 85",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_86",
+    "test_name": "Red Blood Cells Panel Variant 86",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_87",
+    "test_name": "Platelets Panel Variant 87",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_88",
+    "test_name": "Alanine Aminotransferase Panel Variant 88",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_89",
+    "test_name": "Creatinine Panel Variant 89",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_90",
+    "test_name": "C-Reactive Protein Panel Variant 90",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_91",
+    "test_name": "Fasting Glucose Panel Variant 91",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_92",
+    "test_name": "White Blood Cells Panel Variant 92",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_93",
+    "test_name": "Red Blood Cells Panel Variant 93",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_94",
+    "test_name": "Platelets Panel Variant 94",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_95",
+    "test_name": "Alanine Aminotransferase Panel Variant 95",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_96",
+    "test_name": "Creatinine Panel Variant 96",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_97",
+    "test_name": "C-Reactive Protein Panel Variant 97",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_98",
+    "test_name": "Fasting Glucose Panel Variant 98",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_99",
+    "test_name": "White Blood Cells Panel Variant 99",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_100",
+    "test_name": "Red Blood Cells Panel Variant 100",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_101",
+    "test_name": "Platelets Panel Variant 101",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_102",
+    "test_name": "Alanine Aminotransferase Panel Variant 102",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_103",
+    "test_name": "Creatinine Panel Variant 103",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_104",
+    "test_name": "C-Reactive Protein Panel Variant 104",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_105",
+    "test_name": "Fasting Glucose Panel Variant 105",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_106",
+    "test_name": "White Blood Cells Panel Variant 106",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_107",
+    "test_name": "Red Blood Cells Panel Variant 107",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_108",
+    "test_name": "Platelets Panel Variant 108",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_109",
+    "test_name": "Alanine Aminotransferase Panel Variant 109",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_110",
+    "test_name": "Creatinine Panel Variant 110",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_111",
+    "test_name": "C-Reactive Protein Panel Variant 111",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_112",
+    "test_name": "Fasting Glucose Panel Variant 112",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_113",
+    "test_name": "White Blood Cells Panel Variant 113",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_114",
+    "test_name": "Red Blood Cells Panel Variant 114",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_115",
+    "test_name": "Platelets Panel Variant 115",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_116",
+    "test_name": "Alanine Aminotransferase Panel Variant 116",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_117",
+    "test_name": "Creatinine Panel Variant 117",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_118",
+    "test_name": "C-Reactive Protein Panel Variant 118",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_119",
+    "test_name": "Fasting Glucose Panel Variant 119",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_120",
+    "test_name": "White Blood Cells Panel Variant 120",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_121",
+    "test_name": "Red Blood Cells Panel Variant 121",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_122",
+    "test_name": "Platelets Panel Variant 122",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_123",
+    "test_name": "Alanine Aminotransferase Panel Variant 123",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_124",
+    "test_name": "Creatinine Panel Variant 124",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_125",
+    "test_name": "C-Reactive Protein Panel Variant 125",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_126",
+    "test_name": "Fasting Glucose Panel Variant 126",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_127",
+    "test_name": "White Blood Cells Panel Variant 127",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_128",
+    "test_name": "Red Blood Cells Panel Variant 128",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_129",
+    "test_name": "Platelets Panel Variant 129",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_130",
+    "test_name": "Alanine Aminotransferase Panel Variant 130",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_131",
+    "test_name": "Creatinine Panel Variant 131",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_132",
+    "test_name": "C-Reactive Protein Panel Variant 132",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_133",
+    "test_name": "Fasting Glucose Panel Variant 133",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_134",
+    "test_name": "White Blood Cells Panel Variant 134",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_135",
+    "test_name": "Red Blood Cells Panel Variant 135",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_136",
+    "test_name": "Platelets Panel Variant 136",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_137",
+    "test_name": "Alanine Aminotransferase Panel Variant 137",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_138",
+    "test_name": "Creatinine Panel Variant 138",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_139",
+    "test_name": "C-Reactive Protein Panel Variant 139",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_140",
+    "test_name": "Fasting Glucose Panel Variant 140",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_141",
+    "test_name": "White Blood Cells Panel Variant 141",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_142",
+    "test_name": "Red Blood Cells Panel Variant 142",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_143",
+    "test_name": "Platelets Panel Variant 143",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "ALT_144",
+    "test_name": "Alanine Aminotransferase Panel Variant 144",
+    "specimen_type": "Serum",
+    "low_normal_val": 7.0,
+    "high_normal_val": 56.0,
+    "unit_of_measure": "U/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CREAT_145",
+    "test_name": "Creatinine Panel Variant 145",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.7,
+    "high_normal_val": 1.3,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "CRP_146",
+    "test_name": "C-Reactive Protein Panel Variant 146",
+    "specimen_type": "Serum",
+    "low_normal_val": 0.0,
+    "high_normal_val": 3.0,
+    "unit_of_measure": "mg/L",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "GLUC_147",
+    "test_name": "Fasting Glucose Panel Variant 147",
+    "specimen_type": "Plasma",
+    "low_normal_val": 70.0,
+    "high_normal_val": 99.0,
+    "unit_of_measure": "mg/dL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "WBC_148",
+    "test_name": "White Blood Cells Panel Variant 148",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.5,
+    "high_normal_val": 11.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "RBC_149",
+    "test_name": "Red Blood Cells Panel Variant 149",
+    "specimen_type": "Blood",
+    "low_normal_val": 4.2,
+    "high_normal_val": 5.9,
+    "unit_of_measure": "10^6/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  },
+  {
+    "test_code": "PLT_150",
+    "test_name": "Platelets Panel Variant 150",
+    "specimen_type": "Blood",
+    "low_normal_val": 150.0,
+    "high_normal_val": 450.0,
+    "unit_of_measure": "10^3/uL",
+    "age_group": "ADULT",
+    "sex": "ALL"
+  }
+]

@@ -1,0 +1,19 @@
+================================================================================
+DE-IDENTIFICATION & EXTRACTION QUERY PROTOCOL SPECIFICATION
+================================================================================
+Room Identifier: rr-pediatrics-06
+Study Title: Pediatric Rare Disorders Longitudinal Study
+Query Protocol ID: EXT-PED-2024-04
+Item Type: Extraction_Protocol
+Item Name: De-identification and Extraction Query Protocol
+
+STATUS: APPROVED
+Approval Date: 2024-01-15
+Expiration Date: 2027-12-31
+Review Authority: Security & Data Privacy Review Board
+Privacy Officer: Eng. Tamar Cohen, CISO & Privacy Officer
+
+EXTRACTION CRITERIA:
+1. Direct identifiers (Name, MRN, National ID, Phone) stripped prior to ingestion.
+2. Minimum k-anonymity threshold enforced (k >= 5) on exported summary strata.
+================================================================================

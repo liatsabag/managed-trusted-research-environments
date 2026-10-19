@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCP Health Data Platform — Trusted Research Environment (TRE)</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .slide {
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .slide.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between p-3 sm:p-6 select-none">
+
+  <!-- Top Global Navigation Bar -->
+  <header class="max-w-7xl mx-auto w-full flex items-center justify-between py-3 px-4 glass-card rounded-2xl mb-4 border border-slate-200">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold shadow-md shadow-blue-500/20">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center space-x-2">
+          <span class="font-extrabold text-slate-900 tracking-tight text-base sm:text-lg">Google Cloud TRE</span>
+          <span class="pill-badge bg-blue-50 text-blue-700 border border-blue-200/60">Executive Deck</span>
+        </div>
+        <p class="text-xs text-slate-500 font-medium hidden sm:block">Multi-Tenant Trusted Research Environment & FinOps Governance Platform</p>
+      </div>
+    </div>
+
+    <!-- Slide Indicators & Controls -->
+    <div class="flex items-center space-x-2 sm:space-x-4">
+      <div class="hidden md:flex items-center space-x-1" id="dotsContainer">
+        <!-- Dots injected via JS -->
+      </div>
+      <div class="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg border border-slate-200" id="slideCounter">
+        Slide 1 / 7
+      </div>
+      <div class="flex space-x-1">
+        <button onclick="prevSlide()" id="prevBtn" class="p-2 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm transition disabled:opacity-30 disabled:cursor-not-allowed" title="Previous (Left Arrow)">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <button onclick="nextSlide()" id="nextBtn" class="p-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white shadow-sm shadow-blue-500/20 transition disabled:opacity-30 disabled:cursor-not-allowed" title="Next (Right Arrow)">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Slide Presentation Container -->
+  <main class="max-w-7xl mx-auto w-full flex-grow flex items-center justify-center">
+
+    <!-- ==========================================
+         SLIDE 1: Executive Overview & The Centralized TRE Incentive
+         ========================================== -->
+    <div class="slide active w-full" data-slide="1">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <span class="pill-badge bg-indigo-50 text-indigo-700 border border-indigo-200">Slide 1 • Vision & Strategic Value</span>
+          <span class="text-xs font-semibold text-slate-400">Zero-Trust Clinical Research</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              Centralized <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Trusted Research Environment</span> on Google Cloud
+            </h1>
+            <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+              Solving the core healthcare paradox: Empowering multi-institutional clinical researchers with high-throughput <strong>BigQuery</strong>, <strong>Colab Enterprise</strong>, and <strong>Gemini AI</strong>, while enforcing strict <strong>zero-trust statutory ethics, air-lock egress</strong>, and <strong>FinOps cost accountability</strong>.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-1">
+                <div class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center mb-2 font-bold">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">The Hospital Dilemma</h4>
+                <p class="text-xs text-slate-500 leading-normal">Data silos, rogue copy-pasting of patient PHI/PII, fragmented compliance audits, and uncontrolled shadow IT cloud bills.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-white border border-blue-200/80 shadow-sm space-y-1 bg-gradient-to-br from-blue-50/40 to-white">
+                <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-2 font-bold">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h4 class="font-bold text-blue-900 text-sm">The Centralized TRE Solution</h4>
+                <p class="text-xs text-slate-600 leading-normal">A single hub governing isolated spoke rooms with cryptographic boundaries, automated IRB gates, and real-time cost attribution.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-3">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Key Strategic Incentives</h3>
+              <ul class="space-y-3 text-xs sm:text-sm text-slate-700">
+                <li class="flex items-start space-x-2.5">
+                  <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Zero Egress Risk:</strong> Patient datasets never leave VPC Service Controls perimeters without dual-gate AI + DPO clearance.</span>
+                </li>
+                <li class="flex items-start space-x-2.5">
+                  <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>FinOps Accountability:</strong> Direct reconciliation of invoiced spend to individual researchers based on bytes billed and compute.</span>
+                </li>
+                <li class="flex items-start space-x-2.5">
+                  <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Autonomous Gating:</strong> Gemini automatically parses DUA/IRB PDFs and soft-downgrades expired rooms.</span>
+                </li>
+                <li class="flex items-start space-x-2.5">
+                  <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Analytics Hub Sharing:</strong> Share curated cohorts across projects without duplicating petabytes of storage.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900 text-white flex items-center justify-between">
+              <div>
+                <p class="text-[11px] text-slate-400 font-semibold uppercase">Operational Status</p>
+                <p class="text-sm font-bold text-emerald-400">Zero-Drift Financial Balance • Active Fleet</p>
+              </div>
+              <span class="pill-badge bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Live In Me-West1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SLIDE 2: Multi-Environment Governance & Financial Management
+         ========================================== -->
+    <div class="slide w-full" data-slide="2">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <span class="pill-badge bg-blue-50 text-blue-700 border border-blue-200">Slide 2 • Unified Management Plane</span>
+          <span class="text-xs font-semibold text-slate-400">Govern & Financially Manage Heterogeneous Environments</span>
+        </div>
+
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            One Single Platform to <span class="text-blue-600">Govern</span> & <span class="text-emerald-600">Financially Manage</span> Multi-Room Fleets
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Centralized control over decentralized research environments across independent clinical institutes (MSKCC, Broad, Johns Hopkins, Oxford).
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Pillar 1: Multi-Environment Governance -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-extrabold text-slate-900 text-lg">Multi-Environment Governance</h3>
+                <p class="text-xs text-slate-500">Zero-Trust Isolation & Continuous Policy Gating</p>
+              </div>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm text-slate-600">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+                <p class="font-semibold text-slate-900 text-xs mb-1">🛡️ Hub-and-Spoke Project Isolation</p>
+                <p class="text-[12px]">Each research room (Oncology, Genomics, Cardio, Neuro) runs in a distinct GCP project within an isolated VPC subnet without public IPs.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+                <p class="font-semibold text-slate-900 text-xs mb-1">👥 Automated IAM Role Soft-Downgrade</p>
+                <p class="text-[12px]">Dynamic demotion from <code>dataEditor</code> to <code>dataViewer</code> upon ethical permit expiry without destroying existing analyses.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+                <p class="font-semibold text-slate-900 text-xs mb-1">📜 Centralized Audit Trail Hub</p>
+                <p class="text-[12px]">Real-time log routing collects data access, Colab executions, and egress requests into consolidated BigQuery analytical marts.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Financial & FinOps Management -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-extrabold text-slate-900 text-lg">Multi-Tenant FinOps Management</h3>
+                <p class="text-xs text-slate-500">Invoiced Ground Truth & Researcher Attribution</p>
+              </div>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm text-slate-600">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+                <p class="font-semibold text-slate-900 text-xs mb-1">💎 Invoiced Ground-Truth Spending</p>
+                <p class="text-[12px]">Reads official Google Cloud Detailed Billing exports, reconciling actual cloud bills with zero financial drift.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+                <p class="font-semibold text-slate-900 text-xs mb-1">⚖️ Exact Proportional Attribution</p>
+                <p class="text-[12px]">Splits BigQuery costs by <code>total_bytes_billed</code>, Vertex AI by <code>ai_token_count</code>, and Compute by Colab runtime hours.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+                <p class="font-semibold text-slate-900 text-xs mb-1">📊 4-Tier Hierarchical Rollups</p>
+                <p class="text-[12px]">Instant aggregation across Fleet &rarr; Institute &rarr; Research Room &rarr; Individual Researcher &rarr; Shared Admin Overhead.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SLIDE 3: System Architecture & Visual Topology
+         ========================================== -->
+    <div class="slide w-full" data-slide="3">
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <span class="pill-badge bg-blue-50 text-blue-700 border border-blue-200">Slide 3 • System Architecture</span>
+          <span class="text-xs font-semibold text-slate-400">Hub-and-Spoke Topology & Perimeter Isolation</span>
+        </div>
+
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-1">GCP TRE Multi-Project Visual Topology</h2>
+        <p class="text-xs text-slate-600 mb-4">Centralized Governance Hub connected to isolated Spoke Research Rooms bounded by VPC Service Controls.</p>
+
+        <!-- Visual Architecture Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+          
+          <!-- Central Hub Column (5 cols) -->
+          <div class="lg:col-span-5 bg-gradient-to-b from-blue-50/70 to-slate-50 rounded-2xl p-4 border border-blue-200 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="font-extrabold text-sm text-blue-950">Central Hub Project</span>
+              </div>
+              <code class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-bold">gcp-rr-hub-core</code>
+            </div>
+
+            <!-- Cloud Run Serving -->
+            <div class="bg-white rounded-xl p-3 border border-slate-200 shadow-sm space-y-1.5">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Cloud Run (me-west1)</span>
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-slate-800">🖥️ Admin SPA Portal</span>
+                <span class="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Tailwind / Chart.js</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-slate-800">⚙️ FastAPI Backend</span>
+                <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded">REST APIs</span>
+              </div>
+            </div>
+
+            <!-- Orchestration & Automation -->
+            <div class="bg-white rounded-xl p-3 border border-slate-200 shadow-sm space-y-1.5">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Automated Engines</span>
+              <div class="text-xs space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-slate-700">⚡ Cloud Workflows:</span>
+                  <span class="text-[11px] text-slate-600"><code>fleet-governance-cycle</code></span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-slate-700">⏰ BigQuery DTS:</span>
+                  <span class="text-[11px] text-slate-600">15m Curation / 24h FinOps</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- BigQuery Central Marts -->
+            <div class="bg-white rounded-xl p-3 border border-slate-200 shadow-sm space-y-1">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Central Data & AI Marts</span>
+              <div class="grid grid-cols-2 gap-1.5 text-[11px]">
+                <div class="p-1.5 rounded bg-slate-50 font-medium text-slate-700">📁 <code>hub_registry</code></div>
+                <div class="p-1.5 rounded bg-slate-50 font-medium text-slate-700">📊 <code>hub_telemetry</code></div>
+                <div class="p-1.5 rounded bg-slate-50 font-medium text-slate-700">🤖 <code>gemini_flash</code></div>
+                <div class="p-1.5 rounded bg-slate-50 font-medium text-slate-700">📑 <code>obj_approvals</code></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bridge & Communication (1 col / indicator) -->
+          <div class="lg:col-span-1 flex lg:flex-col items-center justify-center gap-2 py-2">
+            <div class="h-0.5 lg:h-full w-full lg:w-0.5 bg-blue-300"></div>
+            <span class="text-[10px] font-extrabold text-blue-700 bg-blue-100 px-2 py-1 rounded-full whitespace-nowrap shadow-sm">VPC-SC</span>
+            <div class="h-0.5 lg:h-full w-full lg:w-0.5 bg-blue-300"></div>
+          </div>
+
+          <!-- Spoke Research Rooms Column (6 cols) -->
+          <div class="lg:col-span-6 bg-slate-100/80 rounded-2xl p-4 border border-slate-300 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                <span class="font-extrabold text-sm text-slate-900">Tenant Spoke Research Rooms</span>
+              </div>
+              <span class="text-[10px] bg-slate-200 text-slate-700 px-2 py-0.5 rounded font-bold">Isolated Subnets</span>
+            </div>
+
+            <!-- Room Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Oncology Room -->
+              <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-xs text-slate-900">🔬 Oncology Room</span>
+                  <code class="text-[10px] text-slate-400">10.10.1.0/24</code>
+                </div>
+                <ul class="text-[11px] text-slate-600 space-y-0.5">
+                  <li>• Governed Colab (e2-standard-4)</li>
+                  <li>• Dual-Bucket Air-Lock (In/Out)</li>
+                  <li>• Linked Shared Clinical Panel</li>
+                </ul>
+              </div>
+
+              <!-- Genomics Room -->
+              <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-xs text-slate-900">🧬 Genomics Room</span>
+                  <code class="text-[10px] text-slate-400">10.10.2.0/24</code>
+                </div>
+                <ul class="text-[11px] text-slate-600 space-y-0.5">
+                  <li>• Governed Colab (n2-highmem-8)</li>
+                  <li>• Dual-Bucket Air-Lock (In/Out)</li>
+                  <li>• Linked Shared Reference Panel</li>
+                </ul>
+              </div>
+
+              <!-- Cardiology Room -->
+              <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-xs text-slate-900">❤️ Cardiology Room</span>
+                  <code class="text-[10px] text-slate-400">10.10.3.0/24</code>
+                </div>
+                <ul class="text-[11px] text-slate-600 space-y-0.5">
+                  <li>• Private VPC & Cloud NAT</li>
+                  <li>• Local Mart: spoke_local_cardio</li>
+                  <li>• Budget Cap: $5,000 USD</li>
+                </ul>
+              </div>
+
+              <!-- Neurology Room -->
+              <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-xs text-slate-900">🧠 Neurology Room</span>
+                  <code class="text-[10px] text-slate-400">10.10.4.0/24</code>
+                </div>
+                <ul class="text-[11px] text-slate-600 space-y-0.5">
+                  <li>• Private VPC & Cloud NAT</li>
+                  <li>• Local Mart: spoke_local_neuro</li>
+                  <li>• Budget Cap: $5,000 USD</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Ingestion Stream Box -->
+            <div class="p-2.5 bg-blue-50/80 rounded-xl border border-blue-200/80 flex items-center justify-between text-xs">
+              <span class="font-semibold text-blue-900">📡 Cloud Logging Sinks & Billing Export Stream</span>
+              <span class="text-[10px] text-blue-700 bg-white px-2 py-0.5 rounded border border-blue-200 font-bold">Auto Ingested to Hub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SLIDE 4: Entity Data Model & Relationships
+         ========================================== -->
+    <div class="slide w-full" data-slide="4">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <span class="pill-badge bg-purple-50 text-purple-700 border border-purple-200">Slide 4 • Domain Model</span>
+          <span class="text-xs font-semibold text-slate-400">Institutes, Researchers, Rooms & Researches</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">Hierarchical Entity Model & Relationships</h2>
+        <p class="text-sm text-slate-600 mb-6">How organizational entities map to Cloud Identity groups, IAM roles, and GCP spoke project infrastructure.</p>
+
+        <!-- Visual Entity Relationship Diagram -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          
+          <!-- 1. Institute -->
+          <div class="p-5 rounded-2xl bg-white border border-purple-200 shadow-sm relative">
+            <span class="absolute -top-3 left-4 px-2 py-0.5 bg-purple-600 text-white text-[10px] font-bold rounded-full">Level 1</span>
+            <div class="mt-1 space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="text-xl">🏛️</span>
+                <h4 class="font-extrabold text-slate-900 text-base">Institutes</h4>
+              </div>
+              <p class="text-xs text-slate-500"><code>reg_institutes</code></p>
+              <div class="text-[11px] text-slate-600 space-y-1 pt-1 border-t border-slate-100">
+                <p>• <strong>Broad Institute</strong></p>
+                <p>• <strong>MSKCC Cancer Center</strong></p>
+                <p>• <strong>Johns Hopkins Hospital</strong></p>
+                <p>• <strong>Oxford Medical Sciences</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Researchers -->
+          <div class="p-5 rounded-2xl bg-white border border-blue-200 shadow-sm relative">
+            <span class="absolute -top-3 left-4 px-2 py-0.5 bg-blue-600 text-white text-[10px] font-bold rounded-full">Level 2</span>
+            <div class="mt-1 space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="text-xl">👩‍⚕️</span>
+                <h4 class="font-extrabold text-slate-900 text-base">Researchers</h4>
+              </div>
+              <p class="text-xs text-slate-500"><code>reg_researchers</code></p>
+              <div class="text-[11px] text-slate-600 space-y-1 pt-1 border-t border-slate-100">
+                <p>• Principal Investigators (PI)</p>
+                <p>• Cloud Identity Group Members</p>
+                <p>• Tracked by Individual Email</p>
+                <p>• Role-Based Access State</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Research Rooms -->
+          <div class="p-5 rounded-2xl bg-white border border-emerald-200 shadow-sm relative">
+            <span class="absolute -top-3 left-4 px-2 py-0.5 bg-emerald-600 text-white text-[10px] font-bold rounded-full">Level 3</span>
+            <div class="mt-1 space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="text-xl">🔬</span>
+                <h4 class="font-extrabold text-slate-900 text-base">Research Rooms</h4>
+              </div>
+              <p class="text-xs text-slate-500"><code>reg_research_rooms</code></p>
+              <div class="text-[11px] text-slate-600 space-y-1 pt-1 border-t border-slate-100">
+                <p>• Dedicated GCP Spoke Project</p>
+                <p>• Dual-Bucket Air-Lock storage</p>
+                <p>• Helsinki & DUA Expiry Dates</p>
+                <p>• Hard Budget Caps ($5,000)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Researches & Artifacts -->
+          <div class="p-5 rounded-2xl bg-white border border-amber-200 shadow-sm relative">
+            <span class="absolute -top-3 left-4 px-2 py-0.5 bg-amber-600 text-white text-[10px] font-bold rounded-full">Level 4</span>
+            <div class="mt-1 space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="text-xl">📑</span>
+                <h4 class="font-extrabold text-slate-900 text-base">Researches / Studies</h4>
+              </div>
+              <p class="text-xs text-slate-500"><code>reg_room_packages</code></p>
+              <div class="text-[11px] text-slate-600 space-y-1 pt-1 border-t border-slate-100">
+                <p>• Managed Colab Notebooks</p>
+                <p>• Derived Feature Tables</p>
+                <p>• Approved Egress Artifacts</p>
+                <p>• Runtime Package Registries</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cardinality Flow Summary -->
+        <div class="p-4 rounded-xl bg-slate-900 text-white text-xs flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-blue-400">1 : N Cardinality:</span>
+            <span>Institutes employ many Researchers &rarr; Researchers collaborate across 1 or more Research Rooms &rarr; Rooms execute multiple Governed Researches.</span>
+          </div>
+          <span class="pill-badge bg-blue-500/20 text-blue-300 border border-blue-400/30">Fully Synchronized in BigQuery</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SLIDE 5: FinOps Pipelines & Usage Telemetry
+         ========================================== -->
+    <div class="slide w-full" data-slide="5">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <span class="pill-badge bg-emerald-50 text-emerald-700 border border-emerald-200">Slide 5 • FinOps Engine & Telemetry</span>
+          <span class="text-xs font-semibold text-slate-400">Two-Tiered Attribution & 15m/24h Pipelines</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+              Two-Tiered FinOps Engine & Proportional Attribution
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Every invoiced dollar from Google Cloud Detailed Billing is apportioned with <strong>zero drift</strong> to researchers using actual usage weights ($W_r$), while system service account spend is captured into Shared Overhead.
+            </p>
+
+            <!-- Formula Table -->
+            <div class="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-slate-50 text-slate-700 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-2.5">Cloud Service</th>
+                    <th class="p-2.5">Telemetry Metric Weight</th>
+                    <th class="p-2.5">Allocation Formula</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-[11px] text-slate-600">
+                  <tr>
+                    <td class="p-2.5 font-semibold text-slate-900">BigQuery SQL</td>
+                    <td class="p-2.5 text-blue-600 font-mono">total_bytes_billed</td>
+                    <td class="p-2.5 font-mono">Cost &times; (Bytes / &Sigma;Bytes)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-semibold text-slate-900">Vertex AI</td>
+                    <td class="p-2.5 text-purple-600 font-mono">ai_token_count</td>
+                    <td class="p-2.5 font-mono">Cost &times; (Tokens / &Sigma;Tokens)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-semibold text-slate-900">Compute / Colab</td>
+                    <td class="p-2.5 text-emerald-600 font-mono">notebook_runtime_hours</td>
+                    <td class="p-2.5 font-mono">Cost &times; (Hours / &Sigma;Hours)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-semibold text-slate-900">Cloud Storage</td>
+                    <td class="p-2.5 text-amber-600 font-mono">storage_bytes</td>
+                    <td class="p-2.5 font-mono">Cost &times; (GCS / &Sigma;GCS)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 text-xs font-semibold text-emerald-800">
+              Zero-Drift Invariant: &Sigma; Total Invoiced &equiv; &Sigma; Researcher Spend + Shared Overhead
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
+              <h3 class="font-extrabold text-slate-900 text-sm flex items-center justify-between">
+                <span>⚡ Automated Telemetry Pipelines</span>
+                <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">BigQuery DTS</span>
+              </h3>
+
+              <div class="space-y-2 text-xs">
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                  <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+                    <span>1. 15-Minute Real-Time Curation Loop</span>
+                    <span class="text-blue-600 font-mono">sp_sync_curated_audit_events</span>
+                  </div>
+                  <p class="text-[11px] text-slate-500">Parses raw audit log sinks, extracts user emails, BigQuery slot-ms, bytes billed, and Colab session bounds (1h-8h cap).</p>
+                </div>
+
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                  <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+                    <span>2. Storage Capacity Footprint Sync</span>
+                    <span class="text-amber-600 font-mono">sync_storage_metrics.py</span>
+                  </div>
+                  <p class="text-[11px] text-slate-500">Hourly worker scans GCS inbound & export buckets (145.77 GB footprint) and attributes byte allocations per researcher folder.</p>
+                </div>
+
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                  <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+                    <span>3. 24-Hour Daily & Monthly Rollup</span>
+                    <span class="text-purple-600 font-mono">sp_aggregate_daily_compute</span>
+                  </div>
+                  <p class="text-[11px] text-slate-500">Compiles unified marts for multi-tenant KPIs, MTD spend forecasts, and historical billing trend reports.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SLIDE 6: AI Compliance Flow & IAM Soft-Downgrade
+         ========================================== -->
+    <div class="slide w-full" data-slide="6">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <span class="pill-badge bg-rose-50 text-rose-700 border border-rose-200">Slide 6 • Autonomous Compliance</span>
+          <span class="text-xs font-semibold text-slate-400">Vertex AI Gemini 3.7 Flash + Automated IAM Demotion</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+              AI-Powered Ethics Gating & Soft-Downgrade
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              No manual checklist chasing. <strong>Vertex AI Gemini</strong> analyzes unstructured legal PDFs (DUAs, Helsinki IRB approvals), and triggers automated policy actions when permits expire.
+            </p>
+
+            <div class="p-4 rounded-xl bg-slate-900 text-white text-xs space-y-2">
+              <p class="font-bold text-rose-300 uppercase tracking-wider text-[10px]">What is a "Soft-Downgrade"?</p>
+              <p class="text-slate-300 leading-normal">
+                Instead of deleting the project or revoking all access, non-compliant rooms are automatically demoted from <strong>dataEditor</strong> to <strong>dataViewer</strong>. Researchers can still inspect their existing code and charts, but all write/execute privileges are frozen.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-3">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="font-bold text-slate-900 text-sm mb-3">The 2-Step Automated Governance Cycle</h3>
+
+              <div class="space-y-3 text-xs">
+                <!-- Step 1 -->
+                <div class="flex items-start space-x-3 p-3 rounded-xl bg-blue-50/60 border border-blue-100">
+                  <div class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xs shrink-0">1</div>
+                  <div>
+                    <h4 class="font-bold text-blue-950">BigQuery ML Object Table AI Scan</h4>
+                    <p class="text-slate-600 text-[11px] mt-0.5">
+                      Cloud Workflows triggers <code>sp_scan_governance()</code>. BigQuery queries <code>obj_approval_documents</code> over GCS PDFs, invoking Gemini 3.7 Flash via remote model connection to extract IRB expiration dates into <code>ops_regulatory_checklist</code>.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start space-x-3 p-3 rounded-xl bg-amber-50/60 border border-amber-100">
+                  <div class="w-6 h-6 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-xs shrink-0">2</div>
+                  <div>
+                    <h4 class="font-bold text-amber-950">Cloud Run IAM Soft-Downgrade Enforcement</h4>
+                    <p class="text-slate-600 text-[11px] mt-0.5">
+                      Workflow calls FastAPI <code>/compliance/enforce</code> via authenticated OIDC. For expired rooms, Cloud Identity groups are instantly demoted (<code>roles/bigquery.dataViewer</code>), updating room status to <code>SOFT_DOWNGRADED</code>.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start space-x-3 p-3 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                  <div class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0">3</div>
+                  <div>
+                    <h4 class="font-bold text-emerald-950">Instant Reactivation on DUA Renewal</h4>
+                    <p class="text-slate-600 text-[11px] mt-0.5">
+                      When legal uploads a renewed IRB/DUA PDF, the next cycle automatically recognizes the new expiration date and restores <code>ACTIVE</code> status with full editor roles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SLIDE 7: Air-Lock Egress DLP & Sensitive Data Extraction
+         ========================================== -->
+    <div class="slide w-full" data-slide="7">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <span class="pill-badge bg-emerald-50 text-emerald-700 border border-emerald-200">Slide 7 • Air-Lock Egress Protection</span>
+          <span class="text-xs font-semibold text-slate-400">Gemini DLP • Small-Cell (k < 5) • DPO Release</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+              Dual-Bucket Air-Lock & Gemini DLP Egress Protection
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Researchers cannot directly download data to their laptops. All export candidates must pass through cryptographic quarantine and automated Gemini privacy evaluation.
+            </p>
+
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm space-y-2">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Dual-Bucket Architecture</span>
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-semibold text-slate-800">📥 Inbound Bucket:</span>
+                <span class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-bold">Read-Only (Clinical Raw)</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-semibold text-slate-800">📤 Export Bucket:</span>
+                <span class="text-rose-700 bg-rose-50 px-2 py-0.5 rounded font-bold">Write-Only Quarantine</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-3">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
+              <h3 class="font-bold text-slate-900 text-sm">3-Stage Egress Verification Pipeline</h3>
+
+              <!-- Stage 1 -->
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-slate-900">1. Quarantine & SHA-256 Fingerprinting</span>
+                  <span class="text-[10px] text-slate-500 font-mono">Airlock Candidate</span>
+                </div>
+                <p class="text-[11px] text-slate-600">Files exported from Colab are placed in <code>gs://rr-*-export</code>. System hashes file content with SHA-256 for immutable audit tracking.</p>
+              </div>
+
+              <!-- Stage 2 -->
+              <div class="p-3 rounded-xl bg-purple-50/60 border border-purple-200 space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-purple-950">2. Gemini AI DLP & Small-Cell Evaluation</span>
+                  <span class="pill-badge bg-purple-100 text-purple-700 text-[10px]">AI Risk Score</span>
+                </div>
+                <p class="text-[11px] text-slate-600">
+                  Gemini scans CSVs/reports for <strong>small-cell counts ($k < 5$)</strong>, direct PII/PHI identifiers, patient IDs, and rare genomic re-identification markers. Generates an AI Risk Card (Score: 0-100).
+                </p>
+              </div>
+
+              <!-- Stage 3 -->
+              <div class="p-3 rounded-xl bg-emerald-50/60 border border-emerald-200 space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-emerald-950">3. Data Privacy Officer (DPO) Release</span>
+                  <span class="pill-badge bg-emerald-100 text-emerald-700 text-[10px]">Dual Approval</span>
+                </div>
+                <p class="text-[11px] text-slate-600">
+                  DPO reviews highlighted risk flags in the Central Portal. Approval signs a time-limited download URL and emits an immutable compliance audit record into BigQuery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Bottom Interactive Presentation Footer -->
+  <footer class="max-w-7xl mx-auto w-full mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2 px-4 py-2 glass-card rounded-2xl border border-slate-200">
+    <div class="flex items-center space-x-2">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span class="font-medium">Multi-Tenant TRE Architecture • Google Cloud Platform</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <span class="hidden sm:inline">Use <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px] font-mono">&larr;</kbd> <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px] font-mono">&rarr;</kbd> arrow keys to navigate</span>
+      <button onclick="setSlide(1)" class="hover:text-blue-600 font-semibold transition">Back to Start</button>
+    </div>
+  </footer>
+
+  <!-- Slide Navigation Script -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 7;
+
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slideCounter = document.getElementById('slideCounter');
+    const dotsContainer = document.getElementById('dotsContainer');
+
+    // Create dot indicators
+    for (let i = 1; i <= totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = `w-2.5 h-2.5 rounded-full transition ${i === 1 ? 'bg-blue-600 w-6' : 'bg-slate-300 hover:bg-slate-400'}`;
+      dot.onclick = () => setSlide(i);
+      dot.id = `dot-${i}`;
+      dotsContainer.appendChild(dot);
+    }
+
+    function updatePresentation() {
+      slides.forEach((slide, idx) => {
+        if (idx + 1 === currentSlide) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      slideCounter.innerText = `Slide ${currentSlide} / ${totalSlides}`;
+      prevBtn.disabled = currentSlide === 1;
+      nextBtn.disabled = currentSlide === totalSlides;
+
+      // Update dots
+      for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.getElementById(`dot-${i}`);
+        if (i === currentSlide) {
+          dot.className = 'w-6 h-2.5 rounded-full bg-blue-600 transition';
+        } else {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition';
+        }
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        currentSlide++;
+        updatePresentation();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+        updatePresentation();
+      }
+    }
+
+    function setSlide(n) {
+      if (n >= 1 && n <= totalSlides) {
+        currentSlide = n;
+        updatePresentation();
+      }
+    }
+
+    // Keyboard listener
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'Space') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+  </script>
+</body>
+</html>

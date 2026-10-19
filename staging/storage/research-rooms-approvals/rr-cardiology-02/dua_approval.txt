@@ -1,0 +1,19 @@
+================================================================================
+MULTI-PARTY DATA USE AGREEMENT (DUA)
+================================================================================
+Room Identifier: rr-cardiology-02
+Study Title: Cardiovascular Risk Stratification & MACE Cohort
+DUA Master Agreement: DUA-MOH-CARD-2024
+Item Type: DUA
+Item Name: Multi-party Data Use Agreement
+
+STATUS: APPROVED
+Execution Date: 2024-11-01
+Expiration Date: 2027-11-01
+Parties: Data Custodian, Academic Medical Center, and Principal Investigator
+Legal Signatory: Hospital Directorate Legal Affairs
+
+COVENANTS AND WARRANTIES:
+1. Data recipient will not attempt re-identification of research subjects.
+2. Cloud compute infrastructure must maintain CMEK encryption and perimeter isolation.
+================================================================================

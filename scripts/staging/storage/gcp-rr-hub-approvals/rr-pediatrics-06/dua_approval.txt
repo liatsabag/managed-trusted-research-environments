@@ -1,0 +1,19 @@
+================================================================================
+MULTI-PARTY DATA USE AGREEMENT (DUA)
+================================================================================
+Room Identifier: rr-pediatrics-06
+Study Title: Pediatric Rare Disorders Longitudinal Study
+DUA Master Agreement: DUA-MOH-PED-2024
+Item Type: DUA
+Item Name: Multi-party Data Use Agreement
+
+STATUS: APPROVED
+Execution Date: 2024-01-15
+Expiration Date: 2027-12-31
+Parties: Data Custodian, Academic Medical Center, and Principal Investigator
+Legal Signatory: Hospital Directorate Legal Affairs
+
+COVENANTS AND WARRANTIES:
+1. Data recipient will not attempt re-identification of research subjects.
+2. Cloud compute infrastructure must maintain CMEK encryption and perimeter isolation.
+================================================================================

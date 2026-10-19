@@ -1,0 +1,19 @@
+================================================================================
+MULTI-PARTY DATA USE AGREEMENT (DUA)
+================================================================================
+Room Identifier: rr-genomics-03
+Study Title: Rare Variant Discovery and Population Pharmacogenomics
+DUA Master Agreement: DUA-MOH-GEN-2025
+Item Type: DUA
+Item Name: Multi-party Data Use Agreement
+
+STATUS: APPROVED
+Execution Date: 2025-01-10
+Expiration Date: 2028-01-10
+Parties: Data Custodian, Academic Medical Center, and Principal Investigator
+Legal Signatory: National Research Authority
+
+COVENANTS AND WARRANTIES:
+1. Data recipient will not attempt re-identification of research subjects.
+2. Cloud compute infrastructure must maintain CMEK encryption and perimeter isolation.
+================================================================================

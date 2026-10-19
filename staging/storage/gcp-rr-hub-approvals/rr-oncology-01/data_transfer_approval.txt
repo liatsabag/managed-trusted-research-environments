@@ -1,0 +1,19 @@
+================================================================================
+DATA TRANSFER COMMITTEE (DTC) STATUTORY SIGN-OFF
+================================================================================
+Room Identifier: rr-oncology-01
+Study Title: Precision Oncology Genomic Biomarker Cohort
+Transfer Clearance Ref: DTC-MOH-2024-412
+Item Type: Data_Transfer
+Item Name: Statutory Data Transfer Committee Approval
+
+STATUS: APPROVED
+Approval Date: 2024-10-15
+Expiration Date: 2027-12-31
+Statutory Body: Ministry of Health & Hospital Data Transfer Directorate
+Authorized Officer: Adv. Michael Bar, Statutory Data Commissioner
+
+TRANSFER SPECIFICATIONS:
+1. Data source tables authorized for replication into Spoke Inbound Storage.
+2. Cross-border transmission is strictly restricted.
+================================================================================

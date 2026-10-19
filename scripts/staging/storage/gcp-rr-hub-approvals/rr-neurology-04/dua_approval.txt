@@ -1,0 +1,19 @@
+================================================================================
+MULTI-PARTY DATA USE AGREEMENT (DUA)
+================================================================================
+Room Identifier: rr-neurology-04
+Study Title: Neurodegenerative Biomarkers and Cognitive Trajectories
+DUA Master Agreement: DUA-MOH-NEUR-2025
+Item Type: DUA
+Item Name: Multi-party Data Use Agreement
+
+STATUS: APPROVED
+Execution Date: 2025-02-01
+Expiration Date: 2027-08-30
+Parties: Data Custodian, Academic Medical Center, and Principal Investigator
+Legal Signatory: Hospital Directorate Legal Affairs
+
+COVENANTS AND WARRANTIES:
+1. Data recipient will not attempt re-identification of research subjects.
+2. Cloud compute infrastructure must maintain CMEK encryption and perimeter isolation.
+================================================================================

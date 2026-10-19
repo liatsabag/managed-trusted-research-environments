@@ -1,0 +1,218 @@
+[
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "pandas",
+    "package_version": "2.2.1"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "numpy",
+    "package_version": "1.26.4"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "scipy",
+    "package_version": "1.12.0"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "scikit-learn",
+    "package_version": "1.4.1.post1"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "google-cloud-bigquery",
+    "package_version": "3.19.0"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "google-cloud-storage",
+    "package_version": "2.14.0"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "lifelines",
+    "package_version": "0.28.0"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "matplotlib",
+    "package_version": "3.8.3"
+  },
+  {
+    "room_id": "rr-oncology-01",
+    "runtime_id": "runtime-rr-oncology-01-default",
+    "package_name": "seaborn",
+    "package_version": "0.13.2"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "pandas",
+    "package_version": "2.2.1"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "numpy",
+    "package_version": "1.26.4"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "scipy",
+    "package_version": "1.12.0"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "scikit-learn",
+    "package_version": "1.4.1.post1"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "google-cloud-bigquery",
+    "package_version": "3.19.0"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "google-cloud-storage",
+    "package_version": "2.14.0"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "biopython",
+    "package_version": "1.83"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "cyvcf2",
+    "package_version": "0.30.28"
+  },
+  {
+    "room_id": "rr-genomics-02",
+    "runtime_id": "runtime-rr-genomics-02-default",
+    "package_name": "pysam",
+    "package_version": "0.22.0"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "pandas",
+    "package_version": "2.2.1"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "numpy",
+    "package_version": "1.26.4"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "scipy",
+    "package_version": "1.12.0"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "scikit-learn",
+    "package_version": "1.4.1.post1"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "google-cloud-bigquery",
+    "package_version": "3.19.0"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "google-cloud-storage",
+    "package_version": "2.14.0"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "wfdb",
+    "package_version": "4.1.2"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "statsmodels",
+    "package_version": "0.14.1"
+  },
+  {
+    "room_id": "rr-cardio-03",
+    "runtime_id": "runtime-rr-cardio-03-default",
+    "package_name": "xgboost",
+    "package_version": "2.0.3"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "pandas",
+    "package_version": "2.2.1"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "numpy",
+    "package_version": "1.26.4"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "scipy",
+    "package_version": "1.12.0"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "scikit-learn",
+    "package_version": "1.4.1.post1"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "google-cloud-bigquery",
+    "package_version": "3.19.0"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "google-cloud-storage",
+    "package_version": "2.14.0"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "nibabel",
+    "package_version": "5.2.1"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "nilearn",
+    "package_version": "0.10.4"
+  },
+  {
+    "room_id": "rr-neurology-04",
+    "runtime_id": "runtime-rr-neurology-04-default",
+    "package_name": "torch",
+    "package_version": "2.2.1"
+  }
+]

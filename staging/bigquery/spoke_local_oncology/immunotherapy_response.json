@@ -1,0 +1,3002 @@
+[
+  {
+    "response_id": "IO-00001",
+    "patient_id": "PAT-ONC-1000",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 73.8,
+    "tmb_score": 9.1,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00002",
+    "patient_id": "PAT-ONC-1001",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 66.9,
+    "tmb_score": 16.51,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00003",
+    "patient_id": "PAT-ONC-1002",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 16.5,
+    "tmb_score": 36.55,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00004",
+    "patient_id": "PAT-ONC-1003",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 40.4,
+    "tmb_score": 31.37,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00005",
+    "patient_id": "PAT-ONC-1004",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 80.2,
+    "tmb_score": 25.27,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00006",
+    "patient_id": "PAT-ONC-1005",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 6.2,
+    "tmb_score": 26.65,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00007",
+    "patient_id": "PAT-ONC-1006",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 62.5,
+    "tmb_score": 18.6,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00008",
+    "patient_id": "PAT-ONC-1007",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 51.0,
+    "tmb_score": 37.05,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00009",
+    "patient_id": "PAT-ONC-1008",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 89.0,
+    "tmb_score": 17.86,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00010",
+    "patient_id": "PAT-ONC-1009",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 83.8,
+    "tmb_score": 33.39,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00011",
+    "patient_id": "PAT-ONC-1010",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 7.1,
+    "tmb_score": 36.51,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00012",
+    "patient_id": "PAT-ONC-1011",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 5.8,
+    "tmb_score": 9.02,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00013",
+    "patient_id": "PAT-ONC-1012",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 54.3,
+    "tmb_score": 22.85,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00014",
+    "patient_id": "PAT-ONC-1013",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 42.8,
+    "tmb_score": 2.66,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00015",
+    "patient_id": "PAT-ONC-1014",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 92.5,
+    "tmb_score": 13.03,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00016",
+    "patient_id": "PAT-ONC-1015",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 11.4,
+    "tmb_score": 19.11,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00017",
+    "patient_id": "PAT-ONC-1016",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 9.4,
+    "tmb_score": 9.1,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00018",
+    "patient_id": "PAT-ONC-1017",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 77.0,
+    "tmb_score": 30.69,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00019",
+    "patient_id": "PAT-ONC-1018",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 63.5,
+    "tmb_score": 33.52,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00020",
+    "patient_id": "PAT-ONC-1019",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 9.9,
+    "tmb_score": 14.1,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00021",
+    "patient_id": "PAT-ONC-1020",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 51.3,
+    "tmb_score": 28.37,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00022",
+    "patient_id": "PAT-ONC-1021",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 22.3,
+    "tmb_score": 19.33,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00023",
+    "patient_id": "PAT-ONC-1022",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 90.8,
+    "tmb_score": 5.61,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00024",
+    "patient_id": "PAT-ONC-1023",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 19.2,
+    "tmb_score": 26.36,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00025",
+    "patient_id": "PAT-ONC-1024",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 91.5,
+    "tmb_score": 23.99,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00026",
+    "patient_id": "PAT-ONC-1025",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 72.2,
+    "tmb_score": 11.77,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00027",
+    "patient_id": "PAT-ONC-1026",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 23.1,
+    "tmb_score": 25.18,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00028",
+    "patient_id": "PAT-ONC-1027",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 76.1,
+    "tmb_score": 21.83,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00029",
+    "patient_id": "PAT-ONC-1028",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 12.6,
+    "tmb_score": 36.1,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00030",
+    "patient_id": "PAT-ONC-1029",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 3.9,
+    "tmb_score": 35.49,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00031",
+    "patient_id": "PAT-ONC-1030",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 52.9,
+    "tmb_score": 22.84,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00032",
+    "patient_id": "PAT-ONC-1031",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 35.1,
+    "tmb_score": 12.91,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00033",
+    "patient_id": "PAT-ONC-1032",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 23.6,
+    "tmb_score": 17.35,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00034",
+    "patient_id": "PAT-ONC-1033",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 91.8,
+    "tmb_score": 6.44,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00035",
+    "patient_id": "PAT-ONC-1034",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 80.6,
+    "tmb_score": 5.4,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00036",
+    "patient_id": "PAT-ONC-1035",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 25.9,
+    "tmb_score": 10.54,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00037",
+    "patient_id": "PAT-ONC-1036",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 79.0,
+    "tmb_score": 16.08,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00038",
+    "patient_id": "PAT-ONC-1037",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 46.0,
+    "tmb_score": 17.32,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00039",
+    "patient_id": "PAT-ONC-1038",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 10.3,
+    "tmb_score": 30.52,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00040",
+    "patient_id": "PAT-ONC-1039",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 59.1,
+    "tmb_score": 18.51,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00041",
+    "patient_id": "PAT-ONC-1040",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 25.9,
+    "tmb_score": 22.19,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00042",
+    "patient_id": "PAT-ONC-1041",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 61.3,
+    "tmb_score": 34.05,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00043",
+    "patient_id": "PAT-ONC-1042",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 36.6,
+    "tmb_score": 11.65,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00044",
+    "patient_id": "PAT-ONC-1043",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 57.7,
+    "tmb_score": 7.61,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00045",
+    "patient_id": "PAT-ONC-1044",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 43.0,
+    "tmb_score": 14.39,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00046",
+    "patient_id": "PAT-ONC-1045",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 41.3,
+    "tmb_score": 12.97,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00047",
+    "patient_id": "PAT-ONC-1046",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 82.9,
+    "tmb_score": 6.96,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00048",
+    "patient_id": "PAT-ONC-1047",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 41.8,
+    "tmb_score": 31.56,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00049",
+    "patient_id": "PAT-ONC-1048",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 33.8,
+    "tmb_score": 25.93,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00050",
+    "patient_id": "PAT-ONC-1049",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 64.3,
+    "tmb_score": 4.5,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00051",
+    "patient_id": "PAT-ONC-1050",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 17.7,
+    "tmb_score": 6.61,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00052",
+    "patient_id": "PAT-ONC-1051",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 46.2,
+    "tmb_score": 10.17,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00053",
+    "patient_id": "PAT-ONC-1052",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 66.4,
+    "tmb_score": 26.33,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00054",
+    "patient_id": "PAT-ONC-1053",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 38.9,
+    "tmb_score": 20.68,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00055",
+    "patient_id": "PAT-ONC-1054",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 61.5,
+    "tmb_score": 37.58,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00056",
+    "patient_id": "PAT-ONC-1055",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 40.0,
+    "tmb_score": 8.77,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00057",
+    "patient_id": "PAT-ONC-1056",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 91.7,
+    "tmb_score": 18.02,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00058",
+    "patient_id": "PAT-ONC-1057",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 33.0,
+    "tmb_score": 9.43,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00059",
+    "patient_id": "PAT-ONC-1058",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 63.2,
+    "tmb_score": 21.01,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00060",
+    "patient_id": "PAT-ONC-1059",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 39.2,
+    "tmb_score": 30.25,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00061",
+    "patient_id": "PAT-ONC-1060",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 31.7,
+    "tmb_score": 27.15,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00062",
+    "patient_id": "PAT-ONC-1061",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 66.6,
+    "tmb_score": 29.79,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00063",
+    "patient_id": "PAT-ONC-1062",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 67.0,
+    "tmb_score": 11.85,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00064",
+    "patient_id": "PAT-ONC-1063",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 83.0,
+    "tmb_score": 33.53,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00065",
+    "patient_id": "PAT-ONC-1064",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 29.6,
+    "tmb_score": 7.56,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00066",
+    "patient_id": "PAT-ONC-1065",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 2.1,
+    "tmb_score": 30.12,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00067",
+    "patient_id": "PAT-ONC-1066",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 94.2,
+    "tmb_score": 30.55,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00068",
+    "patient_id": "PAT-ONC-1067",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 40.9,
+    "tmb_score": 35.65,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00069",
+    "patient_id": "PAT-ONC-1068",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 83.7,
+    "tmb_score": 22.75,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00070",
+    "patient_id": "PAT-ONC-1069",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 0.0,
+    "tmb_score": 3.5,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00071",
+    "patient_id": "PAT-ONC-1070",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 2.2,
+    "tmb_score": 8.52,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00072",
+    "patient_id": "PAT-ONC-1071",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 9.7,
+    "tmb_score": 28.29,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00073",
+    "patient_id": "PAT-ONC-1072",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 47.4,
+    "tmb_score": 20.72,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00074",
+    "patient_id": "PAT-ONC-1073",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 78.2,
+    "tmb_score": 5.63,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00075",
+    "patient_id": "PAT-ONC-1074",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 65.4,
+    "tmb_score": 4.09,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00076",
+    "patient_id": "PAT-ONC-1075",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 78.8,
+    "tmb_score": 18.32,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00077",
+    "patient_id": "PAT-ONC-1076",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 12.0,
+    "tmb_score": 19.6,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00078",
+    "patient_id": "PAT-ONC-1077",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 32.8,
+    "tmb_score": 27.43,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00079",
+    "patient_id": "PAT-ONC-1078",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 26.9,
+    "tmb_score": 7.34,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00080",
+    "patient_id": "PAT-ONC-1079",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 73.8,
+    "tmb_score": 32.71,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00081",
+    "patient_id": "PAT-ONC-1080",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 87.3,
+    "tmb_score": 9.85,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00082",
+    "patient_id": "PAT-ONC-1081",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 13.1,
+    "tmb_score": 5.67,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00083",
+    "patient_id": "PAT-ONC-1082",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 38.5,
+    "tmb_score": 29.87,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00084",
+    "patient_id": "PAT-ONC-1083",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 19.1,
+    "tmb_score": 25.18,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00085",
+    "patient_id": "PAT-ONC-1084",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 91.7,
+    "tmb_score": 26.74,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00086",
+    "patient_id": "PAT-ONC-1085",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 61.9,
+    "tmb_score": 35.7,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00087",
+    "patient_id": "PAT-ONC-1086",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 77.7,
+    "tmb_score": 32.03,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00088",
+    "patient_id": "PAT-ONC-1087",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 63.7,
+    "tmb_score": 33.9,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00089",
+    "patient_id": "PAT-ONC-1088",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 50.2,
+    "tmb_score": 15.86,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00090",
+    "patient_id": "PAT-ONC-1089",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 51.7,
+    "tmb_score": 36.16,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00091",
+    "patient_id": "PAT-ONC-1090",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 87.2,
+    "tmb_score": 22.28,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00092",
+    "patient_id": "PAT-ONC-1091",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 13.3,
+    "tmb_score": 32.33,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00093",
+    "patient_id": "PAT-ONC-1092",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 22.8,
+    "tmb_score": 15.2,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00094",
+    "patient_id": "PAT-ONC-1093",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 57.5,
+    "tmb_score": 26.7,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00095",
+    "patient_id": "PAT-ONC-1094",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 65.9,
+    "tmb_score": 21.08,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00096",
+    "patient_id": "PAT-ONC-1095",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 63.0,
+    "tmb_score": 10.72,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00097",
+    "patient_id": "PAT-ONC-1096",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 45.1,
+    "tmb_score": 14.75,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00098",
+    "patient_id": "PAT-ONC-1097",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 4.2,
+    "tmb_score": 25.32,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00099",
+    "patient_id": "PAT-ONC-1098",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 49.5,
+    "tmb_score": 15.86,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00100",
+    "patient_id": "PAT-ONC-1099",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 74.3,
+    "tmb_score": 33.65,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00101",
+    "patient_id": "PAT-ONC-1100",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 45.7,
+    "tmb_score": 10.32,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00102",
+    "patient_id": "PAT-ONC-1101",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 77.9,
+    "tmb_score": 36.16,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00103",
+    "patient_id": "PAT-ONC-1102",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 28.5,
+    "tmb_score": 16.32,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00104",
+    "patient_id": "PAT-ONC-1103",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 52.0,
+    "tmb_score": 28.22,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00105",
+    "patient_id": "PAT-ONC-1104",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 87.7,
+    "tmb_score": 37.36,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00106",
+    "patient_id": "PAT-ONC-1105",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 52.3,
+    "tmb_score": 13.51,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00107",
+    "patient_id": "PAT-ONC-1106",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 34.8,
+    "tmb_score": 30.85,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00108",
+    "patient_id": "PAT-ONC-1107",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 12.8,
+    "tmb_score": 6.15,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00109",
+    "patient_id": "PAT-ONC-1108",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 5.2,
+    "tmb_score": 14.73,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00110",
+    "patient_id": "PAT-ONC-1109",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 91.3,
+    "tmb_score": 9.91,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00111",
+    "patient_id": "PAT-ONC-1110",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 21.8,
+    "tmb_score": 19.78,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00112",
+    "patient_id": "PAT-ONC-1111",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 43.1,
+    "tmb_score": 23.64,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00113",
+    "patient_id": "PAT-ONC-1112",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 14.8,
+    "tmb_score": 10.12,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00114",
+    "patient_id": "PAT-ONC-1113",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 40.5,
+    "tmb_score": 35.41,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00115",
+    "patient_id": "PAT-ONC-1114",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 15.0,
+    "tmb_score": 6.17,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00116",
+    "patient_id": "PAT-ONC-1115",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 59.2,
+    "tmb_score": 8.69,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00117",
+    "patient_id": "PAT-ONC-1116",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 9.4,
+    "tmb_score": 9.88,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00118",
+    "patient_id": "PAT-ONC-1117",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 33.0,
+    "tmb_score": 8.79,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00119",
+    "patient_id": "PAT-ONC-1118",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 15.2,
+    "tmb_score": 23.09,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00120",
+    "patient_id": "PAT-ONC-1119",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 55.4,
+    "tmb_score": 28.56,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00121",
+    "patient_id": "PAT-ONC-1120",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 47.4,
+    "tmb_score": 35.11,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00122",
+    "patient_id": "PAT-ONC-1121",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 72.3,
+    "tmb_score": 34.7,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00123",
+    "patient_id": "PAT-ONC-1122",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 73.1,
+    "tmb_score": 15.06,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00124",
+    "patient_id": "PAT-ONC-1123",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 39.7,
+    "tmb_score": 15.21,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00125",
+    "patient_id": "PAT-ONC-1124",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 30.5,
+    "tmb_score": 22.41,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00126",
+    "patient_id": "PAT-ONC-1125",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 69.3,
+    "tmb_score": 23.13,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00127",
+    "patient_id": "PAT-ONC-1126",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 55.7,
+    "tmb_score": 2.69,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00128",
+    "patient_id": "PAT-ONC-1127",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 0.3,
+    "tmb_score": 33.48,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00129",
+    "patient_id": "PAT-ONC-1128",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 47.5,
+    "tmb_score": 15.18,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00130",
+    "patient_id": "PAT-ONC-1129",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 79.7,
+    "tmb_score": 27.09,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00131",
+    "patient_id": "PAT-ONC-1130",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 47.9,
+    "tmb_score": 3.62,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00132",
+    "patient_id": "PAT-ONC-1131",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 31.4,
+    "tmb_score": 32.99,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00133",
+    "patient_id": "PAT-ONC-1132",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 17.1,
+    "tmb_score": 8.7,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00134",
+    "patient_id": "PAT-ONC-1133",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 55.2,
+    "tmb_score": 26.36,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00135",
+    "patient_id": "PAT-ONC-1134",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 93.0,
+    "tmb_score": 33.7,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00136",
+    "patient_id": "PAT-ONC-1135",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 90.9,
+    "tmb_score": 5.91,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00137",
+    "patient_id": "PAT-ONC-1136",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 59.9,
+    "tmb_score": 13.69,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00138",
+    "patient_id": "PAT-ONC-1137",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 26.2,
+    "tmb_score": 29.26,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00139",
+    "patient_id": "PAT-ONC-1138",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 94.0,
+    "tmb_score": 10.56,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00140",
+    "patient_id": "PAT-ONC-1139",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 21.2,
+    "tmb_score": 14.86,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00141",
+    "patient_id": "PAT-ONC-1140",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 45.0,
+    "tmb_score": 26.62,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00142",
+    "patient_id": "PAT-ONC-1141",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 65.8,
+    "tmb_score": 4.83,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00143",
+    "patient_id": "PAT-ONC-1142",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 43.5,
+    "tmb_score": 29.7,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00144",
+    "patient_id": "PAT-ONC-1143",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 40.2,
+    "tmb_score": 9.95,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00145",
+    "patient_id": "PAT-ONC-1144",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 29.9,
+    "tmb_score": 2.6,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00146",
+    "patient_id": "PAT-ONC-1145",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 58.8,
+    "tmb_score": 18.56,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00147",
+    "patient_id": "PAT-ONC-1146",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 34.4,
+    "tmb_score": 19.92,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00148",
+    "patient_id": "PAT-ONC-1147",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 34.0,
+    "tmb_score": 28.61,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00149",
+    "patient_id": "PAT-ONC-1148",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 15.5,
+    "tmb_score": 26.49,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00150",
+    "patient_id": "PAT-ONC-1149",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 51.8,
+    "tmb_score": 35.38,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00151",
+    "patient_id": "PAT-ONC-1150",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 79.2,
+    "tmb_score": 21.93,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00152",
+    "patient_id": "PAT-ONC-1151",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 35.5,
+    "tmb_score": 6.74,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00153",
+    "patient_id": "PAT-ONC-1152",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 35.1,
+    "tmb_score": 18.39,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00154",
+    "patient_id": "PAT-ONC-1153",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 78.7,
+    "tmb_score": 23.06,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00155",
+    "patient_id": "PAT-ONC-1154",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 38.2,
+    "tmb_score": 34.74,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00156",
+    "patient_id": "PAT-ONC-1155",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 77.5,
+    "tmb_score": 8.6,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00157",
+    "patient_id": "PAT-ONC-1156",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 29.8,
+    "tmb_score": 30.06,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00158",
+    "patient_id": "PAT-ONC-1157",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 46.0,
+    "tmb_score": 28.67,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00159",
+    "patient_id": "PAT-ONC-1158",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 56.9,
+    "tmb_score": 25.8,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00160",
+    "patient_id": "PAT-ONC-1159",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 84.7,
+    "tmb_score": 23.73,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00161",
+    "patient_id": "PAT-ONC-1160",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 16.9,
+    "tmb_score": 17.58,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00162",
+    "patient_id": "PAT-ONC-1161",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 33.6,
+    "tmb_score": 5.23,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00163",
+    "patient_id": "PAT-ONC-1162",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 34.7,
+    "tmb_score": 23.32,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00164",
+    "patient_id": "PAT-ONC-1163",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 19.5,
+    "tmb_score": 11.76,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00165",
+    "patient_id": "PAT-ONC-1164",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 62.7,
+    "tmb_score": 9.62,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00166",
+    "patient_id": "PAT-ONC-1165",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 66.0,
+    "tmb_score": 12.03,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00167",
+    "patient_id": "PAT-ONC-1166",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 45.0,
+    "tmb_score": 27.59,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00168",
+    "patient_id": "PAT-ONC-1167",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 8.4,
+    "tmb_score": 30.31,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00169",
+    "patient_id": "PAT-ONC-1168",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 75.7,
+    "tmb_score": 24.16,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00170",
+    "patient_id": "PAT-ONC-1169",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 22.3,
+    "tmb_score": 12.28,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00171",
+    "patient_id": "PAT-ONC-1170",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 13.7,
+    "tmb_score": 20.36,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00172",
+    "patient_id": "PAT-ONC-1171",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 46.1,
+    "tmb_score": 31.36,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00173",
+    "patient_id": "PAT-ONC-1172",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 16.4,
+    "tmb_score": 4.29,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00174",
+    "patient_id": "PAT-ONC-1173",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 26.8,
+    "tmb_score": 12.93,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00175",
+    "patient_id": "PAT-ONC-1174",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 48.9,
+    "tmb_score": 33.62,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00176",
+    "patient_id": "PAT-ONC-1175",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 33.6,
+    "tmb_score": 6.46,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00177",
+    "patient_id": "PAT-ONC-1176",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 82.7,
+    "tmb_score": 37.7,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00178",
+    "patient_id": "PAT-ONC-1177",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 17.7,
+    "tmb_score": 12.96,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00179",
+    "patient_id": "PAT-ONC-1178",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 4.2,
+    "tmb_score": 6.92,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00180",
+    "patient_id": "PAT-ONC-1179",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 64.2,
+    "tmb_score": 9.94,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00181",
+    "patient_id": "PAT-ONC-1180",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 79.8,
+    "tmb_score": 28.73,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00182",
+    "patient_id": "PAT-ONC-1181",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 8.6,
+    "tmb_score": 10.42,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00183",
+    "patient_id": "PAT-ONC-1182",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 38.8,
+    "tmb_score": 8.3,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00184",
+    "patient_id": "PAT-ONC-1183",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 81.4,
+    "tmb_score": 24.27,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00185",
+    "patient_id": "PAT-ONC-1184",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 38.4,
+    "tmb_score": 5.39,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00186",
+    "patient_id": "PAT-ONC-1185",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 39.6,
+    "tmb_score": 4.05,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00187",
+    "patient_id": "PAT-ONC-1186",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 0.9,
+    "tmb_score": 32.31,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00188",
+    "patient_id": "PAT-ONC-1187",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 60.4,
+    "tmb_score": 26.21,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00189",
+    "patient_id": "PAT-ONC-1188",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 12.1,
+    "tmb_score": 29.35,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00190",
+    "patient_id": "PAT-ONC-1189",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 10.0,
+    "tmb_score": 12.12,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00191",
+    "patient_id": "PAT-ONC-1190",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 77.9,
+    "tmb_score": 5.43,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00192",
+    "patient_id": "PAT-ONC-1191",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 86.6,
+    "tmb_score": 23.23,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00193",
+    "patient_id": "PAT-ONC-1192",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 80.1,
+    "tmb_score": 25.88,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00194",
+    "patient_id": "PAT-ONC-1193",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 94.2,
+    "tmb_score": 26.6,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00195",
+    "patient_id": "PAT-ONC-1194",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 24.4,
+    "tmb_score": 2.57,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00196",
+    "patient_id": "PAT-ONC-1195",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 28.6,
+    "tmb_score": 13.33,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00197",
+    "patient_id": "PAT-ONC-1196",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 75.8,
+    "tmb_score": 28.74,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00198",
+    "patient_id": "PAT-ONC-1197",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 71.8,
+    "tmb_score": 21.46,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00199",
+    "patient_id": "PAT-ONC-1198",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 84.1,
+    "tmb_score": 24.17,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00200",
+    "patient_id": "PAT-ONC-1199",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 45.2,
+    "tmb_score": 22.31,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00201",
+    "patient_id": "PAT-ONC-1200",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 9.3,
+    "tmb_score": 30.08,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00202",
+    "patient_id": "PAT-ONC-1201",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 58.4,
+    "tmb_score": 19.81,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00203",
+    "patient_id": "PAT-ONC-1202",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 70.1,
+    "tmb_score": 37.95,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00204",
+    "patient_id": "PAT-ONC-1203",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 15.6,
+    "tmb_score": 13.77,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00205",
+    "patient_id": "PAT-ONC-1204",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 20.0,
+    "tmb_score": 29.38,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00206",
+    "patient_id": "PAT-ONC-1205",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 21.8,
+    "tmb_score": 33.21,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00207",
+    "patient_id": "PAT-ONC-1206",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 86.8,
+    "tmb_score": 23.77,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00208",
+    "patient_id": "PAT-ONC-1207",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 89.6,
+    "tmb_score": 4.34,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00209",
+    "patient_id": "PAT-ONC-1208",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 87.1,
+    "tmb_score": 23.95,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00210",
+    "patient_id": "PAT-ONC-1209",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 15.1,
+    "tmb_score": 37.72,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00211",
+    "patient_id": "PAT-ONC-1210",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 34.7,
+    "tmb_score": 26.72,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00212",
+    "patient_id": "PAT-ONC-1211",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 90.0,
+    "tmb_score": 21.22,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00213",
+    "patient_id": "PAT-ONC-1212",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 5.8,
+    "tmb_score": 21.08,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00214",
+    "patient_id": "PAT-ONC-1213",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 58.9,
+    "tmb_score": 8.94,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00215",
+    "patient_id": "PAT-ONC-1214",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 53.2,
+    "tmb_score": 12.63,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00216",
+    "patient_id": "PAT-ONC-1215",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 62.5,
+    "tmb_score": 23.38,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00217",
+    "patient_id": "PAT-ONC-1216",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 18.6,
+    "tmb_score": 12.57,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00218",
+    "patient_id": "PAT-ONC-1217",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 12.1,
+    "tmb_score": 2.95,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00219",
+    "patient_id": "PAT-ONC-1218",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 26.3,
+    "tmb_score": 9.46,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00220",
+    "patient_id": "PAT-ONC-1219",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 64.7,
+    "tmb_score": 36.79,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00221",
+    "patient_id": "PAT-ONC-1220",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 21.0,
+    "tmb_score": 12.92,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00222",
+    "patient_id": "PAT-ONC-1221",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 75.7,
+    "tmb_score": 20.18,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00223",
+    "patient_id": "PAT-ONC-1222",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 22.7,
+    "tmb_score": 22.84,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00224",
+    "patient_id": "PAT-ONC-1223",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 7.9,
+    "tmb_score": 34.62,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00225",
+    "patient_id": "PAT-ONC-1224",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 89.5,
+    "tmb_score": 17.82,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00226",
+    "patient_id": "PAT-ONC-1225",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 54.0,
+    "tmb_score": 20.36,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00227",
+    "patient_id": "PAT-ONC-1226",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 27.6,
+    "tmb_score": 24.63,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00228",
+    "patient_id": "PAT-ONC-1227",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 55.4,
+    "tmb_score": 31.42,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00229",
+    "patient_id": "PAT-ONC-1228",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 20.0,
+    "tmb_score": 5.7,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00230",
+    "patient_id": "PAT-ONC-1229",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 10.1,
+    "tmb_score": 16.9,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00231",
+    "patient_id": "PAT-ONC-1230",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 5.0,
+    "tmb_score": 12.3,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00232",
+    "patient_id": "PAT-ONC-1231",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 5.6,
+    "tmb_score": 26.12,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00233",
+    "patient_id": "PAT-ONC-1232",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 32.3,
+    "tmb_score": 19.23,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00234",
+    "patient_id": "PAT-ONC-1233",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 20.5,
+    "tmb_score": 33.04,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00235",
+    "patient_id": "PAT-ONC-1234",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 55.6,
+    "tmb_score": 35.56,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00236",
+    "patient_id": "PAT-ONC-1235",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 92.3,
+    "tmb_score": 31.51,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00237",
+    "patient_id": "PAT-ONC-1236",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 47.8,
+    "tmb_score": 33.24,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00238",
+    "patient_id": "PAT-ONC-1237",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 16.5,
+    "tmb_score": 31.08,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00239",
+    "patient_id": "PAT-ONC-1238",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 92.4,
+    "tmb_score": 14.22,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00240",
+    "patient_id": "PAT-ONC-1239",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 49.5,
+    "tmb_score": 3.61,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00241",
+    "patient_id": "PAT-ONC-1240",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 14.5,
+    "tmb_score": 18.14,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00242",
+    "patient_id": "PAT-ONC-1241",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 64.0,
+    "tmb_score": 22.27,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00243",
+    "patient_id": "PAT-ONC-1242",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 54.7,
+    "tmb_score": 14.07,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00244",
+    "patient_id": "PAT-ONC-1243",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 63.9,
+    "tmb_score": 20.05,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00245",
+    "patient_id": "PAT-ONC-1244",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 28.2,
+    "tmb_score": 15.06,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00246",
+    "patient_id": "PAT-ONC-1245",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 33.7,
+    "tmb_score": 29.05,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00247",
+    "patient_id": "PAT-ONC-1246",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 41.9,
+    "tmb_score": 37.58,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00248",
+    "patient_id": "PAT-ONC-1247",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 70.8,
+    "tmb_score": 6.96,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00249",
+    "patient_id": "PAT-ONC-1248",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 28.9,
+    "tmb_score": 18.13,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00250",
+    "patient_id": "PAT-ONC-1249",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 89.3,
+    "tmb_score": 29.34,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00251",
+    "patient_id": "PAT-ONC-1250",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 56.8,
+    "tmb_score": 17.65,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00252",
+    "patient_id": "PAT-ONC-1251",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 50.6,
+    "tmb_score": 15.83,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00253",
+    "patient_id": "PAT-ONC-1252",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 88.1,
+    "tmb_score": 3.92,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00254",
+    "patient_id": "PAT-ONC-1253",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 59.1,
+    "tmb_score": 34.89,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00255",
+    "patient_id": "PAT-ONC-1254",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 11.7,
+    "tmb_score": 15.99,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00256",
+    "patient_id": "PAT-ONC-1255",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 57.3,
+    "tmb_score": 9.07,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00257",
+    "patient_id": "PAT-ONC-1256",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 69.4,
+    "tmb_score": 26.71,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00258",
+    "patient_id": "PAT-ONC-1257",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 33.0,
+    "tmb_score": 26.52,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00259",
+    "patient_id": "PAT-ONC-1258",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 58.1,
+    "tmb_score": 30.51,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00260",
+    "patient_id": "PAT-ONC-1259",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 22.9,
+    "tmb_score": 21.22,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00261",
+    "patient_id": "PAT-ONC-1260",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 90.0,
+    "tmb_score": 10.47,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00262",
+    "patient_id": "PAT-ONC-1261",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 42.6,
+    "tmb_score": 29.68,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00263",
+    "patient_id": "PAT-ONC-1262",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 69.7,
+    "tmb_score": 35.23,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00264",
+    "patient_id": "PAT-ONC-1263",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 15.9,
+    "tmb_score": 19.45,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00265",
+    "patient_id": "PAT-ONC-1264",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 84.2,
+    "tmb_score": 21.24,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00266",
+    "patient_id": "PAT-ONC-1265",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 83.0,
+    "tmb_score": 34.71,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00267",
+    "patient_id": "PAT-ONC-1266",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 5.4,
+    "tmb_score": 20.66,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00268",
+    "patient_id": "PAT-ONC-1267",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 91.5,
+    "tmb_score": 21.05,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00269",
+    "patient_id": "PAT-ONC-1268",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 85.8,
+    "tmb_score": 26.62,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00270",
+    "patient_id": "PAT-ONC-1269",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 61.3,
+    "tmb_score": 25.31,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00271",
+    "patient_id": "PAT-ONC-1270",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 41.7,
+    "tmb_score": 6.25,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00272",
+    "patient_id": "PAT-ONC-1271",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 91.3,
+    "tmb_score": 15.57,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00273",
+    "patient_id": "PAT-ONC-1272",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 80.5,
+    "tmb_score": 14.96,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00274",
+    "patient_id": "PAT-ONC-1273",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 3.9,
+    "tmb_score": 28.0,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00275",
+    "patient_id": "PAT-ONC-1274",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 1.9,
+    "tmb_score": 12.74,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00276",
+    "patient_id": "PAT-ONC-1275",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 59.1,
+    "tmb_score": 19.62,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00277",
+    "patient_id": "PAT-ONC-1276",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 40.6,
+    "tmb_score": 14.15,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00278",
+    "patient_id": "PAT-ONC-1277",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 21.1,
+    "tmb_score": 27.68,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00279",
+    "patient_id": "PAT-ONC-1278",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 43.3,
+    "tmb_score": 32.05,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00280",
+    "patient_id": "PAT-ONC-1279",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 2.7,
+    "tmb_score": 18.83,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00281",
+    "patient_id": "PAT-ONC-1280",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 5.4,
+    "tmb_score": 19.02,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00282",
+    "patient_id": "PAT-ONC-1281",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 10.0,
+    "tmb_score": 17.27,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00283",
+    "patient_id": "PAT-ONC-1282",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 46.6,
+    "tmb_score": 17.19,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00284",
+    "patient_id": "PAT-ONC-1283",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 60.5,
+    "tmb_score": 34.88,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00285",
+    "patient_id": "PAT-ONC-1284",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 56.5,
+    "tmb_score": 18.9,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00286",
+    "patient_id": "PAT-ONC-1285",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 64.2,
+    "tmb_score": 30.28,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00287",
+    "patient_id": "PAT-ONC-1286",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 8.9,
+    "tmb_score": 21.2,
+    "response_category": "Non-Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00288",
+    "patient_id": "PAT-ONC-1287",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 0.6,
+    "tmb_score": 4.71,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00289",
+    "patient_id": "PAT-ONC-1288",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 71.3,
+    "tmb_score": 7.2,
+    "response_category": "Responder",
+    "recist_1_1": "CR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00290",
+    "patient_id": "PAT-ONC-1289",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 78.7,
+    "tmb_score": 33.53,
+    "response_category": "Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00291",
+    "patient_id": "PAT-ONC-1290",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 3.4,
+    "tmb_score": 35.26,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00292",
+    "patient_id": "PAT-ONC-1291",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 18.6,
+    "tmb_score": 12.04,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00293",
+    "patient_id": "PAT-ONC-1292",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 41.5,
+    "tmb_score": 20.89,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00294",
+    "patient_id": "PAT-ONC-1293",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 26.8,
+    "tmb_score": 13.32,
+    "response_category": "Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00295",
+    "patient_id": "PAT-ONC-1294",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 53.1,
+    "tmb_score": 28.9,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00296",
+    "patient_id": "PAT-ONC-1295",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 73.4,
+    "tmb_score": 34.88,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00297",
+    "patient_id": "PAT-ONC-1296",
+    "checkpoint_inhibitor": "Nivolumab",
+    "pd_l1_tps_percent": 13.9,
+    "tmb_score": 4.73,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00298",
+    "patient_id": "PAT-ONC-1297",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 77.2,
+    "tmb_score": 11.49,
+    "response_category": "Non-Responder",
+    "recist_1_1": "PD",
+    "immune_adverse_event": false
+  },
+  {
+    "response_id": "IO-00299",
+    "patient_id": "PAT-ONC-1298",
+    "checkpoint_inhibitor": "Pembrolizumab",
+    "pd_l1_tps_percent": 92.3,
+    "tmb_score": 27.57,
+    "response_category": "Responder",
+    "recist_1_1": "PR",
+    "immune_adverse_event": true
+  },
+  {
+    "response_id": "IO-00300",
+    "patient_id": "PAT-ONC-1299",
+    "checkpoint_inhibitor": "Atezolizumab",
+    "pd_l1_tps_percent": 91.6,
+    "tmb_score": 7.54,
+    "response_category": "Non-Responder",
+    "recist_1_1": "SD",
+    "immune_adverse_event": false
+  }
+]

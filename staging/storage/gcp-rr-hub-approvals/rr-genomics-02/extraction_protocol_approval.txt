@@ -1,0 +1,19 @@
+================================================================================
+DE-IDENTIFICATION & EXTRACTION QUERY PROTOCOL SPECIFICATION
+================================================================================
+Room Identifier: rr-genomics-02
+Study Title: Rare Variant Discovery and Population Pharmacogenomics
+Query Protocol ID: EXT-GEN-2025-02
+Item Type: Extraction_Protocol
+Item Name: De-identification and Extraction Query Protocol
+
+STATUS: APPROVED
+Approval Date: 2025-01-10
+Expiration Date: 2028-01-10
+Review Authority: Security & Data Privacy Review Board
+Privacy Officer: Eng. Tamar Cohen, CISO & Privacy Officer
+
+EXTRACTION CRITERIA:
+1. Direct identifiers (Name, MRN, National ID, Phone) stripped prior to ingestion.
+2. Minimum k-anonymity threshold enforced (k >= 5) on exported summary strata.
+================================================================================

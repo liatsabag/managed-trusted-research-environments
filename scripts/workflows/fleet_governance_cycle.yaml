@@ -1,0 +1,48 @@
+# Google Cloud Workflow: fleet-governance-cycle
+# Orchestrates sequential governance execution:
+# Step 1: BigQuery Stored Procedure (sp_scan_governance) via REST API with OAuth2
+# Step 2: Cloud Run Backend IAM Enforcement (/api/v1/compliance/enforce) with OIDC
+
+main:
+  params: [args]
+  steps:
+    - init:
+        assign:
+          - projectId: "gcp-rr-hub-core"
+          - defaultBackendUrl: "https://gcp-rr-hub-backend-468155375703.me-west1.run.app"
+          - backendUrl: ${defaultBackendUrl}
+    - checkCustomUrl:
+        switch:
+          - condition: ${args != null and "backend_url" in args}
+            assign:
+              - backendUrl: ${args.backend_url}
+    - runBigQueryGovernanceScan:
+        call: http.post
+        args:
+          url: ${"https://bigquery.googleapis.com/bigquery/v2/projects/" + projectId + "/queries"}
+          auth:
+            type: OAuth2
+            scopes:
+              - "https://www.googleapis.com/auth/bigquery"
+              - "https://www.googleapis.com/auth/cloud-platform"
+          headers:
+            Content-Type: "application/json"
+          body:
+            query: "CALL `gcp-rr-hub-core.hub_telemetry.sp_scan_governance`('PROVISIONED'); CALL `gcp-rr-hub-core.hub_telemetry.sp_scan_governance`('REQUEST');"
+            useLegacySql: false
+            location: "me-west1"
+        result: bqScanResult
+    - enforceFleetCompliance:
+        call: http.post
+        args:
+          url: ${backendUrl + "/api/v1/compliance/enforce"}
+          headers:
+            Content-Type: "application/json"
+          auth:
+            type: OIDC
+        result: enforceResult
+    - returnOutput:
+        return:
+          status: "SUCCESS"
+          bigquery_scan: "COMPLETED"
+          enforcement_results: ${enforceResult.body}

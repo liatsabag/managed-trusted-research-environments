@@ -1,0 +1,28 @@
+# Example Terraform variables for Development Environment
+# Copy this file to terraform.tfvars and customize for your GCP environment
+
+environment          = "dev"
+region               = "me-west1"
+hub_project_id       = "majestic-energy-353306"
+billing_project_id   = "majestic-energy-353306"
+billing_dataset_id   = "billing"
+billing_export_table = "gcp_billing_export_v1"
+admin_domain         = "liatsabag.altostrat.com"
+deletion_protection  = false
+
+# VPC Service Controls (Optional in development)
+enable_vpc_sc        = false
+access_policy_id     = null
+
+# Administrator Identity Bindings (Optional)
+ops_admin_members = [
+  # "user:ops-admin@healthhub.org"
+]
+
+tech_admin_members = [
+  # "user:tech-admin@healthhub.org"
+]
+
+dpo_members = [
+  # "user:dpo@healthhub.org"
+]

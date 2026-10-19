@@ -1,0 +1,2002 @@
+[
+  {
+    "enrollment_id": "TRL-0001",
+    "participant_id": "PART-NEUR-100",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 712.7,
+    "baseline_ptau_181": 45.7,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0002",
+    "participant_id": "PART-NEUR-101",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1061.7,
+    "baseline_ptau_181": 33.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0003",
+    "participant_id": "PART-NEUR-102",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 562.2,
+    "baseline_ptau_181": 48.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0004",
+    "participant_id": "PART-NEUR-103",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 630.5,
+    "baseline_ptau_181": 16.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0005",
+    "participant_id": "PART-NEUR-104",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 687.7,
+    "baseline_ptau_181": 79.6,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0006",
+    "participant_id": "PART-NEUR-105",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 528.3,
+    "baseline_ptau_181": 66.6,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0007",
+    "participant_id": "PART-NEUR-106",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1039.4,
+    "baseline_ptau_181": 50.7,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0008",
+    "participant_id": "PART-NEUR-107",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 906.6,
+    "baseline_ptau_181": 60.3,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0009",
+    "participant_id": "PART-NEUR-108",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 961.2,
+    "baseline_ptau_181": 76.3,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0010",
+    "participant_id": "PART-NEUR-109",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 462.5,
+    "baseline_ptau_181": 70.8,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0011",
+    "participant_id": "PART-NEUR-110",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 828.7,
+    "baseline_ptau_181": 42.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0012",
+    "participant_id": "PART-NEUR-111",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 988.4,
+    "baseline_ptau_181": 58.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0013",
+    "participant_id": "PART-NEUR-112",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 658.0,
+    "baseline_ptau_181": 79.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0014",
+    "participant_id": "PART-NEUR-113",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 746.3,
+    "baseline_ptau_181": 29.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0015",
+    "participant_id": "PART-NEUR-114",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 887.8,
+    "baseline_ptau_181": 21.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0016",
+    "participant_id": "PART-NEUR-115",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1005.9,
+    "baseline_ptau_181": 76.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0017",
+    "participant_id": "PART-NEUR-116",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 497.3,
+    "baseline_ptau_181": 15.2,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0018",
+    "participant_id": "PART-NEUR-117",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1093.7,
+    "baseline_ptau_181": 30.8,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0019",
+    "participant_id": "PART-NEUR-118",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 851.0,
+    "baseline_ptau_181": 23.6,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0020",
+    "participant_id": "PART-NEUR-119",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 551.8,
+    "baseline_ptau_181": 22.9,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0021",
+    "participant_id": "PART-NEUR-120",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1030.3,
+    "baseline_ptau_181": 20.5,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0022",
+    "participant_id": "PART-NEUR-121",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 816.5,
+    "baseline_ptau_181": 28.7,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0023",
+    "participant_id": "PART-NEUR-122",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 745.6,
+    "baseline_ptau_181": 67.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0024",
+    "participant_id": "PART-NEUR-123",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 889.4,
+    "baseline_ptau_181": 50.1,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0025",
+    "participant_id": "PART-NEUR-124",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 658.5,
+    "baseline_ptau_181": 39.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0026",
+    "participant_id": "PART-NEUR-125",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 918.9,
+    "baseline_ptau_181": 56.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0027",
+    "participant_id": "PART-NEUR-126",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 655.3,
+    "baseline_ptau_181": 22.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0028",
+    "participant_id": "PART-NEUR-127",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1043.8,
+    "baseline_ptau_181": 26.8,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0029",
+    "participant_id": "PART-NEUR-128",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 708.1,
+    "baseline_ptau_181": 34.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0030",
+    "participant_id": "PART-NEUR-129",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 759.6,
+    "baseline_ptau_181": 19.7,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0031",
+    "participant_id": "PART-NEUR-130",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 979.2,
+    "baseline_ptau_181": 27.1,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0032",
+    "participant_id": "PART-NEUR-131",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1044.3,
+    "baseline_ptau_181": 78.2,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0033",
+    "participant_id": "PART-NEUR-132",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 811.1,
+    "baseline_ptau_181": 62.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0034",
+    "participant_id": "PART-NEUR-133",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 730.2,
+    "baseline_ptau_181": 61.0,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0035",
+    "participant_id": "PART-NEUR-134",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 700.2,
+    "baseline_ptau_181": 65.0,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0036",
+    "participant_id": "PART-NEUR-135",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1042.4,
+    "baseline_ptau_181": 28.1,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0037",
+    "participant_id": "PART-NEUR-136",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 941.1,
+    "baseline_ptau_181": 46.3,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0038",
+    "participant_id": "PART-NEUR-137",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 712.4,
+    "baseline_ptau_181": 43.0,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0039",
+    "participant_id": "PART-NEUR-138",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 502.5,
+    "baseline_ptau_181": 36.1,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0040",
+    "participant_id": "PART-NEUR-139",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 566.2,
+    "baseline_ptau_181": 28.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0041",
+    "participant_id": "PART-NEUR-140",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 781.5,
+    "baseline_ptau_181": 60.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0042",
+    "participant_id": "PART-NEUR-141",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 767.6,
+    "baseline_ptau_181": 24.0,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0043",
+    "participant_id": "PART-NEUR-142",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 516.9,
+    "baseline_ptau_181": 70.0,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0044",
+    "participant_id": "PART-NEUR-143",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 665.0,
+    "baseline_ptau_181": 62.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0045",
+    "participant_id": "PART-NEUR-144",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 748.2,
+    "baseline_ptau_181": 27.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0046",
+    "participant_id": "PART-NEUR-145",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 779.9,
+    "baseline_ptau_181": 56.1,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0047",
+    "participant_id": "PART-NEUR-146",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 527.4,
+    "baseline_ptau_181": 76.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0048",
+    "participant_id": "PART-NEUR-147",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 831.5,
+    "baseline_ptau_181": 19.1,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0049",
+    "participant_id": "PART-NEUR-148",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 769.9,
+    "baseline_ptau_181": 75.0,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0050",
+    "participant_id": "PART-NEUR-149",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 624.2,
+    "baseline_ptau_181": 50.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0051",
+    "participant_id": "PART-NEUR-150",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1063.5,
+    "baseline_ptau_181": 30.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0052",
+    "participant_id": "PART-NEUR-151",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 825.7,
+    "baseline_ptau_181": 47.8,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0053",
+    "participant_id": "PART-NEUR-152",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 549.6,
+    "baseline_ptau_181": 77.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0054",
+    "participant_id": "PART-NEUR-153",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 466.1,
+    "baseline_ptau_181": 25.0,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0055",
+    "participant_id": "PART-NEUR-154",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 552.6,
+    "baseline_ptau_181": 52.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0056",
+    "participant_id": "PART-NEUR-155",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 970.2,
+    "baseline_ptau_181": 46.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0057",
+    "participant_id": "PART-NEUR-156",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1069.8,
+    "baseline_ptau_181": 38.0,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0058",
+    "participant_id": "PART-NEUR-157",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 739.1,
+    "baseline_ptau_181": 68.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0059",
+    "participant_id": "PART-NEUR-158",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 525.7,
+    "baseline_ptau_181": 74.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0060",
+    "participant_id": "PART-NEUR-159",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 920.1,
+    "baseline_ptau_181": 52.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0061",
+    "participant_id": "PART-NEUR-160",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 875.7,
+    "baseline_ptau_181": 82.8,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0062",
+    "participant_id": "PART-NEUR-161",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 831.1,
+    "baseline_ptau_181": 45.9,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0063",
+    "participant_id": "PART-NEUR-162",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 456.7,
+    "baseline_ptau_181": 63.5,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0064",
+    "participant_id": "PART-NEUR-163",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 696.3,
+    "baseline_ptau_181": 32.6,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0065",
+    "participant_id": "PART-NEUR-164",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 712.8,
+    "baseline_ptau_181": 55.6,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0066",
+    "participant_id": "PART-NEUR-165",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 546.7,
+    "baseline_ptau_181": 72.3,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0067",
+    "participant_id": "PART-NEUR-166",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 798.5,
+    "baseline_ptau_181": 29.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0068",
+    "participant_id": "PART-NEUR-167",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1026.4,
+    "baseline_ptau_181": 60.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0069",
+    "participant_id": "PART-NEUR-168",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 534.3,
+    "baseline_ptau_181": 74.4,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0070",
+    "participant_id": "PART-NEUR-169",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 605.7,
+    "baseline_ptau_181": 59.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0071",
+    "participant_id": "PART-NEUR-170",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1070.9,
+    "baseline_ptau_181": 64.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0072",
+    "participant_id": "PART-NEUR-171",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 906.8,
+    "baseline_ptau_181": 24.9,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0073",
+    "participant_id": "PART-NEUR-172",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 757.1,
+    "baseline_ptau_181": 83.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0074",
+    "participant_id": "PART-NEUR-173",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 778.4,
+    "baseline_ptau_181": 24.0,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0075",
+    "participant_id": "PART-NEUR-174",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 714.2,
+    "baseline_ptau_181": 19.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0076",
+    "participant_id": "PART-NEUR-175",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 812.1,
+    "baseline_ptau_181": 63.1,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0077",
+    "participant_id": "PART-NEUR-176",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 490.4,
+    "baseline_ptau_181": 41.1,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0078",
+    "participant_id": "PART-NEUR-177",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 820.0,
+    "baseline_ptau_181": 39.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0079",
+    "participant_id": "PART-NEUR-178",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1004.0,
+    "baseline_ptau_181": 15.7,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0080",
+    "participant_id": "PART-NEUR-179",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 791.6,
+    "baseline_ptau_181": 70.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0081",
+    "participant_id": "PART-NEUR-180",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 738.1,
+    "baseline_ptau_181": 72.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0082",
+    "participant_id": "PART-NEUR-181",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 926.1,
+    "baseline_ptau_181": 54.6,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0083",
+    "participant_id": "PART-NEUR-182",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 565.6,
+    "baseline_ptau_181": 16.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0084",
+    "participant_id": "PART-NEUR-183",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1059.3,
+    "baseline_ptau_181": 19.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0085",
+    "participant_id": "PART-NEUR-184",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 917.9,
+    "baseline_ptau_181": 79.7,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0086",
+    "participant_id": "PART-NEUR-185",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 674.2,
+    "baseline_ptau_181": 71.2,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0087",
+    "participant_id": "PART-NEUR-186",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 480.0,
+    "baseline_ptau_181": 52.3,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0088",
+    "participant_id": "PART-NEUR-187",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 997.5,
+    "baseline_ptau_181": 34.2,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0089",
+    "participant_id": "PART-NEUR-188",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 835.3,
+    "baseline_ptau_181": 33.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0090",
+    "participant_id": "PART-NEUR-189",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1074.4,
+    "baseline_ptau_181": 83.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0091",
+    "participant_id": "PART-NEUR-190",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1014.6,
+    "baseline_ptau_181": 83.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0092",
+    "participant_id": "PART-NEUR-191",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 753.7,
+    "baseline_ptau_181": 17.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0093",
+    "participant_id": "PART-NEUR-192",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 462.0,
+    "baseline_ptau_181": 33.9,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0094",
+    "participant_id": "PART-NEUR-193",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 629.8,
+    "baseline_ptau_181": 80.3,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0095",
+    "participant_id": "PART-NEUR-194",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 482.3,
+    "baseline_ptau_181": 54.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0096",
+    "participant_id": "PART-NEUR-195",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 456.7,
+    "baseline_ptau_181": 16.8,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0097",
+    "participant_id": "PART-NEUR-196",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 751.4,
+    "baseline_ptau_181": 34.8,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0098",
+    "participant_id": "PART-NEUR-197",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 462.6,
+    "baseline_ptau_181": 43.5,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0099",
+    "participant_id": "PART-NEUR-198",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 716.6,
+    "baseline_ptau_181": 34.2,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0100",
+    "participant_id": "PART-NEUR-199",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 556.1,
+    "baseline_ptau_181": 40.0,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0101",
+    "participant_id": "PART-NEUR-200",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1017.9,
+    "baseline_ptau_181": 84.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0102",
+    "participant_id": "PART-NEUR-201",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 915.1,
+    "baseline_ptau_181": 43.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0103",
+    "participant_id": "PART-NEUR-202",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 751.0,
+    "baseline_ptau_181": 49.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0104",
+    "participant_id": "PART-NEUR-203",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 633.0,
+    "baseline_ptau_181": 84.0,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0105",
+    "participant_id": "PART-NEUR-204",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 722.1,
+    "baseline_ptau_181": 45.7,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0106",
+    "participant_id": "PART-NEUR-205",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1040.8,
+    "baseline_ptau_181": 70.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0107",
+    "participant_id": "PART-NEUR-206",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 682.8,
+    "baseline_ptau_181": 33.6,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0108",
+    "participant_id": "PART-NEUR-207",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 658.5,
+    "baseline_ptau_181": 24.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0109",
+    "participant_id": "PART-NEUR-208",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 855.8,
+    "baseline_ptau_181": 42.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0110",
+    "participant_id": "PART-NEUR-209",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 986.6,
+    "baseline_ptau_181": 40.3,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0111",
+    "participant_id": "PART-NEUR-210",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 882.5,
+    "baseline_ptau_181": 84.8,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0112",
+    "participant_id": "PART-NEUR-211",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 981.0,
+    "baseline_ptau_181": 27.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0113",
+    "participant_id": "PART-NEUR-212",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1092.2,
+    "baseline_ptau_181": 59.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0114",
+    "participant_id": "PART-NEUR-213",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 871.5,
+    "baseline_ptau_181": 32.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0115",
+    "participant_id": "PART-NEUR-214",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 952.7,
+    "baseline_ptau_181": 19.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0116",
+    "participant_id": "PART-NEUR-215",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1096.2,
+    "baseline_ptau_181": 45.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0117",
+    "participant_id": "PART-NEUR-216",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 998.9,
+    "baseline_ptau_181": 66.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0118",
+    "participant_id": "PART-NEUR-217",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 848.9,
+    "baseline_ptau_181": 74.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0119",
+    "participant_id": "PART-NEUR-218",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 806.8,
+    "baseline_ptau_181": 71.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0120",
+    "participant_id": "PART-NEUR-219",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 875.5,
+    "baseline_ptau_181": 83.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0121",
+    "participant_id": "PART-NEUR-220",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 507.1,
+    "baseline_ptau_181": 38.1,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0122",
+    "participant_id": "PART-NEUR-221",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 947.0,
+    "baseline_ptau_181": 26.5,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0123",
+    "participant_id": "PART-NEUR-222",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 535.6,
+    "baseline_ptau_181": 80.5,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0124",
+    "participant_id": "PART-NEUR-223",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 565.9,
+    "baseline_ptau_181": 47.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0125",
+    "participant_id": "PART-NEUR-224",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 574.9,
+    "baseline_ptau_181": 74.1,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0126",
+    "participant_id": "PART-NEUR-225",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1082.0,
+    "baseline_ptau_181": 72.7,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0127",
+    "participant_id": "PART-NEUR-226",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 718.4,
+    "baseline_ptau_181": 80.3,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0128",
+    "participant_id": "PART-NEUR-227",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1088.2,
+    "baseline_ptau_181": 37.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0129",
+    "participant_id": "PART-NEUR-228",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 857.5,
+    "baseline_ptau_181": 48.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0130",
+    "participant_id": "PART-NEUR-229",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 689.6,
+    "baseline_ptau_181": 79.8,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0131",
+    "participant_id": "PART-NEUR-230",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1012.7,
+    "baseline_ptau_181": 42.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0132",
+    "participant_id": "PART-NEUR-231",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 603.3,
+    "baseline_ptau_181": 35.4,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0133",
+    "participant_id": "PART-NEUR-232",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 563.5,
+    "baseline_ptau_181": 20.1,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0134",
+    "participant_id": "PART-NEUR-233",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 466.1,
+    "baseline_ptau_181": 76.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0135",
+    "participant_id": "PART-NEUR-234",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1018.6,
+    "baseline_ptau_181": 57.8,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0136",
+    "participant_id": "PART-NEUR-235",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 931.9,
+    "baseline_ptau_181": 56.8,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0137",
+    "participant_id": "PART-NEUR-236",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 609.1,
+    "baseline_ptau_181": 25.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0138",
+    "participant_id": "PART-NEUR-237",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1036.5,
+    "baseline_ptau_181": 78.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0139",
+    "participant_id": "PART-NEUR-238",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 560.6,
+    "baseline_ptau_181": 63.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0140",
+    "participant_id": "PART-NEUR-239",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 624.0,
+    "baseline_ptau_181": 17.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0141",
+    "participant_id": "PART-NEUR-240",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 511.0,
+    "baseline_ptau_181": 82.1,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0142",
+    "participant_id": "PART-NEUR-241",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 710.6,
+    "baseline_ptau_181": 71.0,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0143",
+    "participant_id": "PART-NEUR-242",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 899.0,
+    "baseline_ptau_181": 57.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0144",
+    "participant_id": "PART-NEUR-243",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1011.9,
+    "baseline_ptau_181": 27.2,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0145",
+    "participant_id": "PART-NEUR-244",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 844.4,
+    "baseline_ptau_181": 16.5,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0146",
+    "participant_id": "PART-NEUR-245",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 887.1,
+    "baseline_ptau_181": 54.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0147",
+    "participant_id": "PART-NEUR-246",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 952.9,
+    "baseline_ptau_181": 68.6,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0148",
+    "participant_id": "PART-NEUR-247",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 557.3,
+    "baseline_ptau_181": 62.6,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0149",
+    "participant_id": "PART-NEUR-248",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1032.4,
+    "baseline_ptau_181": 30.0,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0150",
+    "participant_id": "PART-NEUR-249",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 638.2,
+    "baseline_ptau_181": 30.8,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0151",
+    "participant_id": "PART-NEUR-250",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 935.5,
+    "baseline_ptau_181": 41.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0152",
+    "participant_id": "PART-NEUR-251",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1044.1,
+    "baseline_ptau_181": 75.0,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0153",
+    "participant_id": "PART-NEUR-252",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 578.9,
+    "baseline_ptau_181": 60.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0154",
+    "participant_id": "PART-NEUR-253",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1076.8,
+    "baseline_ptau_181": 30.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0155",
+    "participant_id": "PART-NEUR-254",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 605.2,
+    "baseline_ptau_181": 68.8,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0156",
+    "participant_id": "PART-NEUR-255",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 482.2,
+    "baseline_ptau_181": 59.1,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0157",
+    "participant_id": "PART-NEUR-256",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 743.3,
+    "baseline_ptau_181": 33.4,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0158",
+    "participant_id": "PART-NEUR-257",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 591.2,
+    "baseline_ptau_181": 76.8,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0159",
+    "participant_id": "PART-NEUR-258",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1058.8,
+    "baseline_ptau_181": 20.0,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0160",
+    "participant_id": "PART-NEUR-259",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 595.2,
+    "baseline_ptau_181": 80.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0161",
+    "participant_id": "PART-NEUR-260",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 749.8,
+    "baseline_ptau_181": 63.0,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0162",
+    "participant_id": "PART-NEUR-261",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 620.2,
+    "baseline_ptau_181": 35.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0163",
+    "participant_id": "PART-NEUR-262",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 681.2,
+    "baseline_ptau_181": 25.3,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0164",
+    "participant_id": "PART-NEUR-263",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 680.2,
+    "baseline_ptau_181": 43.9,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0165",
+    "participant_id": "PART-NEUR-264",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 871.5,
+    "baseline_ptau_181": 50.7,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0166",
+    "participant_id": "PART-NEUR-265",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 949.2,
+    "baseline_ptau_181": 65.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0167",
+    "participant_id": "PART-NEUR-266",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 900.5,
+    "baseline_ptau_181": 68.9,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0168",
+    "participant_id": "PART-NEUR-267",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 964.2,
+    "baseline_ptau_181": 71.9,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0169",
+    "participant_id": "PART-NEUR-268",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 477.2,
+    "baseline_ptau_181": 71.8,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0170",
+    "participant_id": "PART-NEUR-269",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 909.3,
+    "baseline_ptau_181": 76.4,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0171",
+    "participant_id": "PART-NEUR-270",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1091.3,
+    "baseline_ptau_181": 70.7,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0172",
+    "participant_id": "PART-NEUR-271",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 760.2,
+    "baseline_ptau_181": 81.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0173",
+    "participant_id": "PART-NEUR-272",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 468.6,
+    "baseline_ptau_181": 26.2,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0174",
+    "participant_id": "PART-NEUR-273",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 950.9,
+    "baseline_ptau_181": 84.3,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0175",
+    "participant_id": "PART-NEUR-274",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 455.5,
+    "baseline_ptau_181": 17.6,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0176",
+    "participant_id": "PART-NEUR-275",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 489.7,
+    "baseline_ptau_181": 18.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0177",
+    "participant_id": "PART-NEUR-276",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 523.0,
+    "baseline_ptau_181": 82.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0178",
+    "participant_id": "PART-NEUR-277",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 998.3,
+    "baseline_ptau_181": 52.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0179",
+    "participant_id": "PART-NEUR-278",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1029.0,
+    "baseline_ptau_181": 22.4,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0180",
+    "participant_id": "PART-NEUR-279",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 635.5,
+    "baseline_ptau_181": 18.9,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0181",
+    "participant_id": "PART-NEUR-280",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 928.5,
+    "baseline_ptau_181": 75.6,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0182",
+    "participant_id": "PART-NEUR-281",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 689.4,
+    "baseline_ptau_181": 30.5,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0183",
+    "participant_id": "PART-NEUR-282",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 760.9,
+    "baseline_ptau_181": 55.7,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0184",
+    "participant_id": "PART-NEUR-283",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 553.3,
+    "baseline_ptau_181": 81.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0185",
+    "participant_id": "PART-NEUR-284",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 880.3,
+    "baseline_ptau_181": 81.2,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0186",
+    "participant_id": "PART-NEUR-285",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 902.8,
+    "baseline_ptau_181": 80.5,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0187",
+    "participant_id": "PART-NEUR-286",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 615.4,
+    "baseline_ptau_181": 57.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0188",
+    "participant_id": "PART-NEUR-287",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 998.7,
+    "baseline_ptau_181": 84.8,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0189",
+    "participant_id": "PART-NEUR-288",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 652.8,
+    "baseline_ptau_181": 27.7,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0190",
+    "participant_id": "PART-NEUR-289",
+    "trial_arm": "Placebo",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 550.0,
+    "baseline_ptau_181": 77.8,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0191",
+    "participant_id": "PART-NEUR-290",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 934.8,
+    "baseline_ptau_181": 30.7,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0192",
+    "participant_id": "PART-NEUR-291",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 732.0,
+    "baseline_ptau_181": 19.2,
+    "apoe_genotype": "e2/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0193",
+    "participant_id": "PART-NEUR-292",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 929.3,
+    "baseline_ptau_181": 47.1,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0194",
+    "participant_id": "PART-NEUR-293",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 608.8,
+    "baseline_ptau_181": 26.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0195",
+    "participant_id": "PART-NEUR-294",
+    "trial_arm": "Placebo",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 1051.7,
+    "baseline_ptau_181": 17.2,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0196",
+    "participant_id": "PART-NEUR-295",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 996.4,
+    "baseline_ptau_181": 29.3,
+    "apoe_genotype": "e4/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0197",
+    "participant_id": "PART-NEUR-296",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 498.6,
+    "baseline_ptau_181": 23.5,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "COMPLETED"
+  },
+  {
+    "enrollment_id": "TRL-0198",
+    "participant_id": "PART-NEUR-297",
+    "trial_arm": "Active Drug 10mg",
+    "cohort_type": "Mild AD",
+    "baseline_abeta_42": 1069.8,
+    "baseline_ptau_181": 63.0,
+    "apoe_genotype": "e3/e3",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0199",
+    "participant_id": "PART-NEUR-298",
+    "trial_arm": "Active Drug 20mg",
+    "cohort_type": "Early MCI",
+    "baseline_abeta_42": 877.8,
+    "baseline_ptau_181": 45.9,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  },
+  {
+    "enrollment_id": "TRL-0200",
+    "participant_id": "PART-NEUR-299",
+    "trial_arm": "Placebo",
+    "cohort_type": "Pre-symptomatic",
+    "baseline_abeta_42": 1020.8,
+    "baseline_ptau_181": 15.7,
+    "apoe_genotype": "e3/e4",
+    "active_trial_status": "ACTIVE"
+  }
+]

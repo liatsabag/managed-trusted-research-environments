@@ -1,0 +1,20 @@
+================================================================================
+HELSINKI ETHICS COMMITTEE / INSTITUTIONAL REVIEW BOARD (IRB) APPROVAL
+================================================================================
+Room Identifier: rr-cardio-03
+Study Title: Cardiovascular Risk Stratification & MACE Cohort
+IRB Protocol Number: IRB-TLV-2024-104
+Item Type: Helsinki_IRB
+Item Name: Helsinki Ethics Committee Statutory Approval
+
+STATUS: APPROVED
+Approval Date: 2024-11-01
+Valid Through (Expiration): 2027-11-01
+Ethics Board: Tel-Aviv Medical Center Helsinki Committee
+Chair / Approver: Dr. Sarah Lev, Helsinki Ethics Chair
+
+ETHICAL CLEARANCE TERMS:
+1. Ethics approval is granted in accordance with the Declaration of Helsinki.
+2. Informed consent waiver applies under secondary research de-identification provisions.
+3. Access is strictly bound to certified investigators.
+================================================================================

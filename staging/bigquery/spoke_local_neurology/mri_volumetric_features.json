@@ -1,0 +1,3502 @@
+[
+  {
+    "scan_id": "MRI-00001",
+    "participant_id": "PART-NEUR-100",
+    "scan_date": "2023-06-01",
+    "whole_brain_volume_cm3": 1375.1,
+    "hippocampal_volume_left_mm3": 3076.0,
+    "hippocampal_volume_right_mm3": 3943.4,
+    "entorhinal_cortex_thickness_mm": 3.58,
+    "white_matter_hyperintensities_cm3": 6.43
+  },
+  {
+    "scan_id": "MRI-00002",
+    "participant_id": "PART-NEUR-101",
+    "scan_date": "2023-06-02",
+    "whole_brain_volume_cm3": 1297.8,
+    "hippocampal_volume_left_mm3": 3882.4,
+    "hippocampal_volume_right_mm3": 4152.7,
+    "entorhinal_cortex_thickness_mm": 2.51,
+    "white_matter_hyperintensities_cm3": 10.93
+  },
+  {
+    "scan_id": "MRI-00003",
+    "participant_id": "PART-NEUR-102",
+    "scan_date": "2023-06-03",
+    "whole_brain_volume_cm3": 1254.3,
+    "hippocampal_volume_left_mm3": 3024.9,
+    "hippocampal_volume_right_mm3": 4207.8,
+    "entorhinal_cortex_thickness_mm": 2.95,
+    "white_matter_hyperintensities_cm3": 2.39
+  },
+  {
+    "scan_id": "MRI-00004",
+    "participant_id": "PART-NEUR-103",
+    "scan_date": "2023-06-04",
+    "whole_brain_volume_cm3": 1351.2,
+    "hippocampal_volume_left_mm3": 3462.7,
+    "hippocampal_volume_right_mm3": 3688.3,
+    "entorhinal_cortex_thickness_mm": 3.51,
+    "white_matter_hyperintensities_cm3": 6.44
+  },
+  {
+    "scan_id": "MRI-00005",
+    "participant_id": "PART-NEUR-104",
+    "scan_date": "2023-06-05",
+    "whole_brain_volume_cm3": 1132.9,
+    "hippocampal_volume_left_mm3": 3233.0,
+    "hippocampal_volume_right_mm3": 3429.2,
+    "entorhinal_cortex_thickness_mm": 3.19,
+    "white_matter_hyperintensities_cm3": 6.61
+  },
+  {
+    "scan_id": "MRI-00006",
+    "participant_id": "PART-NEUR-105",
+    "scan_date": "2023-06-06",
+    "whole_brain_volume_cm3": 1209.3,
+    "hippocampal_volume_left_mm3": 3565.8,
+    "hippocampal_volume_right_mm3": 4228.9,
+    "entorhinal_cortex_thickness_mm": 2.98,
+    "white_matter_hyperintensities_cm3": 3.47
+  },
+  {
+    "scan_id": "MRI-00007",
+    "participant_id": "PART-NEUR-106",
+    "scan_date": "2023-06-07",
+    "whole_brain_volume_cm3": 1297.1,
+    "hippocampal_volume_left_mm3": 3500.4,
+    "hippocampal_volume_right_mm3": 3937.2,
+    "entorhinal_cortex_thickness_mm": 2.29,
+    "white_matter_hyperintensities_cm3": 7.59
+  },
+  {
+    "scan_id": "MRI-00008",
+    "participant_id": "PART-NEUR-107",
+    "scan_date": "2023-06-08",
+    "whole_brain_volume_cm3": 1340.9,
+    "hippocampal_volume_left_mm3": 3836.0,
+    "hippocampal_volume_right_mm3": 3049.6,
+    "entorhinal_cortex_thickness_mm": 3.32,
+    "white_matter_hyperintensities_cm3": 6.8
+  },
+  {
+    "scan_id": "MRI-00009",
+    "participant_id": "PART-NEUR-108",
+    "scan_date": "2023-06-09",
+    "whole_brain_volume_cm3": 1180.5,
+    "hippocampal_volume_left_mm3": 4130.5,
+    "hippocampal_volume_right_mm3": 3228.2,
+    "entorhinal_cortex_thickness_mm": 3.73,
+    "white_matter_hyperintensities_cm3": 13.53
+  },
+  {
+    "scan_id": "MRI-00010",
+    "participant_id": "PART-NEUR-109",
+    "scan_date": "2023-06-10",
+    "whole_brain_volume_cm3": 1213.9,
+    "hippocampal_volume_left_mm3": 3900.9,
+    "hippocampal_volume_right_mm3": 3849.3,
+    "entorhinal_cortex_thickness_mm": 3.34,
+    "white_matter_hyperintensities_cm3": 5.68
+  },
+  {
+    "scan_id": "MRI-00011",
+    "participant_id": "PART-NEUR-110",
+    "scan_date": "2023-06-11",
+    "whole_brain_volume_cm3": 1167.9,
+    "hippocampal_volume_left_mm3": 3795.1,
+    "hippocampal_volume_right_mm3": 3050.7,
+    "entorhinal_cortex_thickness_mm": 2.56,
+    "white_matter_hyperintensities_cm3": 2.39
+  },
+  {
+    "scan_id": "MRI-00012",
+    "participant_id": "PART-NEUR-111",
+    "scan_date": "2023-06-12",
+    "whole_brain_volume_cm3": 1141.8,
+    "hippocampal_volume_left_mm3": 4090.3,
+    "hippocampal_volume_right_mm3": 3912.6,
+    "entorhinal_cortex_thickness_mm": 3.01,
+    "white_matter_hyperintensities_cm3": 2.21
+  },
+  {
+    "scan_id": "MRI-00013",
+    "participant_id": "PART-NEUR-112",
+    "scan_date": "2023-06-13",
+    "whole_brain_volume_cm3": 1151.0,
+    "hippocampal_volume_left_mm3": 2830.0,
+    "hippocampal_volume_right_mm3": 3342.1,
+    "entorhinal_cortex_thickness_mm": 2.48,
+    "white_matter_hyperintensities_cm3": 9.88
+  },
+  {
+    "scan_id": "MRI-00014",
+    "participant_id": "PART-NEUR-113",
+    "scan_date": "2023-06-14",
+    "whole_brain_volume_cm3": 1106.1,
+    "hippocampal_volume_left_mm3": 3921.0,
+    "hippocampal_volume_right_mm3": 4019.6,
+    "entorhinal_cortex_thickness_mm": 2.21,
+    "white_matter_hyperintensities_cm3": 10.66
+  },
+  {
+    "scan_id": "MRI-00015",
+    "participant_id": "PART-NEUR-114",
+    "scan_date": "2023-06-15",
+    "whole_brain_volume_cm3": 1078.0,
+    "hippocampal_volume_left_mm3": 2812.9,
+    "hippocampal_volume_right_mm3": 3058.2,
+    "entorhinal_cortex_thickness_mm": 2.31,
+    "white_matter_hyperintensities_cm3": 1.53
+  },
+  {
+    "scan_id": "MRI-00016",
+    "participant_id": "PART-NEUR-115",
+    "scan_date": "2023-06-16",
+    "whole_brain_volume_cm3": 1061.5,
+    "hippocampal_volume_left_mm3": 3223.8,
+    "hippocampal_volume_right_mm3": 3346.6,
+    "entorhinal_cortex_thickness_mm": 2.39,
+    "white_matter_hyperintensities_cm3": 8.42
+  },
+  {
+    "scan_id": "MRI-00017",
+    "participant_id": "PART-NEUR-116",
+    "scan_date": "2023-06-17",
+    "whole_brain_volume_cm3": 1188.5,
+    "hippocampal_volume_left_mm3": 4134.8,
+    "hippocampal_volume_right_mm3": 3630.9,
+    "entorhinal_cortex_thickness_mm": 3.32,
+    "white_matter_hyperintensities_cm3": 1.66
+  },
+  {
+    "scan_id": "MRI-00018",
+    "participant_id": "PART-NEUR-117",
+    "scan_date": "2023-06-18",
+    "whole_brain_volume_cm3": 1296.7,
+    "hippocampal_volume_left_mm3": 2952.6,
+    "hippocampal_volume_right_mm3": 3817.7,
+    "entorhinal_cortex_thickness_mm": 2.77,
+    "white_matter_hyperintensities_cm3": 4.21
+  },
+  {
+    "scan_id": "MRI-00019",
+    "participant_id": "PART-NEUR-118",
+    "scan_date": "2023-06-19",
+    "whole_brain_volume_cm3": 1159.4,
+    "hippocampal_volume_left_mm3": 2941.5,
+    "hippocampal_volume_right_mm3": 3611.6,
+    "entorhinal_cortex_thickness_mm": 2.34,
+    "white_matter_hyperintensities_cm3": 3.73
+  },
+  {
+    "scan_id": "MRI-00020",
+    "participant_id": "PART-NEUR-119",
+    "scan_date": "2023-06-20",
+    "whole_brain_volume_cm3": 1283.9,
+    "hippocampal_volume_left_mm3": 3300.1,
+    "hippocampal_volume_right_mm3": 3503.6,
+    "entorhinal_cortex_thickness_mm": 3.53,
+    "white_matter_hyperintensities_cm3": 3.31
+  },
+  {
+    "scan_id": "MRI-00021",
+    "participant_id": "PART-NEUR-120",
+    "scan_date": "2023-06-21",
+    "whole_brain_volume_cm3": 1213.1,
+    "hippocampal_volume_left_mm3": 3580.1,
+    "hippocampal_volume_right_mm3": 3900.9,
+    "entorhinal_cortex_thickness_mm": 3.53,
+    "white_matter_hyperintensities_cm3": 13.64
+  },
+  {
+    "scan_id": "MRI-00022",
+    "participant_id": "PART-NEUR-121",
+    "scan_date": "2023-06-22",
+    "whole_brain_volume_cm3": 1332.7,
+    "hippocampal_volume_left_mm3": 3299.9,
+    "hippocampal_volume_right_mm3": 3623.3,
+    "entorhinal_cortex_thickness_mm": 2.35,
+    "white_matter_hyperintensities_cm3": 6.13
+  },
+  {
+    "scan_id": "MRI-00023",
+    "participant_id": "PART-NEUR-122",
+    "scan_date": "2023-06-23",
+    "whole_brain_volume_cm3": 1090.0,
+    "hippocampal_volume_left_mm3": 2920.1,
+    "hippocampal_volume_right_mm3": 2931.4,
+    "entorhinal_cortex_thickness_mm": 3.8,
+    "white_matter_hyperintensities_cm3": 6.89
+  },
+  {
+    "scan_id": "MRI-00024",
+    "participant_id": "PART-NEUR-123",
+    "scan_date": "2023-06-24",
+    "whole_brain_volume_cm3": 1149.6,
+    "hippocampal_volume_left_mm3": 3618.9,
+    "hippocampal_volume_right_mm3": 3589.8,
+    "entorhinal_cortex_thickness_mm": 3.59,
+    "white_matter_hyperintensities_cm3": 6.96
+  },
+  {
+    "scan_id": "MRI-00025",
+    "participant_id": "PART-NEUR-124",
+    "scan_date": "2023-06-25",
+    "whole_brain_volume_cm3": 1090.0,
+    "hippocampal_volume_left_mm3": 3047.5,
+    "hippocampal_volume_right_mm3": 3092.3,
+    "entorhinal_cortex_thickness_mm": 3.49,
+    "white_matter_hyperintensities_cm3": 6.54
+  },
+  {
+    "scan_id": "MRI-00026",
+    "participant_id": "PART-NEUR-125",
+    "scan_date": "2023-06-26",
+    "whole_brain_volume_cm3": 1195.0,
+    "hippocampal_volume_left_mm3": 3278.0,
+    "hippocampal_volume_right_mm3": 4107.7,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 7.09
+  },
+  {
+    "scan_id": "MRI-00027",
+    "participant_id": "PART-NEUR-126",
+    "scan_date": "2023-06-27",
+    "whole_brain_volume_cm3": 1332.4,
+    "hippocampal_volume_left_mm3": 3813.0,
+    "hippocampal_volume_right_mm3": 3050.4,
+    "entorhinal_cortex_thickness_mm": 3.26,
+    "white_matter_hyperintensities_cm3": 3.72
+  },
+  {
+    "scan_id": "MRI-00028",
+    "participant_id": "PART-NEUR-127",
+    "scan_date": "2023-06-28",
+    "whole_brain_volume_cm3": 1176.4,
+    "hippocampal_volume_left_mm3": 3334.9,
+    "hippocampal_volume_right_mm3": 4175.7,
+    "entorhinal_cortex_thickness_mm": 2.26,
+    "white_matter_hyperintensities_cm3": 3.38
+  },
+  {
+    "scan_id": "MRI-00029",
+    "participant_id": "PART-NEUR-128",
+    "scan_date": "2023-06-29",
+    "whole_brain_volume_cm3": 1168.2,
+    "hippocampal_volume_left_mm3": 3269.4,
+    "hippocampal_volume_right_mm3": 3096.1,
+    "entorhinal_cortex_thickness_mm": 3.13,
+    "white_matter_hyperintensities_cm3": 4.22
+  },
+  {
+    "scan_id": "MRI-00030",
+    "participant_id": "PART-NEUR-129",
+    "scan_date": "2023-06-30",
+    "whole_brain_volume_cm3": 1301.9,
+    "hippocampal_volume_left_mm3": 3356.9,
+    "hippocampal_volume_right_mm3": 4150.4,
+    "entorhinal_cortex_thickness_mm": 3.08,
+    "white_matter_hyperintensities_cm3": 2.28
+  },
+  {
+    "scan_id": "MRI-00031",
+    "participant_id": "PART-NEUR-130",
+    "scan_date": "2023-07-01",
+    "whole_brain_volume_cm3": 1207.2,
+    "hippocampal_volume_left_mm3": 3618.8,
+    "hippocampal_volume_right_mm3": 4180.8,
+    "entorhinal_cortex_thickness_mm": 3.36,
+    "white_matter_hyperintensities_cm3": 10.31
+  },
+  {
+    "scan_id": "MRI-00032",
+    "participant_id": "PART-NEUR-131",
+    "scan_date": "2023-07-02",
+    "whole_brain_volume_cm3": 1204.1,
+    "hippocampal_volume_left_mm3": 3648.9,
+    "hippocampal_volume_right_mm3": 3262.1,
+    "entorhinal_cortex_thickness_mm": 3.16,
+    "white_matter_hyperintensities_cm3": 9.64
+  },
+  {
+    "scan_id": "MRI-00033",
+    "participant_id": "PART-NEUR-132",
+    "scan_date": "2023-07-03",
+    "whole_brain_volume_cm3": 1207.8,
+    "hippocampal_volume_left_mm3": 4150.9,
+    "hippocampal_volume_right_mm3": 3214.2,
+    "entorhinal_cortex_thickness_mm": 3.43,
+    "white_matter_hyperintensities_cm3": 11.59
+  },
+  {
+    "scan_id": "MRI-00034",
+    "participant_id": "PART-NEUR-133",
+    "scan_date": "2023-07-04",
+    "whole_brain_volume_cm3": 1221.6,
+    "hippocampal_volume_left_mm3": 3331.0,
+    "hippocampal_volume_right_mm3": 4151.2,
+    "entorhinal_cortex_thickness_mm": 2.9,
+    "white_matter_hyperintensities_cm3": 14.17
+  },
+  {
+    "scan_id": "MRI-00035",
+    "participant_id": "PART-NEUR-134",
+    "scan_date": "2023-07-05",
+    "whole_brain_volume_cm3": 1331.8,
+    "hippocampal_volume_left_mm3": 3600.5,
+    "hippocampal_volume_right_mm3": 3265.3,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 14.16
+  },
+  {
+    "scan_id": "MRI-00036",
+    "participant_id": "PART-NEUR-135",
+    "scan_date": "2023-07-06",
+    "whole_brain_volume_cm3": 1232.8,
+    "hippocampal_volume_left_mm3": 3219.2,
+    "hippocampal_volume_right_mm3": 3820.2,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 4.66
+  },
+  {
+    "scan_id": "MRI-00037",
+    "participant_id": "PART-NEUR-136",
+    "scan_date": "2023-07-07",
+    "whole_brain_volume_cm3": 1164.1,
+    "hippocampal_volume_left_mm3": 3661.2,
+    "hippocampal_volume_right_mm3": 3296.7,
+    "entorhinal_cortex_thickness_mm": 2.28,
+    "white_matter_hyperintensities_cm3": 13.83
+  },
+  {
+    "scan_id": "MRI-00038",
+    "participant_id": "PART-NEUR-137",
+    "scan_date": "2023-07-08",
+    "whole_brain_volume_cm3": 1340.3,
+    "hippocampal_volume_left_mm3": 3219.7,
+    "hippocampal_volume_right_mm3": 3489.5,
+    "entorhinal_cortex_thickness_mm": 2.41,
+    "white_matter_hyperintensities_cm3": 12.07
+  },
+  {
+    "scan_id": "MRI-00039",
+    "participant_id": "PART-NEUR-138",
+    "scan_date": "2023-07-09",
+    "whole_brain_volume_cm3": 1157.0,
+    "hippocampal_volume_left_mm3": 3325.4,
+    "hippocampal_volume_right_mm3": 3478.6,
+    "entorhinal_cortex_thickness_mm": 3.27,
+    "white_matter_hyperintensities_cm3": 10.78
+  },
+  {
+    "scan_id": "MRI-00040",
+    "participant_id": "PART-NEUR-139",
+    "scan_date": "2023-07-10",
+    "whole_brain_volume_cm3": 1052.0,
+    "hippocampal_volume_left_mm3": 4137.8,
+    "hippocampal_volume_right_mm3": 4125.6,
+    "entorhinal_cortex_thickness_mm": 2.88,
+    "white_matter_hyperintensities_cm3": 1.27
+  },
+  {
+    "scan_id": "MRI-00041",
+    "participant_id": "PART-NEUR-140",
+    "scan_date": "2023-07-11",
+    "whole_brain_volume_cm3": 1162.4,
+    "hippocampal_volume_left_mm3": 3791.3,
+    "hippocampal_volume_right_mm3": 3224.4,
+    "entorhinal_cortex_thickness_mm": 2.64,
+    "white_matter_hyperintensities_cm3": 2.85
+  },
+  {
+    "scan_id": "MRI-00042",
+    "participant_id": "PART-NEUR-141",
+    "scan_date": "2023-07-12",
+    "whole_brain_volume_cm3": 1350.1,
+    "hippocampal_volume_left_mm3": 3373.1,
+    "hippocampal_volume_right_mm3": 3368.2,
+    "entorhinal_cortex_thickness_mm": 2.93,
+    "white_matter_hyperintensities_cm3": 1.78
+  },
+  {
+    "scan_id": "MRI-00043",
+    "participant_id": "PART-NEUR-142",
+    "scan_date": "2023-07-13",
+    "whole_brain_volume_cm3": 1330.9,
+    "hippocampal_volume_left_mm3": 3511.7,
+    "hippocampal_volume_right_mm3": 3546.5,
+    "entorhinal_cortex_thickness_mm": 2.21,
+    "white_matter_hyperintensities_cm3": 13.19
+  },
+  {
+    "scan_id": "MRI-00044",
+    "participant_id": "PART-NEUR-143",
+    "scan_date": "2023-07-14",
+    "whole_brain_volume_cm3": 1126.6,
+    "hippocampal_volume_left_mm3": 3821.6,
+    "hippocampal_volume_right_mm3": 3155.7,
+    "entorhinal_cortex_thickness_mm": 2.9,
+    "white_matter_hyperintensities_cm3": 4.36
+  },
+  {
+    "scan_id": "MRI-00045",
+    "participant_id": "PART-NEUR-144",
+    "scan_date": "2023-07-15",
+    "whole_brain_volume_cm3": 1211.4,
+    "hippocampal_volume_left_mm3": 3965.5,
+    "hippocampal_volume_right_mm3": 3652.0,
+    "entorhinal_cortex_thickness_mm": 2.84,
+    "white_matter_hyperintensities_cm3": 3.22
+  },
+  {
+    "scan_id": "MRI-00046",
+    "participant_id": "PART-NEUR-145",
+    "scan_date": "2023-07-16",
+    "whole_brain_volume_cm3": 1186.4,
+    "hippocampal_volume_left_mm3": 3096.8,
+    "hippocampal_volume_right_mm3": 4039.6,
+    "entorhinal_cortex_thickness_mm": 3.55,
+    "white_matter_hyperintensities_cm3": 9.91
+  },
+  {
+    "scan_id": "MRI-00047",
+    "participant_id": "PART-NEUR-146",
+    "scan_date": "2023-07-17",
+    "whole_brain_volume_cm3": 1070.3,
+    "hippocampal_volume_left_mm3": 3237.8,
+    "hippocampal_volume_right_mm3": 3583.6,
+    "entorhinal_cortex_thickness_mm": 2.94,
+    "white_matter_hyperintensities_cm3": 7.03
+  },
+  {
+    "scan_id": "MRI-00048",
+    "participant_id": "PART-NEUR-147",
+    "scan_date": "2023-07-18",
+    "whole_brain_volume_cm3": 1133.8,
+    "hippocampal_volume_left_mm3": 3822.2,
+    "hippocampal_volume_right_mm3": 3512.9,
+    "entorhinal_cortex_thickness_mm": 2.82,
+    "white_matter_hyperintensities_cm3": 4.96
+  },
+  {
+    "scan_id": "MRI-00049",
+    "participant_id": "PART-NEUR-148",
+    "scan_date": "2023-07-19",
+    "whole_brain_volume_cm3": 1141.7,
+    "hippocampal_volume_left_mm3": 3591.1,
+    "hippocampal_volume_right_mm3": 3472.0,
+    "entorhinal_cortex_thickness_mm": 3.27,
+    "white_matter_hyperintensities_cm3": 13.6
+  },
+  {
+    "scan_id": "MRI-00050",
+    "participant_id": "PART-NEUR-149",
+    "scan_date": "2023-07-20",
+    "whole_brain_volume_cm3": 1329.3,
+    "hippocampal_volume_left_mm3": 3720.2,
+    "hippocampal_volume_right_mm3": 3526.8,
+    "entorhinal_cortex_thickness_mm": 2.13,
+    "white_matter_hyperintensities_cm3": 1.36
+  },
+  {
+    "scan_id": "MRI-00051",
+    "participant_id": "PART-NEUR-150",
+    "scan_date": "2023-07-21",
+    "whole_brain_volume_cm3": 1143.8,
+    "hippocampal_volume_left_mm3": 3085.1,
+    "hippocampal_volume_right_mm3": 3967.8,
+    "entorhinal_cortex_thickness_mm": 2.49,
+    "white_matter_hyperintensities_cm3": 5.77
+  },
+  {
+    "scan_id": "MRI-00052",
+    "participant_id": "PART-NEUR-151",
+    "scan_date": "2023-07-22",
+    "whole_brain_volume_cm3": 1379.7,
+    "hippocampal_volume_left_mm3": 2948.5,
+    "hippocampal_volume_right_mm3": 2968.5,
+    "entorhinal_cortex_thickness_mm": 3.24,
+    "white_matter_hyperintensities_cm3": 7.47
+  },
+  {
+    "scan_id": "MRI-00053",
+    "participant_id": "PART-NEUR-152",
+    "scan_date": "2023-07-23",
+    "whole_brain_volume_cm3": 1310.8,
+    "hippocampal_volume_left_mm3": 3810.8,
+    "hippocampal_volume_right_mm3": 3809.6,
+    "entorhinal_cortex_thickness_mm": 2.14,
+    "white_matter_hyperintensities_cm3": 13.21
+  },
+  {
+    "scan_id": "MRI-00054",
+    "participant_id": "PART-NEUR-153",
+    "scan_date": "2023-07-24",
+    "whole_brain_volume_cm3": 1276.4,
+    "hippocampal_volume_left_mm3": 3862.2,
+    "hippocampal_volume_right_mm3": 3431.2,
+    "entorhinal_cortex_thickness_mm": 2.13,
+    "white_matter_hyperintensities_cm3": 9.91
+  },
+  {
+    "scan_id": "MRI-00055",
+    "participant_id": "PART-NEUR-154",
+    "scan_date": "2023-07-25",
+    "whole_brain_volume_cm3": 1280.4,
+    "hippocampal_volume_left_mm3": 3691.3,
+    "hippocampal_volume_right_mm3": 3307.1,
+    "entorhinal_cortex_thickness_mm": 2.71,
+    "white_matter_hyperintensities_cm3": 7.58
+  },
+  {
+    "scan_id": "MRI-00056",
+    "participant_id": "PART-NEUR-155",
+    "scan_date": "2023-07-26",
+    "whole_brain_volume_cm3": 1299.8,
+    "hippocampal_volume_left_mm3": 3015.4,
+    "hippocampal_volume_right_mm3": 3023.2,
+    "entorhinal_cortex_thickness_mm": 2.34,
+    "white_matter_hyperintensities_cm3": 2.82
+  },
+  {
+    "scan_id": "MRI-00057",
+    "participant_id": "PART-NEUR-156",
+    "scan_date": "2023-07-27",
+    "whole_brain_volume_cm3": 1116.3,
+    "hippocampal_volume_left_mm3": 2882.8,
+    "hippocampal_volume_right_mm3": 4293.1,
+    "entorhinal_cortex_thickness_mm": 2.51,
+    "white_matter_hyperintensities_cm3": 13.68
+  },
+  {
+    "scan_id": "MRI-00058",
+    "participant_id": "PART-NEUR-157",
+    "scan_date": "2023-07-28",
+    "whole_brain_volume_cm3": 1068.1,
+    "hippocampal_volume_left_mm3": 3856.6,
+    "hippocampal_volume_right_mm3": 4155.5,
+    "entorhinal_cortex_thickness_mm": 3.02,
+    "white_matter_hyperintensities_cm3": 7.74
+  },
+  {
+    "scan_id": "MRI-00059",
+    "participant_id": "PART-NEUR-158",
+    "scan_date": "2023-07-29",
+    "whole_brain_volume_cm3": 1283.2,
+    "hippocampal_volume_left_mm3": 3879.0,
+    "hippocampal_volume_right_mm3": 3558.2,
+    "entorhinal_cortex_thickness_mm": 2.61,
+    "white_matter_hyperintensities_cm3": 12.9
+  },
+  {
+    "scan_id": "MRI-00060",
+    "participant_id": "PART-NEUR-159",
+    "scan_date": "2023-07-30",
+    "whole_brain_volume_cm3": 1107.4,
+    "hippocampal_volume_left_mm3": 3384.9,
+    "hippocampal_volume_right_mm3": 2935.6,
+    "entorhinal_cortex_thickness_mm": 2.37,
+    "white_matter_hyperintensities_cm3": 13.47
+  },
+  {
+    "scan_id": "MRI-00061",
+    "participant_id": "PART-NEUR-160",
+    "scan_date": "2023-07-31",
+    "whole_brain_volume_cm3": 1258.7,
+    "hippocampal_volume_left_mm3": 3826.8,
+    "hippocampal_volume_right_mm3": 3286.4,
+    "entorhinal_cortex_thickness_mm": 3.26,
+    "white_matter_hyperintensities_cm3": 8.02
+  },
+  {
+    "scan_id": "MRI-00062",
+    "participant_id": "PART-NEUR-161",
+    "scan_date": "2023-08-01",
+    "whole_brain_volume_cm3": 1074.3,
+    "hippocampal_volume_left_mm3": 3531.0,
+    "hippocampal_volume_right_mm3": 3821.1,
+    "entorhinal_cortex_thickness_mm": 3.79,
+    "white_matter_hyperintensities_cm3": 2.94
+  },
+  {
+    "scan_id": "MRI-00063",
+    "participant_id": "PART-NEUR-162",
+    "scan_date": "2023-08-02",
+    "whole_brain_volume_cm3": 1059.7,
+    "hippocampal_volume_left_mm3": 3010.7,
+    "hippocampal_volume_right_mm3": 4119.5,
+    "entorhinal_cortex_thickness_mm": 3.01,
+    "white_matter_hyperintensities_cm3": 7.28
+  },
+  {
+    "scan_id": "MRI-00064",
+    "participant_id": "PART-NEUR-163",
+    "scan_date": "2023-08-03",
+    "whole_brain_volume_cm3": 1092.9,
+    "hippocampal_volume_left_mm3": 3735.0,
+    "hippocampal_volume_right_mm3": 2944.8,
+    "entorhinal_cortex_thickness_mm": 2.37,
+    "white_matter_hyperintensities_cm3": 8.66
+  },
+  {
+    "scan_id": "MRI-00065",
+    "participant_id": "PART-NEUR-164",
+    "scan_date": "2023-08-04",
+    "whole_brain_volume_cm3": 1165.1,
+    "hippocampal_volume_left_mm3": 3072.9,
+    "hippocampal_volume_right_mm3": 3988.9,
+    "entorhinal_cortex_thickness_mm": 2.69,
+    "white_matter_hyperintensities_cm3": 5.43
+  },
+  {
+    "scan_id": "MRI-00066",
+    "participant_id": "PART-NEUR-165",
+    "scan_date": "2023-08-05",
+    "whole_brain_volume_cm3": 1101.2,
+    "hippocampal_volume_left_mm3": 3239.1,
+    "hippocampal_volume_right_mm3": 4075.0,
+    "entorhinal_cortex_thickness_mm": 2.59,
+    "white_matter_hyperintensities_cm3": 8.17
+  },
+  {
+    "scan_id": "MRI-00067",
+    "participant_id": "PART-NEUR-166",
+    "scan_date": "2023-08-06",
+    "whole_brain_volume_cm3": 1127.1,
+    "hippocampal_volume_left_mm3": 3043.7,
+    "hippocampal_volume_right_mm3": 3411.5,
+    "entorhinal_cortex_thickness_mm": 2.68,
+    "white_matter_hyperintensities_cm3": 11.53
+  },
+  {
+    "scan_id": "MRI-00068",
+    "participant_id": "PART-NEUR-167",
+    "scan_date": "2023-08-07",
+    "whole_brain_volume_cm3": 1179.2,
+    "hippocampal_volume_left_mm3": 4026.3,
+    "hippocampal_volume_right_mm3": 2991.0,
+    "entorhinal_cortex_thickness_mm": 2.68,
+    "white_matter_hyperintensities_cm3": 5.16
+  },
+  {
+    "scan_id": "MRI-00069",
+    "participant_id": "PART-NEUR-168",
+    "scan_date": "2023-08-08",
+    "whole_brain_volume_cm3": 1200.9,
+    "hippocampal_volume_left_mm3": 3065.5,
+    "hippocampal_volume_right_mm3": 2921.9,
+    "entorhinal_cortex_thickness_mm": 3.22,
+    "white_matter_hyperintensities_cm3": 5.04
+  },
+  {
+    "scan_id": "MRI-00070",
+    "participant_id": "PART-NEUR-169",
+    "scan_date": "2023-08-09",
+    "whole_brain_volume_cm3": 1150.3,
+    "hippocampal_volume_left_mm3": 3565.1,
+    "hippocampal_volume_right_mm3": 3896.6,
+    "entorhinal_cortex_thickness_mm": 2.86,
+    "white_matter_hyperintensities_cm3": 12.22
+  },
+  {
+    "scan_id": "MRI-00071",
+    "participant_id": "PART-NEUR-170",
+    "scan_date": "2023-08-10",
+    "whole_brain_volume_cm3": 1075.6,
+    "hippocampal_volume_left_mm3": 3504.1,
+    "hippocampal_volume_right_mm3": 3189.6,
+    "entorhinal_cortex_thickness_mm": 3.21,
+    "white_matter_hyperintensities_cm3": 5.79
+  },
+  {
+    "scan_id": "MRI-00072",
+    "participant_id": "PART-NEUR-171",
+    "scan_date": "2023-08-11",
+    "whole_brain_volume_cm3": 1135.9,
+    "hippocampal_volume_left_mm3": 3145.5,
+    "hippocampal_volume_right_mm3": 3321.4,
+    "entorhinal_cortex_thickness_mm": 2.88,
+    "white_matter_hyperintensities_cm3": 6.09
+  },
+  {
+    "scan_id": "MRI-00073",
+    "participant_id": "PART-NEUR-172",
+    "scan_date": "2023-08-12",
+    "whole_brain_volume_cm3": 1141.5,
+    "hippocampal_volume_left_mm3": 3772.2,
+    "hippocampal_volume_right_mm3": 3967.0,
+    "entorhinal_cortex_thickness_mm": 3.43,
+    "white_matter_hyperintensities_cm3": 5.49
+  },
+  {
+    "scan_id": "MRI-00074",
+    "participant_id": "PART-NEUR-173",
+    "scan_date": "2023-08-13",
+    "whole_brain_volume_cm3": 1148.6,
+    "hippocampal_volume_left_mm3": 3790.7,
+    "hippocampal_volume_right_mm3": 3564.3,
+    "entorhinal_cortex_thickness_mm": 2.4,
+    "white_matter_hyperintensities_cm3": 6.86
+  },
+  {
+    "scan_id": "MRI-00075",
+    "participant_id": "PART-NEUR-174",
+    "scan_date": "2023-08-14",
+    "whole_brain_volume_cm3": 1237.2,
+    "hippocampal_volume_left_mm3": 3123.8,
+    "hippocampal_volume_right_mm3": 3838.2,
+    "entorhinal_cortex_thickness_mm": 2.58,
+    "white_matter_hyperintensities_cm3": 7.99
+  },
+  {
+    "scan_id": "MRI-00076",
+    "participant_id": "PART-NEUR-175",
+    "scan_date": "2023-08-15",
+    "whole_brain_volume_cm3": 1178.7,
+    "hippocampal_volume_left_mm3": 3478.1,
+    "hippocampal_volume_right_mm3": 3560.7,
+    "entorhinal_cortex_thickness_mm": 3.65,
+    "white_matter_hyperintensities_cm3": 3.66
+  },
+  {
+    "scan_id": "MRI-00077",
+    "participant_id": "PART-NEUR-176",
+    "scan_date": "2023-08-16",
+    "whole_brain_volume_cm3": 1283.3,
+    "hippocampal_volume_left_mm3": 3468.4,
+    "hippocampal_volume_right_mm3": 4052.9,
+    "entorhinal_cortex_thickness_mm": 2.91,
+    "white_matter_hyperintensities_cm3": 4.65
+  },
+  {
+    "scan_id": "MRI-00078",
+    "participant_id": "PART-NEUR-177",
+    "scan_date": "2023-08-17",
+    "whole_brain_volume_cm3": 1095.7,
+    "hippocampal_volume_left_mm3": 3389.3,
+    "hippocampal_volume_right_mm3": 3944.6,
+    "entorhinal_cortex_thickness_mm": 2.24,
+    "white_matter_hyperintensities_cm3": 3.32
+  },
+  {
+    "scan_id": "MRI-00079",
+    "participant_id": "PART-NEUR-178",
+    "scan_date": "2023-08-18",
+    "whole_brain_volume_cm3": 1271.9,
+    "hippocampal_volume_left_mm3": 3304.1,
+    "hippocampal_volume_right_mm3": 3073.9,
+    "entorhinal_cortex_thickness_mm": 2.69,
+    "white_matter_hyperintensities_cm3": 11.96
+  },
+  {
+    "scan_id": "MRI-00080",
+    "participant_id": "PART-NEUR-179",
+    "scan_date": "2023-08-19",
+    "whole_brain_volume_cm3": 1217.7,
+    "hippocampal_volume_left_mm3": 2831.2,
+    "hippocampal_volume_right_mm3": 3686.8,
+    "entorhinal_cortex_thickness_mm": 3.09,
+    "white_matter_hyperintensities_cm3": 8.78
+  },
+  {
+    "scan_id": "MRI-00081",
+    "participant_id": "PART-NEUR-180",
+    "scan_date": "2023-08-20",
+    "whole_brain_volume_cm3": 1055.1,
+    "hippocampal_volume_left_mm3": 2929.9,
+    "hippocampal_volume_right_mm3": 4249.6,
+    "entorhinal_cortex_thickness_mm": 2.2,
+    "white_matter_hyperintensities_cm3": 6.23
+  },
+  {
+    "scan_id": "MRI-00082",
+    "participant_id": "PART-NEUR-181",
+    "scan_date": "2023-08-21",
+    "whole_brain_volume_cm3": 1336.9,
+    "hippocampal_volume_left_mm3": 3615.9,
+    "hippocampal_volume_right_mm3": 2957.3,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 12.62
+  },
+  {
+    "scan_id": "MRI-00083",
+    "participant_id": "PART-NEUR-182",
+    "scan_date": "2023-08-22",
+    "whole_brain_volume_cm3": 1248.6,
+    "hippocampal_volume_left_mm3": 2842.2,
+    "hippocampal_volume_right_mm3": 3942.5,
+    "entorhinal_cortex_thickness_mm": 3.06,
+    "white_matter_hyperintensities_cm3": 4.82
+  },
+  {
+    "scan_id": "MRI-00084",
+    "participant_id": "PART-NEUR-183",
+    "scan_date": "2023-08-23",
+    "whole_brain_volume_cm3": 1299.7,
+    "hippocampal_volume_left_mm3": 3146.0,
+    "hippocampal_volume_right_mm3": 2900.5,
+    "entorhinal_cortex_thickness_mm": 2.46,
+    "white_matter_hyperintensities_cm3": 1.68
+  },
+  {
+    "scan_id": "MRI-00085",
+    "participant_id": "PART-NEUR-184",
+    "scan_date": "2023-08-24",
+    "whole_brain_volume_cm3": 1273.4,
+    "hippocampal_volume_left_mm3": 3433.7,
+    "hippocampal_volume_right_mm3": 3588.7,
+    "entorhinal_cortex_thickness_mm": 3.58,
+    "white_matter_hyperintensities_cm3": 2.07
+  },
+  {
+    "scan_id": "MRI-00086",
+    "participant_id": "PART-NEUR-185",
+    "scan_date": "2023-08-25",
+    "whole_brain_volume_cm3": 1225.9,
+    "hippocampal_volume_left_mm3": 3943.6,
+    "hippocampal_volume_right_mm3": 3155.2,
+    "entorhinal_cortex_thickness_mm": 3.6,
+    "white_matter_hyperintensities_cm3": 7.67
+  },
+  {
+    "scan_id": "MRI-00087",
+    "participant_id": "PART-NEUR-186",
+    "scan_date": "2023-08-26",
+    "whole_brain_volume_cm3": 1112.5,
+    "hippocampal_volume_left_mm3": 3240.2,
+    "hippocampal_volume_right_mm3": 3880.4,
+    "entorhinal_cortex_thickness_mm": 3.03,
+    "white_matter_hyperintensities_cm3": 12.42
+  },
+  {
+    "scan_id": "MRI-00088",
+    "participant_id": "PART-NEUR-187",
+    "scan_date": "2023-08-27",
+    "whole_brain_volume_cm3": 1257.8,
+    "hippocampal_volume_left_mm3": 3832.7,
+    "hippocampal_volume_right_mm3": 3864.6,
+    "entorhinal_cortex_thickness_mm": 2.39,
+    "white_matter_hyperintensities_cm3": 4.55
+  },
+  {
+    "scan_id": "MRI-00089",
+    "participant_id": "PART-NEUR-188",
+    "scan_date": "2023-08-28",
+    "whole_brain_volume_cm3": 1181.9,
+    "hippocampal_volume_left_mm3": 3872.2,
+    "hippocampal_volume_right_mm3": 3312.2,
+    "entorhinal_cortex_thickness_mm": 3.51,
+    "white_matter_hyperintensities_cm3": 3.96
+  },
+  {
+    "scan_id": "MRI-00090",
+    "participant_id": "PART-NEUR-189",
+    "scan_date": "2023-08-29",
+    "whole_brain_volume_cm3": 1258.3,
+    "hippocampal_volume_left_mm3": 4061.5,
+    "hippocampal_volume_right_mm3": 3583.1,
+    "entorhinal_cortex_thickness_mm": 2.41,
+    "white_matter_hyperintensities_cm3": 5.51
+  },
+  {
+    "scan_id": "MRI-00091",
+    "participant_id": "PART-NEUR-190",
+    "scan_date": "2023-08-30",
+    "whole_brain_volume_cm3": 1212.3,
+    "hippocampal_volume_left_mm3": 4188.1,
+    "hippocampal_volume_right_mm3": 3640.3,
+    "entorhinal_cortex_thickness_mm": 2.12,
+    "white_matter_hyperintensities_cm3": 12.59
+  },
+  {
+    "scan_id": "MRI-00092",
+    "participant_id": "PART-NEUR-191",
+    "scan_date": "2023-08-31",
+    "whole_brain_volume_cm3": 1093.3,
+    "hippocampal_volume_left_mm3": 3184.2,
+    "hippocampal_volume_right_mm3": 3197.1,
+    "entorhinal_cortex_thickness_mm": 2.37,
+    "white_matter_hyperintensities_cm3": 11.88
+  },
+  {
+    "scan_id": "MRI-00093",
+    "participant_id": "PART-NEUR-192",
+    "scan_date": "2023-09-01",
+    "whole_brain_volume_cm3": 1129.2,
+    "hippocampal_volume_left_mm3": 2926.8,
+    "hippocampal_volume_right_mm3": 3941.9,
+    "entorhinal_cortex_thickness_mm": 2.16,
+    "white_matter_hyperintensities_cm3": 12.43
+  },
+  {
+    "scan_id": "MRI-00094",
+    "participant_id": "PART-NEUR-193",
+    "scan_date": "2023-09-02",
+    "whole_brain_volume_cm3": 1122.1,
+    "hippocampal_volume_left_mm3": 3885.3,
+    "hippocampal_volume_right_mm3": 4192.7,
+    "entorhinal_cortex_thickness_mm": 3.18,
+    "white_matter_hyperintensities_cm3": 11.51
+  },
+  {
+    "scan_id": "MRI-00095",
+    "participant_id": "PART-NEUR-194",
+    "scan_date": "2023-09-03",
+    "whole_brain_volume_cm3": 1095.1,
+    "hippocampal_volume_left_mm3": 3452.7,
+    "hippocampal_volume_right_mm3": 3150.9,
+    "entorhinal_cortex_thickness_mm": 2.68,
+    "white_matter_hyperintensities_cm3": 2.54
+  },
+  {
+    "scan_id": "MRI-00096",
+    "participant_id": "PART-NEUR-195",
+    "scan_date": "2023-09-04",
+    "whole_brain_volume_cm3": 1247.1,
+    "hippocampal_volume_left_mm3": 3202.8,
+    "hippocampal_volume_right_mm3": 3495.4,
+    "entorhinal_cortex_thickness_mm": 2.58,
+    "white_matter_hyperintensities_cm3": 12.02
+  },
+  {
+    "scan_id": "MRI-00097",
+    "participant_id": "PART-NEUR-196",
+    "scan_date": "2023-09-05",
+    "whole_brain_volume_cm3": 1178.1,
+    "hippocampal_volume_left_mm3": 3621.1,
+    "hippocampal_volume_right_mm3": 3708.6,
+    "entorhinal_cortex_thickness_mm": 2.35,
+    "white_matter_hyperintensities_cm3": 5.95
+  },
+  {
+    "scan_id": "MRI-00098",
+    "participant_id": "PART-NEUR-197",
+    "scan_date": "2023-09-06",
+    "whole_brain_volume_cm3": 1361.7,
+    "hippocampal_volume_left_mm3": 3093.1,
+    "hippocampal_volume_right_mm3": 3002.6,
+    "entorhinal_cortex_thickness_mm": 3.0,
+    "white_matter_hyperintensities_cm3": 12.51
+  },
+  {
+    "scan_id": "MRI-00099",
+    "participant_id": "PART-NEUR-198",
+    "scan_date": "2023-09-07",
+    "whole_brain_volume_cm3": 1286.0,
+    "hippocampal_volume_left_mm3": 3159.9,
+    "hippocampal_volume_right_mm3": 4167.0,
+    "entorhinal_cortex_thickness_mm": 3.3,
+    "white_matter_hyperintensities_cm3": 6.39
+  },
+  {
+    "scan_id": "MRI-00100",
+    "participant_id": "PART-NEUR-199",
+    "scan_date": "2023-09-08",
+    "whole_brain_volume_cm3": 1064.0,
+    "hippocampal_volume_left_mm3": 3520.4,
+    "hippocampal_volume_right_mm3": 3191.2,
+    "entorhinal_cortex_thickness_mm": 2.77,
+    "white_matter_hyperintensities_cm3": 13.81
+  },
+  {
+    "scan_id": "MRI-00101",
+    "participant_id": "PART-NEUR-200",
+    "scan_date": "2023-09-09",
+    "whole_brain_volume_cm3": 1211.3,
+    "hippocampal_volume_left_mm3": 3939.0,
+    "hippocampal_volume_right_mm3": 3524.4,
+    "entorhinal_cortex_thickness_mm": 3.19,
+    "white_matter_hyperintensities_cm3": 1.98
+  },
+  {
+    "scan_id": "MRI-00102",
+    "participant_id": "PART-NEUR-201",
+    "scan_date": "2023-09-10",
+    "whole_brain_volume_cm3": 1333.3,
+    "hippocampal_volume_left_mm3": 3460.9,
+    "hippocampal_volume_right_mm3": 3024.8,
+    "entorhinal_cortex_thickness_mm": 3.73,
+    "white_matter_hyperintensities_cm3": 11.0
+  },
+  {
+    "scan_id": "MRI-00103",
+    "participant_id": "PART-NEUR-202",
+    "scan_date": "2023-09-11",
+    "whole_brain_volume_cm3": 1376.6,
+    "hippocampal_volume_left_mm3": 3349.4,
+    "hippocampal_volume_right_mm3": 3277.5,
+    "entorhinal_cortex_thickness_mm": 2.77,
+    "white_matter_hyperintensities_cm3": 13.52
+  },
+  {
+    "scan_id": "MRI-00104",
+    "participant_id": "PART-NEUR-203",
+    "scan_date": "2023-09-12",
+    "whole_brain_volume_cm3": 1067.1,
+    "hippocampal_volume_left_mm3": 3076.3,
+    "hippocampal_volume_right_mm3": 3484.0,
+    "entorhinal_cortex_thickness_mm": 2.62,
+    "white_matter_hyperintensities_cm3": 2.31
+  },
+  {
+    "scan_id": "MRI-00105",
+    "participant_id": "PART-NEUR-204",
+    "scan_date": "2023-09-13",
+    "whole_brain_volume_cm3": 1301.7,
+    "hippocampal_volume_left_mm3": 3460.0,
+    "hippocampal_volume_right_mm3": 3059.5,
+    "entorhinal_cortex_thickness_mm": 2.53,
+    "white_matter_hyperintensities_cm3": 3.11
+  },
+  {
+    "scan_id": "MRI-00106",
+    "participant_id": "PART-NEUR-205",
+    "scan_date": "2023-09-14",
+    "whole_brain_volume_cm3": 1284.5,
+    "hippocampal_volume_left_mm3": 2831.6,
+    "hippocampal_volume_right_mm3": 3345.8,
+    "entorhinal_cortex_thickness_mm": 2.66,
+    "white_matter_hyperintensities_cm3": 11.74
+  },
+  {
+    "scan_id": "MRI-00107",
+    "participant_id": "PART-NEUR-206",
+    "scan_date": "2023-09-15",
+    "whole_brain_volume_cm3": 1078.3,
+    "hippocampal_volume_left_mm3": 3419.4,
+    "hippocampal_volume_right_mm3": 3635.1,
+    "entorhinal_cortex_thickness_mm": 3.31,
+    "white_matter_hyperintensities_cm3": 13.05
+  },
+  {
+    "scan_id": "MRI-00108",
+    "participant_id": "PART-NEUR-207",
+    "scan_date": "2023-09-16",
+    "whole_brain_volume_cm3": 1324.7,
+    "hippocampal_volume_left_mm3": 3681.2,
+    "hippocampal_volume_right_mm3": 3915.3,
+    "entorhinal_cortex_thickness_mm": 3.07,
+    "white_matter_hyperintensities_cm3": 11.68
+  },
+  {
+    "scan_id": "MRI-00109",
+    "participant_id": "PART-NEUR-208",
+    "scan_date": "2023-09-17",
+    "whole_brain_volume_cm3": 1251.7,
+    "hippocampal_volume_left_mm3": 2882.1,
+    "hippocampal_volume_right_mm3": 4189.0,
+    "entorhinal_cortex_thickness_mm": 3.58,
+    "white_matter_hyperintensities_cm3": 7.07
+  },
+  {
+    "scan_id": "MRI-00110",
+    "participant_id": "PART-NEUR-209",
+    "scan_date": "2023-09-18",
+    "whole_brain_volume_cm3": 1228.8,
+    "hippocampal_volume_left_mm3": 3320.1,
+    "hippocampal_volume_right_mm3": 3873.2,
+    "entorhinal_cortex_thickness_mm": 3.71,
+    "white_matter_hyperintensities_cm3": 14.49
+  },
+  {
+    "scan_id": "MRI-00111",
+    "participant_id": "PART-NEUR-210",
+    "scan_date": "2023-09-19",
+    "whole_brain_volume_cm3": 1251.2,
+    "hippocampal_volume_left_mm3": 4145.3,
+    "hippocampal_volume_right_mm3": 3768.5,
+    "entorhinal_cortex_thickness_mm": 3.25,
+    "white_matter_hyperintensities_cm3": 3.52
+  },
+  {
+    "scan_id": "MRI-00112",
+    "participant_id": "PART-NEUR-211",
+    "scan_date": "2023-09-20",
+    "whole_brain_volume_cm3": 1244.4,
+    "hippocampal_volume_left_mm3": 3746.4,
+    "hippocampal_volume_right_mm3": 3070.8,
+    "entorhinal_cortex_thickness_mm": 3.56,
+    "white_matter_hyperintensities_cm3": 6.97
+  },
+  {
+    "scan_id": "MRI-00113",
+    "participant_id": "PART-NEUR-212",
+    "scan_date": "2023-09-21",
+    "whole_brain_volume_cm3": 1325.6,
+    "hippocampal_volume_left_mm3": 3622.6,
+    "hippocampal_volume_right_mm3": 3522.0,
+    "entorhinal_cortex_thickness_mm": 2.2,
+    "white_matter_hyperintensities_cm3": 14.46
+  },
+  {
+    "scan_id": "MRI-00114",
+    "participant_id": "PART-NEUR-213",
+    "scan_date": "2023-09-22",
+    "whole_brain_volume_cm3": 1370.2,
+    "hippocampal_volume_left_mm3": 4017.9,
+    "hippocampal_volume_right_mm3": 3279.4,
+    "entorhinal_cortex_thickness_mm": 3.74,
+    "white_matter_hyperintensities_cm3": 8.19
+  },
+  {
+    "scan_id": "MRI-00115",
+    "participant_id": "PART-NEUR-214",
+    "scan_date": "2023-09-23",
+    "whole_brain_volume_cm3": 1099.2,
+    "hippocampal_volume_left_mm3": 3184.2,
+    "hippocampal_volume_right_mm3": 4039.6,
+    "entorhinal_cortex_thickness_mm": 3.33,
+    "white_matter_hyperintensities_cm3": 2.78
+  },
+  {
+    "scan_id": "MRI-00116",
+    "participant_id": "PART-NEUR-215",
+    "scan_date": "2023-09-24",
+    "whole_brain_volume_cm3": 1265.1,
+    "hippocampal_volume_left_mm3": 2873.0,
+    "hippocampal_volume_right_mm3": 3671.7,
+    "entorhinal_cortex_thickness_mm": 2.14,
+    "white_matter_hyperintensities_cm3": 1.37
+  },
+  {
+    "scan_id": "MRI-00117",
+    "participant_id": "PART-NEUR-216",
+    "scan_date": "2023-09-25",
+    "whole_brain_volume_cm3": 1157.9,
+    "hippocampal_volume_left_mm3": 2847.9,
+    "hippocampal_volume_right_mm3": 4085.9,
+    "entorhinal_cortex_thickness_mm": 3.34,
+    "white_matter_hyperintensities_cm3": 9.49
+  },
+  {
+    "scan_id": "MRI-00118",
+    "participant_id": "PART-NEUR-217",
+    "scan_date": "2023-09-26",
+    "whole_brain_volume_cm3": 1365.6,
+    "hippocampal_volume_left_mm3": 3498.4,
+    "hippocampal_volume_right_mm3": 4024.3,
+    "entorhinal_cortex_thickness_mm": 2.22,
+    "white_matter_hyperintensities_cm3": 12.44
+  },
+  {
+    "scan_id": "MRI-00119",
+    "participant_id": "PART-NEUR-218",
+    "scan_date": "2023-09-27",
+    "whole_brain_volume_cm3": 1280.3,
+    "hippocampal_volume_left_mm3": 3996.7,
+    "hippocampal_volume_right_mm3": 2931.4,
+    "entorhinal_cortex_thickness_mm": 2.89,
+    "white_matter_hyperintensities_cm3": 7.21
+  },
+  {
+    "scan_id": "MRI-00120",
+    "participant_id": "PART-NEUR-219",
+    "scan_date": "2023-09-28",
+    "whole_brain_volume_cm3": 1126.4,
+    "hippocampal_volume_left_mm3": 4143.1,
+    "hippocampal_volume_right_mm3": 3574.0,
+    "entorhinal_cortex_thickness_mm": 2.16,
+    "white_matter_hyperintensities_cm3": 2.95
+  },
+  {
+    "scan_id": "MRI-00121",
+    "participant_id": "PART-NEUR-220",
+    "scan_date": "2023-09-29",
+    "whole_brain_volume_cm3": 1376.3,
+    "hippocampal_volume_left_mm3": 3476.6,
+    "hippocampal_volume_right_mm3": 3335.2,
+    "entorhinal_cortex_thickness_mm": 2.8,
+    "white_matter_hyperintensities_cm3": 4.96
+  },
+  {
+    "scan_id": "MRI-00122",
+    "participant_id": "PART-NEUR-221",
+    "scan_date": "2023-09-30",
+    "whole_brain_volume_cm3": 1100.0,
+    "hippocampal_volume_left_mm3": 3727.9,
+    "hippocampal_volume_right_mm3": 3403.8,
+    "entorhinal_cortex_thickness_mm": 3.19,
+    "white_matter_hyperintensities_cm3": 4.66
+  },
+  {
+    "scan_id": "MRI-00123",
+    "participant_id": "PART-NEUR-222",
+    "scan_date": "2023-10-01",
+    "whole_brain_volume_cm3": 1193.7,
+    "hippocampal_volume_left_mm3": 2931.1,
+    "hippocampal_volume_right_mm3": 3694.1,
+    "entorhinal_cortex_thickness_mm": 3.08,
+    "white_matter_hyperintensities_cm3": 4.43
+  },
+  {
+    "scan_id": "MRI-00124",
+    "participant_id": "PART-NEUR-223",
+    "scan_date": "2023-10-02",
+    "whole_brain_volume_cm3": 1293.9,
+    "hippocampal_volume_left_mm3": 3837.5,
+    "hippocampal_volume_right_mm3": 3978.5,
+    "entorhinal_cortex_thickness_mm": 2.64,
+    "white_matter_hyperintensities_cm3": 4.25
+  },
+  {
+    "scan_id": "MRI-00125",
+    "participant_id": "PART-NEUR-224",
+    "scan_date": "2023-10-03",
+    "whole_brain_volume_cm3": 1074.7,
+    "hippocampal_volume_left_mm3": 3509.8,
+    "hippocampal_volume_right_mm3": 3269.4,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 7.07
+  },
+  {
+    "scan_id": "MRI-00126",
+    "participant_id": "PART-NEUR-225",
+    "scan_date": "2023-10-04",
+    "whole_brain_volume_cm3": 1244.7,
+    "hippocampal_volume_left_mm3": 2979.7,
+    "hippocampal_volume_right_mm3": 3600.9,
+    "entorhinal_cortex_thickness_mm": 2.3,
+    "white_matter_hyperintensities_cm3": 7.29
+  },
+  {
+    "scan_id": "MRI-00127",
+    "participant_id": "PART-NEUR-226",
+    "scan_date": "2023-10-05",
+    "whole_brain_volume_cm3": 1133.4,
+    "hippocampal_volume_left_mm3": 3999.8,
+    "hippocampal_volume_right_mm3": 2936.3,
+    "entorhinal_cortex_thickness_mm": 2.43,
+    "white_matter_hyperintensities_cm3": 3.57
+  },
+  {
+    "scan_id": "MRI-00128",
+    "participant_id": "PART-NEUR-227",
+    "scan_date": "2023-10-06",
+    "whole_brain_volume_cm3": 1318.8,
+    "hippocampal_volume_left_mm3": 3246.9,
+    "hippocampal_volume_right_mm3": 3816.3,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 13.24
+  },
+  {
+    "scan_id": "MRI-00129",
+    "participant_id": "PART-NEUR-228",
+    "scan_date": "2023-10-07",
+    "whole_brain_volume_cm3": 1087.4,
+    "hippocampal_volume_left_mm3": 2949.0,
+    "hippocampal_volume_right_mm3": 2968.5,
+    "entorhinal_cortex_thickness_mm": 2.89,
+    "white_matter_hyperintensities_cm3": 6.33
+  },
+  {
+    "scan_id": "MRI-00130",
+    "participant_id": "PART-NEUR-229",
+    "scan_date": "2023-10-08",
+    "whole_brain_volume_cm3": 1354.8,
+    "hippocampal_volume_left_mm3": 3055.2,
+    "hippocampal_volume_right_mm3": 3787.7,
+    "entorhinal_cortex_thickness_mm": 3.26,
+    "white_matter_hyperintensities_cm3": 14.46
+  },
+  {
+    "scan_id": "MRI-00131",
+    "participant_id": "PART-NEUR-230",
+    "scan_date": "2023-10-09",
+    "whole_brain_volume_cm3": 1075.0,
+    "hippocampal_volume_left_mm3": 3187.9,
+    "hippocampal_volume_right_mm3": 4273.4,
+    "entorhinal_cortex_thickness_mm": 2.97,
+    "white_matter_hyperintensities_cm3": 13.25
+  },
+  {
+    "scan_id": "MRI-00132",
+    "participant_id": "PART-NEUR-231",
+    "scan_date": "2023-10-10",
+    "whole_brain_volume_cm3": 1170.9,
+    "hippocampal_volume_left_mm3": 3642.9,
+    "hippocampal_volume_right_mm3": 3020.3,
+    "entorhinal_cortex_thickness_mm": 2.49,
+    "white_matter_hyperintensities_cm3": 12.91
+  },
+  {
+    "scan_id": "MRI-00133",
+    "participant_id": "PART-NEUR-232",
+    "scan_date": "2023-10-11",
+    "whole_brain_volume_cm3": 1148.4,
+    "hippocampal_volume_left_mm3": 2970.7,
+    "hippocampal_volume_right_mm3": 2985.6,
+    "entorhinal_cortex_thickness_mm": 2.43,
+    "white_matter_hyperintensities_cm3": 9.7
+  },
+  {
+    "scan_id": "MRI-00134",
+    "participant_id": "PART-NEUR-233",
+    "scan_date": "2023-10-12",
+    "whole_brain_volume_cm3": 1119.3,
+    "hippocampal_volume_left_mm3": 3603.8,
+    "hippocampal_volume_right_mm3": 3060.5,
+    "entorhinal_cortex_thickness_mm": 2.91,
+    "white_matter_hyperintensities_cm3": 10.79
+  },
+  {
+    "scan_id": "MRI-00135",
+    "participant_id": "PART-NEUR-234",
+    "scan_date": "2023-10-13",
+    "whole_brain_volume_cm3": 1097.7,
+    "hippocampal_volume_left_mm3": 3406.7,
+    "hippocampal_volume_right_mm3": 4311.3,
+    "entorhinal_cortex_thickness_mm": 2.95,
+    "white_matter_hyperintensities_cm3": 2.33
+  },
+  {
+    "scan_id": "MRI-00136",
+    "participant_id": "PART-NEUR-235",
+    "scan_date": "2023-10-14",
+    "whole_brain_volume_cm3": 1292.8,
+    "hippocampal_volume_left_mm3": 3890.5,
+    "hippocampal_volume_right_mm3": 4025.6,
+    "entorhinal_cortex_thickness_mm": 3.38,
+    "white_matter_hyperintensities_cm3": 11.25
+  },
+  {
+    "scan_id": "MRI-00137",
+    "participant_id": "PART-NEUR-236",
+    "scan_date": "2023-10-15",
+    "whole_brain_volume_cm3": 1359.7,
+    "hippocampal_volume_left_mm3": 3341.8,
+    "hippocampal_volume_right_mm3": 3878.3,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 8.15
+  },
+  {
+    "scan_id": "MRI-00138",
+    "participant_id": "PART-NEUR-237",
+    "scan_date": "2023-10-16",
+    "whole_brain_volume_cm3": 1247.5,
+    "hippocampal_volume_left_mm3": 3146.1,
+    "hippocampal_volume_right_mm3": 4129.0,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 3.13
+  },
+  {
+    "scan_id": "MRI-00139",
+    "participant_id": "PART-NEUR-238",
+    "scan_date": "2023-10-17",
+    "whole_brain_volume_cm3": 1228.5,
+    "hippocampal_volume_left_mm3": 3346.2,
+    "hippocampal_volume_right_mm3": 3248.5,
+    "entorhinal_cortex_thickness_mm": 3.63,
+    "white_matter_hyperintensities_cm3": 10.11
+  },
+  {
+    "scan_id": "MRI-00140",
+    "participant_id": "PART-NEUR-239",
+    "scan_date": "2023-10-18",
+    "whole_brain_volume_cm3": 1094.1,
+    "hippocampal_volume_left_mm3": 3530.8,
+    "hippocampal_volume_right_mm3": 3613.7,
+    "entorhinal_cortex_thickness_mm": 3.38,
+    "white_matter_hyperintensities_cm3": 12.45
+  },
+  {
+    "scan_id": "MRI-00141",
+    "participant_id": "PART-NEUR-240",
+    "scan_date": "2023-10-19",
+    "whole_brain_volume_cm3": 1111.4,
+    "hippocampal_volume_left_mm3": 3489.8,
+    "hippocampal_volume_right_mm3": 3215.6,
+    "entorhinal_cortex_thickness_mm": 2.26,
+    "white_matter_hyperintensities_cm3": 5.56
+  },
+  {
+    "scan_id": "MRI-00142",
+    "participant_id": "PART-NEUR-241",
+    "scan_date": "2023-10-20",
+    "whole_brain_volume_cm3": 1220.0,
+    "hippocampal_volume_left_mm3": 3035.9,
+    "hippocampal_volume_right_mm3": 2972.3,
+    "entorhinal_cortex_thickness_mm": 2.6,
+    "white_matter_hyperintensities_cm3": 4.03
+  },
+  {
+    "scan_id": "MRI-00143",
+    "participant_id": "PART-NEUR-242",
+    "scan_date": "2023-10-21",
+    "whole_brain_volume_cm3": 1269.5,
+    "hippocampal_volume_left_mm3": 2931.0,
+    "hippocampal_volume_right_mm3": 3963.4,
+    "entorhinal_cortex_thickness_mm": 3.75,
+    "white_matter_hyperintensities_cm3": 2.46
+  },
+  {
+    "scan_id": "MRI-00144",
+    "participant_id": "PART-NEUR-243",
+    "scan_date": "2023-10-22",
+    "whole_brain_volume_cm3": 1230.3,
+    "hippocampal_volume_left_mm3": 4158.8,
+    "hippocampal_volume_right_mm3": 3165.3,
+    "entorhinal_cortex_thickness_mm": 2.99,
+    "white_matter_hyperintensities_cm3": 11.62
+  },
+  {
+    "scan_id": "MRI-00145",
+    "participant_id": "PART-NEUR-244",
+    "scan_date": "2023-10-23",
+    "whole_brain_volume_cm3": 1243.8,
+    "hippocampal_volume_left_mm3": 3163.1,
+    "hippocampal_volume_right_mm3": 3350.5,
+    "entorhinal_cortex_thickness_mm": 3.51,
+    "white_matter_hyperintensities_cm3": 1.78
+  },
+  {
+    "scan_id": "MRI-00146",
+    "participant_id": "PART-NEUR-245",
+    "scan_date": "2023-10-24",
+    "whole_brain_volume_cm3": 1268.1,
+    "hippocampal_volume_left_mm3": 4089.8,
+    "hippocampal_volume_right_mm3": 3309.4,
+    "entorhinal_cortex_thickness_mm": 2.52,
+    "white_matter_hyperintensities_cm3": 3.56
+  },
+  {
+    "scan_id": "MRI-00147",
+    "participant_id": "PART-NEUR-246",
+    "scan_date": "2023-10-25",
+    "whole_brain_volume_cm3": 1100.8,
+    "hippocampal_volume_left_mm3": 3625.1,
+    "hippocampal_volume_right_mm3": 3419.8,
+    "entorhinal_cortex_thickness_mm": 3.48,
+    "white_matter_hyperintensities_cm3": 5.1
+  },
+  {
+    "scan_id": "MRI-00148",
+    "participant_id": "PART-NEUR-247",
+    "scan_date": "2023-10-26",
+    "whole_brain_volume_cm3": 1096.4,
+    "hippocampal_volume_left_mm3": 3774.6,
+    "hippocampal_volume_right_mm3": 3323.4,
+    "entorhinal_cortex_thickness_mm": 2.47,
+    "white_matter_hyperintensities_cm3": 9.31
+  },
+  {
+    "scan_id": "MRI-00149",
+    "participant_id": "PART-NEUR-248",
+    "scan_date": "2023-10-27",
+    "whole_brain_volume_cm3": 1107.4,
+    "hippocampal_volume_left_mm3": 4185.0,
+    "hippocampal_volume_right_mm3": 3645.9,
+    "entorhinal_cortex_thickness_mm": 3.21,
+    "white_matter_hyperintensities_cm3": 2.66
+  },
+  {
+    "scan_id": "MRI-00150",
+    "participant_id": "PART-NEUR-249",
+    "scan_date": "2023-10-28",
+    "whole_brain_volume_cm3": 1058.1,
+    "hippocampal_volume_left_mm3": 3813.4,
+    "hippocampal_volume_right_mm3": 2943.1,
+    "entorhinal_cortex_thickness_mm": 3.03,
+    "white_matter_hyperintensities_cm3": 8.61
+  },
+  {
+    "scan_id": "MRI-00151",
+    "participant_id": "PART-NEUR-250",
+    "scan_date": "2023-10-29",
+    "whole_brain_volume_cm3": 1268.5,
+    "hippocampal_volume_left_mm3": 3794.5,
+    "hippocampal_volume_right_mm3": 3959.9,
+    "entorhinal_cortex_thickness_mm": 2.19,
+    "white_matter_hyperintensities_cm3": 8.39
+  },
+  {
+    "scan_id": "MRI-00152",
+    "participant_id": "PART-NEUR-251",
+    "scan_date": "2023-10-30",
+    "whole_brain_volume_cm3": 1294.0,
+    "hippocampal_volume_left_mm3": 3367.5,
+    "hippocampal_volume_right_mm3": 4349.2,
+    "entorhinal_cortex_thickness_mm": 2.37,
+    "white_matter_hyperintensities_cm3": 13.6
+  },
+  {
+    "scan_id": "MRI-00153",
+    "participant_id": "PART-NEUR-252",
+    "scan_date": "2023-10-31",
+    "whole_brain_volume_cm3": 1373.1,
+    "hippocampal_volume_left_mm3": 3362.6,
+    "hippocampal_volume_right_mm3": 3254.6,
+    "entorhinal_cortex_thickness_mm": 2.27,
+    "white_matter_hyperintensities_cm3": 13.72
+  },
+  {
+    "scan_id": "MRI-00154",
+    "participant_id": "PART-NEUR-253",
+    "scan_date": "2023-11-01",
+    "whole_brain_volume_cm3": 1203.1,
+    "hippocampal_volume_left_mm3": 3518.2,
+    "hippocampal_volume_right_mm3": 2991.3,
+    "entorhinal_cortex_thickness_mm": 3.48,
+    "white_matter_hyperintensities_cm3": 4.1
+  },
+  {
+    "scan_id": "MRI-00155",
+    "participant_id": "PART-NEUR-254",
+    "scan_date": "2023-11-02",
+    "whole_brain_volume_cm3": 1257.4,
+    "hippocampal_volume_left_mm3": 3306.0,
+    "hippocampal_volume_right_mm3": 3592.2,
+    "entorhinal_cortex_thickness_mm": 3.44,
+    "white_matter_hyperintensities_cm3": 5.0
+  },
+  {
+    "scan_id": "MRI-00156",
+    "participant_id": "PART-NEUR-255",
+    "scan_date": "2023-11-03",
+    "whole_brain_volume_cm3": 1163.8,
+    "hippocampal_volume_left_mm3": 4050.4,
+    "hippocampal_volume_right_mm3": 2908.8,
+    "entorhinal_cortex_thickness_mm": 3.15,
+    "white_matter_hyperintensities_cm3": 6.77
+  },
+  {
+    "scan_id": "MRI-00157",
+    "participant_id": "PART-NEUR-256",
+    "scan_date": "2023-11-04",
+    "whole_brain_volume_cm3": 1196.6,
+    "hippocampal_volume_left_mm3": 3314.2,
+    "hippocampal_volume_right_mm3": 3494.4,
+    "entorhinal_cortex_thickness_mm": 3.45,
+    "white_matter_hyperintensities_cm3": 8.59
+  },
+  {
+    "scan_id": "MRI-00158",
+    "participant_id": "PART-NEUR-257",
+    "scan_date": "2023-11-05",
+    "whole_brain_volume_cm3": 1062.7,
+    "hippocampal_volume_left_mm3": 3528.4,
+    "hippocampal_volume_right_mm3": 4306.8,
+    "entorhinal_cortex_thickness_mm": 3.32,
+    "white_matter_hyperintensities_cm3": 2.39
+  },
+  {
+    "scan_id": "MRI-00159",
+    "participant_id": "PART-NEUR-258",
+    "scan_date": "2023-11-06",
+    "whole_brain_volume_cm3": 1317.8,
+    "hippocampal_volume_left_mm3": 2812.1,
+    "hippocampal_volume_right_mm3": 3474.3,
+    "entorhinal_cortex_thickness_mm": 2.6,
+    "white_matter_hyperintensities_cm3": 9.07
+  },
+  {
+    "scan_id": "MRI-00160",
+    "participant_id": "PART-NEUR-259",
+    "scan_date": "2023-11-07",
+    "whole_brain_volume_cm3": 1313.8,
+    "hippocampal_volume_left_mm3": 2935.2,
+    "hippocampal_volume_right_mm3": 4174.3,
+    "entorhinal_cortex_thickness_mm": 3.67,
+    "white_matter_hyperintensities_cm3": 13.8
+  },
+  {
+    "scan_id": "MRI-00161",
+    "participant_id": "PART-NEUR-260",
+    "scan_date": "2023-11-08",
+    "whole_brain_volume_cm3": 1104.2,
+    "hippocampal_volume_left_mm3": 3923.4,
+    "hippocampal_volume_right_mm3": 3891.4,
+    "entorhinal_cortex_thickness_mm": 3.44,
+    "white_matter_hyperintensities_cm3": 11.36
+  },
+  {
+    "scan_id": "MRI-00162",
+    "participant_id": "PART-NEUR-261",
+    "scan_date": "2023-11-09",
+    "whole_brain_volume_cm3": 1177.8,
+    "hippocampal_volume_left_mm3": 3560.5,
+    "hippocampal_volume_right_mm3": 3061.3,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 7.41
+  },
+  {
+    "scan_id": "MRI-00163",
+    "participant_id": "PART-NEUR-262",
+    "scan_date": "2023-11-10",
+    "whole_brain_volume_cm3": 1184.2,
+    "hippocampal_volume_left_mm3": 3202.1,
+    "hippocampal_volume_right_mm3": 3091.1,
+    "entorhinal_cortex_thickness_mm": 2.89,
+    "white_matter_hyperintensities_cm3": 10.71
+  },
+  {
+    "scan_id": "MRI-00164",
+    "participant_id": "PART-NEUR-263",
+    "scan_date": "2023-11-11",
+    "whole_brain_volume_cm3": 1154.4,
+    "hippocampal_volume_left_mm3": 3434.0,
+    "hippocampal_volume_right_mm3": 3716.9,
+    "entorhinal_cortex_thickness_mm": 2.15,
+    "white_matter_hyperintensities_cm3": 9.63
+  },
+  {
+    "scan_id": "MRI-00165",
+    "participant_id": "PART-NEUR-264",
+    "scan_date": "2023-11-12",
+    "whole_brain_volume_cm3": 1151.5,
+    "hippocampal_volume_left_mm3": 3323.7,
+    "hippocampal_volume_right_mm3": 3127.0,
+    "entorhinal_cortex_thickness_mm": 3.39,
+    "white_matter_hyperintensities_cm3": 1.33
+  },
+  {
+    "scan_id": "MRI-00166",
+    "participant_id": "PART-NEUR-265",
+    "scan_date": "2023-11-13",
+    "whole_brain_volume_cm3": 1130.3,
+    "hippocampal_volume_left_mm3": 3091.8,
+    "hippocampal_volume_right_mm3": 3907.7,
+    "entorhinal_cortex_thickness_mm": 3.17,
+    "white_matter_hyperintensities_cm3": 1.47
+  },
+  {
+    "scan_id": "MRI-00167",
+    "participant_id": "PART-NEUR-266",
+    "scan_date": "2023-11-14",
+    "whole_brain_volume_cm3": 1108.8,
+    "hippocampal_volume_left_mm3": 3034.0,
+    "hippocampal_volume_right_mm3": 2908.2,
+    "entorhinal_cortex_thickness_mm": 2.19,
+    "white_matter_hyperintensities_cm3": 2.58
+  },
+  {
+    "scan_id": "MRI-00168",
+    "participant_id": "PART-NEUR-267",
+    "scan_date": "2023-11-15",
+    "whole_brain_volume_cm3": 1088.4,
+    "hippocampal_volume_left_mm3": 3027.4,
+    "hippocampal_volume_right_mm3": 3286.4,
+    "entorhinal_cortex_thickness_mm": 2.5,
+    "white_matter_hyperintensities_cm3": 2.61
+  },
+  {
+    "scan_id": "MRI-00169",
+    "participant_id": "PART-NEUR-268",
+    "scan_date": "2023-11-16",
+    "whole_brain_volume_cm3": 1367.1,
+    "hippocampal_volume_left_mm3": 3760.0,
+    "hippocampal_volume_right_mm3": 4219.4,
+    "entorhinal_cortex_thickness_mm": 3.71,
+    "white_matter_hyperintensities_cm3": 3.05
+  },
+  {
+    "scan_id": "MRI-00170",
+    "participant_id": "PART-NEUR-269",
+    "scan_date": "2023-11-17",
+    "whole_brain_volume_cm3": 1335.7,
+    "hippocampal_volume_left_mm3": 4009.8,
+    "hippocampal_volume_right_mm3": 3992.0,
+    "entorhinal_cortex_thickness_mm": 2.73,
+    "white_matter_hyperintensities_cm3": 2.58
+  },
+  {
+    "scan_id": "MRI-00171",
+    "participant_id": "PART-NEUR-270",
+    "scan_date": "2023-11-18",
+    "whole_brain_volume_cm3": 1232.0,
+    "hippocampal_volume_left_mm3": 4045.7,
+    "hippocampal_volume_right_mm3": 2900.4,
+    "entorhinal_cortex_thickness_mm": 3.13,
+    "white_matter_hyperintensities_cm3": 8.72
+  },
+  {
+    "scan_id": "MRI-00172",
+    "participant_id": "PART-NEUR-271",
+    "scan_date": "2023-11-19",
+    "whole_brain_volume_cm3": 1355.5,
+    "hippocampal_volume_left_mm3": 3343.1,
+    "hippocampal_volume_right_mm3": 4062.6,
+    "entorhinal_cortex_thickness_mm": 3.12,
+    "white_matter_hyperintensities_cm3": 10.57
+  },
+  {
+    "scan_id": "MRI-00173",
+    "participant_id": "PART-NEUR-272",
+    "scan_date": "2023-11-20",
+    "whole_brain_volume_cm3": 1124.8,
+    "hippocampal_volume_left_mm3": 3354.0,
+    "hippocampal_volume_right_mm3": 3036.1,
+    "entorhinal_cortex_thickness_mm": 2.56,
+    "white_matter_hyperintensities_cm3": 1.98
+  },
+  {
+    "scan_id": "MRI-00174",
+    "participant_id": "PART-NEUR-273",
+    "scan_date": "2023-11-21",
+    "whole_brain_volume_cm3": 1231.0,
+    "hippocampal_volume_left_mm3": 2936.8,
+    "hippocampal_volume_right_mm3": 3879.3,
+    "entorhinal_cortex_thickness_mm": 2.32,
+    "white_matter_hyperintensities_cm3": 9.75
+  },
+  {
+    "scan_id": "MRI-00175",
+    "participant_id": "PART-NEUR-274",
+    "scan_date": "2023-11-22",
+    "whole_brain_volume_cm3": 1373.4,
+    "hippocampal_volume_left_mm3": 3571.9,
+    "hippocampal_volume_right_mm3": 2916.3,
+    "entorhinal_cortex_thickness_mm": 3.01,
+    "white_matter_hyperintensities_cm3": 3.28
+  },
+  {
+    "scan_id": "MRI-00176",
+    "participant_id": "PART-NEUR-275",
+    "scan_date": "2023-11-23",
+    "whole_brain_volume_cm3": 1078.9,
+    "hippocampal_volume_left_mm3": 3834.4,
+    "hippocampal_volume_right_mm3": 3280.0,
+    "entorhinal_cortex_thickness_mm": 3.33,
+    "white_matter_hyperintensities_cm3": 13.52
+  },
+  {
+    "scan_id": "MRI-00177",
+    "participant_id": "PART-NEUR-276",
+    "scan_date": "2023-11-24",
+    "whole_brain_volume_cm3": 1133.0,
+    "hippocampal_volume_left_mm3": 3735.6,
+    "hippocampal_volume_right_mm3": 3381.6,
+    "entorhinal_cortex_thickness_mm": 2.34,
+    "white_matter_hyperintensities_cm3": 9.28
+  },
+  {
+    "scan_id": "MRI-00178",
+    "participant_id": "PART-NEUR-277",
+    "scan_date": "2023-11-25",
+    "whole_brain_volume_cm3": 1254.2,
+    "hippocampal_volume_left_mm3": 3725.0,
+    "hippocampal_volume_right_mm3": 3838.6,
+    "entorhinal_cortex_thickness_mm": 3.09,
+    "white_matter_hyperintensities_cm3": 6.51
+  },
+  {
+    "scan_id": "MRI-00179",
+    "participant_id": "PART-NEUR-278",
+    "scan_date": "2023-11-26",
+    "whole_brain_volume_cm3": 1125.6,
+    "hippocampal_volume_left_mm3": 2969.2,
+    "hippocampal_volume_right_mm3": 2943.2,
+    "entorhinal_cortex_thickness_mm": 2.86,
+    "white_matter_hyperintensities_cm3": 8.77
+  },
+  {
+    "scan_id": "MRI-00180",
+    "participant_id": "PART-NEUR-279",
+    "scan_date": "2023-11-27",
+    "whole_brain_volume_cm3": 1077.2,
+    "hippocampal_volume_left_mm3": 3385.3,
+    "hippocampal_volume_right_mm3": 3884.7,
+    "entorhinal_cortex_thickness_mm": 2.89,
+    "white_matter_hyperintensities_cm3": 11.15
+  },
+  {
+    "scan_id": "MRI-00181",
+    "participant_id": "PART-NEUR-280",
+    "scan_date": "2023-11-28",
+    "whole_brain_volume_cm3": 1074.1,
+    "hippocampal_volume_left_mm3": 2976.4,
+    "hippocampal_volume_right_mm3": 3799.7,
+    "entorhinal_cortex_thickness_mm": 2.19,
+    "white_matter_hyperintensities_cm3": 11.97
+  },
+  {
+    "scan_id": "MRI-00182",
+    "participant_id": "PART-NEUR-281",
+    "scan_date": "2023-11-29",
+    "whole_brain_volume_cm3": 1130.8,
+    "hippocampal_volume_left_mm3": 4008.1,
+    "hippocampal_volume_right_mm3": 3330.5,
+    "entorhinal_cortex_thickness_mm": 3.18,
+    "white_matter_hyperintensities_cm3": 14.42
+  },
+  {
+    "scan_id": "MRI-00183",
+    "participant_id": "PART-NEUR-282",
+    "scan_date": "2023-11-30",
+    "whole_brain_volume_cm3": 1322.4,
+    "hippocampal_volume_left_mm3": 4164.0,
+    "hippocampal_volume_right_mm3": 3543.2,
+    "entorhinal_cortex_thickness_mm": 3.78,
+    "white_matter_hyperintensities_cm3": 5.62
+  },
+  {
+    "scan_id": "MRI-00184",
+    "participant_id": "PART-NEUR-283",
+    "scan_date": "2023-12-01",
+    "whole_brain_volume_cm3": 1058.6,
+    "hippocampal_volume_left_mm3": 3226.1,
+    "hippocampal_volume_right_mm3": 3462.2,
+    "entorhinal_cortex_thickness_mm": 3.42,
+    "white_matter_hyperintensities_cm3": 13.03
+  },
+  {
+    "scan_id": "MRI-00185",
+    "participant_id": "PART-NEUR-284",
+    "scan_date": "2023-12-02",
+    "whole_brain_volume_cm3": 1163.8,
+    "hippocampal_volume_left_mm3": 3610.2,
+    "hippocampal_volume_right_mm3": 4259.4,
+    "entorhinal_cortex_thickness_mm": 3.79,
+    "white_matter_hyperintensities_cm3": 13.58
+  },
+  {
+    "scan_id": "MRI-00186",
+    "participant_id": "PART-NEUR-285",
+    "scan_date": "2023-12-03",
+    "whole_brain_volume_cm3": 1233.1,
+    "hippocampal_volume_left_mm3": 3679.3,
+    "hippocampal_volume_right_mm3": 3485.3,
+    "entorhinal_cortex_thickness_mm": 3.53,
+    "white_matter_hyperintensities_cm3": 9.71
+  },
+  {
+    "scan_id": "MRI-00187",
+    "participant_id": "PART-NEUR-286",
+    "scan_date": "2023-12-04",
+    "whole_brain_volume_cm3": 1299.9,
+    "hippocampal_volume_left_mm3": 3092.8,
+    "hippocampal_volume_right_mm3": 3188.3,
+    "entorhinal_cortex_thickness_mm": 2.11,
+    "white_matter_hyperintensities_cm3": 8.33
+  },
+  {
+    "scan_id": "MRI-00188",
+    "participant_id": "PART-NEUR-287",
+    "scan_date": "2023-12-05",
+    "whole_brain_volume_cm3": 1266.4,
+    "hippocampal_volume_left_mm3": 3293.7,
+    "hippocampal_volume_right_mm3": 4161.1,
+    "entorhinal_cortex_thickness_mm": 2.32,
+    "white_matter_hyperintensities_cm3": 7.38
+  },
+  {
+    "scan_id": "MRI-00189",
+    "participant_id": "PART-NEUR-288",
+    "scan_date": "2023-12-06",
+    "whole_brain_volume_cm3": 1348.9,
+    "hippocampal_volume_left_mm3": 4093.1,
+    "hippocampal_volume_right_mm3": 3931.9,
+    "entorhinal_cortex_thickness_mm": 2.75,
+    "white_matter_hyperintensities_cm3": 6.79
+  },
+  {
+    "scan_id": "MRI-00190",
+    "participant_id": "PART-NEUR-289",
+    "scan_date": "2023-12-07",
+    "whole_brain_volume_cm3": 1308.1,
+    "hippocampal_volume_left_mm3": 3542.2,
+    "hippocampal_volume_right_mm3": 3151.6,
+    "entorhinal_cortex_thickness_mm": 3.68,
+    "white_matter_hyperintensities_cm3": 5.72
+  },
+  {
+    "scan_id": "MRI-00191",
+    "participant_id": "PART-NEUR-290",
+    "scan_date": "2023-12-08",
+    "whole_brain_volume_cm3": 1269.7,
+    "hippocampal_volume_left_mm3": 2809.7,
+    "hippocampal_volume_right_mm3": 3906.3,
+    "entorhinal_cortex_thickness_mm": 3.06,
+    "white_matter_hyperintensities_cm3": 10.93
+  },
+  {
+    "scan_id": "MRI-00192",
+    "participant_id": "PART-NEUR-291",
+    "scan_date": "2023-12-09",
+    "whole_brain_volume_cm3": 1113.9,
+    "hippocampal_volume_left_mm3": 4029.3,
+    "hippocampal_volume_right_mm3": 3833.5,
+    "entorhinal_cortex_thickness_mm": 3.08,
+    "white_matter_hyperintensities_cm3": 11.41
+  },
+  {
+    "scan_id": "MRI-00193",
+    "participant_id": "PART-NEUR-292",
+    "scan_date": "2023-12-10",
+    "whole_brain_volume_cm3": 1182.5,
+    "hippocampal_volume_left_mm3": 4167.8,
+    "hippocampal_volume_right_mm3": 3199.6,
+    "entorhinal_cortex_thickness_mm": 3.17,
+    "white_matter_hyperintensities_cm3": 3.17
+  },
+  {
+    "scan_id": "MRI-00194",
+    "participant_id": "PART-NEUR-293",
+    "scan_date": "2023-12-11",
+    "whole_brain_volume_cm3": 1184.9,
+    "hippocampal_volume_left_mm3": 2864.5,
+    "hippocampal_volume_right_mm3": 4021.4,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 6.43
+  },
+  {
+    "scan_id": "MRI-00195",
+    "participant_id": "PART-NEUR-294",
+    "scan_date": "2023-12-12",
+    "whole_brain_volume_cm3": 1316.4,
+    "hippocampal_volume_left_mm3": 3670.5,
+    "hippocampal_volume_right_mm3": 4319.3,
+    "entorhinal_cortex_thickness_mm": 2.8,
+    "white_matter_hyperintensities_cm3": 8.34
+  },
+  {
+    "scan_id": "MRI-00196",
+    "participant_id": "PART-NEUR-295",
+    "scan_date": "2023-12-13",
+    "whole_brain_volume_cm3": 1123.0,
+    "hippocampal_volume_left_mm3": 3589.1,
+    "hippocampal_volume_right_mm3": 4153.5,
+    "entorhinal_cortex_thickness_mm": 3.44,
+    "white_matter_hyperintensities_cm3": 1.49
+  },
+  {
+    "scan_id": "MRI-00197",
+    "participant_id": "PART-NEUR-296",
+    "scan_date": "2023-12-14",
+    "whole_brain_volume_cm3": 1263.5,
+    "hippocampal_volume_left_mm3": 3562.7,
+    "hippocampal_volume_right_mm3": 3937.9,
+    "entorhinal_cortex_thickness_mm": 2.16,
+    "white_matter_hyperintensities_cm3": 13.86
+  },
+  {
+    "scan_id": "MRI-00198",
+    "participant_id": "PART-NEUR-297",
+    "scan_date": "2023-12-15",
+    "whole_brain_volume_cm3": 1244.5,
+    "hippocampal_volume_left_mm3": 3125.4,
+    "hippocampal_volume_right_mm3": 3508.4,
+    "entorhinal_cortex_thickness_mm": 3.2,
+    "white_matter_hyperintensities_cm3": 1.44
+  },
+  {
+    "scan_id": "MRI-00199",
+    "participant_id": "PART-NEUR-298",
+    "scan_date": "2023-12-16",
+    "whole_brain_volume_cm3": 1293.0,
+    "hippocampal_volume_left_mm3": 4107.9,
+    "hippocampal_volume_right_mm3": 4315.5,
+    "entorhinal_cortex_thickness_mm": 2.21,
+    "white_matter_hyperintensities_cm3": 1.48
+  },
+  {
+    "scan_id": "MRI-00200",
+    "participant_id": "PART-NEUR-299",
+    "scan_date": "2023-12-17",
+    "whole_brain_volume_cm3": 1154.3,
+    "hippocampal_volume_left_mm3": 3579.0,
+    "hippocampal_volume_right_mm3": 4143.8,
+    "entorhinal_cortex_thickness_mm": 2.37,
+    "white_matter_hyperintensities_cm3": 8.17
+  },
+  {
+    "scan_id": "MRI-00201",
+    "participant_id": "PART-NEUR-100",
+    "scan_date": "2023-12-18",
+    "whole_brain_volume_cm3": 1335.7,
+    "hippocampal_volume_left_mm3": 3057.9,
+    "hippocampal_volume_right_mm3": 3642.9,
+    "entorhinal_cortex_thickness_mm": 3.19,
+    "white_matter_hyperintensities_cm3": 5.93
+  },
+  {
+    "scan_id": "MRI-00202",
+    "participant_id": "PART-NEUR-101",
+    "scan_date": "2023-12-19",
+    "whole_brain_volume_cm3": 1315.9,
+    "hippocampal_volume_left_mm3": 3435.7,
+    "hippocampal_volume_right_mm3": 3324.7,
+    "entorhinal_cortex_thickness_mm": 2.99,
+    "white_matter_hyperintensities_cm3": 6.38
+  },
+  {
+    "scan_id": "MRI-00203",
+    "participant_id": "PART-NEUR-102",
+    "scan_date": "2023-12-20",
+    "whole_brain_volume_cm3": 1109.3,
+    "hippocampal_volume_left_mm3": 3851.0,
+    "hippocampal_volume_right_mm3": 4196.1,
+    "entorhinal_cortex_thickness_mm": 2.91,
+    "white_matter_hyperintensities_cm3": 7.96
+  },
+  {
+    "scan_id": "MRI-00204",
+    "participant_id": "PART-NEUR-103",
+    "scan_date": "2023-12-21",
+    "whole_brain_volume_cm3": 1080.6,
+    "hippocampal_volume_left_mm3": 3963.9,
+    "hippocampal_volume_right_mm3": 3858.4,
+    "entorhinal_cortex_thickness_mm": 2.76,
+    "white_matter_hyperintensities_cm3": 9.03
+  },
+  {
+    "scan_id": "MRI-00205",
+    "participant_id": "PART-NEUR-104",
+    "scan_date": "2023-12-22",
+    "whole_brain_volume_cm3": 1275.9,
+    "hippocampal_volume_left_mm3": 3413.0,
+    "hippocampal_volume_right_mm3": 4139.2,
+    "entorhinal_cortex_thickness_mm": 2.51,
+    "white_matter_hyperintensities_cm3": 9.93
+  },
+  {
+    "scan_id": "MRI-00206",
+    "participant_id": "PART-NEUR-105",
+    "scan_date": "2023-12-23",
+    "whole_brain_volume_cm3": 1172.4,
+    "hippocampal_volume_left_mm3": 3979.5,
+    "hippocampal_volume_right_mm3": 3613.7,
+    "entorhinal_cortex_thickness_mm": 2.88,
+    "white_matter_hyperintensities_cm3": 12.86
+  },
+  {
+    "scan_id": "MRI-00207",
+    "participant_id": "PART-NEUR-106",
+    "scan_date": "2023-12-24",
+    "whole_brain_volume_cm3": 1138.0,
+    "hippocampal_volume_left_mm3": 4103.7,
+    "hippocampal_volume_right_mm3": 3982.2,
+    "entorhinal_cortex_thickness_mm": 2.1,
+    "white_matter_hyperintensities_cm3": 6.0
+  },
+  {
+    "scan_id": "MRI-00208",
+    "participant_id": "PART-NEUR-107",
+    "scan_date": "2023-12-25",
+    "whole_brain_volume_cm3": 1297.7,
+    "hippocampal_volume_left_mm3": 3052.3,
+    "hippocampal_volume_right_mm3": 3504.6,
+    "entorhinal_cortex_thickness_mm": 3.75,
+    "white_matter_hyperintensities_cm3": 8.22
+  },
+  {
+    "scan_id": "MRI-00209",
+    "participant_id": "PART-NEUR-108",
+    "scan_date": "2023-12-26",
+    "whole_brain_volume_cm3": 1194.9,
+    "hippocampal_volume_left_mm3": 3372.0,
+    "hippocampal_volume_right_mm3": 4100.0,
+    "entorhinal_cortex_thickness_mm": 2.11,
+    "white_matter_hyperintensities_cm3": 5.71
+  },
+  {
+    "scan_id": "MRI-00210",
+    "participant_id": "PART-NEUR-109",
+    "scan_date": "2023-12-27",
+    "whole_brain_volume_cm3": 1193.1,
+    "hippocampal_volume_left_mm3": 3022.9,
+    "hippocampal_volume_right_mm3": 3923.9,
+    "entorhinal_cortex_thickness_mm": 3.64,
+    "white_matter_hyperintensities_cm3": 11.39
+  },
+  {
+    "scan_id": "MRI-00211",
+    "participant_id": "PART-NEUR-110",
+    "scan_date": "2023-12-28",
+    "whole_brain_volume_cm3": 1205.3,
+    "hippocampal_volume_left_mm3": 3532.6,
+    "hippocampal_volume_right_mm3": 4088.2,
+    "entorhinal_cortex_thickness_mm": 2.62,
+    "white_matter_hyperintensities_cm3": 12.08
+  },
+  {
+    "scan_id": "MRI-00212",
+    "participant_id": "PART-NEUR-111",
+    "scan_date": "2023-12-29",
+    "whole_brain_volume_cm3": 1363.1,
+    "hippocampal_volume_left_mm3": 3778.0,
+    "hippocampal_volume_right_mm3": 4347.4,
+    "entorhinal_cortex_thickness_mm": 2.88,
+    "white_matter_hyperintensities_cm3": 10.89
+  },
+  {
+    "scan_id": "MRI-00213",
+    "participant_id": "PART-NEUR-112",
+    "scan_date": "2023-12-30",
+    "whole_brain_volume_cm3": 1182.8,
+    "hippocampal_volume_left_mm3": 4090.9,
+    "hippocampal_volume_right_mm3": 3281.6,
+    "entorhinal_cortex_thickness_mm": 3.0,
+    "white_matter_hyperintensities_cm3": 7.72
+  },
+  {
+    "scan_id": "MRI-00214",
+    "participant_id": "PART-NEUR-113",
+    "scan_date": "2023-12-31",
+    "whole_brain_volume_cm3": 1275.1,
+    "hippocampal_volume_left_mm3": 3026.5,
+    "hippocampal_volume_right_mm3": 4066.1,
+    "entorhinal_cortex_thickness_mm": 2.99,
+    "white_matter_hyperintensities_cm3": 13.01
+  },
+  {
+    "scan_id": "MRI-00215",
+    "participant_id": "PART-NEUR-114",
+    "scan_date": "2024-01-01",
+    "whole_brain_volume_cm3": 1278.1,
+    "hippocampal_volume_left_mm3": 3771.0,
+    "hippocampal_volume_right_mm3": 3076.6,
+    "entorhinal_cortex_thickness_mm": 3.13,
+    "white_matter_hyperintensities_cm3": 5.04
+  },
+  {
+    "scan_id": "MRI-00216",
+    "participant_id": "PART-NEUR-115",
+    "scan_date": "2024-01-02",
+    "whole_brain_volume_cm3": 1090.8,
+    "hippocampal_volume_left_mm3": 3309.0,
+    "hippocampal_volume_right_mm3": 3000.6,
+    "entorhinal_cortex_thickness_mm": 2.84,
+    "white_matter_hyperintensities_cm3": 6.58
+  },
+  {
+    "scan_id": "MRI-00217",
+    "participant_id": "PART-NEUR-116",
+    "scan_date": "2024-01-03",
+    "whole_brain_volume_cm3": 1175.5,
+    "hippocampal_volume_left_mm3": 3973.7,
+    "hippocampal_volume_right_mm3": 4069.6,
+    "entorhinal_cortex_thickness_mm": 3.79,
+    "white_matter_hyperintensities_cm3": 3.02
+  },
+  {
+    "scan_id": "MRI-00218",
+    "participant_id": "PART-NEUR-117",
+    "scan_date": "2024-01-04",
+    "whole_brain_volume_cm3": 1210.3,
+    "hippocampal_volume_left_mm3": 3908.1,
+    "hippocampal_volume_right_mm3": 3404.7,
+    "entorhinal_cortex_thickness_mm": 3.55,
+    "white_matter_hyperintensities_cm3": 13.25
+  },
+  {
+    "scan_id": "MRI-00219",
+    "participant_id": "PART-NEUR-118",
+    "scan_date": "2024-01-05",
+    "whole_brain_volume_cm3": 1136.9,
+    "hippocampal_volume_left_mm3": 4077.0,
+    "hippocampal_volume_right_mm3": 3779.6,
+    "entorhinal_cortex_thickness_mm": 2.96,
+    "white_matter_hyperintensities_cm3": 2.07
+  },
+  {
+    "scan_id": "MRI-00220",
+    "participant_id": "PART-NEUR-119",
+    "scan_date": "2024-01-06",
+    "whole_brain_volume_cm3": 1116.0,
+    "hippocampal_volume_left_mm3": 2879.3,
+    "hippocampal_volume_right_mm3": 4240.8,
+    "entorhinal_cortex_thickness_mm": 3.74,
+    "white_matter_hyperintensities_cm3": 4.24
+  },
+  {
+    "scan_id": "MRI-00221",
+    "participant_id": "PART-NEUR-120",
+    "scan_date": "2024-01-07",
+    "whole_brain_volume_cm3": 1083.9,
+    "hippocampal_volume_left_mm3": 3607.1,
+    "hippocampal_volume_right_mm3": 4120.5,
+    "entorhinal_cortex_thickness_mm": 2.28,
+    "white_matter_hyperintensities_cm3": 9.8
+  },
+  {
+    "scan_id": "MRI-00222",
+    "participant_id": "PART-NEUR-121",
+    "scan_date": "2024-01-08",
+    "whole_brain_volume_cm3": 1169.8,
+    "hippocampal_volume_left_mm3": 3761.1,
+    "hippocampal_volume_right_mm3": 2967.7,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 10.8
+  },
+  {
+    "scan_id": "MRI-00223",
+    "participant_id": "PART-NEUR-122",
+    "scan_date": "2024-01-09",
+    "whole_brain_volume_cm3": 1175.6,
+    "hippocampal_volume_left_mm3": 3914.1,
+    "hippocampal_volume_right_mm3": 3281.3,
+    "entorhinal_cortex_thickness_mm": 2.45,
+    "white_matter_hyperintensities_cm3": 4.27
+  },
+  {
+    "scan_id": "MRI-00224",
+    "participant_id": "PART-NEUR-123",
+    "scan_date": "2024-01-10",
+    "whole_brain_volume_cm3": 1216.1,
+    "hippocampal_volume_left_mm3": 2862.2,
+    "hippocampal_volume_right_mm3": 3624.2,
+    "entorhinal_cortex_thickness_mm": 3.13,
+    "white_matter_hyperintensities_cm3": 7.75
+  },
+  {
+    "scan_id": "MRI-00225",
+    "participant_id": "PART-NEUR-124",
+    "scan_date": "2024-01-11",
+    "whole_brain_volume_cm3": 1107.2,
+    "hippocampal_volume_left_mm3": 4122.9,
+    "hippocampal_volume_right_mm3": 3644.4,
+    "entorhinal_cortex_thickness_mm": 3.22,
+    "white_matter_hyperintensities_cm3": 9.5
+  },
+  {
+    "scan_id": "MRI-00226",
+    "participant_id": "PART-NEUR-125",
+    "scan_date": "2024-01-12",
+    "whole_brain_volume_cm3": 1296.0,
+    "hippocampal_volume_left_mm3": 3733.1,
+    "hippocampal_volume_right_mm3": 3448.2,
+    "entorhinal_cortex_thickness_mm": 3.65,
+    "white_matter_hyperintensities_cm3": 7.51
+  },
+  {
+    "scan_id": "MRI-00227",
+    "participant_id": "PART-NEUR-126",
+    "scan_date": "2024-01-13",
+    "whole_brain_volume_cm3": 1324.8,
+    "hippocampal_volume_left_mm3": 3887.7,
+    "hippocampal_volume_right_mm3": 3851.0,
+    "entorhinal_cortex_thickness_mm": 3.57,
+    "white_matter_hyperintensities_cm3": 2.87
+  },
+  {
+    "scan_id": "MRI-00228",
+    "participant_id": "PART-NEUR-127",
+    "scan_date": "2024-01-14",
+    "whole_brain_volume_cm3": 1332.3,
+    "hippocampal_volume_left_mm3": 3742.3,
+    "hippocampal_volume_right_mm3": 3789.3,
+    "entorhinal_cortex_thickness_mm": 3.29,
+    "white_matter_hyperintensities_cm3": 8.08
+  },
+  {
+    "scan_id": "MRI-00229",
+    "participant_id": "PART-NEUR-128",
+    "scan_date": "2024-01-15",
+    "whole_brain_volume_cm3": 1085.7,
+    "hippocampal_volume_left_mm3": 3912.2,
+    "hippocampal_volume_right_mm3": 3849.2,
+    "entorhinal_cortex_thickness_mm": 3.43,
+    "white_matter_hyperintensities_cm3": 13.36
+  },
+  {
+    "scan_id": "MRI-00230",
+    "participant_id": "PART-NEUR-129",
+    "scan_date": "2024-01-16",
+    "whole_brain_volume_cm3": 1125.9,
+    "hippocampal_volume_left_mm3": 4097.2,
+    "hippocampal_volume_right_mm3": 3276.9,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 6.04
+  },
+  {
+    "scan_id": "MRI-00231",
+    "participant_id": "PART-NEUR-130",
+    "scan_date": "2024-01-17",
+    "whole_brain_volume_cm3": 1343.7,
+    "hippocampal_volume_left_mm3": 4183.4,
+    "hippocampal_volume_right_mm3": 3330.8,
+    "entorhinal_cortex_thickness_mm": 3.57,
+    "white_matter_hyperintensities_cm3": 8.38
+  },
+  {
+    "scan_id": "MRI-00232",
+    "participant_id": "PART-NEUR-131",
+    "scan_date": "2024-01-18",
+    "whole_brain_volume_cm3": 1168.1,
+    "hippocampal_volume_left_mm3": 2878.4,
+    "hippocampal_volume_right_mm3": 3971.8,
+    "entorhinal_cortex_thickness_mm": 2.83,
+    "white_matter_hyperintensities_cm3": 3.78
+  },
+  {
+    "scan_id": "MRI-00233",
+    "participant_id": "PART-NEUR-132",
+    "scan_date": "2024-01-19",
+    "whole_brain_volume_cm3": 1368.5,
+    "hippocampal_volume_left_mm3": 4120.8,
+    "hippocampal_volume_right_mm3": 3851.4,
+    "entorhinal_cortex_thickness_mm": 3.11,
+    "white_matter_hyperintensities_cm3": 5.29
+  },
+  {
+    "scan_id": "MRI-00234",
+    "participant_id": "PART-NEUR-133",
+    "scan_date": "2024-01-20",
+    "whole_brain_volume_cm3": 1299.5,
+    "hippocampal_volume_left_mm3": 3125.6,
+    "hippocampal_volume_right_mm3": 3301.0,
+    "entorhinal_cortex_thickness_mm": 2.78,
+    "white_matter_hyperintensities_cm3": 5.49
+  },
+  {
+    "scan_id": "MRI-00235",
+    "participant_id": "PART-NEUR-134",
+    "scan_date": "2024-01-21",
+    "whole_brain_volume_cm3": 1191.4,
+    "hippocampal_volume_left_mm3": 3563.5,
+    "hippocampal_volume_right_mm3": 4295.9,
+    "entorhinal_cortex_thickness_mm": 3.12,
+    "white_matter_hyperintensities_cm3": 11.99
+  },
+  {
+    "scan_id": "MRI-00236",
+    "participant_id": "PART-NEUR-135",
+    "scan_date": "2024-01-22",
+    "whole_brain_volume_cm3": 1146.4,
+    "hippocampal_volume_left_mm3": 2843.4,
+    "hippocampal_volume_right_mm3": 3811.7,
+    "entorhinal_cortex_thickness_mm": 3.04,
+    "white_matter_hyperintensities_cm3": 9.24
+  },
+  {
+    "scan_id": "MRI-00237",
+    "participant_id": "PART-NEUR-136",
+    "scan_date": "2024-01-23",
+    "whole_brain_volume_cm3": 1293.4,
+    "hippocampal_volume_left_mm3": 3559.9,
+    "hippocampal_volume_right_mm3": 3283.7,
+    "entorhinal_cortex_thickness_mm": 2.44,
+    "white_matter_hyperintensities_cm3": 14.43
+  },
+  {
+    "scan_id": "MRI-00238",
+    "participant_id": "PART-NEUR-137",
+    "scan_date": "2024-01-24",
+    "whole_brain_volume_cm3": 1055.4,
+    "hippocampal_volume_left_mm3": 3530.3,
+    "hippocampal_volume_right_mm3": 2941.7,
+    "entorhinal_cortex_thickness_mm": 3.57,
+    "white_matter_hyperintensities_cm3": 3.73
+  },
+  {
+    "scan_id": "MRI-00239",
+    "participant_id": "PART-NEUR-138",
+    "scan_date": "2024-01-25",
+    "whole_brain_volume_cm3": 1067.0,
+    "hippocampal_volume_left_mm3": 3942.9,
+    "hippocampal_volume_right_mm3": 3305.5,
+    "entorhinal_cortex_thickness_mm": 2.29,
+    "white_matter_hyperintensities_cm3": 3.19
+  },
+  {
+    "scan_id": "MRI-00240",
+    "participant_id": "PART-NEUR-139",
+    "scan_date": "2024-01-26",
+    "whole_brain_volume_cm3": 1177.9,
+    "hippocampal_volume_left_mm3": 2879.1,
+    "hippocampal_volume_right_mm3": 3905.1,
+    "entorhinal_cortex_thickness_mm": 3.42,
+    "white_matter_hyperintensities_cm3": 8.21
+  },
+  {
+    "scan_id": "MRI-00241",
+    "participant_id": "PART-NEUR-140",
+    "scan_date": "2024-01-27",
+    "whole_brain_volume_cm3": 1356.5,
+    "hippocampal_volume_left_mm3": 3818.0,
+    "hippocampal_volume_right_mm3": 3587.0,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 6.78
+  },
+  {
+    "scan_id": "MRI-00242",
+    "participant_id": "PART-NEUR-141",
+    "scan_date": "2024-01-28",
+    "whole_brain_volume_cm3": 1325.2,
+    "hippocampal_volume_left_mm3": 3701.3,
+    "hippocampal_volume_right_mm3": 3624.7,
+    "entorhinal_cortex_thickness_mm": 3.42,
+    "white_matter_hyperintensities_cm3": 5.76
+  },
+  {
+    "scan_id": "MRI-00243",
+    "participant_id": "PART-NEUR-142",
+    "scan_date": "2024-01-29",
+    "whole_brain_volume_cm3": 1214.1,
+    "hippocampal_volume_left_mm3": 3217.8,
+    "hippocampal_volume_right_mm3": 3144.9,
+    "entorhinal_cortex_thickness_mm": 2.69,
+    "white_matter_hyperintensities_cm3": 9.81
+  },
+  {
+    "scan_id": "MRI-00244",
+    "participant_id": "PART-NEUR-143",
+    "scan_date": "2024-01-30",
+    "whole_brain_volume_cm3": 1225.9,
+    "hippocampal_volume_left_mm3": 4034.6,
+    "hippocampal_volume_right_mm3": 4287.9,
+    "entorhinal_cortex_thickness_mm": 2.21,
+    "white_matter_hyperintensities_cm3": 9.9
+  },
+  {
+    "scan_id": "MRI-00245",
+    "participant_id": "PART-NEUR-144",
+    "scan_date": "2024-01-31",
+    "whole_brain_volume_cm3": 1188.1,
+    "hippocampal_volume_left_mm3": 2805.5,
+    "hippocampal_volume_right_mm3": 3479.1,
+    "entorhinal_cortex_thickness_mm": 2.21,
+    "white_matter_hyperintensities_cm3": 2.77
+  },
+  {
+    "scan_id": "MRI-00246",
+    "participant_id": "PART-NEUR-145",
+    "scan_date": "2024-02-01",
+    "whole_brain_volume_cm3": 1253.0,
+    "hippocampal_volume_left_mm3": 2811.0,
+    "hippocampal_volume_right_mm3": 3455.8,
+    "entorhinal_cortex_thickness_mm": 3.01,
+    "white_matter_hyperintensities_cm3": 7.58
+  },
+  {
+    "scan_id": "MRI-00247",
+    "participant_id": "PART-NEUR-146",
+    "scan_date": "2024-02-02",
+    "whole_brain_volume_cm3": 1051.5,
+    "hippocampal_volume_left_mm3": 3824.0,
+    "hippocampal_volume_right_mm3": 2958.2,
+    "entorhinal_cortex_thickness_mm": 2.19,
+    "white_matter_hyperintensities_cm3": 5.29
+  },
+  {
+    "scan_id": "MRI-00248",
+    "participant_id": "PART-NEUR-147",
+    "scan_date": "2024-02-03",
+    "whole_brain_volume_cm3": 1131.2,
+    "hippocampal_volume_left_mm3": 4131.8,
+    "hippocampal_volume_right_mm3": 3966.9,
+    "entorhinal_cortex_thickness_mm": 3.54,
+    "white_matter_hyperintensities_cm3": 4.17
+  },
+  {
+    "scan_id": "MRI-00249",
+    "participant_id": "PART-NEUR-148",
+    "scan_date": "2024-02-04",
+    "whole_brain_volume_cm3": 1142.6,
+    "hippocampal_volume_left_mm3": 3361.3,
+    "hippocampal_volume_right_mm3": 3391.3,
+    "entorhinal_cortex_thickness_mm": 3.18,
+    "white_matter_hyperintensities_cm3": 4.73
+  },
+  {
+    "scan_id": "MRI-00250",
+    "participant_id": "PART-NEUR-149",
+    "scan_date": "2024-02-05",
+    "whole_brain_volume_cm3": 1061.0,
+    "hippocampal_volume_left_mm3": 3470.2,
+    "hippocampal_volume_right_mm3": 3886.3,
+    "entorhinal_cortex_thickness_mm": 3.47,
+    "white_matter_hyperintensities_cm3": 9.77
+  },
+  {
+    "scan_id": "MRI-00251",
+    "participant_id": "PART-NEUR-150",
+    "scan_date": "2024-02-06",
+    "whole_brain_volume_cm3": 1329.6,
+    "hippocampal_volume_left_mm3": 2997.9,
+    "hippocampal_volume_right_mm3": 2922.3,
+    "entorhinal_cortex_thickness_mm": 2.21,
+    "white_matter_hyperintensities_cm3": 4.23
+  },
+  {
+    "scan_id": "MRI-00252",
+    "participant_id": "PART-NEUR-151",
+    "scan_date": "2024-02-07",
+    "whole_brain_volume_cm3": 1262.2,
+    "hippocampal_volume_left_mm3": 3257.4,
+    "hippocampal_volume_right_mm3": 3088.8,
+    "entorhinal_cortex_thickness_mm": 2.9,
+    "white_matter_hyperintensities_cm3": 6.7
+  },
+  {
+    "scan_id": "MRI-00253",
+    "participant_id": "PART-NEUR-152",
+    "scan_date": "2024-02-08",
+    "whole_brain_volume_cm3": 1136.5,
+    "hippocampal_volume_left_mm3": 3753.3,
+    "hippocampal_volume_right_mm3": 3260.2,
+    "entorhinal_cortex_thickness_mm": 3.07,
+    "white_matter_hyperintensities_cm3": 3.22
+  },
+  {
+    "scan_id": "MRI-00254",
+    "participant_id": "PART-NEUR-153",
+    "scan_date": "2024-02-09",
+    "whole_brain_volume_cm3": 1188.6,
+    "hippocampal_volume_left_mm3": 2971.2,
+    "hippocampal_volume_right_mm3": 3834.4,
+    "entorhinal_cortex_thickness_mm": 3.43,
+    "white_matter_hyperintensities_cm3": 12.06
+  },
+  {
+    "scan_id": "MRI-00255",
+    "participant_id": "PART-NEUR-154",
+    "scan_date": "2024-02-10",
+    "whole_brain_volume_cm3": 1277.2,
+    "hippocampal_volume_left_mm3": 3457.6,
+    "hippocampal_volume_right_mm3": 3080.2,
+    "entorhinal_cortex_thickness_mm": 2.68,
+    "white_matter_hyperintensities_cm3": 12.39
+  },
+  {
+    "scan_id": "MRI-00256",
+    "participant_id": "PART-NEUR-155",
+    "scan_date": "2024-02-11",
+    "whole_brain_volume_cm3": 1208.5,
+    "hippocampal_volume_left_mm3": 3235.2,
+    "hippocampal_volume_right_mm3": 3826.4,
+    "entorhinal_cortex_thickness_mm": 3.66,
+    "white_matter_hyperintensities_cm3": 6.84
+  },
+  {
+    "scan_id": "MRI-00257",
+    "participant_id": "PART-NEUR-156",
+    "scan_date": "2024-02-12",
+    "whole_brain_volume_cm3": 1088.6,
+    "hippocampal_volume_left_mm3": 3780.1,
+    "hippocampal_volume_right_mm3": 3953.7,
+    "entorhinal_cortex_thickness_mm": 2.97,
+    "white_matter_hyperintensities_cm3": 10.23
+  },
+  {
+    "scan_id": "MRI-00258",
+    "participant_id": "PART-NEUR-157",
+    "scan_date": "2024-02-13",
+    "whole_brain_volume_cm3": 1220.7,
+    "hippocampal_volume_left_mm3": 3778.7,
+    "hippocampal_volume_right_mm3": 4311.9,
+    "entorhinal_cortex_thickness_mm": 2.56,
+    "white_matter_hyperintensities_cm3": 9.79
+  },
+  {
+    "scan_id": "MRI-00259",
+    "participant_id": "PART-NEUR-158",
+    "scan_date": "2024-02-14",
+    "whole_brain_volume_cm3": 1190.7,
+    "hippocampal_volume_left_mm3": 3854.4,
+    "hippocampal_volume_right_mm3": 3730.2,
+    "entorhinal_cortex_thickness_mm": 2.48,
+    "white_matter_hyperintensities_cm3": 14.02
+  },
+  {
+    "scan_id": "MRI-00260",
+    "participant_id": "PART-NEUR-159",
+    "scan_date": "2024-02-15",
+    "whole_brain_volume_cm3": 1082.3,
+    "hippocampal_volume_left_mm3": 3747.1,
+    "hippocampal_volume_right_mm3": 3444.6,
+    "entorhinal_cortex_thickness_mm": 3.78,
+    "white_matter_hyperintensities_cm3": 10.14
+  },
+  {
+    "scan_id": "MRI-00261",
+    "participant_id": "PART-NEUR-160",
+    "scan_date": "2024-02-16",
+    "whole_brain_volume_cm3": 1260.1,
+    "hippocampal_volume_left_mm3": 3548.8,
+    "hippocampal_volume_right_mm3": 4011.5,
+    "entorhinal_cortex_thickness_mm": 3.59,
+    "white_matter_hyperintensities_cm3": 4.63
+  },
+  {
+    "scan_id": "MRI-00262",
+    "participant_id": "PART-NEUR-161",
+    "scan_date": "2024-02-17",
+    "whole_brain_volume_cm3": 1088.6,
+    "hippocampal_volume_left_mm3": 3312.4,
+    "hippocampal_volume_right_mm3": 3855.0,
+    "entorhinal_cortex_thickness_mm": 3.66,
+    "white_matter_hyperintensities_cm3": 9.64
+  },
+  {
+    "scan_id": "MRI-00263",
+    "participant_id": "PART-NEUR-162",
+    "scan_date": "2024-02-18",
+    "whole_brain_volume_cm3": 1160.6,
+    "hippocampal_volume_left_mm3": 3437.4,
+    "hippocampal_volume_right_mm3": 2917.5,
+    "entorhinal_cortex_thickness_mm": 3.25,
+    "white_matter_hyperintensities_cm3": 12.64
+  },
+  {
+    "scan_id": "MRI-00264",
+    "participant_id": "PART-NEUR-163",
+    "scan_date": "2024-02-19",
+    "whole_brain_volume_cm3": 1210.1,
+    "hippocampal_volume_left_mm3": 3065.5,
+    "hippocampal_volume_right_mm3": 3229.5,
+    "entorhinal_cortex_thickness_mm": 2.67,
+    "white_matter_hyperintensities_cm3": 13.78
+  },
+  {
+    "scan_id": "MRI-00265",
+    "participant_id": "PART-NEUR-164",
+    "scan_date": "2024-02-20",
+    "whole_brain_volume_cm3": 1084.1,
+    "hippocampal_volume_left_mm3": 3038.5,
+    "hippocampal_volume_right_mm3": 3807.3,
+    "entorhinal_cortex_thickness_mm": 3.29,
+    "white_matter_hyperintensities_cm3": 4.24
+  },
+  {
+    "scan_id": "MRI-00266",
+    "participant_id": "PART-NEUR-165",
+    "scan_date": "2024-02-21",
+    "whole_brain_volume_cm3": 1301.4,
+    "hippocampal_volume_left_mm3": 3530.3,
+    "hippocampal_volume_right_mm3": 3204.7,
+    "entorhinal_cortex_thickness_mm": 2.68,
+    "white_matter_hyperintensities_cm3": 7.15
+  },
+  {
+    "scan_id": "MRI-00267",
+    "participant_id": "PART-NEUR-166",
+    "scan_date": "2024-02-22",
+    "whole_brain_volume_cm3": 1079.8,
+    "hippocampal_volume_left_mm3": 2840.1,
+    "hippocampal_volume_right_mm3": 3519.4,
+    "entorhinal_cortex_thickness_mm": 3.22,
+    "white_matter_hyperintensities_cm3": 9.45
+  },
+  {
+    "scan_id": "MRI-00268",
+    "participant_id": "PART-NEUR-167",
+    "scan_date": "2024-02-23",
+    "whole_brain_volume_cm3": 1285.6,
+    "hippocampal_volume_left_mm3": 3318.1,
+    "hippocampal_volume_right_mm3": 3731.3,
+    "entorhinal_cortex_thickness_mm": 3.71,
+    "white_matter_hyperintensities_cm3": 5.82
+  },
+  {
+    "scan_id": "MRI-00269",
+    "participant_id": "PART-NEUR-168",
+    "scan_date": "2024-02-24",
+    "whole_brain_volume_cm3": 1132.4,
+    "hippocampal_volume_left_mm3": 3852.7,
+    "hippocampal_volume_right_mm3": 4164.0,
+    "entorhinal_cortex_thickness_mm": 2.5,
+    "white_matter_hyperintensities_cm3": 1.38
+  },
+  {
+    "scan_id": "MRI-00270",
+    "participant_id": "PART-NEUR-169",
+    "scan_date": "2024-02-25",
+    "whole_brain_volume_cm3": 1149.2,
+    "hippocampal_volume_left_mm3": 2840.3,
+    "hippocampal_volume_right_mm3": 3926.6,
+    "entorhinal_cortex_thickness_mm": 2.71,
+    "white_matter_hyperintensities_cm3": 12.22
+  },
+  {
+    "scan_id": "MRI-00271",
+    "participant_id": "PART-NEUR-170",
+    "scan_date": "2024-02-26",
+    "whole_brain_volume_cm3": 1243.6,
+    "hippocampal_volume_left_mm3": 3253.7,
+    "hippocampal_volume_right_mm3": 3856.3,
+    "entorhinal_cortex_thickness_mm": 3.73,
+    "white_matter_hyperintensities_cm3": 1.25
+  },
+  {
+    "scan_id": "MRI-00272",
+    "participant_id": "PART-NEUR-171",
+    "scan_date": "2024-02-27",
+    "whole_brain_volume_cm3": 1377.4,
+    "hippocampal_volume_left_mm3": 3823.5,
+    "hippocampal_volume_right_mm3": 3743.8,
+    "entorhinal_cortex_thickness_mm": 3.05,
+    "white_matter_hyperintensities_cm3": 3.27
+  },
+  {
+    "scan_id": "MRI-00273",
+    "participant_id": "PART-NEUR-172",
+    "scan_date": "2024-02-28",
+    "whole_brain_volume_cm3": 1268.8,
+    "hippocampal_volume_left_mm3": 2996.2,
+    "hippocampal_volume_right_mm3": 3067.2,
+    "entorhinal_cortex_thickness_mm": 2.67,
+    "white_matter_hyperintensities_cm3": 5.28
+  },
+  {
+    "scan_id": "MRI-00274",
+    "participant_id": "PART-NEUR-173",
+    "scan_date": "2024-02-29",
+    "whole_brain_volume_cm3": 1317.5,
+    "hippocampal_volume_left_mm3": 3882.3,
+    "hippocampal_volume_right_mm3": 3833.7,
+    "entorhinal_cortex_thickness_mm": 3.33,
+    "white_matter_hyperintensities_cm3": 3.71
+  },
+  {
+    "scan_id": "MRI-00275",
+    "participant_id": "PART-NEUR-174",
+    "scan_date": "2024-03-01",
+    "whole_brain_volume_cm3": 1053.8,
+    "hippocampal_volume_left_mm3": 3129.4,
+    "hippocampal_volume_right_mm3": 3910.1,
+    "entorhinal_cortex_thickness_mm": 2.91,
+    "white_matter_hyperintensities_cm3": 7.56
+  },
+  {
+    "scan_id": "MRI-00276",
+    "participant_id": "PART-NEUR-175",
+    "scan_date": "2024-03-02",
+    "whole_brain_volume_cm3": 1266.9,
+    "hippocampal_volume_left_mm3": 3274.5,
+    "hippocampal_volume_right_mm3": 4349.6,
+    "entorhinal_cortex_thickness_mm": 3.65,
+    "white_matter_hyperintensities_cm3": 4.24
+  },
+  {
+    "scan_id": "MRI-00277",
+    "participant_id": "PART-NEUR-176",
+    "scan_date": "2024-03-03",
+    "whole_brain_volume_cm3": 1235.0,
+    "hippocampal_volume_left_mm3": 3685.0,
+    "hippocampal_volume_right_mm3": 3386.5,
+    "entorhinal_cortex_thickness_mm": 2.61,
+    "white_matter_hyperintensities_cm3": 9.0
+  },
+  {
+    "scan_id": "MRI-00278",
+    "participant_id": "PART-NEUR-177",
+    "scan_date": "2024-03-04",
+    "whole_brain_volume_cm3": 1075.9,
+    "hippocampal_volume_left_mm3": 2847.4,
+    "hippocampal_volume_right_mm3": 4062.0,
+    "entorhinal_cortex_thickness_mm": 2.48,
+    "white_matter_hyperintensities_cm3": 8.46
+  },
+  {
+    "scan_id": "MRI-00279",
+    "participant_id": "PART-NEUR-178",
+    "scan_date": "2024-03-05",
+    "whole_brain_volume_cm3": 1187.8,
+    "hippocampal_volume_left_mm3": 3629.1,
+    "hippocampal_volume_right_mm3": 3433.8,
+    "entorhinal_cortex_thickness_mm": 2.54,
+    "white_matter_hyperintensities_cm3": 9.43
+  },
+  {
+    "scan_id": "MRI-00280",
+    "participant_id": "PART-NEUR-179",
+    "scan_date": "2024-03-06",
+    "whole_brain_volume_cm3": 1210.2,
+    "hippocampal_volume_left_mm3": 3426.4,
+    "hippocampal_volume_right_mm3": 4151.8,
+    "entorhinal_cortex_thickness_mm": 2.59,
+    "white_matter_hyperintensities_cm3": 3.73
+  },
+  {
+    "scan_id": "MRI-00281",
+    "participant_id": "PART-NEUR-180",
+    "scan_date": "2024-03-07",
+    "whole_brain_volume_cm3": 1230.4,
+    "hippocampal_volume_left_mm3": 3038.4,
+    "hippocampal_volume_right_mm3": 3249.6,
+    "entorhinal_cortex_thickness_mm": 3.34,
+    "white_matter_hyperintensities_cm3": 1.6
+  },
+  {
+    "scan_id": "MRI-00282",
+    "participant_id": "PART-NEUR-181",
+    "scan_date": "2024-03-08",
+    "whole_brain_volume_cm3": 1089.8,
+    "hippocampal_volume_left_mm3": 2846.8,
+    "hippocampal_volume_right_mm3": 3628.4,
+    "entorhinal_cortex_thickness_mm": 3.28,
+    "white_matter_hyperintensities_cm3": 5.46
+  },
+  {
+    "scan_id": "MRI-00283",
+    "participant_id": "PART-NEUR-182",
+    "scan_date": "2024-03-09",
+    "whole_brain_volume_cm3": 1351.2,
+    "hippocampal_volume_left_mm3": 4183.7,
+    "hippocampal_volume_right_mm3": 3342.6,
+    "entorhinal_cortex_thickness_mm": 2.46,
+    "white_matter_hyperintensities_cm3": 8.2
+  },
+  {
+    "scan_id": "MRI-00284",
+    "participant_id": "PART-NEUR-183",
+    "scan_date": "2024-03-10",
+    "whole_brain_volume_cm3": 1191.2,
+    "hippocampal_volume_left_mm3": 3540.3,
+    "hippocampal_volume_right_mm3": 3711.3,
+    "entorhinal_cortex_thickness_mm": 2.85,
+    "white_matter_hyperintensities_cm3": 8.92
+  },
+  {
+    "scan_id": "MRI-00285",
+    "participant_id": "PART-NEUR-184",
+    "scan_date": "2024-03-11",
+    "whole_brain_volume_cm3": 1221.4,
+    "hippocampal_volume_left_mm3": 3433.3,
+    "hippocampal_volume_right_mm3": 3660.4,
+    "entorhinal_cortex_thickness_mm": 2.17,
+    "white_matter_hyperintensities_cm3": 8.85
+  },
+  {
+    "scan_id": "MRI-00286",
+    "participant_id": "PART-NEUR-185",
+    "scan_date": "2024-03-12",
+    "whole_brain_volume_cm3": 1301.7,
+    "hippocampal_volume_left_mm3": 2863.5,
+    "hippocampal_volume_right_mm3": 3416.2,
+    "entorhinal_cortex_thickness_mm": 3.28,
+    "white_matter_hyperintensities_cm3": 2.65
+  },
+  {
+    "scan_id": "MRI-00287",
+    "participant_id": "PART-NEUR-186",
+    "scan_date": "2024-03-13",
+    "whole_brain_volume_cm3": 1194.2,
+    "hippocampal_volume_left_mm3": 3938.4,
+    "hippocampal_volume_right_mm3": 3742.7,
+    "entorhinal_cortex_thickness_mm": 3.16,
+    "white_matter_hyperintensities_cm3": 3.9
+  },
+  {
+    "scan_id": "MRI-00288",
+    "participant_id": "PART-NEUR-187",
+    "scan_date": "2024-03-14",
+    "whole_brain_volume_cm3": 1256.9,
+    "hippocampal_volume_left_mm3": 3327.4,
+    "hippocampal_volume_right_mm3": 3877.3,
+    "entorhinal_cortex_thickness_mm": 2.55,
+    "white_matter_hyperintensities_cm3": 7.91
+  },
+  {
+    "scan_id": "MRI-00289",
+    "participant_id": "PART-NEUR-188",
+    "scan_date": "2024-03-15",
+    "whole_brain_volume_cm3": 1106.0,
+    "hippocampal_volume_left_mm3": 3338.5,
+    "hippocampal_volume_right_mm3": 3259.7,
+    "entorhinal_cortex_thickness_mm": 2.74,
+    "white_matter_hyperintensities_cm3": 8.18
+  },
+  {
+    "scan_id": "MRI-00290",
+    "participant_id": "PART-NEUR-189",
+    "scan_date": "2024-03-16",
+    "whole_brain_volume_cm3": 1297.2,
+    "hippocampal_volume_left_mm3": 3503.7,
+    "hippocampal_volume_right_mm3": 4196.4,
+    "entorhinal_cortex_thickness_mm": 3.45,
+    "white_matter_hyperintensities_cm3": 8.45
+  },
+  {
+    "scan_id": "MRI-00291",
+    "participant_id": "PART-NEUR-190",
+    "scan_date": "2024-03-17",
+    "whole_brain_volume_cm3": 1084.9,
+    "hippocampal_volume_left_mm3": 3695.7,
+    "hippocampal_volume_right_mm3": 4122.8,
+    "entorhinal_cortex_thickness_mm": 2.93,
+    "white_matter_hyperintensities_cm3": 8.22
+  },
+  {
+    "scan_id": "MRI-00292",
+    "participant_id": "PART-NEUR-191",
+    "scan_date": "2024-03-18",
+    "whole_brain_volume_cm3": 1201.5,
+    "hippocampal_volume_left_mm3": 4053.4,
+    "hippocampal_volume_right_mm3": 4182.0,
+    "entorhinal_cortex_thickness_mm": 3.7,
+    "white_matter_hyperintensities_cm3": 8.2
+  },
+  {
+    "scan_id": "MRI-00293",
+    "participant_id": "PART-NEUR-192",
+    "scan_date": "2024-03-19",
+    "whole_brain_volume_cm3": 1171.1,
+    "hippocampal_volume_left_mm3": 3769.7,
+    "hippocampal_volume_right_mm3": 3337.2,
+    "entorhinal_cortex_thickness_mm": 2.26,
+    "white_matter_hyperintensities_cm3": 5.63
+  },
+  {
+    "scan_id": "MRI-00294",
+    "participant_id": "PART-NEUR-193",
+    "scan_date": "2024-03-20",
+    "whole_brain_volume_cm3": 1146.8,
+    "hippocampal_volume_left_mm3": 3942.0,
+    "hippocampal_volume_right_mm3": 4308.9,
+    "entorhinal_cortex_thickness_mm": 3.36,
+    "white_matter_hyperintensities_cm3": 11.14
+  },
+  {
+    "scan_id": "MRI-00295",
+    "participant_id": "PART-NEUR-194",
+    "scan_date": "2024-03-21",
+    "whole_brain_volume_cm3": 1317.2,
+    "hippocampal_volume_left_mm3": 2826.0,
+    "hippocampal_volume_right_mm3": 2955.9,
+    "entorhinal_cortex_thickness_mm": 3.39,
+    "white_matter_hyperintensities_cm3": 1.22
+  },
+  {
+    "scan_id": "MRI-00296",
+    "participant_id": "PART-NEUR-195",
+    "scan_date": "2024-03-22",
+    "whole_brain_volume_cm3": 1067.3,
+    "hippocampal_volume_left_mm3": 3277.3,
+    "hippocampal_volume_right_mm3": 3093.8,
+    "entorhinal_cortex_thickness_mm": 3.22,
+    "white_matter_hyperintensities_cm3": 5.52
+  },
+  {
+    "scan_id": "MRI-00297",
+    "participant_id": "PART-NEUR-196",
+    "scan_date": "2024-03-23",
+    "whole_brain_volume_cm3": 1082.3,
+    "hippocampal_volume_left_mm3": 3689.3,
+    "hippocampal_volume_right_mm3": 3668.4,
+    "entorhinal_cortex_thickness_mm": 2.48,
+    "white_matter_hyperintensities_cm3": 4.91
+  },
+  {
+    "scan_id": "MRI-00298",
+    "participant_id": "PART-NEUR-197",
+    "scan_date": "2024-03-24",
+    "whole_brain_volume_cm3": 1150.9,
+    "hippocampal_volume_left_mm3": 3976.8,
+    "hippocampal_volume_right_mm3": 3613.9,
+    "entorhinal_cortex_thickness_mm": 3.42,
+    "white_matter_hyperintensities_cm3": 7.91
+  },
+  {
+    "scan_id": "MRI-00299",
+    "participant_id": "PART-NEUR-198",
+    "scan_date": "2024-03-25",
+    "whole_brain_volume_cm3": 1372.7,
+    "hippocampal_volume_left_mm3": 3135.2,
+    "hippocampal_volume_right_mm3": 4224.5,
+    "entorhinal_cortex_thickness_mm": 3.78,
+    "white_matter_hyperintensities_cm3": 10.74
+  },
+  {
+    "scan_id": "MRI-00300",
+    "participant_id": "PART-NEUR-199",
+    "scan_date": "2024-03-26",
+    "whole_brain_volume_cm3": 1063.8,
+    "hippocampal_volume_left_mm3": 3006.5,
+    "hippocampal_volume_right_mm3": 3632.6,
+    "entorhinal_cortex_thickness_mm": 3.32,
+    "white_matter_hyperintensities_cm3": 10.5
+  },
+  {
+    "scan_id": "MRI-00301",
+    "participant_id": "PART-NEUR-200",
+    "scan_date": "2023-06-01",
+    "whole_brain_volume_cm3": 1263.0,
+    "hippocampal_volume_left_mm3": 3826.1,
+    "hippocampal_volume_right_mm3": 3166.3,
+    "entorhinal_cortex_thickness_mm": 2.96,
+    "white_matter_hyperintensities_cm3": 5.13
+  },
+  {
+    "scan_id": "MRI-00302",
+    "participant_id": "PART-NEUR-201",
+    "scan_date": "2023-06-02",
+    "whole_brain_volume_cm3": 1183.2,
+    "hippocampal_volume_left_mm3": 2940.8,
+    "hippocampal_volume_right_mm3": 4167.2,
+    "entorhinal_cortex_thickness_mm": 3.35,
+    "white_matter_hyperintensities_cm3": 12.36
+  },
+  {
+    "scan_id": "MRI-00303",
+    "participant_id": "PART-NEUR-202",
+    "scan_date": "2023-06-03",
+    "whole_brain_volume_cm3": 1205.0,
+    "hippocampal_volume_left_mm3": 2916.9,
+    "hippocampal_volume_right_mm3": 3726.2,
+    "entorhinal_cortex_thickness_mm": 2.46,
+    "white_matter_hyperintensities_cm3": 8.62
+  },
+  {
+    "scan_id": "MRI-00304",
+    "participant_id": "PART-NEUR-203",
+    "scan_date": "2023-06-04",
+    "whole_brain_volume_cm3": 1307.5,
+    "hippocampal_volume_left_mm3": 2975.2,
+    "hippocampal_volume_right_mm3": 3602.5,
+    "entorhinal_cortex_thickness_mm": 2.32,
+    "white_matter_hyperintensities_cm3": 8.4
+  },
+  {
+    "scan_id": "MRI-00305",
+    "participant_id": "PART-NEUR-204",
+    "scan_date": "2023-06-05",
+    "whole_brain_volume_cm3": 1182.9,
+    "hippocampal_volume_left_mm3": 3407.1,
+    "hippocampal_volume_right_mm3": 3450.9,
+    "entorhinal_cortex_thickness_mm": 3.54,
+    "white_matter_hyperintensities_cm3": 14.31
+  },
+  {
+    "scan_id": "MRI-00306",
+    "participant_id": "PART-NEUR-205",
+    "scan_date": "2023-06-06",
+    "whole_brain_volume_cm3": 1297.9,
+    "hippocampal_volume_left_mm3": 3182.7,
+    "hippocampal_volume_right_mm3": 3264.3,
+    "entorhinal_cortex_thickness_mm": 2.94,
+    "white_matter_hyperintensities_cm3": 5.03
+  },
+  {
+    "scan_id": "MRI-00307",
+    "participant_id": "PART-NEUR-206",
+    "scan_date": "2023-06-07",
+    "whole_brain_volume_cm3": 1130.0,
+    "hippocampal_volume_left_mm3": 3432.7,
+    "hippocampal_volume_right_mm3": 3186.7,
+    "entorhinal_cortex_thickness_mm": 2.33,
+    "white_matter_hyperintensities_cm3": 1.59
+  },
+  {
+    "scan_id": "MRI-00308",
+    "participant_id": "PART-NEUR-207",
+    "scan_date": "2023-06-08",
+    "whole_brain_volume_cm3": 1330.7,
+    "hippocampal_volume_left_mm3": 3190.2,
+    "hippocampal_volume_right_mm3": 3925.7,
+    "entorhinal_cortex_thickness_mm": 2.15,
+    "white_matter_hyperintensities_cm3": 14.2
+  },
+  {
+    "scan_id": "MRI-00309",
+    "participant_id": "PART-NEUR-208",
+    "scan_date": "2023-06-09",
+    "whole_brain_volume_cm3": 1339.0,
+    "hippocampal_volume_left_mm3": 3198.0,
+    "hippocampal_volume_right_mm3": 3387.0,
+    "entorhinal_cortex_thickness_mm": 2.97,
+    "white_matter_hyperintensities_cm3": 6.03
+  },
+  {
+    "scan_id": "MRI-00310",
+    "participant_id": "PART-NEUR-209",
+    "scan_date": "2023-06-10",
+    "whole_brain_volume_cm3": 1238.3,
+    "hippocampal_volume_left_mm3": 3998.9,
+    "hippocampal_volume_right_mm3": 4031.4,
+    "entorhinal_cortex_thickness_mm": 2.95,
+    "white_matter_hyperintensities_cm3": 7.71
+  },
+  {
+    "scan_id": "MRI-00311",
+    "participant_id": "PART-NEUR-210",
+    "scan_date": "2023-06-11",
+    "whole_brain_volume_cm3": 1352.7,
+    "hippocampal_volume_left_mm3": 3171.8,
+    "hippocampal_volume_right_mm3": 3918.7,
+    "entorhinal_cortex_thickness_mm": 3.62,
+    "white_matter_hyperintensities_cm3": 11.39
+  },
+  {
+    "scan_id": "MRI-00312",
+    "participant_id": "PART-NEUR-211",
+    "scan_date": "2023-06-12",
+    "whole_brain_volume_cm3": 1095.2,
+    "hippocampal_volume_left_mm3": 4198.5,
+    "hippocampal_volume_right_mm3": 4299.8,
+    "entorhinal_cortex_thickness_mm": 2.66,
+    "white_matter_hyperintensities_cm3": 3.37
+  },
+  {
+    "scan_id": "MRI-00313",
+    "participant_id": "PART-NEUR-212",
+    "scan_date": "2023-06-13",
+    "whole_brain_volume_cm3": 1068.3,
+    "hippocampal_volume_left_mm3": 3616.7,
+    "hippocampal_volume_right_mm3": 2907.5,
+    "entorhinal_cortex_thickness_mm": 2.17,
+    "white_matter_hyperintensities_cm3": 9.59
+  },
+  {
+    "scan_id": "MRI-00314",
+    "participant_id": "PART-NEUR-213",
+    "scan_date": "2023-06-14",
+    "whole_brain_volume_cm3": 1284.6,
+    "hippocampal_volume_left_mm3": 4132.3,
+    "hippocampal_volume_right_mm3": 3313.5,
+    "entorhinal_cortex_thickness_mm": 2.2,
+    "white_matter_hyperintensities_cm3": 12.58
+  },
+  {
+    "scan_id": "MRI-00315",
+    "participant_id": "PART-NEUR-214",
+    "scan_date": "2023-06-15",
+    "whole_brain_volume_cm3": 1199.1,
+    "hippocampal_volume_left_mm3": 3126.4,
+    "hippocampal_volume_right_mm3": 2917.9,
+    "entorhinal_cortex_thickness_mm": 2.41,
+    "white_matter_hyperintensities_cm3": 12.91
+  },
+  {
+    "scan_id": "MRI-00316",
+    "participant_id": "PART-NEUR-215",
+    "scan_date": "2023-06-16",
+    "whole_brain_volume_cm3": 1176.7,
+    "hippocampal_volume_left_mm3": 3889.6,
+    "hippocampal_volume_right_mm3": 3150.2,
+    "entorhinal_cortex_thickness_mm": 3.29,
+    "white_matter_hyperintensities_cm3": 10.34
+  },
+  {
+    "scan_id": "MRI-00317",
+    "participant_id": "PART-NEUR-216",
+    "scan_date": "2023-06-17",
+    "whole_brain_volume_cm3": 1331.2,
+    "hippocampal_volume_left_mm3": 3026.8,
+    "hippocampal_volume_right_mm3": 2998.5,
+    "entorhinal_cortex_thickness_mm": 2.73,
+    "white_matter_hyperintensities_cm3": 6.07
+  },
+  {
+    "scan_id": "MRI-00318",
+    "participant_id": "PART-NEUR-217",
+    "scan_date": "2023-06-18",
+    "whole_brain_volume_cm3": 1134.3,
+    "hippocampal_volume_left_mm3": 3532.4,
+    "hippocampal_volume_right_mm3": 3688.9,
+    "entorhinal_cortex_thickness_mm": 2.33,
+    "white_matter_hyperintensities_cm3": 10.66
+  },
+  {
+    "scan_id": "MRI-00319",
+    "participant_id": "PART-NEUR-218",
+    "scan_date": "2023-06-19",
+    "whole_brain_volume_cm3": 1357.9,
+    "hippocampal_volume_left_mm3": 3510.2,
+    "hippocampal_volume_right_mm3": 2946.4,
+    "entorhinal_cortex_thickness_mm": 2.34,
+    "white_matter_hyperintensities_cm3": 12.68
+  },
+  {
+    "scan_id": "MRI-00320",
+    "participant_id": "PART-NEUR-219",
+    "scan_date": "2023-06-20",
+    "whole_brain_volume_cm3": 1191.7,
+    "hippocampal_volume_left_mm3": 3711.7,
+    "hippocampal_volume_right_mm3": 3213.3,
+    "entorhinal_cortex_thickness_mm": 3.08,
+    "white_matter_hyperintensities_cm3": 11.63
+  },
+  {
+    "scan_id": "MRI-00321",
+    "participant_id": "PART-NEUR-220",
+    "scan_date": "2023-06-21",
+    "whole_brain_volume_cm3": 1118.8,
+    "hippocampal_volume_left_mm3": 4103.7,
+    "hippocampal_volume_right_mm3": 3750.6,
+    "entorhinal_cortex_thickness_mm": 2.96,
+    "white_matter_hyperintensities_cm3": 7.11
+  },
+  {
+    "scan_id": "MRI-00322",
+    "participant_id": "PART-NEUR-221",
+    "scan_date": "2023-06-22",
+    "whole_brain_volume_cm3": 1286.3,
+    "hippocampal_volume_left_mm3": 4172.4,
+    "hippocampal_volume_right_mm3": 3882.6,
+    "entorhinal_cortex_thickness_mm": 2.59,
+    "white_matter_hyperintensities_cm3": 2.46
+  },
+  {
+    "scan_id": "MRI-00323",
+    "participant_id": "PART-NEUR-222",
+    "scan_date": "2023-06-23",
+    "whole_brain_volume_cm3": 1333.5,
+    "hippocampal_volume_left_mm3": 3024.7,
+    "hippocampal_volume_right_mm3": 3577.3,
+    "entorhinal_cortex_thickness_mm": 3.21,
+    "white_matter_hyperintensities_cm3": 9.97
+  },
+  {
+    "scan_id": "MRI-00324",
+    "participant_id": "PART-NEUR-223",
+    "scan_date": "2023-06-24",
+    "whole_brain_volume_cm3": 1368.4,
+    "hippocampal_volume_left_mm3": 3972.9,
+    "hippocampal_volume_right_mm3": 4078.6,
+    "entorhinal_cortex_thickness_mm": 2.81,
+    "white_matter_hyperintensities_cm3": 1.3
+  },
+  {
+    "scan_id": "MRI-00325",
+    "participant_id": "PART-NEUR-224",
+    "scan_date": "2023-06-25",
+    "whole_brain_volume_cm3": 1197.5,
+    "hippocampal_volume_left_mm3": 3777.4,
+    "hippocampal_volume_right_mm3": 3321.4,
+    "entorhinal_cortex_thickness_mm": 3.2,
+    "white_matter_hyperintensities_cm3": 2.89
+  },
+  {
+    "scan_id": "MRI-00326",
+    "participant_id": "PART-NEUR-225",
+    "scan_date": "2023-06-26",
+    "whole_brain_volume_cm3": 1051.2,
+    "hippocampal_volume_left_mm3": 3435.4,
+    "hippocampal_volume_right_mm3": 3615.9,
+    "entorhinal_cortex_thickness_mm": 2.27,
+    "white_matter_hyperintensities_cm3": 13.68
+  },
+  {
+    "scan_id": "MRI-00327",
+    "participant_id": "PART-NEUR-226",
+    "scan_date": "2023-06-27",
+    "whole_brain_volume_cm3": 1172.3,
+    "hippocampal_volume_left_mm3": 3601.8,
+    "hippocampal_volume_right_mm3": 3126.2,
+    "entorhinal_cortex_thickness_mm": 2.5,
+    "white_matter_hyperintensities_cm3": 4.48
+  },
+  {
+    "scan_id": "MRI-00328",
+    "participant_id": "PART-NEUR-227",
+    "scan_date": "2023-06-28",
+    "whole_brain_volume_cm3": 1107.7,
+    "hippocampal_volume_left_mm3": 3668.8,
+    "hippocampal_volume_right_mm3": 3625.5,
+    "entorhinal_cortex_thickness_mm": 2.3,
+    "white_matter_hyperintensities_cm3": 7.96
+  },
+  {
+    "scan_id": "MRI-00329",
+    "participant_id": "PART-NEUR-228",
+    "scan_date": "2023-06-29",
+    "whole_brain_volume_cm3": 1191.8,
+    "hippocampal_volume_left_mm3": 3748.6,
+    "hippocampal_volume_right_mm3": 4165.1,
+    "entorhinal_cortex_thickness_mm": 2.69,
+    "white_matter_hyperintensities_cm3": 2.89
+  },
+  {
+    "scan_id": "MRI-00330",
+    "participant_id": "PART-NEUR-229",
+    "scan_date": "2023-06-30",
+    "whole_brain_volume_cm3": 1378.9,
+    "hippocampal_volume_left_mm3": 4028.7,
+    "hippocampal_volume_right_mm3": 3849.4,
+    "entorhinal_cortex_thickness_mm": 2.74,
+    "white_matter_hyperintensities_cm3": 3.06
+  },
+  {
+    "scan_id": "MRI-00331",
+    "participant_id": "PART-NEUR-230",
+    "scan_date": "2023-07-01",
+    "whole_brain_volume_cm3": 1306.8,
+    "hippocampal_volume_left_mm3": 3178.9,
+    "hippocampal_volume_right_mm3": 3643.7,
+    "entorhinal_cortex_thickness_mm": 3.11,
+    "white_matter_hyperintensities_cm3": 13.27
+  },
+  {
+    "scan_id": "MRI-00332",
+    "participant_id": "PART-NEUR-231",
+    "scan_date": "2023-07-02",
+    "whole_brain_volume_cm3": 1180.5,
+    "hippocampal_volume_left_mm3": 3787.7,
+    "hippocampal_volume_right_mm3": 3342.9,
+    "entorhinal_cortex_thickness_mm": 3.32,
+    "white_matter_hyperintensities_cm3": 5.75
+  },
+  {
+    "scan_id": "MRI-00333",
+    "participant_id": "PART-NEUR-232",
+    "scan_date": "2023-07-03",
+    "whole_brain_volume_cm3": 1169.7,
+    "hippocampal_volume_left_mm3": 3238.7,
+    "hippocampal_volume_right_mm3": 2991.3,
+    "entorhinal_cortex_thickness_mm": 2.55,
+    "white_matter_hyperintensities_cm3": 4.59
+  },
+  {
+    "scan_id": "MRI-00334",
+    "participant_id": "PART-NEUR-233",
+    "scan_date": "2023-07-04",
+    "whole_brain_volume_cm3": 1161.0,
+    "hippocampal_volume_left_mm3": 3501.8,
+    "hippocampal_volume_right_mm3": 3819.0,
+    "entorhinal_cortex_thickness_mm": 3.23,
+    "white_matter_hyperintensities_cm3": 13.79
+  },
+  {
+    "scan_id": "MRI-00335",
+    "participant_id": "PART-NEUR-234",
+    "scan_date": "2023-07-05",
+    "whole_brain_volume_cm3": 1170.3,
+    "hippocampal_volume_left_mm3": 3851.2,
+    "hippocampal_volume_right_mm3": 2991.2,
+    "entorhinal_cortex_thickness_mm": 2.71,
+    "white_matter_hyperintensities_cm3": 11.75
+  },
+  {
+    "scan_id": "MRI-00336",
+    "participant_id": "PART-NEUR-235",
+    "scan_date": "2023-07-06",
+    "whole_brain_volume_cm3": 1352.9,
+    "hippocampal_volume_left_mm3": 3430.5,
+    "hippocampal_volume_right_mm3": 4103.7,
+    "entorhinal_cortex_thickness_mm": 2.74,
+    "white_matter_hyperintensities_cm3": 11.13
+  },
+  {
+    "scan_id": "MRI-00337",
+    "participant_id": "PART-NEUR-236",
+    "scan_date": "2023-07-07",
+    "whole_brain_volume_cm3": 1052.8,
+    "hippocampal_volume_left_mm3": 3214.6,
+    "hippocampal_volume_right_mm3": 4229.9,
+    "entorhinal_cortex_thickness_mm": 3.56,
+    "white_matter_hyperintensities_cm3": 4.07
+  },
+  {
+    "scan_id": "MRI-00338",
+    "participant_id": "PART-NEUR-237",
+    "scan_date": "2023-07-08",
+    "whole_brain_volume_cm3": 1328.3,
+    "hippocampal_volume_left_mm3": 3277.3,
+    "hippocampal_volume_right_mm3": 3848.7,
+    "entorhinal_cortex_thickness_mm": 3.77,
+    "white_matter_hyperintensities_cm3": 11.31
+  },
+  {
+    "scan_id": "MRI-00339",
+    "participant_id": "PART-NEUR-238",
+    "scan_date": "2023-07-09",
+    "whole_brain_volume_cm3": 1235.3,
+    "hippocampal_volume_left_mm3": 3715.9,
+    "hippocampal_volume_right_mm3": 3923.6,
+    "entorhinal_cortex_thickness_mm": 2.82,
+    "white_matter_hyperintensities_cm3": 3.46
+  },
+  {
+    "scan_id": "MRI-00340",
+    "participant_id": "PART-NEUR-239",
+    "scan_date": "2023-07-10",
+    "whole_brain_volume_cm3": 1208.4,
+    "hippocampal_volume_left_mm3": 3836.6,
+    "hippocampal_volume_right_mm3": 3982.0,
+    "entorhinal_cortex_thickness_mm": 3.64,
+    "white_matter_hyperintensities_cm3": 11.5
+  },
+  {
+    "scan_id": "MRI-00341",
+    "participant_id": "PART-NEUR-240",
+    "scan_date": "2023-07-11",
+    "whole_brain_volume_cm3": 1058.0,
+    "hippocampal_volume_left_mm3": 3251.8,
+    "hippocampal_volume_right_mm3": 3761.4,
+    "entorhinal_cortex_thickness_mm": 3.28,
+    "white_matter_hyperintensities_cm3": 12.79
+  },
+  {
+    "scan_id": "MRI-00342",
+    "participant_id": "PART-NEUR-241",
+    "scan_date": "2023-07-12",
+    "whole_brain_volume_cm3": 1233.0,
+    "hippocampal_volume_left_mm3": 3737.0,
+    "hippocampal_volume_right_mm3": 3186.6,
+    "entorhinal_cortex_thickness_mm": 2.45,
+    "white_matter_hyperintensities_cm3": 5.78
+  },
+  {
+    "scan_id": "MRI-00343",
+    "participant_id": "PART-NEUR-242",
+    "scan_date": "2023-07-13",
+    "whole_brain_volume_cm3": 1061.8,
+    "hippocampal_volume_left_mm3": 3527.6,
+    "hippocampal_volume_right_mm3": 3777.8,
+    "entorhinal_cortex_thickness_mm": 2.77,
+    "white_matter_hyperintensities_cm3": 2.4
+  },
+  {
+    "scan_id": "MRI-00344",
+    "participant_id": "PART-NEUR-243",
+    "scan_date": "2023-07-14",
+    "whole_brain_volume_cm3": 1067.1,
+    "hippocampal_volume_left_mm3": 4035.6,
+    "hippocampal_volume_right_mm3": 3547.9,
+    "entorhinal_cortex_thickness_mm": 2.84,
+    "white_matter_hyperintensities_cm3": 3.86
+  },
+  {
+    "scan_id": "MRI-00345",
+    "participant_id": "PART-NEUR-244",
+    "scan_date": "2023-07-15",
+    "whole_brain_volume_cm3": 1062.8,
+    "hippocampal_volume_left_mm3": 3952.7,
+    "hippocampal_volume_right_mm3": 4198.1,
+    "entorhinal_cortex_thickness_mm": 2.82,
+    "white_matter_hyperintensities_cm3": 12.79
+  },
+  {
+    "scan_id": "MRI-00346",
+    "participant_id": "PART-NEUR-245",
+    "scan_date": "2023-07-16",
+    "whole_brain_volume_cm3": 1287.4,
+    "hippocampal_volume_left_mm3": 3702.2,
+    "hippocampal_volume_right_mm3": 4248.0,
+    "entorhinal_cortex_thickness_mm": 2.68,
+    "white_matter_hyperintensities_cm3": 6.05
+  },
+  {
+    "scan_id": "MRI-00347",
+    "participant_id": "PART-NEUR-246",
+    "scan_date": "2023-07-17",
+    "whole_brain_volume_cm3": 1281.9,
+    "hippocampal_volume_left_mm3": 3578.1,
+    "hippocampal_volume_right_mm3": 3697.6,
+    "entorhinal_cortex_thickness_mm": 3.54,
+    "white_matter_hyperintensities_cm3": 12.2
+  },
+  {
+    "scan_id": "MRI-00348",
+    "participant_id": "PART-NEUR-247",
+    "scan_date": "2023-07-18",
+    "whole_brain_volume_cm3": 1166.9,
+    "hippocampal_volume_left_mm3": 3985.7,
+    "hippocampal_volume_right_mm3": 3573.8,
+    "entorhinal_cortex_thickness_mm": 3.62,
+    "white_matter_hyperintensities_cm3": 9.95
+  },
+  {
+    "scan_id": "MRI-00349",
+    "participant_id": "PART-NEUR-248",
+    "scan_date": "2023-07-19",
+    "whole_brain_volume_cm3": 1102.2,
+    "hippocampal_volume_left_mm3": 3171.9,
+    "hippocampal_volume_right_mm3": 3480.3,
+    "entorhinal_cortex_thickness_mm": 3.01,
+    "white_matter_hyperintensities_cm3": 9.66
+  },
+  {
+    "scan_id": "MRI-00350",
+    "participant_id": "PART-NEUR-249",
+    "scan_date": "2023-07-20",
+    "whole_brain_volume_cm3": 1233.7,
+    "hippocampal_volume_left_mm3": 3907.4,
+    "hippocampal_volume_right_mm3": 3400.0,
+    "entorhinal_cortex_thickness_mm": 3.24,
+    "white_matter_hyperintensities_cm3": 2.55
+  }
+]

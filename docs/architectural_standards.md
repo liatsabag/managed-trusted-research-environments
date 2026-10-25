@@ -188,11 +188,12 @@ $$\sum \text{User Costs} + \text{Shared Admin Cost} = \mathbf{100\% \text{ of Pr
 
 | Service | Specific Billing SKU Example | Usage Metric Used for Weight | Telemetry Source | Direct vs Shared Overhead |
 | :--- | :--- | :--- | :--- | :--- |
-| **BigQuery SQL** | `Analysis` (On-Demand) or `Slots` (Capacity) | **Bytes Billed / Scanned** or **Slot ms** | `INFORMATION_SCHEMA.JOBS_BY_PROJECT` | • **User:** Ad-hoc queries by `user_email`<br/>• **Shared:** System setup & baseline datasets. |
-| **Colab Enterprise** | `Custom VM / GPU Runtime Uptime` | **Active Running Hours** of runtime session | `CreateNotebookRuntime` Audit Logs | • **User:** Sessions started by researcher.<br/>• **Shared:** Base template warm-ups & admin tests. |
-| **GCS Storage** | `Standard Storage` (GB/Month) | **Active Stored Volume (Bytes)** in export bucket | `storage.objects.create` Audit Logs | • **User:** Output files created by researcher.<br/>• **Shared:** Inbound verified bucket + admin files. |
-| **Vertex AI / Gemini** | `Generative AI Input/Output Tokens` | **Input + Output Tokens** or **Request Count** | BQ ML & Vertex AI Prediction Logs | • **User:** Prompts/models run by researcher.<br/>• **Shared:** Admin evaluation & baseline tests. |
+| **BigQuery SQL** | `Analysis` (On-Demand) or `Slots` (Capacity) | **Bytes Billed / Scanned** or **Slot ms** | Spoke `INFORMATION_SCHEMA.JOBS_BY_PROJECT` (via `sp_sync_bigquery_queries`) | • **User:** Ad-hoc queries by `user_email`<br/>• **Shared:** System setup & baseline datasets. |
+| **Colab Enterprise** | `Custom VM / GPU Runtime Uptime` | **Active Running Hours** of runtime session | Vertex AI Runtimes API + Cloud Monitoring VM Uptime (via Cloud Run `rr-telemetry-poller`) | • **User:** Sessions started by researcher (`runtimeUser`).<br/>• **Shared:** Base template warm-ups & admin tests. |
+| **GCS Storage** | `Standard Storage` (GB/Month) | **Active Stored Volume (Bytes)** in export bucket | GCS Storage Insights physical inventory export correlated with `storage.objects.create` (via `sp_sync_storage_metrics`) | • **User:** Output files created by researcher.<br/>• **Shared:** Inbound verified bucket + admin files. |
+| **Vertex AI / Gemini** | `Generative AI Input/Output Tokens` | **Inference Calls & Estimated Tokens** | Cloud Monitoring API `serviceruntime.googleapis.com/api/request_count` (via Cloud Run `rr-telemetry-poller`) | • **User:** Prompts/models run by researcher.<br/>• **Shared:** Admin evaluation & baseline tests. |
 | **Cloud Logging** | `Log Volume / Streaming Sinks` | **100% Shared / Admin** | Billing Export line items | **100% Shared Platform Overhead**. |
+| **Cloud Audit Logs** | `Audit Trail & Governance` | **Audit Events Only** | Log Router Sinks to BigQuery (via `sp_sync_curated_audit_events`) | **Audit Trail / Compliance Only** (not used for compute/query/AI metrics). |
 
 ---
 

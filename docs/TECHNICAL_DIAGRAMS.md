@@ -30,7 +30,8 @@ flowchart TD
 
         subgraph AutomationPlane["Automated Governance & Telemetry Engines"]
             CloudWorkflow["⚡ Cloud Workflow: fleet-governance-cycle<br/>• Step 1: BigQuery AI Scan (sp_scan_governance)<br/>• Step 2: Cloud Run IAM Demotion (/compliance/enforce)"]:::hubClass
-            DTS_Scheduler["⏰ BigQuery DTS Scheduled Queries (me-west1)<br/>• 15-min Curation Sync (sp_sync_curated_audit_events)<br/>• 24-hr Daily FinOps Rollup (sp_aggregate_daily_compute)"]:::hubClass
+            DTS_Scheduler["⏰ BigQuery DTS Scheduled Queries (me-west1)<br/>• 15-min Operational Sync (sp_sync_curated_audit_events, sp_sync_bigquery_queries)<br/>• 24-hr Daily Storage & Rollup (sp_sync_storage_metrics, sp_aggregate_daily_compute_metrics, sp_rollup_monthly_usage)"]:::hubClass
+            TelemetryPoller["🤖 Cloud Run Job: rr-telemetry-poller<br/>• Triggered every 15 min via Cloud Scheduler (rr-telemetry-poller-15m)<br/>• Polls Vertex AI Runtime API (locations/me-west1/notebookRuntimes)<br/>• Polls Cloud Monitoring API (GCE VM uptime & Vertex AI API calls)"]:::hubClass
         end
 
         subgraph HubDataLayer["BigQuery Central Data, AI & Registry Layer (me-west1)"]
@@ -201,9 +202,17 @@ flowchart TD
     classDef ovh fill:#f1f5f9,stroke:#64748b,stroke-width:2px,color:#334155;
 
     BillingExport["🏢 GCP Detailed Billing Export (Ground-Truth Invoiced Spend)"]:::bill
-    AuditLogs["📡 Cloud Audit Logs & Usage Telemetry"]:::bill
+    
+    subgraph GroundTelemetry["Ground-Truth Telemetry Engines"]
+        direction TB
+        BQ_IS["BigQuery INFORMATION_SCHEMA<br/>(Bytes Billed & Slot Hours via sp_sync_bigquery_queries)"]:::res
+        GCS_SI["GCS Storage Insights & Object Creation Correlation<br/>(Physical Inventory via sp_sync_storage_metrics)"]:::res
+        VAI_API["Vertex AI Runtimes API & Cloud Monitoring<br/>(VM Uptime & Runtime Hours via rr-telemetry-poller)"]:::res
+        CM_API["Cloud Monitoring Metrics<br/>(Model Inferences & Tokens via rr-telemetry-poller)"]:::res
+    end
 
-    BillingExport & AuditLogs --> FinOpsEngine["⚙️ FinOps Attribution Engine"]:::engine
+    BQ_IS & GCS_SI & VAI_API & CM_API --> DailyMarts["📈 ops_daily_compute_metrics<br/>(Unified Ground-Truth Operational Mart)"]:::res
+    BillingExport & DailyMarts --> FinOpsEngine["⚙️ FinOps Attribution Engine"]:::engine
 
     FinOpsEngine --> FleetLevel["1. Fleet Level Rollup (Total Invoiced, Runways, Forecasts)"]:::level
     FleetLevel --> RoomLevel["2. Research Room Level (Invoiced Spend per Room Project)"]:::level

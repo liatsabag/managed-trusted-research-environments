@@ -8,7 +8,6 @@ _repo_root = str(Path(__file__).resolve().parents[2])
 if _repo_root not in sys.path:
     sys.path.insert(0, _repo_root)
 
-
 import logging
 from google.cloud import bigquery
 
@@ -61,6 +60,23 @@ def main():
     except Exception as e:
         logger.warning("ops_notebook_sessions check/update notice: %s", e)
 
+    # 2b. Update ops_ai_usage_metrics table schema if columns missing
+    try:
+        ai_table_ref = client.get_table(f"{HUB_PROJECT}.hub_telemetry.ops_ai_usage_metrics")
+        ai_cols = {field.name for field in ai_table_ref.schema}
+        logger.info("Existing columns in ops_ai_usage_metrics: %s", ai_cols)
+
+        ai_new_schema = list(ai_table_ref.schema)
+        if "ai_token_count" not in ai_cols:
+            ai_new_schema.append(bigquery.SchemaField("ai_token_count", "INT64", mode="NULLABLE"))
+
+        if len(ai_new_schema) > len(ai_table_ref.schema):
+            ai_table_ref.schema = ai_new_schema
+            client.update_table(ai_table_ref, ["schema"])
+            logger.info("Updated ops_ai_usage_metrics schema with ai_token_count column.")
+    except Exception as e:
+        logger.warning("ops_ai_usage_metrics check/update notice: %s", e)
+
     # 3. Execute SQL files to update procedures and views
     sql_files = [
         "scripts/sql/view_billing_export.sql",
@@ -75,11 +91,13 @@ def main():
         client.query(sql_content).result()
         logger.info("Successfully applied %s", sf)
 
-    # 4. Call all 5 stored procedures
+    # 4. Call all stored procedures
     procs = [
         "sp_sync_curated_audit_events",
+        "sp_sync_bigquery_queries",
         "sp_sync_notebook_session_metrics",
         "sp_sync_ai_usage_metrics",
+        "sp_sync_storage_metrics",
         "sp_aggregate_daily_compute_metrics",
         "sp_rollup_monthly_usage",
     ]

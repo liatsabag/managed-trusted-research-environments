@@ -1,5 +1,6 @@
 -- scripts/sql/finops_usage_tracking.sql
 -- Colab Enterprise Notebook Sessionization & AI Telemetry Physical Marts and Stored Procedures
+-- Uses idempotent MERGE to guarantee historical continuity without TRUNCATE
 
 -- 1. Table: ops_notebook_sessions (Colab Enterprise & BigQuery Studio Notebook Tracking)
 CREATE TABLE IF NOT EXISTS `hub_telemetry.ops_notebook_sessions` (
@@ -24,16 +25,12 @@ OPTIONS(
     description = 'Persisted daily Colab Enterprise and BigQuery Studio notebook runtime sessions per researcher and machine type'
 );
 
--- 2. Procedure: sp_sync_notebook_session_metrics
+-- 2. Procedure: sp_sync_notebook_session_metrics (Idempotent MERGE without TRUNCATE)
 CREATE OR REPLACE PROCEDURE `hub_telemetry.sp_sync_notebook_session_metrics`()
 BEGIN
-    TRUNCATE TABLE `hub_telemetry.ops_notebook_sessions`;
-    INSERT INTO `hub_telemetry.ops_notebook_sessions` (
-        room_id, user_email, session_date, notebook_name, runtime_id,
-        machine_type, runtime_template_id, total_events, session_starts,
-        session_stops, total_sessions, total_active_hours, first_session_start, last_session_end
-    )
-    WITH session_events AS (
+    MERGE `hub_telemetry.ops_notebook_sessions` T
+    USING (
+        WITH session_events AS (
             SELECT
                 room_id,
                 principal_email AS user_email,
@@ -96,10 +93,10 @@ BEGIN
                 room_id,
                 user_email,
                 session_date,
-                notebook_name,
+                ANY_VALUE(notebook_name) AS notebook_name,
                 runtime_id,
-                machine_type,
-                runtime_template_id,
+                ANY_VALUE(machine_type) AS machine_type,
+                ANY_VALUE(runtime_template_id) AS runtime_template_id,
                 COUNT(DISTINCT log_id) AS total_events,
                 COUNT(DISTINCT IF(
                     LOWER(action_name) LIKE '%assign%' 
@@ -132,7 +129,7 @@ BEGIN
                     2
                 ) AS NUMERIC) AS estimated_active_hours
             FROM session_events
-            GROUP BY room_id, user_email, session_date, notebook_name, runtime_id, machine_type, runtime_template_id
+            GROUP BY room_id, user_email, session_date, runtime_id
         )
         SELECT
             room_id,
@@ -149,10 +146,30 @@ BEGIN
             estimated_active_hours AS total_active_hours,
             first_session_start,
             last_session_end
-        FROM session_aggregates;
+        FROM session_aggregates
+    ) S
+    ON T.session_date = S.session_date 
+       AND T.room_id = S.room_id 
+       AND T.user_email = S.user_email 
+       AND T.runtime_id = S.runtime_id
+    WHEN MATCHED THEN
+        UPDATE SET
+            notebook_name = S.notebook_name,
+            machine_type = S.machine_type,
+            runtime_template_id = S.runtime_template_id,
+            total_events = S.total_events,
+            session_starts = S.session_starts,
+            session_stops = S.session_stops,
+            total_sessions = S.total_sessions,
+            total_active_hours = S.total_active_hours,
+            first_session_start = S.first_session_start,
+            last_session_end = S.last_session_end
+    WHEN NOT MATCHED THEN
+        INSERT (room_id, user_email, session_date, notebook_name, runtime_id, machine_type, runtime_template_id, total_events, session_starts, session_stops, total_sessions, total_active_hours, first_session_start, last_session_end)
+        VALUES (S.room_id, S.user_email, S.session_date, S.notebook_name, S.runtime_id, S.machine_type, S.runtime_template_id, S.total_events, S.session_starts, S.session_stops, S.total_sessions, S.total_active_hours, S.first_session_start, S.last_session_end);
 END;
 
--- 3. Table: ops_ai_usage_metrics
+-- 3. Table: ops_ai_usage_metrics (Daily AI and Gemini Inference Metrics per Researcher)
 CREATE TABLE IF NOT EXISTS `hub_telemetry.ops_ai_usage_metrics` (
     room_id STRING NOT NULL,
     project_id STRING NOT NULL,
@@ -160,6 +177,7 @@ CREATE TABLE IF NOT EXISTS `hub_telemetry.ops_ai_usage_metrics` (
     usage_date DATE NOT NULL,
     service_name STRING NOT NULL,
     total_inference_calls INT64,
+    ai_token_count INT64,
     successful_calls INT64,
     failed_calls INT64,
     first_invoked_at TIMESTAMP,
@@ -168,48 +186,68 @@ CREATE TABLE IF NOT EXISTS `hub_telemetry.ops_ai_usage_metrics` (
 PARTITION BY usage_date
 CLUSTER BY room_id, user_email
 OPTIONS(
-    description = 'Persisted daily AI and Gemini inference invocation counts per researcher'
+    description = 'Persisted daily AI and Gemini inference invocation counts and tokens per researcher'
 );
 
--- 4. Procedure: sp_sync_ai_usage_metrics
+-- 4. Procedure: sp_sync_ai_usage_metrics (Idempotent MERGE without TRUNCATE)
 CREATE OR REPLACE PROCEDURE `hub_telemetry.sp_sync_ai_usage_metrics`()
 BEGIN
-    TRUNCATE TABLE `hub_telemetry.ops_ai_usage_metrics`;
-    INSERT INTO `hub_telemetry.ops_ai_usage_metrics` (
-        room_id, project_id, user_email, usage_date, service_name,
-        total_inference_calls, successful_calls, failed_calls, first_invoked_at, last_invoked_at
-    )
-    WITH ai_events AS (
+    MERGE `hub_telemetry.ops_ai_usage_metrics` T
+    USING (
+        WITH ai_events AS (
+            SELECT
+                room_id,
+                project_id,
+                principal_email AS user_email,
+                DATE(timestamp) AS usage_date,
+                log_id,
+                timestamp,
+                service_name,
+                action_name,
+                resource_name,
+                status,
+                severity,
+                metadata_json
+            FROM `hub_telemetry.ops_audit_events_curated`
+            WHERE category = 'AI_INFERENCE'
+               OR LOWER(service_name) LIKE '%aiplatform%'
+               OR LOWER(action_name) LIKE '%predict%'
+               OR LOWER(action_name) LIKE '%generatecontent%'
+               OR LOWER(action_name) LIKE '%counttokens%'
+        )
         SELECT
             room_id,
             project_id,
-            principal_email AS user_email,
-            DATE(timestamp) AS usage_date,
-            log_id,
-            timestamp,
+            user_email,
+            usage_date,
             service_name,
-            action_name,
-            resource_name,
-            status,
-            severity
-        FROM `hub_telemetry.ops_audit_events_curated`
-        WHERE category = 'AI_INFERENCE'
-           OR LOWER(service_name) LIKE '%aiplatform%'
-           OR LOWER(action_name) LIKE '%predict%'
-           OR LOWER(action_name) LIKE '%generatecontent%'
-           OR LOWER(action_name) LIKE '%counttokens%'
-    )
-    SELECT
-        room_id,
-        project_id,
-        user_email,
-        usage_date,
-        service_name,
-        COUNT(1) AS total_inference_calls,
-        COUNTIF(status = 'SUCCESS') AS successful_calls,
-        COUNTIF(status != 'SUCCESS') AS failed_calls,
-        MIN(timestamp) AS first_invoked_at,
-        MAX(timestamp) AS last_invoked_at
-    FROM ai_events
-    GROUP BY room_id, project_id, user_email, usage_date, service_name;
+            COUNT(1) AS total_inference_calls,
+            -- If real token count is logged in metadata, extract it; else derive default token count
+            SUM(COALESCE(
+                SAFE_CAST(JSON_VALUE(metadata_json, '$.usageMetadata.totalTokenCount') AS INT64),
+                SAFE_CAST(JSON_VALUE(metadata_json, '$.tokenCount') AS INT64),
+                1500
+            )) AS ai_token_count,
+            COUNTIF(status = 'SUCCESS') AS successful_calls,
+            COUNTIF(status != 'SUCCESS') AS failed_calls,
+            MIN(timestamp) AS first_invoked_at,
+            MAX(timestamp) AS last_invoked_at
+        FROM ai_events
+        GROUP BY room_id, project_id, user_email, usage_date, service_name
+    ) S
+    ON T.usage_date = S.usage_date 
+       AND T.room_id = S.room_id 
+       AND T.user_email = S.user_email 
+       AND T.service_name = S.service_name
+    WHEN MATCHED THEN
+        UPDATE SET
+            total_inference_calls = S.total_inference_calls,
+            ai_token_count = S.ai_token_count,
+            successful_calls = S.successful_calls,
+            failed_calls = S.failed_calls,
+            first_invoked_at = S.first_invoked_at,
+            last_invoked_at = S.last_invoked_at
+    WHEN NOT MATCHED THEN
+        INSERT (room_id, project_id, user_email, usage_date, service_name, total_inference_calls, ai_token_count, successful_calls, failed_calls, first_invoked_at, last_invoked_at)
+        VALUES (S.room_id, S.project_id, S.user_email, S.usage_date, S.service_name, S.total_inference_calls, S.ai_token_count, S.successful_calls, S.failed_calls, S.first_invoked_at, S.last_invoked_at);
 END;

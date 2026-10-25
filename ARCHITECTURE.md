@@ -41,7 +41,8 @@ flowchart TD
 
         subgraph AutomationPlane["Automated Governance & Telemetry Engines"]
             CloudWorkflow["⚡ Cloud Workflow: `fleet-governance-cycle`<br/>• Step 1: BigQuery AI Scan (`sp_scan_governance` via OAuth2)<br/>• Step 2: Cloud Run IAM Enforcement (`/compliance/enforce` via OIDC)"]
-            DTS_Scheduler["⏰ BigQuery DTS Scheduled Queries (`me-west1`)<br/>• 15-min Curation Sync (`sp_sync_curated_audit_events`, etc.)<br/>• 24-hr Daily FinOps Rollup (`sp_aggregate_daily_compute_metrics`)"]
+            DTS_Scheduler["⏰ BigQuery DTS Scheduled Queries (`me-west1`)<br/>• 15-min Curation Sync (`sp_sync_curated_audit_events`, `sp_sync_bigquery_queries`, `sp_aggregate_daily_compute_metrics`)<br/>• 24-hr Daily Storage & Rollup (`sp_sync_storage_metrics`, `sp_rollup_monthly_usage`)"]
+            TelemetryPoller["🤖 Cloud Run Job: `rr-telemetry-poller`<br/>• Triggered every 15m by Cloud Scheduler (`rr-telemetry-poller-15m`)<br/>• Polls Vertex AI Runtime API (`locations/me-west1/notebookRuntimes`)<br/>• Polls Cloud Monitoring API (`compute.googleapis.com/instance/uptime` & `serviceruntime.googleapis.com/api/request_count`)"]
         end
 
         subgraph HubDataLayer["BigQuery Central Data, AI & Registry Layer (`me-west1`)"]
@@ -207,9 +208,9 @@ sequenceDiagram
 
 ---
 
-### 4.2 Process 2: Real-Time Telemetry Ingestion, Curation & Storage Capacity Sync
+### 4.2 Process 2: Real-Time Telemetry Ingestion, Curation & Ground-Truth Polling
 
-This process captures all researcher interactions, BigQuery query metrics, Colab Enterprise session durations, and GCS storage footprints, compiling them into day-partitioned analytical marts.
+This process captures all researcher interactions, BigQuery query metrics, Colab Enterprise session durations, Vertex AI model requests, and GCS storage footprints, compiling them into day-partitioned analytical marts via direct ground-truth APIs rather than audit parsing.
 
 ```mermaid
 sequenceDiagram
@@ -217,39 +218,49 @@ sequenceDiagram
     participant Researcher as Researcher / Colab Notebook
     participant SpokeServices as Spoke GCP Services (BQ, GCS, Colab)
     participant Logging as Cloud Logging Log Sinks
-    participant BQ_Audit as BigQuery `cloudaudit_googleapis_com_data_access`
+    participant BQ_Audit as BigQuery `cloudaudit_googleapis_com_*`
     participant DTS as BigQuery Data Transfer Service
-    participant StorageWorker as Python Storage Worker (`sync_storage_metrics.py`)
+    participant Poller as Cloud Run Job (`rr-telemetry-poller`)
+    participant Monitoring as Cloud Monitoring & Vertex AI APIs
+    participant StorageInsights as GCS Storage Insights
     participant TelemetryMarts as `hub_telemetry` Analytical Marts
 
-    Researcher->>SpokeServices: Execute BigQuery Query / Open Colab Notebook
-    SpokeServices->>Logging: Emit Cloud Audit Logs (Caller, Method, Bytes, SlotMs)
+    Researcher->>SpokeServices: Execute BigQuery Query / Open Colab Notebook / Call Gemini Model
+    SpokeServices->>Logging: Emit Cloud Audit Logs (Security, IAM, Object Creation)
     Logging->>BQ_Audit: Real-Time Stream to Hub Log Sink
 
-    par Every 15 Minutes (DTS Curation Sync)
+    par Every 15 Minutes (DTS Curation & BQ Job Sync)
         DTS->>TelemetryMarts: CALL `sp_sync_curated_audit_events()`
-        TelemetryMarts->>TelemetryMarts: Parse JSON metadata, filter SAs, insert into `ops_audit_events_curated`
-        DTS->>TelemetryMarts: CALL `sp_sync_notebook_session_metrics()`
-        TelemetryMarts->>TelemetryMarts: Map runtime templates & apply workday session bounds (1h-8h) into `ops_notebook_sessions`
-        DTS->>TelemetryMarts: CALL `sp_sync_ai_usage_metrics()`
-        TelemetryMarts->>TelemetryMarts: Extract token counts into `ops_ai_usage_metrics`
-    and Daily / On-Demand (Storage Footprint Sync)
-        StorageWorker->>SpokeServices: Scan `gs://rr-*-inbound` & `gs://rr-*-export` via GCS API
-        SpokeServices-->>StorageWorker: Total Bytes (145.77 GB) & Object Counts
-        StorageWorker->>TelemetryMarts: Parameterized Insert into `ops_daily_compute_metrics`
-    and Every 24 Hours (Daily & Monthly Aggregation)
+        TelemetryMarts->>TelemetryMarts: Curate security audit trail into `ops_audit_events_curated`
+        DTS->>SpokeServices: CALL `sp_sync_bigquery_queries()`
+        SpokeServices-->>TelemetryMarts: Query `region-me-west1.INFORMATION_SCHEMA.JOBS_BY_PROJECT` into `ops_bigquery_usage_15m`
+    and Every 15 Minutes (Cloud Run Poller via Cloud Scheduler)
+        Poller->>Monitoring: Query Vertex AI Runtime API (`locations/me-west1/notebookRuntimes`)
+        Poller->>Monitoring: Query Cloud Monitoring VM Uptime (`compute.googleapis.com/instance/uptime`)
+        Monitoring-->>Poller: Active runtime hours per instance/user
+        Poller->>TelemetryMarts: MERGE into `ops_notebook_sessions`
+        Poller->>Monitoring: Query Vertex AI Request Count (`serviceruntime.googleapis.com/api/request_count`)
+        Monitoring-->>Poller: Inferences count & inferred token volumes
+        Poller->>TelemetryMarts: MERGE into `ops_ai_usage_metrics`
+    and Once Daily (Nightly Storage Insights Inventory & Unified Aggregation)
+        StorageInsights->>TelemetryMarts: Export daily physical bucket inventory into `raw_storage_inventory`
+        DTS->>TelemetryMarts: CALL `sp_sync_storage_metrics()`
+        TelemetryMarts->>TelemetryMarts: Join inventory with `storage.objects.create` audit events to attribute ownership into `ops_storage_daily`
         DTS->>TelemetryMarts: CALL `sp_aggregate_daily_compute_metrics()`
-        TelemetryMarts->>TelemetryMarts: TRUNCATE + INSERT unified `(date, room, user)` records into `ops_daily_compute_metrics`
+        TelemetryMarts->>TelemetryMarts: Consolidate 24h collections (Storage, BQ queries, Notebooks, AI) into unified `ops_daily_compute_metrics`
+        DTS->>TelemetryMarts: CALL `sp_rollup_monthly_usage()`
+        TelemetryMarts->>TelemetryMarts: Roll up MTD/YTD totals into `ops_monthly_usage_rollup`
+    end
         DTS->>TelemetryMarts: CALL `sp_rollup_monthly_usage()`
         TelemetryMarts->>TelemetryMarts: Roll up MTD/YTD totals into `ops_monthly_usage_rollup`
     end
 ```
 
 #### Involved Cloud Resources:
-* **Cloud Logging Log Sinks**: Configured in each spoke project to route `DATA_ACCESS` logs into the central Hub BigQuery dataset.
-* **BigQuery Data Transfer Service (DTS)**: Runs regional transfer jobs in `me-west1` (`rr-telemetry-15min-curation-sync` and `rr-telemetry-daily-finops-rollup`).
-* **Storage Capacity Worker**: `scripts/etl/sync_storage_metrics.py` calculates byte footprints per folder/researcher.
-* **5 Analytical BigQuery Marts**: Partitioned by `usage_date` and clustered by `room_id, user_email`.
+* **BigQuery Scheduled Queries (DTS)**: Runs regional transfer jobs in `me-west1` (`rr-telemetry-15min-curation-sync` calling `sp_sync_curated_audit_events` and `sp_sync_bigquery_queries` every 15 minutes; `rr-telemetry-daily-finops-rollup` calling `sp_sync_storage_metrics`, `sp_aggregate_daily_compute_metrics`, and `sp_rollup_monthly_usage` once a night).
+* **Autonomous Telemetry Poller Cloud Run Job**: `rr-telemetry-poller` triggered every 15 minutes by Cloud Scheduler (`rr-telemetry-poller-15m`) polling Vertex AI Runtime and Cloud Monitoring APIs.
+* **GCS Storage Insights**: Automated daily inventory reports deposited into BigQuery external table `raw_storage_inventory` and correlated with creator identities by `sp_sync_storage_metrics`.
+* **Analytical BigQuery Marts**: Partitioned by `usage_date` and clustered by `room_id, user_email` (`ops_bigquery_usage_15m`, `ops_notebook_sessions`, `ops_ai_usage_metrics`, `ops_storage_daily`, `ops_daily_compute_metrics`, `ops_monthly_usage_rollup`).
 
 ---
 
@@ -412,23 +423,25 @@ The repository provides three specialized workload generation utilities in `scri
 
 ```bash
 # 1. Generate live multi-tenant researcher traffic across all rooms
-python3 scripts/simulation/generate_live_researcher_traffic.py --scans 5 --tokens 2000
+python3 scripts/generate_live_researcher_traffic.py --scans 5 --tokens 2000
 
 # 2. Run scaled activity generator with proportional researcher weighting
-python3 scripts/simulation/generate_scaled_spoke_activity.py --cycles 3
+python3 scripts/generate_scaled_spoke_activity.py --cycles 3
 
-# 3. Synchronize storage capacity footprints into BigQuery telemetry
-python3 scripts/etl/sync_storage_metrics.py
+# 3. Trigger telemetry poller Cloud Run job (or via Cloud Scheduler)
+gcloud run jobs execute rr-telemetry-poller --region=me-west1 --project=gcp-rr-hub-core --wait
 
 # 4. Trigger BigQuery curation and rollup stored procedures
 bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_sync_curated_audit_events\`();"
+bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_sync_bigquery_queries\`();"
+bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_sync_storage_metrics\`();"
 bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_aggregate_daily_compute_metrics\`();"
 bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_rollup_monthly_usage\`();"
 ```
 
 ### 5.3 Billing Export Latency vs Test Verification
 * **GCP Billing Export Cycle**: Google Cloud Detailed Billing Export streams records in micro-batches with an ingestion latency of **4 to 24 hours**.
-* **End-to-End Test Harness (`scripts/verification/verify_finops_e2e.py`)**: Validates the mathematical engine against the ground-truth billing baseline ($11.63 total spend) currently recorded in `view_billing_export`, ensuring that after any traffic generation cycle, the attribution engine preserves zero-drift invariants ($\sum \text{Researchers} + \text{Shared Overhead} \equiv \text{Project Invoice}$).
+* **End-to-End Test Harness (`scripts/verify_finops_e2e.py`)**: Validates the mathematical engine against the ground-truth billing baseline ($11.63 total spend) currently recorded in `view_billing_export`, ensuring that after any traffic generation cycle, the attribution engine preserves zero-drift invariants ($\sum \text{Researchers} + \text{Shared Overhead} \equiv \text{Project Invoice}$).
 
 ---
 

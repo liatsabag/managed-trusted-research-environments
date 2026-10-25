@@ -7,7 +7,6 @@ _repo_root = str(Path(__file__).resolve().parents[2])
 if _repo_root not in sys.path:
     sys.path.insert(0, _repo_root)
 
-
 import logging
 import sys
 import time
@@ -30,14 +29,14 @@ SCHEDULE_CONFIGS: List[Dict[str, Any]] = [
         "schedule": "every 15 mins",
         "query": f"""
 CALL `{PROJECT_ID}.{DATASET_ID}.sp_sync_curated_audit_events`();
-CALL `{PROJECT_ID}.{DATASET_ID}.sp_sync_notebook_session_metrics`();
-CALL `{PROJECT_ID}.{DATASET_ID}.sp_sync_ai_usage_metrics`();
+CALL `{PROJECT_ID}.{DATASET_ID}.sp_sync_bigquery_queries`();
 """.strip(),
     },
     {
         "display_name": "rr-telemetry-daily-finops-rollup",
         "schedule": "every 24 hours",
         "query": f"""
+CALL `{PROJECT_ID}.{DATASET_ID}.sp_sync_storage_metrics`();
 CALL `{PROJECT_ID}.{DATASET_ID}.sp_aggregate_daily_compute_metrics`();
 CALL `{PROJECT_ID}.{DATASET_ID}.sp_rollup_monthly_usage`();
 """.strip(),

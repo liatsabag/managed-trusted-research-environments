@@ -48,39 +48,37 @@ class TelemetryService:
 
     @cached_endpoint(ttl_seconds=45, key_prefix="telemetry_overview")
     def get_fleet_overview(self) -> FleetTelemetryOverview:
-        """Calculate fleet-wide telemetry overview across all research rooms."""
-        rooms = self._get_active_spoke_projects()
-        if not rooms:
-            return FleetTelemetryOverview()
-
-        unions = [
-            f"SELECT user_email, creation_time, total_bytes_billed, total_bytes_processed FROM `{r['spoke_project_id']}`.`region-{self.settings.GCP_REGION}`.INFORMATION_SCHEMA.JOBS_BY_PROJECT WHERE job_type = 'QUERY'"
-            for r in rooms
-        ]
-        jobs_query = " UNION ALL ".join(unions)
-
+        """Calculate fleet-wide telemetry overview across all research rooms using ground-truth BigQuery telemetry marts."""
         overview_sql = f"""
             WITH researcher_roster AS (
                 SELECT primary_email AS researcher_email
                 FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_REGISTRY_DATASET}.reg_researchers`
                 WHERE is_active = TRUE
             ),
-            all_jobs AS ( {jobs_query} ),
-            all_researcher_activity AS (
-                SELECT user_email AS active_email, creation_time FROM all_jobs
+            recent_activity AS (
+                SELECT user_email AS active_email, usage_date AS activity_date
+                FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics`
                 WHERE user_email IN (SELECT researcher_email FROM researcher_roster)
                 UNION ALL
-                SELECT principal_email AS active_email, timestamp AS creation_time
+                SELECT principal_email AS active_email, DATE(timestamp) AS activity_date
                 FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_audit_events_curated`
                 WHERE principal_email IN (SELECT researcher_email FROM researcher_roster)
+            ),
+            totals AS (
+                SELECT
+                    COALESCE(SUM(IF(usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY), query_count, 0)), 0) AS total_queries_24h,
+                    COALESCE(SUM(IF(usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY), total_bytes_billed, 0)), 0) AS total_bytes_30d,
+                    COALESCE(SUM(IF(usage_date = CURRENT_DATE(), storage_bytes, 0)), 0) AS current_storage_bytes
+                FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics`
             )
             SELECT
-                COUNT(DISTINCT IF(creation_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR), active_email, NULL)) AS active_24h,
-                COUNT(DISTINCT IF(creation_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 7 DAY), active_email, NULL)) AS active_7d,
-                COUNT(DISTINCT IF(creation_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY), active_email, NULL)) AS active_30d,
-                (SELECT COUNTIF(creation_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)) FROM all_jobs) AS total_queries_24h,
-                (SELECT COALESCE(SUM(COALESCE(total_bytes_billed, total_bytes_processed, 0)), 0) FROM all_jobs WHERE creation_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY)) AS total_bytes_30d
-            FROM all_researcher_activity
+                (SELECT COUNT(DISTINCT IF(activity_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY), active_email, NULL)) FROM recent_activity) AS active_24h,
+                (SELECT COUNT(DISTINCT IF(activity_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY), active_email, NULL)) FROM recent_activity) AS active_7d,
+                (SELECT COUNT(DISTINCT IF(activity_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY), active_email, NULL)) FROM recent_activity) AS active_30d,
+                t.total_queries_24h,
+                t.total_bytes_30d,
+                t.current_storage_bytes
+            FROM totals t
         """
         try:
             res = list(self.bq_client.query(overview_sql).result())[0]
@@ -89,35 +87,10 @@ class TelemetryService:
             a_30d = int(res["active_30d"] or 0)
             q_24h = int(res["total_queries_24h"] or 0)
             b_30d = int(res["total_bytes_30d"] or 0)
+            total_storage_bytes = int(res["current_storage_bytes"] or 0)
         except Exception as e:
-            logger.warning("Falling back to hub_telemetry for fleet overview: %s", e)
-            fallback_sql = f"""
-                SELECT
-                    (SELECT COUNT(DISTINCT user_email) FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics` WHERE usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY)) AS active_24h,
-                    (SELECT COUNT(DISTINCT user_email) FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics` WHERE usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)) AS active_7d,
-                    (SELECT COUNT(DISTINCT user_email) FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics` WHERE usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)) AS active_30d,
-                    (SELECT COALESCE(SUM(query_count), 0) FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics` WHERE usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY)) AS total_queries_24h,
-                    (SELECT COALESCE(SUM(total_bytes_billed), 0) FROM `{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_daily_compute_metrics` WHERE usage_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)) AS total_bytes_30d
-            """
-            fb_res = list(self.bq_client.query(fallback_sql).result())[0]
-            a_24h = int(fb_res["active_24h"] or 0)
-            a_7d = int(fb_res["active_7d"] or 0)
-            a_30d = int(fb_res["active_30d"] or 0)
-            q_24h = int(fb_res["total_queries_24h"] or 0)
-            b_30d = int(fb_res["total_bytes_30d"] or 0)
-
-        total_storage_bytes = 0
-        for room in rooms:
-            for b_uri in [room.get("inbound_bucket"), room.get("export_bucket")]:
-                if not b_uri:
-                    continue
-                b_name = b_uri.replace("gs://", "").strip().rstrip("/")
-                try:
-                    for blob in self.gcs_client.bucket(b_name).list_blobs():
-                        if blob.size:
-                            total_storage_bytes += blob.size
-                except Exception as e:
-                    logger.warning("Failed reading storage for bucket %s: %s", b_name, e)
+            logger.warning("Failed querying telemetry overview: %s", e)
+            a_24h, a_7d, a_30d, q_24h, b_30d, total_storage_bytes = 0, 0, 0, 0, 0, 0
 
         return FleetTelemetryOverview(
             active_researchers_24h=a_24h,

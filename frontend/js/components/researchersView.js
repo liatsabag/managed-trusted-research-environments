@@ -8,14 +8,14 @@ import { api } from '../api.js';
 import { formatUSD, formatDateTime } from '../config.js';
 
 const RESEARCHER_METADATA = {
-  "dr.oren.katz@liatsabag.altostrat.com": { phone: "+972-54-819-2041", room_id: "rr-oncology-01", room_name: "Immuno-Oncology Biomarker Study", role: "Principal Investigator", institute: "Sheba Medical Center / MSKCC", start_time: "2026-09-01T08:00:00Z", last_active: "2026-09-29T14:09:04Z" },
-  "prof.miriam.levy@liatsabag.altostrat.com": { phone: "+972-52-491-8302", room_id: "rr-oncology-01", room_name: "Immuno-Oncology Biomarker Study", role: "Oncologist", institute: "Sheba Medical Center / MSKCC", start_time: "2026-09-01T08:00:00Z", last_active: "2026-09-29T11:43:37Z" },
-  "dr.eitan.rosen@liatsabag.altostrat.com": { phone: "+972-50-384-9128", room_id: "rr-genomics-02", room_name: "Rare Disease Whole-Genome Sequencing", role: "Lead Genomicist", institute: "Hadassah / Broad Institute", start_time: "2026-09-02T09:30:00Z", last_active: "2026-09-29T18:22:15Z" },
-  "prof.anat.shapiro@liatsabag.altostrat.com": { phone: "+972-54-927-4610", room_id: "rr-genomics-02", room_name: "Rare Disease Whole-Genome Sequencing", role: "Bioinformatician", institute: "Hadassah / Broad Institute", start_time: "2026-09-02T09:30:00Z", last_active: "2026-09-29T16:10:04Z" },
-  "dr.maya.lin@liatsabag.altostrat.com": { phone: "+972-53-718-3920", room_id: "rr-cardio-03", room_name: "Cardiovascular Risk Prediction Cohort", role: "Lead Investigator", institute: "Tel Aviv Sourasky (Ichilov)", start_time: "2026-09-05T10:00:00Z", last_active: "2026-09-29T19:27:54Z" },
-  "dr.daniel.cohen@liatsabag.altostrat.com": { phone: "+972-54-209-1847", room_id: "rr-cardio-03", room_name: "Cardiovascular Risk Prediction Cohort", role: "Cardiologist", institute: "Tel Aviv Sourasky (Ichilov)", start_time: "2026-09-05T10:00:00Z", last_active: "2026-09-29T17:05:12Z" },
-  "dr.noa.shapira@liatsabag.altostrat.com": { phone: "+972-52-671-9304", room_id: "rr-neurology-04", room_name: "Neurological & Dementia Imaging Cohort", role: "Principal Investigator", institute: "Technion / Rambam Health", start_time: "2026-09-10T08:15:00Z", last_active: "2026-09-29T13:45:00Z" },
-  "dr.rami.friedman@liatsabag.altostrat.com": { phone: "+972-50-938-1049", room_id: "rr-neurology-04", room_name: "Neurological & Dementia Imaging Cohort", role: "Neurologist", institute: "Technion / Rambam Health", start_time: "2026-09-10T08:15:00Z", last_active: "2026-09-29T10:18:22Z" }
+  "dr.oren.katz@example-tre.org": { phone: "+972-54-819-2041", room_id: "rr-oncology-01", room_name: "Immuno-Oncology Biomarker Study", role: "Principal Investigator", institute: "Sheba Medical Center / MSKCC", start_time: "2026-09-01T08:00:00Z", last_active: "2026-09-29T14:09:04Z" },
+  "prof.miriam.levy@example-tre.org": { phone: "+972-52-491-8302", room_id: "rr-oncology-01", room_name: "Immuno-Oncology Biomarker Study", role: "Oncologist", institute: "Sheba Medical Center / MSKCC", start_time: "2026-09-01T08:00:00Z", last_active: "2026-09-29T11:43:37Z" },
+  "dr.eitan.rosen@example-tre.org": { phone: "+972-50-384-9128", room_id: "rr-genomics-02", room_name: "Rare Disease Whole-Genome Sequencing", role: "Lead Genomicist", institute: "Hadassah / Broad Institute", start_time: "2026-09-02T09:30:00Z", last_active: "2026-09-29T18:22:15Z" },
+  "prof.anat.shapiro@example-tre.org": { phone: "+972-54-927-4610", room_id: "rr-genomics-02", room_name: "Rare Disease Whole-Genome Sequencing", role: "Bioinformatician", institute: "Hadassah / Broad Institute", start_time: "2026-09-02T09:30:00Z", last_active: "2026-09-29T16:10:04Z" },
+  "dr.maya.lin@example-tre.org": { phone: "+972-53-718-3920", room_id: "rr-cardio-03", room_name: "Cardiovascular Risk Prediction Cohort", role: "Lead Investigator", institute: "Tel Aviv Sourasky (Ichilov)", start_time: "2026-09-05T10:00:00Z", last_active: "2026-09-29T19:27:54Z" },
+  "dr.daniel.cohen@example-tre.org": { phone: "+972-54-209-1847", room_id: "rr-cardio-03", room_name: "Cardiovascular Risk Prediction Cohort", role: "Cardiologist", institute: "Tel Aviv Sourasky (Ichilov)", start_time: "2026-09-05T10:00:00Z", last_active: "2026-09-29T17:05:12Z" },
+  "dr.noa.shapira@example-tre.org": { phone: "+972-52-671-9304", room_id: "rr-neurology-04", room_name: "Neurological & Dementia Imaging Cohort", role: "Principal Investigator", institute: "Technion / Rambam Health", start_time: "2026-09-10T08:15:00Z", last_active: "2026-09-29T13:45:00Z" },
+  "dr.rami.friedman@example-tre.org": { phone: "+972-50-938-1049", room_id: "rr-neurology-04", room_name: "Neurological & Dementia Imaging Cohort", role: "Neurologist", institute: "Technion / Rambam Health", start_time: "2026-09-10T08:15:00Z", last_active: "2026-09-29T10:18:22Z" }
 };
 
 export async function renderResearchersView() {
@@ -175,7 +175,7 @@ function renderResearchersContent(container, rawResearchers) {
             </div>
             <div>
               <label class="block text-xs font-semibold text-slate-700 mb-1">Institutional Email</label>
-              <input type="email" id="add-res-email" placeholder="dr.rachel.green@liatsabag.altostrat.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs font-medium font-mono" required />
+              <input type="email" id="add-res-email" placeholder="dr.rachel.green@example-tre.org" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs font-medium font-mono" required />
             </div>
             <div>
               <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number</label>

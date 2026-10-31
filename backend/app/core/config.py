@@ -20,7 +20,7 @@ try:
         # Core GCP Configuration
         GCP_PROJECT_ID: str = "gcp-rr-hub-core"
         GCP_REGION: str = "me-west1"
-        ADMIN_DOMAIN: str = "liatsabag.altostrat.com"
+        ADMIN_DOMAIN: str = "example-tre.org"
 
         # BigQuery Billing Configuration
         BILLING_PROJECT_ID: str = "gcp-rr-hub-core"
@@ -48,7 +48,7 @@ except ImportError:
 
         GCP_PROJECT_ID: str = os.getenv("GCP_PROJECT_ID", "gcp-rr-hub-core")
         GCP_REGION: str = os.getenv("GCP_REGION", "me-west1")
-        ADMIN_DOMAIN: str = os.getenv("ADMIN_DOMAIN", "liatsabag.altostrat.com")
+        ADMIN_DOMAIN: str = os.getenv("ADMIN_DOMAIN", "example-tre.org")
 
         BILLING_PROJECT_ID: str = os.getenv("BILLING_PROJECT_ID", "gcp-rr-hub-core")
         BILLING_DATASET_ID: str = os.getenv("BILLING_DATASET_ID", "billing")

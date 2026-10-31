@@ -7,10 +7,8 @@ export const CONFIG = {
   APP_NAME: "GCP Health Data Platform",
   APP_SUBTITLE: "Central Administrator & Governance Portal",
   VERSION: "1.0.0",
-  // Default API base URL (uses reverse proxy or direct Cloud Run backend)
-  DEFAULT_API_BASE: (typeof window !== "undefined" && window.location.hostname.includes("run.app"))
-    ? "https://gcp-rr-hub-backend-468155375703.me-west1.run.app/api/v1"
-    : "/api/v1",
+  // Default API base URL (relative '/api/v1' routes through Nginx reverse proxy to Cloud Run backend)
+  DEFAULT_API_BASE: "/api/v1",
   
   // Polling intervals in milliseconds
   POLL_INTERVAL: 30000,

@@ -116,7 +116,7 @@ def cleanup_bigquery() -> Dict[str, Any]:
 
 
 def cleanup_storage() -> Dict[str, Any]:
-    """Delete stray research-room buckets from majestic-energy-353306 so they can be created in spokes."""
+    """Delete stray research-room buckets from gcp-billing-export-sink so they can be created in spokes."""
     from google.cloud import storage
 
     summary = {
@@ -134,7 +134,7 @@ def cleanup_storage() -> Dict[str, Any]:
         "rr-neurology-04-export",
     ]
     try:
-        gcs = storage.Client(project="majestic-energy-353306")
+        gcs = storage.Client(project="gcp-billing-export-sink")
         for bkt_name in stray_buckets:
             try:
                 bucket = gcs.bucket(bkt_name)

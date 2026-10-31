@@ -9,22 +9,22 @@ HUB_PROJECT = "gcp-rr-hub-core"
 
 INVENTORY_ROWS = [
     # Oncology 01
-    ("rr-oncology-01-inbound", "cohort_alpha/rnaseq_matrix_sample1.bam", 9225000000, "dr.oren.katz@liatsabag.altostrat.com", "rr-oncology-01"),
-    ("rr-oncology-01-inbound", "cohort_alpha/rnaseq_matrix_sample2.bam", 9225000000, "dr.oren.katz@liatsabag.altostrat.com", "rr-oncology-01"),
-    ("rr-oncology-01-inbound", "histopathology/wsi_slide_001.svs", 6410000000, "prof.miriam.levy@liatsabag.altostrat.com", "rr-oncology-01"),
-    ("rr-oncology-01-inbound", "histopathology/wsi_slide_002.svs", 6410000000, "prof.miriam.levy@liatsabag.altostrat.com", "rr-oncology-01"),
+    ("rr-oncology-01-inbound", "cohort_alpha/rnaseq_matrix_sample1.bam", 9225000000, "dr.oren.katz@example-tre.org", "rr-oncology-01"),
+    ("rr-oncology-01-inbound", "cohort_alpha/rnaseq_matrix_sample2.bam", 9225000000, "dr.oren.katz@example-tre.org", "rr-oncology-01"),
+    ("rr-oncology-01-inbound", "histopathology/wsi_slide_001.svs", 6410000000, "prof.miriam.levy@example-tre.org", "rr-oncology-01"),
+    ("rr-oncology-01-inbound", "histopathology/wsi_slide_002.svs", 6410000000, "prof.miriam.levy@example-tre.org", "rr-oncology-01"),
     # Genomics 02
-    ("rr-genomics-02-inbound", "wgs_cohort/sample_patient_01.cram", 17250000000, "dr.eitan.rosen@liatsabag.altostrat.com", "rr-genomics-02"),
-    ("rr-genomics-02-inbound", "wgs_cohort/sample_patient_02.cram", 17250000000, "dr.eitan.rosen@liatsabag.altostrat.com", "rr-genomics-02"),
-    ("rr-genomics-02-inbound", "vcf_callsets/annotated_variants_exome.vcf.gz", 13375000000, "prof.anat.shapiro@liatsabag.altostrat.com", "rr-genomics-02"),
-    ("rr-genomics-02-inbound", "vcf_callsets/structural_variants.vcf.gz", 13375000000, "prof.anat.shapiro@liatsabag.altostrat.com", "rr-genomics-02"),
+    ("rr-genomics-02-inbound", "wgs_cohort/sample_patient_01.cram", 17250000000, "dr.eitan.rosen@example-tre.org", "rr-genomics-02"),
+    ("rr-genomics-02-inbound", "wgs_cohort/sample_patient_02.cram", 17250000000, "dr.eitan.rosen@example-tre.org", "rr-genomics-02"),
+    ("rr-genomics-02-inbound", "vcf_callsets/annotated_variants_exome.vcf.gz", 13375000000, "prof.anat.shapiro@example-tre.org", "rr-genomics-02"),
+    ("rr-genomics-02-inbound", "vcf_callsets/structural_variants.vcf.gz", 13375000000, "prof.anat.shapiro@example-tre.org", "rr-genomics-02"),
     # Cardio 03
-    ("rr-cardio-03-inbound", "telemetry_streams/ecg_continuous_lead12.parquet", 14200000000, "dr.maya.lin@liatsabag.altostrat.com", "rr-cardio-03"),
-    ("rr-cardio-03-inbound", "echocardiograms/echo_dicom_series_patient01.dcm", 11300000000, "dr.daniel.cohen@liatsabag.altostrat.com", "rr-cardio-03"),
+    ("rr-cardio-03-inbound", "telemetry_streams/ecg_continuous_lead12.parquet", 14200000000, "dr.maya.lin@example-tre.org", "rr-cardio-03"),
+    ("rr-cardio-03-inbound", "echocardiograms/echo_dicom_series_patient01.dcm", 11300000000, "dr.daniel.cohen@example-tre.org", "rr-cardio-03"),
     # Neurology 04
-    ("rr-neurology-04-inbound", "mri_scans/fmri_3t_bold_series.nii.gz", 2160000000, "dr.noa.shapira@liatsabag.altostrat.com", "rr-neurology-04"),
-    ("rr-neurology-04-inbound", "mri_scans/fmri_3t_bold_series_part2.nii.gz", 19440000000, "dr.noa.shapira@liatsabag.altostrat.com", "rr-neurology-04"),
-    ("rr-neurology-04-inbound", "eeg_records/high_density_eeg_raw.edf", 16900000000, "dr.rami.friedman@liatsabag.altostrat.com", "rr-neurology-04")
+    ("rr-neurology-04-inbound", "mri_scans/fmri_3t_bold_series.nii.gz", 2160000000, "dr.noa.shapira@example-tre.org", "rr-neurology-04"),
+    ("rr-neurology-04-inbound", "mri_scans/fmri_3t_bold_series_part2.nii.gz", 19440000000, "dr.noa.shapira@example-tre.org", "rr-neurology-04"),
+    ("rr-neurology-04-inbound", "eeg_records/high_density_eeg_raw.edf", 16900000000, "dr.rami.friedman@example-tre.org", "rr-neurology-04")
 ]
 
 def main():

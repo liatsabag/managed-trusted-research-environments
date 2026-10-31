@@ -5,10 +5,10 @@
     "chromosome": "chr1",
     "locus_start": 1000000,
     "locus_end": 1020000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA2",
@@ -16,10 +16,10 @@
     "chromosome": "chr2",
     "locus_start": 1025000,
     "locus_end": 1045000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TP53",
@@ -27,8 +27,8 @@
     "chromosome": "chr3",
     "locus_start": 1050000,
     "locus_end": 1070000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
@@ -38,10 +38,10 @@
     "chromosome": "chr4",
     "locus_start": 1075000,
     "locus_end": 1095000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "KRAS",
@@ -49,7 +49,7 @@
     "chromosome": "chr5",
     "locus_start": 1100000,
     "locus_end": 1120000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
@@ -61,9 +61,9 @@
     "locus_start": 1125000,
     "locus_end": 1145000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PIK3CA",
@@ -71,10 +71,10 @@
     "chromosome": "chr7",
     "locus_start": 1150000,
     "locus_end": 1170000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PTEN",
@@ -85,7 +85,7 @@
     "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "APOE",
@@ -93,9 +93,9 @@
     "chromosome": "chr9",
     "locus_start": 1200000,
     "locus_end": 1220000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -104,10 +104,10 @@
     "chromosome": "chr10",
     "locus_start": 1225000,
     "locus_end": 1245000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TTN",
@@ -115,8 +115,8 @@
     "chromosome": "chr11",
     "locus_start": 1250000,
     "locus_end": 1270000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
@@ -126,7 +126,7 @@
     "chromosome": "chr12",
     "locus_start": 1275000,
     "locus_end": 1295000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
@@ -138,9 +138,9 @@
     "locus_start": 1300000,
     "locus_end": 1320000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA2_2",
@@ -148,7 +148,7 @@
     "chromosome": "chr14",
     "locus_start": 1325000,
     "locus_end": 1345000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
@@ -159,10 +159,10 @@
     "chromosome": "chr15",
     "locus_start": 1350000,
     "locus_end": 1370000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "EGFR_2",
@@ -170,8 +170,8 @@
     "chromosome": "chr16",
     "locus_start": 1375000,
     "locus_end": 1395000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
@@ -181,10 +181,10 @@
     "chromosome": "chr17",
     "locus_start": 1400000,
     "locus_end": 1420000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRAF_2",
@@ -192,10 +192,10 @@
     "chromosome": "chr18",
     "locus_start": 1425000,
     "locus_end": 1445000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PIK3CA_2",
@@ -204,9 +204,9 @@
     "locus_start": 1450000,
     "locus_end": 1470000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PTEN_2",
@@ -214,10 +214,10 @@
     "chromosome": "chr20",
     "locus_start": 1475000,
     "locus_end": 1495000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "APOE_2",
@@ -225,8 +225,8 @@
     "chromosome": "chr21",
     "locus_start": 1500000,
     "locus_end": 1520000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
@@ -238,8 +238,8 @@
     "locus_end": 1545000,
     "clinical_significance": "Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_2",
@@ -248,9 +248,9 @@
     "locus_start": 1550000,
     "locus_end": 1570000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MYH7_2",
@@ -259,9 +259,9 @@
     "locus_start": 1575000,
     "locus_end": 1595000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_3",
@@ -269,8 +269,8 @@
     "chromosome": "chr1",
     "locus_start": 1600000,
     "locus_end": 1620000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -280,9 +280,9 @@
     "chromosome": "chr2",
     "locus_start": 1625000,
     "locus_end": 1645000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -291,8 +291,8 @@
     "chromosome": "chr3",
     "locus_start": 1650000,
     "locus_end": 1670000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -302,10 +302,10 @@
     "chromosome": "chr4",
     "locus_start": 1675000,
     "locus_end": 1695000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "KRAS_3",
@@ -314,9 +314,9 @@
     "locus_start": 1700000,
     "locus_end": 1720000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRAF_3",
@@ -324,10 +324,10 @@
     "chromosome": "chr6",
     "locus_start": 1725000,
     "locus_end": 1745000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PIK3CA_3",
@@ -338,7 +338,7 @@
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_3",
@@ -346,9 +346,9 @@
     "chromosome": "chr8",
     "locus_start": 1775000,
     "locus_end": 1795000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
   },
   {
@@ -357,10 +357,10 @@
     "chromosome": "chr9",
     "locus_start": 1800000,
     "locus_end": 1820000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MAPT_3",
@@ -370,8 +370,8 @@
     "locus_end": 1845000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_3",
@@ -382,7 +382,7 @@
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MYH7_3",
@@ -390,10 +390,10 @@
     "chromosome": "chr12",
     "locus_start": 1875000,
     "locus_end": 1895000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA1_4",
@@ -402,9 +402,9 @@
     "locus_start": 1900000,
     "locus_end": 1920000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA2_4",
@@ -413,8 +413,8 @@
     "locus_start": 1925000,
     "locus_end": 1945000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
   {
@@ -423,8 +423,8 @@
     "chromosome": "chr15",
     "locus_start": 1950000,
     "locus_end": 1970000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
@@ -435,7 +435,7 @@
     "locus_start": 1975000,
     "locus_end": 1995000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -446,8 +446,8 @@
     "locus_start": 2000000,
     "locus_end": 2020000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -456,10 +456,10 @@
     "chromosome": "chr18",
     "locus_start": 2025000,
     "locus_end": 2045000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PIK3CA_4",
@@ -470,7 +470,7 @@
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PTEN_4",
@@ -478,10 +478,10 @@
     "chromosome": "chr20",
     "locus_start": 2075000,
     "locus_end": 2095000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "APOE_4",
@@ -489,10 +489,10 @@
     "chromosome": "chr21",
     "locus_start": 2100000,
     "locus_end": 2120000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MAPT_4",
@@ -502,8 +502,8 @@
     "locus_end": 2145000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_4",
@@ -511,8 +511,8 @@
     "chromosome": "chrX",
     "locus_start": 2150000,
     "locus_end": 2170000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
@@ -522,10 +522,10 @@
     "chromosome": "chrY",
     "locus_start": 2175000,
     "locus_end": 2195000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_5",
@@ -533,10 +533,10 @@
     "chromosome": "chr1",
     "locus_start": 2200000,
     "locus_end": 2220000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRCA2_5",
@@ -546,8 +546,8 @@
     "locus_end": 2245000,
     "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "TP53_5",
@@ -555,10 +555,10 @@
     "chromosome": "chr3",
     "locus_start": 2250000,
     "locus_end": 2270000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "EGFR_5",
@@ -568,8 +568,8 @@
     "locus_end": 2295000,
     "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_5",
@@ -577,8 +577,8 @@
     "chromosome": "chr5",
     "locus_start": 2300000,
     "locus_end": 2320000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -590,8 +590,8 @@
     "locus_end": 2345000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PIK3CA_5",
@@ -599,10 +599,10 @@
     "chromosome": "chr7",
     "locus_start": 2350000,
     "locus_end": 2370000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_5",
@@ -611,8 +611,8 @@
     "locus_start": 2375000,
     "locus_end": 2395000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -621,10 +621,10 @@
     "chromosome": "chr9",
     "locus_start": 2400000,
     "locus_end": 2420000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MAPT_5",
@@ -632,10 +632,10 @@
     "chromosome": "chr10",
     "locus_start": 2425000,
     "locus_end": 2445000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TTN_5",
@@ -643,10 +643,10 @@
     "chromosome": "chr11",
     "locus_start": 2450000,
     "locus_end": 2470000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MYH7_5",
@@ -654,10 +654,10 @@
     "chromosome": "chr12",
     "locus_start": 2475000,
     "locus_end": 2495000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRCA1_6",
@@ -665,8 +665,8 @@
     "chromosome": "chr13",
     "locus_start": 2500000,
     "locus_end": 2520000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
@@ -676,10 +676,10 @@
     "chromosome": "chr14",
     "locus_start": 2525000,
     "locus_end": 2545000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TP53_6",
@@ -688,8 +688,8 @@
     "locus_start": 2550000,
     "locus_end": 2570000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
   {
@@ -699,8 +699,8 @@
     "locus_start": 2575000,
     "locus_end": 2595000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
   {
@@ -710,9 +710,9 @@
     "locus_start": 2600000,
     "locus_end": 2620000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRAF_6",
@@ -720,10 +720,10 @@
     "chromosome": "chr18",
     "locus_start": 2625000,
     "locus_end": 2645000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PIK3CA_6",
@@ -731,10 +731,10 @@
     "chromosome": "chr19",
     "locus_start": 2650000,
     "locus_end": 2670000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_6",
@@ -742,10 +742,10 @@
     "chromosome": "chr20",
     "locus_start": 2675000,
     "locus_end": 2695000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "APOE_6",
@@ -754,9 +754,9 @@
     "locus_start": 2700000,
     "locus_end": 2720000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MAPT_6",
@@ -764,10 +764,10 @@
     "chromosome": "chr22",
     "locus_start": 2725000,
     "locus_end": 2745000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_6",
@@ -775,10 +775,10 @@
     "chromosome": "chrX",
     "locus_start": 2750000,
     "locus_end": 2770000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MYH7_6",
@@ -786,10 +786,10 @@
     "chromosome": "chrY",
     "locus_start": 2775000,
     "locus_end": 2795000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA1_7",
@@ -799,8 +799,8 @@
     "locus_end": 2820000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA2_7",
@@ -808,9 +808,9 @@
     "chromosome": "chr2",
     "locus_start": 2825000,
     "locus_end": 2845000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
   {
@@ -821,8 +821,8 @@
     "locus_end": 2870000,
     "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "EGFR_7",
@@ -830,10 +830,10 @@
     "chromosome": "chr4",
     "locus_start": 2875000,
     "locus_end": 2895000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_7",
@@ -841,10 +841,10 @@
     "chromosome": "chr5",
     "locus_start": 2900000,
     "locus_end": 2920000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRAF_7",
@@ -852,10 +852,10 @@
     "chromosome": "chr6",
     "locus_start": 2925000,
     "locus_end": 2945000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PIK3CA_7",
@@ -863,10 +863,10 @@
     "chromosome": "chr7",
     "locus_start": 2950000,
     "locus_end": 2970000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_7",
@@ -874,10 +874,10 @@
     "chromosome": "chr8",
     "locus_start": 2975000,
     "locus_end": 2995000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "APOE_7",
@@ -885,10 +885,10 @@
     "chromosome": "chr9",
     "locus_start": 3000000,
     "locus_end": 3020000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MAPT_7",
@@ -896,9 +896,9 @@
     "chromosome": "chr10",
     "locus_start": 3025000,
     "locus_end": 3045000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -908,9 +908,9 @@
     "locus_start": 3050000,
     "locus_end": 3070000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MYH7_7",
@@ -919,8 +919,8 @@
     "locus_start": 3075000,
     "locus_end": 3095000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
   },
   {
@@ -929,10 +929,10 @@
     "chromosome": "chr13",
     "locus_start": 3100000,
     "locus_end": 3120000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA2_8",
@@ -941,9 +941,9 @@
     "locus_start": 3125000,
     "locus_end": 3145000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TP53_8",
@@ -951,9 +951,9 @@
     "chromosome": "chr15",
     "locus_start": 3150000,
     "locus_end": 3170000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
   {
@@ -962,7 +962,7 @@
     "chromosome": "chr16",
     "locus_start": 3175000,
     "locus_end": 3195000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
@@ -974,9 +974,9 @@
     "locus_start": 3200000,
     "locus_end": 3220000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRAF_8",
@@ -984,10 +984,10 @@
     "chromosome": "chr18",
     "locus_start": 3225000,
     "locus_end": 3245000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PIK3CA_8",
@@ -998,7 +998,7 @@
     "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PTEN_8",
@@ -1006,8 +1006,8 @@
     "chromosome": "chr20",
     "locus_start": 3275000,
     "locus_end": 3295000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -1017,10 +1017,10 @@
     "chromosome": "chr21",
     "locus_start": 3300000,
     "locus_end": 3320000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MAPT_8",
@@ -1028,10 +1028,10 @@
     "chromosome": "chr22",
     "locus_start": 3325000,
     "locus_end": 3345000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_8",
@@ -1040,7 +1040,7 @@
     "locus_start": 3350000,
     "locus_end": 3370000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -1050,9 +1050,9 @@
     "chromosome": "chrY",
     "locus_start": 3375000,
     "locus_end": 3395000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
   {
@@ -1062,9 +1062,9 @@
     "locus_start": 3400000,
     "locus_end": 3420000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA2_9",
@@ -1072,10 +1072,10 @@
     "chromosome": "chr2",
     "locus_start": 3425000,
     "locus_end": 3445000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TP53_9",
@@ -1083,9 +1083,9 @@
     "chromosome": "chr3",
     "locus_start": 3450000,
     "locus_end": 3470000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
   },
   {
@@ -1095,9 +1095,9 @@
     "locus_start": 3475000,
     "locus_end": 3495000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "KRAS_9",
@@ -1105,8 +1105,8 @@
     "chromosome": "chr5",
     "locus_start": 3500000,
     "locus_end": 3520000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
@@ -1116,10 +1116,10 @@
     "chromosome": "chr6",
     "locus_start": 3525000,
     "locus_end": 3545000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PIK3CA_9",
@@ -1128,7 +1128,7 @@
     "locus_start": 3550000,
     "locus_end": 3570000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
@@ -1138,10 +1138,10 @@
     "chromosome": "chr8",
     "locus_start": 3575000,
     "locus_end": 3595000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "APOE_9",
@@ -1149,10 +1149,10 @@
     "chromosome": "chr9",
     "locus_start": 3600000,
     "locus_end": 3620000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MAPT_9",
@@ -1160,10 +1160,10 @@
     "chromosome": "chr10",
     "locus_start": 3625000,
     "locus_end": 3645000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_9",
@@ -1171,9 +1171,9 @@
     "chromosome": "chr11",
     "locus_start": 3650000,
     "locus_end": 3670000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -1183,9 +1183,9 @@
     "locus_start": 3675000,
     "locus_end": 3695000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_10",
@@ -1195,7 +1195,7 @@
     "locus_end": 3720000,
     "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
   {
@@ -1204,9 +1204,9 @@
     "chromosome": "chr14",
     "locus_start": 3725000,
     "locus_end": 3745000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
   {
@@ -1215,10 +1215,10 @@
     "chromosome": "chr15",
     "locus_start": 3750000,
     "locus_end": 3770000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "EGFR_10",
@@ -1226,10 +1226,10 @@
     "chromosome": "chr16",
     "locus_start": 3775000,
     "locus_end": 3795000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "KRAS_10",
@@ -1237,10 +1237,10 @@
     "chromosome": "chr17",
     "locus_start": 3800000,
     "locus_end": 3820000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRAF_10",
@@ -1248,7 +1248,7 @@
     "chromosome": "chr18",
     "locus_start": 3825000,
     "locus_end": 3845000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
@@ -1259,10 +1259,10 @@
     "chromosome": "chr19",
     "locus_start": 3850000,
     "locus_end": 3870000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PTEN_10",
@@ -1270,10 +1270,10 @@
     "chromosome": "chr20",
     "locus_start": 3875000,
     "locus_end": 3895000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "APOE_10",
@@ -1281,7 +1281,7 @@
     "chromosome": "chr21",
     "locus_start": 3900000,
     "locus_end": 3920000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
@@ -1292,10 +1292,10 @@
     "chromosome": "chr22",
     "locus_start": 3925000,
     "locus_end": 3945000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TTN_10",
@@ -1303,10 +1303,10 @@
     "chromosome": "chrX",
     "locus_start": 3950000,
     "locus_end": 3970000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MYH7_10",
@@ -1316,8 +1316,8 @@
     "locus_end": 3995000,
     "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_11",
@@ -1326,9 +1326,9 @@
     "locus_start": 4000000,
     "locus_end": 4020000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRCA2_11",
@@ -1336,10 +1336,10 @@
     "chromosome": "chr2",
     "locus_start": 4025000,
     "locus_end": 4045000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TP53_11",
@@ -1347,10 +1347,10 @@
     "chromosome": "chr3",
     "locus_start": 4050000,
     "locus_end": 4070000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "EGFR_11",
@@ -1358,10 +1358,10 @@
     "chromosome": "chr4",
     "locus_start": 4075000,
     "locus_end": 4095000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_11",
@@ -1370,9 +1370,9 @@
     "locus_start": 4100000,
     "locus_end": 4120000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRAF_11",
@@ -1380,10 +1380,10 @@
     "chromosome": "chr6",
     "locus_start": 4125000,
     "locus_end": 4145000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PIK3CA_11",
@@ -1392,9 +1392,9 @@
     "locus_start": 4150000,
     "locus_end": 4170000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PTEN_11",
@@ -1402,10 +1402,10 @@
     "chromosome": "chr8",
     "locus_start": 4175000,
     "locus_end": 4195000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "APOE_11",
@@ -1413,10 +1413,10 @@
     "chromosome": "chr9",
     "locus_start": 4200000,
     "locus_end": 4220000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MAPT_11",
@@ -1424,7 +1424,7 @@
     "chromosome": "chr10",
     "locus_start": 4225000,
     "locus_end": 4245000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
@@ -1435,10 +1435,10 @@
     "chromosome": "chr11",
     "locus_start": 4250000,
     "locus_end": 4270000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MYH7_11",
@@ -1447,9 +1447,9 @@
     "locus_start": 4275000,
     "locus_end": 4295000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA1_12",
@@ -1457,10 +1457,10 @@
     "chromosome": "chr13",
     "locus_start": 4300000,
     "locus_end": 4320000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA2_12",
@@ -1468,8 +1468,8 @@
     "chromosome": "chr14",
     "locus_start": 4325000,
     "locus_end": 4345000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
   },
@@ -1479,10 +1479,10 @@
     "chromosome": "chr15",
     "locus_start": 4350000,
     "locus_end": 4370000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "EGFR_12",
@@ -1491,9 +1491,9 @@
     "locus_start": 4375000,
     "locus_end": 4395000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "KRAS_12",
@@ -1501,10 +1501,10 @@
     "chromosome": "chr17",
     "locus_start": 4400000,
     "locus_end": 4420000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRAF_12",
@@ -1515,7 +1515,7 @@
     "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PIK3CA_12",
@@ -1523,9 +1523,9 @@
     "chromosome": "chr19",
     "locus_start": 4450000,
     "locus_end": 4470000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
   },
   {
@@ -1535,9 +1535,9 @@
     "locus_start": 4475000,
     "locus_end": 4495000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "APOE_12",
@@ -1545,10 +1545,10 @@
     "chromosome": "chr21",
     "locus_start": 4500000,
     "locus_end": 4520000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MAPT_12",
@@ -1556,7 +1556,7 @@
     "chromosome": "chr22",
     "locus_start": 4525000,
     "locus_end": 4545000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
@@ -1567,10 +1567,10 @@
     "chromosome": "chrX",
     "locus_start": 4550000,
     "locus_end": 4570000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MYH7_12",
@@ -1578,10 +1578,10 @@
     "chromosome": "chrY",
     "locus_start": 4575000,
     "locus_end": 4595000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA1_13",
@@ -1590,9 +1590,9 @@
     "locus_start": 4600000,
     "locus_end": 4620000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRCA2_13",
@@ -1600,10 +1600,10 @@
     "chromosome": "chr2",
     "locus_start": 4625000,
     "locus_end": 4645000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TP53_13",
@@ -1611,10 +1611,10 @@
     "chromosome": "chr3",
     "locus_start": 4650000,
     "locus_end": 4670000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "EGFR_13",
@@ -1624,8 +1624,8 @@
     "locus_end": 4695000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_13",
@@ -1633,9 +1633,9 @@
     "chromosome": "chr5",
     "locus_start": 4700000,
     "locus_end": 4720000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -1644,10 +1644,10 @@
     "chromosome": "chr6",
     "locus_start": 4725000,
     "locus_end": 4745000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PIK3CA_13",
@@ -1655,10 +1655,10 @@
     "chromosome": "chr7",
     "locus_start": 4750000,
     "locus_end": 4770000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_13",
@@ -1677,9 +1677,9 @@
     "chromosome": "chr9",
     "locus_start": 4800000,
     "locus_end": 4820000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
   {
@@ -1689,9 +1689,9 @@
     "locus_start": 4825000,
     "locus_end": 4845000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TTN_13",
@@ -1702,7 +1702,7 @@
     "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MYH7_13",
@@ -1710,10 +1710,10 @@
     "chromosome": "chr12",
     "locus_start": 4875000,
     "locus_end": 4895000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_14",
@@ -1722,9 +1722,9 @@
     "locus_start": 4900000,
     "locus_end": 4920000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA2_14",
@@ -1733,7 +1733,7 @@
     "locus_start": 4925000,
     "locus_end": 4945000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -1743,10 +1743,10 @@
     "chromosome": "chr15",
     "locus_start": 4950000,
     "locus_end": 4970000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "EGFR_14",
@@ -1755,9 +1755,9 @@
     "locus_start": 4975000,
     "locus_end": 4995000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "KRAS_14",
@@ -1767,7 +1767,7 @@
     "locus_end": 5020000,
     "clinical_significance": "Risk Factor",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -1777,9 +1777,9 @@
     "locus_start": 5025000,
     "locus_end": 5045000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PIK3CA_14",
@@ -1789,8 +1789,8 @@
     "locus_end": 5070000,
     "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PTEN_14",
@@ -1798,8 +1798,8 @@
     "chromosome": "chr20",
     "locus_start": 5075000,
     "locus_end": 5095000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
@@ -1809,8 +1809,8 @@
     "chromosome": "chr21",
     "locus_start": 5100000,
     "locus_end": 5120000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
@@ -1820,10 +1820,10 @@
     "chromosome": "chr22",
     "locus_start": 5125000,
     "locus_end": 5145000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "TTN_14",
@@ -1831,8 +1831,8 @@
     "chromosome": "chrX",
     "locus_start": 5150000,
     "locus_end": 5170000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
@@ -1843,9 +1843,9 @@
     "locus_start": 5175000,
     "locus_end": 5195000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_15",
@@ -1853,10 +1853,10 @@
     "chromosome": "chr1",
     "locus_start": 5200000,
     "locus_end": 5220000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA2_15",
@@ -1864,9 +1864,9 @@
     "chromosome": "chr2",
     "locus_start": 5225000,
     "locus_end": 5245000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
   {
@@ -1875,10 +1875,10 @@
     "chromosome": "chr3",
     "locus_start": 5250000,
     "locus_end": 5270000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "EGFR_15",
@@ -1886,10 +1886,10 @@
     "chromosome": "chr4",
     "locus_start": 5275000,
     "locus_end": 5295000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "KRAS_15",
@@ -1897,10 +1897,10 @@
     "chromosome": "chr5",
     "locus_start": 5300000,
     "locus_end": 5320000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRAF_15",
@@ -1911,7 +1911,7 @@
     "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PIK3CA_15",
@@ -1919,10 +1919,10 @@
     "chromosome": "chr7",
     "locus_start": 5350000,
     "locus_end": 5370000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PTEN_15",
@@ -1933,7 +1933,7 @@
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "APOE_15",
@@ -1942,9 +1942,9 @@
     "locus_start": 5400000,
     "locus_end": 5420000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MAPT_15",
@@ -1952,10 +1952,10 @@
     "chromosome": "chr10",
     "locus_start": 5425000,
     "locus_end": 5445000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TTN_15",
@@ -1963,10 +1963,10 @@
     "chromosome": "chr11",
     "locus_start": 5450000,
     "locus_end": 5470000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MYH7_15",
@@ -1974,7 +1974,7 @@
     "chromosome": "chr12",
     "locus_start": 5475000,
     "locus_end": 5495000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
@@ -1996,10 +1996,10 @@
     "chromosome": "chr14",
     "locus_start": 5525000,
     "locus_end": 5545000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TP53_16",
@@ -2008,9 +2008,9 @@
     "locus_start": 5550000,
     "locus_end": 5570000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "EGFR_16",
@@ -2018,10 +2018,10 @@
     "chromosome": "chr16",
     "locus_start": 5575000,
     "locus_end": 5595000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_16",
@@ -2029,10 +2029,10 @@
     "chromosome": "chr17",
     "locus_start": 5600000,
     "locus_end": 5620000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "BRAF_16",
@@ -2040,10 +2040,10 @@
     "chromosome": "chr18",
     "locus_start": 5625000,
     "locus_end": 5645000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PIK3CA_16",
@@ -2051,10 +2051,10 @@
     "chromosome": "chr19",
     "locus_start": 5650000,
     "locus_end": 5670000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_16",
@@ -2062,10 +2062,10 @@
     "chromosome": "chr20",
     "locus_start": 5675000,
     "locus_end": 5695000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "APOE_16",
@@ -2073,10 +2073,10 @@
     "chromosome": "chr21",
     "locus_start": 5700000,
     "locus_end": 5720000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "MAPT_16",
@@ -2084,9 +2084,9 @@
     "chromosome": "chr22",
     "locus_start": 5725000,
     "locus_end": 5745000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
   {
@@ -2096,9 +2096,9 @@
     "locus_start": 5750000,
     "locus_end": 5770000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MYH7_16",
@@ -2106,9 +2106,9 @@
     "chromosome": "chrY",
     "locus_start": 5775000,
     "locus_end": 5795000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
   {
@@ -2117,9 +2117,9 @@
     "chromosome": "chr1",
     "locus_start": 5800000,
     "locus_end": 5820000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -2128,9 +2128,9 @@
     "chromosome": "chr2",
     "locus_start": 5825000,
     "locus_end": 5845000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -2139,10 +2139,10 @@
     "chromosome": "chr3",
     "locus_start": 5850000,
     "locus_end": 5870000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "EGFR_17",
@@ -2150,10 +2150,10 @@
     "chromosome": "chr4",
     "locus_start": 5875000,
     "locus_end": 5895000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_17",
@@ -2163,8 +2163,8 @@
     "locus_end": 5920000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRAF_17",
@@ -2172,7 +2172,7 @@
     "chromosome": "chr6",
     "locus_start": 5925000,
     "locus_end": 5945000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
@@ -2184,8 +2184,8 @@
     "locus_start": 5950000,
     "locus_end": 5970000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -2194,10 +2194,10 @@
     "chromosome": "chr8",
     "locus_start": 5975000,
     "locus_end": 5995000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "APOE_17",
@@ -2205,9 +2205,9 @@
     "chromosome": "chr9",
     "locus_start": 6000000,
     "locus_end": 6020000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
   {
@@ -2216,10 +2216,10 @@
     "chromosome": "chr10",
     "locus_start": 6025000,
     "locus_end": 6045000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TTN_17",
@@ -2238,10 +2238,10 @@
     "chromosome": "chr12",
     "locus_start": 6075000,
     "locus_end": 6095000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRCA1_18",
@@ -2249,10 +2249,10 @@
     "chromosome": "chr13",
     "locus_start": 6100000,
     "locus_end": 6120000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA2_18",
@@ -2260,10 +2260,10 @@
     "chromosome": "chr14",
     "locus_start": 6125000,
     "locus_end": 6145000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TP53_18",
@@ -2271,7 +2271,7 @@
     "chromosome": "chr15",
     "locus_start": 6150000,
     "locus_end": 6170000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
@@ -2282,10 +2282,10 @@
     "chromosome": "chr16",
     "locus_start": 6175000,
     "locus_end": 6195000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "KRAS_18",
@@ -2293,8 +2293,8 @@
     "chromosome": "chr17",
     "locus_start": 6200000,
     "locus_end": 6220000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
@@ -2304,8 +2304,8 @@
     "chromosome": "chr18",
     "locus_start": 6225000,
     "locus_end": 6245000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
@@ -2315,9 +2315,9 @@
     "chromosome": "chr19",
     "locus_start": 6250000,
     "locus_end": 6270000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -2326,10 +2326,10 @@
     "chromosome": "chr20",
     "locus_start": 6275000,
     "locus_end": 6295000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "APOE_18",
@@ -2337,7 +2337,7 @@
     "chromosome": "chr21",
     "locus_start": 6300000,
     "locus_end": 6320000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
@@ -2348,10 +2348,10 @@
     "chromosome": "chr22",
     "locus_start": 6325000,
     "locus_end": 6345000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "TTN_18",
@@ -2361,7 +2361,7 @@
     "locus_end": 6370000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -2370,10 +2370,10 @@
     "chromosome": "chrY",
     "locus_start": 6375000,
     "locus_end": 6395000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_19",
@@ -2381,7 +2381,7 @@
     "chromosome": "chr1",
     "locus_start": 6400000,
     "locus_end": 6420000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 3"
@@ -2393,7 +2393,7 @@
     "locus_start": 6425000,
     "locus_end": 6445000,
     "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
@@ -2404,7 +2404,7 @@
     "locus_start": 6450000,
     "locus_end": 6470000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
@@ -2414,10 +2414,10 @@
     "chromosome": "chr4",
     "locus_start": 6475000,
     "locus_end": 6495000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "KRAS_19",
@@ -2425,8 +2425,8 @@
     "chromosome": "chr5",
     "locus_start": 6500000,
     "locus_end": 6520000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 2"
   },
@@ -2437,7 +2437,7 @@
     "locus_start": 6525000,
     "locus_end": 6545000,
     "clinical_significance": "Risk Factor",
-    "disease_association": "Cardiomyopathy",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 3"
   },
@@ -2449,8 +2449,8 @@
     "locus_end": 6570000,
     "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PTEN_19",
@@ -2458,10 +2458,10 @@
     "chromosome": "chr8",
     "locus_start": 6575000,
     "locus_end": 6595000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "APOE_19",
@@ -2469,10 +2469,10 @@
     "chromosome": "chr9",
     "locus_start": 6600000,
     "locus_end": 6620000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MAPT_19",
@@ -2480,10 +2480,10 @@
     "chromosome": "chr10",
     "locus_start": 6625000,
     "locus_end": 6645000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "TTN_19",
@@ -2491,10 +2491,10 @@
     "chromosome": "chr11",
     "locus_start": 6650000,
     "locus_end": 6670000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MYH7_19",
@@ -2502,10 +2502,10 @@
     "chromosome": "chr12",
     "locus_start": 6675000,
     "locus_end": 6695000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Neurodegeneration",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA1_20",
@@ -2513,10 +2513,10 @@
     "chromosome": "chr13",
     "locus_start": 6700000,
     "locus_end": 6720000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "BRCA2_20",
@@ -2525,9 +2525,9 @@
     "locus_start": 6725000,
     "locus_end": 6745000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "TP53_20",
@@ -2535,7 +2535,7 @@
     "chromosome": "chr15",
     "locus_start": 6750000,
     "locus_end": 6770000,
-    "clinical_significance": "Risk Factor",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Neurodegeneration",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
@@ -2546,10 +2546,10 @@
     "chromosome": "chr16",
     "locus_start": 6775000,
     "locus_end": 6795000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "KRAS_20",
@@ -2557,8 +2557,8 @@
     "chromosome": "chr17",
     "locus_start": 6800000,
     "locus_end": 6820000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
@@ -2568,10 +2568,10 @@
     "chromosome": "chr18",
     "locus_start": 6825000,
     "locus_end": 6845000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "PIK3CA_20",
@@ -2581,8 +2581,8 @@
     "locus_end": 6870000,
     "clinical_significance": "Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "PTEN_20",
@@ -2590,8 +2590,8 @@
     "chromosome": "chr20",
     "locus_start": 6875000,
     "locus_end": 6895000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"
   },
@@ -2601,10 +2601,10 @@
     "chromosome": "chr21",
     "locus_start": 6900000,
     "locus_end": 6920000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "MAPT_20",
@@ -2614,7 +2614,7 @@
     "locus_end": 6945000,
     "clinical_significance": "Pathogenic",
     "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
+    "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 2"
   },
   {
@@ -2623,10 +2623,10 @@
     "chromosome": "chrX",
     "locus_start": 6950000,
     "locus_end": 6970000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Dominant",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MYH7_20",
@@ -2634,8 +2634,8 @@
     "chromosome": "chrY",
     "locus_start": 6975000,
     "locus_end": 6995000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "clinical_significance": "Risk Factor",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -2645,10 +2645,10 @@
     "chromosome": "chr1",
     "locus_start": 7000000,
     "locus_end": 7020000,
-    "clinical_significance": "Likely Pathogenic",
+    "clinical_significance": "Pathogenic",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 3"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRCA2_21",
@@ -2656,10 +2656,10 @@
     "chromosome": "chr2",
     "locus_start": 7025000,
     "locus_end": 7045000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Risk Factor",
     "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "TP53_21",
@@ -2668,7 +2668,7 @@
     "locus_start": 7050000,
     "locus_end": 7070000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
@@ -2678,10 +2678,10 @@
     "chromosome": "chr4",
     "locus_start": 7075000,
     "locus_end": 7095000,
-    "clinical_significance": "Pathogenic",
-    "disease_association": "Neurodegeneration",
+    "clinical_significance": "Likely Pathogenic",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 3"
   },
   {
     "gene_symbol": "KRAS_21",
@@ -2690,9 +2690,9 @@
     "locus_start": 7100000,
     "locus_end": 7120000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
+    "disease_association": "Hereditary Cancer",
     "inheritance_mode": "Autosomal Recessive",
-    "acmg_tier": "Tier 1"
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "BRAF_21",
@@ -2701,8 +2701,8 @@
     "locus_start": 7125000,
     "locus_end": 7145000,
     "clinical_significance": "Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
     "acmg_tier": "Tier 1"
   },
   {
@@ -2711,10 +2711,10 @@
     "chromosome": "chr7",
     "locus_start": 7150000,
     "locus_end": 7170000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Cardiomyopathy",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 1"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Neurodegeneration",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 2"
   },
   {
     "gene_symbol": "PTEN_21",
@@ -2722,10 +2722,10 @@
     "chromosome": "chr8",
     "locus_start": 7175000,
     "locus_end": 7195000,
-    "clinical_significance": "Likely Pathogenic",
-    "disease_association": "Hereditary Cancer",
-    "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
+    "inheritance_mode": "Autosomal Recessive",
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "APOE_21",
@@ -2733,10 +2733,10 @@
     "chromosome": "chr9",
     "locus_start": 7200000,
     "locus_end": 7220000,
-    "clinical_significance": "Risk Factor",
-    "disease_association": "Hereditary Cancer",
+    "clinical_significance": "Pathogenic",
+    "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
-    "acmg_tier": "Tier 2"
+    "acmg_tier": "Tier 1"
   },
   {
     "gene_symbol": "MAPT_21",
@@ -2744,7 +2744,7 @@
     "chromosome": "chr10",
     "locus_start": 7225000,
     "locus_end": 7245000,
-    "clinical_significance": "Pathogenic",
+    "clinical_significance": "Likely Pathogenic",
     "disease_association": "Cardiomyopathy",
     "inheritance_mode": "Autosomal Dominant",
     "acmg_tier": "Tier 1"

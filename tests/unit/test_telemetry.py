@@ -37,7 +37,7 @@ class TestTelemetryModels(unittest.TestCase):
             job_id="job-1234",
             room_id="rr-oncology-01",
             project_id="gcp-rr-spoke-oncology-01",
-            user_email="dr.oren.katz@mskcc.altostrat.com",
+            user_email="dr.oren.katz@mskcc.example-tre.org",
             query_snippet="SELECT * FROM cohort",
             bytes_billed=1048576,
             slot_ms=250,
@@ -54,7 +54,7 @@ class TestTelemetryModels(unittest.TestCase):
         event = AuditLogEvent(
             event_id="evt-999",
             room_id="rr-oncology-01",
-            principal_email="dr.oren.katz@mskcc.altostrat.com",
+            principal_email="dr.oren.katz@mskcc.example-tre.org",
             service_name="bigquery.googleapis.com",
             method_name="google.cloud.bigquery.v2.JobService.InsertJob",
             resource_name="projects/gcp-rr-spoke-oncology-01/jobs/123",
@@ -70,7 +70,7 @@ class TestTelemetryModels(unittest.TestCase):
         item = DailyComputeMetricItem(
             usage_date=date(2026, 9, 28),
             room_id="rr-oncology-01",
-            user_email="admin@liatsabag.altostrat.com",
+            user_email="admin@example-tre.org",
             institute_id="inst-mskcc",
             query_count=20,
             total_bytes_billed=1048576,

@@ -22,14 +22,14 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger("traffic_generator")
 
 RESEARCHERS = [
-    {"email": "dr.oren.katz@liatsabag.altostrat.com", "name": "Dr. Oren Katz", "room_id": "rr-oncology-01", "project_id": "gcp-rr-spoke-oncology-01", "dataset": "spoke_local_oncology", "table": "patient_cohort", "bucket": "rr-oncology-01-inbound"},
-    {"email": "prof.miriam.levy@liatsabag.altostrat.com", "name": "Prof. Miriam Levy", "room_id": "rr-oncology-01", "project_id": "gcp-rr-spoke-oncology-01", "dataset": "spoke_local_oncology", "table": "immunotherapy_response", "bucket": "rr-oncology-01-inbound"},
-    {"email": "dr.eitan.rosen@liatsabag.altostrat.com", "name": "Dr. Eitan Rosen", "room_id": "rr-genomics-02", "project_id": "gcp-rr-spoke-genomics-02", "dataset": "spoke_local_genomics", "table": "variant_calls", "bucket": "rr-genomics-02-inbound"},
-    {"email": "prof.anat.shapiro@liatsabag.altostrat.com", "name": "Prof. Anat Shapiro", "room_id": "rr-genomics-02", "project_id": "gcp-rr-spoke-genomics-02", "dataset": "spoke_local_genomics", "table": "phenotype_mapping", "bucket": "rr-genomics-02-inbound"},
-    {"email": "dr.daniel.cohen@liatsabag.altostrat.com", "name": "Dr. Daniel Cohen", "room_id": "rr-cardio-03", "project_id": "gcp-rr-spoke-cardio-03", "dataset": "spoke_local_cardio", "table": "patient_registry", "bucket": "rr-cardio-03-inbound"},
-    {"email": "dr.maya.lin@liatsabag.altostrat.com", "name": "Dr. Maya Lin", "room_id": "rr-cardio-03", "project_id": "gcp-rr-spoke-cardio-03", "dataset": "spoke_local_cardio", "table": "cardiac_events", "bucket": "rr-cardio-03-inbound"},
-    {"email": "dr.noa.shapira@liatsabag.altostrat.com", "name": "Dr. Noa Shapira", "room_id": "rr-neurology-04", "project_id": "gcp-rr-spoke-neurology-04", "dataset": "spoke_local_neurology", "table": "mri_volumetric_features", "bucket": "rr-neurology-04-inbound"},
-    {"email": "dr.rami.friedman@liatsabag.altostrat.com", "name": "Dr. Rami Friedman", "room_id": "rr-neurology-04", "project_id": "gcp-rr-spoke-neurology-04", "dataset": "spoke_local_neurology", "table": "cognitive_assessments", "bucket": "rr-neurology-04-inbound"},
+    {"email": "dr.oren.katz@example-tre.org", "name": "Dr. Oren Katz", "room_id": "rr-oncology-01", "project_id": "gcp-rr-spoke-oncology-01", "dataset": "spoke_local_oncology", "table": "patient_cohort", "bucket": "rr-oncology-01-inbound"},
+    {"email": "prof.miriam.levy@example-tre.org", "name": "Prof. Miriam Levy", "room_id": "rr-oncology-01", "project_id": "gcp-rr-spoke-oncology-01", "dataset": "spoke_local_oncology", "table": "immunotherapy_response", "bucket": "rr-oncology-01-inbound"},
+    {"email": "dr.eitan.rosen@example-tre.org", "name": "Dr. Eitan Rosen", "room_id": "rr-genomics-02", "project_id": "gcp-rr-spoke-genomics-02", "dataset": "spoke_local_genomics", "table": "variant_calls", "bucket": "rr-genomics-02-inbound"},
+    {"email": "prof.anat.shapiro@example-tre.org", "name": "Prof. Anat Shapiro", "room_id": "rr-genomics-02", "project_id": "gcp-rr-spoke-genomics-02", "dataset": "spoke_local_genomics", "table": "phenotype_mapping", "bucket": "rr-genomics-02-inbound"},
+    {"email": "dr.daniel.cohen@example-tre.org", "name": "Dr. Daniel Cohen", "room_id": "rr-cardio-03", "project_id": "gcp-rr-spoke-cardio-03", "dataset": "spoke_local_cardio", "table": "patient_registry", "bucket": "rr-cardio-03-inbound"},
+    {"email": "dr.maya.lin@example-tre.org", "name": "Dr. Maya Lin", "room_id": "rr-cardio-03", "project_id": "gcp-rr-spoke-cardio-03", "dataset": "spoke_local_cardio", "table": "cardiac_events", "bucket": "rr-cardio-03-inbound"},
+    {"email": "dr.noa.shapira@example-tre.org", "name": "Dr. Noa Shapira", "room_id": "rr-neurology-04", "project_id": "gcp-rr-spoke-neurology-04", "dataset": "spoke_local_neurology", "table": "mri_volumetric_features", "bucket": "rr-neurology-04-inbound"},
+    {"email": "dr.rami.friedman@example-tre.org", "name": "Dr. Rami Friedman", "room_id": "rr-neurology-04", "project_id": "gcp-rr-spoke-neurology-04", "dataset": "spoke_local_neurology", "table": "cognitive_assessments", "bucket": "rr-neurology-04-inbound"},
 ]
 
 

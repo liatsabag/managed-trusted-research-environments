@@ -245,7 +245,7 @@ export function renderSettingsModal() {
             <div class="mt-1 flex gap-2">
               <button type="button" class="text-[10px] text-blue-600 font-semibold" onclick="document.getElementById('cfg-api-base').value = '/api/v1'">Relative (/api/v1)</button>
               <span class="text-slate-300">•</span>
-              <button type="button" class="text-[10px] text-blue-600 font-semibold" onclick="document.getElementById('cfg-api-base').value = 'https://gcp-rr-hub-backend-468155375703.me-west1.run.app/api/v1'">Live Cloud Run</button>
+              <button type="button" class="text-[10px] text-blue-600 font-semibold" onclick="document.getElementById('cfg-api-base').value = 'http://localhost:8000/api/v1'">Local Dev (localhost:8000)</button>
             </div>
           </div>
           <div>

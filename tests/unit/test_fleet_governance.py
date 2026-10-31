@@ -1,6 +1,7 @@
 """Unit tests for Fleet Registry & Room Governance Service and Models."""
 
 import unittest
+from unittest.mock import MagicMock
 from backend.app.models.rooms import (
     AddResearcherResponse,
     DUAComplianceStatus,
@@ -20,6 +21,24 @@ class TestFleetGovernanceService(unittest.TestCase):
 
     def setUp(self):
         self.service = FleetGovernanceService()
+        self.mock_crm = MagicMock()
+        self.policy_store = {"bindings": []}
+
+        def mock_get_iam(*args, **kwargs):
+            mock_req = MagicMock()
+            mock_req.execute.return_value = {"bindings": list(self.policy_store["bindings"])}
+            return mock_req
+
+        def mock_set_iam(*args, **kwargs):
+            body = kwargs.get("body") or (args[1] if len(args) > 1 else {})
+            self.policy_store["bindings"] = body.get("policy", {}).get("bindings", [])
+            mock_req = MagicMock()
+            mock_req.execute.return_value = body.get("policy", {})
+            return mock_req
+
+        self.mock_crm.projects().getIamPolicy.side_effect = mock_get_iam
+        self.mock_crm.projects().setIamPolicy.side_effect = mock_set_iam
+        self.service._crm_client = self.mock_crm
 
     def test_list_rooms(self):
         """Verify dynamic loading of all 4 research rooms with compliance and package info."""

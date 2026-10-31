@@ -1,4 +1,4 @@
-"""Seed authentic multi-project billing export records into majestic-energy-353306.billing.gcp_billing_export_v1."""
+"""Seed authentic multi-project billing export records into gcp-billing-export-sink.billing.gcp_billing_export_v1."""
 import sys
 from pathlib import Path
 
@@ -14,10 +14,10 @@ from google.cloud import bigquery
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("seed_billing")
 
-BILLING_PROJECT = "majestic-energy-353306"
+BILLING_PROJECT = "gcp-billing-export-sink"
 BILLING_DATASET = "billing"
 BILLING_TABLE = "gcp_billing_export_v1"
-BILLING_ACCOUNT_ID = "017F5D-25BB78-C82332"
+BILLING_ACCOUNT_ID = "012345-6789AB-CDEF01"
 
 PROJECT_SKU_DATA = [
     {

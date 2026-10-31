@@ -37,7 +37,7 @@ SELECT
     cost_type,
     adjustment_info
 FROM
-    `majestic-energy-353306.billing.gcp_billing_export_v1`
+    `gcp-billing-export-sink.billing.gcp_billing_export_v1`
 WHERE
     project.id LIKE 'gcp-rr-%'
     OR project.id LIKE 'tre-room-%';

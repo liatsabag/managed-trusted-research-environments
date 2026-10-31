@@ -235,10 +235,10 @@ def main() -> int:
 
     # Map spoke projects to primary researcher if not explicitly returned by API
     researcher_map = {
-        "rr-cardio-03": "dr.maya.lin@liatsabag.altostrat.com",
-        "rr-genomics-02": "dr.eitan.rosen@liatsabag.altostrat.com",
-        "rr-oncology-01": "dr.sarah.chen@liatsabag.altostrat.com",
-        "rr-neurology-04": "dr.david.kim@liatsabag.altostrat.com",
+        "rr-cardio-03": "dr.maya.lin@example-tre.org",
+        "rr-genomics-02": "dr.eitan.rosen@example-tre.org",
+        "rr-oncology-01": "dr.sarah.chen@example-tre.org",
+        "rr-neurology-04": "dr.david.kim@example-tre.org",
     }
 
     for room in rooms:
@@ -251,7 +251,7 @@ def main() -> int:
         
         monitoring_data = poll_cloud_monitoring_metrics(spoke_id)
         if monitoring_data["call_count"] > 0:
-            user_email = researcher_map.get(room_id, "admin@liatsabag.altostrat.com")
+            user_email = researcher_map.get(room_id, "admin@example-tre.org")
             all_ai_records.append({
                 "room_id": room_id,
                 "project_id": spoke_id,

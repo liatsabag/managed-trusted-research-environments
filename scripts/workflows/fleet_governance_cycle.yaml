@@ -9,7 +9,9 @@ main:
     - init:
         assign:
           - projectId: "gcp-rr-hub-core"
-          - defaultBackendUrl: "https://gcp-rr-hub-backend-468155375703.me-west1.run.app"
+          # Default backend URL: replace with your deployed Cloud Run backend URL,
+          # or override dynamically at execution time via args: {"backend_url": "https://..."}
+          - defaultBackendUrl: "https://gcp-rr-hub-backend-YOUR_BACKEND_HASH.me-west1.run.app"
           - backendUrl: ${defaultBackendUrl}
     - checkCustomUrl:
         switch:

@@ -35,6 +35,16 @@ from backend.app.models.rooms import DowngradeRequest
 class TestAPIv1Controllers(unittest.TestCase):
     """Test suite for API v1 endpoint controller functions."""
 
+    @classmethod
+    def setUpClass(cls):
+        service = get_fleet_service()
+        mock_crm = MagicMock()
+        mock_req = MagicMock()
+        mock_req.execute.return_value = {"bindings": []}
+        mock_crm.projects().getIamPolicy.return_value = mock_req
+        mock_crm.projects().setIamPolicy.return_value = mock_req
+        service._crm_client = mock_crm
+
     def test_rooms_list_controller(self):
         """Verify list_rooms controller returns 4 room summaries."""
         service = get_fleet_service()

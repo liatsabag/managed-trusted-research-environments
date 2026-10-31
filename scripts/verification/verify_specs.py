@@ -11,7 +11,7 @@ if _repo_root not in sys.path:
 import os
 
 REGION = os.getenv("GCP_REGION", "me-west1")
-ADMIN_DOMAIN = os.getenv("ADMIN_DOMAIN", "liatsabag.altostrat.com")
+ADMIN_DOMAIN = os.getenv("ADMIN_DOMAIN", "example-tre.org")
 HUB_PROJECT_ID = os.getenv("HUB_PROJECT_ID", "gcp-rr-hub-core")
 
 SPOKE_PROJECTS = {

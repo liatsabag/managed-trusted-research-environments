@@ -1,20 +1,20 @@
 [
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #1 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #2 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #3 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -28,56 +28,56 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q90.9.4",
     "code_description": "Clinical diagnosis variant #5 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #6 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #7 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G31.84.7",
     "code_description": "Clinical diagnosis variant #8 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #9 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #10 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #11 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #12 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -91,21 +91,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #14 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #15 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #16 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -119,28 +119,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #18 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #19 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #20 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #21 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -154,14 +154,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #23 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #24 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -182,7 +182,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I25.1.6",
     "code_description": "Clinical diagnosis variant #27 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -196,14 +196,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #29 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #30 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -217,49 +217,49 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #32 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #33 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #34 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #35 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #36 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I25.1.6",
     "code_description": "Clinical diagnosis variant #37 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #38 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -280,28 +280,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #41 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I50.9.1",
     "code_description": "Clinical diagnosis variant #42 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #43 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #44 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -315,7 +315,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #46 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -336,14 +336,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #49 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #50 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -357,42 +357,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #52 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #53 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #54 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #55 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #56 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #57 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -406,35 +406,35 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E11.9.8",
     "code_description": "Clinical diagnosis variant #59 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #60 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #61 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #62 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #63 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -448,21 +448,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #65 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #66 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.6",
+    "icd10_code": "I48.9.6",
     "code_description": "Clinical diagnosis variant #67 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -476,7 +476,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #69 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -490,63 +490,63 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #71 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #72 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #73 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #74 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #75 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #76 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #77 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #78 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #79 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -560,7 +560,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #81 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -574,14 +574,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #83 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #84 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -595,7 +595,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #86 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -609,28 +609,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.7",
+    "icd10_code": "G31.84.7",
     "code_description": "Clinical diagnosis variant #88 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #89 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #90 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #91 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -644,7 +644,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G35.2",
     "code_description": "Clinical diagnosis variant #93 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -658,70 +658,70 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #95 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #96 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #97 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #98 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #99 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #100 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #101 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #102 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G35.2",
     "code_description": "Clinical diagnosis variant #103 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E11.9.3",
     "code_description": "Clinical diagnosis variant #104 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -742,14 +742,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #107 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.7",
+    "icd10_code": "G31.84.7",
     "code_description": "Clinical diagnosis variant #108 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -763,7 +763,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #110 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -777,84 +777,84 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #112 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G35.2",
     "code_description": "Clinical diagnosis variant #113 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #114 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #115 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #116 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #117 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #118 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #119 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #120 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C25.9.0",
     "code_description": "Clinical diagnosis variant #121 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #122 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #123 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -875,28 +875,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #126 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.6",
+    "icd10_code": "I25.1.6",
     "code_description": "Clinical diagnosis variant #127 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #128 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #129 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -910,63 +910,63 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C25.9.0",
     "code_description": "Clinical diagnosis variant #131 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #132 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #133 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #134 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #135 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #136 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I48.9.6",
     "code_description": "Clinical diagnosis variant #137 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #138 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #139 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -980,21 +980,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C25.9.0",
     "code_description": "Clinical diagnosis variant #141 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I50.9.1",
     "code_description": "Clinical diagnosis variant #142 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #143 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1008,14 +1008,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #145 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #146 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -1029,14 +1029,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #148 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #149 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -1057,7 +1057,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #152 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -1071,21 +1071,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #154 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #155 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #156 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -1099,42 +1099,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #158 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E11.9.8",
     "code_description": "Clinical diagnosis variant #159 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #160 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C50.9.0",
     "code_description": "Clinical diagnosis variant #161 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #162 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #163 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1148,21 +1148,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #165 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #166 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #167 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -1176,105 +1176,105 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #169 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #170 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #171 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #172 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.2",
+    "icd10_code": "G35.2",
     "code_description": "Clinical diagnosis variant #173 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #174 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #175 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #176 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #177 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #178 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E11.9.8",
     "code_description": "Clinical diagnosis variant #179 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #180 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #181 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I50.9.1",
     "code_description": "Clinical diagnosis variant #182 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #183 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1288,28 +1288,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #185 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #186 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.6",
+    "icd10_code": "I48.9.6",
     "code_description": "Clinical diagnosis variant #187 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #188 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1323,49 +1323,49 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #190 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #191 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #192 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #193 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #194 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #195 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #196 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -1379,21 +1379,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #198 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #199 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #200 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -1414,77 +1414,77 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #203 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E11.9.3",
     "code_description": "Clinical diagnosis variant #204 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q90.9.4",
     "code_description": "Clinical diagnosis variant #205 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #206 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.6",
+    "icd10_code": "I25.1.6",
     "code_description": "Clinical diagnosis variant #207 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #208 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #209 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #210 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #211 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #212 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #213 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1498,42 +1498,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #215 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #216 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I25.1.6",
     "code_description": "Clinical diagnosis variant #217 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #218 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #219 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #220 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -1547,21 +1547,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #222 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #223 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #224 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -1582,28 +1582,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.6",
+    "icd10_code": "I48.9.6",
     "code_description": "Clinical diagnosis variant #227 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #228 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E11.9.8",
     "code_description": "Clinical diagnosis variant #229 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #230 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -1617,14 +1617,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #232 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #233 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1638,14 +1638,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #235 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #236 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -1659,119 +1659,119 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #238 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #239 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #240 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C50.9.0",
     "code_description": "Clinical diagnosis variant #241 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #242 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G35.2",
     "code_description": "Clinical diagnosis variant #243 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #244 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #245 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #246 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #247 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G31.84.7",
     "code_description": "Clinical diagnosis variant #248 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #249 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #250 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #251 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #252 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #253 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #254 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -1785,42 +1785,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #256 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I48.9.6",
     "code_description": "Clinical diagnosis variant #257 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #258 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #259 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #260 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C50.9.0",
     "code_description": "Clinical diagnosis variant #261 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -1834,35 +1834,35 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G35.2",
     "code_description": "Clinical diagnosis variant #263 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #264 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #265 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #266 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #267 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -1883,21 +1883,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #270 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #271 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #272 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -1911,14 +1911,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #274 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #275 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -1932,28 +1932,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #277 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #278 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #279 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #280 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -1967,14 +1967,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #282 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #283 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -1988,21 +1988,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q90.9.4",
     "code_description": "Clinical diagnosis variant #285 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #286 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #287 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2023,21 +2023,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #290 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #291 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #292 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2058,21 +2058,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #295 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #296 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I25.1.6",
     "code_description": "Clinical diagnosis variant #297 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2086,35 +2086,35 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E11.9.8",
     "code_description": "Clinical diagnosis variant #299 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #300 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #301 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #302 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #303 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -2128,14 +2128,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #305 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #306 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2149,84 +2149,84 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #308 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #309 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #310 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #311 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #312 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #313 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #314 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #315 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #316 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #317 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #318 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #319 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -2240,42 +2240,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #321 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I50.9.1",
     "code_description": "Clinical diagnosis variant #322 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #323 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #324 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #325 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #326 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2289,42 +2289,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #328 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #329 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #330 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #331 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #332 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #333 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -2338,49 +2338,49 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #335 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #336 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #337 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #338 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #339 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #340 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #341 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2394,28 +2394,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.2",
+    "icd10_code": "G20.2",
     "code_description": "Clinical diagnosis variant #343 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #344 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #345 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #346 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2429,35 +2429,35 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #348 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #349 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #350 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C50.9.0",
     "code_description": "Clinical diagnosis variant #351 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #352 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2471,7 +2471,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #354 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -2492,49 +2492,49 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #357 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #358 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #359 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #360 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #361 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #362 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #363 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -2548,56 +2548,56 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #365 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #366 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #367 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #368 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #369 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #370 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.0",
+    "icd10_code": "C25.9.0",
     "code_description": "Clinical diagnosis variant #371 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #372 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2611,21 +2611,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #374 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #375 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #376 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2639,35 +2639,35 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #378 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #379 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #380 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.0",
+    "icd10_code": "C50.9.0",
     "code_description": "Clinical diagnosis variant #381 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #382 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2681,21 +2681,21 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #384 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q90.9.4",
     "code_description": "Clinical diagnosis variant #385 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C61.5",
     "code_description": "Clinical diagnosis variant #386 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2709,28 +2709,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.7",
+    "icd10_code": "G30.9.7",
     "code_description": "Clinical diagnosis variant #388 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #389 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #390 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #391 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -2744,70 +2744,70 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #393 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E11.9.3",
     "code_description": "Clinical diagnosis variant #394 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.4",
+    "icd10_code": "Q90.9.4",
     "code_description": "Clinical diagnosis variant #395 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #396 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #397 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G35.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #398 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #399 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #400 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C25.9.0",
     "code_description": "Clinical diagnosis variant #401 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #402 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2821,7 +2821,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #404 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -2835,84 +2835,84 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #406 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #407 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G30.9.7",
+    "icd10_code": "G35.7",
     "code_description": "Clinical diagnosis variant #408 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #409 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #410 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #411 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #412 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G30.9.2",
     "code_description": "Clinical diagnosis variant #413 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.3",
+    "icd10_code": "E03.9.3",
     "code_description": "Clinical diagnosis variant #414 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q78.0.4",
     "code_description": "Clinical diagnosis variant #415 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #416 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #417 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2926,28 +2926,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E11.9.8",
     "code_description": "Clinical diagnosis variant #419 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #420 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #421 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I50.9.1",
     "code_description": "Clinical diagnosis variant #422 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -2961,35 +2961,35 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #424 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q90.9.4",
     "code_description": "Clinical diagnosis variant #425 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #426 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #427 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G31.84.7",
     "code_description": "Clinical diagnosis variant #428 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -3003,7 +3003,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #430 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
@@ -3017,7 +3017,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #432 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3031,7 +3031,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #434 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -3045,28 +3045,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C61.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #436 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #437 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #438 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E66.9.8",
     "code_description": "Clinical diagnosis variant #439 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -3080,14 +3080,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.0",
+    "icd10_code": "C61.0",
     "code_description": "Clinical diagnosis variant #441 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.1",
+    "icd10_code": "I10.1",
     "code_description": "Clinical diagnosis variant #442 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3101,28 +3101,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E11.9.3",
     "code_description": "Clinical diagnosis variant #444 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q90.9.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #445 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #446 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I50.9.6",
     "code_description": "Clinical diagnosis variant #447 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3136,42 +3136,42 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #449 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q90.9.9",
     "code_description": "Clinical diagnosis variant #450 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #451 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I25.1.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #452 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.2",
+    "icd10_code": "G40.9.2",
     "code_description": "Clinical diagnosis variant #453 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E11.9.3",
     "code_description": "Clinical diagnosis variant #454 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -3185,7 +3185,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C25.9.5",
     "code_description": "Clinical diagnosis variant #456 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
@@ -3213,28 +3213,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #460 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #461 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.1",
+    "icd10_code": "I25.1.1",
     "code_description": "Clinical diagnosis variant #462 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G40.9.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #463 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
@@ -3248,56 +3248,56 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.4",
+    "icd10_code": "Q04.0.4",
     "code_description": "Clinical diagnosis variant #465 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C25.9.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #466 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.6",
+    "icd10_code": "I48.9.6",
     "code_description": "Clinical diagnosis variant #467 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.7",
+    "icd10_code": "G40.9.7",
     "code_description": "Clinical diagnosis variant #468 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #469 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q78.0.9",
     "code_description": "Clinical diagnosis variant #470 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.0",
+    "icd10_code": "C25.9.0",
     "code_description": "Clinical diagnosis variant #471 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I63.9.1",
     "code_description": "Clinical diagnosis variant #472 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3311,28 +3311,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E78.5.3",
     "code_description": "Clinical diagnosis variant #474 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.4",
+    "icd10_code": "Q87.4.4",
     "code_description": "Clinical diagnosis variant #475 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.5",
+    "icd10_code": "C18.9.5",
     "code_description": "Clinical diagnosis variant #476 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #477 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3346,28 +3346,28 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E11.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #479 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q87.4.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #480 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C50.9.0",
+    "icd10_code": "C34.9.0",
     "code_description": "Clinical diagnosis variant #481 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I63.9.1",
+    "icd10_code": "I48.9.1",
     "code_description": "Clinical diagnosis variant #482 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3381,7 +3381,7 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E78.5.3",
+    "icd10_code": "E11.9.3",
     "code_description": "Clinical diagnosis variant #484 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -3395,63 +3395,63 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C50.9.5",
     "code_description": "Clinical diagnosis variant #486 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I50.9.6",
+    "icd10_code": "I63.9.6",
     "code_description": "Clinical diagnosis variant #487 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G31.84.7",
+    "icd10_code": "G20.7",
     "code_description": "Clinical diagnosis variant #488 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E78.5.8",
     "code_description": "Clinical diagnosis variant #489 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q04.0.9",
+    "icd10_code": "Q87.4.9",
     "code_description": "Clinical diagnosis variant #490 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C34.9.0",
+    "icd10_code": "C18.9.0",
     "code_description": "Clinical diagnosis variant #491 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I10.1",
+    "icd10_code": "I50.9.1",
     "code_description": "Clinical diagnosis variant #492 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "G20.2",
+    "icd10_code": "G31.84.2",
     "code_description": "Clinical diagnosis variant #493 under Diseases of nervous system",
     "chapter": "VI",
     "block": "G00-G99",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E03.9.3",
+    "icd10_code": "E66.9.3",
     "code_description": "Clinical diagnosis variant #494 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
@@ -3465,14 +3465,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "C18.9.5",
+    "icd10_code": "C34.9.5",
     "code_description": "Clinical diagnosis variant #496 under Malignant neoplasms",
     "chapter": "II",
     "block": "C00-C97",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "I48.9.6",
+    "icd10_code": "I10.6",
     "code_description": "Clinical diagnosis variant #497 under Diseases of circulatory system",
     "chapter": "IX",
     "block": "I00-I99",
@@ -3486,14 +3486,14 @@
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "E66.9.8",
+    "icd10_code": "E03.9.8",
     "code_description": "Clinical diagnosis variant #499 under Endocrine and metabolic diseases",
     "chapter": "IV",
     "block": "E00-E89",
     "is_valid_clinical_concept": true
   },
   {
-    "icd10_code": "Q78.0.9",
+    "icd10_code": "Q04.0.9",
     "code_description": "Clinical diagnosis variant #500 under Congenital malformations",
     "chapter": "XVII",
     "block": "Q00-Q99",

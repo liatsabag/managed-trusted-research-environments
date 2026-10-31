@@ -2,9 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "version": "1.0.0",
   "organization": {
-    "org_id": "548464744236",
-    "folder_id": "752086743397",
-    "domain": "liatsabag.altostrat.com",
+    "org_id": "123456789012",
+    "folder_id": "123456789012",
+    "domain": "example-tre.org",
     "folder_name": "research-rooms"
   },
   "hub_project": {
@@ -46,8 +46,8 @@
     ]
   },
   "billing_configuration": {
-    "billing_account_id": "017F5D-25BB78-C82332",
-    "billing_source_project_id": "majestic-energy-353306",
+    "billing_account_id": "012345-6789AB-CDEF01",
+    "billing_source_project_id": "gcp-billing-export-sink",
     "billing_dataset_id": "billing",
     "billing_export_table": "gcp_billing_export_v1",
     "authorized_view_name": "view_billing_export"
@@ -89,7 +89,7 @@
       "dua_expiry_date": "2028-04-30",
       "inbound_bucket": "gs://rr-oncology-01-inbound",
       "export_bucket": "gs://rr-oncology-01-export",
-      "cloud_identity_group": "tre-onco-researchers@liatsabag.altostrat.com",
+      "cloud_identity_group": "tre-onco-researchers@example-tre.org",
       "shared_dataset_subscriptions": [
         "hub_shared_clinical",
         "hub_shared_reference"
@@ -99,7 +99,7 @@
           "researcher_id": "res-onc-01",
           "first_name": "Oren",
           "last_name": "Katz",
-          "primary_email": "dr.oren.katz@liatsabag.altostrat.com",
+          "primary_email": "dr.oren.katz@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Principal Investigator",
           "access_state": "ACTIVE",
@@ -109,7 +109,7 @@
           "researcher_id": "res-onc-02",
           "first_name": "Miriam",
           "last_name": "Levy",
-          "primary_email": "prof.miriam.levy@liatsabag.altostrat.com",
+          "primary_email": "prof.miriam.levy@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Oncologist",
           "access_state": "ACTIVE",
@@ -191,7 +191,7 @@
       "dua_expiry_date": "2028-06-15",
       "inbound_bucket": "gs://rr-genomics-02-inbound",
       "export_bucket": "gs://rr-genomics-02-export",
-      "cloud_identity_group": "tre-genom-researchers@liatsabag.altostrat.com",
+      "cloud_identity_group": "tre-genom-researchers@example-tre.org",
       "shared_dataset_subscriptions": [
         "hub_shared_clinical",
         "hub_shared_reference"
@@ -201,7 +201,7 @@
           "researcher_id": "res-gen-01",
           "first_name": "Eitan",
           "last_name": "Rosen",
-          "primary_email": "dr.eitan.rosen@liatsabag.altostrat.com",
+          "primary_email": "dr.eitan.rosen@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Genomics Lead",
           "access_state": "ACTIVE",
@@ -211,7 +211,7 @@
           "researcher_id": "res-gen-02",
           "first_name": "Anat",
           "last_name": "Shapiro",
-          "primary_email": "prof.anat.shapiro@liatsabag.altostrat.com",
+          "primary_email": "prof.anat.shapiro@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Computational Geneticist",
           "access_state": "ACTIVE",
@@ -281,7 +281,7 @@
       "dua_expiry_date": "2028-01-10",
       "inbound_bucket": "gs://rr-cardio-03-inbound",
       "export_bucket": "gs://rr-cardio-03-export",
-      "cloud_identity_group": "tre-cardio-researchers@liatsabag.altostrat.com",
+      "cloud_identity_group": "tre-cardio-researchers@example-tre.org",
       "shared_dataset_subscriptions": [
         "hub_shared_clinical",
         "hub_shared_reference"
@@ -291,7 +291,7 @@
           "researcher_id": "res-card-01",
           "first_name": "Maya",
           "last_name": "Lin",
-          "primary_email": "dr.maya.lin@liatsabag.altostrat.com",
+          "primary_email": "dr.maya.lin@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Cardiology Lead",
           "access_state": "ACTIVE",
@@ -301,7 +301,7 @@
           "researcher_id": "res-card-02",
           "first_name": "Daniel",
           "last_name": "Cohen",
-          "primary_email": "dr.daniel.cohen@liatsabag.altostrat.com",
+          "primary_email": "dr.daniel.cohen@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Epidemiologist",
           "access_state": "ACTIVE",
@@ -382,7 +382,7 @@
       "dua_expiry_date": "2027-08-30",
       "inbound_bucket": "gs://rr-neurology-04-inbound",
       "export_bucket": "gs://rr-neurology-04-export",
-      "cloud_identity_group": "tre-neuro-researchers@liatsabag.altostrat.com",
+      "cloud_identity_group": "tre-neuro-researchers@example-tre.org",
       "shared_dataset_subscriptions": [
         "hub_shared_clinical",
         "hub_shared_reference"
@@ -392,7 +392,7 @@
           "researcher_id": "res-neur-01",
           "first_name": "Noa",
           "last_name": "Shapira",
-          "primary_email": "dr.noa.shapira@liatsabag.altostrat.com",
+          "primary_email": "dr.noa.shapira@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Neuroimaging Specialist",
           "access_state": "ACTIVE",
@@ -402,7 +402,7 @@
           "researcher_id": "res-neur-02",
           "first_name": "Rami",
           "last_name": "Friedman",
-          "primary_email": "dr.rami.friedman@liatsabag.altostrat.com",
+          "primary_email": "dr.rami.friedman@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Cognitive Neurologist",
           "access_state": "ACTIVE",
@@ -469,7 +469,7 @@
       "proposed_room_id": "rr-immunology-05",
       "room_name": "Immunology Research Room",
       "institute_id": "inst-mskcc",
-      "requested_by": "dr.chen@liatsabag.altostrat.com",
+      "requested_by": "dr.chen@example-tre.org",
       "main_researcher": "Dr. Wei Chen, PhD",
       "purpose_of_research": "Investigate novel autoimmune biomarkers, cytokine profiling, and targeted biological therapeutics for rheumatoid arthritis.",
       "location": "New York, USA (MSKCC)",
@@ -488,7 +488,7 @@
       "proposed_room_id": "rr-pediatrics-06",
       "room_name": "Pediatrics Research Room",
       "institute_id": "inst-broad",
-      "requested_by": "dr.vance@liatsabag.altostrat.com",
+      "requested_by": "dr.vance@example-tre.org",
       "main_researcher": "Dr. Sarah Vance, MD",
       "purpose_of_research": "Longitudinal pediatric genomic screening and rare genetic metabolic disorder therapeutic response tracking.",
       "location": "Cambridge, MA, USA (Broad Institute)",
@@ -503,5 +503,5 @@
       "summary_reason": "Helsinki Ethics Committee / IRB Approval certificate expired on 2026-06-30."
     }
   ],
-  "admin_domain": "liatsabag.altostrat.com"
+  "admin_domain": "example-tre.org"
 }

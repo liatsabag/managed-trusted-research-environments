@@ -26,10 +26,10 @@ AI_REGION = os.getenv("VERTEX_AI_REGION", "us-central1")
 AI_MODEL = os.getenv("VERTEX_AI_MODEL", "gemini-2.5-flash")
 
 RESEARCHER_WEIGHTS = {
-    "dr.oren.katz@liatsabag.altostrat.com": 0.65, "prof.miriam.levy@liatsabag.altostrat.com": 0.35,
-    "dr.eitan.rosen@liatsabag.altostrat.com": 0.60, "prof.anat.shapiro@liatsabag.altostrat.com": 0.40,
-    "dr.maya.lin@liatsabag.altostrat.com": 0.55, "dr.daniel.cohen@liatsabag.altostrat.com": 0.45,
-    "dr.noa.shapira@liatsabag.altostrat.com": 0.70, "dr.rami.friedman@liatsabag.altostrat.com": 0.30,
+    "dr.oren.katz@example-tre.org": 0.65, "prof.miriam.levy@example-tre.org": 0.35,
+    "dr.eitan.rosen@example-tre.org": 0.60, "prof.anat.shapiro@example-tre.org": 0.40,
+    "dr.maya.lin@example-tre.org": 0.55, "dr.daniel.cohen@example-tre.org": 0.45,
+    "dr.noa.shapira@example-tre.org": 0.70, "dr.rami.friedman@example-tre.org": 0.30,
 }
 
 

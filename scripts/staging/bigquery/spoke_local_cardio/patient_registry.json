@@ -2,59 +2,59 @@
   {
     "patient_id": "PAT-CARD-100",
     "enrollment_date": "2022-06-01",
-    "age_at_intake": 62,
+    "age_at_intake": 70,
     "sex": "M",
-    "baseline_sbp": 160,
-    "baseline_dbp": 103,
-    "bmi": 35.1,
-    "hypertension_history": true,
-    "diabetes_history": false,
+    "baseline_sbp": 170,
+    "baseline_dbp": 84,
+    "bmi": 31.0,
+    "hypertension_history": false,
+    "diabetes_history": true,
     "smoker": false
   },
   {
     "patient_id": "PAT-CARD-101",
     "enrollment_date": "2022-06-02",
-    "age_at_intake": 83,
+    "age_at_intake": 56,
     "sex": "F",
-    "baseline_sbp": 170,
-    "baseline_dbp": 73,
-    "bmi": 22.9,
-    "hypertension_history": false,
+    "baseline_sbp": 123,
+    "baseline_dbp": 104,
+    "bmi": 33.5,
+    "hypertension_history": true,
     "diabetes_history": true,
     "smoker": false
   },
   {
     "patient_id": "PAT-CARD-102",
     "enrollment_date": "2022-06-03",
-    "age_at_intake": 54,
+    "age_at_intake": 47,
     "sex": "M",
-    "baseline_sbp": 127,
-    "baseline_dbp": 101,
-    "bmi": 22.1,
-    "hypertension_history": true,
-    "diabetes_history": true,
+    "baseline_sbp": 168,
+    "baseline_dbp": 85,
+    "bmi": 33.8,
+    "hypertension_history": false,
+    "diabetes_history": false,
     "smoker": false
   },
   {
     "patient_id": "PAT-CARD-103",
     "enrollment_date": "2022-06-04",
-    "age_at_intake": 75,
+    "age_at_intake": 80,
     "sex": "F",
-    "baseline_sbp": 168,
-    "baseline_dbp": 80,
-    "bmi": 22.0,
-    "hypertension_history": true,
-    "diabetes_history": false,
-    "smoker": false
+    "baseline_sbp": 155,
+    "baseline_dbp": 98,
+    "bmi": 32.4,
+    "hypertension_history": false,
+    "diabetes_history": true,
+    "smoker": true
   },
   {
     "patient_id": "PAT-CARD-104",
     "enrollment_date": "2022-06-05",
-    "age_at_intake": 59,
+    "age_at_intake": 78,
     "sex": "M",
-    "baseline_sbp": 163,
-    "baseline_dbp": 105,
-    "bmi": 34.1,
+    "baseline_sbp": 165,
+    "baseline_dbp": 99,
+    "bmi": 26.8,
     "hypertension_history": true,
     "diabetes_history": false,
     "smoker": false
@@ -62,32 +62,68 @@
   {
     "patient_id": "PAT-CARD-105",
     "enrollment_date": "2022-06-06",
-    "age_at_intake": 72,
+    "age_at_intake": 66,
     "sex": "F",
-    "baseline_sbp": 144,
-    "baseline_dbp": 84,
-    "bmi": 26.4,
-    "hypertension_history": true,
+    "baseline_sbp": 146,
+    "baseline_dbp": 79,
+    "bmi": 35.3,
+    "hypertension_history": false,
     "diabetes_history": true,
-    "smoker": true
+    "smoker": false
   },
   {
     "patient_id": "PAT-CARD-106",
     "enrollment_date": "2022-06-07",
-    "age_at_intake": 56,
+    "age_at_intake": 84,
     "sex": "M",
-    "baseline_sbp": 114,
-    "baseline_dbp": 76,
-    "bmi": 29.9,
+    "baseline_sbp": 157,
+    "baseline_dbp": 93,
+    "bmi": 28.9,
     "hypertension_history": true,
-    "diabetes_history": false,
+    "diabetes_history": true,
     "smoker": false
   },
   {
     "patient_id": "PAT-CARD-107",
     "enrollment_date": "2022-06-08",
-    "age_at_intake": 81,
+    "age_at_intake": 48,
     "sex": "F",
+    "baseline_sbp": 151,
+    "baseline_dbp": 84,
+    "bmi": 27.9,
+    "hypertension_history": true,
+    "diabetes_history": false,
+    "smoker": true
+  },
+  {
+    "patient_id": "PAT-CARD-108",
+    "enrollment_date": "2022-06-09",
+    "age_at_intake": 48,
+    "sex": "M",
+    "baseline_sbp": 165,
+    "baseline_dbp": 87,
+    "bmi": 24.9,
+    "hypertension_history": true,
+    "diabetes_history": true,
+    "smoker": false
+  },
+  {
+    "patient_id": "PAT-CARD-109",
+    "enrollment_date": "2022-06-10",
+    "age_at_intake": 79,
+    "sex": "F",
+    "baseline_sbp": 132,
+    "baseline_dbp": 72,
+    "bmi": 23.1,
+    "hypertension_history": true,
+    "diabetes_history": false,
+    "smoker": false
+  },
+  {
+    "patient_id": "PAT-CARD-110",
+    "enrollment_date": "2022-06-11",
+    "age_at_intake": 55,
+    "sex": "M",
     "baseline_sbp": 144,
     "baseline_dbp": 86,
     "bmi": 32.8,
@@ -96,10 +132,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-108",
-    "enrollment_date": "2022-06-09",
+    "patient_id": "PAT-CARD-111",
+    "enrollment_date": "2022-06-12",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 123,
     "baseline_dbp": 79,
     "bmi": 32.4,
@@ -108,10 +144,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-109",
-    "enrollment_date": "2022-06-10",
+    "patient_id": "PAT-CARD-112",
+    "enrollment_date": "2022-06-13",
     "age_at_intake": 69,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 161,
     "baseline_dbp": 81,
     "bmi": 22.3,
@@ -120,10 +156,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-110",
-    "enrollment_date": "2022-06-11",
+    "patient_id": "PAT-CARD-113",
+    "enrollment_date": "2022-06-14",
     "age_at_intake": 54,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 173,
     "baseline_dbp": 78,
     "bmi": 25.5,
@@ -132,10 +168,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-111",
-    "enrollment_date": "2022-06-12",
+    "patient_id": "PAT-CARD-114",
+    "enrollment_date": "2022-06-15",
     "age_at_intake": 81,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 164,
     "baseline_dbp": 100,
     "bmi": 25.5,
@@ -144,10 +180,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-112",
-    "enrollment_date": "2022-06-13",
+    "patient_id": "PAT-CARD-115",
+    "enrollment_date": "2022-06-16",
     "age_at_intake": 82,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 129,
     "baseline_dbp": 92,
     "bmi": 23.6,
@@ -156,10 +192,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-113",
-    "enrollment_date": "2022-06-14",
+    "patient_id": "PAT-CARD-116",
+    "enrollment_date": "2022-06-17",
     "age_at_intake": 85,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 166,
     "baseline_dbp": 91,
     "bmi": 36.0,
@@ -168,10 +204,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-114",
-    "enrollment_date": "2022-06-15",
+    "patient_id": "PAT-CARD-117",
+    "enrollment_date": "2022-06-18",
     "age_at_intake": 55,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 110,
     "baseline_dbp": 72,
     "bmi": 35.0,
@@ -180,10 +216,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-115",
-    "enrollment_date": "2022-06-16",
+    "patient_id": "PAT-CARD-118",
+    "enrollment_date": "2022-06-19",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 116,
     "baseline_dbp": 86,
     "bmi": 21.8,
@@ -192,10 +228,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-116",
-    "enrollment_date": "2022-06-17",
+    "patient_id": "PAT-CARD-119",
+    "enrollment_date": "2022-06-20",
     "age_at_intake": 83,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 136,
     "baseline_dbp": 103,
     "bmi": 28.6,
@@ -204,10 +240,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-117",
-    "enrollment_date": "2022-06-18",
+    "patient_id": "PAT-CARD-120",
+    "enrollment_date": "2022-06-21",
     "age_at_intake": 68,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 137,
     "baseline_dbp": 84,
     "bmi": 27.0,
@@ -216,10 +252,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-118",
-    "enrollment_date": "2022-06-19",
+    "patient_id": "PAT-CARD-121",
+    "enrollment_date": "2022-06-22",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 86,
     "bmi": 30.1,
@@ -228,10 +264,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-119",
-    "enrollment_date": "2022-06-20",
+    "patient_id": "PAT-CARD-122",
+    "enrollment_date": "2022-06-23",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 111,
     "baseline_dbp": 76,
     "bmi": 33.0,
@@ -240,10 +276,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-120",
-    "enrollment_date": "2022-06-21",
+    "patient_id": "PAT-CARD-123",
+    "enrollment_date": "2022-06-24",
     "age_at_intake": 49,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 125,
     "baseline_dbp": 104,
     "bmi": 28.2,
@@ -252,10 +288,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-121",
-    "enrollment_date": "2022-06-22",
+    "patient_id": "PAT-CARD-124",
+    "enrollment_date": "2022-06-25",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 153,
     "baseline_dbp": 86,
     "bmi": 24.5,
@@ -264,10 +300,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-122",
-    "enrollment_date": "2022-06-23",
+    "patient_id": "PAT-CARD-125",
+    "enrollment_date": "2022-06-26",
     "age_at_intake": 49,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 127,
     "baseline_dbp": 105,
     "bmi": 25.9,
@@ -276,10 +312,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-123",
-    "enrollment_date": "2022-06-24",
+    "patient_id": "PAT-CARD-126",
+    "enrollment_date": "2022-06-27",
     "age_at_intake": 48,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 157,
     "baseline_dbp": 105,
     "bmi": 35.1,
@@ -288,10 +324,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-124",
-    "enrollment_date": "2022-06-25",
+    "patient_id": "PAT-CARD-127",
+    "enrollment_date": "2022-06-28",
     "age_at_intake": 50,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 135,
     "baseline_dbp": 77,
     "bmi": 30.0,
@@ -300,10 +336,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-125",
-    "enrollment_date": "2022-06-26",
+    "patient_id": "PAT-CARD-128",
+    "enrollment_date": "2022-06-29",
     "age_at_intake": 65,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 123,
     "baseline_dbp": 91,
     "bmi": 22.3,
@@ -312,10 +348,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-126",
-    "enrollment_date": "2022-06-27",
+    "patient_id": "PAT-CARD-129",
+    "enrollment_date": "2022-06-30",
     "age_at_intake": 64,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 144,
     "baseline_dbp": 71,
     "bmi": 32.0,
@@ -324,10 +360,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-127",
-    "enrollment_date": "2022-06-28",
+    "patient_id": "PAT-CARD-130",
+    "enrollment_date": "2022-07-01",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 140,
     "baseline_dbp": 85,
     "bmi": 36.5,
@@ -336,10 +372,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-128",
-    "enrollment_date": "2022-06-29",
+    "patient_id": "PAT-CARD-131",
+    "enrollment_date": "2022-07-02",
     "age_at_intake": 59,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 151,
     "baseline_dbp": 103,
     "bmi": 22.4,
@@ -348,10 +384,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-129",
-    "enrollment_date": "2022-06-30",
+    "patient_id": "PAT-CARD-132",
+    "enrollment_date": "2022-07-03",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 153,
     "baseline_dbp": 102,
     "bmi": 22.6,
@@ -360,10 +396,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-130",
-    "enrollment_date": "2022-07-01",
+    "patient_id": "PAT-CARD-133",
+    "enrollment_date": "2022-07-04",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 152,
     "baseline_dbp": 74,
     "bmi": 26.9,
@@ -372,10 +408,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-131",
-    "enrollment_date": "2022-07-02",
+    "patient_id": "PAT-CARD-134",
+    "enrollment_date": "2022-07-05",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 169,
     "baseline_dbp": 82,
     "bmi": 22.3,
@@ -384,10 +420,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-132",
-    "enrollment_date": "2022-07-03",
+    "patient_id": "PAT-CARD-135",
+    "enrollment_date": "2022-07-06",
     "age_at_intake": 62,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 171,
     "baseline_dbp": 73,
     "bmi": 26.1,
@@ -396,10 +432,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-133",
-    "enrollment_date": "2022-07-04",
+    "patient_id": "PAT-CARD-136",
+    "enrollment_date": "2022-07-07",
     "age_at_intake": 62,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 123,
     "baseline_dbp": 79,
     "bmi": 31.1,
@@ -408,10 +444,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-134",
-    "enrollment_date": "2022-07-05",
+    "patient_id": "PAT-CARD-137",
+    "enrollment_date": "2022-07-08",
     "age_at_intake": 57,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 168,
     "baseline_dbp": 101,
     "bmi": 33.5,
@@ -420,10 +456,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-135",
-    "enrollment_date": "2022-07-06",
+    "patient_id": "PAT-CARD-138",
+    "enrollment_date": "2022-07-09",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 167,
     "baseline_dbp": 72,
     "bmi": 23.3,
@@ -432,10 +468,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-136",
-    "enrollment_date": "2022-07-07",
+    "patient_id": "PAT-CARD-139",
+    "enrollment_date": "2022-07-10",
     "age_at_intake": 45,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 144,
     "baseline_dbp": 76,
     "bmi": 30.6,
@@ -444,10 +480,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-137",
-    "enrollment_date": "2022-07-08",
+    "patient_id": "PAT-CARD-140",
+    "enrollment_date": "2022-07-11",
     "age_at_intake": 46,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 152,
     "baseline_dbp": 99,
     "bmi": 30.5,
@@ -456,10 +492,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-138",
-    "enrollment_date": "2022-07-09",
+    "patient_id": "PAT-CARD-141",
+    "enrollment_date": "2022-07-12",
     "age_at_intake": 77,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 116,
     "baseline_dbp": 81,
     "bmi": 29.1,
@@ -468,10 +504,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-139",
-    "enrollment_date": "2022-07-10",
+    "patient_id": "PAT-CARD-142",
+    "enrollment_date": "2022-07-13",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 150,
     "baseline_dbp": 93,
     "bmi": 29.0,
@@ -480,10 +516,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-140",
-    "enrollment_date": "2022-07-11",
+    "patient_id": "PAT-CARD-143",
+    "enrollment_date": "2022-07-14",
     "age_at_intake": 54,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 126,
     "baseline_dbp": 78,
     "bmi": 22.6,
@@ -492,10 +528,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-141",
-    "enrollment_date": "2022-07-12",
+    "patient_id": "PAT-CARD-144",
+    "enrollment_date": "2022-07-15",
     "age_at_intake": 84,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 118,
     "baseline_dbp": 105,
     "bmi": 27.8,
@@ -504,10 +540,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-142",
-    "enrollment_date": "2022-07-13",
+    "patient_id": "PAT-CARD-145",
+    "enrollment_date": "2022-07-16",
     "age_at_intake": 64,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 120,
     "baseline_dbp": 90,
     "bmi": 36.8,
@@ -516,10 +552,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-143",
-    "enrollment_date": "2022-07-14",
+    "patient_id": "PAT-CARD-146",
+    "enrollment_date": "2022-07-17",
     "age_at_intake": 71,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 153,
     "baseline_dbp": 102,
     "bmi": 36.3,
@@ -528,10 +564,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-144",
-    "enrollment_date": "2022-07-15",
+    "patient_id": "PAT-CARD-147",
+    "enrollment_date": "2022-07-18",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 175,
     "baseline_dbp": 74,
     "bmi": 31.2,
@@ -540,10 +576,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-145",
-    "enrollment_date": "2022-07-16",
+    "patient_id": "PAT-CARD-148",
+    "enrollment_date": "2022-07-19",
     "age_at_intake": 64,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 111,
     "baseline_dbp": 93,
     "bmi": 24.9,
@@ -552,10 +588,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-146",
-    "enrollment_date": "2022-07-17",
+    "patient_id": "PAT-CARD-149",
+    "enrollment_date": "2022-07-20",
     "age_at_intake": 85,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 137,
     "baseline_dbp": 72,
     "bmi": 32.2,
@@ -564,10 +600,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-147",
-    "enrollment_date": "2022-07-18",
+    "patient_id": "PAT-CARD-150",
+    "enrollment_date": "2022-07-21",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 139,
     "baseline_dbp": 87,
     "bmi": 27.0,
@@ -576,10 +612,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-148",
-    "enrollment_date": "2022-07-19",
+    "patient_id": "PAT-CARD-151",
+    "enrollment_date": "2022-07-22",
     "age_at_intake": 46,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 170,
     "baseline_dbp": 80,
     "bmi": 27.5,
@@ -588,10 +624,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-149",
-    "enrollment_date": "2022-07-20",
+    "patient_id": "PAT-CARD-152",
+    "enrollment_date": "2022-07-23",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 94,
     "bmi": 23.5,
@@ -600,10 +636,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-150",
-    "enrollment_date": "2022-07-21",
+    "patient_id": "PAT-CARD-153",
+    "enrollment_date": "2022-07-24",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 113,
     "baseline_dbp": 81,
     "bmi": 29.0,
@@ -612,10 +648,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-151",
-    "enrollment_date": "2022-07-22",
+    "patient_id": "PAT-CARD-154",
+    "enrollment_date": "2022-07-25",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 130,
     "baseline_dbp": 78,
     "bmi": 35.6,
@@ -624,10 +660,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-152",
-    "enrollment_date": "2022-07-23",
+    "patient_id": "PAT-CARD-155",
+    "enrollment_date": "2022-07-26",
     "age_at_intake": 72,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 124,
     "baseline_dbp": 99,
     "bmi": 23.2,
@@ -636,10 +672,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-153",
-    "enrollment_date": "2022-07-24",
+    "patient_id": "PAT-CARD-156",
+    "enrollment_date": "2022-07-27",
     "age_at_intake": 57,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 153,
     "baseline_dbp": 103,
     "bmi": 23.1,
@@ -648,10 +684,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-154",
-    "enrollment_date": "2022-07-25",
+    "patient_id": "PAT-CARD-157",
+    "enrollment_date": "2022-07-28",
     "age_at_intake": 54,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 90,
     "bmi": 21.7,
@@ -660,10 +696,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-155",
-    "enrollment_date": "2022-07-26",
+    "patient_id": "PAT-CARD-158",
+    "enrollment_date": "2022-07-29",
     "age_at_intake": 68,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 81,
     "bmi": 22.6,
@@ -672,10 +708,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-156",
-    "enrollment_date": "2022-07-27",
+    "patient_id": "PAT-CARD-159",
+    "enrollment_date": "2022-07-30",
     "age_at_intake": 85,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 153,
     "baseline_dbp": 100,
     "bmi": 31.1,
@@ -684,10 +720,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-157",
-    "enrollment_date": "2022-07-28",
+    "patient_id": "PAT-CARD-160",
+    "enrollment_date": "2022-07-31",
     "age_at_intake": 46,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 117,
     "baseline_dbp": 91,
     "bmi": 28.6,
@@ -696,10 +732,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-158",
-    "enrollment_date": "2022-07-29",
+    "patient_id": "PAT-CARD-161",
+    "enrollment_date": "2022-08-01",
     "age_at_intake": 50,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 153,
     "baseline_dbp": 80,
     "bmi": 24.0,
@@ -708,10 +744,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-159",
-    "enrollment_date": "2022-07-30",
+    "patient_id": "PAT-CARD-162",
+    "enrollment_date": "2022-08-02",
     "age_at_intake": 74,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 97,
     "bmi": 26.9,
@@ -720,10 +756,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-160",
-    "enrollment_date": "2022-07-31",
+    "patient_id": "PAT-CARD-163",
+    "enrollment_date": "2022-08-03",
     "age_at_intake": 60,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 81,
     "bmi": 31.6,
@@ -732,10 +768,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-161",
-    "enrollment_date": "2022-08-01",
+    "patient_id": "PAT-CARD-164",
+    "enrollment_date": "2022-08-04",
     "age_at_intake": 70,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 154,
     "baseline_dbp": 80,
     "bmi": 24.4,
@@ -744,10 +780,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-162",
-    "enrollment_date": "2022-08-02",
+    "patient_id": "PAT-CARD-165",
+    "enrollment_date": "2022-08-05",
     "age_at_intake": 63,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 130,
     "baseline_dbp": 79,
     "bmi": 35.2,
@@ -756,10 +792,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-163",
-    "enrollment_date": "2022-08-03",
+    "patient_id": "PAT-CARD-166",
+    "enrollment_date": "2022-08-06",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 147,
     "baseline_dbp": 102,
     "bmi": 36.7,
@@ -768,10 +804,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-164",
-    "enrollment_date": "2022-08-04",
+    "patient_id": "PAT-CARD-167",
+    "enrollment_date": "2022-08-07",
     "age_at_intake": 53,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 147,
     "baseline_dbp": 91,
     "bmi": 21.8,
@@ -780,10 +816,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-165",
-    "enrollment_date": "2022-08-05",
+    "patient_id": "PAT-CARD-168",
+    "enrollment_date": "2022-08-08",
     "age_at_intake": 46,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 150,
     "baseline_dbp": 105,
     "bmi": 32.0,
@@ -792,10 +828,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-166",
-    "enrollment_date": "2022-08-06",
+    "patient_id": "PAT-CARD-169",
+    "enrollment_date": "2022-08-09",
     "age_at_intake": 81,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 138,
     "baseline_dbp": 80,
     "bmi": 27.4,
@@ -804,10 +840,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-167",
-    "enrollment_date": "2022-08-07",
+    "patient_id": "PAT-CARD-170",
+    "enrollment_date": "2022-08-10",
     "age_at_intake": 51,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 112,
     "baseline_dbp": 78,
     "bmi": 30.6,
@@ -816,10 +852,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-168",
-    "enrollment_date": "2022-08-08",
+    "patient_id": "PAT-CARD-171",
+    "enrollment_date": "2022-08-11",
     "age_at_intake": 76,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 165,
     "baseline_dbp": 91,
     "bmi": 35.7,
@@ -828,10 +864,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-169",
-    "enrollment_date": "2022-08-09",
+    "patient_id": "PAT-CARD-172",
+    "enrollment_date": "2022-08-12",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 164,
     "baseline_dbp": 78,
     "bmi": 21.7,
@@ -840,10 +876,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-170",
-    "enrollment_date": "2022-08-10",
+    "patient_id": "PAT-CARD-173",
+    "enrollment_date": "2022-08-13",
     "age_at_intake": 76,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 134,
     "baseline_dbp": 86,
     "bmi": 30.1,
@@ -852,10 +888,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-171",
-    "enrollment_date": "2022-08-11",
+    "patient_id": "PAT-CARD-174",
+    "enrollment_date": "2022-08-14",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 128,
     "baseline_dbp": 95,
     "bmi": 29.3,
@@ -864,10 +900,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-172",
-    "enrollment_date": "2022-08-12",
+    "patient_id": "PAT-CARD-175",
+    "enrollment_date": "2022-08-15",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 171,
     "baseline_dbp": 92,
     "bmi": 25.8,
@@ -876,10 +912,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-173",
-    "enrollment_date": "2022-08-13",
+    "patient_id": "PAT-CARD-176",
+    "enrollment_date": "2022-08-16",
     "age_at_intake": 71,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 175,
     "baseline_dbp": 77,
     "bmi": 27.0,
@@ -888,10 +924,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-174",
-    "enrollment_date": "2022-08-14",
+    "patient_id": "PAT-CARD-177",
+    "enrollment_date": "2022-08-17",
     "age_at_intake": 83,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 163,
     "baseline_dbp": 105,
     "bmi": 21.6,
@@ -900,10 +936,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-175",
-    "enrollment_date": "2022-08-15",
+    "patient_id": "PAT-CARD-178",
+    "enrollment_date": "2022-08-18",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 125,
     "baseline_dbp": 99,
     "bmi": 32.8,
@@ -912,10 +948,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-176",
-    "enrollment_date": "2022-08-16",
+    "patient_id": "PAT-CARD-179",
+    "enrollment_date": "2022-08-19",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 152,
     "baseline_dbp": 88,
     "bmi": 35.0,
@@ -924,10 +960,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-177",
-    "enrollment_date": "2022-08-17",
+    "patient_id": "PAT-CARD-180",
+    "enrollment_date": "2022-08-20",
     "age_at_intake": 77,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 152,
     "baseline_dbp": 70,
     "bmi": 24.6,
@@ -936,10 +972,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-178",
-    "enrollment_date": "2022-08-18",
+    "patient_id": "PAT-CARD-181",
+    "enrollment_date": "2022-08-21",
     "age_at_intake": 58,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 113,
     "baseline_dbp": 89,
     "bmi": 34.9,
@@ -948,10 +984,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-179",
-    "enrollment_date": "2022-08-19",
+    "patient_id": "PAT-CARD-182",
+    "enrollment_date": "2022-08-22",
     "age_at_intake": 80,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 126,
     "baseline_dbp": 96,
     "bmi": 21.8,
@@ -960,10 +996,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-180",
-    "enrollment_date": "2022-08-20",
+    "patient_id": "PAT-CARD-183",
+    "enrollment_date": "2022-08-23",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 173,
     "baseline_dbp": 84,
     "bmi": 34.7,
@@ -972,10 +1008,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-181",
-    "enrollment_date": "2022-08-21",
+    "patient_id": "PAT-CARD-184",
+    "enrollment_date": "2022-08-24",
     "age_at_intake": 70,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 139,
     "baseline_dbp": 88,
     "bmi": 35.4,
@@ -984,10 +1020,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-182",
-    "enrollment_date": "2022-08-22",
+    "patient_id": "PAT-CARD-185",
+    "enrollment_date": "2022-08-25",
     "age_at_intake": 77,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 128,
     "baseline_dbp": 92,
     "bmi": 23.5,
@@ -996,10 +1032,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-183",
-    "enrollment_date": "2022-08-23",
+    "patient_id": "PAT-CARD-186",
+    "enrollment_date": "2022-08-26",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 83,
     "bmi": 32.4,
@@ -1008,10 +1044,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-184",
-    "enrollment_date": "2022-08-24",
+    "patient_id": "PAT-CARD-187",
+    "enrollment_date": "2022-08-27",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 167,
     "baseline_dbp": 92,
     "bmi": 26.4,
@@ -1020,10 +1056,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-185",
-    "enrollment_date": "2022-08-25",
+    "patient_id": "PAT-CARD-188",
+    "enrollment_date": "2022-08-28",
     "age_at_intake": 72,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 154,
     "baseline_dbp": 86,
     "bmi": 22.6,
@@ -1032,10 +1068,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-186",
-    "enrollment_date": "2022-08-26",
+    "patient_id": "PAT-CARD-189",
+    "enrollment_date": "2022-08-29",
     "age_at_intake": 75,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 145,
     "baseline_dbp": 86,
     "bmi": 25.3,
@@ -1044,10 +1080,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-187",
-    "enrollment_date": "2022-08-27",
+    "patient_id": "PAT-CARD-190",
+    "enrollment_date": "2022-08-30",
     "age_at_intake": 45,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 133,
     "baseline_dbp": 78,
     "bmi": 36.0,
@@ -1056,10 +1092,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-188",
-    "enrollment_date": "2022-08-28",
+    "patient_id": "PAT-CARD-191",
+    "enrollment_date": "2022-08-31",
     "age_at_intake": 73,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 84,
     "bmi": 23.9,
@@ -1068,10 +1104,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-189",
-    "enrollment_date": "2022-08-29",
+    "patient_id": "PAT-CARD-192",
+    "enrollment_date": "2022-09-01",
     "age_at_intake": 79,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 170,
     "baseline_dbp": 73,
     "bmi": 32.0,
@@ -1080,10 +1116,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-190",
-    "enrollment_date": "2022-08-30",
+    "patient_id": "PAT-CARD-193",
+    "enrollment_date": "2022-09-02",
     "age_at_intake": 85,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 155,
     "baseline_dbp": 78,
     "bmi": 22.4,
@@ -1092,10 +1128,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-191",
-    "enrollment_date": "2022-08-31",
+    "patient_id": "PAT-CARD-194",
+    "enrollment_date": "2022-09-03",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 146,
     "baseline_dbp": 76,
     "bmi": 35.1,
@@ -1104,10 +1140,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-192",
-    "enrollment_date": "2022-09-01",
+    "patient_id": "PAT-CARD-195",
+    "enrollment_date": "2022-09-04",
     "age_at_intake": 76,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 170,
     "baseline_dbp": 99,
     "bmi": 26.7,
@@ -1116,10 +1152,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-193",
-    "enrollment_date": "2022-09-02",
+    "patient_id": "PAT-CARD-196",
+    "enrollment_date": "2022-09-05",
     "age_at_intake": 85,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 171,
     "baseline_dbp": 100,
     "bmi": 24.7,
@@ -1128,10 +1164,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-194",
-    "enrollment_date": "2022-09-03",
+    "patient_id": "PAT-CARD-197",
+    "enrollment_date": "2022-09-06",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 152,
     "baseline_dbp": 100,
     "bmi": 24.0,
@@ -1140,10 +1176,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-195",
-    "enrollment_date": "2022-09-04",
+    "patient_id": "PAT-CARD-198",
+    "enrollment_date": "2022-09-07",
     "age_at_intake": 62,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 95,
     "bmi": 30.8,
@@ -1152,10 +1188,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-196",
-    "enrollment_date": "2022-09-05",
+    "patient_id": "PAT-CARD-199",
+    "enrollment_date": "2022-09-08",
     "age_at_intake": 56,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 137,
     "baseline_dbp": 105,
     "bmi": 35.6,
@@ -1164,10 +1200,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-197",
-    "enrollment_date": "2022-09-06",
+    "patient_id": "PAT-CARD-200",
+    "enrollment_date": "2022-09-09",
     "age_at_intake": 50,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 120,
     "baseline_dbp": 103,
     "bmi": 22.3,
@@ -1176,10 +1212,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-198",
-    "enrollment_date": "2022-09-07",
+    "patient_id": "PAT-CARD-201",
+    "enrollment_date": "2022-09-10",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 152,
     "baseline_dbp": 78,
     "bmi": 32.6,
@@ -1188,10 +1224,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-199",
-    "enrollment_date": "2022-09-08",
+    "patient_id": "PAT-CARD-202",
+    "enrollment_date": "2022-09-11",
     "age_at_intake": 45,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 86,
     "bmi": 35.9,
@@ -1200,10 +1236,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-200",
-    "enrollment_date": "2022-09-09",
+    "patient_id": "PAT-CARD-203",
+    "enrollment_date": "2022-09-12",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 130,
     "baseline_dbp": 105,
     "bmi": 27.4,
@@ -1212,10 +1248,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-201",
-    "enrollment_date": "2022-09-10",
+    "patient_id": "PAT-CARD-204",
+    "enrollment_date": "2022-09-13",
     "age_at_intake": 53,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 172,
     "baseline_dbp": 100,
     "bmi": 31.6,
@@ -1224,10 +1260,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-202",
-    "enrollment_date": "2022-09-11",
+    "patient_id": "PAT-CARD-205",
+    "enrollment_date": "2022-09-14",
     "age_at_intake": 49,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 138,
     "baseline_dbp": 97,
     "bmi": 31.7,
@@ -1236,10 +1272,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-203",
-    "enrollment_date": "2022-09-12",
+    "patient_id": "PAT-CARD-206",
+    "enrollment_date": "2022-09-15",
     "age_at_intake": 65,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 167,
     "baseline_dbp": 74,
     "bmi": 28.1,
@@ -1248,10 +1284,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-204",
-    "enrollment_date": "2022-09-13",
+    "patient_id": "PAT-CARD-207",
+    "enrollment_date": "2022-09-16",
     "age_at_intake": 59,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 119,
     "baseline_dbp": 71,
     "bmi": 22.7,
@@ -1260,10 +1296,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-205",
-    "enrollment_date": "2022-09-14",
+    "patient_id": "PAT-CARD-208",
+    "enrollment_date": "2022-09-17",
     "age_at_intake": 62,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 111,
     "baseline_dbp": 93,
     "bmi": 33.2,
@@ -1272,10 +1308,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-206",
-    "enrollment_date": "2022-09-15",
+    "patient_id": "PAT-CARD-209",
+    "enrollment_date": "2022-09-18",
     "age_at_intake": 46,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 138,
     "baseline_dbp": 105,
     "bmi": 22.8,
@@ -1284,10 +1320,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-207",
-    "enrollment_date": "2022-09-16",
+    "patient_id": "PAT-CARD-210",
+    "enrollment_date": "2022-09-19",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 147,
     "baseline_dbp": 71,
     "bmi": 33.8,
@@ -1296,10 +1332,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-208",
-    "enrollment_date": "2022-09-17",
+    "patient_id": "PAT-CARD-211",
+    "enrollment_date": "2022-09-20",
     "age_at_intake": 78,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 157,
     "baseline_dbp": 82,
     "bmi": 25.1,
@@ -1308,10 +1344,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-209",
-    "enrollment_date": "2022-09-18",
+    "patient_id": "PAT-CARD-212",
+    "enrollment_date": "2022-09-21",
     "age_at_intake": 66,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 166,
     "baseline_dbp": 95,
     "bmi": 23.8,
@@ -1320,10 +1356,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-210",
-    "enrollment_date": "2022-09-19",
+    "patient_id": "PAT-CARD-213",
+    "enrollment_date": "2022-09-22",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 131,
     "baseline_dbp": 94,
     "bmi": 35.7,
@@ -1332,10 +1368,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-211",
-    "enrollment_date": "2022-09-20",
+    "patient_id": "PAT-CARD-214",
+    "enrollment_date": "2022-09-23",
     "age_at_intake": 79,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 156,
     "baseline_dbp": 102,
     "bmi": 33.5,
@@ -1344,10 +1380,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-212",
-    "enrollment_date": "2022-09-21",
+    "patient_id": "PAT-CARD-215",
+    "enrollment_date": "2022-09-24",
     "age_at_intake": 78,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 165,
     "baseline_dbp": 79,
     "bmi": 27.2,
@@ -1356,10 +1392,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-213",
-    "enrollment_date": "2022-09-22",
+    "patient_id": "PAT-CARD-216",
+    "enrollment_date": "2022-09-25",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 172,
     "baseline_dbp": 88,
     "bmi": 24.4,
@@ -1368,10 +1404,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-214",
-    "enrollment_date": "2022-09-23",
+    "patient_id": "PAT-CARD-217",
+    "enrollment_date": "2022-09-26",
     "age_at_intake": 82,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 135,
     "baseline_dbp": 86,
     "bmi": 23.7,
@@ -1380,10 +1416,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-215",
-    "enrollment_date": "2022-09-24",
+    "patient_id": "PAT-CARD-218",
+    "enrollment_date": "2022-09-27",
     "age_at_intake": 59,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 86,
     "bmi": 26.1,
@@ -1392,10 +1428,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-216",
-    "enrollment_date": "2022-09-25",
+    "patient_id": "PAT-CARD-219",
+    "enrollment_date": "2022-09-28",
     "age_at_intake": 68,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 149,
     "baseline_dbp": 91,
     "bmi": 31.7,
@@ -1404,10 +1440,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-217",
-    "enrollment_date": "2022-09-26",
+    "patient_id": "PAT-CARD-220",
+    "enrollment_date": "2022-09-29",
     "age_at_intake": 49,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 99,
     "bmi": 29.1,
@@ -1416,10 +1452,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-218",
-    "enrollment_date": "2022-09-27",
+    "patient_id": "PAT-CARD-221",
+    "enrollment_date": "2022-09-30",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 165,
     "baseline_dbp": 95,
     "bmi": 33.0,
@@ -1428,10 +1464,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-219",
-    "enrollment_date": "2022-09-28",
+    "patient_id": "PAT-CARD-222",
+    "enrollment_date": "2022-10-01",
     "age_at_intake": 66,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 168,
     "baseline_dbp": 77,
     "bmi": 21.9,
@@ -1440,10 +1476,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-220",
-    "enrollment_date": "2022-09-29",
+    "patient_id": "PAT-CARD-223",
+    "enrollment_date": "2022-10-02",
     "age_at_intake": 67,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 151,
     "baseline_dbp": 72,
     "bmi": 24.2,
@@ -1452,10 +1488,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-221",
-    "enrollment_date": "2022-09-30",
+    "patient_id": "PAT-CARD-224",
+    "enrollment_date": "2022-10-03",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 162,
     "baseline_dbp": 88,
     "bmi": 33.7,
@@ -1464,10 +1500,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-222",
-    "enrollment_date": "2022-10-01",
+    "patient_id": "PAT-CARD-225",
+    "enrollment_date": "2022-10-04",
     "age_at_intake": 67,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 172,
     "baseline_dbp": 97,
     "bmi": 36.3,
@@ -1476,10 +1512,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-223",
-    "enrollment_date": "2022-10-02",
+    "patient_id": "PAT-CARD-226",
+    "enrollment_date": "2022-10-05",
     "age_at_intake": 58,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 148,
     "baseline_dbp": 84,
     "bmi": 33.4,
@@ -1488,10 +1524,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-224",
-    "enrollment_date": "2022-10-03",
+    "patient_id": "PAT-CARD-227",
+    "enrollment_date": "2022-10-06",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 131,
     "baseline_dbp": 84,
     "bmi": 27.6,
@@ -1500,10 +1536,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-225",
-    "enrollment_date": "2022-10-04",
+    "patient_id": "PAT-CARD-228",
+    "enrollment_date": "2022-10-07",
     "age_at_intake": 73,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 164,
     "baseline_dbp": 77,
     "bmi": 24.3,
@@ -1512,10 +1548,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-226",
-    "enrollment_date": "2022-10-05",
+    "patient_id": "PAT-CARD-229",
+    "enrollment_date": "2022-10-08",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 173,
     "baseline_dbp": 101,
     "bmi": 33.5,
@@ -1524,10 +1560,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-227",
-    "enrollment_date": "2022-10-06",
+    "patient_id": "PAT-CARD-230",
+    "enrollment_date": "2022-10-09",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 117,
     "baseline_dbp": 86,
     "bmi": 31.1,
@@ -1536,10 +1572,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-228",
-    "enrollment_date": "2022-10-07",
+    "patient_id": "PAT-CARD-231",
+    "enrollment_date": "2022-10-10",
     "age_at_intake": 83,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 131,
     "baseline_dbp": 92,
     "bmi": 34.4,
@@ -1548,10 +1584,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-229",
-    "enrollment_date": "2022-10-08",
+    "patient_id": "PAT-CARD-232",
+    "enrollment_date": "2022-10-11",
     "age_at_intake": 52,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 121,
     "baseline_dbp": 92,
     "bmi": 31.7,
@@ -1560,10 +1596,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-230",
-    "enrollment_date": "2022-10-09",
+    "patient_id": "PAT-CARD-233",
+    "enrollment_date": "2022-10-12",
     "age_at_intake": 56,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 128,
     "baseline_dbp": 99,
     "bmi": 31.9,
@@ -1572,10 +1608,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-231",
-    "enrollment_date": "2022-10-10",
+    "patient_id": "PAT-CARD-234",
+    "enrollment_date": "2022-10-13",
     "age_at_intake": 80,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 111,
     "baseline_dbp": 87,
     "bmi": 28.2,
@@ -1584,10 +1620,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-232",
-    "enrollment_date": "2022-10-11",
+    "patient_id": "PAT-CARD-235",
+    "enrollment_date": "2022-10-14",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 140,
     "baseline_dbp": 91,
     "bmi": 33.7,
@@ -1596,10 +1632,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-233",
-    "enrollment_date": "2022-10-12",
+    "patient_id": "PAT-CARD-236",
+    "enrollment_date": "2022-10-15",
     "age_at_intake": 69,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 130,
     "baseline_dbp": 94,
     "bmi": 24.6,
@@ -1608,10 +1644,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-234",
-    "enrollment_date": "2022-10-13",
+    "patient_id": "PAT-CARD-237",
+    "enrollment_date": "2022-10-16",
     "age_at_intake": 59,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 150,
     "baseline_dbp": 72,
     "bmi": 24.5,
@@ -1620,10 +1656,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-235",
-    "enrollment_date": "2022-10-14",
+    "patient_id": "PAT-CARD-238",
+    "enrollment_date": "2022-10-17",
     "age_at_intake": 65,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 120,
     "baseline_dbp": 89,
     "bmi": 34.2,
@@ -1632,10 +1668,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-236",
-    "enrollment_date": "2022-10-15",
+    "patient_id": "PAT-CARD-239",
+    "enrollment_date": "2022-10-18",
     "age_at_intake": 82,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 113,
     "baseline_dbp": 94,
     "bmi": 29.2,
@@ -1644,10 +1680,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-237",
-    "enrollment_date": "2022-10-16",
+    "patient_id": "PAT-CARD-240",
+    "enrollment_date": "2022-10-19",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 140,
     "baseline_dbp": 99,
     "bmi": 35.9,
@@ -1656,10 +1692,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-238",
-    "enrollment_date": "2022-10-17",
+    "patient_id": "PAT-CARD-241",
+    "enrollment_date": "2022-10-20",
     "age_at_intake": 71,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 125,
     "baseline_dbp": 77,
     "bmi": 26.7,
@@ -1668,10 +1704,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-239",
-    "enrollment_date": "2022-10-18",
+    "patient_id": "PAT-CARD-242",
+    "enrollment_date": "2022-10-21",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 134,
     "baseline_dbp": 102,
     "bmi": 35.0,
@@ -1680,10 +1716,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-240",
-    "enrollment_date": "2022-10-19",
+    "patient_id": "PAT-CARD-243",
+    "enrollment_date": "2022-10-22",
     "age_at_intake": 48,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 155,
     "baseline_dbp": 79,
     "bmi": 22.9,
@@ -1692,10 +1728,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-241",
-    "enrollment_date": "2022-10-20",
+    "patient_id": "PAT-CARD-244",
+    "enrollment_date": "2022-10-23",
     "age_at_intake": 71,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 171,
     "baseline_dbp": 103,
     "bmi": 27.4,
@@ -1704,10 +1740,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-242",
-    "enrollment_date": "2022-10-21",
+    "patient_id": "PAT-CARD-245",
+    "enrollment_date": "2022-10-24",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 147,
     "baseline_dbp": 92,
     "bmi": 24.6,
@@ -1716,10 +1752,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-243",
-    "enrollment_date": "2022-10-22",
+    "patient_id": "PAT-CARD-246",
+    "enrollment_date": "2022-10-25",
     "age_at_intake": 47,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 166,
     "baseline_dbp": 89,
     "bmi": 28.3,
@@ -1728,10 +1764,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-244",
-    "enrollment_date": "2022-10-23",
+    "patient_id": "PAT-CARD-247",
+    "enrollment_date": "2022-10-26",
     "age_at_intake": 73,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 168,
     "baseline_dbp": 82,
     "bmi": 31.5,
@@ -1740,10 +1776,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-245",
-    "enrollment_date": "2022-10-24",
+    "patient_id": "PAT-CARD-248",
+    "enrollment_date": "2022-10-27",
     "age_at_intake": 62,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 75,
     "bmi": 24.1,
@@ -1752,10 +1788,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-246",
-    "enrollment_date": "2022-10-25",
+    "patient_id": "PAT-CARD-249",
+    "enrollment_date": "2022-10-28",
     "age_at_intake": 81,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 81,
     "bmi": 28.6,
@@ -1764,10 +1800,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-247",
-    "enrollment_date": "2022-10-26",
+    "patient_id": "PAT-CARD-250",
+    "enrollment_date": "2022-10-29",
     "age_at_intake": 57,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 152,
     "baseline_dbp": 80,
     "bmi": 35.5,
@@ -1776,10 +1812,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-248",
-    "enrollment_date": "2022-10-27",
+    "patient_id": "PAT-CARD-251",
+    "enrollment_date": "2022-10-30",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 155,
     "baseline_dbp": 91,
     "bmi": 26.3,
@@ -1788,10 +1824,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-249",
-    "enrollment_date": "2022-10-28",
+    "patient_id": "PAT-CARD-252",
+    "enrollment_date": "2022-10-31",
     "age_at_intake": 45,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 146,
     "baseline_dbp": 100,
     "bmi": 27.0,
@@ -1800,10 +1836,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-250",
-    "enrollment_date": "2022-10-29",
+    "patient_id": "PAT-CARD-253",
+    "enrollment_date": "2022-11-01",
     "age_at_intake": 53,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 112,
     "baseline_dbp": 105,
     "bmi": 28.6,
@@ -1812,10 +1848,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-251",
-    "enrollment_date": "2022-10-30",
+    "patient_id": "PAT-CARD-254",
+    "enrollment_date": "2022-11-02",
     "age_at_intake": 52,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 160,
     "baseline_dbp": 82,
     "bmi": 29.9,
@@ -1824,10 +1860,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-252",
-    "enrollment_date": "2022-10-31",
+    "patient_id": "PAT-CARD-255",
+    "enrollment_date": "2022-11-03",
     "age_at_intake": 48,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 123,
     "baseline_dbp": 93,
     "bmi": 24.5,
@@ -1836,10 +1872,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-253",
-    "enrollment_date": "2022-11-01",
+    "patient_id": "PAT-CARD-256",
+    "enrollment_date": "2022-11-04",
     "age_at_intake": 73,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 112,
     "baseline_dbp": 72,
     "bmi": 34.0,
@@ -1848,10 +1884,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-254",
-    "enrollment_date": "2022-11-02",
+    "patient_id": "PAT-CARD-257",
+    "enrollment_date": "2022-11-05",
     "age_at_intake": 71,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 134,
     "baseline_dbp": 105,
     "bmi": 36.3,
@@ -1860,10 +1896,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-255",
-    "enrollment_date": "2022-11-03",
+    "patient_id": "PAT-CARD-258",
+    "enrollment_date": "2022-11-06",
     "age_at_intake": 53,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 76,
     "bmi": 34.1,
@@ -1872,10 +1908,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-256",
-    "enrollment_date": "2022-11-04",
+    "patient_id": "PAT-CARD-259",
+    "enrollment_date": "2022-11-07",
     "age_at_intake": 46,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 156,
     "baseline_dbp": 101,
     "bmi": 30.5,
@@ -1884,10 +1920,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-257",
-    "enrollment_date": "2022-11-05",
+    "patient_id": "PAT-CARD-260",
+    "enrollment_date": "2022-11-08",
     "age_at_intake": 79,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 135,
     "baseline_dbp": 90,
     "bmi": 29.0,
@@ -1896,10 +1932,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-258",
-    "enrollment_date": "2022-11-06",
+    "patient_id": "PAT-CARD-261",
+    "enrollment_date": "2022-11-09",
     "age_at_intake": 78,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 139,
     "baseline_dbp": 82,
     "bmi": 26.6,
@@ -1908,10 +1944,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-259",
-    "enrollment_date": "2022-11-07",
+    "patient_id": "PAT-CARD-262",
+    "enrollment_date": "2022-11-10",
     "age_at_intake": 50,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 169,
     "baseline_dbp": 105,
     "bmi": 27.7,
@@ -1920,10 +1956,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-260",
-    "enrollment_date": "2022-11-08",
+    "patient_id": "PAT-CARD-263",
+    "enrollment_date": "2022-11-11",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 105,
     "bmi": 31.5,
@@ -1932,10 +1968,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-261",
-    "enrollment_date": "2022-11-09",
+    "patient_id": "PAT-CARD-264",
+    "enrollment_date": "2022-11-12",
     "age_at_intake": 69,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 168,
     "baseline_dbp": 82,
     "bmi": 28.7,
@@ -1944,10 +1980,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-262",
-    "enrollment_date": "2022-11-10",
+    "patient_id": "PAT-CARD-265",
+    "enrollment_date": "2022-11-13",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 114,
     "baseline_dbp": 103,
     "bmi": 26.5,
@@ -1956,10 +1992,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-263",
-    "enrollment_date": "2022-11-11",
+    "patient_id": "PAT-CARD-266",
+    "enrollment_date": "2022-11-14",
     "age_at_intake": 67,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 128,
     "baseline_dbp": 77,
     "bmi": 36.0,
@@ -1968,10 +2004,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-264",
-    "enrollment_date": "2022-11-12",
+    "patient_id": "PAT-CARD-267",
+    "enrollment_date": "2022-11-15",
     "age_at_intake": 85,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 103,
     "bmi": 28.9,
@@ -1980,10 +2016,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-265",
-    "enrollment_date": "2022-11-13",
+    "patient_id": "PAT-CARD-268",
+    "enrollment_date": "2022-11-16",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 77,
     "bmi": 22.3,
@@ -1992,10 +2028,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-266",
-    "enrollment_date": "2022-11-14",
+    "patient_id": "PAT-CARD-269",
+    "enrollment_date": "2022-11-17",
     "age_at_intake": 53,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 89,
     "bmi": 23.4,
@@ -2004,10 +2040,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-267",
-    "enrollment_date": "2022-11-15",
+    "patient_id": "PAT-CARD-270",
+    "enrollment_date": "2022-11-18",
     "age_at_intake": 68,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 140,
     "baseline_dbp": 90,
     "bmi": 30.5,
@@ -2016,10 +2052,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-268",
-    "enrollment_date": "2022-11-16",
+    "patient_id": "PAT-CARD-271",
+    "enrollment_date": "2022-11-19",
     "age_at_intake": 78,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 112,
     "baseline_dbp": 104,
     "bmi": 25.0,
@@ -2028,10 +2064,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-269",
-    "enrollment_date": "2022-11-17",
+    "patient_id": "PAT-CARD-272",
+    "enrollment_date": "2022-11-20",
     "age_at_intake": 73,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 141,
     "baseline_dbp": 104,
     "bmi": 24.3,
@@ -2040,10 +2076,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-270",
-    "enrollment_date": "2022-11-18",
+    "patient_id": "PAT-CARD-273",
+    "enrollment_date": "2022-11-21",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 114,
     "baseline_dbp": 95,
     "bmi": 23.8,
@@ -2052,10 +2088,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-271",
-    "enrollment_date": "2022-11-19",
+    "patient_id": "PAT-CARD-274",
+    "enrollment_date": "2022-11-22",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 131,
     "baseline_dbp": 95,
     "bmi": 36.6,
@@ -2064,10 +2100,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-272",
-    "enrollment_date": "2022-11-20",
+    "patient_id": "PAT-CARD-275",
+    "enrollment_date": "2022-11-23",
     "age_at_intake": 48,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 151,
     "baseline_dbp": 97,
     "bmi": 32.4,
@@ -2076,10 +2112,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-273",
-    "enrollment_date": "2022-11-21",
+    "patient_id": "PAT-CARD-276",
+    "enrollment_date": "2022-11-24",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 141,
     "baseline_dbp": 78,
     "bmi": 32.9,
@@ -2088,10 +2124,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-274",
-    "enrollment_date": "2022-11-22",
+    "patient_id": "PAT-CARD-277",
+    "enrollment_date": "2022-11-25",
     "age_at_intake": 66,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 142,
     "baseline_dbp": 73,
     "bmi": 22.8,
@@ -2100,10 +2136,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-275",
-    "enrollment_date": "2022-11-23",
+    "patient_id": "PAT-CARD-278",
+    "enrollment_date": "2022-11-26",
     "age_at_intake": 49,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 121,
     "baseline_dbp": 80,
     "bmi": 21.9,
@@ -2112,10 +2148,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-276",
-    "enrollment_date": "2022-11-24",
+    "patient_id": "PAT-CARD-279",
+    "enrollment_date": "2022-11-27",
     "age_at_intake": 52,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 160,
     "baseline_dbp": 85,
     "bmi": 36.3,
@@ -2124,10 +2160,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-277",
-    "enrollment_date": "2022-11-25",
+    "patient_id": "PAT-CARD-280",
+    "enrollment_date": "2022-11-28",
     "age_at_intake": 84,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 105,
     "bmi": 30.3,
@@ -2136,10 +2172,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-278",
-    "enrollment_date": "2022-11-26",
+    "patient_id": "PAT-CARD-281",
+    "enrollment_date": "2022-11-29",
     "age_at_intake": 46,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 152,
     "baseline_dbp": 104,
     "bmi": 27.6,
@@ -2148,10 +2184,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-279",
-    "enrollment_date": "2022-11-27",
+    "patient_id": "PAT-CARD-282",
+    "enrollment_date": "2022-11-30",
     "age_at_intake": 53,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 159,
     "baseline_dbp": 97,
     "bmi": 23.7,
@@ -2160,10 +2196,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-280",
-    "enrollment_date": "2022-11-28",
+    "patient_id": "PAT-CARD-283",
+    "enrollment_date": "2022-12-01",
     "age_at_intake": 72,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 84,
     "bmi": 30.7,
@@ -2172,10 +2208,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-281",
-    "enrollment_date": "2022-11-29",
+    "patient_id": "PAT-CARD-284",
+    "enrollment_date": "2022-12-02",
     "age_at_intake": 69,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 164,
     "baseline_dbp": 83,
     "bmi": 24.8,
@@ -2184,10 +2220,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-282",
-    "enrollment_date": "2022-11-30",
+    "patient_id": "PAT-CARD-285",
+    "enrollment_date": "2022-12-03",
     "age_at_intake": 78,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 113,
     "baseline_dbp": 70,
     "bmi": 24.4,
@@ -2196,10 +2232,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-283",
-    "enrollment_date": "2022-12-01",
+    "patient_id": "PAT-CARD-286",
+    "enrollment_date": "2022-12-04",
     "age_at_intake": 71,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 112,
     "baseline_dbp": 82,
     "bmi": 22.6,
@@ -2208,10 +2244,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-284",
-    "enrollment_date": "2022-12-02",
+    "patient_id": "PAT-CARD-287",
+    "enrollment_date": "2022-12-05",
     "age_at_intake": 60,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 159,
     "baseline_dbp": 77,
     "bmi": 24.0,
@@ -2220,10 +2256,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-285",
-    "enrollment_date": "2022-12-03",
+    "patient_id": "PAT-CARD-288",
+    "enrollment_date": "2022-12-06",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 142,
     "baseline_dbp": 91,
     "bmi": 37.0,
@@ -2232,10 +2268,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-286",
-    "enrollment_date": "2022-12-04",
+    "patient_id": "PAT-CARD-289",
+    "enrollment_date": "2022-12-07",
     "age_at_intake": 73,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 154,
     "baseline_dbp": 75,
     "bmi": 32.2,
@@ -2244,10 +2280,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-287",
-    "enrollment_date": "2022-12-05",
+    "patient_id": "PAT-CARD-290",
+    "enrollment_date": "2022-12-08",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 153,
     "baseline_dbp": 105,
     "bmi": 30.4,
@@ -2256,10 +2292,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-288",
-    "enrollment_date": "2022-12-06",
+    "patient_id": "PAT-CARD-291",
+    "enrollment_date": "2022-12-09",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 168,
     "baseline_dbp": 74,
     "bmi": 25.0,
@@ -2268,10 +2304,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-289",
-    "enrollment_date": "2022-12-07",
+    "patient_id": "PAT-CARD-292",
+    "enrollment_date": "2022-12-10",
     "age_at_intake": 46,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 112,
     "baseline_dbp": 85,
     "bmi": 23.1,
@@ -2280,10 +2316,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-290",
-    "enrollment_date": "2022-12-08",
+    "patient_id": "PAT-CARD-293",
+    "enrollment_date": "2022-12-11",
     "age_at_intake": 59,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 75,
     "bmi": 26.6,
@@ -2292,10 +2328,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-291",
-    "enrollment_date": "2022-12-09",
+    "patient_id": "PAT-CARD-294",
+    "enrollment_date": "2022-12-12",
     "age_at_intake": 80,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 82,
     "bmi": 32.2,
@@ -2304,10 +2340,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-292",
-    "enrollment_date": "2022-12-10",
+    "patient_id": "PAT-CARD-295",
+    "enrollment_date": "2022-12-13",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 77,
     "bmi": 24.2,
@@ -2316,10 +2352,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-293",
-    "enrollment_date": "2022-12-11",
+    "patient_id": "PAT-CARD-296",
+    "enrollment_date": "2022-12-14",
     "age_at_intake": 79,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 94,
     "bmi": 26.1,
@@ -2328,10 +2364,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-294",
-    "enrollment_date": "2022-12-12",
+    "patient_id": "PAT-CARD-297",
+    "enrollment_date": "2022-12-15",
     "age_at_intake": 48,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 117,
     "baseline_dbp": 94,
     "bmi": 28.7,
@@ -2340,10 +2376,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-295",
-    "enrollment_date": "2022-12-13",
+    "patient_id": "PAT-CARD-298",
+    "enrollment_date": "2022-12-16",
     "age_at_intake": 57,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 146,
     "baseline_dbp": 96,
     "bmi": 30.2,
@@ -2352,10 +2388,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-296",
-    "enrollment_date": "2022-12-14",
+    "patient_id": "PAT-CARD-299",
+    "enrollment_date": "2022-12-17",
     "age_at_intake": 67,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 160,
     "baseline_dbp": 74,
     "bmi": 23.7,
@@ -2364,10 +2400,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-297",
-    "enrollment_date": "2022-12-15",
+    "patient_id": "PAT-CARD-300",
+    "enrollment_date": "2022-12-18",
     "age_at_intake": 53,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 162,
     "baseline_dbp": 101,
     "bmi": 24.3,
@@ -2376,49 +2412,13 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-298",
-    "enrollment_date": "2022-12-16",
+    "patient_id": "PAT-CARD-301",
+    "enrollment_date": "2022-12-19",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 166,
     "baseline_dbp": 101,
     "bmi": 23.8,
-    "hypertension_history": true,
-    "diabetes_history": false,
-    "smoker": true
-  },
-  {
-    "patient_id": "PAT-CARD-299",
-    "enrollment_date": "2022-12-17",
-    "age_at_intake": 57,
-    "sex": "F",
-    "baseline_sbp": 163,
-    "baseline_dbp": 94,
-    "bmi": 30.0,
-    "hypertension_history": true,
-    "diabetes_history": true,
-    "smoker": true
-  },
-  {
-    "patient_id": "PAT-CARD-300",
-    "enrollment_date": "2022-12-18",
-    "age_at_intake": 58,
-    "sex": "M",
-    "baseline_sbp": 148,
-    "baseline_dbp": 78,
-    "bmi": 23.1,
-    "hypertension_history": true,
-    "diabetes_history": false,
-    "smoker": true
-  },
-  {
-    "patient_id": "PAT-CARD-301",
-    "enrollment_date": "2022-12-19",
-    "age_at_intake": 84,
-    "sex": "F",
-    "baseline_sbp": 136,
-    "baseline_dbp": 76,
-    "bmi": 27.7,
     "hypertension_history": true,
     "diabetes_history": false,
     "smoker": true
@@ -2428,43 +2428,43 @@
     "enrollment_date": "2022-12-20",
     "age_at_intake": 57,
     "sex": "M",
-    "baseline_sbp": 173,
-    "baseline_dbp": 93,
-    "bmi": 25.3,
+    "baseline_sbp": 163,
+    "baseline_dbp": 94,
+    "bmi": 30.0,
     "hypertension_history": true,
-    "diabetes_history": false,
-    "smoker": false
+    "diabetes_history": true,
+    "smoker": true
   },
   {
     "patient_id": "PAT-CARD-303",
     "enrollment_date": "2022-12-21",
-    "age_at_intake": 46,
+    "age_at_intake": 58,
     "sex": "F",
-    "baseline_sbp": 152,
-    "baseline_dbp": 96,
-    "bmi": 27.8,
-    "hypertension_history": false,
+    "baseline_sbp": 148,
+    "baseline_dbp": 78,
+    "bmi": 23.1,
+    "hypertension_history": true,
     "diabetes_history": false,
     "smoker": true
   },
   {
     "patient_id": "PAT-CARD-304",
     "enrollment_date": "2022-12-22",
-    "age_at_intake": 55,
+    "age_at_intake": 84,
     "sex": "M",
-    "baseline_sbp": 160,
-    "baseline_dbp": 98,
-    "bmi": 26.4,
+    "baseline_sbp": 136,
+    "baseline_dbp": 76,
+    "bmi": 27.7,
     "hypertension_history": true,
-    "diabetes_history": true,
-    "smoker": false
+    "diabetes_history": false,
+    "smoker": true
   },
   {
     "patient_id": "PAT-CARD-305",
     "enrollment_date": "2022-12-23",
-    "age_at_intake": 79,
+    "age_at_intake": 57,
     "sex": "F",
-    "baseline_sbp": 110,
+    "baseline_sbp": 173,
     "baseline_dbp": 93,
     "bmi": 25.3,
     "hypertension_history": true,
@@ -2474,8 +2474,44 @@
   {
     "patient_id": "PAT-CARD-306",
     "enrollment_date": "2022-12-24",
-    "age_at_intake": 52,
+    "age_at_intake": 46,
     "sex": "M",
+    "baseline_sbp": 152,
+    "baseline_dbp": 96,
+    "bmi": 27.8,
+    "hypertension_history": false,
+    "diabetes_history": false,
+    "smoker": true
+  },
+  {
+    "patient_id": "PAT-CARD-307",
+    "enrollment_date": "2022-12-25",
+    "age_at_intake": 55,
+    "sex": "F",
+    "baseline_sbp": 160,
+    "baseline_dbp": 98,
+    "bmi": 26.4,
+    "hypertension_history": true,
+    "diabetes_history": true,
+    "smoker": false
+  },
+  {
+    "patient_id": "PAT-CARD-308",
+    "enrollment_date": "2022-12-26",
+    "age_at_intake": 79,
+    "sex": "M",
+    "baseline_sbp": 110,
+    "baseline_dbp": 93,
+    "bmi": 25.3,
+    "hypertension_history": true,
+    "diabetes_history": false,
+    "smoker": false
+  },
+  {
+    "patient_id": "PAT-CARD-309",
+    "enrollment_date": "2022-12-27",
+    "age_at_intake": 52,
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 71,
     "bmi": 35.3,
@@ -2484,10 +2520,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-307",
-    "enrollment_date": "2022-12-25",
+    "patient_id": "PAT-CARD-310",
+    "enrollment_date": "2022-12-28",
     "age_at_intake": 66,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 123,
     "baseline_dbp": 70,
     "bmi": 36.1,
@@ -2496,10 +2532,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-308",
-    "enrollment_date": "2022-12-26",
+    "patient_id": "PAT-CARD-311",
+    "enrollment_date": "2022-12-29",
     "age_at_intake": 45,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 115,
     "baseline_dbp": 105,
     "bmi": 33.1,
@@ -2508,10 +2544,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-309",
-    "enrollment_date": "2022-12-27",
+    "patient_id": "PAT-CARD-312",
+    "enrollment_date": "2022-12-30",
     "age_at_intake": 73,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 123,
     "baseline_dbp": 96,
     "bmi": 35.5,
@@ -2520,10 +2556,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-310",
-    "enrollment_date": "2022-12-28",
+    "patient_id": "PAT-CARD-313",
+    "enrollment_date": "2022-12-31",
     "age_at_intake": 81,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 141,
     "baseline_dbp": 91,
     "bmi": 34.5,
@@ -2532,10 +2568,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-311",
-    "enrollment_date": "2022-12-29",
+    "patient_id": "PAT-CARD-314",
+    "enrollment_date": "2023-01-01",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 173,
     "baseline_dbp": 86,
     "bmi": 24.4,
@@ -2544,10 +2580,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-312",
-    "enrollment_date": "2022-12-30",
+    "patient_id": "PAT-CARD-315",
+    "enrollment_date": "2023-01-02",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 122,
     "baseline_dbp": 90,
     "bmi": 31.0,
@@ -2556,10 +2592,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-313",
-    "enrollment_date": "2022-12-31",
+    "patient_id": "PAT-CARD-316",
+    "enrollment_date": "2023-01-03",
     "age_at_intake": 65,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 121,
     "baseline_dbp": 104,
     "bmi": 26.1,
@@ -2568,10 +2604,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-314",
-    "enrollment_date": "2023-01-01",
+    "patient_id": "PAT-CARD-317",
+    "enrollment_date": "2023-01-04",
     "age_at_intake": 52,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 160,
     "baseline_dbp": 71,
     "bmi": 33.8,
@@ -2580,10 +2616,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-315",
-    "enrollment_date": "2023-01-02",
+    "patient_id": "PAT-CARD-318",
+    "enrollment_date": "2023-01-05",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 143,
     "baseline_dbp": 104,
     "bmi": 36.4,
@@ -2592,10 +2628,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-316",
-    "enrollment_date": "2023-01-03",
+    "patient_id": "PAT-CARD-319",
+    "enrollment_date": "2023-01-06",
     "age_at_intake": 51,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 173,
     "baseline_dbp": 78,
     "bmi": 28.2,
@@ -2604,10 +2640,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-317",
-    "enrollment_date": "2023-01-04",
+    "patient_id": "PAT-CARD-320",
+    "enrollment_date": "2023-01-07",
     "age_at_intake": 80,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 127,
     "baseline_dbp": 102,
     "bmi": 21.7,
@@ -2616,10 +2652,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-318",
-    "enrollment_date": "2023-01-05",
+    "patient_id": "PAT-CARD-321",
+    "enrollment_date": "2023-01-08",
     "age_at_intake": 64,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 134,
     "baseline_dbp": 72,
     "bmi": 31.8,
@@ -2628,10 +2664,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-319",
-    "enrollment_date": "2023-01-06",
+    "patient_id": "PAT-CARD-322",
+    "enrollment_date": "2023-01-09",
     "age_at_intake": 53,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 88,
     "bmi": 24.0,
@@ -2640,10 +2676,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-320",
-    "enrollment_date": "2023-01-07",
+    "patient_id": "PAT-CARD-323",
+    "enrollment_date": "2023-01-10",
     "age_at_intake": 75,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 132,
     "baseline_dbp": 90,
     "bmi": 25.2,
@@ -2652,10 +2688,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-321",
-    "enrollment_date": "2023-01-08",
+    "patient_id": "PAT-CARD-324",
+    "enrollment_date": "2023-01-11",
     "age_at_intake": 73,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 174,
     "baseline_dbp": 91,
     "bmi": 31.6,
@@ -2664,10 +2700,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-322",
-    "enrollment_date": "2023-01-09",
+    "patient_id": "PAT-CARD-325",
+    "enrollment_date": "2023-01-12",
     "age_at_intake": 52,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 129,
     "baseline_dbp": 77,
     "bmi": 28.6,
@@ -2676,10 +2712,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-323",
-    "enrollment_date": "2023-01-10",
+    "patient_id": "PAT-CARD-326",
+    "enrollment_date": "2023-01-13",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 121,
     "baseline_dbp": 97,
     "bmi": 31.5,
@@ -2688,10 +2724,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-324",
-    "enrollment_date": "2023-01-11",
+    "patient_id": "PAT-CARD-327",
+    "enrollment_date": "2023-01-14",
     "age_at_intake": 75,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 144,
     "baseline_dbp": 78,
     "bmi": 24.0,
@@ -2700,10 +2736,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-325",
-    "enrollment_date": "2023-01-12",
+    "patient_id": "PAT-CARD-328",
+    "enrollment_date": "2023-01-15",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 146,
     "baseline_dbp": 89,
     "bmi": 36.6,
@@ -2712,10 +2748,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-326",
-    "enrollment_date": "2023-01-13",
+    "patient_id": "PAT-CARD-329",
+    "enrollment_date": "2023-01-16",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 93,
     "bmi": 35.8,
@@ -2724,10 +2760,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-327",
-    "enrollment_date": "2023-01-14",
+    "patient_id": "PAT-CARD-330",
+    "enrollment_date": "2023-01-17",
     "age_at_intake": 50,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 166,
     "baseline_dbp": 70,
     "bmi": 26.1,
@@ -2736,10 +2772,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-328",
-    "enrollment_date": "2023-01-15",
+    "patient_id": "PAT-CARD-331",
+    "enrollment_date": "2023-01-18",
     "age_at_intake": 85,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 119,
     "baseline_dbp": 93,
     "bmi": 36.0,
@@ -2748,10 +2784,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-329",
-    "enrollment_date": "2023-01-16",
+    "patient_id": "PAT-CARD-332",
+    "enrollment_date": "2023-01-19",
     "age_at_intake": 49,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 137,
     "baseline_dbp": 74,
     "bmi": 35.7,
@@ -2760,10 +2796,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-330",
-    "enrollment_date": "2023-01-17",
+    "patient_id": "PAT-CARD-333",
+    "enrollment_date": "2023-01-20",
     "age_at_intake": 52,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 100,
     "bmi": 34.0,
@@ -2772,10 +2808,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-331",
-    "enrollment_date": "2023-01-18",
+    "patient_id": "PAT-CARD-334",
+    "enrollment_date": "2023-01-21",
     "age_at_intake": 70,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 123,
     "baseline_dbp": 70,
     "bmi": 36.8,
@@ -2784,10 +2820,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-332",
-    "enrollment_date": "2023-01-19",
+    "patient_id": "PAT-CARD-335",
+    "enrollment_date": "2023-01-22",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 175,
     "baseline_dbp": 92,
     "bmi": 22.6,
@@ -2796,10 +2832,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-333",
-    "enrollment_date": "2023-01-20",
+    "patient_id": "PAT-CARD-336",
+    "enrollment_date": "2023-01-23",
     "age_at_intake": 48,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 164,
     "baseline_dbp": 88,
     "bmi": 22.0,
@@ -2808,10 +2844,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-334",
-    "enrollment_date": "2023-01-21",
+    "patient_id": "PAT-CARD-337",
+    "enrollment_date": "2023-01-24",
     "age_at_intake": 63,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 147,
     "baseline_dbp": 92,
     "bmi": 23.1,
@@ -2820,10 +2856,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-335",
-    "enrollment_date": "2023-01-22",
+    "patient_id": "PAT-CARD-338",
+    "enrollment_date": "2023-01-25",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 127,
     "baseline_dbp": 86,
     "bmi": 33.8,
@@ -2832,10 +2868,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-336",
-    "enrollment_date": "2023-01-23",
+    "patient_id": "PAT-CARD-339",
+    "enrollment_date": "2023-01-26",
     "age_at_intake": 72,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 165,
     "baseline_dbp": 88,
     "bmi": 34.1,
@@ -2844,10 +2880,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-337",
-    "enrollment_date": "2023-01-24",
+    "patient_id": "PAT-CARD-340",
+    "enrollment_date": "2023-01-27",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 129,
     "baseline_dbp": 90,
     "bmi": 33.8,
@@ -2856,10 +2892,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-338",
-    "enrollment_date": "2023-01-25",
+    "patient_id": "PAT-CARD-341",
+    "enrollment_date": "2023-01-28",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 123,
     "baseline_dbp": 84,
     "bmi": 24.7,
@@ -2868,10 +2904,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-339",
-    "enrollment_date": "2023-01-26",
+    "patient_id": "PAT-CARD-342",
+    "enrollment_date": "2023-01-29",
     "age_at_intake": 59,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 142,
     "baseline_dbp": 93,
     "bmi": 33.7,
@@ -2880,10 +2916,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-340",
-    "enrollment_date": "2023-01-27",
+    "patient_id": "PAT-CARD-343",
+    "enrollment_date": "2023-01-30",
     "age_at_intake": 50,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 174,
     "baseline_dbp": 101,
     "bmi": 23.2,
@@ -2892,10 +2928,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-341",
-    "enrollment_date": "2023-01-28",
+    "patient_id": "PAT-CARD-344",
+    "enrollment_date": "2023-01-31",
     "age_at_intake": 67,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 165,
     "baseline_dbp": 105,
     "bmi": 35.2,
@@ -2904,10 +2940,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-342",
-    "enrollment_date": "2023-01-29",
+    "patient_id": "PAT-CARD-345",
+    "enrollment_date": "2023-02-01",
     "age_at_intake": 85,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 133,
     "baseline_dbp": 89,
     "bmi": 31.5,
@@ -2916,10 +2952,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-343",
-    "enrollment_date": "2023-01-30",
+    "patient_id": "PAT-CARD-346",
+    "enrollment_date": "2023-02-02",
     "age_at_intake": 66,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 170,
     "baseline_dbp": 98,
     "bmi": 27.0,
@@ -2928,10 +2964,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-344",
-    "enrollment_date": "2023-01-31",
+    "patient_id": "PAT-CARD-347",
+    "enrollment_date": "2023-02-03",
     "age_at_intake": 62,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 163,
     "baseline_dbp": 82,
     "bmi": 28.1,
@@ -2940,10 +2976,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-345",
-    "enrollment_date": "2023-02-01",
+    "patient_id": "PAT-CARD-348",
+    "enrollment_date": "2023-02-04",
     "age_at_intake": 72,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 111,
     "baseline_dbp": 97,
     "bmi": 23.8,
@@ -2952,10 +2988,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-346",
-    "enrollment_date": "2023-02-02",
+    "patient_id": "PAT-CARD-349",
+    "enrollment_date": "2023-02-05",
     "age_at_intake": 62,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 169,
     "baseline_dbp": 81,
     "bmi": 33.7,
@@ -2964,10 +3000,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-347",
-    "enrollment_date": "2023-02-03",
+    "patient_id": "PAT-CARD-350",
+    "enrollment_date": "2023-02-06",
     "age_at_intake": 69,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 173,
     "baseline_dbp": 90,
     "bmi": 22.5,
@@ -2976,10 +3012,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-348",
-    "enrollment_date": "2023-02-04",
+    "patient_id": "PAT-CARD-351",
+    "enrollment_date": "2023-02-07",
     "age_at_intake": 57,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 138,
     "baseline_dbp": 95,
     "bmi": 33.2,
@@ -2988,10 +3024,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-349",
-    "enrollment_date": "2023-02-05",
+    "patient_id": "PAT-CARD-352",
+    "enrollment_date": "2023-02-08",
     "age_at_intake": 72,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 74,
     "bmi": 26.3,
@@ -3000,10 +3036,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-350",
-    "enrollment_date": "2023-02-06",
+    "patient_id": "PAT-CARD-353",
+    "enrollment_date": "2023-02-09",
     "age_at_intake": 81,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 168,
     "baseline_dbp": 101,
     "bmi": 31.7,
@@ -3012,10 +3048,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-351",
-    "enrollment_date": "2023-02-07",
+    "patient_id": "PAT-CARD-354",
+    "enrollment_date": "2023-02-10",
     "age_at_intake": 66,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 156,
     "baseline_dbp": 95,
     "bmi": 22.7,
@@ -3024,10 +3060,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-352",
-    "enrollment_date": "2023-02-08",
+    "patient_id": "PAT-CARD-355",
+    "enrollment_date": "2023-02-11",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 149,
     "baseline_dbp": 75,
     "bmi": 35.7,
@@ -3036,10 +3072,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-353",
-    "enrollment_date": "2023-02-09",
+    "patient_id": "PAT-CARD-356",
+    "enrollment_date": "2023-02-12",
     "age_at_intake": 69,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 142,
     "baseline_dbp": 71,
     "bmi": 26.5,
@@ -3048,10 +3084,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-354",
-    "enrollment_date": "2023-02-10",
+    "patient_id": "PAT-CARD-357",
+    "enrollment_date": "2023-02-13",
     "age_at_intake": 83,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 138,
     "baseline_dbp": 81,
     "bmi": 23.6,
@@ -3060,10 +3096,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-355",
-    "enrollment_date": "2023-02-11",
+    "patient_id": "PAT-CARD-358",
+    "enrollment_date": "2023-02-14",
     "age_at_intake": 48,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 151,
     "baseline_dbp": 99,
     "bmi": 24.3,
@@ -3072,10 +3108,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-356",
-    "enrollment_date": "2023-02-12",
+    "patient_id": "PAT-CARD-359",
+    "enrollment_date": "2023-02-15",
     "age_at_intake": 59,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 126,
     "baseline_dbp": 97,
     "bmi": 22.9,
@@ -3084,10 +3120,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-357",
-    "enrollment_date": "2023-02-13",
+    "patient_id": "PAT-CARD-360",
+    "enrollment_date": "2023-02-16",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 138,
     "baseline_dbp": 87,
     "bmi": 26.9,
@@ -3096,10 +3132,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-358",
-    "enrollment_date": "2023-02-14",
+    "patient_id": "PAT-CARD-361",
+    "enrollment_date": "2023-02-17",
     "age_at_intake": 51,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 92,
     "bmi": 26.4,
@@ -3108,10 +3144,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-359",
-    "enrollment_date": "2023-02-15",
+    "patient_id": "PAT-CARD-362",
+    "enrollment_date": "2023-02-18",
     "age_at_intake": 71,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 172,
     "baseline_dbp": 85,
     "bmi": 33.9,
@@ -3120,10 +3156,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-360",
-    "enrollment_date": "2023-02-16",
+    "patient_id": "PAT-CARD-363",
+    "enrollment_date": "2023-02-19",
     "age_at_intake": 53,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 113,
     "baseline_dbp": 92,
     "bmi": 32.9,
@@ -3132,10 +3168,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-361",
-    "enrollment_date": "2023-02-17",
+    "patient_id": "PAT-CARD-364",
+    "enrollment_date": "2023-02-20",
     "age_at_intake": 61,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 116,
     "baseline_dbp": 98,
     "bmi": 27.8,
@@ -3144,10 +3180,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-362",
-    "enrollment_date": "2023-02-18",
+    "patient_id": "PAT-CARD-365",
+    "enrollment_date": "2023-02-21",
     "age_at_intake": 55,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 132,
     "baseline_dbp": 96,
     "bmi": 25.3,
@@ -3156,10 +3192,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-363",
-    "enrollment_date": "2023-02-19",
+    "patient_id": "PAT-CARD-366",
+    "enrollment_date": "2023-02-22",
     "age_at_intake": 74,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 132,
     "baseline_dbp": 93,
     "bmi": 36.3,
@@ -3168,10 +3204,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-364",
-    "enrollment_date": "2023-02-20",
+    "patient_id": "PAT-CARD-367",
+    "enrollment_date": "2023-02-23",
     "age_at_intake": 61,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 119,
     "baseline_dbp": 96,
     "bmi": 34.9,
@@ -3180,10 +3216,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-365",
-    "enrollment_date": "2023-02-21",
+    "patient_id": "PAT-CARD-368",
+    "enrollment_date": "2023-02-24",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 121,
     "baseline_dbp": 78,
     "bmi": 37.0,
@@ -3192,10 +3228,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-366",
-    "enrollment_date": "2023-02-22",
+    "patient_id": "PAT-CARD-369",
+    "enrollment_date": "2023-02-25",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 147,
     "baseline_dbp": 80,
     "bmi": 32.0,
@@ -3204,10 +3240,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-367",
-    "enrollment_date": "2023-02-23",
+    "patient_id": "PAT-CARD-370",
+    "enrollment_date": "2023-02-26",
     "age_at_intake": 57,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 171,
     "baseline_dbp": 104,
     "bmi": 32.1,
@@ -3216,10 +3252,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-368",
-    "enrollment_date": "2023-02-24",
+    "patient_id": "PAT-CARD-371",
+    "enrollment_date": "2023-02-27",
     "age_at_intake": 77,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 120,
     "baseline_dbp": 87,
     "bmi": 21.9,
@@ -3228,10 +3264,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-369",
-    "enrollment_date": "2023-02-25",
+    "patient_id": "PAT-CARD-372",
+    "enrollment_date": "2023-02-28",
     "age_at_intake": 79,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 111,
     "baseline_dbp": 93,
     "bmi": 24.8,
@@ -3240,10 +3276,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-370",
-    "enrollment_date": "2023-02-26",
+    "patient_id": "PAT-CARD-373",
+    "enrollment_date": "2023-03-01",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 143,
     "baseline_dbp": 105,
     "bmi": 33.8,
@@ -3252,10 +3288,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-371",
-    "enrollment_date": "2023-02-27",
+    "patient_id": "PAT-CARD-374",
+    "enrollment_date": "2023-03-02",
     "age_at_intake": 62,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 114,
     "baseline_dbp": 100,
     "bmi": 31.5,
@@ -3264,10 +3300,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-372",
-    "enrollment_date": "2023-02-28",
+    "patient_id": "PAT-CARD-375",
+    "enrollment_date": "2023-03-03",
     "age_at_intake": 63,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 154,
     "baseline_dbp": 94,
     "bmi": 34.3,
@@ -3276,10 +3312,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-373",
-    "enrollment_date": "2023-03-01",
+    "patient_id": "PAT-CARD-376",
+    "enrollment_date": "2023-03-04",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 118,
     "baseline_dbp": 100,
     "bmi": 22.9,
@@ -3288,10 +3324,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-374",
-    "enrollment_date": "2023-03-02",
+    "patient_id": "PAT-CARD-377",
+    "enrollment_date": "2023-03-05",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 125,
     "baseline_dbp": 87,
     "bmi": 22.4,
@@ -3300,10 +3336,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-375",
-    "enrollment_date": "2023-03-03",
+    "patient_id": "PAT-CARD-378",
+    "enrollment_date": "2023-03-06",
     "age_at_intake": 67,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 141,
     "baseline_dbp": 83,
     "bmi": 27.5,
@@ -3312,10 +3348,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-376",
-    "enrollment_date": "2023-03-04",
+    "patient_id": "PAT-CARD-379",
+    "enrollment_date": "2023-03-07",
     "age_at_intake": 63,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 153,
     "baseline_dbp": 87,
     "bmi": 30.5,
@@ -3324,10 +3360,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-377",
-    "enrollment_date": "2023-03-05",
+    "patient_id": "PAT-CARD-380",
+    "enrollment_date": "2023-03-08",
     "age_at_intake": 78,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 122,
     "baseline_dbp": 83,
     "bmi": 29.3,
@@ -3336,10 +3372,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-378",
-    "enrollment_date": "2023-03-06",
+    "patient_id": "PAT-CARD-381",
+    "enrollment_date": "2023-03-09",
     "age_at_intake": 51,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 122,
     "baseline_dbp": 96,
     "bmi": 34.0,
@@ -3348,10 +3384,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-379",
-    "enrollment_date": "2023-03-07",
+    "patient_id": "PAT-CARD-382",
+    "enrollment_date": "2023-03-10",
     "age_at_intake": 73,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 150,
     "baseline_dbp": 103,
     "bmi": 33.0,
@@ -3360,10 +3396,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-380",
-    "enrollment_date": "2023-03-08",
+    "patient_id": "PAT-CARD-383",
+    "enrollment_date": "2023-03-11",
     "age_at_intake": 69,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 141,
     "baseline_dbp": 103,
     "bmi": 29.5,
@@ -3372,10 +3408,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-381",
-    "enrollment_date": "2023-03-09",
+    "patient_id": "PAT-CARD-384",
+    "enrollment_date": "2023-03-12",
     "age_at_intake": 55,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 133,
     "baseline_dbp": 98,
     "bmi": 21.6,
@@ -3384,10 +3420,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-382",
-    "enrollment_date": "2023-03-10",
+    "patient_id": "PAT-CARD-385",
+    "enrollment_date": "2023-03-13",
     "age_at_intake": 75,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 173,
     "baseline_dbp": 99,
     "bmi": 29.0,
@@ -3396,10 +3432,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-383",
-    "enrollment_date": "2023-03-11",
+    "patient_id": "PAT-CARD-386",
+    "enrollment_date": "2023-03-14",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 174,
     "baseline_dbp": 90,
     "bmi": 35.6,
@@ -3408,10 +3444,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-384",
-    "enrollment_date": "2023-03-12",
+    "patient_id": "PAT-CARD-387",
+    "enrollment_date": "2023-03-15",
     "age_at_intake": 58,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 165,
     "baseline_dbp": 104,
     "bmi": 22.9,
@@ -3420,10 +3456,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-385",
-    "enrollment_date": "2023-03-13",
+    "patient_id": "PAT-CARD-388",
+    "enrollment_date": "2023-03-16",
     "age_at_intake": 59,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 159,
     "baseline_dbp": 85,
     "bmi": 23.7,
@@ -3432,10 +3468,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-386",
-    "enrollment_date": "2023-03-14",
+    "patient_id": "PAT-CARD-389",
+    "enrollment_date": "2023-03-17",
     "age_at_intake": 64,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 74,
     "bmi": 23.5,
@@ -3444,10 +3480,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-387",
-    "enrollment_date": "2023-03-15",
+    "patient_id": "PAT-CARD-390",
+    "enrollment_date": "2023-03-18",
     "age_at_intake": 50,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 132,
     "baseline_dbp": 81,
     "bmi": 29.8,
@@ -3456,10 +3492,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-388",
-    "enrollment_date": "2023-03-16",
+    "patient_id": "PAT-CARD-391",
+    "enrollment_date": "2023-03-19",
     "age_at_intake": 51,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 143,
     "baseline_dbp": 77,
     "bmi": 34.5,
@@ -3468,10 +3504,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-389",
-    "enrollment_date": "2023-03-17",
+    "patient_id": "PAT-CARD-392",
+    "enrollment_date": "2023-03-20",
     "age_at_intake": 54,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 163,
     "baseline_dbp": 90,
     "bmi": 32.0,
@@ -3480,10 +3516,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-390",
-    "enrollment_date": "2023-03-18",
+    "patient_id": "PAT-CARD-393",
+    "enrollment_date": "2023-03-21",
     "age_at_intake": 77,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 117,
     "baseline_dbp": 81,
     "bmi": 21.6,
@@ -3492,10 +3528,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-391",
-    "enrollment_date": "2023-03-19",
+    "patient_id": "PAT-CARD-394",
+    "enrollment_date": "2023-03-22",
     "age_at_intake": 55,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 122,
     "baseline_dbp": 104,
     "bmi": 21.7,
@@ -3504,10 +3540,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-392",
-    "enrollment_date": "2023-03-20",
+    "patient_id": "PAT-CARD-395",
+    "enrollment_date": "2023-03-23",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 129,
     "baseline_dbp": 73,
     "bmi": 36.3,
@@ -3516,10 +3552,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-393",
-    "enrollment_date": "2023-03-21",
+    "patient_id": "PAT-CARD-396",
+    "enrollment_date": "2023-03-24",
     "age_at_intake": 59,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 151,
     "baseline_dbp": 100,
     "bmi": 33.7,
@@ -3528,10 +3564,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-394",
-    "enrollment_date": "2023-03-22",
+    "patient_id": "PAT-CARD-397",
+    "enrollment_date": "2023-03-25",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 170,
     "baseline_dbp": 79,
     "bmi": 29.0,
@@ -3540,10 +3576,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-395",
-    "enrollment_date": "2023-03-23",
+    "patient_id": "PAT-CARD-398",
+    "enrollment_date": "2023-03-26",
     "age_at_intake": 66,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 93,
     "bmi": 28.0,
@@ -3552,10 +3588,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-396",
-    "enrollment_date": "2023-03-24",
+    "patient_id": "PAT-CARD-399",
+    "enrollment_date": "2023-03-27",
     "age_at_intake": 45,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 156,
     "baseline_dbp": 84,
     "bmi": 28.2,
@@ -3564,10 +3600,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-397",
-    "enrollment_date": "2023-03-25",
+    "patient_id": "PAT-CARD-400",
+    "enrollment_date": "2023-03-28",
     "age_at_intake": 65,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 143,
     "baseline_dbp": 70,
     "bmi": 34.4,
@@ -3576,10 +3612,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-398",
-    "enrollment_date": "2023-03-26",
+    "patient_id": "PAT-CARD-401",
+    "enrollment_date": "2023-03-29",
     "age_at_intake": 51,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 167,
     "baseline_dbp": 100,
     "bmi": 24.3,
@@ -3588,10 +3624,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-399",
-    "enrollment_date": "2023-03-27",
+    "patient_id": "PAT-CARD-402",
+    "enrollment_date": "2023-03-30",
     "age_at_intake": 82,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 133,
     "baseline_dbp": 84,
     "bmi": 32.7,
@@ -3600,10 +3636,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-400",
-    "enrollment_date": "2023-03-28",
+    "patient_id": "PAT-CARD-403",
+    "enrollment_date": "2023-03-31",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 87,
     "bmi": 28.0,
@@ -3612,10 +3648,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-401",
-    "enrollment_date": "2023-03-29",
+    "patient_id": "PAT-CARD-404",
+    "enrollment_date": "2023-04-01",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 98,
     "bmi": 27.6,
@@ -3624,10 +3660,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-402",
-    "enrollment_date": "2023-03-30",
+    "patient_id": "PAT-CARD-405",
+    "enrollment_date": "2023-04-02",
     "age_at_intake": 61,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 110,
     "baseline_dbp": 70,
     "bmi": 23.0,
@@ -3636,10 +3672,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-403",
-    "enrollment_date": "2023-03-31",
+    "patient_id": "PAT-CARD-406",
+    "enrollment_date": "2023-04-03",
     "age_at_intake": 72,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 159,
     "baseline_dbp": 93,
     "bmi": 24.5,
@@ -3648,10 +3684,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-404",
-    "enrollment_date": "2023-04-01",
+    "patient_id": "PAT-CARD-407",
+    "enrollment_date": "2023-04-04",
     "age_at_intake": 54,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 145,
     "baseline_dbp": 73,
     "bmi": 30.0,
@@ -3660,10 +3696,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-405",
-    "enrollment_date": "2023-04-02",
+    "patient_id": "PAT-CARD-408",
+    "enrollment_date": "2023-04-05",
     "age_at_intake": 54,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 92,
     "bmi": 27.4,
@@ -3672,10 +3708,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-406",
-    "enrollment_date": "2023-04-03",
+    "patient_id": "PAT-CARD-409",
+    "enrollment_date": "2023-04-06",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 117,
     "baseline_dbp": 82,
     "bmi": 36.6,
@@ -3684,10 +3720,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-407",
-    "enrollment_date": "2023-04-04",
+    "patient_id": "PAT-CARD-410",
+    "enrollment_date": "2023-04-07",
     "age_at_intake": 85,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 147,
     "baseline_dbp": 85,
     "bmi": 28.6,
@@ -3696,10 +3732,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-408",
-    "enrollment_date": "2023-04-05",
+    "patient_id": "PAT-CARD-411",
+    "enrollment_date": "2023-04-08",
     "age_at_intake": 78,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 133,
     "baseline_dbp": 94,
     "bmi": 22.4,
@@ -3708,10 +3744,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-409",
-    "enrollment_date": "2023-04-06",
+    "patient_id": "PAT-CARD-412",
+    "enrollment_date": "2023-04-09",
     "age_at_intake": 74,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 150,
     "baseline_dbp": 73,
     "bmi": 28.6,
@@ -3720,10 +3756,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-410",
-    "enrollment_date": "2023-04-07",
+    "patient_id": "PAT-CARD-413",
+    "enrollment_date": "2023-04-10",
     "age_at_intake": 54,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 130,
     "baseline_dbp": 74,
     "bmi": 28.6,
@@ -3732,10 +3768,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-411",
-    "enrollment_date": "2023-04-08",
+    "patient_id": "PAT-CARD-414",
+    "enrollment_date": "2023-04-11",
     "age_at_intake": 64,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 174,
     "baseline_dbp": 74,
     "bmi": 29.4,
@@ -3744,10 +3780,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-412",
-    "enrollment_date": "2023-04-09",
+    "patient_id": "PAT-CARD-415",
+    "enrollment_date": "2023-04-12",
     "age_at_intake": 70,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 135,
     "baseline_dbp": 97,
     "bmi": 29.3,
@@ -3756,10 +3792,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-413",
-    "enrollment_date": "2023-04-10",
+    "patient_id": "PAT-CARD-416",
+    "enrollment_date": "2023-04-13",
     "age_at_intake": 72,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 140,
     "baseline_dbp": 83,
     "bmi": 28.3,
@@ -3768,10 +3804,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-414",
-    "enrollment_date": "2023-04-11",
+    "patient_id": "PAT-CARD-417",
+    "enrollment_date": "2023-04-14",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 153,
     "baseline_dbp": 97,
     "bmi": 27.1,
@@ -3780,10 +3816,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-415",
-    "enrollment_date": "2023-04-12",
+    "patient_id": "PAT-CARD-418",
+    "enrollment_date": "2023-04-15",
     "age_at_intake": 80,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 124,
     "baseline_dbp": 102,
     "bmi": 33.7,
@@ -3792,10 +3828,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-416",
-    "enrollment_date": "2023-04-13",
+    "patient_id": "PAT-CARD-419",
+    "enrollment_date": "2023-04-16",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 81,
     "bmi": 34.0,
@@ -3804,10 +3840,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-417",
-    "enrollment_date": "2023-04-14",
+    "patient_id": "PAT-CARD-420",
+    "enrollment_date": "2023-04-17",
     "age_at_intake": 76,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 117,
     "baseline_dbp": 88,
     "bmi": 27.8,
@@ -3816,10 +3852,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-418",
-    "enrollment_date": "2023-04-15",
+    "patient_id": "PAT-CARD-421",
+    "enrollment_date": "2023-04-18",
     "age_at_intake": 71,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 145,
     "baseline_dbp": 74,
     "bmi": 29.5,
@@ -3828,10 +3864,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-419",
-    "enrollment_date": "2023-04-16",
+    "patient_id": "PAT-CARD-422",
+    "enrollment_date": "2023-04-19",
     "age_at_intake": 81,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 121,
     "baseline_dbp": 79,
     "bmi": 30.6,
@@ -3840,10 +3876,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-420",
-    "enrollment_date": "2023-04-17",
+    "patient_id": "PAT-CARD-423",
+    "enrollment_date": "2023-04-20",
     "age_at_intake": 54,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 128,
     "baseline_dbp": 103,
     "bmi": 22.0,
@@ -3852,10 +3888,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-421",
-    "enrollment_date": "2023-04-18",
+    "patient_id": "PAT-CARD-424",
+    "enrollment_date": "2023-04-21",
     "age_at_intake": 77,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 110,
     "baseline_dbp": 74,
     "bmi": 24.8,
@@ -3864,10 +3900,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-422",
-    "enrollment_date": "2023-04-19",
+    "patient_id": "PAT-CARD-425",
+    "enrollment_date": "2023-04-22",
     "age_at_intake": 81,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 165,
     "baseline_dbp": 101,
     "bmi": 35.6,
@@ -3876,10 +3912,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-423",
-    "enrollment_date": "2023-04-20",
+    "patient_id": "PAT-CARD-426",
+    "enrollment_date": "2023-04-23",
     "age_at_intake": 67,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 118,
     "baseline_dbp": 97,
     "bmi": 27.3,
@@ -3888,10 +3924,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-424",
-    "enrollment_date": "2023-04-21",
+    "patient_id": "PAT-CARD-427",
+    "enrollment_date": "2023-04-24",
     "age_at_intake": 46,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 141,
     "baseline_dbp": 81,
     "bmi": 29.0,
@@ -3900,10 +3936,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-425",
-    "enrollment_date": "2023-04-22",
+    "patient_id": "PAT-CARD-428",
+    "enrollment_date": "2023-04-25",
     "age_at_intake": 79,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 140,
     "baseline_dbp": 98,
     "bmi": 31.9,
@@ -3912,10 +3948,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-426",
-    "enrollment_date": "2023-04-23",
+    "patient_id": "PAT-CARD-429",
+    "enrollment_date": "2023-04-26",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 134,
     "baseline_dbp": 83,
     "bmi": 34.3,
@@ -3924,10 +3960,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-427",
-    "enrollment_date": "2023-04-24",
+    "patient_id": "PAT-CARD-430",
+    "enrollment_date": "2023-04-27",
     "age_at_intake": 51,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 147,
     "baseline_dbp": 97,
     "bmi": 36.7,
@@ -3936,10 +3972,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-428",
-    "enrollment_date": "2023-04-25",
+    "patient_id": "PAT-CARD-431",
+    "enrollment_date": "2023-04-28",
     "age_at_intake": 50,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 133,
     "baseline_dbp": 101,
     "bmi": 22.3,
@@ -3948,10 +3984,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-429",
-    "enrollment_date": "2023-04-26",
+    "patient_id": "PAT-CARD-432",
+    "enrollment_date": "2023-04-29",
     "age_at_intake": 77,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 118,
     "baseline_dbp": 85,
     "bmi": 27.3,
@@ -3960,10 +3996,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-430",
-    "enrollment_date": "2023-04-27",
+    "patient_id": "PAT-CARD-433",
+    "enrollment_date": "2023-04-30",
     "age_at_intake": 68,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 167,
     "baseline_dbp": 95,
     "bmi": 28.3,
@@ -3972,10 +4008,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-431",
-    "enrollment_date": "2023-04-28",
+    "patient_id": "PAT-CARD-434",
+    "enrollment_date": "2023-05-01",
     "age_at_intake": 64,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 112,
     "baseline_dbp": 104,
     "bmi": 22.8,
@@ -3984,10 +4020,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-432",
-    "enrollment_date": "2023-04-29",
+    "patient_id": "PAT-CARD-435",
+    "enrollment_date": "2023-05-02",
     "age_at_intake": 62,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 130,
     "baseline_dbp": 101,
     "bmi": 28.3,
@@ -3996,10 +4032,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-433",
-    "enrollment_date": "2023-04-30",
+    "patient_id": "PAT-CARD-436",
+    "enrollment_date": "2023-05-03",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 131,
     "baseline_dbp": 99,
     "bmi": 31.9,
@@ -4008,10 +4044,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-434",
-    "enrollment_date": "2023-05-01",
+    "patient_id": "PAT-CARD-437",
+    "enrollment_date": "2023-05-04",
     "age_at_intake": 61,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 99,
     "bmi": 27.0,
@@ -4020,10 +4056,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-435",
-    "enrollment_date": "2023-05-02",
+    "patient_id": "PAT-CARD-438",
+    "enrollment_date": "2023-05-05",
     "age_at_intake": 58,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 141,
     "baseline_dbp": 100,
     "bmi": 23.4,
@@ -4032,10 +4068,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-436",
-    "enrollment_date": "2023-05-03",
+    "patient_id": "PAT-CARD-439",
+    "enrollment_date": "2023-05-06",
     "age_at_intake": 65,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 125,
     "baseline_dbp": 99,
     "bmi": 22.0,
@@ -4044,10 +4080,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-437",
-    "enrollment_date": "2023-05-04",
+    "patient_id": "PAT-CARD-440",
+    "enrollment_date": "2023-05-07",
     "age_at_intake": 48,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 124,
     "baseline_dbp": 99,
     "bmi": 22.3,
@@ -4056,10 +4092,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-438",
-    "enrollment_date": "2023-05-05",
+    "patient_id": "PAT-CARD-441",
+    "enrollment_date": "2023-05-08",
     "age_at_intake": 58,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 151,
     "baseline_dbp": 80,
     "bmi": 26.0,
@@ -4068,10 +4104,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-439",
-    "enrollment_date": "2023-05-06",
+    "patient_id": "PAT-CARD-442",
+    "enrollment_date": "2023-05-09",
     "age_at_intake": 62,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 152,
     "baseline_dbp": 85,
     "bmi": 33.9,
@@ -4080,10 +4116,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-440",
-    "enrollment_date": "2023-05-07",
+    "patient_id": "PAT-CARD-443",
+    "enrollment_date": "2023-05-10",
     "age_at_intake": 55,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 169,
     "baseline_dbp": 78,
     "bmi": 25.8,
@@ -4092,10 +4128,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-441",
-    "enrollment_date": "2023-05-08",
+    "patient_id": "PAT-CARD-444",
+    "enrollment_date": "2023-05-11",
     "age_at_intake": 84,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 167,
     "baseline_dbp": 78,
     "bmi": 31.7,
@@ -4104,10 +4140,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-442",
-    "enrollment_date": "2023-05-09",
+    "patient_id": "PAT-CARD-445",
+    "enrollment_date": "2023-05-12",
     "age_at_intake": 84,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 131,
     "baseline_dbp": 82,
     "bmi": 36.5,
@@ -4116,10 +4152,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-443",
-    "enrollment_date": "2023-05-10",
+    "patient_id": "PAT-CARD-446",
+    "enrollment_date": "2023-05-13",
     "age_at_intake": 81,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 158,
     "baseline_dbp": 104,
     "bmi": 27.9,
@@ -4128,10 +4164,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-444",
-    "enrollment_date": "2023-05-11",
+    "patient_id": "PAT-CARD-447",
+    "enrollment_date": "2023-05-14",
     "age_at_intake": 52,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 120,
     "baseline_dbp": 95,
     "bmi": 26.9,
@@ -4140,10 +4176,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-445",
-    "enrollment_date": "2023-05-12",
+    "patient_id": "PAT-CARD-448",
+    "enrollment_date": "2023-05-15",
     "age_at_intake": 50,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 154,
     "baseline_dbp": 71,
     "bmi": 25.2,
@@ -4152,10 +4188,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-446",
-    "enrollment_date": "2023-05-13",
+    "patient_id": "PAT-CARD-449",
+    "enrollment_date": "2023-05-16",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 117,
     "baseline_dbp": 73,
     "bmi": 27.9,
@@ -4164,10 +4200,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-447",
-    "enrollment_date": "2023-05-14",
+    "patient_id": "PAT-CARD-450",
+    "enrollment_date": "2023-05-17",
     "age_at_intake": 75,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 171,
     "baseline_dbp": 81,
     "bmi": 31.4,
@@ -4176,10 +4212,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-448",
-    "enrollment_date": "2023-05-15",
+    "patient_id": "PAT-CARD-451",
+    "enrollment_date": "2023-05-18",
     "age_at_intake": 62,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 137,
     "baseline_dbp": 104,
     "bmi": 22.0,
@@ -4188,10 +4224,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-449",
-    "enrollment_date": "2023-05-16",
+    "patient_id": "PAT-CARD-452",
+    "enrollment_date": "2023-05-19",
     "age_at_intake": 83,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 139,
     "baseline_dbp": 101,
     "bmi": 29.7,
@@ -4200,10 +4236,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-450",
-    "enrollment_date": "2023-05-17",
+    "patient_id": "PAT-CARD-453",
+    "enrollment_date": "2023-05-20",
     "age_at_intake": 52,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 101,
     "bmi": 31.8,
@@ -4212,10 +4248,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-451",
-    "enrollment_date": "2023-05-18",
+    "patient_id": "PAT-CARD-454",
+    "enrollment_date": "2023-05-21",
     "age_at_intake": 51,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 159,
     "baseline_dbp": 82,
     "bmi": 31.9,
@@ -4224,10 +4260,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-452",
-    "enrollment_date": "2023-05-19",
+    "patient_id": "PAT-CARD-455",
+    "enrollment_date": "2023-05-22",
     "age_at_intake": 72,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 152,
     "baseline_dbp": 75,
     "bmi": 28.0,
@@ -4236,10 +4272,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-453",
-    "enrollment_date": "2023-05-20",
+    "patient_id": "PAT-CARD-456",
+    "enrollment_date": "2023-05-23",
     "age_at_intake": 51,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 151,
     "baseline_dbp": 82,
     "bmi": 26.6,
@@ -4248,10 +4284,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-454",
-    "enrollment_date": "2023-05-21",
+    "patient_id": "PAT-CARD-457",
+    "enrollment_date": "2023-05-24",
     "age_at_intake": 66,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 175,
     "baseline_dbp": 98,
     "bmi": 35.1,
@@ -4260,10 +4296,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-455",
-    "enrollment_date": "2023-05-22",
+    "patient_id": "PAT-CARD-458",
+    "enrollment_date": "2023-05-25",
     "age_at_intake": 48,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 154,
     "baseline_dbp": 90,
     "bmi": 36.1,
@@ -4272,10 +4308,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-456",
-    "enrollment_date": "2023-05-23",
+    "patient_id": "PAT-CARD-459",
+    "enrollment_date": "2023-05-26",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 167,
     "baseline_dbp": 103,
     "bmi": 30.5,
@@ -4284,10 +4320,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-457",
-    "enrollment_date": "2023-05-24",
+    "patient_id": "PAT-CARD-460",
+    "enrollment_date": "2023-05-27",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 143,
     "baseline_dbp": 79,
     "bmi": 25.0,
@@ -4296,10 +4332,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-458",
-    "enrollment_date": "2023-05-25",
+    "patient_id": "PAT-CARD-461",
+    "enrollment_date": "2023-05-28",
     "age_at_intake": 57,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 135,
     "baseline_dbp": 86,
     "bmi": 30.9,
@@ -4308,10 +4344,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-459",
-    "enrollment_date": "2023-05-26",
+    "patient_id": "PAT-CARD-462",
+    "enrollment_date": "2023-05-29",
     "age_at_intake": 50,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 132,
     "baseline_dbp": 89,
     "bmi": 24.6,
@@ -4320,10 +4356,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-460",
-    "enrollment_date": "2023-05-27",
+    "patient_id": "PAT-CARD-463",
+    "enrollment_date": "2023-05-30",
     "age_at_intake": 57,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 141,
     "baseline_dbp": 71,
     "bmi": 24.9,
@@ -4332,10 +4368,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-461",
-    "enrollment_date": "2023-05-28",
+    "patient_id": "PAT-CARD-464",
+    "enrollment_date": "2023-05-31",
     "age_at_intake": 76,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 164,
     "baseline_dbp": 70,
     "bmi": 35.3,
@@ -4344,10 +4380,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-462",
-    "enrollment_date": "2023-05-29",
+    "patient_id": "PAT-CARD-465",
+    "enrollment_date": "2023-06-01",
     "age_at_intake": 61,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 101,
     "bmi": 35.5,
@@ -4356,10 +4392,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-463",
-    "enrollment_date": "2023-05-30",
+    "patient_id": "PAT-CARD-466",
+    "enrollment_date": "2023-06-02",
     "age_at_intake": 77,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 123,
     "baseline_dbp": 77,
     "bmi": 34.5,
@@ -4368,10 +4404,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-464",
-    "enrollment_date": "2023-05-31",
+    "patient_id": "PAT-CARD-467",
+    "enrollment_date": "2023-06-03",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 105,
     "bmi": 29.1,
@@ -4380,10 +4416,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-465",
-    "enrollment_date": "2023-06-01",
+    "patient_id": "PAT-CARD-468",
+    "enrollment_date": "2023-06-04",
     "age_at_intake": 58,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 135,
     "baseline_dbp": 88,
     "bmi": 31.4,
@@ -4392,10 +4428,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-466",
-    "enrollment_date": "2023-06-02",
+    "patient_id": "PAT-CARD-469",
+    "enrollment_date": "2023-06-05",
     "age_at_intake": 74,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 175,
     "baseline_dbp": 89,
     "bmi": 24.9,
@@ -4404,10 +4440,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-467",
-    "enrollment_date": "2023-06-03",
+    "patient_id": "PAT-CARD-470",
+    "enrollment_date": "2023-06-06",
     "age_at_intake": 47,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 135,
     "baseline_dbp": 82,
     "bmi": 33.0,
@@ -4416,10 +4452,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-468",
-    "enrollment_date": "2023-06-04",
+    "patient_id": "PAT-CARD-471",
+    "enrollment_date": "2023-06-07",
     "age_at_intake": 75,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 151,
     "baseline_dbp": 71,
     "bmi": 28.0,
@@ -4428,10 +4464,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-469",
-    "enrollment_date": "2023-06-05",
+    "patient_id": "PAT-CARD-472",
+    "enrollment_date": "2023-06-08",
     "age_at_intake": 68,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 122,
     "baseline_dbp": 77,
     "bmi": 27.6,
@@ -4440,10 +4476,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-470",
-    "enrollment_date": "2023-06-06",
+    "patient_id": "PAT-CARD-473",
+    "enrollment_date": "2023-06-09",
     "age_at_intake": 80,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 146,
     "baseline_dbp": 92,
     "bmi": 32.0,
@@ -4452,10 +4488,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-471",
-    "enrollment_date": "2023-06-07",
+    "patient_id": "PAT-CARD-474",
+    "enrollment_date": "2023-06-10",
     "age_at_intake": 55,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 154,
     "baseline_dbp": 85,
     "bmi": 21.7,
@@ -4464,10 +4500,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-472",
-    "enrollment_date": "2023-06-08",
+    "patient_id": "PAT-CARD-475",
+    "enrollment_date": "2023-06-11",
     "age_at_intake": 45,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 131,
     "baseline_dbp": 98,
     "bmi": 34.5,
@@ -4476,10 +4512,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-473",
-    "enrollment_date": "2023-06-09",
+    "patient_id": "PAT-CARD-476",
+    "enrollment_date": "2023-06-12",
     "age_at_intake": 83,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 126,
     "baseline_dbp": 98,
     "bmi": 23.6,
@@ -4488,10 +4524,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-474",
-    "enrollment_date": "2023-06-10",
+    "patient_id": "PAT-CARD-477",
+    "enrollment_date": "2023-06-13",
     "age_at_intake": 64,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 111,
     "baseline_dbp": 71,
     "bmi": 30.6,
@@ -4500,10 +4536,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-475",
-    "enrollment_date": "2023-06-11",
+    "patient_id": "PAT-CARD-478",
+    "enrollment_date": "2023-06-14",
     "age_at_intake": 45,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 133,
     "baseline_dbp": 85,
     "bmi": 30.9,
@@ -4512,10 +4548,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-476",
-    "enrollment_date": "2023-06-12",
+    "patient_id": "PAT-CARD-479",
+    "enrollment_date": "2023-06-15",
     "age_at_intake": 81,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 162,
     "baseline_dbp": 92,
     "bmi": 28.0,
@@ -4524,10 +4560,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-477",
-    "enrollment_date": "2023-06-13",
+    "patient_id": "PAT-CARD-480",
+    "enrollment_date": "2023-06-16",
     "age_at_intake": 85,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 158,
     "baseline_dbp": 87,
     "bmi": 35.4,
@@ -4536,10 +4572,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-478",
-    "enrollment_date": "2023-06-14",
+    "patient_id": "PAT-CARD-481",
+    "enrollment_date": "2023-06-17",
     "age_at_intake": 50,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 166,
     "baseline_dbp": 74,
     "bmi": 24.8,
@@ -4548,10 +4584,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-479",
-    "enrollment_date": "2023-06-15",
+    "patient_id": "PAT-CARD-482",
+    "enrollment_date": "2023-06-18",
     "age_at_intake": 54,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 147,
     "baseline_dbp": 89,
     "bmi": 24.2,
@@ -4560,10 +4596,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-480",
-    "enrollment_date": "2023-06-16",
+    "patient_id": "PAT-CARD-483",
+    "enrollment_date": "2023-06-19",
     "age_at_intake": 58,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 137,
     "baseline_dbp": 78,
     "bmi": 22.9,
@@ -4572,10 +4608,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-481",
-    "enrollment_date": "2023-06-17",
+    "patient_id": "PAT-CARD-484",
+    "enrollment_date": "2023-06-20",
     "age_at_intake": 48,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 116,
     "baseline_dbp": 88,
     "bmi": 32.8,
@@ -4584,10 +4620,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-482",
-    "enrollment_date": "2023-06-18",
+    "patient_id": "PAT-CARD-485",
+    "enrollment_date": "2023-06-21",
     "age_at_intake": 46,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 126,
     "baseline_dbp": 82,
     "bmi": 32.1,
@@ -4596,10 +4632,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-483",
-    "enrollment_date": "2023-06-19",
+    "patient_id": "PAT-CARD-486",
+    "enrollment_date": "2023-06-22",
     "age_at_intake": 56,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 113,
     "baseline_dbp": 80,
     "bmi": 21.9,
@@ -4608,10 +4644,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-484",
-    "enrollment_date": "2023-06-20",
+    "patient_id": "PAT-CARD-487",
+    "enrollment_date": "2023-06-23",
     "age_at_intake": 56,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 151,
     "baseline_dbp": 92,
     "bmi": 27.6,
@@ -4620,10 +4656,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-485",
-    "enrollment_date": "2023-06-21",
+    "patient_id": "PAT-CARD-488",
+    "enrollment_date": "2023-06-24",
     "age_at_intake": 72,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 130,
     "baseline_dbp": 84,
     "bmi": 34.1,
@@ -4632,10 +4668,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-486",
-    "enrollment_date": "2023-06-22",
+    "patient_id": "PAT-CARD-489",
+    "enrollment_date": "2023-06-25",
     "age_at_intake": 63,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 148,
     "baseline_dbp": 84,
     "bmi": 29.1,
@@ -4644,10 +4680,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-487",
-    "enrollment_date": "2023-06-23",
+    "patient_id": "PAT-CARD-490",
+    "enrollment_date": "2023-06-26",
     "age_at_intake": 84,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 163,
     "baseline_dbp": 78,
     "bmi": 36.1,
@@ -4656,10 +4692,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-488",
-    "enrollment_date": "2023-06-24",
+    "patient_id": "PAT-CARD-491",
+    "enrollment_date": "2023-06-27",
     "age_at_intake": 76,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 158,
     "baseline_dbp": 84,
     "bmi": 35.9,
@@ -4668,10 +4704,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-489",
-    "enrollment_date": "2023-06-25",
+    "patient_id": "PAT-CARD-492",
+    "enrollment_date": "2023-06-28",
     "age_at_intake": 60,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 166,
     "baseline_dbp": 94,
     "bmi": 29.0,
@@ -4680,10 +4716,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-490",
-    "enrollment_date": "2023-06-26",
+    "patient_id": "PAT-CARD-493",
+    "enrollment_date": "2023-06-29",
     "age_at_intake": 82,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 122,
     "baseline_dbp": 87,
     "bmi": 23.8,
@@ -4692,10 +4728,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-491",
-    "enrollment_date": "2023-06-27",
+    "patient_id": "PAT-CARD-494",
+    "enrollment_date": "2023-06-30",
     "age_at_intake": 70,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 149,
     "baseline_dbp": 74,
     "bmi": 33.8,
@@ -4704,10 +4740,10 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-492",
-    "enrollment_date": "2023-06-28",
+    "patient_id": "PAT-CARD-495",
+    "enrollment_date": "2023-07-01",
     "age_at_intake": 60,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 170,
     "baseline_dbp": 105,
     "bmi": 26.3,
@@ -4716,10 +4752,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-493",
-    "enrollment_date": "2023-06-29",
+    "patient_id": "PAT-CARD-496",
+    "enrollment_date": "2023-07-02",
     "age_at_intake": 57,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 169,
     "baseline_dbp": 76,
     "bmi": 29.5,
@@ -4728,10 +4764,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-494",
-    "enrollment_date": "2023-06-30",
+    "patient_id": "PAT-CARD-497",
+    "enrollment_date": "2023-07-03",
     "age_at_intake": 79,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 146,
     "baseline_dbp": 70,
     "bmi": 33.8,
@@ -4740,10 +4776,10 @@
     "smoker": true
   },
   {
-    "patient_id": "PAT-CARD-495",
-    "enrollment_date": "2023-07-01",
+    "patient_id": "PAT-CARD-498",
+    "enrollment_date": "2023-07-04",
     "age_at_intake": 77,
-    "sex": "F",
+    "sex": "M",
     "baseline_sbp": 156,
     "baseline_dbp": 96,
     "bmi": 31.9,
@@ -4752,51 +4788,15 @@
     "smoker": false
   },
   {
-    "patient_id": "PAT-CARD-496",
-    "enrollment_date": "2023-07-02",
+    "patient_id": "PAT-CARD-499",
+    "enrollment_date": "2023-07-05",
     "age_at_intake": 66,
-    "sex": "M",
+    "sex": "F",
     "baseline_sbp": 129,
     "baseline_dbp": 74,
     "bmi": 23.9,
     "hypertension_history": false,
     "diabetes_history": true,
-    "smoker": false
-  },
-  {
-    "patient_id": "PAT-CARD-497",
-    "enrollment_date": "2023-07-03",
-    "age_at_intake": 70,
-    "sex": "F",
-    "baseline_sbp": 144,
-    "baseline_dbp": 105,
-    "bmi": 35.3,
-    "hypertension_history": true,
-    "diabetes_history": true,
-    "smoker": true
-  },
-  {
-    "patient_id": "PAT-CARD-498",
-    "enrollment_date": "2023-07-04",
-    "age_at_intake": 68,
-    "sex": "M",
-    "baseline_sbp": 155,
-    "baseline_dbp": 95,
-    "bmi": 25.6,
-    "hypertension_history": true,
-    "diabetes_history": true,
-    "smoker": false
-  },
-  {
-    "patient_id": "PAT-CARD-499",
-    "enrollment_date": "2023-07-05",
-    "age_at_intake": 53,
-    "sex": "F",
-    "baseline_sbp": 125,
-    "baseline_dbp": 103,
-    "bmi": 28.7,
-    "hypertension_history": false,
-    "diabetes_history": false,
     "smoker": false
   }
 ]

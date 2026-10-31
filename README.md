@@ -1,135 +1,102 @@
 # Managed Trusted Research Environments (TRE) on GCP
 
-[![Google Cloud Platform](https://img.shields.io/badge/GCP-Enterprise%20TRE-4285F4?logo=googlecloud&logoColor=white)](https://cloud.google.com/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![BigQuery](https://img.shields.io/badge/BigQuery-Analytics%20%26%20FinOps-669DF6?logo=googlebigquery&logoColor=white)](https://cloud.google.com/bigquery)
-[![Vertex AI](https://img.shields.io/badge/Vertex%20AI-Gemini%203.7%20Flash-FF6F00?logo=google&logoColor=white)](https://cloud.google.com/vertex-ai)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-
-An enterprise-grade, zero-trust **Managed Multi-Tenant Trusted Research Environment (TRE)** and centralized governance platform on Google Cloud Platform. 
-
-Designed for hospital networks, clinical research consortia, and life sciences organizations to deploy isolated research workspaces ("Research Rooms") with automated statutory ethics gating (Helsinki IRB, DUAs), dual-bucket Air-Lock egress protection, and FinOps cost accountability.
+A zero-trust, multi-tenant governance and observability platform on Google Cloud Platform for managing secure research environments.
 
 ---
 
-## 📖 Primary Documentation & Visual Runbooks
+## 1. Project Goal & Overview
 
-* 🏛️ **[System Architecture Specification (`ARCHITECTURE.md`)](./ARCHITECTURE.md)**:
-  - Complete project mission, isolation perimeters, and **VPC Service Controls (VPC-SC)** security model.
-  - Comprehensive high-level and detailed multi-project visual topology.
-  - Detailed visual sequence flows and cloud resource breakdowns for all 5 core backend processes.
-  - Dynamic usage-based cost model explanation and Architectural Decision Records (ADRs).
-* ⚙️ **[CLI & Operations Runbook (`scripts/README.md`)](./scripts/README.md)**:
-  - Master operations lifecycle matrix, script triggers, prerequisites, and copy-pasteable CLI commands for all 24 automation scripts.
-* 🚀 **[Zero-to-Production Deployment Guide (`DEPLOYMENT.md`)](./DEPLOYMENT.md)**:
-  - Step-by-step provisioning guide with immediate verification commands for every infrastructure step.
-  - **Traffic Generation & Workload Operations**: CLI instructions to run synthetic and genuine multi-tenant researcher traffic.
-* 🖥️ **[Visual Presentation Deck (`docs/gcp_tre_presentation.html`)](./docs/gcp_tre_presentation.html)**:
-  - Interactive visual slide deck introducing the GCP TRE project vision, dual governance & FinOps control plane, and Air-Lock protection.
-* 🎨 **[Technical Visual Diagrams (`docs/TECHNICAL_DIAGRAMS.md`)](./docs/TECHNICAL_DIAGRAMS.md)**:
-  - Multi-colored Mermaid sequence diagrams and high-contrast system architecture maps.
-* 📊 **[FinOps Feature Summary (`FINOPS_FEATURE_SUMMARY.md`)](./FINOPS_FEATURE_SUMMARY.md)**:
-  - Two-tiered proportional cost attribution engine rules, mathematical invariant proofs, and BigQuery billing export integration.
-* 📋 **[Core Feature Summary (`FEATURE_SUMMARY.md`)](./FEATURE_SUMMARY.md)**:
-  - Summary of telemetry tables, stored procedures, scheduled queries, and REST APIs.
+The goal of this platform is to provide a centralized administrative control plane to deploy, govern, monitor, and financially manage isolated research environments ("Research Rooms") on Google Cloud.
+
+There is high demand for such solutions across public sector entities and regulated environments, including health authorities, government ministries, higher education and research consortia, and financial institutions.
+
+### Core Architectural Synthesis
+The platform brings together four key elements into a unified system:
+
+* **Google Cloud Secure Research Blueprints**: Built on GCP native building blocks for secure data collaboration, including BigQuery data clean rooms, Analytics Hub zero-copy data exchanges, VPC Service Controls (VPC-SC) perimeters, and standardized Colab Enterprise notebook runtimes.
+* **Hub-and-Spoke Unified Governance**: Solves the problem of siloed, fragmented research projects by establishing a central management hub (`gcp-rr-hub-core`) that orchestrates decentralized tenant workspaces (`gcp-rr-spoke-*`), providing unified identity, central audit logging, and consolidated FinOps across all environments.
+* **AI-Powered Operational Automations**: Leverages Google Vertex AI (Gemini 3.7 Flash) to automate high-friction internal procedures, such as continuous statutory compliance scanning over regulatory approval documents (triggering automated IAM soft-downgrades if approvals lapse) and tabular privacy risk analysis (PII and small-cell disclosure detection) on egress files.
+* **Lightweight Administrative UI**: A responsive, single-page management portal providing role-specific dashboards for Operations Administrators, Cloud Engineers, and Data Protection Officers.
 
 ---
 
-## 🌟 Key Capabilities
+## 2. High-Level Architecture
 
-1. **Autonomous 2-Loop Governance & Soft-Downgrade**:
-   - **Continuous Curation Loop**: BigQuery DTS schedules synchronize audit events, Colab notebook runtimes, and Vertex AI token logs every 15 minutes.
-   - **AI Scanning & Soft-Downgrade Loop**: Google Cloud Workflows (`fleet-governance-cycle`) runs Vertex AI Gemini 3.7 Flash scans against unstructured PDF agreements. If approval expires, it automatically downgrades researcher IAM permissions to read-only viewer roles (`roles/bigquery.dataViewer`, `roles/storage.objectViewer`).
-2. **Two-Tiered Proportional FinOps Attribution**:
-   - Ingests ground-truth GCP Billing Export records into day-partitioned analytical marts.
-   - Apportions BigQuery spend **strictly by `total_bytes_billed`**, Vertex AI by `ai_token_count`, Compute by `notebook_runtime_hours`, and Storage by `storage_bytes`.
-   - Mathematically verified zero-drift balance invariant: $\text{Total Invoiced} \equiv \sum \text{Researcher Spend} + \text{Shared Overhead}$.
-3. **Dual-Bucket Air-Lock Egress Protection**:
-   - Dedicated `inbound` (read-only) and `export` (write-only quarantine) buckets per room.
-   - Automated Gemini DLP risk scoring (small-cell count detection $k < 5$, direct PII/PHI flags, genomic re-identification analysis) with multi-stage DPO release workflows.
-4. **Governed Private Colab Enterprise Workspaces**:
-   - Dedicated spoke VPC subnets (`10.10.x.0/24`) with `disable_public_ip = true` and Cloud NAT.
-   - Governed Jupyter notebooks with native `%%bqsql` magics and project-isolated service accounts.
-5. **Role-Based Governance SPA**:
-   - Three distinct persona dashboards: **Central Operations Admin**, **Technical Cloud Admin**, and **Data Privacy Officer (DPO)**.
-   - Live telemetry visualizations, FinOps cost reconciliation, and real-time fleet health metrics.
+The platform follows a centralized Hub-and-Spoke architecture enclosed within a VPC Service Controls security perimeter:
+
+![GCP Multi-Tenant TRE Target Architecture](docs/assets/gcp_tre_architecture.png)
+
+*Detailed GCP TRE Architecture Blueprint (`gcp_tre_architecture.png`).*
 
 ---
 
-## 📂 Repository Directory Layout
+## 3. Key Solution Values
 
-```
-research-room/
-├── ARCHITECTURE.md                 # In-Depth System Architecture & Sequence Flows
-├── DEPLOYMENT.md                   # Zero-to-Production Deployment & Traffic Manual
-├── FEATURE_SUMMARY.md              # Telemetry & Stored Procedure Specifications
-├── FINOPS_FEATURE_SUMMARY.md       # FinOps Attribution Engine Specification
-├── README.md                       # Repository Overview & Quickstart Guide
-├── LICENSE                         # Apache 2.0 Open Source License
-├── docker-compose.yml              # Local Development Multi-Container Setup
-├── main.py                         # Root Application Entrypoint
-├── backend/                        # FastAPI Backend Application (Python 3.10)
+* **Unified Multi-Tenant Governance**: Eliminates administrative silos by managing all tenant workspaces, permissions, and audit logs from a single control plane.
+* **Zero Egress Risk**: Datasets remain enclosed within private VPC Service Controls perimeters. Egress is restricted to an Air-Lock quarantine bucket requiring AI privacy risk scoring and Data Protection Officer sign-off.
+* **Autonomous Statutory Compliance**: Continuous AI verification of regulatory checklists automatically demotes expired rooms from active write/execute roles to read-only viewer roles, maintaining analytical continuity without regulatory non-compliance.
+* **Two-Tiered FinOps Cost Attribution**: Reconciles ground-truth cloud spend from Google Cloud Billing exports against granular telemetry weights (BigQuery bytes billed, Colab runtime hours, Vertex AI token consumption, and storage bytes) to attribute costs down to individual researchers and shared administrative overhead.
+* **Zero-Copy Data Collaboration**: Utilizes BigQuery Analytics Hub to share curated datasets across independent spoke projects without physical data duplication.
+
+---
+
+## 4. Repository Structure
+
+```text
+managed-trusted-research-environments/
+├── ARCHITECTURE.md                         # Consolidated master technical architecture & deep dive
+├── DEPLOYMENT.md                           # Step-by-step provisioning guide & operational scripts catalog
+├── LICENSE                                 # Apache 2.0 open-source license
+├── README.md                               # Project overview, architecture & value proposition
+├── backend/                                # FastAPI REST application
 │   ├── app/
-│   │   ├── api/v1/                 # REST Route Handlers (Rooms, FinOps, Telemetry, Airlock)
-│   │   ├── core/                   # Configuration (Pydantic Settings) & In-Memory Cache
-│   │   ├── models/                 # Strongly-Typed Pydantic Models & DTOs
-│   │   └── services/               # Business Services (FinOps, Telemetry, Compliance, Fleet)
-│   ├── Dockerfile                  # Production Cloud Run Container Build
-│   └── requirements.txt            # Python Dependencies (FastAPI, Google Cloud SDKs)
-├── docs/                           # Architectural Guidelines & Visual Presentations
-│   ├── gcp_tre_presentation.html   # Interactive 7-Slide Visual Slide Deck
-│   ├── TECHNICAL_DIAGRAMS.md       # Multi-Colored Mermaid Architecture Diagrams
-│   └── architectural_standards.md  # Architectural Guidelines & GCP TRE Standards
-├── frontend/                       # Central Administrator Portal SPA
-│   ├── js/                         # Vanilla ES Modules, Chart.js & State Manager
-│   ├── css/                        # Tailwind & Custom Styles
-│   ├── index.html                  # Responsive Application Shell
-│   ├── nginx.conf                  # Nginx Reverse Proxy with No-Cache Directives
-│   └── Dockerfile                  # Lightweight Nginx Web Container Build
-├── scripts/                        # Automated Provisioning, ETL, Simulation & Tooling
-│   ├── README.md                   # Master Operations Runbook & CLI Guide
-│   ├── dev_server.py               # Local Development Full-Stack Server
-│   ├── fixtures/                   # Fleet Topology & Initial Seed Roster
-│   ├── provisioning/               # GCP Infrastructure & Resource Provisioning
-│   ├── simulation/                 # Multi-Tenant Traffic & Researcher Generators
-│   ├── etl/                        # Data Curation, Storage Footprint & Billing Seeding
-│   ├── verification/               # FinOps Invariant & Compliance Test Suites
-│   ├── sql/                        # BigQuery DDL, Stored Procedures & Authorized Views
-│   └── workflows/                  # Google Cloud Workflows Definitions
-├── staging/                        # Staged Datasets & Governed Research Notebooks
-│   ├── bigquery/                   # Staged JSON fixtures for BigQuery Datasets
-│   ├── notebooks/                  # Governed Analytical Jupyter Notebooks
-│   └── storage/                    # Staged Inbound & Export GCS File Trees
-├── terraform/                      # Infrastructure-as-Code Modules
-│   ├── environments/dev/           # Dev Environment Variable Definitions
-│   ├── hub/                        # Central Hub BigQuery, IAM, and VPC-SC Modules
-│   └── modules/room/               # Reusable Spoke Research Room Module
-└── tests/                          # Automated Pytest Test Suite
-    ├── unit/                       # Unit Tests (API, Compliance, FinOps, Fleet)
-    └── e2e/                        # End-to-End Integration Tests
+│   │   ├── api/                            # API routes (/rooms, /finops, /telemetry, /compliance, /airlock)
+│   │   ├── models/                         # Pydantic schemas and data models
+│   │   └── services/                       # Business logic, BigQuery connectors, and AI risk scanners
+│   └── tests/                              # Backend unit and integration test suite
+├── frontend/                               # Single-Page Application (HTML5, Tailwind CSS, Chart.js)
+│   ├── index.html                          # Main dashboard interface
+│   ├── js/                                 # View modules, API clients, and telemetry charts
+│   └── css/                                # Styling configurations
+├── scripts/                                # Operational automation and provisioning scripts
+│   ├── provisioning/                       # Infrastructure and service provisioning scripts
+│   ├── etl/                                # Telemetry sync, metrics aggregation, and billing seeders
+│   ├── simulation/                         # Multi-tenant workload and traffic simulation scripts
+│   ├── verification/                       # Infrastructure audits and FinOps invariant tests
+│   ├── sql/                                # BigQuery DDL, views, and analytical stored procedures
+│   └── dev_server.py                       # Unified local development server runner
+└── tests/                                  # End-to-end and unit test suites
 ```
 
 ---
 
-## ⚡ Traffic Generation & Verification Quickstart
+## 5. Quickstart & Local Development
+
+### Prerequisites
+* Python 3.10+
+* Google Cloud SDK (`gcloud` CLI) authenticated
+* Standard Python dependencies installed:
 
 ```bash
-# 1. Generate live multi-tenant traffic across all rooms
-python3 scripts/simulation/generate_live_researcher_traffic.py --scans 5 --tokens 2000
-
-# 2. Synchronize storage capacity footprints into BigQuery telemetry
-python3 scripts/etl/sync_storage_metrics.py
-
-# 3. Trigger BigQuery Data Curation & Daily Aggregation
-bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_sync_curated_audit_events\`();"
-bq query --use_legacy_sql=false "CALL \`gcp-rr-hub-core.hub_telemetry.sp_aggregate_daily_compute_metrics\`();"
-
-# 4. Run End-to-End FinOps Invariant Test Suite
-python3 scripts/verification/verify_finops_e2e.py
+git clone https://github.com/<your-org-or-username>/managed-trusted-research-environments.git
+cd managed-trusted-research-environments
+pip install -r requirements.txt
 ```
+
+### Running the Local Development Server
+To launch both the FastAPI backend and frontend user interface locally:
+
+```bash
+python scripts/dev_server.py
+```
+
+* **Frontend Management Portal**: Open your browser at `http://localhost:8000`
+* **Interactive API Documentation**: Explore the REST API at `http://localhost:8000/docs`
 
 ---
 
-## 📄 License
-This project is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.
+## 6. Documentation Index
 
+* **[Comprehensive Architecture Specification (ARCHITECTURE.md)](./ARCHITECTURE.md)**: Deep dive into the Hub-and-Spoke design, building blocks, VPC Service Controls perimeters, operational sequence workflows, and two-tiered FinOps attribution model.
+* **[Deployment Guide & Operational Runbook (DEPLOYMENT.md)](./DEPLOYMENT.md)**: Zero-to-cloud provisioning steps, master script catalog, and traffic simulation instructions.
+* **[Interactive Presentation Deck (docs/gcp_tre_presentation.html)](./docs/gcp_tre_presentation.html)**: Standalone visual slide presentation illustrating the platform architecture and operational flows.

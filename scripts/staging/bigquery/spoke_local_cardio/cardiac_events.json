@@ -5,9 +5,9 @@
     "event_date": "2023-08-01",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.7,
-    "intervention": "Medical Management"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 32.8,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00002",
@@ -16,18 +16,18 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 38.0,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 55.7,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00003",
     "patient_id": "PAT-CARD-102",
     "event_date": "2023-08-03",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 47.3,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 35.6,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00004",
@@ -35,8 +35,8 @@
     "event_date": "2023-08-04",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 46.6,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 43.9,
     "intervention": "PCI / Stent"
   },
   {
@@ -46,17 +46,17 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 41.7,
+    "ejection_fraction_percent": 31.2,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00006",
     "patient_id": "PAT-CARD-105",
     "event_date": "2023-08-06",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 34.3,
+    "ejection_fraction_percent": 53.7,
     "intervention": "Medical Management"
   },
   {
@@ -65,28 +65,28 @@
     "event_date": "2023-08-07",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 53.1,
-    "intervention": "CABG"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 38.0,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00008",
     "patient_id": "PAT-CARD-107",
     "event_date": "2023-08-08",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 42.3,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 47.3,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00009",
     "patient_id": "PAT-CARD-108",
     "event_date": "2023-08-09",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 43.5,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 46.6,
     "intervention": "PCI / Stent"
   },
   {
@@ -96,8 +96,8 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 40.3,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 41.7,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00011",
@@ -106,7 +106,7 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 43.8,
+    "ejection_fraction_percent": 34.3,
     "intervention": "Medical Management"
   },
   {
@@ -116,37 +116,37 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 57.8,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 53.1,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00013",
     "patient_id": "PAT-CARD-112",
     "event_date": "2023-08-13",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 31.3,
+    "ejection_fraction_percent": 42.3,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00014",
     "patient_id": "PAT-CARD-113",
     "event_date": "2023-08-14",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 41.3,
-    "intervention": "CABG"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 43.5,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00015",
     "patient_id": "PAT-CARD-114",
     "event_date": "2023-08-15",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 36.8,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 40.3,
     "intervention": "PCI / Stent"
   },
   {
@@ -155,39 +155,39 @@
     "event_date": "2023-08-16",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 45.0,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 43.8,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00017",
     "patient_id": "PAT-CARD-116",
     "event_date": "2023-08-17",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 50.4,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 57.8,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00018",
     "patient_id": "PAT-CARD-117",
     "event_date": "2023-08-18",
-    "event_type": "Stroke",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 30.1,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 31.3,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00019",
     "patient_id": "PAT-CARD-118",
     "event_date": "2023-08-19",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 34.7,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 41.3,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00020",
@@ -195,58 +195,58 @@
     "event_date": "2023-08-20",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 45.2,
-    "intervention": "Medical Management"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 36.8,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00021",
     "patient_id": "PAT-CARD-120",
     "event_date": "2023-08-21",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 51.8,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 45.0,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00022",
     "patient_id": "PAT-CARD-121",
     "event_date": "2023-08-22",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 30.8,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 50.4,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00023",
     "patient_id": "PAT-CARD-122",
     "event_date": "2023-08-23",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.3,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 30.1,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00024",
     "patient_id": "PAT-CARD-123",
     "event_date": "2023-08-24",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.6,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 34.7,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00025",
     "patient_id": "PAT-CARD-124",
     "event_date": "2023-08-25",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.2,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 45.2,
     "intervention": "Medical Management"
   },
   {
@@ -255,28 +255,28 @@
     "event_date": "2023-08-26",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 45.8,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 51.8,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00027",
     "patient_id": "PAT-CARD-126",
     "event_date": "2023-08-27",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 50.6,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 30.8,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00028",
     "patient_id": "PAT-CARD-127",
     "event_date": "2023-08-28",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 51.0,
+    "ejection_fraction_percent": 53.3,
     "intervention": "PCI / Stent"
   },
   {
@@ -286,17 +286,17 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 35.2,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 52.6,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00030",
     "patient_id": "PAT-CARD-129",
     "event_date": "2023-08-30",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 42.7,
+    "ejection_fraction_percent": 53.2,
     "intervention": "Medical Management"
   },
   {
@@ -305,19 +305,19 @@
     "event_date": "2023-08-31",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.6,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 45.8,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00032",
     "patient_id": "PAT-CARD-131",
     "event_date": "2023-09-01",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 51.4,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 50.6,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00033",
@@ -326,13 +326,63 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 50.6,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 51.0,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00034",
     "patient_id": "PAT-CARD-133",
     "event_date": "2023-09-03",
+    "event_type": "Heart Failure Exacerbation",
+    "adjudicated_flag": true,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 35.2,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00035",
+    "patient_id": "PAT-CARD-134",
+    "event_date": "2023-09-04",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 42.7,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00036",
+    "patient_id": "PAT-CARD-135",
+    "event_date": "2023-09-05",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 53.6,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00037",
+    "patient_id": "PAT-CARD-136",
+    "event_date": "2023-09-06",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 51.4,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00038",
+    "patient_id": "PAT-CARD-137",
+    "event_date": "2023-09-07",
+    "event_type": "Heart Failure Exacerbation",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 50.6,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00039",
+    "patient_id": "PAT-CARD-138",
+    "event_date": "2023-09-08",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -340,9 +390,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00035",
-    "patient_id": "PAT-CARD-134",
-    "event_date": "2023-09-04",
+    "event_id": "EVT-00040",
+    "patient_id": "PAT-CARD-139",
+    "event_date": "2023-09-09",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -350,9 +400,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00036",
-    "patient_id": "PAT-CARD-135",
-    "event_date": "2023-09-05",
+    "event_id": "EVT-00041",
+    "patient_id": "PAT-CARD-140",
+    "event_date": "2023-09-10",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -360,64 +410,14 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00037",
-    "patient_id": "PAT-CARD-136",
-    "event_date": "2023-09-06",
+    "event_id": "EVT-00042",
+    "patient_id": "PAT-CARD-141",
+    "event_date": "2023-09-11",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
     "ejection_fraction_percent": 38.7,
     "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00038",
-    "patient_id": "PAT-CARD-137",
-    "event_date": "2023-09-07",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 43.5,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00039",
-    "patient_id": "PAT-CARD-138",
-    "event_date": "2023-09-08",
-    "event_type": "Heart Failure Exacerbation",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 47.7,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00040",
-    "patient_id": "PAT-CARD-139",
-    "event_date": "2023-09-09",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.1,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00041",
-    "patient_id": "PAT-CARD-140",
-    "event_date": "2023-09-10",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 33.9,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00042",
-    "patient_id": "PAT-CARD-141",
-    "event_date": "2023-09-11",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.0,
-    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00043",
@@ -426,28 +426,28 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 36.5,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 43.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00044",
     "patient_id": "PAT-CARD-143",
     "event_date": "2023-09-13",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 58.5,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 47.7,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00045",
     "patient_id": "PAT-CARD-144",
     "event_date": "2023-09-14",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 51.6,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 53.1,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00046",
@@ -456,28 +456,28 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 45.6,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 33.9,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00047",
     "patient_id": "PAT-CARD-146",
     "event_date": "2023-09-16",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 40.1,
-    "intervention": "Medical Management"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 52.0,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00048",
     "patient_id": "PAT-CARD-147",
     "event_date": "2023-09-17",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 39.3,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 36.5,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00049",
@@ -485,68 +485,68 @@
     "event_date": "2023-09-18",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 31.4,
-    "intervention": "Medical Management"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 58.5,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00050",
     "patient_id": "PAT-CARD-149",
     "event_date": "2023-09-19",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 46.2,
-    "intervention": "Medical Management"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 51.6,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00051",
     "patient_id": "PAT-CARD-150",
     "event_date": "2023-09-20",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 39.2,
-    "intervention": "Medical Management"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 45.6,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00052",
     "patient_id": "PAT-CARD-151",
     "event_date": "2023-09-21",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 48.5,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 40.1,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00053",
     "patient_id": "PAT-CARD-152",
     "event_date": "2023-09-22",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 49.2,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 39.3,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00054",
     "patient_id": "PAT-CARD-153",
     "event_date": "2023-09-23",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 48.0,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 31.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00055",
     "patient_id": "PAT-CARD-154",
     "event_date": "2023-09-24",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 33.9,
+    "ejection_fraction_percent": 46.2,
     "intervention": "Medical Management"
   },
   {
@@ -556,8 +556,8 @@
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 49.8,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 39.2,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00057",
@@ -565,19 +565,19 @@
     "event_date": "2023-09-26",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 32.5,
-    "intervention": "CABG"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 48.5,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00058",
     "patient_id": "PAT-CARD-157",
     "event_date": "2023-09-27",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 55.5,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 49.2,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00059",
@@ -585,39 +585,39 @@
     "event_date": "2023-09-28",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 53.4,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 48.0,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00060",
     "patient_id": "PAT-CARD-159",
     "event_date": "2023-09-29",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 39.2,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 33.9,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00061",
     "patient_id": "PAT-CARD-160",
     "event_date": "2023-09-30",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 31.8,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 49.8,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00062",
     "patient_id": "PAT-CARD-161",
     "event_date": "2023-10-01",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 48.1,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 32.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00063",
@@ -625,18 +625,18 @@
     "event_date": "2023-10-02",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 40.5,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 55.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00064",
     "patient_id": "PAT-CARD-163",
     "event_date": "2023-10-03",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 50.8,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 53.4,
     "intervention": "PCI / Stent"
   },
   {
@@ -645,8 +645,8 @@
     "event_date": "2023-10-04",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 39.1,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 39.2,
     "intervention": "Medical Management"
   },
   {
@@ -655,18 +655,18 @@
     "event_date": "2023-10-05",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 59.7,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 31.8,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00067",
     "patient_id": "PAT-CARD-166",
     "event_date": "2023-10-06",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 38.5,
+    "ejection_fraction_percent": 48.1,
     "intervention": "Medical Management"
   },
   {
@@ -675,39 +675,39 @@
     "event_date": "2023-10-07",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 54.9,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 40.5,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00069",
     "patient_id": "PAT-CARD-168",
     "event_date": "2023-10-08",
-    "event_type": "Stroke",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 42.6,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 50.8,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00070",
     "patient_id": "PAT-CARD-169",
     "event_date": "2023-10-09",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 51.8,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 39.1,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00071",
     "patient_id": "PAT-CARD-170",
     "event_date": "2023-10-10",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 55.0,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 59.7,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00072",
@@ -715,58 +715,58 @@
     "event_date": "2023-10-11",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 37.0,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 38.5,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00073",
     "patient_id": "PAT-CARD-172",
     "event_date": "2023-10-12",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 56.5,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 54.9,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00074",
     "patient_id": "PAT-CARD-173",
     "event_date": "2023-10-13",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.4,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 42.6,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00075",
     "patient_id": "PAT-CARD-174",
     "event_date": "2023-10-14",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 35.5,
-    "intervention": "CABG"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 51.8,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00076",
     "patient_id": "PAT-CARD-175",
     "event_date": "2023-10-15",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 58.6,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 55.0,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00077",
     "patient_id": "PAT-CARD-176",
     "event_date": "2023-10-16",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.4,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 37.0,
     "intervention": "Medical Management"
   },
   {
@@ -776,37 +776,37 @@
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 31.8,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 56.5,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00079",
     "patient_id": "PAT-CARD-178",
     "event_date": "2023-10-18",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 39.4,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 53.4,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00080",
     "patient_id": "PAT-CARD-179",
     "event_date": "2023-10-19",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 48.6,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 35.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00081",
     "patient_id": "PAT-CARD-180",
     "event_date": "2023-10-20",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 55.5,
+    "ejection_fraction_percent": 58.6,
     "intervention": "CABG"
   },
   {
@@ -815,14 +815,64 @@
     "event_date": "2023-10-21",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 46.9,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 52.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00083",
     "patient_id": "PAT-CARD-182",
     "event_date": "2023-10-22",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 31.8,
+    "intervention": "CABG"
+  },
+  {
+    "event_id": "EVT-00084",
+    "patient_id": "PAT-CARD-183",
+    "event_date": "2023-10-23",
+    "event_type": "Unstable Angina",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 39.4,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00085",
+    "patient_id": "PAT-CARD-184",
+    "event_date": "2023-10-24",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 48.6,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00086",
+    "patient_id": "PAT-CARD-185",
+    "event_date": "2023-10-25",
+    "event_type": "Unstable Angina",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 55.5,
+    "intervention": "CABG"
+  },
+  {
+    "event_id": "EVT-00087",
+    "patient_id": "PAT-CARD-186",
+    "event_date": "2023-10-26",
+    "event_type": "Unstable Angina",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 46.9,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00088",
+    "patient_id": "PAT-CARD-187",
+    "event_date": "2023-10-27",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -830,9 +880,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00084",
-    "patient_id": "PAT-CARD-183",
-    "event_date": "2023-10-23",
+    "event_id": "EVT-00089",
+    "patient_id": "PAT-CARD-188",
+    "event_date": "2023-10-28",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -840,9 +890,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00085",
-    "patient_id": "PAT-CARD-184",
-    "event_date": "2023-10-24",
+    "event_id": "EVT-00090",
+    "patient_id": "PAT-CARD-189",
+    "event_date": "2023-10-29",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -850,64 +900,14 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00086",
-    "patient_id": "PAT-CARD-185",
-    "event_date": "2023-10-25",
+    "event_id": "EVT-00091",
+    "patient_id": "PAT-CARD-190",
+    "event_date": "2023-10-30",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
     "ejection_fraction_percent": 44.2,
     "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00087",
-    "patient_id": "PAT-CARD-186",
-    "event_date": "2023-10-26",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 35.5,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00088",
-    "patient_id": "PAT-CARD-187",
-    "event_date": "2023-10-27",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 55.4,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00089",
-    "patient_id": "PAT-CARD-188",
-    "event_date": "2023-10-28",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 42.7,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00090",
-    "patient_id": "PAT-CARD-189",
-    "event_date": "2023-10-29",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 59.6,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00091",
-    "patient_id": "PAT-CARD-190",
-    "event_date": "2023-10-30",
-    "event_type": "Heart Failure Exacerbation",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 30.5,
-    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00092",
@@ -916,7 +916,7 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 41.6,
+    "ejection_fraction_percent": 35.5,
     "intervention": "Medical Management"
   },
   {
@@ -925,9 +925,9 @@
     "event_date": "2023-11-01",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 45.5,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 55.4,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00094",
@@ -935,39 +935,39 @@
     "event_date": "2023-11-02",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 49.8,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 42.7,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00095",
     "patient_id": "PAT-CARD-194",
     "event_date": "2023-11-03",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 35.1,
-    "intervention": "Medical Management"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 59.6,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00096",
     "patient_id": "PAT-CARD-195",
     "event_date": "2023-11-04",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 59.9,
+    "ejection_fraction_percent": 30.5,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00097",
     "patient_id": "PAT-CARD-196",
     "event_date": "2023-11-05",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 54.5,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 41.6,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00098",
@@ -976,28 +976,28 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 40.5,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 45.5,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00099",
     "patient_id": "PAT-CARD-198",
     "event_date": "2023-11-07",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 37.0,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 49.8,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00100",
     "patient_id": "PAT-CARD-199",
     "event_date": "2023-11-08",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 34.2,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 35.1,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00101",
@@ -1005,39 +1005,39 @@
     "event_date": "2023-11-09",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 51.6,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 59.9,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00102",
     "patient_id": "PAT-CARD-201",
     "event_date": "2023-11-10",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 44.4,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 54.5,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00103",
     "patient_id": "PAT-CARD-202",
     "event_date": "2023-11-11",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.4,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 40.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00104",
     "patient_id": "PAT-CARD-203",
     "event_date": "2023-11-12",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 55.5,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 37.0,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00105",
@@ -1045,58 +1045,58 @@
     "event_date": "2023-11-13",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 37.2,
-    "intervention": "Medical Management"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 34.2,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00106",
     "patient_id": "PAT-CARD-205",
     "event_date": "2023-11-14",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 54.9,
-    "intervention": "Medical Management"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 51.6,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00107",
     "patient_id": "PAT-CARD-206",
     "event_date": "2023-11-15",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 32.1,
+    "ejection_fraction_percent": 44.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00108",
     "patient_id": "PAT-CARD-207",
     "event_date": "2023-11-16",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 30.0,
+    "ejection_fraction_percent": 52.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00109",
     "patient_id": "PAT-CARD-208",
     "event_date": "2023-11-17",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 43.2,
+    "ejection_fraction_percent": 55.5,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00110",
     "patient_id": "PAT-CARD-209",
     "event_date": "2023-11-18",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 55.4,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 37.2,
     "intervention": "Medical Management"
   },
   {
@@ -1106,37 +1106,37 @@
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 51.1,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 54.9,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00112",
     "patient_id": "PAT-CARD-211",
     "event_date": "2023-11-20",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 42.8,
+    "ejection_fraction_percent": 32.1,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00113",
     "patient_id": "PAT-CARD-212",
     "event_date": "2023-11-21",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 58.9,
-    "intervention": "CABG"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 30.0,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00114",
     "patient_id": "PAT-CARD-213",
     "event_date": "2023-11-22",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 30.7,
+    "ejection_fraction_percent": 43.2,
     "intervention": "CABG"
   },
   {
@@ -1145,39 +1145,39 @@
     "event_date": "2023-11-23",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 46.7,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 55.4,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00116",
     "patient_id": "PAT-CARD-215",
     "event_date": "2023-11-24",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 38.4,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 51.1,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00117",
     "patient_id": "PAT-CARD-216",
     "event_date": "2023-11-25",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 43.3,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 42.8,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00118",
     "patient_id": "PAT-CARD-217",
     "event_date": "2023-11-26",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 58.8,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 58.9,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00119",
@@ -1186,13 +1186,63 @@
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 46.2,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 30.7,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00120",
     "patient_id": "PAT-CARD-219",
     "event_date": "2023-11-28",
+    "event_type": "Heart Failure Exacerbation",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 46.7,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00121",
+    "patient_id": "PAT-CARD-220",
+    "event_date": "2023-11-29",
+    "event_type": "Heart Failure Exacerbation",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 38.4,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00122",
+    "patient_id": "PAT-CARD-221",
+    "event_date": "2023-11-30",
+    "event_type": "Heart Failure Exacerbation",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 43.3,
+    "intervention": "CABG"
+  },
+  {
+    "event_id": "EVT-00123",
+    "patient_id": "PAT-CARD-222",
+    "event_date": "2023-12-01",
+    "event_type": "Heart Failure Exacerbation",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 58.8,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00124",
+    "patient_id": "PAT-CARD-223",
+    "event_date": "2023-12-02",
+    "event_type": "Unstable Angina",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 46.2,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00125",
+    "patient_id": "PAT-CARD-224",
+    "event_date": "2023-12-03",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1200,9 +1250,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00121",
-    "patient_id": "PAT-CARD-220",
-    "event_date": "2023-11-29",
+    "event_id": "EVT-00126",
+    "patient_id": "PAT-CARD-225",
+    "event_date": "2023-12-04",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1210,9 +1260,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00122",
-    "patient_id": "PAT-CARD-221",
-    "event_date": "2023-11-30",
+    "event_id": "EVT-00127",
+    "patient_id": "PAT-CARD-226",
+    "event_date": "2023-12-05",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -1220,9 +1270,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00123",
-    "patient_id": "PAT-CARD-222",
-    "event_date": "2023-12-01",
+    "event_id": "EVT-00128",
+    "patient_id": "PAT-CARD-227",
+    "event_date": "2023-12-06",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1230,9 +1280,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00124",
-    "patient_id": "PAT-CARD-223",
-    "event_date": "2023-12-02",
+    "event_id": "EVT-00129",
+    "patient_id": "PAT-CARD-228",
+    "event_date": "2023-12-07",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -1240,9 +1290,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00125",
-    "patient_id": "PAT-CARD-224",
-    "event_date": "2023-12-03",
+    "event_id": "EVT-00130",
+    "patient_id": "PAT-CARD-229",
+    "event_date": "2023-12-08",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1250,9 +1300,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00126",
-    "patient_id": "PAT-CARD-225",
-    "event_date": "2023-12-04",
+    "event_id": "EVT-00131",
+    "patient_id": "PAT-CARD-230",
+    "event_date": "2023-12-09",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1260,9 +1310,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00127",
-    "patient_id": "PAT-CARD-226",
-    "event_date": "2023-12-05",
+    "event_id": "EVT-00132",
+    "patient_id": "PAT-CARD-231",
+    "event_date": "2023-12-10",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1270,9 +1320,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00128",
-    "patient_id": "PAT-CARD-227",
-    "event_date": "2023-12-06",
+    "event_id": "EVT-00133",
+    "patient_id": "PAT-CARD-232",
+    "event_date": "2023-12-11",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -1280,9 +1330,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00129",
-    "patient_id": "PAT-CARD-228",
-    "event_date": "2023-12-07",
+    "event_id": "EVT-00134",
+    "patient_id": "PAT-CARD-233",
+    "event_date": "2023-12-12",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1290,9 +1340,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00130",
-    "patient_id": "PAT-CARD-229",
-    "event_date": "2023-12-08",
+    "event_id": "EVT-00135",
+    "patient_id": "PAT-CARD-234",
+    "event_date": "2023-12-13",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1300,9 +1350,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00131",
-    "patient_id": "PAT-CARD-230",
-    "event_date": "2023-12-09",
+    "event_id": "EVT-00136",
+    "patient_id": "PAT-CARD-235",
+    "event_date": "2023-12-14",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1310,9 +1360,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00132",
-    "patient_id": "PAT-CARD-231",
-    "event_date": "2023-12-10",
+    "event_id": "EVT-00137",
+    "patient_id": "PAT-CARD-236",
+    "event_date": "2023-12-15",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1320,9 +1370,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00133",
-    "patient_id": "PAT-CARD-232",
-    "event_date": "2023-12-11",
+    "event_id": "EVT-00138",
+    "patient_id": "PAT-CARD-237",
+    "event_date": "2023-12-16",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1330,9 +1380,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00134",
-    "patient_id": "PAT-CARD-233",
-    "event_date": "2023-12-12",
+    "event_id": "EVT-00139",
+    "patient_id": "PAT-CARD-238",
+    "event_date": "2023-12-17",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1340,9 +1390,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00135",
-    "patient_id": "PAT-CARD-234",
-    "event_date": "2023-12-13",
+    "event_id": "EVT-00140",
+    "patient_id": "PAT-CARD-239",
+    "event_date": "2023-12-18",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1350,63 +1400,13 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00136",
-    "patient_id": "PAT-CARD-235",
-    "event_date": "2023-12-14",
+    "event_id": "EVT-00141",
+    "patient_id": "PAT-CARD-240",
+    "event_date": "2023-12-19",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
     "ejection_fraction_percent": 48.7,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00137",
-    "patient_id": "PAT-CARD-236",
-    "event_date": "2023-12-15",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 41.5,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00138",
-    "patient_id": "PAT-CARD-237",
-    "event_date": "2023-12-16",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 30.3,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00139",
-    "patient_id": "PAT-CARD-238",
-    "event_date": "2023-12-17",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 48.4,
-    "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00140",
-    "patient_id": "PAT-CARD-239",
-    "event_date": "2023-12-18",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 45.6,
-    "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00141",
-    "patient_id": "PAT-CARD-240",
-    "event_date": "2023-12-19",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 55.4,
     "intervention": "Medical Management"
   },
   {
@@ -1415,9 +1415,9 @@
     "event_date": "2023-12-20",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 37.2,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 41.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00143",
@@ -1425,19 +1425,19 @@
     "event_date": "2023-12-21",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 39.8,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 30.3,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00144",
     "patient_id": "PAT-CARD-243",
     "event_date": "2023-12-22",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 50.8,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 48.4,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00145",
@@ -1445,29 +1445,29 @@
     "event_date": "2023-12-23",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 39.5,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 45.6,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00146",
     "patient_id": "PAT-CARD-245",
     "event_date": "2023-12-24",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 55.6,
+    "ejection_fraction_percent": 55.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00147",
     "patient_id": "PAT-CARD-246",
     "event_date": "2023-12-25",
-    "event_type": "Stroke",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 31.4,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 37.2,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00148",
@@ -1476,57 +1476,57 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 56.0,
+    "ejection_fraction_percent": 39.8,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00149",
     "patient_id": "PAT-CARD-248",
     "event_date": "2023-12-27",
-    "event_type": "Stroke",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 44.6,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 50.8,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00150",
     "patient_id": "PAT-CARD-249",
     "event_date": "2023-12-28",
-    "event_type": "Stroke",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 57.4,
+    "ejection_fraction_percent": 39.5,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00151",
     "patient_id": "PAT-CARD-250",
     "event_date": "2023-12-29",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 35.7,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 55.6,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00152",
     "patient_id": "PAT-CARD-251",
     "event_date": "2023-12-30",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 36.3,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 31.4,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00153",
     "patient_id": "PAT-CARD-252",
     "event_date": "2023-12-31",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 57.5,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 56.0,
     "intervention": "CABG"
   },
   {
@@ -1535,9 +1535,9 @@
     "event_date": "2024-01-01",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 33.9,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 44.6,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00155",
@@ -1546,38 +1546,38 @@
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 46.9,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 57.4,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00156",
     "patient_id": "PAT-CARD-255",
     "event_date": "2024-01-03",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 39.3,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 35.7,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00157",
     "patient_id": "PAT-CARD-256",
     "event_date": "2024-01-04",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 44.0,
-    "intervention": "Medical Management"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 36.3,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00158",
     "patient_id": "PAT-CARD-257",
     "event_date": "2024-01-05",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 52.5,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 57.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00159",
@@ -1585,39 +1585,39 @@
     "event_date": "2024-01-06",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 30.2,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 33.9,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00160",
     "patient_id": "PAT-CARD-259",
     "event_date": "2024-01-07",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 56.4,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 46.9,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00161",
     "patient_id": "PAT-CARD-260",
     "event_date": "2024-01-08",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 36.2,
+    "ejection_fraction_percent": 39.3,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00162",
     "patient_id": "PAT-CARD-261",
     "event_date": "2024-01-09",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 40.6,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 44.0,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00163",
@@ -1626,13 +1626,63 @@
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 58.9,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 52.5,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00164",
     "patient_id": "PAT-CARD-263",
     "event_date": "2024-01-11",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 30.2,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00165",
+    "patient_id": "PAT-CARD-264",
+    "event_date": "2024-01-12",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 56.4,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00166",
+    "patient_id": "PAT-CARD-265",
+    "event_date": "2024-01-13",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 36.2,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00167",
+    "patient_id": "PAT-CARD-266",
+    "event_date": "2024-01-14",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 40.6,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00168",
+    "patient_id": "PAT-CARD-267",
+    "event_date": "2024-01-15",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 58.9,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00169",
+    "patient_id": "PAT-CARD-268",
+    "event_date": "2024-01-16",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -1640,9 +1690,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00165",
-    "patient_id": "PAT-CARD-264",
-    "event_date": "2024-01-12",
+    "event_id": "EVT-00170",
+    "patient_id": "PAT-CARD-269",
+    "event_date": "2024-01-17",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1650,9 +1700,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00166",
-    "patient_id": "PAT-CARD-265",
-    "event_date": "2024-01-13",
+    "event_id": "EVT-00171",
+    "patient_id": "PAT-CARD-270",
+    "event_date": "2024-01-18",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1660,9 +1710,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00167",
-    "patient_id": "PAT-CARD-266",
-    "event_date": "2024-01-14",
+    "event_id": "EVT-00172",
+    "patient_id": "PAT-CARD-271",
+    "event_date": "2024-01-19",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -1670,9 +1720,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00168",
-    "patient_id": "PAT-CARD-267",
-    "event_date": "2024-01-15",
+    "event_id": "EVT-00173",
+    "patient_id": "PAT-CARD-272",
+    "event_date": "2024-01-20",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1680,9 +1730,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00169",
-    "patient_id": "PAT-CARD-268",
-    "event_date": "2024-01-16",
+    "event_id": "EVT-00174",
+    "patient_id": "PAT-CARD-273",
+    "event_date": "2024-01-21",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1690,9 +1740,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00170",
-    "patient_id": "PAT-CARD-269",
-    "event_date": "2024-01-17",
+    "event_id": "EVT-00175",
+    "patient_id": "PAT-CARD-274",
+    "event_date": "2024-01-22",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1700,9 +1750,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00171",
-    "patient_id": "PAT-CARD-270",
-    "event_date": "2024-01-18",
+    "event_id": "EVT-00176",
+    "patient_id": "PAT-CARD-275",
+    "event_date": "2024-01-23",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -1710,9 +1760,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00172",
-    "patient_id": "PAT-CARD-271",
-    "event_date": "2024-01-19",
+    "event_id": "EVT-00177",
+    "patient_id": "PAT-CARD-276",
+    "event_date": "2024-01-24",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -1720,63 +1770,13 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00173",
-    "patient_id": "PAT-CARD-272",
-    "event_date": "2024-01-20",
+    "event_id": "EVT-00178",
+    "patient_id": "PAT-CARD-277",
+    "event_date": "2024-01-25",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
     "ejection_fraction_percent": 54.5,
-    "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00174",
-    "patient_id": "PAT-CARD-273",
-    "event_date": "2024-01-21",
-    "event_type": "Heart Failure Exacerbation",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 51.8,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00175",
-    "patient_id": "PAT-CARD-274",
-    "event_date": "2024-01-22",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 42.8,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00176",
-    "patient_id": "PAT-CARD-275",
-    "event_date": "2024-01-23",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 47.2,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00177",
-    "patient_id": "PAT-CARD-276",
-    "event_date": "2024-01-24",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 52.2,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00178",
-    "patient_id": "PAT-CARD-277",
-    "event_date": "2024-01-25",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 48.4,
     "intervention": "PCI / Stent"
   },
   {
@@ -1786,48 +1786,48 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 54.2,
+    "ejection_fraction_percent": 51.8,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00180",
     "patient_id": "PAT-CARD-279",
     "event_date": "2024-01-27",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.4,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 42.8,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00181",
     "patient_id": "PAT-CARD-280",
     "event_date": "2024-01-28",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 51.5,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 47.2,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00182",
     "patient_id": "PAT-CARD-281",
     "event_date": "2024-01-29",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 44.9,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 52.2,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00183",
     "patient_id": "PAT-CARD-282",
     "event_date": "2024-01-30",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 49.5,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 48.4,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00184",
@@ -1836,37 +1836,37 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 32.3,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 54.2,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00185",
     "patient_id": "PAT-CARD-284",
     "event_date": "2024-02-01",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 40.0,
+    "ejection_fraction_percent": 52.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00186",
     "patient_id": "PAT-CARD-285",
     "event_date": "2024-02-02",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 51.8,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 51.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00187",
     "patient_id": "PAT-CARD-286",
     "event_date": "2024-02-03",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 59.2,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 44.9,
     "intervention": "CABG"
   },
   {
@@ -1875,18 +1875,18 @@
     "event_date": "2024-02-04",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 41.5,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 49.5,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00189",
     "patient_id": "PAT-CARD-288",
     "event_date": "2024-02-05",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 50.5,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 32.3,
     "intervention": "PCI / Stent"
   },
   {
@@ -1895,39 +1895,39 @@
     "event_date": "2024-02-06",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 40.1,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 40.0,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00191",
     "patient_id": "PAT-CARD-290",
     "event_date": "2024-02-07",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 35.5,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 51.8,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00192",
     "patient_id": "PAT-CARD-291",
     "event_date": "2024-02-08",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 30.7,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 59.2,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00193",
     "patient_id": "PAT-CARD-292",
     "event_date": "2024-02-09",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.8,
-    "intervention": "Medical Management"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 41.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00194",
@@ -1936,28 +1936,28 @@
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 38.4,
+    "ejection_fraction_percent": 50.5,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00195",
     "patient_id": "PAT-CARD-294",
     "event_date": "2024-02-11",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 56.4,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 40.1,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00196",
     "patient_id": "PAT-CARD-295",
     "event_date": "2024-02-12",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 45.7,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 35.5,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00197",
@@ -1966,48 +1966,48 @@
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 36.3,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 30.7,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00198",
     "patient_id": "PAT-CARD-297",
     "event_date": "2024-02-14",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 35.0,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 53.8,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00199",
     "patient_id": "PAT-CARD-298",
     "event_date": "2024-02-15",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 40.8,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 38.4,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00200",
     "patient_id": "PAT-CARD-299",
     "event_date": "2024-02-16",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 41.8,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 56.4,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00201",
     "patient_id": "PAT-CARD-300",
     "event_date": "2024-02-17",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 52.8,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 45.7,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00202",
@@ -2015,68 +2015,68 @@
     "event_date": "2024-02-18",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 53.7,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 36.3,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00203",
     "patient_id": "PAT-CARD-302",
     "event_date": "2024-02-19",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 48.1,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 35.0,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00204",
     "patient_id": "PAT-CARD-303",
     "event_date": "2024-02-20",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 58.4,
-    "intervention": "CABG"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 40.8,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00205",
     "patient_id": "PAT-CARD-304",
     "event_date": "2024-02-21",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 43.1,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 41.8,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00206",
     "patient_id": "PAT-CARD-305",
     "event_date": "2024-02-22",
-    "event_type": "Unstable Angina",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 35.8,
+    "ejection_fraction_percent": 52.8,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00207",
     "patient_id": "PAT-CARD-306",
     "event_date": "2024-02-23",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 40.4,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 53.7,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00208",
     "patient_id": "PAT-CARD-307",
     "event_date": "2024-02-24",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 57.5,
+    "ejection_fraction_percent": 48.1,
     "intervention": "PCI / Stent"
   },
   {
@@ -2085,9 +2085,9 @@
     "event_date": "2024-02-25",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 51.5,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 58.4,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00210",
@@ -2095,14 +2095,64 @@
     "event_date": "2024-02-26",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 39.0,
-    "intervention": "Medical Management"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 43.1,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00211",
     "patient_id": "PAT-CARD-310",
     "event_date": "2024-02-27",
+    "event_type": "Unstable Angina",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 35.8,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00212",
+    "patient_id": "PAT-CARD-311",
+    "event_date": "2024-02-28",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 40.4,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00213",
+    "patient_id": "PAT-CARD-312",
+    "event_date": "2024-02-29",
+    "event_type": "Unstable Angina",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 57.5,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00214",
+    "patient_id": "PAT-CARD-313",
+    "event_date": "2024-03-01",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 51.5,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00215",
+    "patient_id": "PAT-CARD-314",
+    "event_date": "2024-03-02",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 39.0,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00216",
+    "patient_id": "PAT-CARD-315",
+    "event_date": "2024-03-03",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -2110,9 +2160,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00212",
-    "patient_id": "PAT-CARD-311",
-    "event_date": "2024-02-28",
+    "event_id": "EVT-00217",
+    "patient_id": "PAT-CARD-316",
+    "event_date": "2024-03-04",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -2120,9 +2170,9 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00213",
-    "patient_id": "PAT-CARD-312",
-    "event_date": "2024-02-29",
+    "event_id": "EVT-00218",
+    "patient_id": "PAT-CARD-317",
+    "event_date": "2024-03-05",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -2130,9 +2180,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00214",
-    "patient_id": "PAT-CARD-313",
-    "event_date": "2024-03-01",
+    "event_id": "EVT-00219",
+    "patient_id": "PAT-CARD-318",
+    "event_date": "2024-03-06",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -2140,9 +2190,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00215",
-    "patient_id": "PAT-CARD-314",
-    "event_date": "2024-03-02",
+    "event_id": "EVT-00220",
+    "patient_id": "PAT-CARD-319",
+    "event_date": "2024-03-07",
     "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
@@ -2150,9 +2200,9 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00216",
-    "patient_id": "PAT-CARD-315",
-    "event_date": "2024-03-03",
+    "event_id": "EVT-00221",
+    "patient_id": "PAT-CARD-320",
+    "event_date": "2024-03-08",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -2160,9 +2210,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00217",
-    "patient_id": "PAT-CARD-316",
-    "event_date": "2024-03-04",
+    "event_id": "EVT-00222",
+    "patient_id": "PAT-CARD-321",
+    "event_date": "2024-03-09",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
@@ -2170,9 +2220,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00218",
-    "patient_id": "PAT-CARD-317",
-    "event_date": "2024-03-05",
+    "event_id": "EVT-00223",
+    "patient_id": "PAT-CARD-322",
+    "event_date": "2024-03-10",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -2180,9 +2230,9 @@
     "intervention": "PCI / Stent"
   },
   {
-    "event_id": "EVT-00219",
-    "patient_id": "PAT-CARD-318",
-    "event_date": "2024-03-06",
+    "event_id": "EVT-00224",
+    "patient_id": "PAT-CARD-323",
+    "event_date": "2024-03-11",
     "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -2190,63 +2240,13 @@
     "intervention": "CABG"
   },
   {
-    "event_id": "EVT-00220",
-    "patient_id": "PAT-CARD-319",
-    "event_date": "2024-03-07",
+    "event_id": "EVT-00225",
+    "patient_id": "PAT-CARD-324",
+    "event_date": "2024-03-12",
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
     "ejection_fraction_percent": 50.6,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00221",
-    "patient_id": "PAT-CARD-320",
-    "event_date": "2024-03-08",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 42.5,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00222",
-    "patient_id": "PAT-CARD-321",
-    "event_date": "2024-03-09",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.0,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00223",
-    "patient_id": "PAT-CARD-322",
-    "event_date": "2024-03-10",
-    "event_type": "Myocardial Infarction",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 42.5,
-    "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00224",
-    "patient_id": "PAT-CARD-323",
-    "event_date": "2024-03-11",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 45.0,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00225",
-    "patient_id": "PAT-CARD-324",
-    "event_date": "2024-03-12",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 45.2,
     "intervention": "CABG"
   },
   {
@@ -2256,28 +2256,28 @@
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 33.9,
+    "ejection_fraction_percent": 42.5,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00227",
     "patient_id": "PAT-CARD-326",
     "event_date": "2024-03-14",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 38.7,
-    "intervention": "CABG"
+    "ejection_fraction_percent": 52.0,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00228",
     "patient_id": "PAT-CARD-327",
     "event_date": "2024-03-15",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 56.8,
-    "intervention": "Medical Management"
+    "ejection_fraction_percent": 42.5,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00229",
@@ -2286,28 +2286,28 @@
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 59.0,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 45.0,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00230",
     "patient_id": "PAT-CARD-329",
     "event_date": "2024-03-17",
-    "event_type": "Myocardial Infarction",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 58.0,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 45.2,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00231",
     "patient_id": "PAT-CARD-330",
     "event_date": "2024-03-18",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 50.5,
-    "intervention": "PCI / Stent"
+    "ejection_fraction_percent": 33.9,
+    "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00232",
@@ -2316,47 +2316,47 @@
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 54.3,
+    "ejection_fraction_percent": 38.7,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00233",
     "patient_id": "PAT-CARD-332",
     "event_date": "2024-03-20",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 57.7,
+    "ejection_fraction_percent": 56.8,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00234",
     "patient_id": "PAT-CARD-333",
     "event_date": "2024-03-21",
-    "event_type": "Stroke",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 39.4,
-    "intervention": "CABG"
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 59.0,
+    "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00235",
     "patient_id": "PAT-CARD-334",
     "event_date": "2024-03-22",
-    "event_type": "Stroke",
+    "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 51.0,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 58.0,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00236",
     "patient_id": "PAT-CARD-335",
     "event_date": "2024-03-23",
-    "event_type": "Stroke",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
     "nyha_class": "Class II",
-    "ejection_fraction_percent": 34.2,
+    "ejection_fraction_percent": 50.5,
     "intervention": "PCI / Stent"
   },
   {
@@ -2365,14 +2365,64 @@
     "event_date": "2024-03-24",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 54.4,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 54.3,
     "intervention": "CABG"
   },
   {
     "event_id": "EVT-00238",
     "patient_id": "PAT-CARD-337",
     "event_date": "2024-03-25",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 57.7,
+    "intervention": "Medical Management"
+  },
+  {
+    "event_id": "EVT-00239",
+    "patient_id": "PAT-CARD-338",
+    "event_date": "2024-03-26",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 39.4,
+    "intervention": "CABG"
+  },
+  {
+    "event_id": "EVT-00240",
+    "patient_id": "PAT-CARD-339",
+    "event_date": "2024-03-27",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 51.0,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00241",
+    "patient_id": "PAT-CARD-340",
+    "event_date": "2024-03-28",
+    "event_type": "Stroke",
+    "adjudicated_flag": true,
+    "nyha_class": "Class II",
+    "ejection_fraction_percent": 34.2,
+    "intervention": "PCI / Stent"
+  },
+  {
+    "event_id": "EVT-00242",
+    "patient_id": "PAT-CARD-341",
+    "event_date": "2024-03-29",
+    "event_type": "Myocardial Infarction",
+    "adjudicated_flag": true,
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 54.4,
+    "intervention": "CABG"
+  },
+  {
+    "event_id": "EVT-00243",
+    "patient_id": "PAT-CARD-342",
+    "event_date": "2024-03-30",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
@@ -2380,64 +2430,14 @@
     "intervention": "Medical Management"
   },
   {
-    "event_id": "EVT-00239",
-    "patient_id": "PAT-CARD-338",
-    "event_date": "2024-03-26",
+    "event_id": "EVT-00244",
+    "patient_id": "PAT-CARD-343",
+    "event_date": "2024-03-31",
     "event_type": "Myocardial Infarction",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
     "ejection_fraction_percent": 57.9,
     "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00240",
-    "patient_id": "PAT-CARD-339",
-    "event_date": "2024-03-27",
-    "event_type": "Unstable Angina",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 56.4,
-    "intervention": "Medical Management"
-  },
-  {
-    "event_id": "EVT-00241",
-    "patient_id": "PAT-CARD-340",
-    "event_date": "2024-03-28",
-    "event_type": "Heart Failure Exacerbation",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 38.4,
-    "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00242",
-    "patient_id": "PAT-CARD-341",
-    "event_date": "2024-03-29",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 52.6,
-    "intervention": "PCI / Stent"
-  },
-  {
-    "event_id": "EVT-00243",
-    "patient_id": "PAT-CARD-342",
-    "event_date": "2024-03-30",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class III",
-    "ejection_fraction_percent": 31.5,
-    "intervention": "CABG"
-  },
-  {
-    "event_id": "EVT-00244",
-    "patient_id": "PAT-CARD-343",
-    "event_date": "2024-03-31",
-    "event_type": "Stroke",
-    "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 41.4,
-    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00245",
@@ -2446,38 +2446,38 @@
     "event_type": "Unstable Angina",
     "adjudicated_flag": true,
     "nyha_class": "Class III",
-    "ejection_fraction_percent": 36.2,
+    "ejection_fraction_percent": 56.4,
     "intervention": "Medical Management"
   },
   {
     "event_id": "EVT-00246",
     "patient_id": "PAT-CARD-345",
     "event_date": "2024-04-02",
-    "event_type": "Unstable Angina",
+    "event_type": "Heart Failure Exacerbation",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 51.9,
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 38.4,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00247",
     "patient_id": "PAT-CARD-346",
     "event_date": "2024-04-03",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
     "nyha_class": "Class IV",
-    "ejection_fraction_percent": 45.1,
+    "ejection_fraction_percent": 52.6,
     "intervention": "PCI / Stent"
   },
   {
     "event_id": "EVT-00248",
     "patient_id": "PAT-CARD-347",
     "event_date": "2024-04-04",
-    "event_type": "Unstable Angina",
+    "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 45.5,
-    "intervention": "Medical Management"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 31.5,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00249",
@@ -2485,18 +2485,18 @@
     "event_date": "2024-04-05",
     "event_type": "Stroke",
     "adjudicated_flag": true,
-    "nyha_class": "Class II",
-    "ejection_fraction_percent": 33.3,
-    "intervention": "PCI / Stent"
+    "nyha_class": "Class IV",
+    "ejection_fraction_percent": 41.4,
+    "intervention": "CABG"
   },
   {
     "event_id": "EVT-00250",
     "patient_id": "PAT-CARD-349",
     "event_date": "2024-04-06",
-    "event_type": "Heart Failure Exacerbation",
+    "event_type": "Unstable Angina",
     "adjudicated_flag": true,
-    "nyha_class": "Class IV",
-    "ejection_fraction_percent": 37.6,
-    "intervention": "CABG"
+    "nyha_class": "Class III",
+    "ejection_fraction_percent": 36.2,
+    "intervention": "Medical Management"
   }
 ]

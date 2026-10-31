@@ -8,7 +8,7 @@ Usage:
   python3 scripts/run_researcher_workload.py
 
   # Run for a specific researcher profile:
-  python3 scripts/run_researcher_workload.py --user prof.miriam.levy@liatsabag.altostrat.com
+  python3 scripts/run_researcher_workload.py --user prof.miriam.levy@example-tre.org
 
   # Run all researcher workloads sequentially across all 4 rooms:
   python3 scripts/run_researcher_workload.py --all
@@ -47,8 +47,8 @@ ROOM_PROFILES: Dict[str, Dict[str, Any]] = {
         "dataset_id": "spoke_local_oncology",
         "export_bucket": "rr-oncology-01-export",
         "researchers": [
-            "dr.oren.katz@liatsabag.altostrat.com",
-            "prof.miriam.levy@liatsabag.altostrat.com",
+            "dr.oren.katz@example-tre.org",
+            "prof.miriam.levy@example-tre.org",
         ],
         "queries": [
             (
@@ -80,8 +80,8 @@ ROOM_PROFILES: Dict[str, Dict[str, Any]] = {
         "dataset_id": "spoke_local_genomics",
         "export_bucket": "rr-genomics-02-export",
         "researchers": [
-            "dr.eitan.rosen@liatsabag.altostrat.com",
-            "prof.anat.shapiro@liatsabag.altostrat.com",
+            "dr.eitan.rosen@example-tre.org",
+            "prof.anat.shapiro@example-tre.org",
         ],
         "queries": [
             (
@@ -110,8 +110,8 @@ ROOM_PROFILES: Dict[str, Dict[str, Any]] = {
         "dataset_id": "spoke_local_cardio",
         "export_bucket": "rr-cardio-03-export",
         "researchers": [
-            "dr.maya.lin@liatsabag.altostrat.com",
-            "dr.daniel.cohen@liatsabag.altostrat.com",
+            "dr.maya.lin@example-tre.org",
+            "dr.daniel.cohen@example-tre.org",
         ],
         "queries": [
             (
@@ -140,8 +140,8 @@ ROOM_PROFILES: Dict[str, Dict[str, Any]] = {
         "dataset_id": "spoke_local_neurology",
         "export_bucket": "rr-neurology-04-export",
         "researchers": [
-            "dr.noa.shapira@liatsabag.altostrat.com",
-            "dr.rami.friedman@liatsabag.altostrat.com",
+            "dr.noa.shapira@example-tre.org",
+            "dr.rami.friedman@example-tre.org",
         ],
         "queries": [
             (
@@ -182,7 +182,7 @@ def get_current_user_email() -> str:
             return email
     except Exception:
         pass
-    return "prof.miriam.levy@liatsabag.altostrat.com"
+    return "prof.miriam.levy@example-tre.org"
 
 
 def find_room_for_user(user_email: str) -> Optional[Tuple[str, Dict[str, Any]]]:

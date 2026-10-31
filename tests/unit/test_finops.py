@@ -68,7 +68,7 @@ class TestFinOpsModels(unittest.TestCase):
         res = ResearcherCostDetail(
             researcher_id="res-onc-001",
             name="Dr. Oren Katz",
-            email="dr.oren.katz@liatsabag.altostrat.com",
+            email="dr.oren.katz@example-tre.org",
             institute_id="inst-mskcc",
             telemetry_usage=ResearcherTelemetryUsage(total_bytes_billed=1048576),
             sku_attributions=[sku_attr],

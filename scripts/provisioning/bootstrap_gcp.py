@@ -68,10 +68,10 @@ def ensure_gcp_hierarchy(topology: Dict[str, Any]) -> Dict[str, Any]:
     """Ensure organization folder, Hub and Spoke projects, billing, and APIs exist in live GCP."""
     logger.info(">>> Checking and provisioning live GCP Multi-Project Hierarchy...")
     org_cfg = topology.get("organization", {})
-    org_id = org_cfg.get("org_id", "548464744236")
-    folder_id = org_cfg.get("folder_id", "752086743397")
+    org_id = org_cfg.get("org_id", "123456789012")
+    folder_id = org_cfg.get("folder_id", "123456789012")
     folder_name = org_cfg.get("folder_name", "research-rooms")
-    billing_acc = topology.get("billing_configuration", {}).get("billing_account_id", "017F5D-25BB78-C82332")
+    billing_acc = topology.get("billing_configuration", {}).get("billing_account_id", "012345-6789AB-CDEF01")
     billing_acc_name = billing_acc if billing_acc.startswith("billingAccounts/") else f"billingAccounts/{billing_acc}"
 
     hub_pid = topology.get("hub_project", {}).get("project_id", "gcp-rr-hub-core")

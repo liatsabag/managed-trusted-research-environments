@@ -106,7 +106,7 @@ def provision_analytics_hub(
     try:
         policy = hub_service.projects().locations().dataExchanges().getIamPolicy(resource=exchange_name).execute()
         bindings = policy.get("bindings", [])
-        org_domain = topology.get("organization", {}).get("domain", "liatsabag.altostrat.com")
+        org_domain = topology.get("organization", {}).get("domain", "example-tre.org")
         domain_member = f"domain:{org_domain}"
         subscriber_role = "roles/analyticshub.subscriber"
         

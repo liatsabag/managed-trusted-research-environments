@@ -34,12 +34,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger("researcher_executor")
 
-# Verified spoken fleet runtime templates and project numbers
+# Spoke fleet runtime templates and project numbers (placeholders for simulation)
 SPOKE_TEMPLATE_MAPPING = {
-    "rr-oncology-01": {"tpl_id": "tpl-onco-default", "proj_num": "1014490762251"},
-    "rr-genomics-02": {"tpl_id": "tpl-genom-default", "proj_num": "189257204598"},
-    "rr-cardio-03": {"tpl_id": "tpl-cardio-default", "proj_num": "942199812550"},
-    "rr-neurology-04": {"tpl_id": "tpl-neuro-default", "proj_num": "105033080081"},
+    "rr-oncology-01": {"tpl_id": "tpl-onco-default", "proj_num": "100000000001"},
+    "rr-genomics-02": {"tpl_id": "tpl-genom-default", "proj_num": "100000000002"},
+    "rr-cardio-03": {"tpl_id": "tpl-cardio-default", "proj_num": "100000000003"},
+    "rr-neurology-04": {"tpl_id": "tpl-neuro-default", "proj_num": "100000000004"},
 }
 
 

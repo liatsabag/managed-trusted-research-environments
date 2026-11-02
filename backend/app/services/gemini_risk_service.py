@@ -75,7 +75,7 @@ class GeminiRiskService:
                     key = f"{r_id}/{blob.name}"
                     created_iso = blob.time_created.isoformat() if blob.time_created else None
                     
-                    # Deduce researcher from filename e.g. analysis_output_dr.oren.katz_20260928_203105.csv
+                    # Deduce researcher from filename e.g. analysis_output_dr.alexander.wright_20260928_203105.csv
                     researcher = None
                     if "dr." in blob.name or "prof." in blob.name:
                         parts = blob.name.split("_")

@@ -19,14 +19,14 @@ HUB_PROJECT = "gcp-rr-hub-core"
 
 # Authentic storage volume baselines per researcher (in bytes)
 RESEARCHER_STORAGE_BASELINES = {
-    "dr.oren.katz@example-tre.org": 18_450_000_000,    # ~18.45 GB Immuno-oncology FASTQ/BAM
-    "prof.miriam.levy@example-tre.org": 12_820_000_000,  # ~12.82 GB Histopathology images
-    "dr.eitan.rosen@example-tre.org": 34_500_000_000,    # ~34.50 GB Whole Genome CRAM/VCF
-    "prof.anat.shapiro@example-tre.org": 26_750_000_000, # ~26.75 GB Variant call tables
+    "dr.alexander.wright@example-tre.org": 18_450_000_000,    # ~18.45 GB Immuno-oncology FASTQ/BAM
+    "prof.eleanor.vance@example-tre.org": 12_820_000_000,  # ~12.82 GB Histopathology images
+    "dr.marcus.chen@example-tre.org": 34_500_000_000,    # ~34.50 GB Whole Genome CRAM/VCF
+    "prof.claire.dubois@example-tre.org": 26_750_000_000, # ~26.75 GB Variant call tables
     "dr.maya.lin@example-tre.org": 14_200_000_000,       # ~14.20 GB ECG wave streams
-    "dr.daniel.cohen@example-tre.org": 11_300_000_000,   # ~11.30 GB Echo DICOMs
-    "dr.noa.shapira@example-tre.org": 21_600_000_000,    # ~21.60 GB MRI fMRI DICOMs
-    "dr.rami.friedman@example-tre.org": 16_900_000_000,  # ~16.90 GB EEG time-series
+    "dr.david.miller@example-tre.org": 11_300_000_000,   # ~11.30 GB Echo DICOMs
+    "dr.olivia.taylor@example-tre.org": 21_600_000_000,  # ~21.60 GB MRI fMRI DICOMs
+    "dr.robert.hayes@example-tre.org": 16_900_000_000,  # ~16.90 GB EEG time-series
 }
 
 

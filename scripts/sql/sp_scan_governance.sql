@@ -17,13 +17,16 @@ BEGIN
         0.0 AS temperature,
         500 AS max_output_tokens,
         TRUE AS flatten_json_output,
-        'You are analyzing a health data platform regulatory approval document. Extract the metadata from the document text. Output ONLY a valid JSON object without markdown fences, with exact keys: "item_type" (must be exactly one of: Research_Protocol, Helsinki_IRB, Data_Transfer, Extraction_Protocol, DUA), "item_name" (string description), "approval_date" (YYYY-MM-DD), "expiration_date" (YYYY-MM-DD), "approver_name" (approving official name/title), "status" ("APPROVED" or "EXPIRED").' AS prompt
+        'You are analyzing a health data platform regulatory approval document. Extract the metadata from the document text. Output ONLY a valid JSON object without markdown fences, with exact keys: "item_type" (must be exactly one of: Research_Protocol, IRB_Approval, Data_Transfer, Extraction_Protocol, DUA), "item_name" (string description), "approval_date" (YYYY-MM-DD), "expiration_date" (YYYY-MM-DD), "approver_name" (approving official name/title), "status" ("APPROVED" or "EXPIRED").' AS prompt
       )
     )
   )
   SELECT
     room_id,
-    JSON_VALUE(clean_json, '$.item_type') AS item_type,
+    CASE 
+      WHEN JSON_VALUE(clean_json, '$.item_type') = 'Helsinki_IRB' THEN 'IRB_Approval'
+      ELSE JSON_VALUE(clean_json, '$.item_type')
+    END AS item_type,
     COALESCE(JSON_VALUE(clean_json, '$.item_name'), CONCAT(room_id, ' ', JSON_VALUE(clean_json, '$.item_type'))) AS item_name,
     SAFE.PARSE_DATE('%Y-%m-%d', JSON_VALUE(clean_json, '$.approval_date')) AS approval_date,
     SAFE.PARSE_DATE('%Y-%m-%d', JSON_VALUE(clean_json, '$.expiration_date')) AS expiration_date,
@@ -36,7 +39,7 @@ BEGIN
   -- Step 2: Define the 5 statutory prerequisite types
   CREATE TEMP TABLE temp_required_types AS
   SELECT 'Research_Protocol' AS item_type UNION ALL
-  SELECT 'Helsinki_IRB' UNION ALL
+  SELECT 'IRB_Approval' UNION ALL
   SELECT 'Data_Transfer' UNION ALL
   SELECT 'Extraction_Protocol' UNION ALL
   SELECT 'DUA';

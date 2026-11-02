@@ -33,13 +33,16 @@ class RoomPackageItem(BaseModel):
 
 
 class DUAComplianceStatus(BaseModel):
-    """Helsinki Ethics and Data Use Agreement compliance metrics."""
+    """IRB Ethics and Data Use Agreement compliance metrics."""
 
-    helsinki_expiry_date: Optional[str] = Field(None, description="Helsinki IRB expiration date (YYYY-MM-DD)")
+    irb_expiry_date: Optional[str] = Field(None, description="IRB expiration date (YYYY-MM-DD)")
+    helsinki_expiry_date: Optional[str] = Field(None, description="IRB expiration date (legacy alias)")
     dua_expiry_date: Optional[str] = Field(None, description="Data Use Agreement expiration date (YYYY-MM-DD)")
-    helsinki_days_remaining: Optional[int] = Field(None, description="Days until Helsinki IRB expiration")
+    irb_days_remaining: Optional[int] = Field(None, description="Days until IRB expiration")
+    helsinki_days_remaining: Optional[int] = Field(None, description="Days until IRB expiration (legacy alias)")
     dua_days_remaining: Optional[int] = Field(None, description="Days until DUA expiration")
-    is_helsinki_valid: bool = Field(True, description="True if Helsinki IRB approval is currently valid")
+    is_irb_valid: bool = Field(True, description="True if IRB approval is currently valid")
+    is_helsinki_valid: bool = Field(True, description="True if IRB approval is currently valid (legacy alias)")
     is_dua_valid: bool = Field(True, description="True if Data Use Agreement is currently valid")
     compliance_level: str = Field("COMPLIANT", description="Overall status: COMPLIANT, WARNING, EXPIRED, NON_COMPLIANT")
     requires_action: bool = Field(False, description="True if immediate administrative review is required")

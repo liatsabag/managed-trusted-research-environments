@@ -143,7 +143,7 @@ export function renderRoomRequestModal() {
         requested_by: piEmail || piName,
         main_researcher: piName,
         purpose_of_research: purpose,
-        location: "Tel Aviv / Central Hub",
+        location: "Central Hub",
         expected_funds_usd: 150000.0,
         expected_time_range: "24 months"
       };

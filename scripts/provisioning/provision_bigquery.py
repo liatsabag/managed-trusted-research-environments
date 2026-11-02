@@ -78,7 +78,7 @@ def generate_hub_registry_data(topology: Dict[str, Any]) -> Dict[str, List[Dict[
         rooms.append({
             "room_id": room_id, "room_name": r["room_name"], "institute_id": r["institute_id"],
             "spoke_project_id": r["spoke_project_id"], "status": r["status"],
-            "helsinki_expiry_date": r["helsinki_expiry_date"], "dua_expiry_date": r["dua_expiry_date"],
+            "irb_expiry_date": r.get("irb_expiry_date", r.get("helsinki_expiry_date")), "dua_expiry_date": r["dua_expiry_date"],
             "inbound_bucket": r["inbound_bucket"], "export_bucket": r["export_bucket"],
             "cloud_identity_group": r["cloud_identity_group"], "tables_count": table_count,
             "lead_researcher_id": lead_id,
@@ -106,7 +106,7 @@ def generate_hub_telemetry_data(topology: Dict[str, Any]) -> Dict[str, List[Dict
     checklist = []
     item_types = [
         ("Research_Protocol", "Approved Scientific Research Protocol"),
-        ("Helsinki_IRB", "Helsinki Ethics Committee / IRB Approval"),
+        ("IRB_Approval", "Institutional Review Board (IRB) Approval"),
         ("Data_Transfer", "Data Transfer Committee Statutory Sign-off"),
         ("Extraction_Protocol", "De-identification & Extraction Query Protocol"),
         ("DUA", "Multi-party Data Use Agreement"),
@@ -115,7 +115,7 @@ def generate_hub_telemetry_data(topology: Dict[str, Any]) -> Dict[str, List[Dict
     for room in topology.get("research_rooms", []):
         room_id = room["room_id"]
         for itype, iname in item_types:
-            exp_date = room.get("helsinki_expiry_date", "2027-12-31") if itype == "Helsinki_IRB" else room.get("dua_expiry_date", "2028-04-30")
+            exp_date = room.get("irb_expiry_date", room.get("helsinki_expiry_date", "2027-12-31")) if itype == "IRB_Approval" else room.get("dua_expiry_date", "2028-04-30")
             checklist.append({
                 "item_id": f"{room_id}-{itype}", "room_id": room_id, "room_type": "PROVISIONED",
                 "item_type": itype, "item_name": iname, "status": "Approved", "approval_date": "2024-10-15",
@@ -135,7 +135,7 @@ def generate_hub_telemetry_data(topology: Dict[str, Any]) -> Dict[str, List[Dict
                     "document_uri": f"gs://gcp-rr-hub-approvals/{room_id}/{itype.lower()}_approval.txt",
                     "comments": "Document missing in regulatory checklist.",
                 })
-            elif room_id == "rr-pediatrics-06" and itype == "Helsinki_IRB":
+            elif room_id == "rr-pediatrics-06" and itype == "IRB_Approval":
                 checklist.append({
                     "item_id": f"{room_id}-{itype}", "room_id": room_id, "room_type": "PENDING_REQUEST",
                     "item_type": itype, "item_name": iname, "status": "EXPIRED", "approval_date": "2023-01-15",
@@ -190,13 +190,15 @@ def provision_bigquery(
     hub_proj = topology.get("hub_project", {}).get("project_id", "gcp-rr-hub-core")
     region = topology.get("hub_project", {}).get("region", "me-west1")
 
-    from google.cloud import bigquery
-    bq_clients = {hub_proj: bigquery.Client(project=hub_proj, location=region)}
-    for room in topology.get("research_rooms", []):
-        spoke_p = room.get("spoke_project_id", hub_proj)
-        if spoke_p not in bq_clients:
-            bq_clients[spoke_p] = bigquery.Client(project=spoke_p, location=region)
-    logger.info("Connected to live BigQuery Clients across %d projects: %s", len(bq_clients), list(bq_clients.keys()))
+    bq_clients = {}
+    if not dry_run:
+        from google.cloud import bigquery
+        bq_clients = {hub_proj: bigquery.Client(project=hub_proj, location=region)}
+        for room in topology.get("research_rooms", []):
+            spoke_p = room.get("spoke_project_id", hub_proj)
+            if spoke_p not in bq_clients:
+                bq_clients[spoke_p] = bigquery.Client(project=spoke_p, location=region)
+        logger.info("Connected to live BigQuery Clients across %d projects: %s", len(bq_clients), list(bq_clients.keys()))
 
     ddls = load_sql_ddls()
     results: Dict[str, Any] = {"datasets": {}, "ddls_loaded": list(ddls.keys()), "total_rows_generated": 0}

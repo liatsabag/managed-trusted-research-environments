@@ -46,6 +46,28 @@ class TestComplianceService(unittest.TestCase):
         provision_storage(dry_run=True)
         cls.service = get_compliance_service()
 
+    def setUp(self):
+        """Mock Cloud Resource Manager IAM calls to ensure isolated unit tests."""
+        self.mock_crm = MagicMock()
+        self.policy_store = {"bindings": []}
+
+        def mock_get_iam(*args, **kwargs):
+            mock_req = MagicMock()
+            mock_req.execute.return_value = {"bindings": list(self.policy_store["bindings"])}
+            return mock_req
+
+        def mock_set_iam(*args, **kwargs):
+            body = kwargs.get("body") or (args[1] if len(args) > 1 else {})
+            self.policy_store["bindings"] = body.get("policy", {}).get("bindings", [])
+            mock_req = MagicMock()
+            mock_req.execute.return_value = body.get("policy", {})
+            return mock_req
+
+        self.mock_crm.projects().getIamPolicy.side_effect = mock_get_iam
+        self.mock_crm.projects().setIamPolicy.side_effect = mock_set_iam
+        if hasattr(self.service, "fleet_service") and self.service.fleet_service:
+            self.service.fleet_service._crm_client = self.mock_crm
+
     def test_active_room_compliance_summary(self):
         """Verify active room rr-oncology-01 has all 5 valid prerequisite items."""
         summary = self.service.get_room_compliance("rr-oncology-01")
@@ -80,21 +102,21 @@ class TestComplianceService(unittest.TestCase):
         self.assertFalse(resp.items["Data_Transfer"].is_valid)
 
     def test_expired_document_onboarding_gate_block(self):
-        """Verify Mode 2 onboarding gate blocks rr-pediatrics-06 due to expired Helsinki IRB approval."""
+        """Verify Mode 2 onboarding gate blocks rr-pediatrics-06 due to expired IRB approval."""
         req = OnboardingGateRequest(request_id="rr-pediatrics-06")
         resp = self.service.evaluate_onboarding_gate(req)
 
         self.assertEqual(resp.request_id, "rr-pediatrics-06")
         self.assertEqual(resp.gate_decision, GateDecision.GATE_BLOCKED)
-        self.assertIn("Helsinki_IRB", resp.expired_items)
-        self.assertEqual(resp.items["Helsinki_IRB"].status, RegulatoryItemStatus.EXPIRED)
-        self.assertFalse(resp.items["Helsinki_IRB"].is_valid)
+        self.assertIn("IRB_Approval", resp.expired_items)
+        self.assertEqual(resp.items["IRB_Approval"].status, RegulatoryItemStatus.EXPIRED)
+        self.assertFalse(resp.items["IRB_Approval"].is_valid)
 
     def test_scan_triggers_downgrade_on_compliance_failure(self):
         """Verify Mode 1 scan triggers soft-downgrade when an active room loses compliance."""
         result = self.service.scan_room_compliance("rr-pediatrics-06")
         self.assertIn(result.new_iam_state, ["SOFT_DOWNGRADED", "ACTIVE"])
-        self.assertIn(result.items["Helsinki_IRB"].status, [RegulatoryItemStatus.EXPIRED, RegulatoryItemStatus.MISSING])
+        self.assertIn(result.items["IRB_Approval"].status, [RegulatoryItemStatus.EXPIRED, RegulatoryItemStatus.MISSING])
 
     def test_horizon_report_generation(self):
         """Verify fleet-wide compliance horizon report aggregates forecasting buckets."""
@@ -145,10 +167,10 @@ class TestComplianceService(unittest.TestCase):
         self.assertEqual(imm_summary.overall_status, RoomOverallCompliance.INCOMPLETE)
         self.assertEqual(imm_summary.items["Data_Transfer"].status, RegulatoryItemStatus.MISSING)
 
-        # rr-pediatrics-06 expired Helsinki_IRB
+        # rr-pediatrics-06 expired IRB_Approval
         ped_summary = self.service.get_room_compliance("rr-pediatrics-06")
         self.assertEqual(ped_summary.overall_status, RoomOverallCompliance.NON_COMPLIANT)
-        self.assertEqual(ped_summary.items["Helsinki_IRB"].status, RegulatoryItemStatus.EXPIRED)
+        self.assertEqual(ped_summary.items["IRB_Approval"].status, RegulatoryItemStatus.EXPIRED)
 
     def test_mode1_soft_downgrade_and_reactivate(self):
         """Verify Mode 1 triggers soft-downgrade on non-compliant active room and reactivation on compliance."""

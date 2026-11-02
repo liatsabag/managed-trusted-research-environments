@@ -35,8 +35,8 @@
     "status": "PENDING_SCAN",
     "gate_decision": "GATE_BLOCKED",
     "missing_items": "[]",
-    "expired_items": "[\"Helsinki_IRB\"]",
+    "expired_items": "[\"IRB_Approval\"]",
     "warning_items": "[]",
-    "summary_reason": "Helsinki Ethics Committee / IRB Approval certificate expired on 2026-06-30."
+    "summary_reason": "Institutional Review Board (IRB) Approval certificate expired on 2026-06-30."
   }
 ]

@@ -35,7 +35,7 @@ export async function renderComplianceView() {
       min_days_remaining: null,
       items: {
         "Research_Protocol": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
-        "Helsinki_IRB": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
+        "IRB_Approval": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
         "Data_Transfer": { status: "Missing", expiration_date: null, days_remaining: null },
         "Extraction_Protocol": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
         "DUA": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 }
@@ -50,7 +50,7 @@ export async function renderComplianceView() {
       min_days_remaining: null,
       items: {
         "Research_Protocol": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
-        "Helsinki_IRB": { status: "Expired", expiration_date: "2024-05-15", days_remaining: -868 },
+        "IRB_Approval": { status: "Expired", expiration_date: "2024-05-15", days_remaining: -868 },
         "Data_Transfer": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
         "Extraction_Protocol": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 },
         "DUA": { status: "Approved", expiration_date: "2027-12-31", days_remaining: 457 }
@@ -62,7 +62,7 @@ export async function renderComplianceView() {
 
   const statutoryItems = [
     { key: "Research_Protocol", label: "Research Protocol", icon: "fa-file-lines" },
-    { key: "Helsinki_IRB", label: "Helsinki IRB", icon: "fa-certificate" },
+    { key: "IRB_Approval", label: "IRB Approval", icon: "fa-certificate" },
     { key: "Data_Transfer", label: "Data Transfer", icon: "fa-file-shield" },
     { key: "Extraction_Protocol", label: "Extraction Protocol", icon: "fa-filter" },
     { key: "DUA", label: "Data Use Agreement", icon: "fa-handshake" }
@@ -81,7 +81,7 @@ export async function renderComplianceView() {
             Regulatory Compliance & Gatekeeper
           </h1>
           <p class="text-xs text-slate-500 mt-1">
-            Verification of statutory prerequisites (Helsinki IRB, DUA, protocols) across active rooms and onboarding requests.
+            Verification of statutory prerequisites (IRB Approval, DUA, protocols) across active rooms and onboarding requests.
           </p>
         </div>
 
@@ -150,7 +150,7 @@ export async function renderComplianceView() {
                     </td>
 
                     ${statutoryItems.map(itemKey => {
-                      const item = summary.items ? summary.items[itemKey.key] : null;
+                      const item = summary.items ? (summary.items[itemKey.key] || (itemKey.key === 'IRB_Approval' ? summary.items['Helsinki_IRB'] : null)) : null;
                       if (!item || item.status === "Missing") {
                         return `<td class="py-3.5 px-3"><span class="reg-pill reg-pill-missing"><i class="fa-solid fa-minus text-[10px]"></i> Missing</span></td>`;
                       }

@@ -20,7 +20,7 @@ export const ROOM_ASSET_METADATA = {
     ],
     export_files: [
       { name: "candidate_survival_summary.csv", size: 207, desc: "Kaplan-Meier survival endpoints" },
-      { name: "research_export_dr_oren_katz_20260929.csv", size: 136, desc: "De-identified aggregated findings" }
+      { name: "research_export_dr_alexander_wright_20260929.csv", size: 136, desc: "De-identified aggregated findings" }
     ],
     notebooks: [
       { name: "01_exploratory_cohort_analysis.ipynb", desc: "Cohort stratification & Kaplan-Meier survival curves", status: "Executed", runs: 12 },

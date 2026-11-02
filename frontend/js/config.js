@@ -33,7 +33,7 @@ export const CONFIG = {
     dpo: {
       id: "dpo",
       title: "Data Privacy Officer (DPO)",
-      role: "Helsinki IRB & 5-Item Statutory Compliance",
+      role: "IRB & 5-Item Statutory Compliance",
       description: "Regulatory horizon tracking, Air-Lock audit feeds, and soft-downgrade enforcement.",
       badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
       icon: "fa-scale-balanced"

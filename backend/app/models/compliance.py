@@ -9,7 +9,8 @@ from pydantic import BaseModel, Field
 class RegulatoryItemType(str, Enum):
     """Statutory 5-Item prerequisite types."""
     RESEARCH_PROTOCOL = "Research_Protocol"
-    HELSINKI_IRB = "Helsinki_IRB"
+    IRB_APPROVAL = "IRB_Approval"
+    HELSINKI_IRB = "IRB_Approval"  # Backward-compatible alias for IRB_APPROVAL
     DATA_TRANSFER = "Data_Transfer"
     EXTRACTION_PROTOCOL = "Extraction_Protocol"
     DUA = "DUA"
@@ -114,7 +115,7 @@ class CreateRoomRequest(BaseModel):
     requested_by: str = Field(..., description="Primary requester name or email")
     main_researcher: Optional[str] = Field(None, description="Lead investigator")
     purpose_of_research: Optional[str] = Field(None, description="Research hypothesis and scope")
-    location: Optional[str] = Field("Tel Aviv / Central Hub", description="Physical or logical region")
+    location: Optional[str] = Field("Central Hub", description="Physical or logical region")
     expected_funds_usd: Optional[float] = Field(0.0, description="Allocated grant or project budget")
     budget_limit_usd: Optional[float] = Field(0.0, description="Allocated grant or project budget")
     expected_time_range: Optional[str] = Field("24 months", description="Estimated study duration")

@@ -77,10 +77,10 @@ def main():
     # 5. Verify Multi-Room Researcher Aggregation
     logger.info("5. Testing Multi-Room Researcher Aggregation...")
     researchers_emails = [
-        "dr.oren.katz@example-tre.org",
-        "prof.miriam.levy@example-tre.org",
+        "dr.alexander.wright@example-tre.org",
+        "prof.eleanor.vance@example-tre.org",
         "dr.maya.lin@example-tre.org",
-        "dr.daniel.cohen@example-tre.org",
+        "dr.david.miller@example-tre.org",
     ]
     for email in researchers_emails:
         res_data = finops.get_researcher_spend(email)

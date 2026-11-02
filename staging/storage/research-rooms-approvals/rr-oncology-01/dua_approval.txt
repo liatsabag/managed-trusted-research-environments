@@ -3,7 +3,7 @@ MULTI-PARTY DATA USE AGREEMENT (DUA)
 ================================================================================
 Room Identifier: rr-oncology-01
 Study Title: Precision Oncology Genomic Biomarker Cohort
-DUA Master Agreement: DUA-MOH-ONC-2024
+DUA Master Agreement: DUA-REG-ONC-2024
 Item Type: DUA
 Item Name: Multi-party Data Use Agreement
 
@@ -11,7 +11,7 @@ STATUS: APPROVED
 Execution Date: 2024-10-15
 Expiration Date: 2027-12-31
 Parties: Data Custodian, Academic Medical Center, and Principal Investigator
-Legal Signatory: Dean of Medicine & Hospital Directorate
+Legal Signatory: Dean of Medicine & Academic Medical Center Directorate
 
 COVENANTS AND WARRANTIES:
 1. Data recipient will not attempt re-identification of research subjects.

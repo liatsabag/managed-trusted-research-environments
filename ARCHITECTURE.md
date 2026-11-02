@@ -237,7 +237,7 @@ Tracks the global state, budgets, and security configurations of all tenant rese
 * `institute_id` (STRING, FK): Sponsoring institution referencing `reg_institutes.institute_id`.
 * `spoke_project_id` (STRING): Dedicated GCP project ID hosting the room enclave.
 * `status` (STRING): Room lifecycle status (`ACTIVE`, `SOFT_DOWNGRADED`, `PROVISIONING`, `DECOMMISSIONED`).
-* `helsinki_expiry_date` (DATE): Ethics approval expiration deadline.
+* `irb_expiry_date` (DATE): Institutional Review Board (IRB) ethics approval expiration deadline (legacy: `helsinki_expiry_date`).
 * `dua_expiry_date` (DATE): Data Use Agreement expiration deadline.
 * `inbound_bucket`, `export_bucket` (STRING): Dual-bucket Cloud Storage endpoints (`gs://rr-*-inbound`, `gs://rr-*-export`).
 * `cloud_identity_group` (STRING): Dedicated room Google Workspace security group.
@@ -380,7 +380,7 @@ The following architecture diagram illustrates how the refactored telemetry engi
 * **The Attribution Challenge**:
   Researchers launch and run Colab Enterprise notebooks hosted inside BigQuery Studio. Cloud labels cannot be reliably enforced upon notebook creation or runtime assignment by ad-hoc user action.
 * **Resolution via Direct API Polling**:
-  1. **Runtime User Attribution**: In Colab Enterprise, Vertex AI automatically sets the `runtimeUser` field on the underlying Compute Engine instance / notebook runtime to the researcher's authenticated email (e.g. `dr.eitan.rosen@example.health.org`).
+  1. **Runtime User Attribution**: In Colab Enterprise, Vertex AI automatically sets the `runtimeUser` field on the underlying Compute Engine instance / notebook runtime to the researcher's authenticated email (e.g. `dr.marcus.chen@example.health.org`).
   2. **Direct Vertex AI API Ingestion**: The autonomous Telemetry Poller Cloud Run Job (`rr-telemetry-poller`) directly queries the Vertex AI Notebook Runtime API (`aiplatform.notebookRuntimes.list`) and Cloud Monitoring VM uptime across each spoke project every 15 minutes, fetching active runtime names, status, and machine shapes (`e2-standard-4`, `n2-highmem-8`).
   3. **Autonomous Scheduling Deployment**:
      * **Container**: `me-west1-docker.pkg.dev/gcp-rr-hub-core/cloud-run-source-deploy/telemetry-poller:latest`
@@ -977,7 +977,7 @@ The screenshots below capture key operational views from the live deployed admin
 *Figure 11.5a: Airlock Egress Governance queue staging candidate export files from spoke buckets (`gs://rr-*-export/`) with Gemini AI risk meters and status indicators.*
 
 ![Airlock High-Risk Scan Outcome Expanded](docs/assets/screenshots/ui_airlock_risk_expanded.png)
-*Figure 11.5b: Expanded Gemini AI Privacy Assessment Card for candidate export `analysis_output_prof.miriam.levy_...csv`, highlighting a HIGH Risk score (75/100), detected PII email token (`prof.miriam.levy@example.health.org`), decision rationale, and automated policy REJECT recommendation.*
+*Figure 11.5b: Expanded Gemini AI Privacy Assessment Card for candidate export `analysis_output_prof.eleanor.vance_...csv`, highlighting a HIGH Risk score (75/100), detected PII email token (`prof.eleanor.vance@example.health.org`), decision rationale, and automated policy REJECT recommendation.*
 
 #### 6. Regulatory Compliance, Onboarding Gates & FinOps Reconciliation
 ![Compliance & Onboarding Gates](docs/assets/screenshots/ui_compliance_governance.png)

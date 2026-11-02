@@ -37,7 +37,7 @@ class TestTelemetryModels(unittest.TestCase):
             job_id="job-1234",
             room_id="rr-oncology-01",
             project_id="gcp-rr-spoke-oncology-01",
-            user_email="dr.oren.katz@mskcc.example-tre.org",
+            user_email="dr.alexander.wright@mskcc.example-tre.org",
             query_snippet="SELECT * FROM cohort",
             bytes_billed=1048576,
             slot_ms=250,
@@ -54,7 +54,7 @@ class TestTelemetryModels(unittest.TestCase):
         event = AuditLogEvent(
             event_id="evt-999",
             room_id="rr-oncology-01",
-            principal_email="dr.oren.katz@mskcc.example-tre.org",
+            principal_email="dr.alexander.wright@mskcc.example-tre.org",
             service_name="bigquery.googleapis.com",
             method_name="google.cloud.bigquery.v2.JobService.InsertJob",
             resource_name="projects/gcp-rr-spoke-oncology-01/jobs/123",

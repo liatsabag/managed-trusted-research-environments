@@ -55,13 +55,13 @@ class FleetGovernanceService:
 
     def _evaluate_dua_compliance(
         self,
-        helsinki_expiry: Optional[Any],
+        irb_expiry: Optional[Any],
         dua_expiry: Optional[Any],
         status: str,
     ) -> DUAComplianceStatus:
-        """Evaluate Helsinki IRB and DUA expiration status and countdowns."""
+        """Evaluate IRB and DUA expiration status and countdowns."""
         today = date.today()
-        h_str = helsinki_expiry.isoformat() if isinstance(helsinki_expiry, date) else str(helsinki_expiry) if helsinki_expiry else None
+        h_str = irb_expiry.isoformat() if isinstance(irb_expiry, date) else str(irb_expiry) if irb_expiry else None
         d_str = dua_expiry.isoformat() if isinstance(dua_expiry, date) else str(dua_expiry) if dua_expiry else None
         h_days = (date.fromisoformat(h_str) - today).days if h_str else None
         d_days = (date.fromisoformat(d_str) - today).days if d_str else None
@@ -82,12 +82,14 @@ class FleetGovernanceService:
             notes = "All ethics and data use agreements fully active."
 
         return DUAComplianceStatus(
+            irb_expiry_date=h_str,
             helsinki_expiry_date=h_str,
             dua_expiry_date=d_str,
+            irb_days_remaining=h_days,
             helsinki_days_remaining=h_days,
             dua_days_remaining=d_days,
+            is_irb_valid=is_h_valid,
             is_helsinki_valid=is_h_valid,
-            is_dua_valid=is_d_valid,
             compliance_level=level,
             requires_action=requires_action,
             notes=notes,
@@ -114,10 +116,8 @@ class FleetGovernanceService:
                   )
                 GROUP BY room_id
             )
-            SELECT r.room_id, r.room_name, r.institute_id, i.name AS institute_name,
-                   r.spoke_project_id, r.status, r.helsinki_expiry_date, r.dua_expiry_date,
-                   r.inbound_bucket, r.export_bucket, r.cloud_identity_group, r.tables_count,
-                   r.created_at, r.lead_researcher_id, COALESCE(r.budget_limit_usd, 5000.0) AS budget_limit_usd,
+            SELECT r.*, i.name AS institute_name,
+                   COALESCE(r.budget_limit_usd, 5000.0) AS budget_limit_usd,
                    COALESCE(res.researcher_count, 0) AS researcher_count,
                    CONCAT(lead_res.first_name, ' ', lead_res.last_name) AS lead_researcher,
                    lead_res.primary_email AS lead_researcher_email,
@@ -149,7 +149,7 @@ class FleetGovernanceService:
                     lead_researcher=row.get("lead_researcher") or "Principal Investigator",
                     lead_researcher_email=row.get("lead_researcher_email"), deployment_date=dep_date,
                     spoke_project_id=row["spoke_project_id"], status=row["status"],
-                    compliance=self._evaluate_dua_compliance(row["helsinki_expiry_date"], row["dua_expiry_date"], row["status"]),
+                    compliance=self._evaluate_dua_compliance(row.get("irb_expiry_date") or row.get("helsinki_expiry_date"), row.get("dua_expiry_date"), row["status"]),
                     researcher_count=row["researcher_count"], table_count=row["tables_count"] or 0,
                     packages_count=len(pkgs), active_packages=pkgs[:5], total_cost=float(row["total_cost"] or 0.0),
                     budget_limit_usd=float(row["budget_limit_usd"] or 5000.0),
@@ -173,10 +173,8 @@ class FleetGovernanceService:
                 FROM `{tel_ds}.view_billing_export`
                 GROUP BY project_id
             )
-            SELECT r.room_id, r.room_name, r.institute_id, i.name AS institute_name,
-                   r.spoke_project_id, r.status, r.helsinki_expiry_date, r.dua_expiry_date,
-                   r.inbound_bucket, r.export_bucket, r.cloud_identity_group, r.tables_count,
-                   r.created_at, r.lead_researcher_id, COALESCE(r.budget_limit_usd, 5000.0) AS budget_limit_usd,
+            SELECT r.*, i.name AS institute_name,
+                   COALESCE(r.budget_limit_usd, 5000.0) AS budget_limit_usd,
                    CONCAT(lead_res.first_name, ' ', lead_res.last_name) AS lead_researcher_name,
                    lead_res.primary_email AS lead_researcher_email,
                    COALESCE(costs.total_project_cost, 0.0) AS total_cost
@@ -243,7 +241,7 @@ class FleetGovernanceService:
             lead_researcher=r.get("lead_researcher_name") or "Principal Investigator",
             lead_researcher_email=r.get("lead_researcher_email"), deployment_date=dep_date,
             spoke_project_id=r["spoke_project_id"], status=r["status"],
-            compliance=self._evaluate_dua_compliance(r["helsinki_expiry_date"], r["dua_expiry_date"], r["status"]),
+            compliance=self._evaluate_dua_compliance(r.get("irb_expiry_date") or r.get("helsinki_expiry_date"), r.get("dua_expiry_date"), r["status"]),
             budget_limit_usd=float(r["budget_limit_usd"] or 5000.0),
             total_cost=float(r["total_cost"] or 0.0),
             inbound_bucket=r["inbound_bucket"], export_bucket=r["export_bucket"],

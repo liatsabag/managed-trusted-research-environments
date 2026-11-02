@@ -3,7 +3,7 @@ MULTI-PARTY DATA USE AGREEMENT (DUA)
 ================================================================================
 Room Identifier: rr-neurology-04
 Study Title: Neurodegenerative Biomarkers and Cognitive Trajectories
-DUA Master Agreement: DUA-MOH-NEUR-2025
+DUA Master Agreement: DUA-REG-NEUR-2025
 Item Type: DUA
 Item Name: Multi-party Data Use Agreement
 

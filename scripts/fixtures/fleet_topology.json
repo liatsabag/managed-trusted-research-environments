@@ -85,7 +85,7 @@
       "institute_id": "inst-mskcc",
       "spoke_project_id": "gcp-rr-spoke-oncology-01",
       "status": "ACTIVE",
-      "helsinki_expiry_date": "2027-10-15",
+      "irb_expiry_date": "2027-10-15",
       "dua_expiry_date": "2028-04-30",
       "inbound_bucket": "gs://rr-oncology-01-inbound",
       "export_bucket": "gs://rr-oncology-01-export",
@@ -97,9 +97,9 @@
       "researchers": [
         {
           "researcher_id": "res-onc-01",
-          "first_name": "Oren",
-          "last_name": "Katz",
-          "primary_email": "dr.oren.katz@example-tre.org",
+          "first_name": "Alexander",
+          "last_name": "Wright",
+          "primary_email": "dr.alexander.wright@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Principal Investigator",
           "access_state": "ACTIVE",
@@ -107,9 +107,9 @@
         },
         {
           "researcher_id": "res-onc-02",
-          "first_name": "Miriam",
-          "last_name": "Levy",
-          "primary_email": "prof.miriam.levy@example-tre.org",
+          "first_name": "Eleanor",
+          "last_name": "Vance",
+          "primary_email": "prof.eleanor.vance@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Oncologist",
           "access_state": "ACTIVE",
@@ -179,7 +179,8 @@
           ],
           "description": "Aggregated overall survival table with subgroup cells having n=3 (k < 5 risk)"
         }
-      ]
+      ],
+      "irb_expiry_date": "2027-10-15"
     },
     {
       "room_id": "rr-genomics-02",
@@ -187,7 +188,7 @@
       "institute_id": "inst-broad",
       "spoke_project_id": "gcp-rr-spoke-genomics-02",
       "status": "ACTIVE",
-      "helsinki_expiry_date": "2027-11-20",
+      "irb_expiry_date": "2027-11-20",
       "dua_expiry_date": "2028-06-15",
       "inbound_bucket": "gs://rr-genomics-02-inbound",
       "export_bucket": "gs://rr-genomics-02-export",
@@ -199,9 +200,9 @@
       "researchers": [
         {
           "researcher_id": "res-gen-01",
-          "first_name": "Eitan",
-          "last_name": "Rosen",
-          "primary_email": "dr.eitan.rosen@example-tre.org",
+          "first_name": "Marcus",
+          "last_name": "Chen",
+          "primary_email": "dr.marcus.chen@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Genomics Lead",
           "access_state": "ACTIVE",
@@ -209,9 +210,9 @@
         },
         {
           "researcher_id": "res-gen-02",
-          "first_name": "Anat",
-          "last_name": "Shapiro",
-          "primary_email": "prof.anat.shapiro@example-tre.org",
+          "first_name": "Claire",
+          "last_name": "Dubois",
+          "primary_email": "prof.claire.dubois@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Computational Geneticist",
           "access_state": "ACTIVE",
@@ -269,7 +270,8 @@
           "has_small_cell_count": false,
           "description": "Safe aggregated allele frequency cohort report"
         }
-      ]
+      ],
+      "irb_expiry_date": "2027-11-20"
     },
     {
       "room_id": "rr-cardio-03",
@@ -277,7 +279,7 @@
       "institute_id": "inst-hopkins",
       "spoke_project_id": "gcp-rr-spoke-cardio-03",
       "status": "ACTIVE",
-      "helsinki_expiry_date": "2027-11-01",
+      "irb_expiry_date": "2027-11-01",
       "dua_expiry_date": "2028-01-10",
       "inbound_bucket": "gs://rr-cardio-03-inbound",
       "export_bucket": "gs://rr-cardio-03-export",
@@ -299,9 +301,9 @@
         },
         {
           "researcher_id": "res-card-02",
-          "first_name": "Daniel",
-          "last_name": "Cohen",
-          "primary_email": "dr.daniel.cohen@example-tre.org",
+          "first_name": "David",
+          "last_name": "Miller",
+          "primary_email": "dr.david.miller@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Epidemiologist",
           "access_state": "ACTIVE",
@@ -370,7 +372,8 @@
           ],
           "description": "Model validation output containing unmasked patient MRN and small cell count (n=2)"
         }
-      ]
+      ],
+      "irb_expiry_date": "2027-11-01"
     },
     {
       "room_id": "rr-neurology-04",
@@ -378,7 +381,7 @@
       "institute_id": "inst-oxford",
       "spoke_project_id": "gcp-rr-spoke-neurology-04",
       "status": "ACTIVE",
-      "helsinki_expiry_date": "2027-02-28",
+      "irb_expiry_date": "2027-02-28",
       "dua_expiry_date": "2027-08-30",
       "inbound_bucket": "gs://rr-neurology-04-inbound",
       "export_bucket": "gs://rr-neurology-04-export",
@@ -390,9 +393,9 @@
       "researchers": [
         {
           "researcher_id": "res-neur-01",
-          "first_name": "Noa",
-          "last_name": "Shapira",
-          "primary_email": "dr.noa.shapira@example-tre.org",
+          "first_name": "Olivia",
+          "last_name": "Taylor",
+          "primary_email": "dr.olivia.taylor@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Neuroimaging Specialist",
           "access_state": "ACTIVE",
@@ -400,9 +403,9 @@
         },
         {
           "researcher_id": "res-neur-02",
-          "first_name": "Rami",
-          "last_name": "Friedman",
-          "primary_email": "dr.rami.friedman@example-tre.org",
+          "first_name": "Robert",
+          "last_name": "Hayes",
+          "primary_email": "dr.robert.hayes@example-tre.org",
           "create_cloud_identity_user": true,
           "role": "Cognitive Neurologist",
           "access_state": "ACTIVE",
@@ -460,7 +463,8 @@
           "has_small_cell_count": false,
           "description": "Clean aggregate trial outcome metrics ready for DPO approval"
         }
-      ]
+      ],
+      "irb_expiry_date": "2027-02-28"
     }
   ],
   "room_requests": [
@@ -478,7 +482,9 @@
       "document_folder_uri": "gs://gcp-rr-hub-approvals/rr-immunology-05/",
       "status": "PENDING_SCAN",
       "gate_decision": "GATE_BLOCKED",
-      "missing_items": ["Data_Transfer"],
+      "missing_items": [
+        "Data_Transfer"
+      ],
       "expired_items": [],
       "warning_items": [],
       "summary_reason": "Statutory Data Transfer Committee Sign-Off document is missing from folder."
@@ -498,9 +504,11 @@
       "status": "PENDING_SCAN",
       "gate_decision": "GATE_BLOCKED",
       "missing_items": [],
-      "expired_items": ["Helsinki_IRB"],
+      "expired_items": [
+        "IRB_Approval"
+      ],
       "warning_items": [],
-      "summary_reason": "Helsinki Ethics Committee / IRB Approval certificate expired on 2026-06-30."
+      "summary_reason": "Institutional Review Board (IRB) Approval certificate expired on 2026-06-30."
     }
   ],
   "admin_domain": "example-tre.org"

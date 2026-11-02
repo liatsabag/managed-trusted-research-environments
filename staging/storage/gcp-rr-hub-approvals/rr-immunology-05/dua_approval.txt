@@ -3,7 +3,7 @@ MULTI-PARTY DATA USE AGREEMENT (DUA)
 ================================================================================
 Room Identifier: rr-immunology-05
 Study Title: Autoimmune Biomarkers and Biological Therapeutics
-DUA Master Agreement: DUA-MOH-IMM-2025
+DUA Master Agreement: DUA-REG-IMM-2025
 Item Type: DUA
 Item Name: Multi-party Data Use Agreement
 

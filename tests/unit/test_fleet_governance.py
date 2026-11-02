@@ -76,12 +76,14 @@ class TestFleetGovernanceService(unittest.TestCase):
         """Verify compliance evaluation logic for valid and expired certificates."""
         # Test expired IRB
         expired = self.service._evaluate_dua_compliance("2020-01-01", "2028-01-01", "ACTIVE")
+        self.assertFalse(expired.is_irb_valid)
         self.assertFalse(expired.is_helsinki_valid)
         self.assertEqual(expired.compliance_level, "EXPIRED")
         self.assertTrue(expired.requires_action)
 
         # Test active valid
         valid = self.service._evaluate_dua_compliance("2028-01-01", "2028-01-01", "ACTIVE")
+        self.assertTrue(valid.is_irb_valid)
         self.assertTrue(valid.is_helsinki_valid)
         self.assertTrue(valid.is_dua_valid)
         self.assertEqual(valid.compliance_level, "COMPLIANT")

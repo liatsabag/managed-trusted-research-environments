@@ -38,7 +38,7 @@ SPOKE_PROJECTS = {
             "rr-oncology-01-export": ["candidate_survival_summary.csv"],
         },
         "group": f"tre-onco-researchers@{ADMIN_DOMAIN}",
-        "users": [f"dr.oren.katz@{ADMIN_DOMAIN}", f"prof.miriam.levy@{ADMIN_DOMAIN}"],
+        "users": [f"dr.alexander.wright@{ADMIN_DOMAIN}", f"prof.eleanor.vance@{ADMIN_DOMAIN}"],
     },
     "gcp-rr-spoke-genomics-02": {
         "room_id": "rr-genomics-02",
@@ -61,7 +61,7 @@ SPOKE_PROJECTS = {
             "rr-genomics-02-export": ["rare_variant_frequency_report.csv"],
         },
         "group": f"tre-genom-researchers@{ADMIN_DOMAIN}",
-        "users": [f"dr.eitan.rosen@{ADMIN_DOMAIN}", f"prof.anat.shapiro@{ADMIN_DOMAIN}"],
+        "users": [f"dr.marcus.chen@{ADMIN_DOMAIN}", f"prof.claire.dubois@{ADMIN_DOMAIN}"],
     },
     "gcp-rr-spoke-cardio-03": {
         "room_id": "rr-cardio-03",
@@ -85,7 +85,7 @@ SPOKE_PROJECTS = {
             "rr-cardio-03-export": ["mace_prediction_findings.csv"],
         },
         "group": f"tre-cardio-researchers@{ADMIN_DOMAIN}",
-        "users": [f"dr.maya.lin@{ADMIN_DOMAIN}", f"dr.daniel.cohen@{ADMIN_DOMAIN}"],
+        "users": [f"dr.maya.lin@{ADMIN_DOMAIN}", f"dr.david.miller@{ADMIN_DOMAIN}"],
     },
     "gcp-rr-spoke-neurology-04": {
         "room_id": "rr-neurology-04",
@@ -108,7 +108,7 @@ SPOKE_PROJECTS = {
             "rr-neurology-04-export": ["trial_phase2_endpoints.csv"],
         },
         "group": f"tre-neuro-researchers@{ADMIN_DOMAIN}",
-        "users": [f"dr.noa.shapira@{ADMIN_DOMAIN}", f"dr.rami.friedman@{ADMIN_DOMAIN}"],
+        "users": [f"dr.olivia.taylor@{ADMIN_DOMAIN}", f"dr.robert.hayes@{ADMIN_DOMAIN}"],
     },
 }
 
@@ -138,12 +138,12 @@ EXPECTED_HUB_DATASETS = {
 
 EXPECTED_HUB_BUCKETS = {
     "gcp-rr-hub-approvals": {
-        "rr-oncology-01": ["research_protocol_approval.txt", "helsinki_irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
-        "rr-genomics-02": ["research_protocol_approval.txt", "helsinki_irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
-        "rr-cardio-03": ["research_protocol_approval.txt", "helsinki_irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
-        "rr-neurology-04": ["research_protocol_approval.txt", "helsinki_irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
-        "rr-immunology-05": ["research_protocol_approval.txt", "helsinki_irb_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
-        "rr-pediatrics-06": ["research_protocol_approval.txt", "helsinki_irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
+        "rr-oncology-01": ["research_protocol_approval.txt", "irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
+        "rr-genomics-02": ["research_protocol_approval.txt", "irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
+        "rr-cardio-03": ["research_protocol_approval.txt", "irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
+        "rr-neurology-04": ["research_protocol_approval.txt", "irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
+        "rr-immunology-05": ["research_protocol_approval.txt", "irb_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
+        "rr-pediatrics-06": ["research_protocol_approval.txt", "irb_approval.txt", "data_transfer_approval.txt", "extraction_protocol_approval.txt", "dua_approval.txt"],
     }
 }
 
@@ -155,14 +155,14 @@ EXPECTED_GROUPS = [
 ]
 
 EXPECTED_USERS = [
-    f"dr.oren.katz@{ADMIN_DOMAIN}",
-    f"prof.miriam.levy@{ADMIN_DOMAIN}",
-    f"dr.eitan.rosen@{ADMIN_DOMAIN}",
-    f"prof.anat.shapiro@{ADMIN_DOMAIN}",
+    f"dr.alexander.wright@{ADMIN_DOMAIN}",
+    f"prof.eleanor.vance@{ADMIN_DOMAIN}",
+    f"dr.marcus.chen@{ADMIN_DOMAIN}",
+    f"prof.claire.dubois@{ADMIN_DOMAIN}",
     f"dr.maya.lin@{ADMIN_DOMAIN}",
-    f"dr.daniel.cohen@{ADMIN_DOMAIN}",
-    f"dr.noa.shapira@{ADMIN_DOMAIN}",
-    f"dr.rami.friedman@{ADMIN_DOMAIN}",
+    f"dr.david.miller@{ADMIN_DOMAIN}",
+    f"dr.olivia.taylor@{ADMIN_DOMAIN}",
+    f"dr.robert.hayes@{ADMIN_DOMAIN}",
 ]
 
 REQUIRED_SPOKE_ROLES = [

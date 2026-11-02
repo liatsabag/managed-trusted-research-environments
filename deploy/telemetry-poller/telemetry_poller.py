@@ -236,9 +236,9 @@ def main() -> int:
     # Map spoke projects to primary researcher if not explicitly returned by API
     researcher_map = {
         "rr-cardio-03": "dr.maya.lin@example-tre.org",
-        "rr-genomics-02": "dr.eitan.rosen@example-tre.org",
-        "rr-oncology-01": "dr.sarah.chen@example-tre.org",
-        "rr-neurology-04": "dr.david.kim@example-tre.org",
+        "rr-genomics-02": "dr.marcus.chen@example-tre.org",
+        "rr-oncology-01": "dr.alexander.wright@example-tre.org",
+        "rr-neurology-04": "dr.olivia.taylor@example-tre.org",
     }
 
     for room in rooms:

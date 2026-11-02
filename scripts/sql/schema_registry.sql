@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `hub_registry.reg_research_rooms` (
     institute_id STRING NOT NULL,
     spoke_project_id STRING NOT NULL,
     status STRING DEFAULT 'ACTIVE',
-    helsinki_expiry_date DATE NOT NULL,
+    irb_expiry_date DATE NOT NULL,
     dua_expiry_date DATE NOT NULL,
     inbound_bucket STRING NOT NULL,
     export_bucket STRING NOT NULL,

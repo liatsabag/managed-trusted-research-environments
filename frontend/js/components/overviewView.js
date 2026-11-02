@@ -326,7 +326,7 @@ export function renderOverviewView() {
                 <span class="font-mono font-semibold text-emerald-600">Streaming Active</span>
               </div>
               <div class="p-2.5 flex items-center justify-between hover:bg-slate-50 transition">
-                <span class="text-slate-700">Helsinki / DUA Compliance Gate Automation</span>
+                <span class="text-slate-700">IRB / DUA Compliance Gate Automation</span>
                 <span class="font-mono font-semibold text-blue-600">100% Compliant</span>
               </div>
             </div>

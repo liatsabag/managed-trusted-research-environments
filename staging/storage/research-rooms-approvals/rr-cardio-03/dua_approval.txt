@@ -3,7 +3,7 @@ MULTI-PARTY DATA USE AGREEMENT (DUA)
 ================================================================================
 Room Identifier: rr-cardio-03
 Study Title: Cardiovascular Risk Stratification & MACE Cohort
-DUA Master Agreement: DUA-MOH-CARD-2024
+DUA Master Agreement: DUA-REG-CARD-2024
 Item Type: DUA
 Item Name: Multi-party Data Use Agreement
 

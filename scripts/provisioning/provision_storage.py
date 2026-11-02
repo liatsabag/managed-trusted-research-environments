@@ -107,7 +107,8 @@ def provision_approval_documents(
         room_folder = app_dir / room_id
         room_folder.mkdir(parents=True, exist_ok=True)
         for item_type in spec.get("include_items", []):
-            fname = f"{item_type.lower()}_approval.txt"
+            clean_type = item_type.lower().replace("_approval", "")
+            fname = f"{clean_type}_approval.txt"
             content = build_document_content(room_id, item_type, spec)
             fpath = room_folder / fname
             with open(fpath, "w", encoding="utf-8") as f:
@@ -158,7 +159,8 @@ def provision_storage(
             room_folder = app_dir / room_id
             room_folder.mkdir(parents=True, exist_ok=True)
             for item_type in spec.get("include_items", []):
-                fname = f"{item_type.lower()}_approval.txt"
+                clean_type = item_type.lower().replace("_approval", "")
+                fname = f"{clean_type}_approval.txt"
                 content = build_document_content(room_id, item_type, spec)
                 fpath = room_folder / fname
                 with open(fpath, "w", encoding="utf-8") as f:

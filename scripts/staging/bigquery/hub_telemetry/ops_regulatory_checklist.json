@@ -13,16 +13,16 @@
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
-    "item_id": "rr-oncology-01-Helsinki_IRB",
+    "item_id": "rr-oncology-01-IRB_Approval",
     "room_id": "rr-oncology-01",
     "room_type": "PROVISIONED",
-    "item_type": "Helsinki_IRB",
-    "item_name": "Helsinki Ethics Committee / IRB Approval",
+    "item_type": "IRB_Approval",
+    "item_name": "Institutional Review Board (IRB) Approval",
     "status": "Approved",
     "approval_date": "2024-10-15",
     "expiration_date": "2027-10-15",
     "approver_name": "HealthHub Ethics & Governance Directorate",
-    "document_uri": "gs://gcp-rr-hub-approvals/rr-oncology-01/helsinki_irb_approval.txt",
+    "document_uri": "gs://gcp-rr-hub-approvals/rr-oncology-01/irb_approval_approval.txt",
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
@@ -78,16 +78,16 @@
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
-    "item_id": "rr-genomics-02-Helsinki_IRB",
+    "item_id": "rr-genomics-02-IRB_Approval",
     "room_id": "rr-genomics-02",
     "room_type": "PROVISIONED",
-    "item_type": "Helsinki_IRB",
-    "item_name": "Helsinki Ethics Committee / IRB Approval",
+    "item_type": "IRB_Approval",
+    "item_name": "Institutional Review Board (IRB) Approval",
     "status": "Approved",
     "approval_date": "2024-10-15",
     "expiration_date": "2027-11-20",
     "approver_name": "HealthHub Ethics & Governance Directorate",
-    "document_uri": "gs://gcp-rr-hub-approvals/rr-genomics-02/helsinki_irb_approval.txt",
+    "document_uri": "gs://gcp-rr-hub-approvals/rr-genomics-02/irb_approval_approval.txt",
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
@@ -143,16 +143,16 @@
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
-    "item_id": "rr-cardio-03-Helsinki_IRB",
+    "item_id": "rr-cardio-03-IRB_Approval",
     "room_id": "rr-cardio-03",
     "room_type": "PROVISIONED",
-    "item_type": "Helsinki_IRB",
-    "item_name": "Helsinki Ethics Committee / IRB Approval",
+    "item_type": "IRB_Approval",
+    "item_name": "Institutional Review Board (IRB) Approval",
     "status": "Approved",
     "approval_date": "2024-10-15",
     "expiration_date": "2027-11-01",
     "approver_name": "HealthHub Ethics & Governance Directorate",
-    "document_uri": "gs://gcp-rr-hub-approvals/rr-cardio-03/helsinki_irb_approval.txt",
+    "document_uri": "gs://gcp-rr-hub-approvals/rr-cardio-03/irb_approval_approval.txt",
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
@@ -208,16 +208,16 @@
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
-    "item_id": "rr-neurology-04-Helsinki_IRB",
+    "item_id": "rr-neurology-04-IRB_Approval",
     "room_id": "rr-neurology-04",
     "room_type": "PROVISIONED",
-    "item_type": "Helsinki_IRB",
-    "item_name": "Helsinki Ethics Committee / IRB Approval",
+    "item_type": "IRB_Approval",
+    "item_name": "Institutional Review Board (IRB) Approval",
     "status": "Approved",
     "approval_date": "2024-10-15",
     "expiration_date": "2027-02-28",
     "approver_name": "HealthHub Ethics & Governance Directorate",
-    "document_uri": "gs://gcp-rr-hub-approvals/rr-neurology-04/helsinki_irb_approval.txt",
+    "document_uri": "gs://gcp-rr-hub-approvals/rr-neurology-04/irb_approval_approval.txt",
     "comments": "Statutory prerequisite verified and compliant."
   },
   {
@@ -273,16 +273,16 @@
     "comments": "Statutory prerequisite verified."
   },
   {
-    "item_id": "rr-immunology-05-Helsinki_IRB",
+    "item_id": "rr-immunology-05-IRB_Approval",
     "room_id": "rr-immunology-05",
     "room_type": "PENDING_REQUEST",
-    "item_type": "Helsinki_IRB",
-    "item_name": "Helsinki Ethics Committee / IRB Approval",
+    "item_type": "IRB_Approval",
+    "item_name": "Institutional Review Board (IRB) Approval",
     "status": "Approved",
     "approval_date": "2024-10-15",
     "expiration_date": "2027-12-31",
     "approver_name": "HealthHub Ethics & Governance Directorate",
-    "document_uri": "gs://gcp-rr-hub-approvals/rr-immunology-05/helsinki_irb_approval.txt",
+    "document_uri": "gs://gcp-rr-hub-approvals/rr-immunology-05/irb_approval_approval.txt",
     "comments": "Statutory prerequisite verified."
   },
   {
@@ -338,16 +338,16 @@
     "comments": "Statutory prerequisite verified."
   },
   {
-    "item_id": "rr-pediatrics-06-Helsinki_IRB",
+    "item_id": "rr-pediatrics-06-IRB_Approval",
     "room_id": "rr-pediatrics-06",
     "room_type": "PENDING_REQUEST",
-    "item_type": "Helsinki_IRB",
-    "item_name": "Helsinki Ethics Committee / IRB Approval",
+    "item_type": "IRB_Approval",
+    "item_name": "Institutional Review Board (IRB) Approval",
     "status": "EXPIRED",
     "approval_date": "2023-01-15",
     "expiration_date": "2024-05-15",
     "approver_name": "HealthHub Ethics & Governance Directorate",
-    "document_uri": "gs://gcp-rr-hub-approvals/rr-pediatrics-06/helsinki_irb_approval.txt",
+    "document_uri": "gs://gcp-rr-hub-approvals/rr-pediatrics-06/irb_approval_approval.txt",
     "comments": "Approval expired on 2024-05-15."
   },
   {

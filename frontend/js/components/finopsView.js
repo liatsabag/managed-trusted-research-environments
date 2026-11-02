@@ -429,7 +429,7 @@ function renderActiveBreakdownTable(rooms, allSkus, allResearchers, institutes, 
                     ${r.room_id} <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i>
                   </button>
                 </td>
-                <td class="py-3 px-4 font-mono text-[11px] text-slate-600">${r.institute_id || 'inst-sheba-onco'}</td>
+                <td class="py-3 px-4 font-mono text-[11px] text-slate-600">${r.institute_id || 'inst-mskcc'}</td>
                 <td class="py-3 px-4 font-mono text-[11px] text-slate-500">${created}</td>
                 <td class="py-3 px-4 text-right font-mono font-bold text-slate-900">${formatUSD(cost)}</td>
                 <td class="py-3 px-4 text-right font-mono text-slate-500">${formatUSD(limit)}</td>

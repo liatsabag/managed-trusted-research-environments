@@ -93,7 +93,7 @@ class ApiClient {
     });
   }
 
-  async downgradeRoom(roomId, reason = "Compliance enforcement: Helsinki/DUA expiration") {
+  async downgradeRoom(roomId, reason = "Compliance enforcement: IRB/DUA expiration") {
     return await this.request(`/rooms/${roomId}/downgrade`, {
       method: "POST",
       body: JSON.stringify({ reason })

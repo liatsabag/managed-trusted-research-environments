@@ -32,7 +32,7 @@ export async function renderReportsView() {
               Standardized & Ad-Hoc Governance Reports
             </h2>
             <p class="text-xs text-indigo-200/80 mt-1 max-w-2xl">
-              Export institutional audit reports, compliance exception logs, Helsinki/ethics renewal horizons, multi-tenant billing sheets, and airlock egress forensic audits.
+              Export institutional audit reports, compliance exception logs, IRB/ethics renewal horizons, multi-tenant billing sheets, and airlock egress forensic audits.
             </p>
           </div>
 

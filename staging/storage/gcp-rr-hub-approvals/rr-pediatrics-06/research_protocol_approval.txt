@@ -11,7 +11,7 @@ STATUS: APPROVED
 Approval Date: 2024-01-15
 Expiration Date: 2027-12-31
 Approving Body: Institutional Scientific Oversight Committee
-Approver Name: Dr. H. Naveh, Pediatric Research Institute
+Approver Name: Prof. Jonathan Hayes, Pediatric Health Directorate
 
 TERMS OF RESEARCH:
 1. The research team is authorized to perform computational analysis on cohort data.

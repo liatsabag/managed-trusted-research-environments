@@ -3,15 +3,15 @@ DATA TRANSFER COMMITTEE (DTC) STATUTORY SIGN-OFF
 ================================================================================
 Room Identifier: rr-neurology-04
 Study Title: Neurodegenerative Biomarkers and Cognitive Trajectories
-Transfer Clearance Ref: DTC-MOH-2025-155
+Transfer Clearance Ref: DTC-REG-2025-155
 Item Type: Data_Transfer
 Item Name: Statutory Data Transfer Committee Approval
 
 STATUS: APPROVED
 Approval Date: 2025-02-01
 Expiration Date: 2027-08-30
-Statutory Body: Ministry of Health & Hospital Data Transfer Directorate
-Authorized Officer: Adv. Michael Bar, Statutory Data Commissioner
+Statutory Body: National Health Authority & Data Governance Directorate
+Authorized Officer: Adv. Michael Barnes, Data Governance Commissioner
 
 TRANSFER SPECIFICATIONS:
 1. Data source tables authorized for replication into Spoke Inbound Storage.

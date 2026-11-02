@@ -214,7 +214,7 @@ function buildResourcesLayout(container, data) {
                   <td class="py-3 px-4 font-mono font-bold text-slate-900">${v.room_id}</td>
                   <td class="py-3 px-4 font-mono text-slate-700">${v.network_name}</td>
                   <td class="py-3 px-4 font-mono text-slate-600"><span class="font-bold">${v.subnet_name}</span> (${v.ip_cidr_range})</td>
-                  <td class="py-3 px-4 font-mono text-slate-600">me-west1 (Tel Aviv)</td>
+                  <td class="py-3 px-4 font-mono text-slate-600">me-west1 (Primary Hub)</td>
                   <td class="py-3 px-4"><span class="inline-flex items-center gap-1 text-emerald-700 font-semibold"><i class="fa-solid fa-circle-check text-[10px]"></i> Enabled</span></td>
                   <td class="py-3 px-4"><span class="inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 font-mono">VPC-SC Enforced</span></td>
                 </tr>

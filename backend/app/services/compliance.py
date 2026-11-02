@@ -28,7 +28,7 @@ logger = logging.getLogger("compliance_service")
 
 REQUIRED_PREREQUISITES = [
     (RegulatoryItemType.RESEARCH_PROTOCOL, "Scientific Research Protocol"),
-    (RegulatoryItemType.HELSINKI_IRB, "Helsinki Ethics Committee / IRB Approval"),
+    (RegulatoryItemType.IRB_APPROVAL, "Institutional Review Board (IRB) Approval"),
     (RegulatoryItemType.DATA_TRANSFER, "Data Transfer Committee Statutory Sign-off"),
     (RegulatoryItemType.EXTRACTION_PROTOCOL, "De-identification & Extraction Query Protocol"),
     (RegulatoryItemType.DUA, "Multi-party Data Use Agreement"),
@@ -38,6 +38,8 @@ REQUIRED_PREREQUISITES = [
 def parse_checklist_row(r: Dict[str, Any], room_id: str, room_type: str, today: date) -> Optional[RegulatoryChecklistItem]:
     """Helper to convert BigQuery or fixture row dict into a RegulatoryChecklistItem."""
     itype_str = r.get("item_type")
+    if itype_str == "Helsinki_IRB":
+        itype_str = RegulatoryItemType.IRB_APPROVAL.value
     try:
         itype = RegulatoryItemType(itype_str)
     except (ValueError, TypeError):
@@ -147,18 +149,24 @@ class ComplianceService:
         """Offline fallback loader reading local staging fixtures for unit testing."""
         items: Dict[str, RegulatoryChecklistItem] = {}
         base_dir = Path(__file__).resolve().parents[3]
-        staging_file = base_dir / "staging" / "bigquery" / "hub_telemetry" / "ops_regulatory_checklist.json"
-        if staging_file.exists():
-            try:
-                with open(staging_file, "r", encoding="utf-8") as f:
-                    rows = json.load(f)
-                for r in rows:
-                    if r.get("room_id") in target_ids:
-                        parsed = parse_checklist_row(r, room_id, room_type, today)
-                        if parsed and parsed.item_type.value not in items:
-                            items[parsed.item_type.value] = parsed
-            except Exception as e:
-                logger.debug("Fallback load note: %s", e)
+        for rel_path in [
+            ("staging", "bigquery", "hub_telemetry", "ops_regulatory_checklist.json"),
+            ("scripts", "staging", "bigquery", "hub_telemetry", "ops_regulatory_checklist.json"),
+        ]:
+            staging_file = base_dir.joinpath(*rel_path)
+            if staging_file.exists():
+                try:
+                    with open(staging_file, "r", encoding="utf-8") as f:
+                        rows = json.load(f)
+                    for r in rows:
+                        if r.get("room_id") in target_ids:
+                            parsed = parse_checklist_row(r, room_id, room_type, today)
+                            if parsed and parsed.item_type.value not in items:
+                                items[parsed.item_type.value] = parsed
+                    if items:
+                        break
+                except Exception as e:
+                    logger.debug("Fallback load note: %s", e)
         return items
 
     def get_room_compliance(self, room_id: str) -> RoomComplianceSummary:

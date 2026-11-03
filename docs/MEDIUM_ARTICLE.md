@@ -99,15 +99,18 @@ The platform isolates each research room within a dedicated GCP project and spok
 
 ---
 
-### Pillar 2: Policy-Driven AI Compliance Gating & IAM Soft-Downgrades
+### Pillar 2: Policy-Driven AI Compliance Gating & Two-Tier IAM Lifecycle
 
-Compliance agreements like DUAs and ethics protocols have concrete expiration dates. Instead of relying on manual calendar reminders, the platform executes a scheduled compliance sweep orchestrated by **Cloud Workflows** and powered by **Gemini's best and newest models**:
+Compliance agreements like Data Use Agreements (DUAs), Helsinki IRB ethics approvals, and statutory transfer permits have strict, legally enforceable expiration horizons. Rather than relying on static calendar reminders or risking non-compliant data access, the platform implements an automated compliance evaluation engine paired with a **Two-Tier IAM Governance Lifecycle** and Human-in-the-Loop (HITL) oversight:
 
 ![Compliance & Onboarding Gates](assets/screenshots/ui_compliance_governance.png)
-*Figure 3: Central compliance dashboard tracking 5-item regulatory checklists, approval expiration dates, and automated IAM soft-downgrade states.*
+*Figure 3: Central compliance dashboard tracking 5-item regulatory checklists, approval expiration dates, and automated IAM soft-downgrade and suspension states.*
 
-1. **Multimodal Agreement Parsing in BigQuery SQL**: Unstructured PDF agreements stored in Cloud Storage are indexed as BigQuery Object Tables. A SQL stored procedure calls a BigQuery ML remote model backed by **Gemini models** (`ML.GENERATE_TEXT`), parsing the text to extract approval officials and expiration dates directly into the regulatory checklist table (`ops_regulatory_checklist`).
-2. **Automated IAM Soft-Downgrades**: When Cloud Workflows triggers policy enforcement, the backend evaluates the checklist. For any room where an approval has lapsed, the platform updates the room registry to `SOFT_DOWNGRADED` and transitions researcher access to read-only, demoting editing roles (`roles/bigquery.dataEditor`, `roles/storage.objectAdmin`) to viewer roles (`roles/bigquery.dataViewer`, `roles/storage.objectViewer`).
+1. **Multimodal Agreement Parsing in BigQuery SQL**: Unstructured PDF agreements stored in Cloud Storage are indexed as BigQuery Object Tables. A SQL stored procedure calls a BigQuery ML remote model backed by **Gemini models** (`ML.GENERATE_TEXT`), parsing legal text to extract approval authorities and statutory expiration dates directly into the regulatory checklist table (`ops_regulatory_checklist`).
+2. **Two-Tier IAM Enforcement (Grace Window vs. Statutory Expiration)**:
+   * **Tier 1: Pre-Expiration Grace Window (`SOFT_DOWNGRADED`)**: During the scheduled project closeout period (e.g., 30 days prior to DUA expiry), the room enters a read-only wrap-up state. Compute and modification permissions are immediately stripped (`roles/aiplatform.user`, `roles/notebooks.runner`, `roles/bigquery.dataEditor`, `roles/storage.objectAdmin`), while read-only viewer roles (`roles/bigquery.dataViewer`, `roles/storage.objectViewer`, `roles/bigquery.jobUser`, `roles/viewer`) are temporarily retained so investigators can inspect final analyses and stage candidate summary files for Air-Lock review.
+   * **Tier 2: Hard Statutory Expiry (`SUSPENDED`)**: Once a DUA or IRB approval passes its statutory expiration date without active renewal, or upon immediate regulatory revocation, the room transitions to `SUSPENDED`. In this state, **all IAM permissions—including `dataViewer` and `objectViewer`—are completely revoked**, permanently severing all access to spoke project data and resources.
+3. **Automated Horizon Detection with Human-in-the-Loop Oversight**: Automated Cloud Workflows continuously sweep the compliance horizon, alerting Data Protection Officers (DPOs) and queuing recommended actions. DPOs and central platform administrators maintain explicit one-click governance controls (`Soft Downgrade`, `Reactivate Access`, and `Suspend Room`) from the Central Administrator Portal, executing atomic Cloud Resource Manager IAM policy mutations with full immutable audit logging.
 
 ---
 

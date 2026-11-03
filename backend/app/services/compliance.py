@@ -206,18 +206,23 @@ class ComplianceService:
         msg = f"Compliance verified for {room_id}. Overall status: {summary.overall_status.value}."
 
         if summary.overall_status in (RoomOverallCompliance.NON_COMPLIANT, RoomOverallCompliance.INCOMPLETE):
-            if prev_iam != "SOFT_DOWNGRADED":
-                req = DowngradeRequest(reason=f"Regulatory compliance violation: {summary.overall_status.value}")
+            # Hard statutory expiry: revoke all permissions (including dataViewer) via SUSPENDED
+            if prev_iam != "SUSPENDED":
+                if self.fleet_service.update_room_status(room_id, "SUSPENDED", reason=f"Hard regulatory expiry / non-compliance: {summary.overall_status.value}"):
+                    action_taken, new_iam = "SUSPENDED_ALL_ACCESS", "SUSPENDED"
+                    msg = f"Statutory non-compliance detected. Room {room_id} access completely SUSPENDED (all IAM bindings stripped)."
+        elif summary.overall_status == RoomOverallCompliance.EXPIRING_SOON:
+            # Grace period / wrap-up window: freeze compute & writes, demote to read-only
+            if prev_iam == "ACTIVE":
+                req = DowngradeRequest(reason="DUA expiring soon: entered read-only wrap-up grace period")
                 if self.fleet_service.downgrade_room(room_id, req):
                     action_taken, new_iam = "DOWNGRADED_TO_READONLY", "SOFT_DOWNGRADED"
-                    msg = f"Compliance violation detected. Room {room_id} soft-downgraded to read-only."
-                    self._update_room_registry_status(room_id, "SOFT_DOWNGRADED")
-        elif summary.overall_status in (RoomOverallCompliance.COMPLIANT, RoomOverallCompliance.EXPIRING_SOON):
-            if prev_iam == "SOFT_DOWNGRADED":
+                    msg = f"DUA expiring within grace window. Room {room_id} soft-downgraded to read-only."
+        elif summary.overall_status == RoomOverallCompliance.COMPLIANT:
+            if prev_iam in ("SOFT_DOWNGRADED", "SUSPENDED"):
                 if self.fleet_service.reactivate_room(room_id):
                     action_taken, new_iam = "REACTIVATED", "ACTIVE"
-                    msg = f"All 5 prerequisites valid. Room {room_id} restored to ACTIVE status."
-                    self._update_room_registry_status(room_id, "ACTIVE")
+                    msg = f"All 5 prerequisites valid and active. Room {room_id} restored to ACTIVE status."
 
         return ComplianceScanResult(
             room_id=room_id,

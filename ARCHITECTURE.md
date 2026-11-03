@@ -94,7 +94,7 @@ The architecture organizes the Google Cloud environment into a **Hub-and-Spoke t
    * **Central Log Router**: Aggregated Cloud Logging receiver collecting audit telemetry across all tenant rooms.
 
 2. **Tenant Research Room Spoke Projects (`gcp-rr-spoke-*`)**:
-   * **Private Network Subnet**: Dedicated VPC subnet (`10.10.x.0/24`) with `disable_public_ip = true`, Cloud NAT, and Private Google Access.
+   * **Private Network Subnet**: Dedicated VPC subnet (`10.10.x.0/24`) with `disable_public_ip = true`, zero public internet egress, Private Google Access, and package dependencies proxied via Artifact Registry remote repositories.
    * **Governed Compute**: Colab Enterprise / Vertex AI workbench environments with integrated Gemini Data Science Agent.
    * **In-Room Analytical Store**: Local BigQuery dataset combined with zero-copy linked subscriptions from the Hub.
    * **Dual Storage Buckets**: Inbound bucket (read-only curated source data) and Export bucket (quarantined drop-zone for results).

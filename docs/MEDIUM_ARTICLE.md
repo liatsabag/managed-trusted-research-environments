@@ -71,7 +71,7 @@ The architecture organizes the Google Cloud environment into a centralized **Hub
    * **Central Log Router & Automation Plane**: Aggregates real-time Cloud Audit Logs streamed from all spoke projects and orchestrates scheduled background governance cycles via **Cloud Workflows** (`fleet-governance-cycle`).
 
 2. **Tenant Research Room Spoke Projects (`gcp-rr-spoke-*`)**:
-   * **Private Network Subnet**: Dedicated spoke VPC subnets configured with `disable_public_ip = true`, Cloud NAT for outbound access strictly to approved package mirrors (PyPI/CRAN), and Private Google Access.
+   * **Private Network Subnet**: Dedicated spoke VPC subnets configured with `disable_public_ip = true`, zero public internet egress, and Private Google Access routed to central Artifact Registry remote repositories for approved Python/R package mirrors (PyPI/CRAN).
    * **Governed Compute**: Colab Enterprise notebook runtimes running on dedicated machine types with project-isolated service accounts.
    * **In-Room Analytical Store**: Project-local BigQuery datasets combined with linked zero-copy dataset subscriptions published by the Hub.
    * **Dual Storage Buckets**: An `inbound` bucket for read-only curated input data, and an `export` bucket serving as a quarantine drop zone for proposed export artifacts.
@@ -95,7 +95,7 @@ The platform isolates each research room within a dedicated GCP project and spok
 
 * **Device-Verified Ingress**: Access requires authenticated Google Cloud Identity accounts mapped to least-privilege IAM roles. Fronting the environment with **Identity-Aware Proxy (IAP)** and Context-Aware Access eliminates open public ports or bastions, binding ingress to verified corporate endpoints.
 * **Private Google Access**: All workspace VPC subnets are configured with `disable_public_ip = true`. Calls to Google Cloud APIs (BigQuery, Cloud Storage, Vertex AI) resolve privately within Google's backbone over **Private Google Access**, never traversing the public internet.
-* **Controlled Package Mirrors**: Direct public internet egress is blocked. Outbound connections for data science libraries (such as Biopython, scikit-learn, or PyTorch) are routed through Cloud NAT strictly to approved package mirrors.
+* **Zero-Egress Package Proxy**: Direct public internet egress is disabled (`enableInternetAccess: false`). Instead of running open Cloud NAT gateways, spoke environments pull verified data science packages (such as Biopython, scikit-learn, or PyTorch) privately via **Artifact Registry Remote Repositories** over **Private Google Access**. This enforces zero internet egress while providing cached, vulnerability-scanned mirrors of PyPI and CRAN.
 
 ---
 

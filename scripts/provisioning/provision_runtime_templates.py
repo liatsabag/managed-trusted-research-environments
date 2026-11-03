@@ -190,7 +190,7 @@ def provision_runtime_template(token: str, project_id: str, region: str, spec: D
         "networkSpec": {
             "network": f"projects/{project_id}/global/networks/{spec['vpc_name']}",
             "subnetwork": f"projects/{project_id}/regions/{region}/subnetworks/{spec['subnet_name']}",
-            "enableInternetAccess": True,
+            "enableInternetAccess": False,
         },
     }
     logger.info("[%s] Creating Runtime Template '%s'...", project_id, tpl_id)

@@ -102,7 +102,7 @@ class ReportsService:
         return ReportGenerationResponse(metadata=meta, records=records)
 
     def get_approval_expirations_report(self) -> ReportGenerationResponse:
-        """Report 3: Approval Expirations Horizon - Proactive report of ethics/Helsinki certificates expiring."""
+        """Report 3: Approval Expirations Horizon - Proactive report of ethics/IRB certificates expiring."""
         q = f"""
         SELECT c.room_id, r.room_name, r.institute_id, c.item_type AS document_type,
                c.expiration_date,
@@ -128,7 +128,7 @@ class ReportsService:
 
         meta = ReportMetadata(
             report_id=f"rep-horizon-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}",
-            report_type="APPROVAL_HORIZON", title="Ethics & Helsinki Approval Expiration Horizon",
+            report_type="APPROVAL_HORIZON", title="Ethics & IRB Approval Expiration Horizon",
             description="Proactive forward-looking forecast of institutional regulatory certificates and DUA agreements expiring in 30/60/90 days.",
             generated_at=datetime.now(timezone.utc).isoformat(), record_count=len(records),
         )

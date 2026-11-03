@@ -69,7 +69,7 @@ This project provides a **kickstart reference platform that bridges these native
 
 By establishing a centralized control plane, the platform delivers:
 * **Unified Hub-and-Spoke Management**: A single management hub (`gcp-rr-hub-core`) that orchestrates and monitors decentralized tenant research rooms (`gcp-rr-spoke-*`).
-* **Automated AI Compliance & Soft-Downgrades**: Continuous scheduled verification of IRB and DUA documents using Gemini AI, with automatic IAM soft-downgrades (demoting write/compute permissions to read-only) upon approval expiration.
+* **AI Compliance Horizon & Governed Soft-Downgrades**: Continuous scheduled verification of IRB and DUA documents using Gemini AI, alerting compliance officers and enabling human-in-the-loop (HITL) IAM soft-downgrades (demoting write/compute permissions to read-only) upon approval expiration without crashing analytical workflows.
 * **Governed Egress Air-Lock**: A dual-bucket quarantine workflow with automated small-cell ($k < 5$) and PII risk scoring, followed by DPO digital release.
 * **Two-Tiered Proportional FinOps**: An automated attribution engine that maps invoiced Google Cloud Billing exports directly to individual researchers based on telemetry weights (scanned bytes, AI tokens, compute hours, storage footprint) with verified zero financial drift.
 * **Lightweight Administrative UI**: A single-pane-of-glass management portal providing tailored views for Operations Administrators, Cloud Engineers, and Data Protection Officers.
@@ -140,7 +140,7 @@ Platform access is organized around four core user personas with clear separatio
 | :--- | :--- | :--- |
 | **Researcher** | Spoke Research Rooms (`gcp-rr-spoke-*`) | • Executes interactive analytical queries and data science workloads in Colab Enterprise and BigQuery Studio.<br/>• Ingests and stages reference datasets from the Inbound GCS bucket into local study datasets.<br/>• Builds derived cohort tables, models, and analytical aggregates within the project's local BigQuery sandbox.<br/>• Queries shared institutional datasets via zero-copy Analytics Hub listings.<br/>• Stages candidate export artifacts (summary tables, model weights, figures) into the write-only quarantine bucket for egress evaluation. |
 | **Operations Admin** | Central Hub (`gcp-rr-hub-core`) | • Provisions, configures, and manages the lifecycle of tenant research rooms and researcher accounts.<br/>• Monitors fleet-wide infrastructure health, runtime availability, and daily operational telemetry.<br/>• Triggers and inspects automated governance and data-sync cycles (Cloud Workflows, scheduled queries).<br/>• Analyzes cost allocations, budget consumption, and proportional FinOps attribution across spoke projects. |
-| **Data Protection Officer (DPO)** | Central Hub & Compliance Management | • Monitors institutional ethics approvals, data sharing agreements (DSA), IRB/Helsinki certifications, and document expiration statuses.<br/>• Executes on-demand manual compliance scans and AI risk assessments over agreement documents and study configurations.<br/>• Dynamically downgrades room access levels (e.g., enforcing soft-downgrade / read-only status) upon compliance anomalies or agreement expirations.<br/>• Inspects quarantined egress candidates, reviews AI/DLP privacy scan cards, and formally approves or rejects cryptographic export release. |
+| **Data Protection Officer (DPO)** | Central Hub & Compliance Management | • Monitors institutional ethics approvals, data sharing agreements (DSA), IRB certifications, and document expiration statuses.<br/>• Executes on-demand manual compliance scans and AI risk assessments over agreement documents and study configurations.<br/>• Dynamically downgrades room access levels (e.g., enforcing soft-downgrade / read-only status) upon compliance anomalies or agreement expirations.<br/>• Inspects quarantined egress candidates, reviews AI/DLP privacy scan cards, and formally approves or rejects cryptographic export release. |
 | **Data Engineer** | Central Hub & Data Exchanges | • Designs, builds, and maintains central master clinical and reference data pipelines.<br/>• Publishes curated institutional data exchanges via BigQuery Analytics Hub listings for zero-copy spoke room subscription.<br/>• Manages schema evolutions, ELT pipeline transformations, and data quality standards across platform datasets. |
 
 ---
@@ -237,7 +237,7 @@ Tracks the global state, budgets, and security configurations of all tenant rese
 * `institute_id` (STRING, FK): Sponsoring institution referencing `reg_institutes.institute_id`.
 * `spoke_project_id` (STRING): Dedicated GCP project ID hosting the room enclave.
 * `status` (STRING): Room lifecycle status (`ACTIVE`, `SOFT_DOWNGRADED`, `PROVISIONING`, `DECOMMISSIONED`).
-* `irb_expiry_date` (DATE): Institutional Review Board (IRB) ethics approval expiration deadline (legacy: `helsinki_expiry_date`).
+* `irb_expiry_date` (DATE): Institutional Review Board (IRB) ethics approval expiration deadline.
 * `dua_expiry_date` (DATE): Data Use Agreement expiration deadline.
 * `inbound_bucket`, `export_bucket` (STRING): Dual-bucket Cloud Storage endpoints (`gs://rr-*-inbound`, `gs://rr-*-export`).
 * `cloud_identity_group` (STRING): Dedicated room Google Workspace security group.
@@ -256,10 +256,10 @@ Catalogs verified analytical libraries and runtimes pinned to specific research 
 
 #### 5. `hub_telemetry.ops_regulatory_checklist`
 Maintains the compliance ledger for regulatory verification across active and onboarding rooms.
-* `item_id` (STRING, PK): Item reference (e.g., `rr-cardio-01-HELSINKI_IRB`).
+* `item_id` (STRING, PK): Item reference (e.g., `rr-cardio-01-IRB_APPROVAL`).
 * `room_id` (STRING, FK): Target research room ID.
 * `room_type` (STRING): Environment context (`PROVISIONED` vs `PENDING_REQUEST`).
-* `item_type` (STRING): Statutory category (`RESEARCH_PROTOCOL`, `HELSINKI_IRB`, `DATA_TRANSFER`, `EXTRACTION_PROTOCOL`, `DUA`).
+* `item_type` (STRING): Statutory category (`RESEARCH_PROTOCOL`, `IRB_APPROVAL`, `DATA_TRANSFER`, `EXTRACTION_PROTOCOL`, `DUA`).
 * `item_name` (STRING): Descriptive document name.
 * `status` (STRING): Evaluated state (`APPROVED`, `PENDING_REVIEW`, `EXPIRED`, `MISSING`).
 * `approval_date`, `expiration_date` (DATE): Verified validity dates.
@@ -660,12 +660,12 @@ The calculations produced by the FinOps engine are consumed across the platform 
 
 ---
 
-## 7. Automated AI Compliance & Soft-Downgrade Engine
+## 7. Automated AI Compliance & Governed Soft-Downgrade Engine
 
 ### 7.1 Statutory Checklist & Document Intelligence
 The platform tracks five mandatory regulatory prerequisites:
 1. **Research Protocol**: Valid approved scientific protocol attachment.
-2. **Helsinki (IRB) Ethics Approval**: Expiration date and official ethics certificate.
+2. **Institutional Review Board (IRB) Ethics Approval**: Expiration date and official ethics certificate.
 3. **Data Transfer Committee Approval**: Statutory data exchange authorization.
 4. **Data Extraction Protocol**: Formal extraction query and schema definition.
 5. **Data Use Agreement (DUA)**: Executed legal terms and non-disclosure commitments.
@@ -674,7 +674,11 @@ Unstructured PDF documents stored in `gs://gcp-rr-hub-approvals` are indexed by 
 
 ---
 
-### 7.2 Automated Compliance Workflow & Soft-Downgrade Policy
+### 7.2 Compliance Horizon Workflow & Human-in-the-Loop (HITL) Policy
+
+In regulated clinical research environments, automatic and silent revocation of permissions can disrupt ongoing clinical evaluations or corrupt active research computations. Therefore, the platform pairs **continuous automated compliance discovery and horizon alerting** with **Human-in-the-Loop (HITL) administrative governance**:
+* **Automated Discovery & Alerting**: Cloud Scheduler and BigQuery ML continuously evaluate legal expiration dates across stored approval artifacts, updating real-time compliance countdowns and alerting Data Protection Officers (DPOs) when permits enter their 30-day grace horizon or expire.
+* **Governed Administrative Action**: DPOs and platform administrators review compliance findings in the Central Administrator Portal and execute soft-downgrade, suspension, or reactivation actions on-demand with full audit attribution.
 
 ```mermaid
 sequenceDiagram
@@ -684,31 +688,32 @@ sequenceDiagram
     participant WF as Cloud Workflows<br/>(fleet_governance_cycle.yaml)
     participant BQ as BigQuery Stored Proc<br/>(sp_scan_governance.sql)
     participant AI as BigQuery ML + Gemini<br/>(obj_approval_documents)
-    participant API as FastAPI Backend<br/>(ComplianceService)
-    participant UI as Governance Portal<br/>(complianceView.js)
+    participant API as FastAPI Backend<br/>(Compliance & Fleet Service)
+    actor DPO as Compliance Officer / DPO<br/>(Admin Portal)
     participant IAM as Cloud IAM Binding<br/>(Spoke Projects)
 
     rect rgb(235, 245, 255)
-    Note over Cron,AI: Phase 1: Scheduled AI Document Scan
+    Note over Cron,AI: Phase 1: Scheduled AI Document Scan & Horizon Alerting
     Cron->>WF: 1. Trigger Scheduled Cycle
     WF->>BQ: 2. CALL sp_scan_governance('PROVISIONED')
     BQ->>AI: 3. ML.GENERATE_TEXT over obj_approval_documents
     AI-->>BQ: 4. Extract expiry_date & approval metadata
     BQ->>BQ: 5. MERGE into ops_regulatory_checklist
+    WF->>API: 6. Refresh Horizon Alerts & Compliance Statuses
     end
 
     rect rgb(255, 240, 240)
-    Note over WF,IAM: Phase 2: Fleet Policy Enforcement & Soft Downgrade
-    WF->>API: 6. POST /api/v1/compliance/enforce (OIDC)
-    API->>BQ: 7. Query ops_regulatory_checklist for expired approvals
-    API->>IAM: 8. Target Spoke IAM Mutation (Future / Target Architecture)
+    Note over DPO,IAM: Phase 2: Human-in-the-Loop Review & Governed Soft-Downgrade
+    DPO->>API: 7. Inspect Horizon Alerts & POST /rooms/{id}/status (or /downgrade)
+    API->>IAM: 8. Execute Atomic Spoke IAM Mutation (Strip Editor/Compute, retain Viewer)
     API->>BQ: 9. UPDATE reg_research_rooms SET status = 'SOFT_DOWNGRADED'
+    API->>BQ: 10. Write Audit Event to ops_audit_events_curated
     end
 
     rect rgb(245, 245, 245)
-    Note over UI,API: Ad-Hoc / Operator Trigger
-    UI->>API: 10. POST /compliance/rooms/{room_id}/scan (On-Demand Scan)
-    API-->>UI: 11. Return real-time checklist status & horizon forecast
+    Note over DPO,API: Phase 3: Ad-Hoc / On-Demand Operator Scan
+    DPO->>API: 11. POST /compliance/rooms/{room_id}/scan (On-Demand AI Scan)
+    API-->>DPO: 12. Return real-time checklist status & horizon forecast
     end
 ```
 
@@ -724,7 +729,7 @@ The compliance and governance engine is composed of concrete Google Cloud orches
    * **Stored Procedure**: `gcp-rr-hub-core.hub_telemetry.sp_scan_governance` (`scripts/sql/sp_scan_governance.sql`).
    * **Object Table**: `hub_telemetry.obj_approval_documents` indexes raw unstructured PDFs stored in `gs://gcp-rr-hub-approvals/*`.
    * **Inference Routine**: The procedure invokes `ML.GENERATE_TEXT` using the remote connection to `hub_telemetry.gemini_flash_model` (Vertex AI Gemini Flash) with zero temperature to parse legal clauses, approval officials, and expiration dates (`YYYY-MM-DD`).
-   * **Checklist Materialization**: The procedure maps all 5 statutory items (`Research_Protocol`, `Helsinki_IRB`, `Data_Transfer`, `Extraction_Protocol`, `DUA`) and performs an idempotent `MERGE` into `hub_telemetry.ops_regulatory_checklist` marking statuses as `APPROVED`, `EXPIRED`, or `MISSING`.
+   * **Checklist Materialization**: The procedure maps all 5 statutory items (`Research_Protocol`, `IRB_Approval`, `Data_Transfer`, `Extraction_Protocol`, `DUA`) and performs an idempotent `MERGE` into `hub_telemetry.ops_regulatory_checklist` marking statuses as `APPROVED`, `EXPIRED`, or `MISSING`.
 
 3. **Backend Evaluation Service**:
    * **Service**: `ComplianceService` (`backend/app/services/compliance.py`) and router (`backend/app/api/v1/compliance.py`).
@@ -738,11 +743,11 @@ The compliance and governance engine is composed of concrete Google Cloud orches
    * **On-Demand Scan**: Administrators and DPOs can trigger an immediate verification on any room by clicking the **"Scan"** button (`btn-scan-room-compliance`), which hits `POST /api/v1/compliance/rooms/{room_id}/scan` without waiting for the nightly Cloud Scheduler trigger.
    * **Onboarding Gate Evaluation**: A dedicated button (`btn-eval-request-gate`) tests pre-flight onboarding gates (`POST /compliance/requests/{id}/gate`) before any Cloud resources are provisioned.
 
-5. **Soft-Downgrade Implementation Status & Target IAM Mutation**:
-   * **Current State**: The backend soft-downgrade flow is fully implemented at the database and application levels: `_update_room_registry_status()` updates the live room registry (`reg_research_rooms.status = 'SOFT_DOWNGRADED'`), flags researcher records (`reg_researchers.access_state = 'DOWNGRADED_READONLY'`), and emits audit events into `ops_audit_events_curated`.
-   * **Target Architecture (Live IAM Demotion)**: Live Cloud IAM policy binding demotion (`roles/bigquery.dataEditor` $\rightarrow$ `roles/bigquery.dataViewer` and `roles/storage.objectAdmin` $\rightarrow$ `roles/storage.objectViewer` via Cloud Resource Manager API) is architected in `FleetGovernanceService._apply_spoke_iam_mutation`, but in the current deployment phase, live spoke IAM mutations are held in dry-run / stub mode to avoid unintended lockout during integration testing. Full automated IAM policy rewriting is scheduled for production promotion once cross-project spoke service accounts are bound.
-
----
+5. **Two-Tier Regulatory Lifecycle & Live Cloud IAM Mutation**:
+   * **Database & Registry State Transition**: `FleetGovernanceService.update_room_status()` updates the live room registry (`reg_research_rooms.status`), synchronizes researcher roster records (`reg_researchers.access_state`), invalidates cache, and records audit trail records in `ops_audit_events_curated`.
+   * **Tier 1 (Soft Downgrade / Grace Window)**: During pre-expiry wrap-up (`SOFT_DOWNGRADED`), live spoke Cloud IAM bindings for the room's Cloud Identity group are atomically transitioned: compute and edit roles (`roles/aiplatform.user`, `roles/notebooks.runner`, `roles/bigquery.dataEditor`, `roles/storage.objectAdmin`) are stripped, while read-only inspection roles (`roles/bigquery.dataViewer`, `roles/storage.objectViewer`, `roles/bigquery.jobUser`, `roles/viewer`) are preserved.
+   * **Tier 2 (Statutory Expiration / Full Suspension)**: Upon hard DUA/IRB expiry or regulatory revocation (`SUSPENDED`), **all IAM role bindings** for the researcher group are completely removed, severing both compute and data access.
+   * **Live Cloud Resource Manager Mutation**: `FleetGovernanceService._apply_spoke_iam_mutation()` executes live `getIamPolicy` and `setIamPolicy` calls against the spoke project via Google Cloud Resource Manager, managing group bindings (`group:tre-{room}-researchers@{domain}`) with domain validation and defensive error handling.
 
 ## 8. Governed Egress Air-Lock Flow
 
@@ -917,7 +922,7 @@ The portal orchestrates 10 specialized views coordinated by `frontend/js/app.js`
    * Fleet-wide directory of all accredited researchers across participating academic medical centers.
    * Individual researcher spend cards displaying aggregated multi-room spend, primary cost drivers, and active room memberships.
 5. **Regulatory Compliance & Onboarding Gate (`complianceView.js`)**:
-   * 5-point statutory checklist visualization (`Research_Protocol`, `Helsinki_IRB`, `Data_Transfer`, `Extraction_Protocol`, `DUA`) per room.
+   * 5-point statutory checklist visualization (`Research_Protocol`, `IRB_Approval`, `Data_Transfer`, `Extraction_Protocol`, `DUA`) per room.
    * Pre-flight onboarding gate inspection: evaluating candidate project requests and staged approval documents before cloud provisioning.
    * 30/60/90-day expiration horizons and on-demand room compliance scanning.
 6. **FinOps Cost Attribution & Reconciliation (`finopsView.js`)**:

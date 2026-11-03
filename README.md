@@ -15,7 +15,7 @@ The platform brings together four key elements into a unified system:
 
 * **Google Cloud Secure Research Blueprints**: Built on GCP native building blocks for secure data collaboration, including BigQuery data clean rooms, Analytics Hub zero-copy data exchanges, VPC Service Controls (VPC-SC) perimeters, and standardized Colab Enterprise notebook runtimes.
 * **Hub-and-Spoke Unified Governance**: Solves the problem of siloed, fragmented research projects by establishing a central management hub (`gcp-rr-hub-core`) that orchestrates decentralized tenant workspaces (`gcp-rr-spoke-*`), providing unified identity, central audit logging, and consolidated FinOps across all environments.
-* **AI-Powered Operational Automations**: Leverages Google Vertex AI (Gemini 3.7 Flash) to automate high-friction internal procedures, such as continuous statutory compliance scanning over regulatory approval documents (triggering automated IAM soft-downgrades if approvals lapse) and tabular privacy risk analysis (PII and small-cell disclosure detection) on egress files.
+* **AI-Powered Operational Automations**: Leverages Google Vertex AI (Gemini 3.7 Flash) to automate high-friction internal procedures, such as continuous statutory compliance scanning over regulatory approval documents (generating horizon alerts for human-in-the-loop IAM soft-downgrades if approvals lapse) and tabular privacy risk analysis (PII and small-cell disclosure detection) on egress files.
 * **Lightweight Administrative UI**: A responsive, single-page management portal providing role-specific dashboards for Operations Administrators, Cloud Engineers, and Data Protection Officers.
 
 ---
@@ -34,7 +34,7 @@ The platform follows a centralized Hub-and-Spoke architecture enclosed within a 
 
 * **Unified Multi-Tenant Governance**: Eliminates administrative silos by managing all tenant workspaces, permissions, and audit logs from a single control plane.
 * **Zero Egress Risk**: Datasets remain enclosed within private VPC Service Controls perimeters. Egress is restricted to an Air-Lock quarantine bucket requiring AI privacy risk scoring and Data Protection Officer sign-off.
-* **Autonomous Statutory Compliance**: Continuous AI verification of regulatory checklists automatically demotes expired rooms from active write/execute roles to read-only viewer roles, maintaining analytical continuity without regulatory non-compliance.
+* **Statutory Compliance & Governed Soft-Downgrades**: Continuous AI verification of regulatory checklists alerts compliance officers when approvals lapse, enabling human-in-the-loop soft-downgrades from active write/compute roles to read-only viewer roles to maintain analytical continuity without regulatory non-compliance.
 * **Two-Tiered FinOps Cost Attribution**: Reconciles ground-truth cloud spend from Google Cloud Billing exports against granular telemetry weights (BigQuery bytes billed, Colab runtime hours, Vertex AI token consumption, and storage bytes) to attribute costs down to individual researchers and shared administrative overhead.
 * **Zero-Copy Data Collaboration**: Utilizes BigQuery Analytics Hub to share curated datasets across independent spoke projects without physical data duplication.
 

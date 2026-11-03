@@ -101,10 +101,10 @@ The platform isolates each research room within a dedicated GCP project and spok
 
 ### Pillar 2: Policy-Driven AI Compliance Gating & Two-Tier IAM Lifecycle
 
-Compliance agreements like Data Use Agreements (DUAs), Helsinki IRB ethics approvals, and statutory transfer permits have strict, legally enforceable expiration horizons. Rather than relying on static calendar reminders or risking non-compliant data access, the platform implements an automated compliance evaluation engine paired with a **Two-Tier IAM Governance Lifecycle** and Human-in-the-Loop (HITL) oversight:
+Compliance agreements like Data Use Agreements (DUAs), Institutional Review Board (IRB) ethics approvals, and statutory transfer permits have strict, legally enforceable expiration horizons. Rather than relying on static calendar reminders or risking non-compliant data access, the platform implements an automated compliance evaluation engine paired with a **Two-Tier IAM Governance Lifecycle** and Human-in-the-Loop (HITL) oversight:
 
 ![Compliance & Onboarding Gates](assets/screenshots/ui_compliance_governance.png)
-*Figure 3: Central compliance dashboard tracking 5-item regulatory checklists, approval expiration dates, and automated IAM soft-downgrade and suspension states.*
+*Figure 3: Central compliance dashboard tracking 5-item regulatory checklists, approval expiration dates, and human-in-the-loop IAM soft-downgrade and suspension enforcement.*
 
 1. **Multimodal Agreement Parsing in BigQuery SQL**: Unstructured PDF agreements stored in Cloud Storage are indexed as BigQuery Object Tables. A SQL stored procedure calls a BigQuery ML remote model backed by **Gemini models** (`ML.GENERATE_TEXT`), parsing legal text to extract approval authorities and statutory expiration dates directly into the regulatory checklist table (`ops_regulatory_checklist`).
 2. **Two-Tier IAM Enforcement (Grace Window vs. Statutory Expiration)**:

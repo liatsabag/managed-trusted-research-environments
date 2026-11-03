@@ -155,7 +155,7 @@
                 </li>
                 <li class="flex items-start space-x-2.5">
                   <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
-                  <span><strong>Autonomous Gating:</strong> Gemini automatically parses DUA/IRB PDFs and soft-downgrades expired rooms.</span>
+                  <span><strong>AI Compliance Gating:</strong> Gemini continuously parses DUA/IRB PDFs, alerting DPOs and enabling one-click soft-downgrade of expired rooms.</span>
                 </li>
                 <li class="flex items-start space-x-2.5">
                   <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
@@ -214,8 +214,8 @@
                 <p class="text-[12px]">Each research room (Oncology, Genomics, Cardio, Neuro) runs in a distinct GCP project within an isolated VPC subnet without public IPs.</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
-                <p class="font-semibold text-slate-900 text-xs mb-1">👥 Automated IAM Role Soft-Downgrade</p>
-                <p class="text-[12px]">Dynamic demotion from <code>dataEditor</code> to <code>dataViewer</code> upon ethical permit expiry without destroying existing analyses.</p>
+                <p class="font-semibold text-slate-900 text-xs mb-1">👥 Two-Tier IAM Role Governance & Soft-Downgrade</p>
+                <p class="text-[12px]">DPO-governed demotion from <code>dataEditor</code> to <code>dataViewer</code> upon ethical permit expiry without destroying existing analyses.</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
                 <p class="font-semibold text-slate-900 text-xs mb-1">📜 Centralized Audit Trail Hub</p>
@@ -467,7 +467,7 @@
               <div class="text-[11px] text-slate-600 space-y-1 pt-1 border-t border-slate-100">
                 <p>• Dedicated GCP Spoke Project</p>
                 <p>• Dual-Bucket Air-Lock storage</p>
-                <p>• Helsinki & DUA Expiry Dates</p>
+                <p>• IRB & DUA Expiry Dates</p>
                 <p>• Hard Budget Caps ($5,000)</p>
               </div>
             </div>
@@ -602,13 +602,13 @@
     </div>
 
     <!-- ==========================================
-         SLIDE 6: AI Compliance Flow & IAM Soft-Downgrade
+         SLIDE 6: AI Compliance Flow & Governed Soft-Downgrade
          ========================================== -->
     <div class="slide w-full" data-slide="6">
       <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
-          <span class="pill-badge bg-rose-50 text-rose-700 border border-rose-200">Slide 6 • Autonomous Compliance</span>
-          <span class="text-xs font-semibold text-slate-400">Vertex AI Gemini 3.7 Flash + Automated IAM Demotion</span>
+          <span class="pill-badge bg-rose-50 text-rose-700 border border-rose-200">Slide 6 • Compliance Horizon & Governance</span>
+          <span class="text-xs font-semibold text-slate-400">Vertex AI Gemini 3.7 Flash + Governed IAM Demotion</span>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -617,20 +617,20 @@
               AI-Powered Ethics Gating & Soft-Downgrade
             </h2>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              No manual checklist chasing. <strong>Vertex AI Gemini</strong> analyzes unstructured legal PDFs (DUAs, Helsinki IRB approvals), and triggers automated policy actions when permits expire.
+              No manual checklist chasing. <strong>Vertex AI Gemini</strong> analyzes unstructured legal PDFs (DUAs, IRB approvals), alerting compliance teams and enabling governed soft-downgrade actions when permits expire.
             </p>
 
             <div class="p-4 rounded-xl bg-slate-900 text-white text-xs space-y-2">
               <p class="font-bold text-rose-300 uppercase tracking-wider text-[10px]">What is a "Soft-Downgrade"?</p>
               <p class="text-slate-300 leading-normal">
-                Instead of deleting the project or revoking all access, non-compliant rooms are automatically demoted from <strong>dataEditor</strong> to <strong>dataViewer</strong>. Researchers can still inspect their existing code and charts, but all write/execute privileges are frozen.
+                Instead of deleting the project or abruptly revoking all access, expired rooms can be soft-downgraded by DPOs from <strong>dataEditor</strong> to <strong>dataViewer</strong>. Researchers can still inspect their existing code and charts, but all write/execute privileges are frozen.
               </p>
             </div>
           </div>
 
           <div class="lg:col-span-7 space-y-3">
             <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
-              <h3 class="font-bold text-slate-900 text-sm mb-3">The 2-Step Automated Governance Cycle</h3>
+              <h3 class="font-bold text-slate-900 text-sm mb-3">The Automated Discovery & Governed Enforcement Cycle</h3>
 
               <div class="space-y-3 text-xs">
                 <!-- Step 1 -->
@@ -648,9 +648,9 @@
                 <div class="flex items-start space-x-3 p-3 rounded-xl bg-amber-50/60 border border-amber-100">
                   <div class="w-6 h-6 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-xs shrink-0">2</div>
                   <div>
-                    <h4 class="font-bold text-amber-950">Cloud Run IAM Soft-Downgrade Enforcement</h4>
+                    <h4 class="font-bold text-amber-950">DPO Portal Governance & IAM Soft-Downgrade Enforcement</h4>
                     <p class="text-slate-600 text-[11px] mt-0.5">
-                      Workflow calls FastAPI <code>/compliance/enforce</code> via authenticated OIDC. For expired rooms, Cloud Identity groups are instantly demoted (<code>roles/bigquery.dataViewer</code>), updating room status to <code>SOFT_DOWNGRADED</code>.
+                      Compliance sweeps alert the DPO portal. DPOs execute a one-click soft-downgrade via FastAPI <code>/rooms/{id}/status</code>. Cloud Identity groups are atomically demoted (<code>roles/bigquery.dataViewer</code>), transitioning room status to <code>SOFT_DOWNGRADED</code>.
                     </p>
                   </div>
                 </div>

@@ -113,7 +113,7 @@ async def downgrade_room(
     request: DowngradeRequest = DowngradeRequest(),
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> RoomActionResponse:
-    """Enforce soft-downgrade on research room when Helsinki IRB or DUA is expired."""
+    """Enforce soft-downgrade on research room when IRB or DUA is expired."""
     result = service.downgrade_room(room_id, request)
     if not result:
         raise HTTPException(

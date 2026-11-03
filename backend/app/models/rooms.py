@@ -62,7 +62,7 @@ class ResearchRoomSummary(BaseModel):
     deployment_date: Optional[str] = Field(None, description="Room deployment date (YYYY-MM-DD)")
     spoke_project_id: str = Field(..., description="GCP Spoke Project ID")
     status: str = Field("ACTIVE", description="Room operational status (ACTIVE, SOFT_DOWNGRADED, ARCHIVED)")
-    compliance: DUAComplianceStatus = Field(..., description="DUA & Helsinki compliance details")
+    compliance: DUAComplianceStatus = Field(..., description="DUA & IRB compliance details")
     researcher_count: int = Field(0, description="Total active researchers assigned")
     table_count: int = Field(0, description="Number of local tables in spoke dataset")
     packages_count: int = Field(0, description="Total installed analytical packages")
@@ -86,7 +86,7 @@ class ResearchRoomDetail(BaseModel):
     deployment_date: Optional[str] = Field(None, description="Room deployment date (YYYY-MM-DD)")
     spoke_project_id: str = Field(..., description="GCP Spoke Project ID")
     status: str = Field("ACTIVE", description="Room operational status (ACTIVE, SOFT_DOWNGRADED, ARCHIVED)")
-    compliance: DUAComplianceStatus = Field(..., description="DUA & Helsinki compliance details")
+    compliance: DUAComplianceStatus = Field(..., description="DUA & IRB compliance details")
     budget_limit_usd: float = Field(5000.0, description="Allocated financial budget limit (USD)")
     total_cost: float = Field(0.0, description="Total invoiced spend since deployment (USD)")
     inbound_bucket: str = Field(..., description="GCS Inbound bucket URI")
@@ -119,7 +119,7 @@ class InstituteSummary(BaseModel):
 class DowngradeRequest(BaseModel):
     """Payload for requesting IAM soft-downgrade on a research room."""
 
-    reason: Optional[str] = Field("Compliance enforcement: Helsinki/DUA expiration", description="Downgrade reason")
+    reason: Optional[str] = Field("Compliance enforcement: IRB/DUA expiration", description="Downgrade reason")
     target_role: Optional[str] = Field("roles/viewer", description="Restricted reader IAM role")
     notify_researchers: bool = Field(True, description="Whether to trigger notification to researchers")
 

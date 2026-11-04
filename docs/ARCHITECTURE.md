@@ -689,31 +689,37 @@ sequenceDiagram
     participant BQ as BigQuery Stored Proc<br/>(sp_scan_governance.sql)
     participant AI as BigQuery ML + Gemini<br/>(obj_approval_documents)
     participant API as FastAPI Backend<br/>(Compliance & Fleet Service)
-    actor DPO as Compliance Officer / DPO<br/>(Admin Portal)
+    actor DPO as Compliance Officer / DPO<br/>(Central Admin Portal)
     participant IAM as Cloud IAM Binding<br/>(Spoke Projects)
+    participant Audit as Curated Telemetry<br/>(ops_audit_events_curated)
 
     rect rgb(235, 245, 255)
-    Note over Cron,AI: Phase 1: Scheduled AI Document Scan & Horizon Alerting
-    Cron->>WF: 1. Trigger Scheduled Cycle
+    Note over Cron,API: Phase 1: Automated Continuous Discovery & Horizon Alerting
+    Cron->>WF: 1. Trigger Scheduled Governance Cycle (Hourly/Nightly)
     WF->>BQ: 2. CALL sp_scan_governance('PROVISIONED')
     BQ->>AI: 3. ML.GENERATE_TEXT over obj_approval_documents
-    AI-->>BQ: 4. Extract expiry_date & approval metadata
-    BQ->>BQ: 5. MERGE into ops_regulatory_checklist
-    WF->>API: 6. Refresh Horizon Alerts & Compliance Statuses
+    AI-->>BQ: 4. Extract expiration_date & approval metadata via Gemini
+    BQ->>BQ: 5. MERGE into ops_regulatory_checklist (flags EXPIRING_SOON / EXPIRED)
+    WF->>API: 6. Surface Real-Time Compliance Horizon Countdown & Alert Badges
     end
 
     rect rgb(255, 240, 240)
-    Note over DPO,IAM: Phase 2: Human-in-the-Loop Review & Governed Soft-Downgrade
-    DPO->>API: 7. Inspect Horizon Alerts & POST /rooms/{id}/status (or /downgrade)
-    API->>IAM: 8. Execute Atomic Spoke IAM Mutation (Strip Editor/Compute, retain Viewer)
-    API->>BQ: 9. UPDATE reg_research_rooms SET status = 'SOFT_DOWNGRADED'
-    API->>BQ: 10. Write Audit Event to ops_audit_events_curated
+    Note over DPO,Audit: Phase 2: Human-in-the-Loop Review & Governed Administrative Action
+    DPO->>API: 7. Inspect Horizon Alerts in Portal (30-day countdown, missing/expired items)
+    Note over DPO: DPO verifies legal status, contacts researcher, decides action
+    DPO->>API: 8. Governed Action: Click "Soft Downgrade" or "Suspend" (POST /rooms/{id}/status)
+    API->>IAM: 9. Live Atomic Spoke IAM Mutation (Remove Editor/Compute roles, retain Viewer)
+    API->>BQ: 10. Update Room Registry Status (reg_research_rooms.status = 'SOFT_DOWNGRADED')
+    API->>Audit: 11. Record Attributed Administrative Audit Event with DPO Identity
+    API-->>DPO: 12. Confirm room downgraded; researcher notified with non-destructive read-only grace
     end
 
-    rect rgb(245, 245, 245)
-    Note over DPO,API: Phase 3: Ad-Hoc / On-Demand Operator Scan
-    DPO->>API: 11. POST /compliance/rooms/{room_id}/scan (On-Demand AI Scan)
-    API-->>DPO: 12. Return real-time checklist status & horizon forecast
+    rect rgb(240, 255, 240)
+    Note over DPO,IAM: Phase 3: Renewal & Administrative Reactivation
+    DPO->>API: 13. DUA/IRB renewed; DPO clicks "Reactivate" (POST /rooms/{id}/reactivate)
+    API->>IAM: 14. Restore Spoke Editor/Compute IAM Bindings
+    API->>BQ: 15. Update Registry Status (reg_research_rooms.status = 'ACTIVE')
+    API-->>DPO: 16. Room and researchers fully restored to active research operations
     end
 ```
 

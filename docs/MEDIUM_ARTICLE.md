@@ -118,9 +118,12 @@ Compliance agreements like Data Use Agreements (DUAs), Institutional Review Boar
 
 To allow legitimate research outputs (such as aggregate statistics, summary charts, or trained model weights) to leave the clean room without risking data leakage, the platform implements a governed Air-Lock quarantine pipeline:
 
-1. **Quarantine Staging**: Each room contains an `inbound` bucket (read-only reference data) and an `export` bucket (quarantine drop zone). Researchers write candidate export files into the export bucket, but are blocked by VPC Service Controls from downloading files directly.
-2. **AI Privacy Risk Screening**: The governance backend inspects staged export files, samples schema and records, and invokes BigQuery ML powered by **Gemini models** to screen for direct identifiers, clinical PII tokens, and small cohort cell counts. The evaluation generates a structured risk score and compliance card.
-3. **DPO Review & Digital Release**: Data Protection Officers inspect the file preview, column distributions, and Gemini risk findings in the portal before granting external release or rejecting the candidate.
+1. **Perimeter Holding Staging**: Each room contains an `inbound` bucket (read-only reference data) and an `export` bucket (`gs://rr-*-export/`). Researchers write candidate export artifacts into this holding bucket, but are strictly blocked by VPC Service Controls from downloading files directly or routing them to the internet.
+2. **Two-Stage Defense-in-Depth Privacy Risk Screening**:
+   * **Representative Snippet Sampling (8 KB / 35 Rows)**: Rather than streaming multi-gigabyte files through interactive API memory—which would cause serverless OOM crashes, exceed LLM context limits, and inflate token costs—the engine inspects a representative sample. In tabular datasets, schema headers and distribution patterns repeat identically across rows.
+   * **Stage 1 (Deterministic Cloud DLP / SDP)**: Google Cloud Sensitive Data Protection evaluates regex and algorithmic infoTypes (`PERSON_NAME`, `EMAIL_ADDRESS`, `MEDICAL_RECORD_NUMBER`, `ISRAEL_NATIONAL_ID`, etc.) with zero hallucination.
+   * **Stage 2 (Semantic Gemini AI & Small-Cell Detection)**: BigQuery ML invokes Vertex AI Gemini Flash to evaluate what traditional pattern-matching misses—quasi-identifier combinations and HIPAA small-cell disclosures ($1 \le k < 5$ rare disease counts).
+3. **DPO Review & Decoupled Release**: Data Protection Officers inspect the file preview, column distributions, detected SDP infoTypes, and Gemini risk findings in the portal before granting approval or rejection. Downstream extraction (such as SFTP delivery or integration with external institutional portals) is decoupled as a customer integration hook.
 
 ![Air-Lock Detailed Scan Findings](assets/screenshots/ui_airlock_risk_expanded.png)
 *Figure 4: Expanded Gemini AI Privacy Assessment Card displaying detailed scan findings, including detected PII tokens, risk scoring, rationale, and policy decision controls.*

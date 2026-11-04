@@ -5,7 +5,7 @@ import logging
 import uuid
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
-from google.cloud import bigquery, storage
+from google.cloud import bigquery, dlp_v2, storage
 
 from backend.app.core.config import get_settings
 from backend.app.models.airlock import (
@@ -27,6 +27,56 @@ class GeminiRiskService:
             location=self.settings.GCP_REGION,
         )
         self.storage_client = storage.Client(project=self.settings.GCP_PROJECT_ID)
+        self.dlp_client = dlp_v2.DlpServiceClient()
+
+    def _inspect_snippet_with_dlp(self, snippet: str) -> Dict[str, Any]:
+        """Stage 1: Deterministic regex and pattern inspection using Cloud DLP / Sensitive Data Protection."""
+        if not snippet.strip():
+            return {"detected_infotypes": [], "findings_summary": []}
+
+        target_infotypes = [
+            {"name": "EMAIL_ADDRESS"},
+            {"name": "PHONE_NUMBER"},
+            {"name": "PERSON_NAME"},
+            {"name": "MEDICAL_RECORD_NUMBER"},
+            {"name": "US_SOCIAL_SECURITY_NUMBER"},
+            {"name": "US_HEALTHCARE_NPI"},
+            {"name": "DATE_OF_BIRTH"},
+            {"name": "STREET_ADDRESS"},
+            {"name": "ISRAEL_NATIONAL_ID"},
+        ]
+        inspect_config = {
+            "info_types": target_infotypes,
+            "min_likelihood": dlp_v2.Likelihood.POSSIBLE,
+            "include_quote": True,
+            "limits": {"max_findings_per_request": 50},
+        }
+        item = {"value": snippet}
+        parent = f"projects/{self.settings.GCP_PROJECT_ID}"
+
+        try:
+            response = self.dlp_client.inspect_content(
+                request={
+                    "parent": parent,
+                    "inspect_config": inspect_config,
+                    "item": item,
+                }
+            )
+            findings = response.result.findings if response and response.result else []
+            detected_types = sorted(list({f.info_type.name for f in findings}))
+            findings_summary = []
+            for f in findings[:15]:
+                quote_str = f"'{f.quote}'" if f.quote else "redacted"
+                findings_summary.append(
+                    f"Cloud DLP infoType {f.info_type.name} detected (Likelihood: {f.likelihood.name}, Sample: {quote_str})"
+                )
+            return {
+                "detected_infotypes": detected_types,
+                "findings_summary": findings_summary,
+            }
+        except Exception as e:
+            logger.warning("Cloud DLP inspection encountered an error: %s", e)
+            return {"detected_infotypes": [], "findings_summary": []}
 
     def _get_export_buckets(self, room_id: Optional[str] = None) -> List[Dict[str, str]]:
         """Retrieve active spoke rooms and their export bucket names."""
@@ -51,7 +101,7 @@ class GeminiRiskService:
         try:
             q_scans = f"""
                 SELECT scan_id, room_id, file_name, bucket_name, file_size_bytes, researcher_email,
-                       risk_score, risk_level, pii_tokens, k_anonymity_violation, findings,
+                       risk_score, risk_level, pii_tokens, sdp_infotypes, k_anonymity_violation, findings,
                        recommendation, reason, status, scanned_at, created_at
                 FROM `{scans_table}`
                 QUALIFY ROW_NUMBER() OVER (PARTITION BY room_id, file_name ORDER BY scanned_at DESC, created_at DESC) = 1
@@ -100,6 +150,7 @@ class GeminiRiskService:
                                 risk_score=scan_data.get("risk_score"),
                                 risk_level=scan_data.get("risk_level"),
                                 pii_tokens_detected=list(scan_data.get("pii_tokens") or []),
+                                sdp_infotypes=list(scan_data.get("sdp_infotypes") or []),
                                 k_anonymity_violation=bool(scan_data.get("k_anonymity_violation", False)),
                                 findings=list(scan_data.get("findings") or []),
                                 recommendation=scan_data.get("recommendation"),
@@ -146,15 +197,29 @@ class GeminiRiskService:
         lines = sample_text.splitlines()[:35]
         sample_snippet = "\n".join(lines)
 
-        # Build Gemini Governance Evaluation Prompt
+        # Stage 1: Deterministic Sensitive Data Protection (Cloud DLP) pre-scan
+        dlp_result = self._inspect_snippet_with_dlp(sample_snippet)
+        sdp_infotypes = dlp_result.get("detected_infotypes", [])
+        sdp_findings = dlp_result.get("findings_summary", [])
+
+        # Stage 2: Build Gemini Governance Evaluation Prompt incorporating Stage 1 findings
+        dlp_context_str = (
+            json.dumps(sdp_findings, indent=2)
+            if sdp_findings
+            else "No direct regex/pattern infoTypes detected by Cloud DLP."
+        )
+
         prompt = f"""You are a strict healthcare data compliance officer, medical privacy auditor, and HIPAA Safe Harbor verification engine.
 Analyze the following candidate analytical export file snippet from Research Room '{room_id}' for direct identifiers, quasi-identifiers, Protected Health Information (PHI), and k-anonymity privacy violations (such as cell counts k < 5).
 
+Stage 1 Sensitive Data Protection (Cloud DLP) Pre-Scan Findings:
+{dlp_context_str}
+
 Evaluation Rules:
-1. Direct Identifiers (CRITICAL Risk): MRN, Patient ID, National ID/SSN, Patient Full Name, Phone, Email, Physical Address, Full Date of Birth (DOB).
+1. Direct Identifiers (CRITICAL Risk): MRN, Patient ID, National ID/SSN, Patient Full Name, Phone, Email, Physical Address, Full Date of Birth (DOB). Incorporate Cloud DLP's detections above.
 2. Quasi-Identifiers / Re-identification: 5-digit ZIP codes combined with age/gender, rare disease diagnoses with low cohort count (k < 5).
 3. If aggregate statistical metrics (e.g. mean, stddev, cohort count >= 10, de-identified feature coefficients) are present with no PII, classify as LOW risk (Score 0-25) and recommend APPROVE.
-4. If raw patient rows or direct PII tokens are present, classify as HIGH/CRITICAL (Score 75-100), flag violations, and recommend REJECT.
+4. If raw patient rows, direct PII tokens, or Cloud DLP direct infoTypes are present, classify as HIGH/CRITICAL (Score 75-100), flag violations, and recommend REJECT.
 
 Return ONLY a valid JSON object matching this schema exactly:
 {{
@@ -218,6 +283,31 @@ Candidate Export File Content:
         recommendation = str(parsed.get("recommendation", "FLAG_FOR_REVIEW")).upper()
         reason = str(parsed.get("reason", "Airlock scan completed."))
 
+        # Defense-in-depth: Merge Cloud DLP deterministic findings
+        for it in sdp_infotypes:
+            if it not in pii_tokens:
+                pii_tokens.append(it)
+        for sf in sdp_findings:
+            if sf not in findings:
+                findings.insert(0, sf)
+
+        # Elevate risk if deterministic direct identifiers were detected by Cloud DLP
+        critical_infotypes = {
+            "PERSON_NAME",
+            "EMAIL_ADDRESS",
+            "MEDICAL_RECORD_NUMBER",
+            "PHONE_NUMBER",
+            "US_SOCIAL_SECURITY_NUMBER",
+            "ISRAEL_NATIONAL_ID",
+            "STREET_ADDRESS",
+        }
+        if any(it in critical_infotypes for it in sdp_infotypes):
+            if risk_score < 80:
+                risk_score = 85
+            if risk_level in ["LOW", "MEDIUM"]:
+                risk_level = "HIGH"
+            recommendation = "REJECT"
+
         now_utc = datetime.now(timezone.utc)
         scan_id = f"scan-{uuid.uuid4().hex[:10]}"
         new_status = "APPROVED" if recommendation == "APPROVE" else "FLAGGED" if recommendation == "FLAG_FOR_REVIEW" else "REJECTED"
@@ -243,6 +333,7 @@ Candidate Export File Content:
                 "risk_score": risk_score,
                 "risk_level": risk_level,
                 "pii_tokens": pii_tokens,
+                "sdp_infotypes": sdp_infotypes,
                 "k_anonymity_violation": k_anon,
                 "findings": findings,
                 "recommendation": recommendation,
@@ -269,6 +360,7 @@ Candidate Export File Content:
             risk_score=risk_score,
             risk_level=risk_level,
             pii_tokens_detected=pii_tokens,
+            sdp_infotypes=sdp_infotypes,
             k_anonymity_violation=k_anon,
             findings=findings,
             recommendation=recommendation,

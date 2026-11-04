@@ -19,6 +19,7 @@ class AirlockExportCandidate(BaseModel):
     risk_score: Optional[int] = Field(None, description="Gemini privacy risk score 0-100")
     risk_level: Optional[str] = Field(None, description="Risk level: LOW, MEDIUM, HIGH, CRITICAL")
     pii_tokens_detected: List[str] = Field(default_factory=list, description="Detected PII / direct identifier tokens")
+    sdp_infotypes: List[str] = Field(default_factory=list, description="InfoTypes detected by Sensitive Data Protection (Cloud DLP)")
     k_anonymity_violation: bool = Field(False, description="True if cell count or k-anonymity k < 5 is violated")
     findings: List[str] = Field(default_factory=list, description="Detailed HIPAA / privacy audit findings")
     recommendation: Optional[str] = Field(None, description="Gemini policy recommendation: APPROVE, FLAG_FOR_REVIEW, REJECT")

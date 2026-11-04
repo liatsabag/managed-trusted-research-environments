@@ -768,72 +768,69 @@ sequenceDiagram
     actor DPO as Data Privacy Officer<br/>(Airlock Review UI)
     participant AirlockAPI as FastAPI Airlock Router<br/>(backend/app/api/v1/airlock.py)
     participant RiskService as GeminiRiskService<br/>(backend/app/services/gemini_risk_service.py)
+    participant DLP as Cloud DLP / SDP Engine<br/>(dlp.googleapis.com)
     participant BigQueryML as BigQuery ML Engine<br/>(gemini_flash_model)
     participant TelemetryTable as Telemetry Store<br/>(ops_airlock_export_scans)
 
     Researcher->>ExportBucket: 1. Save candidate export file (e.g. survival_stats.csv)
     
     rect rgb(240, 247, 255)
-    Note over DPO,TelemetryTable: Phase 1: On-Demand Privacy Screening & AI Risk Scoring
+    Note over DPO,TelemetryTable: Phase 1: Two-Stage Defense-in-Depth Privacy Screening
     DPO->>AirlockAPI: 2. View staged candidates (GET /api/v1/airlock/candidates)
     AirlockAPI->>RiskService: 3. Discover staged files & match previous scan history
     AirlockAPI-->>DPO: 4. Display candidate queue in Airlock Dashboard
     DPO->>AirlockAPI: 5. Click "Scan" (POST /api/v1/airlock/scan)
     AirlockAPI->>RiskService: 6. Execute scan_export_file(room_id, file_name)
-    RiskService->>ExportBucket: 7. Read sample snippet (header + first 35 rows / 8 KB)
-    RiskService->>BigQueryML: 8. SQL ML.GENERATE_TEXT(Prompt: HIPAA, PII tokens, k < 5 cell counts)
-    BigQueryML-->>RiskService: 9. Return Structured JSON Risk Card (score, level, tokens, findings)
-    RiskService->>TelemetryTable: 10. Persist evaluation into ops_airlock_export_scans
-    RiskService-->>AirlockAPI: 11. Return evaluated candidate (status: FLAGGED / APPROVED / REJECTED)
-    AirlockAPI-->>DPO: 12. Refresh UI with color-coded risk badge & findings
+    RiskService->>ExportBucket: 7. Read sample snippet (header + first 35 rows / up to 8 KB)
+    RiskService->>DLP: 8. Stage 1: Deterministic regex/pattern inspection (inspect_content)
+    DLP-->>RiskService: 9. Return matched infoTypes (PERSON_NAME, EMAIL_ADDRESS, MRN, etc.)
+    RiskService->>BigQueryML: 10. Stage 2: Contextual prompt with DLP findings + HIPAA rules + k < 5 check
+    BigQueryML-->>RiskService: 11. Return Structured JSON Risk Card (score, level, tokens, k-anon flag, findings)
+    RiskService->>RiskService: 12. Synthesize defense-in-depth card (elevate risk if direct PII detected)
+    RiskService->>TelemetryTable: 13. Persist evaluation into ops_airlock_export_scans
+    RiskService-->>AirlockAPI: 14. Return evaluated candidate (status: FLAGGED / APPROVED / REJECTED)
+    AirlockAPI-->>DPO: 15. Refresh UI with color-coded risk badge, SDP infoTypes & findings
     end
 
     rect rgb(245, 255, 245)
     Note over DPO,TelemetryTable: Phase 2: Human-in-the-Loop DPO Governance
-    DPO->>AirlockAPI: 13. Click "Approve" or "Reject" (POST /api/v1/airlock/actions)
-    AirlockAPI->>RiskService: 14. Record DPO decision in take_decision()
-    RiskService->>TelemetryTable: 15. UPDATE ops_airlock_export_scans SET status = 'APPROVED'
+    DPO->>AirlockAPI: 16. Click "Approve" or "Reject" (POST /api/v1/airlock/actions)
+    AirlockAPI->>RiskService: 17. Record DPO decision in take_decision()
+    RiskService->>TelemetryTable: 18. UPDATE ops_airlock_export_scans SET status = 'APPROVED'
     end
 ```
 
 #### Detailed Pipeline Breakdown & Architecture:
 
-The platform uses a dedicated **Gemini-powered Air-Lock Governance Pipeline** implemented across Cloud Storage, BigQuery ML, FastAPI, and an interactive review UI:
+The platform implements a **Two-Stage Defense-in-Depth Air-Lock Governance Pipeline** bridging Cloud Storage, Google Cloud Sensitive Data Protection (Cloud DLP / SDP), BigQuery ML, FastAPI, and an interactive review portal:
 
-1. **Staging & Storage Layer**:
-   * **Isolated Export Buckets**: Each spoke room features a private export bucket (`gs://gcp-rr-spoke-*-export/`). Colab runtimes and VM service accounts have permission to write candidate export artifacts into this bucket, but are strictly blocked by VPC Service Controls from egressing data across public internet endpoints.
+1. **Perimeter Holding Area & Staging Architecture**:
+   * **Single Hardened Export Bucket as Holding Area**: Each spoke room features an isolated export bucket (`gs://gcp-rr-spoke-*-export/`). Colab runtimes and VM service accounts have permission to write candidate export artifacts into this bucket, but are strictly blocked by VPC Service Controls from communicating with public internet endpoints or moving data outside the perimeter.
+   * **Decoupled Downstream Release**: The spoke export bucket operates as the environment's single perimeter holding gate. In this prototype, once approved by the DPO, the approval state is permanently committed to `hub_telemetry.ops_airlock_export_scans`. Downstream physical egress (such as automated transfer to an external institution, SFTP relay, or public research download portal) is intentionally decoupled as an enterprise integration point configured per customer requirement. No secondary physical "quarantine" bucket or automated download route is necessary or implemented in this prototype because the single hardened export bucket already functions as the quarantine holding area.
    * **Discovery & Listing**: `GeminiRiskService.list_candidates()` queries `hub_registry.reg_research_rooms` to discover all active spoke export buckets, inspects blobs via Google Cloud Storage client, and correlates them with existing scan history in `hub_telemetry.ops_airlock_export_scans`.
 
-2. **AI Privacy Screening Pipeline (`GeminiRiskService`)**:
-   * **Component**: `backend/app/services/gemini_risk_service.py` exposed through `backend/app/api/v1/airlock.py`.
-   * **Scanning Trigger (On-Demand)**: Scanning is currently executed **on demand** from the Airlock Review UI (or via API). When the DPO or operator clicks the **"Scan"** button on an unscanned or updated candidate export, the frontend triggers `POST /api/v1/airlock/scan`.
-   * **Target Architecture (Event-Driven Automated Scanning)**: In the planned enterprise evolution, a Cloud Storage Object Finalize event notification (via Pub/Sub or Eventarc) will automatically trigger `scan_export_file()` the moment a researcher drops a file into `gs://rr-*-export/`, pre-populating the risk score before the DPO opens the portal.
-   * **Snippet Extraction**: Downloads the file header and first 35 rows (up to 8 KB) to inspect schema definitions, column headers, and data distributions without loading massive analytical matrices into application memory.
-   * **Inference Engine**: Executes `ML.GENERATE_TEXT` against the remote model `hub_telemetry.gemini_flash_model` (Vertex AI Gemini Flash) via BigQuery SQL. The prompt enforces HIPAA Safe Harbor principles, medical privacy standards, and re-identification deterrence.
-   * **Structured Output Schema**:
-     ```json
-     {
-       "risk_score": 0-100,
-       "risk_level": "LOW | MEDIUM | HIGH | CRITICAL",
-       "pii_tokens_detected": ["token_or_column_names"],
-       "k_anonymity_violation": true | false,
-       "findings": ["finding 1", "finding 2"],
-       "recommendation": "APPROVE | FLAG_FOR_REVIEW | REJECT",
-       "reason": "Executive summary explanation"
-     }
-     ```
-   * **Audit Materialization**: Inserts the scan results into `hub_telemetry.ops_airlock_export_scans`, capturing `scan_id`, `risk_score`, `pii_tokens`, `k_anonymity_violation`, and timestamps.
+2. **Representative Snippet Sampling Rationale (First 35 Lines / Up to 8 KB)**:
+   A core architectural design choice is running synchronous pre-screening against a representative snippet rather than streaming multi-gigabyte files through the interactive web API:
+   * **Context Window Limits & Latency**: Research datasets frequently contain millions of rows and hundreds of megabytes. Submitting multi-gigabyte files directly into an LLM prompt would exceed model context limits and cause multi-minute API timeouts.
+   * **FinOps Cost Optimization**: Scanning an 8 KB snippet with Gemini costs $\approx \$0.0001$ per scan, whereas passing 500 MB of tabular data into an LLM for every scan would cost tens of dollars per candidate.
+   * **Serverless Memory Safety**: Cloud Run is an interactive microservice; buffering large file streams into memory risks Out-Of-Memory (OOM) crashes. GCS range requests (`blob.download_as_bytes(start=0, end=8192)`) execute in milliseconds with zero memory overhead.
+   * **Tabular Schema Homogeneity**: In analytical exports (CSV, TSV), data schemas are vertically uniform. If column 4 contains Patient Names or Medical Record Numbers, that fact is established in the column header and the first 35 sample records.
+   * **Synchronous Portal vs. Asynchronous Bulk Gates**: For real-time DPO portal responsiveness, sampling provides instant sub-2-second feedback. In an enterprise production setting, this synchronous gate pairs with an optional asynchronous background `DlpJob` on Cloud Storage for full-file bitwise verification.
 
-3. **Gemini AI vs. Cloud Sensitive Data Protection (SDP / DLP) Pipeline**:
-   * **Why Gemini AI was Chosen Over Traditional SDP**:
-     - **Contextual Understanding & Small-Cell Counts**: Traditional Google Cloud Sensitive Data Protection (Cloud DLP / SDP) relies on regexes, dictionaries, and infoType detectors (e.g. `US_SOCIAL_SECURITY_NUMBER`, `EMAIL_ADDRESS`). While effective for pattern matching, SDP cannot easily reason about aggregate tabular distributions or small-cell count disclosures (e.g., detecting if a cell has $1 \le k < 5$ rare disease patients in an otherwise anonymous statistical frequency table).
-     - **Holistic Reasoning**: Gemini evaluates the semantic combination of quasi-identifiers (such as 3-digit ZIP + age $>89$ + diagnosis) and distinguishes between safe aggregate metrics (mean, standard deviation, model weights) versus row-level micro-data leaks.
-     - **Zero External Pipelines**: By using BigQuery ML's remote model integration (`ML.GENERATE_TEXT`), evaluation occurs directly within the central BigQuery analytical engine without needing Dataflow jobs, Pub/Sub triggers, or complex external DLP inspection templates.
-   * **Hybrid Evolution**: For production environments processing millions of bulk unstructured files, the target architecture pairs Cloud DLP (for high-throughput byte-level regex filtering) with Gemini AI (for semantic re-identification risk scoring and small-cell suppression verification).
+3. **Two-Stage Defense-in-Depth Inspection Pipeline (`GeminiRiskService`)**:
+   * **Stage 1 — Deterministic Sensitive Data Protection (Cloud DLP / SDP)**:
+     - The snippet is first sent to Google Cloud Sensitive Data Protection (`dlp_v2.DlpServiceClient.inspect_content`).
+     - Cloud DLP evaluates built-in regex, dictionary, and algorithmic infoTypes: `EMAIL_ADDRESS`, `PHONE_NUMBER`, `PERSON_NAME`, `MEDICAL_RECORD_NUMBER`, `US_SOCIAL_SECURITY_NUMBER`, `US_HEALTHCARE_NPI`, `DATE_OF_BIRTH`, `STREET_ADDRESS`, and `ISRAEL_NATIONAL_ID`.
+     - Output: Zero-hallucination, deterministic list of confirmed infoTypes and sample quotes.
+   * **Stage 2 — Gemini AI Contextual Reasoning & Small-Cell Count Suppression**:
+     - The snippet, along with Stage 1 Cloud DLP findings, is passed to `hub_telemetry.gemini_flash_model` via BigQuery ML (`ML.GENERATE_TEXT`).
+     - Gemini evaluates what DLP cannot: tabular distributions, semantic re-identification risk from quasi-identifiers (e.g. rare diagnosis + age + 3-digit ZIP), and HIPAA small-cell disclosure ($1 \le k < 5$ cell counts in frequency tables).
+     - If Cloud DLP detected critical direct identifiers, the pipeline enforces a minimum risk score floor ($\ge 80$) and marks the recommendation as `REJECT`.
+   * **Audit Materialization**: Inserts the scan results into `hub_telemetry.ops_airlock_export_scans`, capturing `scan_id`, `risk_score`, `pii_tokens`, `sdp_infotypes`, `k_anonymity_violation`, and timestamps.
 
 4. **Human-in-the-Loop Review & Release**:
-   * **Review UI**: `frontend/js/components/airlockView.js` displays Candidate Export Cards with real-time risk badges (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`), identified PII token pills, and AI recommendation rationale.
-   * **Decision Action**: DPOs can review the findings and approve or reject the file via `POST /api/v1/airlock/actions`. Approved files update the database state and trigger authorized release.
+   * **Review UI**: `frontend/js/components/airlockView.js` displays Candidate Export Cards with real-time risk badges (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`), identified PII token pills, detected Cloud DLP infoTypes, and AI recommendation rationale.
+   * **Decision Action**: DPOs review findings and approve or reject the file via `POST /api/v1/airlock/actions`. Approved files update the database state with full audit attribution.
 
 ---
 

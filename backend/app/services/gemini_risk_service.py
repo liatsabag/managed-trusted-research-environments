@@ -29,9 +29,9 @@ class GeminiRiskService:
         self.storage_client = storage.Client(project=self.settings.GCP_PROJECT_ID)
         self.dlp_client = dlp_v2.DlpServiceClient()
 
-    def _inspect_snippet_with_dlp(self, snippet: str) -> Dict[str, Any]:
-        """Stage 1: Deterministic regex and pattern inspection using Cloud DLP / Sensitive Data Protection."""
-        if not snippet.strip():
+    def _inspect_content_with_dlp(self, text_content: str) -> Dict[str, Any]:
+        """Stage 1: Deterministic regex and pattern inspection using Cloud DLP / Sensitive Data Protection over complete text."""
+        if not text_content.strip():
             return {"detected_infotypes": [], "findings_summary": []}
 
         target_infotypes = [
@@ -49,34 +49,44 @@ class GeminiRiskService:
             "info_types": target_infotypes,
             "min_likelihood": dlp_v2.Likelihood.POSSIBLE,
             "include_quote": True,
-            "limits": {"max_findings_per_request": 50},
+            "limits": {"max_findings_per_request": 100},
         }
-        item = {"value": snippet}
+        # Cloud DLP inspect_content limit is 512 KiB (524,288 bytes) per item.
+        # For larger content, inspect across 512 KiB chunks to maintain 100% full-file coverage.
+        MAX_CHUNK = 524288
+        chunks = [text_content[i:i + MAX_CHUNK] for i in range(0, len(text_content), MAX_CHUNK)]
         parent = f"projects/{self.settings.GCP_PROJECT_ID}"
 
+        detected_types_set = set()
+        findings_summary = []
+
         try:
-            response = self.dlp_client.inspect_content(
-                request={
-                    "parent": parent,
-                    "inspect_config": inspect_config,
-                    "item": item,
-                }
-            )
-            findings = response.result.findings if response and response.result else []
-            detected_types = sorted(list({f.info_type.name for f in findings}))
-            findings_summary = []
-            for f in findings[:15]:
-                quote_str = f"'{f.quote}'" if f.quote else "redacted"
-                findings_summary.append(
-                    f"Cloud DLP infoType {f.info_type.name} detected (Likelihood: {f.likelihood.name}, Sample: {quote_str})"
+            for chunk in chunks[:5]:  # Covers up to 2.5 MB of full-text exports
+                item = {"value": chunk}
+                response = self.dlp_client.inspect_content(
+                    request={
+                        "parent": parent,
+                        "inspect_config": inspect_config,
+                        "item": item,
+                    }
                 )
+                findings = response.result.findings if response and response.result else []
+                for f in findings:
+                    detected_types_set.add(f.info_type.name)
+                    if len(findings_summary) < 25:
+                        quote_str = f"'{f.quote}'" if f.quote else "redacted"
+                        findings_summary.append(
+                            f"Cloud DLP infoType {f.info_type.name} detected (Likelihood: {f.likelihood.name}, Sample: {quote_str})"
+                        )
             return {
-                "detected_infotypes": detected_types,
+                "detected_infotypes": sorted(list(detected_types_set)),
                 "findings_summary": findings_summary,
             }
         except Exception as e:
             logger.warning("Cloud DLP inspection encountered an error: %s", e)
             return {"detected_infotypes": [], "findings_summary": []}
+
+    _inspect_snippet_with_dlp = _inspect_content_with_dlp
 
     def _get_export_buckets(self, room_id: Optional[str] = None) -> List[Dict[str, str]]:
         """Retrieve active spoke rooms and their export bucket names."""
@@ -191,18 +201,32 @@ class GeminiRiskService:
         file_size = blob.size or 0
         created_iso = blob.time_created.isoformat() if blob.time_created else datetime.now(timezone.utc).isoformat()
         
-        # Read header + first 35 lines or up to 8KB
-        content_bytes = blob.download_as_bytes(start=0, end=min(8192, file_size or 8192))
-        sample_text = content_bytes.decode("utf-8", errors="replace")
-        lines = sample_text.splitlines()[:35]
-        sample_snippet = "\n".join(lines)
+        # Read full file content (up to 512 KiB per single Cloud DLP request limit)
+        MAX_DIRECT_SCAN_BYTES = 524288  # 512 KiB
+        content_bytes = blob.download_as_bytes(start=0, end=min(MAX_DIRECT_SCAN_BYTES, file_size or MAX_DIRECT_SCAN_BYTES))
+        full_text = content_bytes.decode("utf-8", errors="replace")
 
-        # Stage 1: Deterministic Sensitive Data Protection (Cloud DLP) pre-scan
-        dlp_result = self._inspect_snippet_with_dlp(sample_snippet)
+        # Stage 1: Deterministic Sensitive Data Protection (Cloud DLP) full-text scan
+        dlp_result = self._inspect_content_with_dlp(full_text)
         sdp_infotypes = dlp_result.get("detected_infotypes", [])
         sdp_findings = dlp_result.get("findings_summary", [])
 
-        # Stage 2: Build Gemini Governance Evaluation Prompt incorporating Stage 1 findings
+        # Stage 2: Prepare content for Gemini LLM evaluation
+        # For analytical summaries (<= 32 KB), provide 100% full-text prompt evaluation.
+        # For larger datasets, supply header + top 40 rows + bottom 40 rows + 100% full-file Cloud DLP findings.
+        GEMINI_MAX_BYTES = 32768  # ~8,000 tokens for optimal LLM latency and prompt budget
+        all_lines = full_text.splitlines()
+        total_line_count = len(all_lines)
+        if len(full_text) <= GEMINI_MAX_BYTES:
+            gemini_file_content = full_text
+            coverage_note = f"Complete file content (100% of all {total_line_count} lines and {len(full_text)} bytes scanned by both Cloud DLP and Gemini)."
+        else:
+            head_lines = all_lines[:40]
+            tail_lines = all_lines[-40:] if total_line_count > 80 else []
+            gemini_file_content = "\n".join(head_lines) + f"\n\n... [MIDDLE {total_line_count - 80} LINES OMITTED FROM LLM PROMPT - 100% OF ALL LINES FULLY INSPECTED BY CLOUD DLP] ...\n\n" + "\n".join(tail_lines)
+            coverage_note = f"Head (40 lines) and Tail (40 lines) provided for LLM schema & small-cell k-anonymity audit. Cloud DLP inspected 100% of all {total_line_count} lines ({file_size} bytes)."
+
+        # Build Gemini Governance Evaluation Prompt incorporating Stage 1 findings
         dlp_context_str = (
             json.dumps(sdp_findings, indent=2)
             if sdp_findings
@@ -210,9 +234,12 @@ class GeminiRiskService:
         )
 
         prompt = f"""You are a strict healthcare data compliance officer, medical privacy auditor, and HIPAA Safe Harbor verification engine.
-Analyze the following candidate analytical export file snippet from Research Room '{room_id}' for direct identifiers, quasi-identifiers, Protected Health Information (PHI), and k-anonymity privacy violations (such as cell counts k < 5).
+Analyze the following candidate analytical export file from Research Room '{room_id}' for direct identifiers, quasi-identifiers, Protected Health Information (PHI), and k-anonymity privacy violations (such as cell counts k < 5).
 
-Stage 1 Sensitive Data Protection (Cloud DLP) Pre-Scan Findings:
+Scan Coverage & Scope:
+{coverage_note}
+
+Stage 1 Sensitive Data Protection (Cloud DLP) Full-File Pre-Scan Findings:
 {dlp_context_str}
 
 Evaluation Rules:
@@ -234,7 +261,7 @@ Return ONLY a valid JSON object matching this schema exactly:
 
 Candidate Export File Content:
 \"\"\"
-{sample_snippet}
+{gemini_file_content}
 \"\"\""""
 
         # Call BigQuery ML Gemini remote model

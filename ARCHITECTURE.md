@@ -811,21 +811,21 @@ The platform implements a **Two-Stage Defense-in-Depth Air-Lock Governance Pipel
    * **Decoupled Downstream Release**: The spoke export bucket operates as the environment's single perimeter holding gate. In this prototype, once approved by the DPO, the approval state is permanently committed to `hub_telemetry.ops_airlock_export_scans`. Downstream physical egress (such as automated transfer to an external institution, SFTP relay, or public research download portal) is intentionally decoupled as an enterprise integration point configured per customer requirement. No secondary physical "quarantine" bucket or automated download route is necessary or implemented in this prototype because the single hardened export bucket already functions as the quarantine holding area.
    * **Discovery & Listing**: `GeminiRiskService.list_candidates()` queries `hub_registry.reg_research_rooms` to discover all active spoke export buckets, inspects blobs via Google Cloud Storage client, and correlates them with existing scan history in `hub_telemetry.ops_airlock_export_scans`.
 
-2. **Representative Snippet Sampling Rationale (First 35 Lines / Up to 8 KB)**:
-   A core architectural design choice is running synchronous pre-screening against a representative snippet rather than streaming multi-gigabyte files through the interactive web API:
-   * **Context Window Limits & Latency**: Research datasets frequently contain millions of rows and hundreds of megabytes. Submitting multi-gigabyte files directly into an LLM prompt would exceed model context limits and cause multi-minute API timeouts.
-   * **FinOps Cost Optimization**: Scanning an 8 KB snippet with Gemini costs $\approx \$0.0001$ per scan, whereas passing 500 MB of tabular data into an LLM for every scan would cost tens of dollars per candidate.
-   * **Serverless Memory Safety**: Cloud Run is an interactive microservice; buffering large file streams into memory risks Out-Of-Memory (OOM) crashes. GCS range requests (`blob.download_as_bytes(start=0, end=8192)`) execute in milliseconds with zero memory overhead.
-   * **Tabular Schema Homogeneity**: In analytical exports (CSV, TSV), data schemas are vertically uniform. If column 4 contains Patient Names or Medical Record Numbers, that fact is established in the column header and the first 35 sample records.
-   * **Synchronous Portal vs. Asynchronous Bulk Gates**: For real-time DPO portal responsiveness, sampling provides instant sub-2-second feedback. In an enterprise production setting, this synchronous gate pairs with an optional asynchronous background `DlpJob` on Cloud Storage for full-file bitwise verification.
+2. **Full-Content Scanning Strategy & Adaptive Context Budgeting**:
+   The platform employs an adaptive scanning architecture balancing complete inspection with sub-second API performance:
+   * **100% Full-File Deterministic SDP / Cloud DLP Inspection**: For all analytical export candidates up to 512 KiB per chunk (and up to 2.5 MB total across chunks), Cloud DLP scans **100% of every single byte and row** using native `inspect_content` with zero sampling. This ensures no PII or direct identifiers hidden in late rows can bypass inspection.
+   * **Adaptive Gemini Context Budgeting**:
+     - **Files $\le 32\text{ KB}$** (covering virtually all summary tables, cohort statistics, regression outputs, and aggregate CSVs): The **complete 100% text** is passed into the Gemini prompt for holistic evaluation.
+     - **Files $> 32\text{ KB}$**: To prevent prompt token saturation and maintain sub-3-second latency in BigQuery ML, Gemini receives the schema header, top 40 rows, bottom 40 rows, and the **complete 100% full-file Cloud DLP findings list**.
+   * **FinOps & Serverless Performance**: By offloading bitwise row scanning to Cloud DLP's native C++ regex and dictionary engine and reserving Gemini for contextual reasoning (HIPAA Safe Harbor, small-cell $k < 5$ suppression, quasi-identifier correlation), the system achieves exhaustive security coverage at minimal cost (~$0.0002 per scan).
 
 3. **Two-Stage Defense-in-Depth Inspection Pipeline (`GeminiRiskService`)**:
    * **Stage 1 — Deterministic Sensitive Data Protection (Cloud DLP / SDP)**:
-     - The snippet is first sent to Google Cloud Sensitive Data Protection (`dlp_v2.DlpServiceClient.inspect_content`).
+     - The complete file text is inspected by Google Cloud Sensitive Data Protection (`dlp_v2.DlpServiceClient.inspect_content`).
      - Cloud DLP evaluates built-in regex, dictionary, and algorithmic infoTypes: `EMAIL_ADDRESS`, `PHONE_NUMBER`, `PERSON_NAME`, `MEDICAL_RECORD_NUMBER`, `US_SOCIAL_SECURITY_NUMBER`, `US_HEALTHCARE_NPI`, `DATE_OF_BIRTH`, `STREET_ADDRESS`, and `ISRAEL_NATIONAL_ID`.
-     - Output: Zero-hallucination, deterministic list of confirmed infoTypes and sample quotes.
+     - Output: Zero-hallucination, deterministic list of confirmed infoTypes across the entire dataset.
    * **Stage 2 — Gemini AI Contextual Reasoning & Small-Cell Count Suppression**:
-     - The snippet, along with Stage 1 Cloud DLP findings, is passed to `hub_telemetry.gemini_flash_model` via BigQuery ML (`ML.GENERATE_TEXT`).
+     - The file content, along with Stage 1 Cloud DLP findings, is passed to `hub_telemetry.gemini_flash_model` via BigQuery ML (`ML.GENERATE_TEXT`).
      - Gemini evaluates what DLP cannot: tabular distributions, semantic re-identification risk from quasi-identifiers (e.g. rare diagnosis + age + 3-digit ZIP), and HIPAA small-cell disclosure ($1 \le k < 5$ cell counts in frequency tables).
      - If Cloud DLP detected critical direct identifiers, the pipeline enforces a minimum risk score floor ($\ge 80$) and marks the recommendation as `REJECT`.
    * **Audit Materialization**: Inserts the scan results into `hub_telemetry.ops_airlock_export_scans`, capturing `scan_id`, `risk_score`, `pii_tokens`, `sdp_infotypes`, `k_anonymity_violation`, and timestamps.

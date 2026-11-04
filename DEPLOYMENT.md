@@ -49,6 +49,7 @@ gcloud services enable \
     run.googleapis.com workflows.googleapis.com workflowexecutions.googleapis.com \
     logging.googleapis.com storage.googleapis.com cloudbuild.googleapis.com \
     artifactregistry.googleapis.com cloudscheduler.googleapis.com monitoring.googleapis.com \
+    dlp.googleapis.com \
     --project=gcp-rr-hub-core
 
 # Spoke Projects APIs

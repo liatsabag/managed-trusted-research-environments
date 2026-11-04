@@ -127,6 +127,7 @@ def ensure_gcp_hierarchy(topology: Dict[str, Any]) -> Dict[str, Any]:
                 "aiplatform.googleapis.com",
                 "logging.googleapis.com",
                 "notebooks.googleapis.com",
+                "dlp.googleapis.com",
             ]
             try:
                 serviceusage.services().batchEnable(

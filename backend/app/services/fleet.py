@@ -20,6 +20,7 @@ from backend.app.models.rooms import (
     ResearchRoomSummary,
     RoomActionResponse,
     RoomPackageItem,
+    SuspendRequest,
 )
 
 logger = logging.getLogger("fleet_governance")
@@ -448,6 +449,9 @@ class FleetGovernanceService:
 
     def downgrade_room(self, room_id: str, request: Optional[DowngradeRequest] = None) -> Optional[RoomActionResponse]:
         return self.update_room_status(room_id, "SOFT_DOWNGRADED", reason=request.reason if request else "Compliance enforcement")
+
+    def suspend_room(self, room_id: str, request: Optional[SuspendRequest] = None) -> Optional[RoomActionResponse]:
+        return self.update_room_status(room_id, "SUSPENDED", reason=request.reason if request else "Administrative compliance suspension")
 
     def reactivate_room(self, room_id: str) -> Optional[RoomActionResponse]:
         return self.update_room_status(room_id, "ACTIVE", reason="Compliance renewal / reactivation")

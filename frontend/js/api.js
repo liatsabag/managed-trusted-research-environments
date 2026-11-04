@@ -106,6 +106,13 @@ class ApiClient {
     });
   }
 
+  async suspendRoom(roomId, reason = "Administrative compliance suspension") {
+    return await this.request(`/rooms/${roomId}/suspend`, {
+      method: "POST",
+      body: JSON.stringify({ reason })
+    });
+  }
+
   async addResearcher(roomId, researcherEmail, role = "Researcher") {
     return await this.request(`/rooms/${roomId}/researchers`, {
       method: "POST",

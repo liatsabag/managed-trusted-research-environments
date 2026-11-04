@@ -11,6 +11,7 @@ from backend.app.models.rooms import (
     ResearchRoomSummary,
     RoomActionResponse,
     StatusUpdateRequest,
+    SuspendRequest,
 )
 from backend.app.services.fleet import FleetGovernanceService, get_fleet_service
 
@@ -135,6 +136,27 @@ async def reactivate_room(
 ) -> RoomActionResponse:
     """Reactivate research room and restore full researcher permissions."""
     result = service.reactivate_room(room_id)
+    if not result:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Research room '{room_id}' not found in registry",
+        )
+    return result
+
+
+@router.post(
+    "/{room_id}/suspend",
+    response_model=RoomActionResponse,
+    summary="Suspend research room IAM permissions",
+    description="Suspends research room and completely revokes researcher IAM permissions.",
+)
+async def suspend_room(
+    room_id: str,
+    request: SuspendRequest = SuspendRequest(),
+    service: FleetGovernanceService = Depends(get_fleet_service),
+) -> RoomActionResponse:
+    """Suspend research room and revoke all researcher access from spoke project."""
+    result = service.suspend_room(room_id, request)
     if not result:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

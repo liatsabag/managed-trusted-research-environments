@@ -124,6 +124,13 @@ class DowngradeRequest(BaseModel):
     notify_researchers: bool = Field(True, description="Whether to trigger notification to researchers")
 
 
+class SuspendRequest(BaseModel):
+    """Payload for requesting IAM suspension on a research room."""
+
+    reason: Optional[str] = Field("Administrative compliance suspension", description="Suspension reason")
+    notify_researchers: bool = Field(True, description="Whether to trigger notification to researchers")
+
+
 class RoomActionResponse(BaseModel):
     """Response payload for administrative room lifecycle operations."""
 

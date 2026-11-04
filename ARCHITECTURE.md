@@ -20,7 +20,7 @@ To achieve this objective in an understandable and auditable manner, the platfor
 * **Safe People**: Ensuring only verified, authorized researchers gain access through Cloud Identity groups, multi-factor authentication, and Context-Aware Access.
 * **Safe Projects**: Ensuring data use is restricted to approved scientific protocols, with automated monitoring of Institutional Review Board (IRB) ethics approvals and Data Use Agreements (DUAs).
 * **Safe Settings**: Providing a secure analytical perimeter (VPC Service Controls, private subnets without public IPs, and Identity-Aware Proxy) that prevents unauthorized data exfiltration.
-* **Safe Data**: Ensuring datasets are protected through automated column-level policy tagging, dynamic masking, and zero-copy data sharing.
+* **Safe Data**: Ensuring datasets are protected through isolated project-level storage, perimeter-enclosed boundaries, and zero-copy data sharing. *(Note: While granular column-level dynamic masking via Dataplex policy tags and BigQuery Row-Level Security (RLS) can easily be implemented if required by specific enterprise policies, they are not implemented in this prototype.)*
 * **Safe Outputs**: Screening analytical results, aggregate tables, and models through an automated privacy airlock ($k < 5$ small-cell count detection) before digital release by a Data Protection Officer (DPO).
 
 ---
@@ -186,9 +186,10 @@ Platform access is organized around four core user personas with clear separatio
 3. **Zero-Copy Analytics Hub Data Sharing & Extensibility**:
    * Curated clinical and institutional datasets from the Central Hub are exposed to Spoke Rooms as Analytics Hub shared listings.
    * Spoke projects query these shared listings as linked datasets with zero physical data duplication or egress overhead.
-   * **Extensible Security Layers**: To extend this implementation for sensitive studies, additional granular controls can be configured directly on the shared BigQuery views and listings:
+   * **Extensible Security Layers (Recommended for Production, Not Implemented in Prototype)**: To extend this implementation for sensitive studies with differing clearance within the same table, additional granular controls can easily be configured directly on the shared BigQuery views and listings if required:
      * **Row-Level Security (RLS)** to filter cohorts based on researcher institute or IRB approval scope.
-     * **Column-Level Access & Policy Tags** (via Dataplex) to mask or redact specific sensitive fields (e.g., patient MRNs, dates of birth).
+     * **Column-Level Access & Dynamic Masking** (via Dataplex policy tags) to mask or redact specific sensitive fields (e.g., patient MRNs, dates of birth).
+     * *Implementation Scope*: While both RLS and dynamic masking are recommended when fine-grained segregation is required within a single table, **they can be implemented if required, but are not implemented in this project**, which enforces isolation at the project, dataset, IAM role tier, and VPC-SC perimeter boundary.
 4. **Air-Lock Quarantine & Governed Export**:
    * Output artifacts destined for external publication are written to the local quarantine bucket.
    * The automated governance engine and DPO review workflow evaluate the candidate files against compliance policies before any release outside the environment is granted.
@@ -853,7 +854,13 @@ The automated screening service (`backend/app/services/gemini_risk_service.py`) 
 ## 9. Fleet Provisioning & Workspace Deployment (Future Implementation)
 
 ### 9.1 Target Architecture: Declarative Terraform Fleet Management
-In the target enterprise architecture, fleet management and research room provisioning will rely entirely on **declarative Infrastructure-as-Code (Terraform)** driven by GitOps and central governance automation:
+In the target enterprise architecture, fleet management and research room provisioning will rely on **declarative Infrastructure-as-Code (Terraform)** driven by GitOps and central governance automation:
+
+> [!IMPORTANT]
+> **Architecture Recommendation vs. Current Prototype Scope**:
+> Adopting declarative Infrastructure-as-Code (IaC) such as **Terraform** is the primary industry recommendation for enterprise production environments to automate project factory creation, subnet allocation, and VPC-SC perimeter updates via GitOps. 
+> 
+> **IaC / Terraform is not implemented in this project / prototype**. Spoke workspace resources, hub datasets, and IAM bindings in this repository are provisioned and managed via Python Admin SDK scripts (`scripts/provisioning/`) and Cloud Run deployment scripts to facilitate agile prototyping, rapid testing, and transparent inspection of GCP API calls.
 
 * **Automated GCP Project Factory**: Declarative creation of isolated spoke projects under institutional folder hierarchies, attaching billing, quotas, and organizational guardrails.
 * **Hermetic Network & Perimeter Enrolment**: Automated Shared VPC subnet allocation and programmatic enrolment into the VPC Service Controls (VPC-SC) security perimeter.
@@ -876,8 +883,8 @@ flowchart LR
 ```
 
 ### 9.2 Current Working Prototype vs. Future Vision
-* **Current Working Prototype**: To accelerate validation and development, the current platform provisions spoke resources using Python Admin SDK automation scripts (`scripts/provision_*.py`). Initial software package inventories are cataloged in `hub_registry.reg_room_packages`.
-* **Future Implementation**: Spoke workspace lifecycle management will transition fully to a declarative Terraform pipeline triggered automatically upon formal governance approval of room onboarding requests, with runtime startup hooks dynamically auditing live packages back into the registry.
+* **Current Working Prototype**: To accelerate validation and development, the current platform provisions spoke resources using Python Admin SDK automation scripts (`scripts/provisioning/bootstrap_gcp.py`, `provision_bigquery.py`, etc.). Initial software package inventories are cataloged in `hub_registry.reg_room_packages`. IaC is not implemented here.
+* **Future Implementation (Recommended)**: Spoke workspace lifecycle management will transition fully to a declarative Terraform pipeline triggered automatically upon formal governance approval of room onboarding requests, with runtime startup hooks dynamically auditing live packages back into the registry.
 
 ---
 

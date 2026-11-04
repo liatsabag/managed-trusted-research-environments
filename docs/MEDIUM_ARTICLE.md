@@ -37,7 +37,7 @@ Rather than copying sensitive data to researcher laptops or unmonitored virtual 
 * **Machine Learning & AI**: Train and evaluate statistical and machine learning models in-place using [BigQuery ML (BQML)](https://cloud.google.com/bigquery/docs/bqml-introduction) or integrate multimodal foundation models directly within SQL queries using [BigQuery AI functions](https://docs.cloud.google.com/bigquery/docs/ai-introduction) via [BigQuery](https://cloud.google.com/bigquery/docs/introduction) and [Vertex AI](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models), eliminating external compute transfers.
 * **Continuous Usage Tracking & Auditing**: Every query scanned byte (`total_bytes_billed`), Colab notebook session hour, AI token consumed (`ai_token_count`), and storage footprint is continuously recorded in near-real-time telemetry marts and Cloud Audit Logs.
 
-The platform structures this workspace around the internationally recognized **"Five Safes"** framework: **Safe People**, **Safe Projects**, **Safe Settings**, **Safe Data**, and **Safe Outputs**.
+The platform structures this workspace around the internationally recognized **"Five Safes"** framework: **Safe People**, **Safe Projects**, **Safe Settings**, **Safe Data** *(isolated project datasets and zero-copy sharing; note that row-level security and column masking can be added if required, but are not implemented here)*, and **Safe Outputs**.
 
 ---
 
@@ -190,6 +190,18 @@ While this platform was engineered around healthcare and biomedical compliance, 
 * **Retail & Commercial Clean Rooms**: Collaborative environments where commercial partners combine first-party customer audiences under privacy-safe queries using BigQuery Data Clean Rooms.
 
 The repository is modular: BigQuery schemas, Cloud Workflows definitions, FastAPI endpoints, and deployment automation scripts are completely parameter-driven. Spinning up a new research room requires only registering the room in the central catalog and running the automated provisioning script.
+
+### Production Hardening: Architecture Recommendations vs. Current Prototype Scope
+
+When evaluating this prototype for scaled enterprise adoption, two key architectural enhancements are recommended:
+
+1. **Declarative Infrastructure as Code (IaC / Terraform)**:
+   * **Recommendation**: In a full enterprise production environment, fleet lifecycle management, GCP Project Factory creation, and VPC Service Controls perimeter updates should be driven by declarative **Terraform modules via a GitOps CI/CD pipeline**.
+   * **Scope in this Prototype**: **IaC / Terraform is not implemented in this project**. Instead, spoke workspaces, datasets, and IAM policies are provisioned via transparent Python Admin SDK automation scripts (`scripts/provisioning/`) to facilitate rapid prototyping, developer inspection, and direct API understanding.
+
+2. **Row-Level Security (RLS) & Dynamic Data Masking**:
+   * **Recommendation**: For multi-tenant organizations that share a single physical BigQuery table across cohorts with differing clearance levels, implementing **BigQuery Row-Level Security (RLS)** to filter rows and **Dataplex policy tags for column-level dynamic masking** (redacting MRNs, dates of birth, or sensitive identifiers) is recommended.
+   * **Scope in this Prototype**: **Dynamic masking and row-level security can easily be implemented if required by specific studies, but are not implemented in this project**. Instead, isolation is enforced at the project, dataset, IAM role tier, and VPC-SC perimeter boundary.
 
 ---
 

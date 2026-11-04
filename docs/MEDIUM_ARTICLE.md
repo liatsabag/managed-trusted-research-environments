@@ -196,7 +196,7 @@ Operating a Trusted Research Environment does not require sacrificing researcher
 
 * **Unified Multi-Tenant Governance**: Eliminate administrative silos by managing all tenant research workspaces, access states, and audit trails from a single centralized control plane.
 * **Zero Egress Risk with Governed Air-Lock**: Keep analytical datasets enclosed within private security perimeters, combined with an automated, AI-assisted quarantine review for legitimate research outputs before release.
-* **Automated Statutory Compliance & Soft-Downgrades**: Enforce continuous verification of regulatory checklists (IRB, DUA, HIPAA) with graceful IAM soft-downgrades to maintain analytical continuity without regulatory non-compliance.
+* **Statutory Compliance & Governed Soft-Downgrades**: Enforce continuous AI verification of regulatory checklists (IRB, DUA, HIPAA) paired with human-in-the-loop IAM soft-downgrades and suspension to maintain analytical continuity without regulatory non-compliance.
 * **Two-Tiered Proportional FinOps**: Reconcile ground-truth cloud billing exports against physical consumption weights to allocate costs down to individual researchers with verified zero financial drift.
 * **Zero-Copy Data Collaboration**: Publish and subscribe to shared datasets across independent projects via BigQuery Analytics Hub without copying petabytes of sensitive data.
 

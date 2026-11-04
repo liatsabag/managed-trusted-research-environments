@@ -707,17 +707,17 @@ sequenceDiagram
     Note over DPO,Audit: Phase 2: Human-in-the-Loop Review & Governed Administrative Action
     DPO->>API: 7. Inspect Horizon Alerts in Portal (30-day countdown, missing/expired items)
     Note over DPO: DPO verifies legal status, contacts researcher, decides action
-    DPO->>API: 8. Governed Action: Click "Soft Downgrade" or "Suspend" (POST /rooms/{id}/status)
-    API->>IAM: 9. Live Atomic Spoke IAM Mutation (Remove Editor/Compute roles, retain Viewer)
+    DPO->>API: 8. Governed Action: Click Soft Downgrade or Suspend (POST /rooms/{id}/status)
+    API->>IAM: 9. Live Atomic Spoke IAM Mutation (Remove Editor and Compute roles, retain Viewer)
     API->>BQ: 10. Update Room Registry Status (reg_research_rooms.status = 'SOFT_DOWNGRADED')
     API->>Audit: 11. Record Attributed Administrative Audit Event with DPO Identity
-    API-->>DPO: 12. Confirm room downgraded; researcher notified with non-destructive read-only grace
+    API-->>DPO: 12. Confirm room downgraded and researcher notified with non-destructive read-only grace
     end
 
     rect rgb(240, 255, 240)
     Note over DPO,IAM: Phase 3: Renewal & Administrative Reactivation
-    DPO->>API: 13. DUA/IRB renewed; DPO clicks "Reactivate" (POST /rooms/{id}/reactivate)
-    API->>IAM: 14. Restore Spoke Editor/Compute IAM Bindings
+    DPO->>API: 13. DUA or IRB renewed - DPO clicks Reactivate (POST /rooms/{id}/reactivate)
+    API->>IAM: 14. Restore Spoke Editor and Compute IAM Bindings
     API->>BQ: 15. Update Registry Status (reg_research_rooms.status = 'ACTIVE')
     API-->>DPO: 16. Room and researchers fully restored to active research operations
     end

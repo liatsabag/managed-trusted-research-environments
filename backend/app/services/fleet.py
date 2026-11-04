@@ -28,7 +28,10 @@ EDITOR_ROLES: Set[str] = {
     "roles/bigquery.dataEditor",
     "roles/storage.objectAdmin",
     "roles/aiplatform.user",
+    "roles/aiplatform.colabEnterpriseUser",
     "roles/notebooks.runner",
+    "roles/dataform.editor",
+    "roles/iam.serviceAccountUser",
     "roles/bigquery.jobUser",
     "roles/viewer",
 }
@@ -38,7 +41,9 @@ VIEWER_ROLES: Set[str] = {
     "roles/bigquery.jobUser",
     "roles/viewer",
 }
-MANAGED_ROLES: Set[str] = EDITOR_ROLES | VIEWER_ROLES
+MANAGED_ROLES: Set[str] = EDITOR_ROLES | VIEWER_ROLES | {
+    "roles/serviceusage.serviceUsageAdmin",
+}
 
 
 class FleetGovernanceService:
@@ -310,34 +315,72 @@ class FleetGovernanceService:
                 return inst
         return None
 
-    def _apply_spoke_iam_mutation(self, spoke_project_id: str, group_email: str, new_status: str) -> None:
-        """Apply live IAM policy bindings on spoke project according to room status."""
+    def _apply_spoke_iam_mutation(
+        self,
+        spoke_project_id: str,
+        group_email: str,
+        new_status: str,
+        room_researchers: Optional[List[str]] = None,
+        all_researchers: Optional[List[str]] = None,
+    ) -> None:
+        """Apply live IAM policy bindings on spoke project according to room status, managing both group and individual user bindings."""
         try:
             # Defensive normalization: if synthetic placeholder domain is present, resolve to active organization domain
             effective_group = group_email
             if "@example-tre.org" in effective_group and self.settings.ADMIN_DOMAIN != "example-tre.org":
                 effective_group = effective_group.replace("@example-tre.org", f"@{self.settings.ADMIN_DOMAIN}")
 
-            policy = self.crm_client.projects().getIamPolicy(resource=spoke_project_id, body={}).execute()
             group_member = f"group:{effective_group}" if not effective_group.startswith("group:") else effective_group
+
+            def _normalize(email: str) -> str:
+                if "@example-tre.org" in email and self.settings.ADMIN_DOMAIN != "example-tre.org":
+                    return email.replace("@example-tre.org", f"@{self.settings.ADMIN_DOMAIN}")
+                return email
+
+            norm_room_researchers = {_normalize(e) for e in (room_researchers or [])}
+            norm_all_researchers = {_normalize(e) for e in (all_researchers or [])}
+            foreign_researchers = norm_all_researchers - norm_room_researchers
+
+            room_user_members = [f"user:{e}" for e in norm_room_researchers]
+            foreign_user_members = {f"user:{e}" for e in foreign_researchers}
+            members_to_strip_from_all = set(room_user_members) | foreign_user_members | {group_member}
+
+            policy = self.crm_client.projects().getIamPolicy(resource=spoke_project_id, body={}).execute()
             bindings = policy.get("bindings", [])
+
             for b in bindings:
                 if b.get("role") in MANAGED_ROLES:
-                    b["members"] = [m for m in b.get("members", []) if m != group_member]
+                    # Strip group, room researchers, foreign researchers, and any non-admin user not belonging to this room
+                    b["members"] = [
+                        m for m in b.get("members", [])
+                        if m not in members_to_strip_from_all and not (
+                            m.startswith("user:") and not m.startswith("user:admin@") and m.split("user:", 1)[1] not in norm_room_researchers
+                        )
+                    ]
 
             target_roles = EDITOR_ROLES if new_status == "ACTIVE" else (VIEWER_ROLES if new_status == "SOFT_DOWNGRADED" else set())
+            grant_members = [group_member] + room_user_members
+
             for role in target_roles:
                 for b in bindings:
                     if b.get("role") == role:
-                        if group_member not in b["members"]:
-                            b["members"].append(group_member)
+                        for gm in grant_members:
+                            if gm not in b["members"]:
+                                b["members"].append(gm)
                         break
                 else:
-                    bindings.append({"role": role, "members": [group_member]})
+                    bindings.append({"role": role, "members": list(grant_members)})
 
             policy["bindings"] = [b for b in bindings if b.get("members")]
             self.crm_client.projects().setIamPolicy(resource=spoke_project_id, body={"policy": policy}).execute()
-            logger.info("Updated IAM policy on %s for %s to %s", spoke_project_id, group_member, new_status)
+            logger.info(
+                "Updated IAM policy on %s: group=%s, room_users=%s, foreign_removed=%s, status=%s",
+                spoke_project_id,
+                group_member,
+                room_user_members,
+                list(foreign_user_members),
+                new_status,
+            )
         except Exception as e:
             logger.error("Failed to mutate IAM on spoke %s: %s", spoke_project_id, e)
             # If in development or mock/sandbox mode without CRM permissions, log warning without breaking state progression
@@ -372,7 +415,20 @@ class FleetGovernanceService:
             bigquery.ScalarQueryParameter("room_id", "STRING", room_id),
         ])
         self.bq_client.query(f"UPDATE `{ds}.reg_researchers` SET access_state = @access_state WHERE room_id = @room_id", job_config=res_cfg).result()
-        self._apply_spoke_iam_mutation(current["spoke_project_id"], current["cloud_identity_group"], new_status)
+
+        # Fetch room researchers and all researchers across fleet
+        aff_rows = list(self.bq_client.query(f"SELECT primary_email FROM `{ds}.reg_researchers` WHERE room_id = @room_id", job_config=job_config).result())
+        room_researchers = [r["primary_email"] for r in aff_rows]
+        all_res_rows = list(self.bq_client.query(f"SELECT primary_email FROM `{ds}.reg_researchers`").result())
+        all_researchers = [r["primary_email"] for r in all_res_rows]
+
+        self._apply_spoke_iam_mutation(
+            current["spoke_project_id"],
+            current["cloud_identity_group"],
+            new_status,
+            room_researchers=room_researchers,
+            all_researchers=all_researchers,
+        )
 
         # Invalidate in-memory cache to reflect immediately across all tabs
         cache.invalidate()

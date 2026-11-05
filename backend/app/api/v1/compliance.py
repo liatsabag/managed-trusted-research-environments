@@ -18,7 +18,7 @@ router = APIRouter(tags=["compliance"])
 
 
 @router.post(
-    "/compliance/enforce",
+    "/enforce",
     response_model=List[ComplianceScanResult],
     summary="Enforce fleet-wide IAM compliance policies",
     description="Syncs active research room IAM policies based on the latest BigQuery regulatory scan.",
@@ -31,7 +31,7 @@ async def enforce_fleet_compliance(
 
 
 @router.get(
-    "/compliance/summary",
+    "/summary",
     response_model=List[RoomComplianceSummary],
     summary="Get fleet-wide compliance summaries for all active rooms",
 )
@@ -43,14 +43,9 @@ async def get_compliance_summary(
 
 
 @router.get(
-    "/rooms/{room_id}/compliance",
+    "/rooms/{room_id}",
     response_model=RoomComplianceSummary,
     summary="Get research room regulatory compliance status",
-)
-@router.get(
-    "/compliance/rooms/{room_id}",
-    response_model=RoomComplianceSummary,
-    include_in_schema=False,
 )
 async def get_room_compliance(
     room_id: str,
@@ -65,11 +60,6 @@ async def get_room_compliance(
     response_model=ComplianceScanResult,
     summary="Trigger on-demand compliance scan and IAM sync on active room",
 )
-@router.post(
-    "/compliance/rooms/{room_id}/scan",
-    response_model=ComplianceScanResult,
-    include_in_schema=False,
-)
 async def scan_room_compliance(
     room_id: str,
     service: ComplianceService = Depends(get_compliance_service),
@@ -79,7 +69,7 @@ async def scan_room_compliance(
 
 
 @router.get(
-    "/compliance/requests/{request_id}/gate",
+    "/requests/{request_id}/gate",
     response_model=OnboardingGateResponse,
     summary="Get pre-flight onboarding compliance gate decision for a request",
 )
@@ -114,11 +104,6 @@ async def evaluate_onboarding_gate(
     response_model=ComplianceHorizonReport,
     summary="Get fleet-wide compliance horizon expiration forecast",
 )
-@router.get(
-    "/compliance/horizons",
-    response_model=ComplianceHorizonReport,
-    include_in_schema=False,
-)
 async def get_compliance_horizons(
     service: ComplianceService = Depends(get_compliance_service),
 ) -> ComplianceHorizonReport:
@@ -127,14 +112,9 @@ async def get_compliance_horizons(
 
 
 @router.get(
-    "/compliance/requests",
-    response_model=List[RoomRequestResponse],
-    summary="Get all prospective Research Room onboarding requests",
-)
-@router.get(
     "/requests",
     response_model=List[RoomRequestResponse],
-    include_in_schema=False,
+    summary="Get all prospective Research Room onboarding requests",
 )
 async def get_room_requests(
     service: ComplianceService = Depends(get_compliance_service),
@@ -144,16 +124,10 @@ async def get_room_requests(
 
 
 @router.post(
-    "/compliance/requests",
-    response_model=RoomRequestResponse,
-    status_code=status.HTTP_201_CREATED,
-    summary="Submit and ingest a new Research Room request",
-)
-@router.post(
     "/requests",
     response_model=RoomRequestResponse,
     status_code=status.HTTP_201_CREATED,
-    include_in_schema=False,
+    summary="Submit and ingest a new Research Room request",
 )
 async def create_room_request(
     request: CreateRoomRequest,

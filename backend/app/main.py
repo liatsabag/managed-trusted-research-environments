@@ -64,7 +64,7 @@ async def add_no_cache_headers(request, call_next):
 # Include API v1 Routers
 app.include_router(rooms_router, prefix=f"{settings.API_V1_PREFIX}/rooms", tags=["rooms"])
 app.include_router(institutes_router, prefix=f"{settings.API_V1_PREFIX}/institutes", tags=["institutes"])
-app.include_router(compliance_router, prefix=f"{settings.API_V1_PREFIX}", tags=["compliance"])
+app.include_router(compliance_router, prefix=f"{settings.API_V1_PREFIX}/compliance", tags=["compliance"])
 app.include_router(telemetry_router, prefix=f"{settings.API_V1_PREFIX}/telemetry", tags=["telemetry"])
 app.include_router(finops_router, prefix=f"{settings.API_V1_PREFIX}", tags=["finops"])
 app.include_router(resources_router, prefix=f"{settings.API_V1_PREFIX}", tags=["resources"])

@@ -22,11 +22,6 @@ router = APIRouter(tags=["airlock"])
     response_model=List[AirlockExportCandidate],
     summary="List candidate egress files across spoke research rooms",
 )
-@router.get(
-    "/airlock/candidates",
-    response_model=List[AirlockExportCandidate],
-    include_in_schema=False,
-)
 async def list_airlock_candidates(
     room_id: Optional[str] = Query(None, description="Optional room ID filter"),
     service: GeminiRiskService = Depends(get_gemini_risk_service),
@@ -39,11 +34,6 @@ async def list_airlock_candidates(
     "/scan",
     response_model=AirlockExportCandidate,
     summary="Trigger on-demand Gemini AI privacy scan on an export file",
-)
-@router.post(
-    "/airlock/scan",
-    response_model=AirlockExportCandidate,
-    include_in_schema=False,
 )
 async def scan_airlock_file(
     request: AirlockScanRequest,
@@ -70,11 +60,6 @@ async def scan_airlock_file(
     "/action",
     response_model=AirlockActionResponse,
     summary="Record administrative approval or quarantine decision",
-)
-@router.post(
-    "/airlock/action",
-    response_model=AirlockActionResponse,
-    include_in_schema=False,
 )
 async def take_airlock_action(
     request: AirlockActionRequest,

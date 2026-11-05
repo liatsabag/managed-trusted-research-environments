@@ -153,7 +153,7 @@ class ApiClient {
 
   async evaluateOnboardingGate(requestId, proposedRoomId = null, bucketUri = null) {
     if (proposedRoomId || bucketUri) {
-      return await this.request(`/requests/${requestId}/evaluate-gate`, {
+      return await this.request(`/compliance/requests/${requestId}/evaluate-gate`, {
         method: "POST",
         body: JSON.stringify({
           request_id: requestId,

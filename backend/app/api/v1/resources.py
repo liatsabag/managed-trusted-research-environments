@@ -50,8 +50,7 @@ def list_storage_buckets(
 ):
     """Returns list of storage buckets in hub and spoke projects."""
     try:
-        overview = service.get_infrastructure_overview()
-        return overview.storage_buckets
+        return service.get_storage_buckets()
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to list storage buckets: {str(e)}")
 
@@ -62,8 +61,7 @@ def list_shared_datasets(
 ):
     """Returns list of central shared clinical and reference datasets with their schemas."""
     try:
-        overview = service.get_infrastructure_overview()
-        return overview.shared_datasets
+        return service.get_shared_datasets()
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to list shared datasets: {str(e)}")
 
@@ -74,8 +72,7 @@ def list_notebook_templates(
 ):
     """Returns configured Colab Enterprise and Vertex AI compute runtime templates."""
     try:
-        overview = service.get_infrastructure_overview()
-        return overview.notebook_templates
+        return service.get_notebook_templates()
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to list notebook templates: {str(e)}")
 

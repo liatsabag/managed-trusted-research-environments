@@ -127,6 +127,18 @@ class InfrastructureService:
             summary_counts=summary_counts
         )
 
+    def get_notebook_templates(self) -> List[NotebookRuntimeTemplate]:
+        """Returns configured compute runtime templates directly without scanning cloud assets."""
+        return NOTEBOOK_TEMPLATES
+
+    def get_storage_buckets(self) -> List[StorageBucketItem]:
+        """Returns storage buckets list directly without scanning datasets or topologies."""
+        return self._get_storage_buckets()
+
+    def get_shared_datasets(self) -> List[SharedDatasetItem]:
+        """Returns shared datasets list directly without scanning storage buckets."""
+        return self._get_shared_datasets()
+
     def _get_vpc_topology(self) -> List[VpcNetworkItem]:
         """Returns topology of VPC networks and subnets across all spoke enclaves."""
         vpcs = [

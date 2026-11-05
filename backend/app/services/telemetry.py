@@ -347,10 +347,12 @@ class TelemetryService:
         inbound_bytes, inbound_objs, notebooks_count = 0, 0, 0
         export_bytes, export_objs = 0, 0
 
+        MAX_INVENTORY_BLOBS = 1000
+
         if room.get("inbound_bucket"):
             b_name = room["inbound_bucket"].replace("gs://", "").strip().rstrip("/")
             try:
-                for blob in self.gcs_client.bucket(b_name).list_blobs():
+                for blob in self.gcs_client.bucket(b_name).list_blobs(max_results=MAX_INVENTORY_BLOBS):
                     inbound_objs += 1
                     if blob.size:
                         inbound_bytes += blob.size
@@ -362,7 +364,7 @@ class TelemetryService:
         if room.get("export_bucket"):
             b_name = room["export_bucket"].replace("gs://", "").strip().rstrip("/")
             try:
-                for blob in self.gcs_client.bucket(b_name).list_blobs():
+                for blob in self.gcs_client.bucket(b_name).list_blobs(max_results=MAX_INVENTORY_BLOBS):
                     export_objs += 1
                     if blob.size:
                         export_bytes += blob.size

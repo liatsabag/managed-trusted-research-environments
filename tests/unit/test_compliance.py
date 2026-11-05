@@ -6,18 +6,23 @@ from types import ModuleType
 from unittest.mock import MagicMock
 
 # Defensive shim for environments where anyio subdependency is not installed
-class AnyioMock(ModuleType):
-    def __getattr__(self, name):
-        return MagicMock
+try:
+    import anyio
+except ImportError:
+    class AnyioMock(ModuleType):
+        __path__ = []
 
-for mod_name in ["anyio", "anyio.abc", "anyio.to_thread", "anyio.lowlevel"]:
-    if mod_name not in sys.modules:
-        m = AnyioMock(mod_name)
-        m.ObjectReceiveStream = MagicMock
-        m.ObjectSendStream = MagicMock
-        m.CapacityLimiter = MagicMock
-        m.to_thread = MagicMock()
-        sys.modules[mod_name] = m
+        def __getattr__(self, name):
+            return MagicMock
+
+    for mod_name in ["anyio", "anyio.abc", "anyio.to_thread", "anyio.lowlevel"]:
+        if mod_name not in sys.modules:
+            m = AnyioMock(mod_name)
+            m.ObjectReceiveStream = MagicMock
+            m.ObjectSendStream = MagicMock
+            m.CapacityLimiter = MagicMock
+            m.to_thread = MagicMock()
+            sys.modules[mod_name] = m
 
 import unittest
 from backend.app.api.v1.compliance import (

@@ -64,6 +64,30 @@ async def add_no_cache_headers(request, call_next):
     response.headers["Expires"] = "0"
     return response
 
+
+@app.middleware("http")
+async def authenticate_api_requests(request, call_next):
+    """Enforce authentication on /api/v1 endpoints when ENABLE_API_AUTH is enabled."""
+    path = request.url.path
+    public_paths = [
+        f"{settings.API_V1_PREFIX}/health",
+        "/health",
+        "/docs",
+        "/redoc",
+        "/openapi.json",
+    ]
+    if (
+        settings.ENABLE_API_AUTH
+        and path.startswith(settings.API_V1_PREFIX)
+        and path not in public_paths
+        and request.method != "OPTIONS"
+    ):
+        from backend.app.core.auth import authenticate_request
+        auth_error = authenticate_request(request)
+        if auth_error is not None:
+            return auth_error
+    return await call_next(request)
+
 # Include API v1 Routers
 app.include_router(rooms_router, prefix=f"{settings.API_V1_PREFIX}/rooms", tags=["rooms"])
 app.include_router(institutes_router, prefix=f"{settings.API_V1_PREFIX}/institutes", tags=["institutes"])

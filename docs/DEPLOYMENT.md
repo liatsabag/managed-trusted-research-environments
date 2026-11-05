@@ -179,14 +179,24 @@ gcloud builds submit backend \
     --tag gcr.io/gcp-rr-hub-core/gcp-rr-hub-backend:latest \
     --project=gcp-rr-hub-core
 
-# 2. Deploy to Cloud Run
+# 2. Deploy to Cloud Run (Development Mode: API Auth Bypass)
 gcloud run deploy gcp-rr-hub-backend \
     --image gcr.io/gcp-rr-hub-core/gcp-rr-hub-backend:latest \
     --region me-west1 \
     --platform managed \
     --allow-unauthenticated \
-    --set-env-vars GCP_PROJECT_ID=gcp-rr-hub-core,GCP_REGION=me-west1,ADMIN_DOMAIN=example-tre.org,BILLING_PROJECT_ID=gcp-billing-export-sink,BILLING_DATASET_ID=billing,BILLING_EXPORT_TABLE=gcp_billing_export_v1,HUB_REGISTRY_DATASET=hub_registry,HUB_TELEMETRY_DATASET=hub_telemetry,VERTEX_AI_MODEL=gemini-3.7-flash,VERTEX_AI_LOCATION=me-west1 \
+    --set-env-vars GCP_PROJECT_ID=gcp-rr-hub-core,GCP_REGION=me-west1,ADMIN_DOMAIN=example-tre.org,BILLING_PROJECT_ID=gcp-billing-export-sink,BILLING_DATASET_ID=billing,BILLING_EXPORT_TABLE=gcp_billing_export_v1,HUB_REGISTRY_DATASET=hub_registry,HUB_TELEMETRY_DATASET=hub_telemetry,VERTEX_AI_MODEL=gemini-3.7-flash,VERTEX_AI_LOCATION=me-west1,ENABLE_API_AUTH=false \
     --project gcp-rr-hub-core
+
+# Optional: Hardened Production Deployment with Zero-Trust Authentication Layer
+# To enforce strict authentication (requiring GCP IAP header, Service Account OIDC token, or API key):
+# gcloud run deploy gcp-rr-hub-backend \
+#     --image gcr.io/gcp-rr-hub-core/gcp-rr-hub-backend:latest \
+#     --region me-west1 \
+#     --platform managed \
+#     --no-allow-unauthenticated \
+#     --set-env-vars GCP_PROJECT_ID=gcp-rr-hub-core,ENABLE_API_AUTH=true,API_AUTH_TOKEN="<STRONG_API_KEY>" \
+#     --project gcp-rr-hub-core
 
 # 3. Capture Backend URL
 BACKEND_URL=$(gcloud run services describe gcp-rr-hub-backend --region=me-west1 --project=gcp-rr-hub-core --format='value(status.url)')

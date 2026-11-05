@@ -48,6 +48,10 @@ try:
         API_V1_PREFIX: str = "/api/v1"
         ENVIRONMENT: str = "development"
 
+        # Authentication Configuration
+        ENABLE_API_AUTH: bool = False
+        API_AUTH_TOKEN: Optional[str] = None
+
         @property
         def cors_origins(self) -> List[str]:
             raw = self.CORS_ORIGINS if self.CORS_ORIGINS is not None else self.ALLOWED_CORS_ORIGINS
@@ -90,6 +94,9 @@ except ImportError:
         CORS_ORIGINS: Optional[Union[List[str], str]] = None
         API_V1_PREFIX: str = os.getenv("API_V1_PREFIX", "/api/v1")
         ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
+
+        ENABLE_API_AUTH: bool = os.getenv("ENABLE_API_AUTH", "false").lower() in ("true", "1", "yes")
+        API_AUTH_TOKEN: Optional[str] = os.getenv("API_AUTH_TOKEN", None)
 
         @property
         def cors_origins(self) -> List[str]:

@@ -891,6 +891,13 @@ flowchart LR
 ### 10.1 Backend Microservice Architecture
 The backend is built with **FastAPI (Python 3.10)**, structured across dedicated router modules under `backend/app/api/v1/` and service modules under `backend/app/services/`. It utilizes asynchronous execution, Pydantic v2 data validation schemas (`backend/app/models/`), in-memory LRU caching (`backend/app/core/cache.py`), and native Google Cloud client libraries (`google-cloud-bigquery`, `google-cloud-storage`, `google-cloud-workflows`, `google-cloud-monitoring`).
 
+#### 10.1.1 Authentication & Zero-Trust Ingress Layer
+The API plane incorporates a defense-in-depth authentication middleware (`backend/app/core/auth.py`) that guards all `/api/v1/*` routes while preserving unauthenticated access to health probes (`/health`, `/api/v1/health`), OpenAPI documentation (`/docs`, `/redoc`, `/openapi.json`), and the static UI assets:
+1. **Google Cloud Identity-Aware Proxy (IAP)**: In production deployments fronted by Cloud Load Balancing and IAP, the user's cryptographically verified email is extracted from the `X-Goog-Authenticated-User-Email` header (automatically stripping Google's `accounts.google.com:` namespace prefix).
+2. **Service Account OIDC Bearer Tokens**: Automated orchestration engines (such as Cloud Workflows `fleet_governance_cycle.yaml` executing scheduled IAM enforcement) authenticate seamlessly via standard OpenID Connect tokens (`Authorization: Bearer <token>`).
+3. **API Key Token Gate**: Administrative scripts and headless integrations can authenticate using an explicit pre-shared key supplied via the `X-API-Key` header or `API_AUTH_TOKEN` environment variable.
+4. **Configurable Development Toggle**: To guarantee zero downtime during local development, integration testing, and interactive stakeholder demonstrations, the auth layer is governed by `ENABLE_API_AUTH` (defaults to `False` in dev; set to `True` in production Cloud Run environments). When disabled, an administrative fallback identity (`AuthenticatedUser(email="local-admin@example-tre.org", role="PLATFORM_ADMIN")`) is injected without rejecting calls.
+
 ---
 
 ### 10.2 API Service Catalog

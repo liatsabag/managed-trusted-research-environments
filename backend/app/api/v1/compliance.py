@@ -1,6 +1,6 @@
 """API router for 5-Item Regulatory Checklist, Onboarding Gate, and IAM Enforcement."""
 
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, Depends, HTTPException, status
 
 from backend.app.models.compliance import (
@@ -83,6 +83,15 @@ async def scan_room_compliance(
     response_model=OnboardingGateResponse,
     summary="Get pre-flight onboarding compliance gate decision for a request",
 )
+async def get_onboarding_gate(
+    request_id: str,
+    service: ComplianceService = Depends(get_compliance_service),
+) -> OnboardingGateResponse:
+    """Retrieve pre-flight onboarding gate decision for a prospective room request without payload mutations."""
+    req = OnboardingGateRequest(request_id=request_id)
+    return service.evaluate_onboarding_gate(req)
+
+
 @router.post(
     "/requests/{request_id}/evaluate-gate",
     response_model=OnboardingGateResponse,
@@ -90,10 +99,10 @@ async def scan_room_compliance(
 )
 async def evaluate_onboarding_gate(
     request_id: str,
-    request: OnboardingGateRequest = None,
+    request: Optional[OnboardingGateRequest] = None,
     service: ComplianceService = Depends(get_compliance_service),
 ) -> OnboardingGateResponse:
-    """Execute pre-flight onboarding gate scan on a prospective room request without IAM mutations."""
+    """Execute pre-flight onboarding gate scan on a prospective room request."""
     req = request or OnboardingGateRequest(request_id=request_id)
     if req.request_id != request_id:
         req.request_id = request_id

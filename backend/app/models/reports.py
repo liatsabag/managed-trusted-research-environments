@@ -16,6 +16,15 @@ class ReportMetadata(BaseModel):
     supported_formats: List[str] = Field(default_factory=lambda: ["json", "csv", "pdf"])
 
 
+class AvailableReportDefinition(BaseModel):
+    """Standardized report definition and capabilities."""
+    report_type: str
+    title: str
+    description: str
+    endpoint: str
+    supported_formats: List[str]
+
+
 class FleetInventoryReportItem(BaseModel):
     """Row item in Room Fleet Inventory Report."""
     room_id: str

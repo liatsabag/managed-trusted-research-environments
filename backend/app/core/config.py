@@ -1,8 +1,9 @@
 """Application configuration module using Pydantic Settings with defensive fallback."""
 
+import json
 import os
 from functools import lru_cache
-from typing import List
+from typing import Any, List, Optional, Union
 
 try:
     from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -36,9 +37,31 @@ try:
         VERTEX_AI_LOCATION: str = "me-west1"
 
         # API & Networking Configuration
-        CORS_ORIGINS: List[str] = ["*"]
+        ALLOWED_CORS_ORIGINS: Union[List[str], str] = [
+            "http://localhost:8000",
+            "http://localhost:8080",
+            "http://localhost:3000",
+            "http://127.0.0.1:8000",
+            "http://127.0.0.1:8080",
+        ]
+        CORS_ORIGINS: Optional[Union[List[str], str]] = None
         API_V1_PREFIX: str = "/api/v1"
         ENVIRONMENT: str = "development"
+
+        @property
+        def cors_origins(self) -> List[str]:
+            raw = self.CORS_ORIGINS if self.CORS_ORIGINS is not None else self.ALLOWED_CORS_ORIGINS
+            if isinstance(raw, str):
+                cleaned = raw.strip()
+                if cleaned.startswith("[") and cleaned.endswith("]"):
+                    try:
+                        parsed = json.loads(cleaned)
+                        if isinstance(parsed, list):
+                            return [str(item).strip() for item in parsed if str(item).strip()]
+                    except Exception:
+                        pass
+                return [item.strip() for item in cleaned.split(",") if item.strip()]
+            return [str(item).strip() for item in raw]
 
 except ImportError:
     from pydantic import BaseModel
@@ -60,9 +83,28 @@ except ImportError:
         VERTEX_AI_MODEL: str = os.getenv("VERTEX_AI_MODEL", "gemini-3.7-flash")
         VERTEX_AI_LOCATION: str = os.getenv("VERTEX_AI_LOCATION", "me-west1")
 
-        CORS_ORIGINS: List[str] = ["*"]
+        ALLOWED_CORS_ORIGINS: Union[List[str], str] = os.getenv(
+            "ALLOWED_CORS_ORIGINS",
+            os.getenv("CORS_ORIGINS", "http://localhost:8000,http://localhost:8080,http://localhost:3000,http://127.0.0.1:8000"),
+        )
+        CORS_ORIGINS: Optional[Union[List[str], str]] = None
         API_V1_PREFIX: str = os.getenv("API_V1_PREFIX", "/api/v1")
         ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
+
+        @property
+        def cors_origins(self) -> List[str]:
+            raw = self.CORS_ORIGINS if self.CORS_ORIGINS is not None else self.ALLOWED_CORS_ORIGINS
+            if isinstance(raw, str):
+                cleaned = raw.strip()
+                if cleaned.startswith("[") and cleaned.endswith("]"):
+                    try:
+                        parsed = json.loads(cleaned)
+                        if isinstance(parsed, list):
+                            return [str(item).strip() for item in parsed if str(item).strip()]
+                    except Exception:
+                        pass
+                return [item.strip() for item in cleaned.split(",") if item.strip()]
+            return [str(item).strip() for item in raw]
 
 
 @lru_cache()

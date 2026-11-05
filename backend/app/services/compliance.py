@@ -5,6 +5,10 @@ import logging
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+try:
+    from google.cloud import bigquery
+except ImportError:
+    bigquery = None
 
 from backend.app.core.config import get_settings
 from backend.app.models.compliance import (
@@ -113,17 +117,24 @@ class ComplianceService:
 
         if self._bq_client:
             try:
-                ids_str = ", ".join(f"'{tid}'" for tid in target_ids)
                 query = f"""
                 SELECT item_id, room_id, room_type, item_type, item_name, status,
                        CAST(approval_date AS STRING) as approval_date,
                        CAST(expiration_date AS STRING) as expiration_date,
                        approver_name, document_uri, comments
                 FROM `{self.settings.GCP_PROJECT_ID}.hub_telemetry.ops_regulatory_checklist`
-                WHERE room_id IN ({ids_str})
-                ORDER BY CASE WHEN room_type = '{room_type}' THEN 0 ELSE 1 END, last_updated DESC
+                WHERE room_id IN UNNEST(@target_ids)
+                ORDER BY CASE WHEN room_type = @room_type THEN 0 ELSE 1 END, last_updated DESC
                 """
-                for r in self._bq_client.query(query).result():
+                job_config = None
+                if bigquery:
+                    job_config = bigquery.QueryJobConfig(
+                        query_parameters=[
+                            bigquery.ArrayQueryParameter("target_ids", "STRING", target_ids),
+                            bigquery.ScalarQueryParameter("room_type", "STRING", room_type),
+                        ]
+                    )
+                for r in self._bq_client.query(query, job_config=job_config).result():
                     parsed = parse_checklist_row(dict(r), room_id, room_type, today)
                     if parsed and parsed.item_type.value not in items:
                         items[parsed.item_type.value] = parsed
@@ -200,8 +211,7 @@ class ComplianceService:
     def scan_room_compliance(self, room_id: str) -> ComplianceScanResult:
         """Evaluate single room compliance and enforce IAM soft-downgrade/reactivate."""
         summary = self.get_room_compliance(room_id)
-        room_detail = self.fleet_service.get_room(room_id)
-        prev_iam = room_detail.status if room_detail else "ACTIVE"
+        prev_iam = summary.iam_state if summary.iam_state else "ACTIVE"
         action_taken, new_iam = None, prev_iam
         msg = f"Compliance verified for {room_id}. Overall status: {summary.overall_status.value}."
 
@@ -235,8 +245,16 @@ class ComplianceService:
         """Update live reg_research_rooms table in BigQuery."""
         if self._bq_client:
             try:
-                sql = f"UPDATE `{self.settings.GCP_PROJECT_ID}.hub_registry.reg_research_rooms` SET status = '{new_status}' WHERE room_id = '{room_id}'"
-                self._bq_client.query(sql).result()
+                sql = f"UPDATE `{self.settings.GCP_PROJECT_ID}.hub_registry.reg_research_rooms` SET status = @new_status WHERE room_id = @room_id"
+                job_config = None
+                if bigquery:
+                    job_config = bigquery.QueryJobConfig(
+                        query_parameters=[
+                            bigquery.ScalarQueryParameter("new_status", "STRING", new_status),
+                            bigquery.ScalarQueryParameter("room_id", "STRING", room_id),
+                        ]
+                    )
+                self._bq_client.query(sql, job_config=job_config).result()
             except Exception as e:
                 logger.warning("Failed updating room registry status in BQ: %s", e)
 
@@ -252,21 +270,34 @@ class ComplianceService:
 
         missing = [t for t, i in items.items() if i.status == RegulatoryItemStatus.MISSING]
         expired = [t for t, i in items.items() if i.status == RegulatoryItemStatus.EXPIRED]
+        pending_or_rejected = [t for t, i in items.items() if i.status in (RegulatoryItemStatus.PENDING_REVIEW, RegulatoryItemStatus.REJECTED) or not i.is_valid]
         warning = [t for t, i in items.items() if i.is_valid and i.days_remaining is not None and i.days_remaining <= 30]
 
-        if missing or expired:
+        blocked_reasons = []
+        if missing:
+            blocked_reasons.append(f"{len(missing)} missing prerequisite(s)")
+        if expired:
+            blocked_reasons.append(f"{len(expired)} expired approval(s)")
+        pending_other = [t for t in pending_or_rejected if t not in missing and t not in expired]
+        if pending_other:
+            blocked_reasons.append(f"{len(pending_other)} pending or rejected prerequisite(s)")
+
+        if blocked_reasons:
             decision = GateDecision.GATE_BLOCKED
-            reason = f"Onboarding blocked: {len(missing)} missing prerequisite(s) and {len(expired)} expired approval(s)."
+            reason = f"Onboarding blocked: {' and '.join(blocked_reasons)}."
+            effective_missing = list(dict.fromkeys(missing + pending_other))
         elif warning:
             decision = GateDecision.GATE_WARNING
             reason = f"Onboarding approved with warning: {len(warning)} item(s) expiring within 30 days."
+            effective_missing = missing
         else:
             decision = GateDecision.GATE_PASSED
             reason = "Pre-flight validation passed: all 5 prerequisite documents verified and active."
+            effective_missing = missing
 
         return OnboardingGateResponse(
             request_id=req_id, gate_decision=decision, items=items,
-            missing_items=missing, expired_items=expired, warning_items=warning,
+            missing_items=effective_missing, expired_items=expired, warning_items=warning,
             summary_reason=reason, evaluated_at=datetime.now(timezone.utc).isoformat(),
         )
 

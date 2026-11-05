@@ -92,11 +92,15 @@ class GeminiRiskService:
         """Retrieve active spoke rooms and their export bucket names."""
         reg_table = f"{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_REGISTRY_DATASET}.reg_research_rooms"
         query = f"SELECT room_id, export_bucket, spoke_project_id FROM `{reg_table}`"
+        job_config = None
         if room_id:
-            query += f" WHERE room_id = '{room_id}'"
+            query += " WHERE room_id = @room_id"
+            job_config = bigquery.QueryJobConfig(
+                query_parameters=[bigquery.ScalarQueryParameter("room_id", "STRING", room_id)]
+            )
         
         buckets = []
-        for r in self.bq_client.query(query).result():
+        for r in self.bq_client.query(query, job_config=job_config).result():
             b_name = r["export_bucket"].replace("gs://", "").strip("/")
             buckets.append({"room_id": r["room_id"], "bucket_name": b_name, "project_id": r["spoke_project_id"]})
         return buckets
@@ -399,15 +403,31 @@ Candidate Export File Content:
         """Record administrative approval or rejection for candidate file."""
         decision_status = "APPROVED" if req.action.upper() == "APPROVE" else "REJECTED"
         scans_table = f"{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_airlock_export_scans"
-        
-        # Update status in BigQuery table
-        update_sql = f"""
-            UPDATE `{scans_table}`
-            SET status = '{decision_status}'
-            WHERE room_id = '{req.room_id}' AND file_name = '{req.file_name}'
+        now_iso = datetime.now(timezone.utc).isoformat()
+        scan_id = f"scan-man-{uuid.uuid4().hex[:8]}"
+
+        # Upsert status in BigQuery ops_airlock_export_scans via parameterized MERGE
+        merge_sql = f"""
+            MERGE `{scans_table}` T
+            USING (SELECT @room_id AS room_id, @file_name AS file_name) S
+            ON T.room_id = S.room_id AND T.file_name = S.file_name
+            WHEN MATCHED THEN
+                UPDATE SET status = @decision_status, scanned_at = @now_iso
+            WHEN NOT MATCHED THEN
+                INSERT (scan_id, room_id, file_name, status, scanned_at, created_at)
+                VALUES (@scan_id, @room_id, @file_name, @decision_status, @now_iso, @now_iso);
         """
+        job_config = bigquery.QueryJobConfig(
+            query_parameters=[
+                bigquery.ScalarQueryParameter("room_id", "STRING", req.room_id),
+                bigquery.ScalarQueryParameter("file_name", "STRING", req.file_name),
+                bigquery.ScalarQueryParameter("decision_status", "STRING", decision_status),
+                bigquery.ScalarQueryParameter("now_iso", "STRING", now_iso),
+                bigquery.ScalarQueryParameter("scan_id", "STRING", scan_id),
+            ]
+        )
         try:
-            self.bq_client.query(update_sql).result()
+            self.bq_client.query(merge_sql, job_config=job_config).result()
         except Exception as e:
             logger.warning("Failed updating scan status in BigQuery: %s", e)
 

@@ -55,7 +55,8 @@ class ReportsService:
                 active_researchers_count=int(row.get("active_researchers_count") or 0),
                 created_at=str(row.get("created_at") or datetime.now(timezone.utc).isoformat()),
                 packages_count=int(row.get("packages_count") or 0),
-                inbound_bucket=row.get("inbound_bucket_name"), export_bucket=row.get("export_bucket_name"),
+                inbound_bucket=row.get("inbound_bucket") or row.get("inbound_bucket_name"),
+                export_bucket=row.get("export_bucket") or row.get("export_bucket_name"),
             ).dict() for row in rows
         ]
         meta = ReportMetadata(

@@ -77,6 +77,10 @@ class StateStore extends EventTarget {
     this.dispatchEvent(new CustomEvent("loadingChanged", { detail: isLoading }));
   }
 
+  triggerManualRefresh() {
+    this.dispatchEvent(new CustomEvent("manualRefreshRequested"));
+  }
+
   showToast(message, type = "info", duration = 4000) {
     const toastContainer = document.getElementById("toast-container");
     if (!toastContainer) return;

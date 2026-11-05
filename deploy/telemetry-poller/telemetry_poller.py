@@ -161,18 +161,18 @@ def sync_polled_telemetry_to_bigquery(
             MERGE `{HUB_PROJECT}.hub_telemetry.ops_notebook_sessions` T
             USING (
                 SELECT 
-                    '{r["room_id"]}' AS room_id,
-                    '{r["user_email"]}' AS user_email,
-                    DATE('{today}') AS session_date,
-                    '{r["notebook_name"]}' AS notebook_name,
-                    '{r["runtime_id"]}' AS runtime_id,
-                    '{r["machine_type"]}' AS machine_type,
-                    '{r["template_id"]}' AS runtime_template_id,
+                    @room_id AS room_id,
+                    @user_email AS user_email,
+                    DATE(@session_date) AS session_date,
+                    @notebook_name AS notebook_name,
+                    @runtime_id AS runtime_id,
+                    @machine_type AS machine_type,
+                    @template_id AS runtime_template_id,
                     1 AS total_events,
                     1 AS session_starts,
                     0 AS session_stops,
                     1 AS total_sessions,
-                    CAST({r.get("active_hours", 1.5)} AS NUMERIC) AS total_active_hours,
+                    CAST(@active_hours AS NUMERIC) AS total_active_hours,
                     CURRENT_TIMESTAMP() AS first_session_start,
                     CURRENT_TIMESTAMP() AS last_session_end
             ) S
@@ -188,7 +188,19 @@ def sync_polled_telemetry_to_bigquery(
                 INSERT (room_id, user_email, session_date, notebook_name, runtime_id, machine_type, runtime_template_id, total_events, session_starts, session_stops, total_sessions, total_active_hours, first_session_start, last_session_end)
                 VALUES (S.room_id, S.user_email, S.session_date, S.notebook_name, S.runtime_id, S.machine_type, S.runtime_template_id, S.total_events, S.session_starts, S.session_stops, S.total_sessions, S.total_active_hours, S.first_session_start, S.last_session_end);
             """
-            bq_client.query(sql).result()
+            job_cfg = bigquery.QueryJobConfig(
+                query_parameters=[
+                    bigquery.ScalarQueryParameter("room_id", "STRING", str(r.get("room_id", ""))),
+                    bigquery.ScalarQueryParameter("user_email", "STRING", str(r.get("user_email", ""))),
+                    bigquery.ScalarQueryParameter("session_date", "STRING", today),
+                    bigquery.ScalarQueryParameter("notebook_name", "STRING", str(r.get("notebook_name", ""))),
+                    bigquery.ScalarQueryParameter("runtime_id", "STRING", str(r.get("runtime_id", ""))),
+                    bigquery.ScalarQueryParameter("machine_type", "STRING", str(r.get("machine_type", ""))),
+                    bigquery.ScalarQueryParameter("template_id", "STRING", str(r.get("template_id", ""))),
+                    bigquery.ScalarQueryParameter("active_hours", "FLOAT64", float(r.get("active_hours", 1.5))),
+                ]
+            )
+            bq_client.query(sql, job_config=job_cfg).result()
         logger.info("Successfully synced %d polled notebook runtimes to BigQuery.", len(runtime_records))
 
     # 2. Merge into ops_ai_usage_metrics if AI records found
@@ -198,15 +210,15 @@ def sync_polled_telemetry_to_bigquery(
             MERGE `{HUB_PROJECT}.hub_telemetry.ops_ai_usage_metrics` T
             USING (
                 SELECT
-                    '{a["room_id"]}' AS room_id,
-                    '{a["project_id"]}' AS project_id,
-                    '{a["user_email"]}' AS user_email,
-                    DATE('{today}') AS usage_date,
+                    @room_id AS room_id,
+                    @project_id AS project_id,
+                    @user_email AS user_email,
+                    DATE(@usage_date) AS usage_date,
                     'aiplatform.googleapis.com' AS service_name,
-                    {a["call_count"]} AS total_inference_calls,
-                    {a["call_count"]} AS successful_calls,
+                    @call_count AS total_inference_calls,
+                    @call_count AS successful_calls,
                     0 AS failed_calls,
-                    {a["tokens"]} AS ai_token_count,
+                    @tokens AS ai_token_count,
                     CURRENT_TIMESTAMP() AS first_invoked_at,
                     CURRENT_TIMESTAMP() AS last_invoked_at
             ) S
@@ -221,7 +233,17 @@ def sync_polled_telemetry_to_bigquery(
                 INSERT (room_id, project_id, user_email, usage_date, service_name, total_inference_calls, successful_calls, failed_calls, ai_token_count, first_invoked_at, last_invoked_at)
                 VALUES (S.room_id, S.project_id, S.user_email, S.usage_date, S.service_name, S.total_inference_calls, S.successful_calls, S.failed_calls, S.ai_token_count, S.first_invoked_at, S.last_invoked_at);
             """
-            bq_client.query(sql).result()
+            job_cfg = bigquery.QueryJobConfig(
+                query_parameters=[
+                    bigquery.ScalarQueryParameter("room_id", "STRING", str(a.get("room_id", ""))),
+                    bigquery.ScalarQueryParameter("project_id", "STRING", str(a.get("project_id", ""))),
+                    bigquery.ScalarQueryParameter("user_email", "STRING", str(a.get("user_email", ""))),
+                    bigquery.ScalarQueryParameter("usage_date", "STRING", today),
+                    bigquery.ScalarQueryParameter("call_count", "INT64", int(a.get("call_count", 0))),
+                    bigquery.ScalarQueryParameter("tokens", "INT64", int(a.get("tokens", 0))),
+                ]
+            )
+            bq_client.query(sql, job_config=job_cfg).result()
         logger.info("Successfully synced %d polled AI usage records to BigQuery.", len(ai_records))
 
 

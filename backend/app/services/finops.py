@@ -359,6 +359,8 @@ class FinOpsService:
     @cached_endpoint(ttl_seconds=45, key_prefix="finops_forecast")
     def get_forecast(self, invoice_month: Optional[str] = None, start_date: Optional[str] = None, end_date: Optional[str] = None) -> FinOpsForecastResponse:
         inv_mo = _clean(invoice_month)
+        if not inv_mo and not start_date and not end_date:
+            inv_mo = self._get_current_invoice_month()
         state, total_fleet, _, _, _ = self._build_allocation(inv_mo, start_date, end_date)
         active_mo = inv_mo or (self._get_current_invoice_month() if state["invoice_month"] in ("ALL_TIME", "CUSTOM_RANGE") else state["invoice_month"])
         days_el, days_mo = self._get_days_context(active_mo)

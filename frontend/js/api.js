@@ -349,15 +349,6 @@ class ApiClient {
     });
   }
 
-  async getFinOpsSummary(invoiceMonth = null, startDate = null, endDate = null) {
-    const params = new URLSearchParams();
-    if (invoiceMonth) params.append("invoice_month", invoiceMonth);
-    if (startDate) params.append("start_date", startDate);
-    if (endDate) params.append("end_date", endDate);
-    const qs = params.toString() ? `?${params.toString()}` : "";
-    return await this.request(`/finops/summary${qs}`);
-  }
-
   /* ---------------- Reports & Governance Documentation ---------------- */
 
   async getReportsList() {

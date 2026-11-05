@@ -79,10 +79,25 @@ class FleetGovernanceService:
     ) -> DUAComplianceStatus:
         """Evaluate IRB and DUA expiration status and countdowns."""
         today = date.today()
-        h_str = irb_expiry.isoformat() if isinstance(irb_expiry, date) else str(irb_expiry) if irb_expiry else None
-        d_str = dua_expiry.isoformat() if isinstance(dua_expiry, date) else str(dua_expiry) if dua_expiry else None
-        h_days = (date.fromisoformat(h_str) - today).days if h_str else None
-        d_days = (date.fromisoformat(d_str) - today).days if d_str else None
+        def _to_date(val: Optional[Any]) -> Optional[date]:
+            if not val:
+                return None
+            if hasattr(val, "date") and callable(val.date):
+                return val.date()
+            if isinstance(val, date):
+                return val
+            val_str = str(val).strip()[:10]
+            try:
+                return date.fromisoformat(val_str)
+            except Exception:
+                return None
+
+        h_date = _to_date(irb_expiry)
+        d_date = _to_date(dua_expiry)
+        h_str = h_date.isoformat() if h_date else (str(irb_expiry)[:10] if irb_expiry else None)
+        d_str = d_date.isoformat() if d_date else (str(dua_expiry)[:10] if dua_expiry else None)
+        h_days = (h_date - today).days if h_date else None
+        d_days = (d_date - today).days if d_date else None
         is_h_valid = h_days >= 0 if h_days is not None else True
         is_d_valid = d_days >= 0 if d_days is not None else True
 

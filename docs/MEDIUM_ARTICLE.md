@@ -153,15 +153,15 @@ Shared cloud research environments frequently suffer from billing opacity. When 
 
 The platform's FinOps attribution engine bridges **ground-truth invoiced charges** from Google Cloud Billing exports (`view_billing_export`) with the physical **usage telemetry weights** collected in `ops_daily_compute_metrics`:
 
-* **BigQuery SQL Spend**: Apportioned proportionally by **scanned bytes billed**:
-  $$\text{Researcher SQL Spend} = \text{Total BQ Invoice} \times \left( \frac{\text{total\_bytes\_billed}}{\sum \text{Bytes}} \right)$$
+* **BigQuery SQL Spend**: Apportioned proportionally by **scanned bytes billed** (`total_bytes_billed`):
+  $$\text{Researcher SQL Spend} = \text{Total BQ Invoice} \times \left( \frac{\text{Researcher Scanned Bytes}}{\sum \text{Fleet Scanned Bytes}} \right)$$
   ensuring lightweight queries pay fractions of a cent while heavy scans pay proportionally.
-* **Interactive Compute Spend**: Apportioned by active **Colab runtime hours**:
-  $$\text{Researcher Compute Spend} = \text{Total Compute Invoice} \times \left( \frac{\text{notebook\_runtime\_hours}}{\sum \text{Hours}} \right)$$
-* **Vertex AI & Gemini Spend**: Apportioned by consumed **model tokens**:
-  $$\text{Researcher AI Spend} = \text{Total AI Invoice} \times \left( \frac{\text{ai\_token\_count}}{\sum \text{Tokens}} \right)$$
-* **Cloud Storage Spend**: Apportioned by physical storage volume:
-  $$\text{Researcher Storage Spend} = \text{Total Storage Invoice} \times \left( \frac{\text{storage\_bytes}}{\sum \text{Storage Bytes}} \right)$$
+* **Interactive Compute Spend**: Apportioned by active **Colab runtime hours** (`notebook_runtime_hours`):
+  $$\text{Researcher Compute Spend} = \text{Total Compute Invoice} \times \left( \frac{\text{Researcher Runtime Hours}}{\sum \text{Fleet Runtime Hours}} \right)$$
+* **Vertex AI & Gemini Spend**: Apportioned by consumed **model tokens** (`ai_token_count`):
+  $$\text{Researcher AI Spend} = \text{Total AI Invoice} \times \left( \frac{\text{Researcher AI Tokens}}{\sum \text{Fleet AI Tokens}} \right)$$
+* **Cloud Storage Spend**: Apportioned by physical **storage volume** (`storage_bytes`):
+  $$\text{Researcher Storage Spend} = \text{Total Storage Invoice} \times \left( \frac{\text{Researcher Storage Volume}}{\sum \text{Fleet Storage Volume}} \right)$$
 * **Zero-Drift Balance Invariant**: Background administrative runners and central infrastructure are grouped into an unallocated overhead pool. The sum of individual researcher spend plus shared overhead matches the exact invoiced GCP dollar amount with zero mathematical drift:
   $$\text{Total Invoiced} \equiv \sum \text{Researcher Spend} + \text{Shared Overhead}$$
 

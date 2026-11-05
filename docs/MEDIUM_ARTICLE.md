@@ -1,4 +1,4 @@
-# The Zero-Trust Research Room: Giving Data Teams Superpowers Without Risking It All
+# The Zero-Trust Research Room: Enabling Secure, High-Performance Analytics on Protected Data
 
 ### *A practical guide to scaling collaboration on protected data while maintaining absolute control over security, compliance, and budget.*
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 1. The Operational Challenge: Bridging Cloud Blueprints into a Unified Research Platform
+## 1. The Operational Challenge: Transforming Cloud Blueprints into a Unified Research Platform
 
 Google Cloud provides exceptional foundational building blocks for modern data analytics and secure collaboration: petabyte-scale analytics in **BigQuery**, zero-copy data sharing via **BQ Sharing**, cryptographic network isolation with **VPC Service Controls (VPC-SC)**, managed notebooks in **Colab Enterprise**, and rich **AI capabilities with Gemini**.
 
@@ -30,12 +30,12 @@ Designed not as a proprietary vendor product, but as an **extensible prototype a
 
 A **Research Room** is an on-demand, isolated cloud workspace provisioned for a specific research study, clinical cohort, or cross-institutional initiative.
 
-Rather than copying sensitive data to researcher laptops or unmonitored virtual machines, researchers enter an isolated Google Cloud workspace where they can leverage the full analytical power of modern cloud infrastructure while remaining within a cryptographic security perimeter:
+Rather than copying sensitive data to researcher laptops or unmonitored virtual machines, researchers enter an isolated Google Cloud workspace where they can use the full analytical power of modern cloud infrastructure while remaining within a cryptographic security perimeter:
 
 * **Zero-Copy Data Sharing & Privacy-Preserving Collaboration**: Organizations can publish and subscribe to shared datasets across distinct projects without physical data duplication using [BigQuery Sharing](https://cloud.google.com/bigquery/docs/analytics-hub-introduction), or perform privacy-preserving, multi-party SQL analysis without raw data exchange using [BigQuery Data Clean Rooms](https://cloud.google.com/bigquery/docs/data-clean-rooms).
 * **Collaborative Compute & Data Science Tooling**: Researchers work in managed [Colab Enterprise](https://cloud.google.com/colab/docs/introduction) and [BigQuery Studio Notebooks](https://docs.cloud.google.com/bigquery/docs/programmatic-analysis), running not only SQL but **Python with full support for popular data science and bioinformatics libraries**. These runtimes integrate **Gemini-powered Data Science Agent capabilities** that actively assist researchers with natural language SQL/Python generation, automated exploratory data analysis, intelligent charting, and inline code troubleshooting directly inside the workspace.
-* **Machine Learning & AI**: Train and evaluate statistical and machine learning models in-place using [BigQuery ML (BQML)](https://cloud.google.com/bigquery/docs/bqml-introduction) or integrate multimodal foundation models directly within SQL queries using [BigQuery AI functions](https://docs.cloud.google.com/bigquery/docs/ai-introduction) via [BigQuery](https://cloud.google.com/bigquery/docs/introduction) and [Vertex AI](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models), eliminating external compute transfers.
-* **Continuous Usage Tracking & Auditing**: Every query scanned byte (`total_bytes_billed`), Colab notebook session hour, AI token consumed (`ai_token_count`), and storage footprint is continuously recorded in near-real-time telemetry marts and Cloud Audit Logs.
+* **Machine Learning & AI**: Train and evaluate statistical and machine learning models in-place using [BigQuery ML (BQML)](https://cloud.google.com/bigquery/docs/bqml-introduction) or integrate multimodal foundation models directly within SQL queries using [BigQuery AI functions](https://docs.cloud.google.com/bigquery/docs/ai-introduction) powered by [Vertex AI](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models), eliminating external compute transfers.
+* **Continuous Usage Tracking & Auditing**: Every query-scanned byte (`total_bytes_billed`), Colab notebook session hour, AI token consumed (`ai_token_count`), and storage footprint is continuously recorded in near-real-time telemetry marts and Cloud Audit Logs.
 
 The platform structures this workspace around the internationally recognized **"Five Safes"** framework: **Safe People**, **Safe Projects**, **Safe Settings**, **Safe Data** *(isolated project datasets and zero-copy sharing; note that row-level security and column masking can be added if required, but are not implemented here)*, and **Safe Outputs**.
 
@@ -57,7 +57,7 @@ The management platform provides distinct visibility for central administrators 
 The architecture organizes the Google Cloud environment into a centralized **Hub-and-Spoke topology**, enclosed within a **VPC Service Controls (VPC-SC)** security perimeter:
 
 ![GCP Multi-Tenant TRE Target Architecture](assets/gcp_tre_architecture.png)
-*Figure 2: Master Target Architecture Blueprint of the Managed Trusted Research Environment on Google Cloud.*
+*Figure 1: Master Target Architecture Blueprint of the Managed Trusted Research Environment on Google Cloud.*
 
 ---
 
@@ -104,10 +104,10 @@ The platform isolates each research room within a dedicated GCP project and spok
 Compliance agreements like Data Use Agreements (DUAs), Institutional Review Board (IRB) ethics approvals, and statutory transfer permits have strict, legally enforceable expiration horizons. Rather than relying on static calendar reminders or risking non-compliant data access, the platform implements an automated compliance evaluation engine paired with a **Two-Tier IAM Governance Lifecycle** and Human-in-the-Loop (HITL) oversight:
 
 ![Compliance & Onboarding Gates](assets/screenshots/ui_compliance_governance.png)
-*Figure 3: Central compliance dashboard tracking 5-item regulatory checklists, approval expiration dates, and human-in-the-loop IAM soft-downgrade and suspension enforcement.*
+*Figure 2: Central compliance dashboard tracking 5-item regulatory checklists, approval expiration dates, and human-in-the-loop IAM soft-downgrade and suspension enforcement.*
 
 1. **Multimodal Agreement Parsing in BigQuery SQL**: Unstructured PDF agreements stored in Cloud Storage are indexed as BigQuery Object Tables. A SQL stored procedure calls a BigQuery ML remote model backed by **Gemini models** (`ML.GENERATE_TEXT`), parsing legal text to extract approval authorities and statutory expiration dates directly into the regulatory checklist table (`ops_regulatory_checklist`).
-2. **Two-Tier IAM Enforcement (Grace Window vs. Statutory Expiration)**:
+2. **Two-Tier IAM Enforcement (Grace Window vs. Statutory Expiry)**:
    * **Tier 1: Pre-Expiration Grace Window (`SOFT_DOWNGRADED`)**: During the scheduled project closeout period (e.g., 30 days prior to DUA expiry), the room enters a read-only wrap-up state. Compute and modification permissions are immediately stripped (`roles/aiplatform.user`, `roles/notebooks.runner`, `roles/bigquery.dataEditor`, `roles/storage.objectAdmin`), while read-only viewer roles (`roles/bigquery.dataViewer`, `roles/storage.objectViewer`, `roles/bigquery.jobUser`, `roles/viewer`) are temporarily retained so investigators can inspect final analyses and stage candidate summary files for Air-Lock review.
    * **Tier 2: Hard Statutory Expiry (`SUSPENDED`)**: Once a DUA or IRB approval passes its statutory expiration date without active renewal, or upon immediate regulatory revocation, the room transitions to `SUSPENDED`. In this state, **all IAM permissions—including `dataViewer` and `objectViewer`—are completely revoked**, permanently severing all access to spoke project data and resources.
 3. **Automated Horizon Detection with Human-in-the-Loop Oversight**: Automated Cloud Workflows continuously sweep the compliance horizon, alerting Data Protection Officers (DPOs) and queuing recommended actions. DPOs and central platform administrators maintain explicit one-click governance controls (`Soft Downgrade`, `Reactivate Access`, and `Suspend Room`) from the Central Administrator Portal, executing atomic Cloud Resource Manager IAM policy mutations with full immutable audit logging.
@@ -126,7 +126,7 @@ To allow legitimate research outputs (such as aggregate statistics, summary char
 3. **DPO Review & Decoupled Release**: Data Protection Officers inspect the file preview, column distributions, detected SDP infoTypes, and Gemini risk findings in the portal before granting approval or rejection. Downstream extraction (such as SFTP delivery or integration with external institutional portals) is decoupled as a customer integration hook.
 
 ![Air-Lock Detailed Scan Findings](assets/screenshots/ui_airlock_risk_expanded.png)
-*Figure 4: Expanded Gemini AI Privacy Assessment Card displaying detailed scan findings, including detected PII tokens, risk scoring, rationale, and policy decision controls.*
+*Figure 3: Expanded Gemini AI Privacy Assessment Card displaying detailed scan findings, including detected PII tokens, risk scoring, rationale, and policy decision controls.*
 
 ---
 
@@ -135,15 +135,15 @@ To allow legitimate research outputs (such as aggregate statistics, summary char
 To deliver continuous observability across isolated spoke projects without manual log aggregation, the platform deploys an automated **Two-Speed Telemetry Engine**:
 
 ![Two-Speed Telemetry Ingestion & Curation Architecture](assets/gcp_tre_telemetry_pipeline.png)
-*Figure 5: Two-speed telemetry architecture synchronizing 15-minute operational usage and daily metric curation into BigQuery analytical marts.*
+*Figure 4: Two-speed telemetry architecture synchronizing 15-minute operational usage and daily metric curation into BigQuery analytical marts.*
 
 * **15-Minute Operational Loop**:
-  * **BigQuery Queries**: Ingested directly from spoke `INFORMATION_SCHEMA.JOBS_BY_PROJECT` into `ops_bigquery_usage_15m` via scheduled stored procedure (`sp_sync_bigquery_queries`).
-  * **Interactive Notebooks & AI Metrics**: Active Colab Enterprise runtime hours and Vertex AI inference tokens are polled directly from Vertex AI and Cloud Monitoring APIs by a scheduled Cloud Run job (`rr-telemetry-poller`).
-  * **Audit Event Stream**: Cloud Audit Logs from all spoke projects are streamed via GCP Log Router sinks (`sk-rr-audit-to-hub`) directly into BigQuery and curated every 15 minutes (`ops_audit_events_curated`).
+   * **BigQuery Queries**: Ingested directly from spoke `INFORMATION_SCHEMA.JOBS_BY_PROJECT` into `ops_bigquery_usage_15m` via scheduled stored procedure (`sp_sync_bigquery_queries`).
+   * **Interactive Notebooks & AI Metrics**: Active Colab Enterprise runtime hours and Vertex AI inference tokens are polled directly from Vertex AI and Cloud Monitoring APIs by a scheduled Cloud Run job (`rr-telemetry-poller`).
+   * **Audit Event Stream**: Cloud Audit Logs from all spoke projects are streamed via GCP Log Router sinks (`sk-rr-audit-to-hub`) directly into BigQuery and curated every 15 minutes (`ops_audit_events_curated`).
 * **Daily Aggregation Loop**:
-  * Daily physical storage snapshots from GCS Storage Insights are correlated with audit logs to identify dataset creators (`ops_storage_daily`).
-  * At 01:00 UTC, a scheduled stored procedure (`sp_aggregate_daily_compute_metrics`) consolidates queries, compute hours, AI tokens, and storage bytes into unified daily analytical marts.
+   * Daily physical storage snapshots from GCS Storage Insights are correlated with audit logs to identify dataset creators (`ops_storage_daily`).
+   * At 01:00 UTC, a scheduled stored procedure (`sp_aggregate_daily_compute_metrics`) consolidates queries, compute hours, AI tokens, and storage bytes into unified daily analytical marts.
 
 ---
 
@@ -153,19 +153,25 @@ Shared cloud research environments frequently suffer from billing opacity. When 
 
 The platform's FinOps attribution engine bridges **ground-truth invoiced charges** from Google Cloud Billing exports (`view_billing_export`) with the physical **usage telemetry weights** collected in `ops_daily_compute_metrics`:
 
-* **BigQuery SQL Spend**: Apportioned proportionally by **scanned bytes billed** (`total_bytes_billed` / $\sum \text{Bytes}$), ensuring lightweight queries pay fractions of a cent while heavy scans pay proportionally.
-* **Interactive Compute Spend**: Apportioned by active **Colab runtime hours** (`notebook_runtime_hours` / $\sum \text{Hours}$).
-* **Vertex AI & Gemini Spend**: Apportioned by consumed **model tokens** (`ai_token_count` / $\sum \text{Tokens}$).
-* **Cloud Storage Spend**: Apportioned by physical storage volume (**`storage_bytes`** / $\sum \text{Storage}$).
-* **Zero-Drift Balance Invariant**: Background administrative runners and central infrastructure are grouped into an unallocated overhead pool. The sum of individual researcher spend plus shared overhead matches the exact invoiced GCP dollar amount with zero mathematical drift ($\text{Total Invoiced} \equiv \sum \text{Researcher Spend} + \text{Shared Overhead}$).
+* **BigQuery SQL Spend**: Apportioned proportionally by **scanned bytes billed**:
+  $$\text{Researcher SQL Spend} = \text{Total BQ Invoice} \times \left( \frac{\text{total\_bytes\_billed}}{\sum \text{Bytes}} \right)$$
+  ensuring lightweight queries pay fractions of a cent while heavy scans pay proportionally.
+* **Interactive Compute Spend**: Apportioned by active **Colab runtime hours**:
+  $$\text{Researcher Compute Spend} = \text{Total Compute Invoice} \times \left( \frac{\text{notebook\_runtime\_hours}}{\sum \text{Hours}} \right)$$
+* **Vertex AI & Gemini Spend**: Apportioned by consumed **model tokens**:
+  $$\text{Researcher AI Spend} = \text{Total AI Invoice} \times \left( \frac{\text{ai\_token\_count}}{\sum \text{Tokens}} \right)$$
+* **Cloud Storage Spend**: Apportioned by physical storage volume:
+  $$\text{Researcher Storage Spend} = \text{Total Storage Invoice} \times \left( \frac{\text{storage\_bytes}}{\sum \text{Storage Bytes}} \right)$$
+* **Zero-Drift Balance Invariant**: Background administrative runners and central infrastructure are grouped into an unallocated overhead pool. The sum of individual researcher spend plus shared overhead matches the exact invoiced GCP dollar amount with zero mathematical drift:
+  $$\text{Total Invoiced} \equiv \sum \text{Researcher Spend} + \text{Shared Overhead}$$
 
 Costs are reconciled across four hierarchical reporting levels: **Fleet**, **Institute**, **Research Room**, and **Researcher**:
 
 ![Multi-Level FinOps Explorer & Spend Attribution](assets/screenshots/ui_finops_multi_level_explorer.png)
-*Figure 6a: Central FinOps Explorer tracking cloud cost categories, physical telemetry capacity meters, and multi-level spend attribution across rooms, SKUs, researchers, and institutes with verified balanced reconciliation.*
+*Figure 5a: Central FinOps Explorer tracking cloud cost categories, physical telemetry capacity meters, and multi-level spend attribution across rooms, SKUs, researchers, and institutes with verified balanced reconciliation.*
 
 ![Granular Researcher Spend Attribution](assets/screenshots/ui_finops_researcher_breakdown.png)
-*Figure 6b: Granular researcher breakdown attributing actual spend down to individual investigators based on scanned BigQuery bytes, Colab runtime hours, and AI tokens.*
+*Figure 5b: Granular researcher breakdown attributing actual spend down to individual investigators based on scanned BigQuery bytes, Colab runtime hours, and AI tokens.*
 
 ---
 
@@ -183,7 +189,7 @@ Building this platform natively on Google Cloud provides distinct architectural 
 
 ## 6. Reusability: An Extensible Blueprint for Regulated Collaboration
 
-While this platform was engineered around healthcare and biomedical compliance, its architecture is **100% domain-agnostic**:
+While this platform was engineered around healthcare and biomedical compliance, its architecture is **fully domain-agnostic**:
 
 * **Financial Services & Banking**: Secure enclaves where data science teams can analyze fraud patterns across customer records without exposing raw account numbers.
 * **Cross-Organization Consortia**: Collaborative hubs where universities, enterprises, or government agencies share sensitive data under strict usage quotas and cost accounting.
@@ -211,8 +217,8 @@ Operating a Trusted Research Environment does not require sacrificing researcher
 
 * **Unified Multi-Tenant Governance**: Eliminate administrative silos by managing all tenant research workspaces, access states, and audit trails from a single centralized control plane.
 * **Zero Egress Risk with Governed Air-Lock**: Keep analytical datasets enclosed within private security perimeters, combined with an automated, AI-assisted quarantine review for legitimate research outputs before release.
-* **Statutory Compliance & Governed Soft-Downgrades**: Enforce continuous AI verification of regulatory checklists (IRB, DUA, HIPAA) paired with human-in-the-loop IAM soft-downgrades and suspension to maintain analytical continuity without regulatory non-compliance.
-* **Two-Tiered Proportional FinOps**: Reconcile ground-truth cloud billing exports against physical consumption weights to allocate costs down to individual researchers with verified zero financial drift.
+* **Statutory Compliance & Governed Soft-Downgrades**: Enforce continuous AI verification of regulatory checklists (IRB, DUA, HIPAA) paired with human-in-the-loop IAM soft-downgrades and suspension to maintain analytical continuity while ensuring regulatory compliance.
+* **Multi-Level Proportional FinOps**: Reconcile ground-truth cloud billing exports against physical consumption weights to allocate costs down to individual researchers with verified zero financial drift.
 * **Zero-Copy Data Collaboration**: Publish and subscribe to shared datasets across independent projects via BigQuery Analytics Hub without copying petabytes of sensitive data.
 
 ---
@@ -223,4 +229,4 @@ Explore the full open-source reference implementation on GitHub at [managed-trus
 
 ---
 
-*Tags: #GoogleCloud #DataGovernance #FinOps #BigQuery #VertexAI #ZeroTrust #CloudArchitecture*
+**Keywords**: Google Cloud, Data Governance, FinOps, BigQuery, Vertex AI, Zero-Trust Architecture.

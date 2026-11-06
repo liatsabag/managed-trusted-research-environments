@@ -132,26 +132,26 @@ class TestComplianceService(unittest.TestCase):
 
     def test_api_room_compliance_controller(self):
         """Verify get_room_compliance API controller returns valid summary."""
-        res = asyncio.run(get_room_compliance("rr-oncology-01", service=self.service))
+        res = get_room_compliance("rr-oncology-01", service=self.service)
         self.assertEqual(res.room_id, "rr-oncology-01")
         self.assertEqual(res.overall_status, RoomOverallCompliance.COMPLIANT)
         self.assertEqual(len(res.items), 5)
 
     def test_api_room_scan_controller(self):
         """Verify scan_room_compliance API controller executes live scan."""
-        res = asyncio.run(scan_room_compliance("rr-oncology-01", service=self.service))
+        res = scan_room_compliance("rr-oncology-01", service=self.service)
         self.assertEqual(res.room_id, "rr-oncology-01")
         self.assertEqual(res.scanned_documents_count, 5)
 
     def test_api_onboarding_gate_blocked_controller(self):
         """Verify evaluate_onboarding_gate API controller blocks non-compliant requests."""
-        res = asyncio.run(evaluate_onboarding_gate("rr-immunology-05", service=self.service))
+        res = evaluate_onboarding_gate("rr-immunology-05", service=self.service)
         self.assertEqual(res.gate_decision, GateDecision.GATE_BLOCKED)
         self.assertIn("Data_Transfer", res.missing_items)
 
     def test_api_horizons_controller(self):
         """Verify get_compliance_horizons API controller returns fleet forecast."""
-        res = asyncio.run(get_compliance_horizons(service=self.service))
+        res = get_compliance_horizons(service=self.service)
         self.assertIsInstance(res.expiring_30_days, list)
         self.assertIsInstance(res.expiring_60_days, list)
         self.assertIsInstance(res.expiring_90_days, list)

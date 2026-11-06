@@ -2,6 +2,7 @@
 
 import json
 import logging
+import re
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -55,7 +56,7 @@ def parse_checklist_row(r: Dict[str, Any], room_id: str, room_type: str, today: 
         try:
             exp_d = date.fromisoformat(str(exp_str))
             days_rem = (exp_d - today).days
-            is_exp = days_rem < 0
+            is_exp = days_rem <= 0
         except ValueError:
             pass
 
@@ -115,6 +116,13 @@ class ComplianceService:
 
         today = date.today()
 
+        # Input sanitization against SQL injection for BigQuery identifiers
+        project_id = self.settings.GCP_PROJECT_ID
+        telemetry_dataset = getattr(self.settings, "HUB_TELEMETRY_DATASET", "hub_telemetry")
+        if not re.match(r"^[a-zA-Z0-9_.-]+$", project_id) or not re.match(r"^[a-zA-Z0-9_.-]+$", telemetry_dataset):
+            logger.error("Invalid BigQuery project or dataset identifier format: %s.%s", project_id, telemetry_dataset)
+            return items
+
         if self._bq_client:
             try:
                 query = f"""
@@ -122,7 +130,7 @@ class ComplianceService:
                        CAST(approval_date AS STRING) as approval_date,
                        CAST(expiration_date AS STRING) as expiration_date,
                        approver_name, document_uri, comments
-                FROM `{self.settings.GCP_PROJECT_ID}.hub_telemetry.ops_regulatory_checklist`
+                FROM `{project_id}.{telemetry_dataset}.ops_regulatory_checklist`
                 WHERE room_id IN UNNEST(@target_ids)
                 ORDER BY CASE WHEN room_type = @room_type THEN 0 ELSE 1 END, last_updated DESC
                 """
@@ -243,9 +251,15 @@ class ComplianceService:
 
     def _update_room_registry_status(self, room_id: str, new_status: str) -> None:
         """Update live reg_research_rooms table in BigQuery."""
+        project_id = self.settings.GCP_PROJECT_ID
+        registry_dataset = getattr(self.settings, "HUB_REGISTRY_DATASET", "hub_registry")
+        if not re.match(r"^[a-zA-Z0-9_.-]+$", project_id) or not re.match(r"^[a-zA-Z0-9_.-]+$", registry_dataset):
+            logger.error("Invalid BigQuery project or dataset identifier format: %s.%s", project_id, registry_dataset)
+            return
+
         if self._bq_client:
             try:
-                sql = f"UPDATE `{self.settings.GCP_PROJECT_ID}.hub_registry.reg_research_rooms` SET status = @new_status WHERE room_id = @room_id"
+                sql = f"UPDATE `{project_id}.{registry_dataset}.reg_research_rooms` SET status = @new_status WHERE room_id = @room_id"
                 job_config = None
                 if bigquery:
                     job_config = bigquery.QueryJobConfig(
@@ -289,11 +303,11 @@ class ComplianceService:
         elif warning:
             decision = GateDecision.GATE_WARNING
             reason = f"Onboarding approved with warning: {len(warning)} item(s) expiring within 30 days."
-            effective_missing = missing
+            effective_missing = list(dict.fromkeys(missing + pending_other))
         else:
             decision = GateDecision.GATE_PASSED
             reason = "Pre-flight validation passed: all 5 prerequisite documents verified and active."
-            effective_missing = missing
+            effective_missing = list(dict.fromkeys(missing + pending_other))
 
         return OnboardingGateResponse(
             request_id=req_id, gate_decision=decision, items=items,
@@ -310,11 +324,11 @@ class ComplianceService:
                 report.non_compliant_rooms.append(room.room_id)
             for item in summary.items.values():
                 if item.days_remaining is not None and item.is_valid:
-                    if item.days_remaining <= 30:
+                    if 0 < item.days_remaining <= 30:
                         report.expiring_30_days.append(item)
-                    elif item.days_remaining <= 60:
+                    elif 30 < item.days_remaining <= 60:
                         report.expiring_60_days.append(item)
-                    elif item.days_remaining <= 90:
+                    elif 60 < item.days_remaining <= 90:
                         report.expiring_90_days.append(item)
         return report
 
@@ -326,7 +340,12 @@ class ComplianceService:
         """Fetch all prospective research room onboarding requests from BigQuery."""
         if not self._bq_client:
             return []
-        table_id = f"{self.settings.GCP_PROJECT_ID}.{self.settings.HUB_TELEMETRY_DATASET}.ops_room_requests"
+        project_id = self.settings.GCP_PROJECT_ID
+        telemetry_dataset = getattr(self.settings, "HUB_TELEMETRY_DATASET", "hub_telemetry")
+        if not re.match(r"^[a-zA-Z0-9_.-]+$", project_id) or not re.match(r"^[a-zA-Z0-9_.-]+$", telemetry_dataset):
+            logger.error("Invalid BigQuery identifier: %s.%s", project_id, telemetry_dataset)
+            return []
+        table_id = f"{project_id}.{telemetry_dataset}.ops_room_requests"
         query = f"""
             SELECT request_id, proposed_room_id, room_name, institute_id, requested_by,
                    status, gate_decision, COALESCE(budget_limit_usd, expected_funds_usd, 0.0) AS budget_limit_usd,

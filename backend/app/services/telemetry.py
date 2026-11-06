@@ -1,4 +1,5 @@
 import logging
+import re
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
@@ -113,15 +114,32 @@ class TelemetryService:
         if not rooms:
             return []
 
+        # Validate identifiers to prevent SQL injection into INFORMATION_SCHEMA table paths
+        sanitized_rooms = []
+        for r in rooms:
+            spoke_p = str(r.get("spoke_project_id", "")).strip()
+            rm_id = str(r.get("room_id", "")).strip()
+            if re.match(r"^[a-zA-Z0-9_-]+$", spoke_p) and re.match(r"^[a-zA-Z0-9_-]+$", rm_id):
+                sanitized_rooms.append(r)
+            else:
+                logger.warning("Skipping spoke project with invalid identifier chars: %s (%s)", spoke_p, rm_id)
+
+        if not sanitized_rooms:
+            return []
+
+        region = self.settings.GCP_REGION
+        if not re.match(r"^[a-zA-Z0-9_-]+$", region):
+            region = "me-west1"
+
         selects = [
             f"""SELECT job_id, '{r['room_id']}' AS room_id, project_id, user_email, query AS raw_query,
                 COALESCE(total_bytes_billed, total_bytes_processed, 0) AS bytes_billed,
                 COALESCE(total_slot_ms, 0) AS slot_ms, start_time, end_time,
                 TIMESTAMP_DIFF(end_time, start_time, SECOND) AS duration_seconds, state,
                 error_result.message AS error_message, creation_time
-                FROM `{r['spoke_project_id']}`.`region-{self.settings.GCP_REGION}`.INFORMATION_SCHEMA.JOBS_BY_PROJECT
+                FROM `{r['spoke_project_id']}`.`region-{region}`.INFORMATION_SCHEMA.JOBS_BY_PROJECT
                 WHERE job_type = 'QUERY'"""
-            for r in rooms
+            for r in sanitized_rooms
         ]
         unions = " UNION ALL ".join(selects)
 
@@ -324,6 +342,7 @@ class TelemetryService:
             message="All 5 telemetry curation and aggregation stored procedures executed successfully.",
         )
 
+    @cached_endpoint(ttl_seconds=60, key_prefix="room_inventory")
     def get_room_inventory(self, room_id: str) -> RoomAssetInventory:
         """Query BigQuery datasets/tables and Cloud Storage buckets for room asset inventory."""
         target_room = room_id.strip() if isinstance(room_id, str) else ""

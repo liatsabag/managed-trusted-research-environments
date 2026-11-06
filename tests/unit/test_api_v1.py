@@ -53,7 +53,7 @@ class TestAPIv1Controllers(unittest.TestCase):
     def test_rooms_list_controller(self):
         """Verify list_rooms controller returns 4 room summaries."""
         service = get_fleet_service()
-        rooms = asyncio.run(list_rooms(service=service))
+        rooms = list_rooms(service=service)
         self.assertEqual(len(rooms), 4)
         room_ids = [r.room_id for r in rooms]
         self.assertIn("rr-oncology-01", room_ids)
@@ -61,32 +61,32 @@ class TestAPIv1Controllers(unittest.TestCase):
     def test_room_detail_controller(self):
         """Verify get_room controller returns complete room detail."""
         service = get_fleet_service()
-        room = asyncio.run(get_room("rr-oncology-01", service=service))
+        room = get_room("rr-oncology-01", service=service)
         self.assertEqual(room.room_id, "rr-oncology-01")
         self.assertEqual(len(room.researchers), 2)
 
     def test_room_packages_controller(self):
         """Verify get_room_packages controller."""
         service = get_fleet_service()
-        packages = asyncio.run(get_room_packages("rr-oncology-01", service=service))
+        packages = get_room_packages("rr-oncology-01", service=service)
         self.assertGreater(len(packages), 0)
 
     def test_room_downgrade_and_reactivate_controller(self):
         """Verify IAM downgrade and reactivation lifecycle controllers."""
         service = get_fleet_service()
         down_req = DowngradeRequest(reason="DUA expiration check")
-        down_res = asyncio.run(downgrade_room("rr-oncology-01", down_req, service=service))
+        down_res = downgrade_room("rr-oncology-01", down_req, service=service)
         self.assertEqual(down_res.action.lower(), "downgrade")
         self.assertEqual(down_res.room_id, "rr-oncology-01")
 
-        react_res = asyncio.run(reactivate_room("rr-oncology-01", service=service))
+        react_res = reactivate_room("rr-oncology-01", service=service)
         self.assertEqual(react_res.action.lower(), "reactivate")
         self.assertEqual(react_res.room_id, "rr-oncology-01")
 
     def test_institutes_list_controller(self):
         """Verify list_institutes controller returns 4 institutes."""
         service = get_fleet_service()
-        institutes = asyncio.run(list_institutes(service=service))
+        institutes = list_institutes(service=service)
         self.assertEqual(len(institutes), 4)
 
 

@@ -449,16 +449,15 @@ class FleetGovernanceService:
         # Invalidate in-memory cache to reflect immediately across all tabs
         cache.invalidate()
 
-        aff_rows = list(self.bq_client.query(f"SELECT primary_email FROM `{ds}.reg_researchers` WHERE room_id = @room_id", job_config=job_config).result())
         action_name = "downgrade" if new_status == "SOFT_DOWNGRADED" else ("reactivate" if new_status == "ACTIVE" else "suspend")
         return RoomActionResponse(
             room_id=room_id,
             action=action_name,
             previous_status=prev_status,
             new_status=new_status,
-            affected_researchers=[r["primary_email"] for r in aff_rows],
+            affected_researchers=room_researchers,
             success=True,
-            message=f"Research room '{room_id}' status updated to {new_status}. {reason or ''}".strip(),
+            message=f"Room {room_id} transitioned from {prev_status} to {new_status}. Spoke IAM policy updated for {len(room_researchers)} researcher(s). Reason: {reason or 'Administrative update'}",
             timestamp=datetime.now(timezone.utc).isoformat(),
         )
 

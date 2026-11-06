@@ -351,31 +351,29 @@ class ApiClient {
 
   /* ---------------- Reports & Governance Documentation ---------------- */
 
+  static REPORT_ENDPOINTS = {
+    FLEET_INVENTORY: '/reports/fleet-inventory',
+    COMPLIANCE_EXCEPTIONS: '/reports/compliance-exceptions',
+    APPROVAL_HORIZON: '/reports/approval-horizon',
+    FINOPS_BILLING: '/reports/cost-finops',
+    EGRESS_AUDIT: '/reports/egress-audit',
+  };
+
+  _resolveReportEndpoint(reportType) {
+    return ApiClient.REPORT_ENDPOINTS[reportType] || `/reports/${reportType.toLowerCase().replace(/_/g, '-')}`;
+  }
+
   async getReportsList() {
     return await this.request('/reports/list');
   }
 
   async getReport(reportType, format = "json") {
-    const endpointMap = {
-      FLEET_INVENTORY: '/reports/fleet-inventory',
-      COMPLIANCE_EXCEPTIONS: '/reports/compliance-exceptions',
-      APPROVAL_HORIZON: '/reports/approval-horizon',
-      FINOPS_BILLING: '/reports/cost-finops',
-      EGRESS_AUDIT: '/reports/egress-audit',
-    };
-    const endpoint = endpointMap[reportType] || `/reports/${reportType.toLowerCase().replace(/_/g, '-')}`;
+    const endpoint = this._resolveReportEndpoint(reportType);
     return await this.request(`${endpoint}?format=${format}`);
   }
 
   getReportDownloadUrl(reportType, format = "csv") {
-    const endpointMap = {
-      FLEET_INVENTORY: '/reports/fleet-inventory',
-      COMPLIANCE_EXCEPTIONS: '/reports/compliance-exceptions',
-      APPROVAL_HORIZON: '/reports/approval-horizon',
-      FINOPS_BILLING: '/reports/cost-finops',
-      EGRESS_AUDIT: '/reports/egress-audit',
-    };
-    const endpoint = endpointMap[reportType] || `/reports/${reportType.toLowerCase().replace(/_/g, '-')}`;
+    const endpoint = this._resolveReportEndpoint(reportType);
     return `${this.baseUrl}${endpoint}?format=${format}`;
   }
 

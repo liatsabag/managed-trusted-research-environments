@@ -51,6 +51,8 @@ try:
         # Authentication Configuration
         ENABLE_API_AUTH: bool = False
         API_AUTH_TOKEN: Optional[str] = None
+        IAP_AUDIENCE: Optional[str] = None
+        OIDC_AUDIENCE: Optional[str] = None
 
         @property
         def cors_origins(self) -> List[str]:
@@ -97,6 +99,8 @@ except ImportError:
 
         ENABLE_API_AUTH: bool = os.getenv("ENABLE_API_AUTH", "false").lower() in ("true", "1", "yes")
         API_AUTH_TOKEN: Optional[str] = os.getenv("API_AUTH_TOKEN", None)
+        IAP_AUDIENCE: Optional[str] = os.getenv("IAP_AUDIENCE", None)
+        OIDC_AUDIENCE: Optional[str] = os.getenv("OIDC_AUDIENCE", None)
 
         @property
         def cors_origins(self) -> List[str]:

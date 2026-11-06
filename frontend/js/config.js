@@ -9,6 +9,7 @@ export const CONFIG = {
   VERSION: "1.0.0",
   // Default API base URL (relative '/api/v1' routes through Nginx reverse proxy to Cloud Run backend)
   DEFAULT_API_BASE: "/api/v1",
+  DEFAULT_PROJECT: "gcp-rr-hub-core",
   
   // Polling intervals in milliseconds
   POLL_INTERVAL: 30000,

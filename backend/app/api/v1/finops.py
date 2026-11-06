@@ -10,6 +10,7 @@ from backend.app.models.finops import (
     FinOpsSummaryResponse,
     InstituteCostBreakdown,
     ResearcherCostDetail,
+    ResearcherSpendSummaryResponse,
     RoomFinOpsDetailResponse,
 )
 from backend.app.services.finops import FinOpsService, get_finops_service
@@ -77,6 +78,7 @@ def get_researcher_attributions(
 
 @router.get(
     "/researchers/{user_email:path}/spend",
+    response_model=ResearcherSpendSummaryResponse,
     summary="Get aggregated spend of a researcher across all research rooms",
 )
 def get_researcher_spend(

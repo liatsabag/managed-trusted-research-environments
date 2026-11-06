@@ -8,6 +8,8 @@ from typing import List, Dict, Any, Optional
 from google.cloud import bigquery
 from google.cloud import storage
 
+from backend.app.core.cache import cached_endpoint
+
 try:
     from backend.app.core.config import get_settings
     from backend.app.models.infrastructure import (
@@ -185,6 +187,7 @@ class InfrastructureService:
         ]
         return vpcs
 
+    @cached_endpoint(ttl_seconds=120, key_prefix="storage_buckets")
     def _get_storage_buckets(self) -> List[StorageBucketItem]:
         """Discovers and inspects live GCS buckets in hub and spoke projects."""
         buckets: List[StorageBucketItem] = []

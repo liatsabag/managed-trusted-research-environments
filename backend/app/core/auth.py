@@ -1,10 +1,11 @@
 """Authentication and Access Control layer for GCP Health Data Platform.
 
-Supports Google Cloud Identity-Aware Proxy (IAP), Google Service Account OIDC
-tokens, and Bearer / API Key authentication with a configurable development toggle.
+Supports Google Cloud Identity-Aware Proxy (IAP) cryptographically verified JWT assertions,
+Google Service Account OIDC tokens, and Bearer / API Key authentication with a configurable development toggle.
 """
 
 import logging
+import secrets
 from typing import Optional
 from fastapi import Depends, HTTPException, Request, Security, status
 from fastapi.responses import JSONResponse
@@ -29,14 +30,67 @@ class AuthenticatedUser(BaseModel):
 
 
 def extract_iap_user_email(request: Request) -> Optional[str]:
-    """Extract authenticated email from Google Cloud Identity-Aware Proxy headers."""
+    """Helper to parse email from X-Goog-Authenticated-User-Email header."""
     raw_email = request.headers.get("X-Goog-Authenticated-User-Email")
     if not raw_email:
         return None
-    # Google IAP formats email as 'accounts.google.com:user@domain.com'
     if ":" in raw_email:
         return raw_email.split(":", 1)[1].strip()
     return raw_email.strip()
+
+
+def verify_iap_jwt(request: Request) -> Optional[str]:
+    """Verify cryptographically signed Google Cloud IAP JWT assertion and extract email.
+    
+    Validates X-Goog-IAP-JWT-Assertion header using Google IAP public keys.
+    Falls back to inspecting X-Goog-Authenticated-User-Email only in non-production development environments.
+    """
+    settings = get_settings()
+    iap_jwt = request.headers.get("X-Goog-IAP-JWT-Assertion")
+    
+    if iap_jwt:
+        try:
+            from google.auth.transport import requests as google_requests
+            from google.oauth2 import id_token
+            # Verify IAP JWT signature with Google certificates
+            audience = getattr(settings, "IAP_AUDIENCE", None)
+            decoded = id_token.verify_token(
+                iap_jwt,
+                google_requests.Request(),
+                audience=audience,
+                certs_url="https://www.gstatic.com/iap/verify/public_key-jwk",
+            )
+            email = decoded.get("email")
+            if email:
+                return email.strip()
+        except Exception as e:
+            logger.warning("IAP JWT cryptographic verification failed: %s", e)
+            if settings.ENVIRONMENT != "development":
+                return None
+
+    # In development or test environments where IAP proxy is not physically in front:
+    if settings.ENVIRONMENT == "development":
+        raw_email = request.headers.get("X-Goog-Authenticated-User-Email")
+        if raw_email:
+            if ":" in raw_email:
+                return raw_email.split(":", 1)[1].strip()
+            return raw_email.strip()
+
+    return None
+
+
+def verify_oidc_token(token: str) -> Optional[str]:
+    """Verify Google OIDC / ID token signature against Google public keys."""
+    settings = get_settings()
+    try:
+        from google.oauth2 import id_token
+        from google.auth.transport import requests as google_requests
+        audience = getattr(settings, "OIDC_AUDIENCE", None)
+        claim = id_token.verify_oauth2_token(token, google_requests.Request(), audience=audience)
+        return claim.get("email")
+    except Exception as e:
+        logger.debug("OIDC token verification failed: %s", e)
+        return None
 
 
 def authenticate_request(request: Request) -> Optional[JSONResponse]:
@@ -45,54 +99,53 @@ def authenticate_request(request: Request) -> Optional[JSONResponse]:
     if not settings.ENABLE_API_AUTH:
         return None
 
-    # 1. Check Google Cloud IAP Identity header
-    iap_email = extract_iap_user_email(request)
+    # 1. Check Google Cloud IAP cryptographically verified identity
+    iap_email = verify_iap_jwt(request)
     if iap_email:
         request.state.user = AuthenticatedUser(
             email=iap_email,
             role="TRE_ADMIN",
             auth_method="gcp_iap",
+            verified=True,
         )
         return None
+
+    expected_token = getattr(settings, "API_AUTH_TOKEN", None)
 
     # 2. Check Authorization Bearer header
     auth_header = request.headers.get("Authorization")
     if auth_header and auth_header.startswith("Bearer "):
         token = auth_header.split(" ", 1)[1].strip()
-        expected_token = getattr(settings, "API_AUTH_TOKEN", None)
         if expected_token:
-            if token == expected_token:
+            if secrets.compare_digest(token, expected_token):
                 request.state.user = AuthenticatedUser(
                     email=f"service-account@{settings.ADMIN_DOMAIN}",
                     role="SERVICE_ACCOUNT",
                     auth_method="bearer_token",
+                    verified=True,
                 )
                 return None
         elif token:
-            # If no specific static token configured, accept valid non-empty bearer tokens
-            request.state.user = AuthenticatedUser(
-                email=f"service-account@{settings.ADMIN_DOMAIN}",
-                role="SERVICE_ACCOUNT",
-                auth_method="oidc_bearer",
-            )
-            return None
+            # If static token is not set, attempt verifying Google OIDC token signature
+            oidc_email = verify_oidc_token(token)
+            if oidc_email:
+                request.state.user = AuthenticatedUser(
+                    email=oidc_email,
+                    role="SERVICE_ACCOUNT",
+                    auth_method="google_oidc",
+                    verified=True,
+                )
+                return None
 
     # 3. Check X-API-Key header
     api_key = request.headers.get("X-API-Key")
-    expected_token = getattr(settings, "API_AUTH_TOKEN", None)
-    if api_key:
-        if expected_token and api_key == expected_token:
+    if api_key and expected_token:
+        if secrets.compare_digest(api_key, expected_token):
             request.state.user = AuthenticatedUser(
                 email=f"api-client@{settings.ADMIN_DOMAIN}",
                 role="API_CLIENT",
                 auth_method="api_key",
-            )
-            return None
-        elif not expected_token:
-            request.state.user = AuthenticatedUser(
-                email=f"api-client@{settings.ADMIN_DOMAIN}",
-                role="API_CLIENT",
-                auth_method="api_key",
+                verified=True,
             )
             return None
 
@@ -123,19 +176,21 @@ async def get_current_user(
             email=f"admin@{settings.ADMIN_DOMAIN}",
             role="TRE_ADMIN",
             auth_method="dev_bypass",
+            verified=True,
         )
 
     # Check state attached by middleware if already authenticated
     if hasattr(request.state, "user") and isinstance(request.state.user, AuthenticatedUser):
         return request.state.user
 
-    # Check Google IAP header
-    iap_email = extract_iap_user_email(request)
+    # Check Google IAP cryptographically verified identity
+    iap_email = verify_iap_jwt(request)
     if iap_email:
         return AuthenticatedUser(
             email=iap_email,
             role="TRE_ADMIN",
             auth_method="gcp_iap",
+            verified=True,
         )
 
     expected_token = getattr(settings, "API_AUTH_TOKEN", None)
@@ -144,32 +199,31 @@ async def get_current_user(
     if bearer and bearer.credentials:
         token = bearer.credentials.strip()
         if expected_token:
-            if token == expected_token:
+            if secrets.compare_digest(token, expected_token):
                 return AuthenticatedUser(
                     email=f"service-account@{settings.ADMIN_DOMAIN}",
                     role="SERVICE_ACCOUNT",
                     auth_method="bearer_token",
+                    verified=True,
                 )
         else:
-            return AuthenticatedUser(
-                email=f"service-account@{settings.ADMIN_DOMAIN}",
-                role="SERVICE_ACCOUNT",
-                auth_method="oidc_bearer",
-            )
+            oidc_email = verify_oidc_token(token)
+            if oidc_email:
+                return AuthenticatedUser(
+                    email=oidc_email,
+                    role="SERVICE_ACCOUNT",
+                    auth_method="google_oidc",
+                    verified=True,
+                )
 
     # Check API Key
-    if api_key:
-        if expected_token and api_key == expected_token:
+    if api_key and expected_token:
+        if secrets.compare_digest(api_key, expected_token):
             return AuthenticatedUser(
                 email=f"api-client@{settings.ADMIN_DOMAIN}",
                 role="API_CLIENT",
                 auth_method="api_key",
-            )
-        elif not expected_token:
-            return AuthenticatedUser(
-                email=f"api-client@{settings.ADMIN_DOMAIN}",
-                role="API_CLIENT",
-                auth_method="api_key",
+                verified=True,
             )
 
     raise HTTPException(

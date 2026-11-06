@@ -18,7 +18,7 @@ if "backend" not in sys.modules:
         pass
 
 import logging
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.api.v1.compliance import router as compliance_router
@@ -29,6 +29,7 @@ from backend.app.api.v1.telemetry import router as telemetry_router
 from backend.app.api.v1.resources import router as resources_router
 from backend.app.api.v1.airlock import router as airlock_router
 from backend.app.api.v1.reports import router as reports_router
+from backend.app.core.auth import get_current_user
 from backend.app.core.config import get_settings
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
@@ -88,15 +89,15 @@ async def authenticate_api_requests(request, call_next):
             return auth_error
     return await call_next(request)
 
-# Include API v1 Routers
-app.include_router(rooms_router, prefix=f"{settings.API_V1_PREFIX}/rooms", tags=["rooms"])
-app.include_router(institutes_router, prefix=f"{settings.API_V1_PREFIX}/institutes", tags=["institutes"])
-app.include_router(compliance_router, prefix=f"{settings.API_V1_PREFIX}/compliance", tags=["compliance"])
-app.include_router(telemetry_router, prefix=f"{settings.API_V1_PREFIX}/telemetry", tags=["telemetry"])
-app.include_router(finops_router, prefix=f"{settings.API_V1_PREFIX}", tags=["finops"])
-app.include_router(resources_router, prefix=f"{settings.API_V1_PREFIX}", tags=["resources"])
-app.include_router(airlock_router, prefix=f"{settings.API_V1_PREFIX}/airlock", tags=["airlock"])
-app.include_router(reports_router, prefix=f"{settings.API_V1_PREFIX}/reports", tags=["reports"])
+# Include API v1 Routers (protected by get_current_user dependency)
+app.include_router(rooms_router, prefix=f"{settings.API_V1_PREFIX}/rooms", tags=["rooms"], dependencies=[Depends(get_current_user)])
+app.include_router(institutes_router, prefix=f"{settings.API_V1_PREFIX}/institutes", tags=["institutes"], dependencies=[Depends(get_current_user)])
+app.include_router(compliance_router, prefix=f"{settings.API_V1_PREFIX}/compliance", tags=["compliance"], dependencies=[Depends(get_current_user)])
+app.include_router(telemetry_router, prefix=f"{settings.API_V1_PREFIX}/telemetry", tags=["telemetry"], dependencies=[Depends(get_current_user)])
+app.include_router(finops_router, prefix=f"{settings.API_V1_PREFIX}", tags=["finops"], dependencies=[Depends(get_current_user)])
+app.include_router(resources_router, prefix=f"{settings.API_V1_PREFIX}", tags=["resources"], dependencies=[Depends(get_current_user)])
+app.include_router(airlock_router, prefix=f"{settings.API_V1_PREFIX}/airlock", tags=["airlock"], dependencies=[Depends(get_current_user)])
+app.include_router(reports_router, prefix=f"{settings.API_V1_PREFIX}/reports", tags=["reports"], dependencies=[Depends(get_current_user)])
 
 
 

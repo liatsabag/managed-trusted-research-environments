@@ -108,6 +108,21 @@ class TestAuthLayer(unittest.TestCase):
             self.settings.ENABLE_API_AUTH = False
             self.settings.API_AUTH_TOKEN = None
 
+    def test_auth_enforced_fails_closed_when_token_is_none(self):
+        """Verify that when API_AUTH_TOKEN is None/unset, random tokens are rejected (fail closed)."""
+        self.settings.ENABLE_API_AUTH = True
+        self.settings.API_AUTH_TOKEN = None
+        try:
+            # Bearer token without valid OIDC or static token should be 401
+            res_bearer = self.client.get("/api/v1/rooms", headers={"Authorization": "Bearer random-unvalidated-token"})
+            self.assertEqual(res_bearer.status_code, 401)
+
+            # API Key without static token should be 401
+            res_key = self.client.get("/api/v1/rooms", headers={"X-API-Key": "random-key"})
+            self.assertEqual(res_key.status_code, 401)
+        finally:
+            self.settings.ENABLE_API_AUTH = False
+
 
 if __name__ == "__main__":
     unittest.main()

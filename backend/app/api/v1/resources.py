@@ -3,6 +3,7 @@ Resources & Infrastructure API Endpoints
 Provides cloud asset mapping, storage bucket management, shared datasets, and runtime templates.
 """
 
+from functools import lru_cache
 from typing import List, Dict, Any
 from fastapi import APIRouter, HTTPException, Depends
 try:
@@ -12,7 +13,8 @@ try:
         SharedDatasetItem,
         NotebookRuntimeTemplate,
         BucketLinkRequest,
-        BucketDetachRequest
+        BucketDetachRequest,
+        BucketOperationResponse,
     )
     from backend.app.services.infrastructure import InfrastructureService
 except ImportError:
@@ -22,13 +24,15 @@ except ImportError:
         SharedDatasetItem,
         NotebookRuntimeTemplate,
         BucketLinkRequest,
-        BucketDetachRequest
+        BucketDetachRequest,
+        BucketOperationResponse,
     )
     from app.services.infrastructure import InfrastructureService
 
 router = APIRouter(prefix="/resources", tags=["resources"])
 
 
+@lru_cache()
 def get_infra_service() -> InfrastructureService:
     return InfrastructureService()
 
@@ -77,7 +81,7 @@ def list_notebook_templates(
         raise HTTPException(status_code=500, detail=f"Failed to list notebook templates: {str(e)}")
 
 
-@router.post("/buckets/link")
+@router.post("/buckets/link", response_model=BucketOperationResponse)
 def link_storage_bucket(
     request: BucketLinkRequest,
     service: InfrastructureService = Depends(get_infra_service)
@@ -93,7 +97,7 @@ def link_storage_bucket(
         raise HTTPException(status_code=500, detail=f"Failed to link storage bucket: {str(e)}")
 
 
-@router.post("/buckets/detach")
+@router.post("/buckets/detach", response_model=BucketOperationResponse)
 def detach_storage_bucket(
     request: BucketDetachRequest,
     service: InfrastructureService = Depends(get_infra_service)

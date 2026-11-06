@@ -122,6 +122,27 @@ class TestFleetGovernanceService(unittest.TestCase):
         for res in room_up.researchers:
             self.assertEqual(res.access_state, "ACTIVE")
 
+    def test_suspend_and_iam_revocation_lifecycle(self):
+        """Verify IAM suspension revokes all researcher roles."""
+        from backend.app.models.rooms import SuspendRequest
+        res_suspend = self.service.suspend_room("rr-oncology-01", SuspendRequest(reason="Hard regulatory breach"))
+        self.assertIsNotNone(res_suspend)
+        self.assertTrue(res_suspend.success)
+        self.assertEqual(res_suspend.new_status, "SUSPENDED")
+
+        # Verify IAM policy bindings in mock CRM
+        bindings = self.policy_store.get("bindings", [])
+        for b in bindings:
+            # Researchers must not be bound to any role
+            for member in b.get("members", []):
+                self.assertNotIn("user:prof.miriam.levy@liatsabag.altostrat.com", member)
+                self.assertNotIn("user:dr.oren.katz@liatsabag.altostrat.com", member)
+
+        # Restore back to active
+        res_up = self.service.reactivate_room("rr-oncology-01")
+        self.assertTrue(res_up.success)
+        self.assertEqual(res_up.new_status, "ACTIVE")
+
     def test_get_room_packages(self):
         """Verify room packages, notebooks, and dataset retrieval."""
         pkgs_data = self.service.get_room_packages("rr-oncology-01")

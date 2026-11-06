@@ -124,7 +124,8 @@ def poll_cloud_monitoring_metrics(spoke_project: str) -> Dict[str, Any]:
     try:
         monitoring = googleapiclient.discovery.build("monitoring", "v3", credentials=credentials)
         now = datetime.now(timezone.utc)
-        start = now - timedelta(hours=24)
+        # Use start of today (UTC) to prevent overlapping rolling windows with daily aggregation batch jobs
+        start = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
         filter_str = 'metric.type = "serviceruntime.googleapis.com/api/request_count" AND resource.labels.service = "aiplatform.googleapis.com"'
         request = monitoring.projects().timeSeries().list(
             name=f"projects/{spoke_project}",

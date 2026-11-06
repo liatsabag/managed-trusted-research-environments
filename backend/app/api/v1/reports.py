@@ -1,9 +1,15 @@
 """FastAPI REST controller for Standardized and Ad-Hoc Governance Reports."""
 
 import logging
+from enum import Enum
 from typing import List, Optional, Union
 from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from fastapi.responses import PlainTextResponse
+
+
+class ReportFormat(str, Enum):
+    JSON = "json"
+    CSV = "csv"
 
 from backend.app.models.reports import (
     AvailableReportDefinition,
@@ -35,35 +41,35 @@ def list_available_reports() -> List[AvailableReportDefinition]:
             title="Room Fleet Inventory Report",
             description="Complete status, configuration, spoke project mapping, and grant budget across research rooms.",
             endpoint="/api/v1/reports/fleet-inventory",
-            supported_formats=["json", "csv", "pdf"],
+            supported_formats=["json", "csv"],
         ),
         AvailableReportDefinition(
             report_type="COMPLIANCE_EXCEPTIONS",
             title="Compliance Exceptions Report",
             description="Flagged studies with missing, incomplete, or lapsed statutory compliance prerequisites.",
             endpoint="/api/v1/reports/compliance-exceptions",
-            supported_formats=["json", "csv", "pdf"],
+            supported_formats=["json", "csv"],
         ),
         AvailableReportDefinition(
             report_type="APPROVAL_HORIZON",
             title="Approval Expirations Horizon",
             description="Proactive report of ethics/Helsinki certificates and DUA agreements expiring in 30/60/90 days.",
             endpoint="/api/v1/reports/approval-horizon",
-            supported_formats=["json", "csv", "pdf"],
+            supported_formats=["json", "csv"],
         ),
         AvailableReportDefinition(
             report_type="FINOPS_BILLING",
             title="Cost & FinOps Resource Billing Report",
             description="Resource billing segmented by room, academic institution, PI/researcher, and cost drivers.",
             endpoint="/api/v1/reports/cost-finops",
-            supported_formats=["json", "csv", "pdf"],
+            supported_formats=["json", "csv"],
         ),
         AvailableReportDefinition(
             report_type="EGRESS_AUDIT",
             title="Airlock Data Egress Audit Log",
             description="Historical forensic log of candidate file export requests, inspection outcomes, and gate decisions.",
             endpoint="/api/v1/reports/egress-audit",
-            supported_formats=["json", "csv", "pdf"],
+            supported_formats=["json", "csv"],
         ),
     ]
 
@@ -76,13 +82,13 @@ def list_available_reports() -> List[AvailableReportDefinition]:
     tags=["reports"],
 )
 def get_fleet_inventory(
-    format: str = Query("json", description="Output format ('json' or 'csv')"),
+    format: ReportFormat = Query(ReportFormat.JSON, description="Output format ('json' or 'csv')"),
     service: ReportsService = Depends(get_reports_service),
 ) -> Union[ReportGenerationResponse, Response]:
     """Generate Room Fleet Inventory Report."""
     try:
         report = service.get_fleet_inventory_report()
-        if format.lower() == "csv":
+        if format == ReportFormat.CSV or str(format).lower() == "csv":
             csv_data = service.export_as_csv(report)
             return Response(content=csv_data, media_type="text/csv", headers={"Content-Disposition": "attachment; filename=room_fleet_inventory.csv"})
         return report
@@ -99,13 +105,13 @@ def get_fleet_inventory(
     tags=["reports"],
 )
 def get_compliance_exceptions(
-    format: str = Query("json", description="Output format ('json' or 'csv')"),
+    format: ReportFormat = Query(ReportFormat.JSON, description="Output format ('json' or 'csv')"),
     service: ReportsService = Depends(get_reports_service),
 ) -> Union[ReportGenerationResponse, Response]:
     """Generate Compliance Exceptions Report."""
     try:
         report = service.get_compliance_exceptions_report()
-        if format.lower() == "csv":
+        if format == ReportFormat.CSV or str(format).lower() == "csv":
             csv_data = service.export_as_csv(report)
             return Response(content=csv_data, media_type="text/csv", headers={"Content-Disposition": "attachment; filename=compliance_exceptions.csv"})
         return report
@@ -122,13 +128,13 @@ def get_compliance_exceptions(
     tags=["reports"],
 )
 def get_approval_horizon(
-    format: str = Query("json", description="Output format ('json' or 'csv')"),
+    format: ReportFormat = Query(ReportFormat.JSON, description="Output format ('json' or 'csv')"),
     service: ReportsService = Depends(get_reports_service),
 ) -> Union[ReportGenerationResponse, Response]:
     """Generate Approval Expirations Horizon Report."""
     try:
         report = service.get_approval_expirations_report()
-        if format.lower() == "csv":
+        if format == ReportFormat.CSV or str(format).lower() == "csv":
             csv_data = service.export_as_csv(report)
             return Response(content=csv_data, media_type="text/csv", headers={"Content-Disposition": "attachment; filename=approval_expirations_horizon.csv"})
         return report
@@ -145,13 +151,13 @@ def get_approval_horizon(
     tags=["reports"],
 )
 def get_cost_finops_report(
-    format: str = Query("json", description="Output format ('json' or 'csv')"),
+    format: ReportFormat = Query(ReportFormat.JSON, description="Output format ('json' or 'csv')"),
     service: ReportsService = Depends(get_reports_service),
 ) -> Union[ReportGenerationResponse, Response]:
     """Generate Cost & FinOps Resource Billing Report."""
     try:
         report = service.get_cost_finops_report()
-        if format.lower() == "csv":
+        if format == ReportFormat.CSV or str(format).lower() == "csv":
             csv_data = service.export_as_csv(report)
             return Response(content=csv_data, media_type="text/csv", headers={"Content-Disposition": "attachment; filename=cost_finops_report.csv"})
         return report
@@ -168,7 +174,7 @@ def get_cost_finops_report(
     tags=["reports"],
 )
 def get_egress_audit_report(
-    format: str = Query("json", description="Output format ('json' or 'csv')"),
+    format: ReportFormat = Query(ReportFormat.JSON, description="Output format ('json' or 'csv')"),
     service: ReportsService = Depends(get_reports_service),
 ) -> Union[ReportGenerationResponse, Response]:
     """Generate Airlock Egress Inspection Audit Report."""

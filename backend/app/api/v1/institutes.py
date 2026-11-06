@@ -20,7 +20,7 @@ router = APIRouter(tags=["institutes"])
     response_model=List[InstituteSummary],
     include_in_schema=False,
 )
-async def list_institutes(
+def list_institutes(
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> List[InstituteSummary]:
     """Retrieve all registered academic and medical research institutes from BigQuery."""
@@ -33,7 +33,7 @@ async def list_institutes(
     summary="Get institute details",
     description="Retrieves a specific partner institute and affiliated rooms by its identifier.",
 )
-async def get_institute(
+def get_institute(
     institute_id: str,
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> InstituteSummary:

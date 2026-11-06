@@ -29,7 +29,7 @@ router = APIRouter(tags=["rooms"])
     response_model=List[ResearchRoomSummary],
     include_in_schema=False,
 )
-async def list_rooms(
+def list_rooms(
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> List[ResearchRoomSummary]:
     """Retrieve summary of all research rooms across the spoke fleet from BigQuery."""
@@ -42,7 +42,7 @@ async def list_rooms(
     summary="Get research room details",
     description="Detailed room view including researcher roster, datasets, storage bucket URIs, and VPC/runtime info.",
 )
-async def get_room(
+def get_room(
     room_id: str,
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> ResearchRoomDetail:
@@ -62,7 +62,7 @@ async def get_room(
     summary="Get room software packages & datasets",
     description="Returns all subscribed hub datasets, local tables, analytical notebooks, and installed packages.",
 )
-async def get_room_packages(
+def get_room_packages(
     room_id: str,
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> Dict[str, Any]:
@@ -82,7 +82,7 @@ async def get_room_packages(
     summary="Update research room status & IAM policy",
     description="Updates operational status (ACTIVE, SOFT_DOWNGRADED, SUSPENDED) and mutates spoke IAM bindings.",
 )
-async def update_room_status(
+def update_room_status(
     room_id: str,
     request: StatusUpdateRequest,
     service: FleetGovernanceService = Depends(get_fleet_service),
@@ -109,7 +109,7 @@ async def update_room_status(
     summary="Downgrade research room IAM permissions",
     description="Toggles researcher IAM role to read-only/downgraded state for compliance enforcement.",
 )
-async def downgrade_room(
+def downgrade_room(
     room_id: str,
     request: DowngradeRequest = DowngradeRequest(),
     service: FleetGovernanceService = Depends(get_fleet_service),
@@ -130,7 +130,7 @@ async def downgrade_room(
     summary="Reactivate research room IAM permissions",
     description="Restores full researcher active access following compliance renewal.",
 )
-async def reactivate_room(
+def reactivate_room(
     room_id: str,
     service: FleetGovernanceService = Depends(get_fleet_service),
 ) -> RoomActionResponse:
@@ -150,7 +150,7 @@ async def reactivate_room(
     summary="Suspend research room IAM permissions",
     description="Suspends research room and completely revokes researcher IAM permissions.",
 )
-async def suspend_room(
+def suspend_room(
     room_id: str,
     request: SuspendRequest = SuspendRequest(),
     service: FleetGovernanceService = Depends(get_fleet_service),
@@ -171,7 +171,7 @@ async def suspend_room(
     summary="Add researcher stub to room",
     description="Safe pass-through stub for provisioning a researcher account in a research room.",
 )
-async def add_researcher(
+def add_researcher(
     room_id: str,
     request: AddResearcherRequest,
     service: FleetGovernanceService = Depends(get_fleet_service),

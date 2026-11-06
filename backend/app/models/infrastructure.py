@@ -31,6 +31,13 @@ class BucketDetachRequest(BaseModel):
     bucket_name: str
 
 
+class BucketOperationResponse(BaseModel):
+    success: bool
+    room_id: str
+    bucket_name: str
+    message: str
+
+
 class VpcNetworkItem(BaseModel):
     network_name: str
     project_id: str

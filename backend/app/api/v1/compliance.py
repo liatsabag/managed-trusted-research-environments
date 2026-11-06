@@ -23,7 +23,7 @@ router = APIRouter(tags=["compliance"])
     summary="Enforce fleet-wide IAM compliance policies",
     description="Syncs active research room IAM policies based on the latest BigQuery regulatory scan.",
 )
-async def enforce_fleet_compliance(
+def enforce_fleet_compliance(
     service: ComplianceService = Depends(get_compliance_service),
 ) -> List[ComplianceScanResult]:
     """Execute fleet-wide IAM synchronization for all active provisioned rooms."""
@@ -35,7 +35,7 @@ async def enforce_fleet_compliance(
     response_model=List[RoomComplianceSummary],
     summary="Get fleet-wide compliance summaries for all active rooms",
 )
-async def get_compliance_summary(
+def get_compliance_summary(
     service: ComplianceService = Depends(get_compliance_service),
 ) -> List[RoomComplianceSummary]:
     """Retrieve compliance status summaries across all active research rooms."""
@@ -47,7 +47,7 @@ async def get_compliance_summary(
     response_model=RoomComplianceSummary,
     summary="Get research room regulatory compliance status",
 )
-async def get_room_compliance(
+def get_room_compliance(
     room_id: str,
     service: ComplianceService = Depends(get_compliance_service),
 ) -> RoomComplianceSummary:
@@ -60,7 +60,7 @@ async def get_room_compliance(
     response_model=ComplianceScanResult,
     summary="Trigger on-demand compliance scan and IAM sync on active room",
 )
-async def scan_room_compliance(
+def scan_room_compliance(
     room_id: str,
     service: ComplianceService = Depends(get_compliance_service),
 ) -> ComplianceScanResult:
@@ -73,7 +73,7 @@ async def scan_room_compliance(
     response_model=OnboardingGateResponse,
     summary="Get pre-flight onboarding compliance gate decision for a request",
 )
-async def get_onboarding_gate(
+def get_onboarding_gate(
     request_id: str,
     service: ComplianceService = Depends(get_compliance_service),
 ) -> OnboardingGateResponse:
@@ -87,7 +87,7 @@ async def get_onboarding_gate(
     response_model=OnboardingGateResponse,
     summary="Evaluate pre-flight onboarding compliance gate",
 )
-async def evaluate_onboarding_gate(
+def evaluate_onboarding_gate(
     request_id: str,
     request: Optional[OnboardingGateRequest] = None,
     service: ComplianceService = Depends(get_compliance_service),
@@ -104,7 +104,7 @@ async def evaluate_onboarding_gate(
     response_model=ComplianceHorizonReport,
     summary="Get fleet-wide compliance horizon expiration forecast",
 )
-async def get_compliance_horizons(
+def get_compliance_horizons(
     service: ComplianceService = Depends(get_compliance_service),
 ) -> ComplianceHorizonReport:
     """Retrieve fleet-wide compliance expiration horizon forecast."""
@@ -116,7 +116,7 @@ async def get_compliance_horizons(
     response_model=List[RoomRequestResponse],
     summary="Get all prospective Research Room onboarding requests",
 )
-async def get_room_requests(
+def get_room_requests(
     service: ComplianceService = Depends(get_compliance_service),
 ) -> List[RoomRequestResponse]:
     """Retrieve all prospective Research Room requests from BigQuery."""
@@ -129,7 +129,7 @@ async def get_room_requests(
     status_code=status.HTTP_201_CREATED,
     summary="Submit and ingest a new Research Room request",
 )
-async def create_room_request(
+def create_room_request(
     request: CreateRoomRequest,
     service: ComplianceService = Depends(get_compliance_service),
 ) -> RoomRequestResponse:

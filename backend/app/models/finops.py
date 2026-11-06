@@ -188,6 +188,30 @@ class FinOpsAllocationMatrixResponse(BaseModel):
     matrix: Dict[str, Dict[str, List[ResearcherCostDetail]]] = Field(default_factory=dict)
 
 
+class ResearcherSpendRoomAllocation(BaseModel):
+    room_id: str
+    room_name: str
+    allocated_cost: float
+    telemetry_usage: Dict[str, Any]
+    sku_attributions: List[Dict[str, Any]]
+
+
+class ResearcherSpendSkuSummary(BaseModel):
+    sku_description: str
+    cost: float
+
+
+class ResearcherSpendSummaryResponse(BaseModel):
+    email: str
+    name: str
+    institute_id: str
+    total_spend: float
+    currency: str = "USD"
+    rooms_count: int
+    room_allocations: List[ResearcherSpendRoomAllocation] = Field(default_factory=list)
+    sku_breakdown: List[ResearcherSpendSkuSummary] = Field(default_factory=list)
+
+
 # Backward-compatible aliases
 SKUCostBreakdown = SKUBillingItem
 ResearcherCostAttribution = ResearcherCostDetail

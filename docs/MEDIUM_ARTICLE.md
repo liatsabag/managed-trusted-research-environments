@@ -10,7 +10,7 @@
 
 ## 1. The Operational Challenge: Transforming Cloud Blueprints into a Unified Research Platform
 
-Google Cloud provides exceptional foundational building blocks for modern data analytics and secure collaboration: petabyte-scale analytics in **BigQuery**, zero-copy data sharing via **BQ Sharing**, cryptographic network isolation with **VPC Service Controls (VPC-SC)**, managed notebooks in **Colab Enterprise**, and rich **AI capabilities with Gemini**.
+Google Cloud provides foundational building blocks for data analytics and secure collaboration: petabyte-scale analytics in **BigQuery**, zero-copy data sharing via **BQ Sharing**, cryptographic network isolation with **VPC Service Controls (VPC-SC)**, managed notebooks in **Colab Enterprise**, and rich **AI capabilities with Gemini**.
 
 Google has also published valuable reference architectures and blueprints for deploying and constructing research environments on top of GCP. However, these are **general-purpose cloud infrastructure building blocks and architectural guides**, rather than a turnkey, out-of-the-box research operations platform. 
 
@@ -20,7 +20,7 @@ Operating a multi-tenant research environment in practice requires additional op
 * **Automated Data Protection & Egress Control**: Inspecting candidate export files for PII and small cohort disclosure before data leaves the environment.
 * **Multi-Tenant Cost Attribution (FinOps)**: Reconciling complex cloud billing exports down to specific research rooms and individual researchers.
 
-To bridge this operational gap, I developed an open, reusable reference solution: the **Research Room Management Platform** — an enterprise-grade, multi-tenant **Trusted Research Environment (TRE)** engineered natively on Google Cloud. 
+To bridge this operational gap, I developed an open, reusable reference solution: the **Research Room Management Platform**, a multi-tenant **Trusted Research Environment (TRE)** built natively on Google Cloud. 
 
 Designed not as a proprietary vendor product, but as an **extensible prototype and reusable blueprint with all code, infrastructure schemas, and automation scripts included**, it allows any organization to deploy, govern, and customize its own unified research platform.
 
@@ -45,10 +45,13 @@ The platform structures this workspace around the internationally recognized **"
 
 The management platform provides distinct visibility for central administrators managing the whole organization versus research teams managing their specific study:
 
+* **Central Fleet Governance Plane**: Provides platform administrators with high-level fleet health, aggregate cloud spend, active room status, and cross-project compliance tracking across all running studies.
+* **Tenant Room Workspace**: Provides project-level visibility for research teams, including active Colab Enterprise notebook runtimes, project dataset access, current compute consumption, and export staging status for outputs awaiting Air-Lock review.
+
 | Central Fleet Governance Plane | Dedicated Research Room Workspace |
 | :---: | :---: |
 | ![Central Fleet Overview](assets/screenshots/ui_overview_dashboard.png) | ![Research Room Detail View](assets/screenshots/ui_room_detail_top.png) |
-| *High-level fleet health, total cloud spend, active room status, and cross-project compliance tracking.* | *Specific study view displaying assigned researchers, live budget burn, compute status, and linked datasets.* |
+| *Central control plane for fleet-wide oversight.* | *Project workspace for study-specific analytics.* |
 
 ---
 
@@ -138,7 +141,7 @@ To deliver continuous observability across isolated spoke projects without manua
 *Figure 4: Two-speed telemetry architecture synchronizing 15-minute operational usage and daily metric curation into BigQuery analytical marts.*
 
 * **15-Minute Operational Loop**:
-   * **BigQuery Queries**: Ingested directly from spoke `INFORMATION_SCHEMA.JOBS_BY_PROJECT` into `ops_bigquery_usage_15m` via scheduled stored procedure (`sp_sync_bigquery_queries`).
+   * **BigQuery Queries**: Ingested directly from spoke `INFORMATION_SCHEMA.JOBS_BY_PROJECT` into `ops_bigquery_usage_15m` via a scheduled stored procedure (`sp_sync_bigquery_queries`).
    * **Interactive Notebooks & AI Metrics**: Active Colab Enterprise runtime hours and Vertex AI inference tokens are polled directly from Vertex AI and Cloud Monitoring APIs by a scheduled Cloud Run job (`rr-telemetry-poller`).
    * **Audit Event Stream**: Cloud Audit Logs from all spoke projects are streamed via GCP Log Router sinks (`sk-rr-audit-to-hub`) directly into BigQuery and curated every 15 minutes (`ops_audit_events_curated`).
 * **Daily Aggregation Loop**:
@@ -213,7 +216,7 @@ When evaluating this prototype for scaled enterprise adoption, two key architect
 
 ## 7. Key Solution Takeaways
 
-Operating a Trusted Research Environment does not require sacrificing researcher capability for security:
+A Trusted Research Environment balances strong security controls with researcher usability:
 
 * **Unified Multi-Tenant Governance**: Eliminate administrative silos by managing all tenant research workspaces, access states, and audit trails from a single centralized control plane.
 * **Zero Egress Risk with Governed Air-Lock**: Keep analytical datasets enclosed within private security perimeters, combined with an automated, AI-assisted quarantine review for legitimate research outputs before release.

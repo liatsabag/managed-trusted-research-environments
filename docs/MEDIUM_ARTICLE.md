@@ -1,6 +1,6 @@
 # The Zero-Trust Research Room: Enabling Secure, High-Performance Analytics on Protected Data
 
-### *A practical guide to scaling collaboration on protected data while maintaining absolute control over security, compliance, and budget.*
+### *A practical guide to scaling collaboration on protected data while maintaining strict governance over security, compliance, and budget.*
 
 ---
 
@@ -16,7 +16,7 @@ Google has also published valuable reference architectures and blueprints for de
 
 Operating a multi-tenant research environment in practice requires additional operational controls:
 * **Centralized Governance & Fleet Orchestration**: Managing lifecycle states across multiple independent research workspaces from a single control plane.
-* **Continuous Compliance & Policy Enforcement**: Tracking statutory permits (IRBs, DUAs, HIPAA) and automatically restricting access when permits lapse.
+* **Continuous Compliance & Policy Enforcement**: Tracking statutory permits (IRBs, DUAs, HIPAA) and alerting administrators to execute human-in-the-loop access restrictions when permits lapse.
 * **Automated Data Protection & Egress Control**: Inspecting candidate export files for PII and small cohort disclosure before data leaves the environment.
 * **Multi-Tenant Cost Attribution (FinOps)**: Reconciling complex cloud billing exports down to specific research rooms and individual researchers.
 
@@ -33,7 +33,7 @@ A **Research Room** is an on-demand, isolated cloud workspace provisioned for a 
 Rather than copying sensitive data to researcher laptops or unmonitored virtual machines, researchers enter an isolated Google Cloud workspace where they can use the full analytical power of modern cloud infrastructure while remaining within a cryptographic security perimeter:
 
 * **Zero-Copy Data Sharing & Privacy-Preserving Collaboration**: Organizations can publish and subscribe to shared datasets across distinct projects without physical data duplication using [BigQuery Sharing](https://cloud.google.com/bigquery/docs/analytics-hub-introduction), or perform privacy-preserving, multi-party SQL analysis without raw data exchange using [BigQuery Data Clean Rooms](https://cloud.google.com/bigquery/docs/data-clean-rooms).
-* **Collaborative Compute & Data Science Tooling**: Researchers work in managed [Colab Enterprise](https://cloud.google.com/colab/docs/introduction) and [BigQuery Studio Notebooks](https://docs.cloud.google.com/bigquery/docs/programmatic-analysis), running not only SQL but **Python with full support for popular data science and bioinformatics libraries**. These runtimes integrate **Gemini-powered Data Science Agent capabilities** that actively assist researchers with natural language SQL/Python generation, automated exploratory data analysis, intelligent charting, and inline code troubleshooting directly inside the workspace.
+* **Collaborative Compute & Data Science Tooling**: Researchers work in managed [Colab Enterprise](https://cloud.google.com/colab/docs/introduction) and [BigQuery Studio Notebooks](https://docs.cloud.google.com/bigquery/docs/programmatic-analysis), running not only SQL but also **Python with full support for popular data science and bioinformatics libraries**. These runtimes integrate **Gemini-powered Data Science Agent capabilities** that actively assist researchers with natural language SQL/Python generation, automated exploratory data analysis, intelligent charting, and inline code troubleshooting directly inside the workspace.
 * **Machine Learning & AI**: Train and evaluate statistical and machine learning models in-place using [BigQuery ML (BQML)](https://cloud.google.com/bigquery/docs/bqml-introduction) or integrate multimodal foundation models directly within SQL queries using [BigQuery AI functions](https://docs.cloud.google.com/bigquery/docs/ai-introduction) powered by [Vertex AI](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models), eliminating external compute transfers.
 * **Continuous Usage Tracking & Auditing**: Every query-scanned byte (`total_bytes_billed`), Colab notebook session hour, AI token consumed (`ai_token_count`), and storage footprint is continuously recorded in near-real-time telemetry marts and Cloud Audit Logs.
 
@@ -84,7 +84,7 @@ The architecture organizes the Google Cloud environment into a centralized **Hub
    * Captures the organization's official, partitioned Google Cloud Billing Export table, queried securely from the Hub via an authorized view (`view_billing_export`).
 
 4. **Security Perimeter (VPC Service Controls)**:
-   * Encloses the Hub data layer and all tenant Spoke projects inside an airtight boundary, restricting BigQuery, Cloud Storage, Vertex AI, and Logging APIs to prevent data exfiltration to external projects or untrusted internet endpoints.
+   * Encloses the Hub data layer and all tenant Spoke projects within an isolated service perimeter, restricting BigQuery, Cloud Storage, Vertex AI, and Logging APIs to prevent data exfiltration to external projects or untrusted internet endpoints.
 
 ---
 
@@ -124,7 +124,7 @@ To allow legitimate research outputs (such as aggregate statistics, summary char
 1. **Perimeter Holding Staging**: Each room contains an `inbound` bucket (read-only reference data) and an `export` bucket (`gs://rr-*-export/`). Researchers write candidate export artifacts into this holding bucket, but are strictly blocked by VPC Service Controls from downloading files directly or routing them to the internet.
 2. **Two-Stage Defense-in-Depth Privacy Risk Screening**:
    * **Representative Snippet Sampling (8 KB / 35 Rows)**: Rather than streaming multi-gigabyte files through interactive API memory—which would cause serverless OOM crashes, exceed LLM context limits, and inflate token costs—the engine inspects a representative sample. In tabular datasets, schema headers and distribution patterns repeat identically across rows.
-   * **Stage 1 (Deterministic Cloud DLP / SDP)**: Google Cloud Sensitive Data Protection evaluates regex and algorithmic infoTypes (`PERSON_NAME`, `EMAIL_ADDRESS`, `MEDICAL_RECORD_NUMBER`, `ISRAEL_NATIONAL_ID`, etc.) with zero hallucination.
+   * **Stage 1 (Deterministic Cloud DLP / SDP)**: Google Cloud Sensitive Data Protection evaluates regex and algorithmic infoTypes (`PERSON_NAME`, `EMAIL_ADDRESS`, `MEDICAL_RECORD_NUMBER`, `ISRAEL_NATIONAL_ID`, etc.) deterministically.
    * **Stage 2 (Semantic Gemini AI & Small-Cell Detection)**: BigQuery ML invokes Vertex AI Gemini Flash to evaluate what traditional pattern-matching misses—quasi-identifier combinations and HIPAA small-cell disclosures ($1 \le k < 5$ rare disease counts).
 3. **DPO Review & Decoupled Release**: Data Protection Officers inspect the file preview, column distributions, detected SDP infoTypes, and Gemini risk findings in the portal before granting approval or rejection. Downstream extraction (such as SFTP delivery or integration with external institutional portals) is decoupled as a customer integration hook.
 
@@ -154,7 +154,7 @@ To deliver continuous observability across isolated spoke projects without manua
 
 Shared cloud research environments frequently suffer from billing opacity. When an organization receives a monthly Google Cloud invoice, attributing costs accurately across independent studies and individual researchers is historically difficult.
 
-The platform's FinOps attribution engine bridges **ground-truth invoiced charges** from Google Cloud Billing exports (`view_billing_export`) with the physical **usage telemetry weights** collected in `ops_daily_compute_metrics`:
+The platform's FinOps attribution engine reconciles **actual invoiced charges** from Google Cloud Billing exports (`view_billing_export`) with the physical **usage telemetry weights** collected in `ops_daily_compute_metrics`:
 
 * **BigQuery SQL Spend**: Apportioned proportionally by **scanned bytes billed** (`total_bytes_billed`):
   $$\text{Researcher SQL Spend} = \text{Total BQ Invoice} \times \left( \frac{\text{Researcher Scanned Bytes}}{\sum \text{Fleet Scanned Bytes}} \right)$$
@@ -182,7 +182,7 @@ Costs are reconciled across four hierarchical reporting levels: **Fleet**, **Ins
 
 Building this platform natively on Google Cloud provides distinct architectural advantages over traditional custom infrastructure:
 
-1. **VPC Service Controls (VPC-SC)**: Solves data exfiltration at the Google API layer (`bigquery.googleapis.com`, `storage.googleapis.com`, `aiplatform.googleapis.com`). Enforces cryptographic boundaries that prevent unauthorized data movement even if valid credentials are leaked.
+1. **VPC Service Controls (VPC-SC)**: Prevents data exfiltration at the Google API layer (`bigquery.googleapis.com`, `storage.googleapis.com`, `aiplatform.googleapis.com`). Enforces cryptographic boundaries that prevent unauthorized data movement even if valid credentials are leaked.
 2. **BigQuery Analytics Hub & Data Clean Rooms**: Delivers zero-copy data sharing across independent spoke projects without physical data duplication, with BigQuery Data Clean Rooms enabling privacy-preserving multi-party analysis.
 3. **Direct BigQuery Billing Export & Telemetry Joining**: Querying official billing exports alongside `INFORMATION_SCHEMA` and audit telemetry natively in BigQuery SQL eliminates expensive third-party FinOps software or dedicated ETL clusters.
 4. **Multimodal Gemini Models in BigQuery ML**: Running Gemini inference directly within SQL over Cloud Storage Object Tables enables automated compliance agreement parsing and egress privacy screening without external OCR services.
@@ -200,7 +200,9 @@ While this platform was engineered around healthcare and biomedical compliance, 
 
 The repository is modular: BigQuery schemas, Cloud Workflows definitions, FastAPI endpoints, and deployment automation scripts are completely parameter-driven. Spinning up a new research room requires only registering the room in the central catalog and running the automated provisioning script.
 
-### Production Hardening: Architecture Recommendations vs. Current Prototype Scope
+---
+
+## 7. Production Hardening: Prototype Scope vs. Enterprise Recommendations
 
 When evaluating this prototype for scaled enterprise adoption, two key architectural enhancements are recommended:
 
@@ -214,14 +216,14 @@ When evaluating this prototype for scaled enterprise adoption, two key architect
 
 ---
 
-## 7. Key Solution Takeaways
+## 8. Key Solution Takeaways
 
 A Trusted Research Environment balances strong security controls with researcher usability:
 
 * **Unified Multi-Tenant Governance**: Eliminate administrative silos by managing all tenant research workspaces, access states, and audit trails from a single centralized control plane.
 * **Zero Egress Risk with Governed Air-Lock**: Keep analytical datasets enclosed within private security perimeters, combined with an automated, AI-assisted quarantine review for legitimate research outputs before release.
 * **Statutory Compliance & Governed Soft-Downgrades**: Enforce continuous AI verification of regulatory checklists (IRB, DUA, HIPAA) paired with human-in-the-loop IAM soft-downgrades and suspension to maintain analytical continuity while ensuring regulatory compliance.
-* **Multi-Level Proportional FinOps**: Reconcile ground-truth cloud billing exports against physical consumption weights to allocate costs down to individual researchers with verified zero financial drift.
+* **Multi-Level Proportional FinOps**: Reconcile actual cloud billing exports against physical consumption weights to allocate costs down to individual researchers with verified zero financial drift.
 * **Zero-Copy Data Collaboration**: Publish and subscribe to shared datasets across independent projects via BigQuery Analytics Hub without copying petabytes of sensitive data.
 
 ---

@@ -188,13 +188,70 @@ class ComplianceService:
                     logger.debug("Fallback load note: %s", e)
         return items
 
-    def get_room_compliance(self, room_id: str) -> RoomComplianceSummary:
+    def _fetch_batch_checklist_items(
+        self, room_ids: List[str], room_type: str = "PROVISIONED"
+    ) -> Dict[str, Dict[str, RegulatoryChecklistItem]]:
+        """Batch-retrieves regulatory checklist items across multiple rooms in a single BigQuery query."""
+        results: Dict[str, Dict[str, RegulatoryChecklistItem]] = {rid: {} for rid in room_ids}
+        if not room_ids:
+            return results
+
+        today = date.today()
+        project_id = self.settings.GCP_PROJECT_ID
+        telemetry_dataset = getattr(self.settings, "HUB_TELEMETRY_DATASET", "hub_telemetry")
+        if not re.match(r"^[a-zA-Z0-9_.-]+$", project_id) or not re.match(r"^[a-zA-Z0-9_.-]+$", telemetry_dataset):
+            return {rid: self._fetch_checklist_items(rid, room_type) for rid in room_ids}
+
+        if self._bq_client:
+            try:
+                query = f"""
+                SELECT item_id, room_id, room_type, item_type, item_name, status,
+                       CAST(approval_date AS STRING) as approval_date,
+                       CAST(expiration_date AS STRING) as expiration_date,
+                       approver_name, document_uri, comments
+                FROM `{project_id}.{telemetry_dataset}.ops_regulatory_checklist`
+                WHERE room_id IN UNNEST(@room_ids)
+                ORDER BY CASE WHEN room_type = @room_type THEN 0 ELSE 1 END, last_updated DESC
+                """
+                job_config = bigquery.QueryJobConfig(
+                    query_parameters=[
+                        bigquery.ArrayQueryParameter("room_ids", "STRING", room_ids),
+                        bigquery.ScalarQueryParameter("room_type", "STRING", room_type),
+                    ]
+                ) if bigquery else None
+                for r in self._bq_client.query(query, job_config=job_config).result():
+                    row_dict = dict(r)
+                    r_id = row_dict.get("room_id")
+                    if r_id in results:
+                        parsed = parse_checklist_row(row_dict, r_id, room_type, today)
+                        if parsed and parsed.item_type.value not in results[r_id]:
+                            results[r_id][parsed.item_type.value] = parsed
+            except Exception as e:
+                logger.warning("Batch BigQuery checklist read notice: %s", e)
+
+        # Fallback or ensure all 5 statutory items exist for each room
+        for rid in room_ids:
+            if not results[rid]:
+                results[rid] = self._fetch_checklist_items(rid, room_type)
+            else:
+                for ptype, pname in REQUIRED_PREREQUISITES:
+                    if ptype.value not in results[rid]:
+                        results[rid][ptype.value] = RegulatoryChecklistItem(
+                            item_id=f"{rid}-{ptype.value}", room_id=rid, room_type=room_type,
+                            item_type=ptype, item_name=pname, status=RegulatoryItemStatus.MISSING,
+                            comments="Document missing in regulatory checklist.", is_valid=False,
+                        )
+        return results
+
+    def get_room_compliance(
+        self, room_id: str, prefetched_items: Optional[Dict[str, RegulatoryChecklistItem]] = None
+    ) -> RoomComplianceSummary:
         """Retrieve aggregated 5-item compliance summary for an active research room."""
         room_detail = self.fleet_service.get_room(room_id)
         room_name = room_detail.room_name if room_detail else room_id
         iam_state = room_detail.status if room_detail else "ACTIVE"
 
-        items = self._fetch_checklist_items(room_id, room_type="PROVISIONED")
+        items = prefetched_items if prefetched_items is not None else self._fetch_checklist_items(room_id, room_type="PROVISIONED")
         valid_days = [it.days_remaining for it in items.values() if it.days_remaining is not None and it.is_valid]
         min_days = min(valid_days) if valid_days else None
 
@@ -249,37 +306,14 @@ class ComplianceService:
             new_iam_state=new_iam, message=msg,
         )
 
-    def _update_room_registry_status(self, room_id: str, new_status: str) -> None:
-        """Update live reg_research_rooms table in BigQuery."""
-        project_id = self.settings.GCP_PROJECT_ID
-        registry_dataset = getattr(self.settings, "HUB_REGISTRY_DATASET", "hub_registry")
-        if not re.match(r"^[a-zA-Z0-9_.-]+$", project_id) or not re.match(r"^[a-zA-Z0-9_.-]+$", registry_dataset):
-            logger.error("Invalid BigQuery project or dataset identifier format: %s.%s", project_id, registry_dataset)
-            return
-
-        if self._bq_client:
-            try:
-                sql = f"UPDATE `{project_id}.{registry_dataset}.reg_research_rooms` SET status = @new_status WHERE room_id = @room_id"
-                job_config = None
-                if bigquery:
-                    job_config = bigquery.QueryJobConfig(
-                        query_parameters=[
-                            bigquery.ScalarQueryParameter("new_status", "STRING", new_status),
-                            bigquery.ScalarQueryParameter("room_id", "STRING", room_id),
-                        ]
-                    )
-                self._bq_client.query(sql, job_config=job_config).result()
-            except Exception as e:
-                logger.warning("Failed updating room registry status in BQ: %s", e)
-
     def enforce_fleet_compliance(self) -> List[ComplianceScanResult]:
         """Fleet-wide IAM enforcement: iterate active provisioned rooms and sync IAM state."""
         return [self.scan_room_compliance(r.room_id) for r in self.fleet_service.list_rooms()]
 
     def evaluate_onboarding_gate(self, request: Any) -> OnboardingGateResponse:
         """Evaluate pre-flight onboarding gate for prospective room requests with zero IAM mutations."""
-        req_id = request if isinstance(request, str) else request.request_id
-        prop_id = ("rr-" + req_id[4:]) if req_id.startswith("req-") else (getattr(request, "proposed_room_id", None) or req_id)
+        req_id = request if isinstance(request, str) else (getattr(request, "request_id", None) or "req-default")
+        prop_id = getattr(request, "proposed_room_id", None) or (("rr-" + req_id[4:]) if req_id.startswith("req-") else req_id)
         items = self._fetch_checklist_items(prop_id, room_type="REQUEST")
 
         missing = [t for t, i in items.items() if i.status == RegulatoryItemStatus.MISSING]
@@ -316,10 +350,13 @@ class ComplianceService:
         )
 
     def get_horizon_report(self) -> ComplianceHorizonReport:
-        """Generate fleet-wide compliance horizon expiration forecast."""
+        """Generate fleet-wide compliance horizon expiration forecast using batched BigQuery retrieval."""
         report = ComplianceHorizonReport()
-        for room in self.fleet_service.list_rooms():
-            summary = self.get_room_compliance(room.room_id)
+        rooms = self.fleet_service.list_rooms()
+        room_ids = [r.room_id for r in rooms]
+        batch_items = self._fetch_batch_checklist_items(room_ids, room_type="PROVISIONED")
+        for room in rooms:
+            summary = self.get_room_compliance(room.room_id, prefetched_items=batch_items.get(room.room_id))
             if summary.overall_status in (RoomOverallCompliance.NON_COMPLIANT, RoomOverallCompliance.INCOMPLETE):
                 report.non_compliant_rooms.append(room.room_id)
             for item in summary.items.values():
@@ -333,8 +370,11 @@ class ComplianceService:
         return report
 
     def list_all_summaries(self) -> List[RoomComplianceSummary]:
-        """List compliance summaries for all active research rooms."""
-        return [self.get_room_compliance(r.room_id) for r in self.fleet_service.list_rooms()]
+        """List compliance summaries for all active research rooms using batched BigQuery retrieval."""
+        rooms = self.fleet_service.list_rooms()
+        room_ids = [r.room_id for r in rooms]
+        batch_items = self._fetch_batch_checklist_items(room_ids, room_type="PROVISIONED")
+        return [self.get_room_compliance(r.room_id, prefetched_items=batch_items.get(r.room_id)) for r in rooms]
 
     def get_room_requests(self) -> List[RoomRequestResponse]:
         """Fetch all prospective research room onboarding requests from BigQuery."""

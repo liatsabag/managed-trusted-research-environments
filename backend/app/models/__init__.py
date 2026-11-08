@@ -30,6 +30,9 @@ from backend.app.models.telemetry import (
     RoomAssetInventory,
 )
 
+# Backward-compatible alias
+ResearchRoomActivitySummary = RoomActivitySummary
+
 __all__ = [
     "AuditLogEvent",
     "ComplianceHorizonReport",

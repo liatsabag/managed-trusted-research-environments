@@ -97,13 +97,16 @@ def poll_notebook_instance_uptimes(spoke_project: str) -> Dict[str, float]:
     try:
         monitoring = googleapiclient.discovery.build("monitoring", "v3", credentials=credentials)
         now = datetime.now(timezone.utc)
-        start = now - timedelta(days=25)
+        # Use start of today (UTC) consistent with daily telemetry metrics
+        start = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
         m = "compute.googleapis.com/instance/uptime"
         resp = monitoring.projects().timeSeries().list(
             name=f"projects/{spoke_project}",
             filter=f'metric.type = "{m}"',
-            interval_startTime=start.isoformat(),
-            interval_endTime=now.isoformat(),
+            **{
+                "interval.startTime": start.isoformat(),
+                "interval.endTime": now.isoformat(),
+            },
         ).execute()
 
         for ts in resp.get("timeSeries", []):
@@ -130,8 +133,10 @@ def poll_cloud_monitoring_metrics(spoke_project: str) -> Dict[str, Any]:
         request = monitoring.projects().timeSeries().list(
             name=f"projects/{spoke_project}",
             filter=filter_str,
-            interval_startTime=start.isoformat(),
-            interval_endTime=now.isoformat(),
+            **{
+                "interval.startTime": start.isoformat(),
+                "interval.endTime": now.isoformat(),
+            },
         )
         resp = request.execute()
         for ts in resp.get("timeSeries", []):

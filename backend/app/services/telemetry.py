@@ -138,7 +138,7 @@ class TelemetryService:
                 TIMESTAMP_DIFF(end_time, start_time, SECOND) AS duration_seconds, state,
                 error_result.message AS error_message, creation_time
                 FROM `{r['spoke_project_id']}`.`region-{region}`.INFORMATION_SCHEMA.JOBS_BY_PROJECT
-                WHERE job_type = 'QUERY'"""
+                WHERE job_type = 'QUERY' AND creation_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 14 DAY)"""
             for r in sanitized_rooms
         ]
         unions = " UNION ALL ".join(selects)
@@ -400,6 +400,10 @@ class TelemetryService:
     def get_room_activity(self, room_id: str, limit: int = 50, researchers_only: bool = True) -> RoomActivitySummary:
         """Compute last active session timestamp, researcher queries, and live notebook execution metrics."""
         target_room = room_id.strip() if isinstance(room_id, str) else ""
+        rooms = self._get_active_spoke_projects(room_id=target_room)
+        if not rooms:
+            raise ValueError(f"Active research room '{room_id}' not found in registry.")
+
         recent_queries = self.get_queries(room_id=target_room, researchers_only=researchers_only, limit=limit)
         recent_audits = self.get_audit_feed(room_id=target_room, researchers_only=researchers_only, limit=limit)
         if not recent_audits and researchers_only:

@@ -70,7 +70,7 @@ class RoomComplianceSummary(BaseModel):
 
 class OnboardingGateRequest(BaseModel):
     """Request payload for pre-flight onboarding gate evaluation."""
-    request_id: str
+    request_id: Optional[str] = None
     proposed_room_id: Optional[str] = None
     document_bucket_uri: Optional[str] = None
 

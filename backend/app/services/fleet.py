@@ -267,7 +267,7 @@ class FleetGovernanceService:
 
         short = room_id.replace("rr-", "").split("-")[0]
         vpc_name, subnet_name, tpl_id = f"vpc-spoke-{room_id.replace('rr-', '')}", f"sb-spoke-{room_id.replace('rr-', '')}", f"tpl-{short}-default"
-        dep_date = r["created_at"].date().isoformat() if r.get("created_at") else None
+        dep_date = r["created_at"].strftime("%Y-%m-%d") if hasattr(r.get("created_at"), "strftime") else (str(r["created_at"])[:10] if r.get("created_at") else None)
         return ResearchRoomDetail(
             room_id=room_id, room_name=r["room_name"], institute_id=r["institute_id"],
             institute_name=r["institute_name"], lead_researcher_id=r.get("lead_researcher_id"),
@@ -399,9 +399,9 @@ class FleetGovernanceService:
             )
         except Exception as e:
             logger.error("Failed to mutate IAM on spoke %s: %s", spoke_project_id, e)
-            # If in development or mock/sandbox mode without CRM permissions, log warning without breaking state progression
-            if self.settings.ENVIRONMENT == "development" or "does not exist" in str(e):
-                logger.warning("Continuing registry state transition despite spoke IAM warning: %s", e)
+            # In local development where spoke projects are mock/non-existent GCP projects, allow bypass
+            if self.settings.ENVIRONMENT == "development" and ("does not exist" in str(e) or "not found" in str(e).lower()):
+                logger.warning("Local dev: continuing state transition despite missing spoke project: %s", e)
                 return
             raise
 
@@ -438,16 +438,25 @@ class FleetGovernanceService:
         all_res_rows = list(self.bq_client.query(f"SELECT primary_email FROM `{ds}.reg_researchers`").result())
         all_researchers = [r["primary_email"] for r in all_res_rows]
 
-        self._apply_spoke_iam_mutation(
-            current["spoke_project_id"],
-            current["cloud_identity_group"],
-            new_status,
-            room_researchers=room_researchers,
-            all_researchers=all_researchers,
-        )
+        try:
+            self._apply_spoke_iam_mutation(
+                current["spoke_project_id"],
+                current["cloud_identity_group"],
+                new_status,
+                room_researchers=room_researchers,
+                all_researchers=all_researchers,
+            )
+        except Exception as e:
+            logger.error("Spoke IAM mutation failed on %s: %s; rolling back registry state to %s", current["spoke_project_id"], e, prev_status)
+            rollback_cfg = bigquery.QueryJobConfig(query_parameters=[
+                bigquery.ScalarQueryParameter("prev_status", "STRING", prev_status),
+                bigquery.ScalarQueryParameter("room_id", "STRING", room_id),
+            ])
+            self.bq_client.query(f"UPDATE `{ds}.reg_research_rooms` SET status = @prev_status WHERE room_id = @room_id", job_config=rollback_cfg).result()
+            raise RuntimeError(f"IAM mutation failed on spoke project {current['spoke_project_id']}; reverted room status to {prev_status}: {e}")
 
-        # Invalidate in-memory cache to reflect immediately across all tabs
-        cache.invalidate()
+        # Invalidate in-memory cache to reflect immediately across fleet tabs
+        cache.invalidate("fleet_")
 
         action_name = "downgrade" if new_status == "SOFT_DOWNGRADED" else ("reactivate" if new_status == "ACTIVE" else "suspend")
         return RoomActionResponse(

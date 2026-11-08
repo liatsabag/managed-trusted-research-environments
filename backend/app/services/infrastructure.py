@@ -90,13 +90,6 @@ NOTEBOOK_TEMPLATES = [
     )
 ]
 
-ROOM_PROJECT_MAP = {
-    "rr-oncology-01": "gcp-rr-spoke-oncology-01",
-    "rr-genomics-02": "gcp-rr-spoke-genomics-02",
-    "rr-cardio-03": "gcp-rr-spoke-cardio-03",
-    "rr-neurology-04": "gcp-rr-spoke-neurology-04"
-}
-
 
 class InfrastructureService:
     def __init__(self):
@@ -305,6 +298,7 @@ class InfrastructureService:
         """Links an existing storage bucket to a research enclave."""
         logger.info(f"Linking bucket {bucket_name} as {role_type} to room {room_id}")
         return {
+            "success": True,
             "status": "SUCCESS",
             "message": f"Successfully linked bucket '{bucket_name}' to research room '{room_id}' with role '{role_type}'.",
             "room_id": room_id,
@@ -316,6 +310,7 @@ class InfrastructureService:
         """Detaches a storage bucket from a research enclave."""
         logger.info(f"Detaching bucket {bucket_name} from room {room_id}")
         return {
+            "success": True,
             "status": "SUCCESS",
             "message": f"Successfully detached bucket '{bucket_name}' from research room '{room_id}'.",
             "room_id": room_id,

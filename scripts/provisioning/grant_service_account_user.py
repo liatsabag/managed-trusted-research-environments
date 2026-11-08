@@ -11,8 +11,6 @@ if _repo_root not in sys.path:
 import json
 import logging
 import subprocess
-import sys
-from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("grant_service_account_user")

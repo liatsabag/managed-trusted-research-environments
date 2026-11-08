@@ -315,6 +315,7 @@ class FinOpsService:
         if room_id not in state["room_details"]: raise ValueError(f"Research room '{room_id}' not found in registry.")
         return state["room_details"][room_id]
 
+    @cached_endpoint(ttl_seconds=45, key_prefix="finops_researchers")
     def get_researcher_attributions(self, invoice_month: Optional[str] = None, room_id: Optional[str] = None, institute_id: Optional[str] = None, start_date: Optional[str] = None, end_date: Optional[str] = None) -> List[ResearcherCostDetail]:
         state, _, _, _, _ = self._build_allocation(_clean(invoice_month), start_date, end_date)
         return [r for r_id, r_det in state["room_details"].items() if not (room_id and r_id != room_id) for r in r_det.researchers if not (institute_id and r.institute_id != institute_id)]

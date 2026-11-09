@@ -79,7 +79,7 @@ async def authenticate_api_requests(request, call_next):
         "/openapi.json",
     ]
     if (
-        settings.ENABLE_API_AUTH
+        (settings.ENABLE_API_AUTH or settings.ENVIRONMENT != "development")
         and path.startswith(settings.API_V1_PREFIX)
         and path not in public_paths
         and request.method != "OPTIONS"

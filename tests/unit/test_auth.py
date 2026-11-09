@@ -22,6 +22,16 @@ class TestAuthLayer(unittest.TestCase):
     def setUp(self):
         self.client = TestClient(app)
         self.settings = get_settings()
+        self.orig_enable_auth = self.settings.ENABLE_API_AUTH
+        self.orig_env = self.settings.ENVIRONMENT
+
+    def tearDown(self):
+        self.settings.ENABLE_API_AUTH = self.orig_enable_auth
+        self.settings.ENVIRONMENT = self.orig_env
+
+    def test_default_config_is_fail_secure(self):
+        """Verify API authentication is enabled by default in settings."""
+        self.assertTrue(self.settings.ENABLE_API_AUTH)
 
     def test_extract_iap_user_email(self):
         """Verify extraction of user email from Google Cloud IAP header."""
@@ -38,31 +48,40 @@ class TestAuthLayer(unittest.TestCase):
         email = extract_iap_user_email(mock_req)
         self.assertIsNone(email)
 
-    def test_default_dev_bypass_allows_requests(self):
-        """Verify when ENABLE_API_AUTH=False, requests pass without credentials."""
+    def test_dev_bypass_rejected_in_production(self):
+        """Verify disabling ENABLE_API_AUTH in production is blocked with 401."""
         self.settings.ENABLE_API_AUTH = False
-        res = self.client.get("/api/v1/health")
-        self.assertEqual(res.status_code, 200)
-        self.assertEqual(res.json()["status"], "HEALTHY")
+        self.settings.ENVIRONMENT = "production"
+        try:
+            res = self.client.get("/api/v1/rooms")
+            self.assertEqual(res.status_code, 401)
+            self.assertIn("cannot be disabled in non-development environments", res.json()["detail"])
+        finally:
+            self.settings.ENVIRONMENT = "development"
+            self.settings.ENABLE_API_AUTH = True
+
+    def test_dev_bypass_allowed_strictly_in_development(self):
+        """Verify when ENABLE_API_AUTH=False in development environment, dev bypass identity is returned."""
+        self.settings.ENABLE_API_AUTH = False
+        self.settings.ENVIRONMENT = "development"
+        try:
+            res = self.client.get("/api/v1/rooms")
+            self.assertEqual(res.status_code, 200)
+        finally:
+            self.settings.ENABLE_API_AUTH = True
 
     def test_auth_enforced_blocks_unauthenticated(self):
         """Verify when ENABLE_API_AUTH=True, unauthenticated requests return 401."""
         self.settings.ENABLE_API_AUTH = True
-        try:
-            res = self.client.get("/api/v1/rooms")
-            self.assertEqual(res.status_code, 401)
-            self.assertIn("Authentication required", res.json()["detail"])
-        finally:
-            self.settings.ENABLE_API_AUTH = False
+        res = self.client.get("/api/v1/rooms")
+        self.assertEqual(res.status_code, 401)
+        self.assertIn("Authentication required", res.json()["detail"])
 
     def test_auth_enforced_allows_health_and_docs(self):
         """Verify public endpoints remain accessible even when ENABLE_API_AUTH=True."""
         self.settings.ENABLE_API_AUTH = True
-        try:
-            res = self.client.get("/api/v1/health")
-            self.assertEqual(res.status_code, 200)
-        finally:
-            self.settings.ENABLE_API_AUTH = False
+        res = self.client.get("/api/v1/health")
+        self.assertEqual(res.status_code, 200)
 
     def test_auth_enforced_rejects_unverified_iap_header(self):
         """Verify unverified X-Goog-Authenticated-User-Email header alone is rejected (fail closed)."""

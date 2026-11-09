@@ -48,8 +48,8 @@ try:
         API_V1_PREFIX: str = "/api/v1"
         ENVIRONMENT: str = "development"
 
-        # Authentication Configuration
-        ENABLE_API_AUTH: bool = False
+        # Authentication Configuration (fail-secure by default)
+        ENABLE_API_AUTH: bool = True
         API_AUTH_TOKEN: Optional[str] = None
         IAP_AUDIENCE: Optional[str] = None
         OIDC_AUDIENCE: Optional[str] = None
@@ -97,7 +97,7 @@ except ImportError:
         API_V1_PREFIX: str = os.getenv("API_V1_PREFIX", "/api/v1")
         ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
 
-        ENABLE_API_AUTH: bool = os.getenv("ENABLE_API_AUTH", "false").lower() in ("true", "1", "yes")
+        ENABLE_API_AUTH: bool = os.getenv("ENABLE_API_AUTH", "true").lower() in ("true", "1", "yes")
         API_AUTH_TOKEN: Optional[str] = os.getenv("API_AUTH_TOKEN", None)
         IAP_AUDIENCE: Optional[str] = os.getenv("IAP_AUDIENCE", None)
         OIDC_AUDIENCE: Optional[str] = os.getenv("OIDC_AUDIENCE", None)

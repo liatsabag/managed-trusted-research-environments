@@ -100,6 +100,15 @@ def authenticate_request(request: Request) -> Optional[JSONResponse]:
     """Middleware verification helper. Returns JSONResponse on failure, None on success."""
     settings = get_settings()
     if not settings.ENABLE_API_AUTH:
+        if settings.ENVIRONMENT != "development":
+            return JSONResponse(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                content={
+                    "detail": "API authentication cannot be disabled in non-development environments.",
+                    "status_code": status.HTTP_401_UNAUTHORIZED,
+                },
+                headers={"WWW-Authenticate": "Bearer"},
+            )
         return None
 
     # 1. Check Google Cloud IAP cryptographically verified identity
@@ -173,8 +182,14 @@ async def get_current_user(
     """FastAPI route dependency to retrieve verified user identity."""
     settings = get_settings()
 
-    # If auth is disabled, return default admin identity for dev/demo
+    # If auth is explicitly disabled, strictly restrict bypass to development or testing environments
     if not settings.ENABLE_API_AUTH:
+        if settings.ENVIRONMENT != "development":
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="API authentication cannot be disabled in non-development environments.",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
         return AuthenticatedUser(
             email=f"admin@{settings.ADMIN_DOMAIN}",
             role="TRE_ADMIN",

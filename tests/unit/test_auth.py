@@ -64,15 +64,49 @@ class TestAuthLayer(unittest.TestCase):
         finally:
             self.settings.ENABLE_API_AUTH = False
 
-    def test_auth_enforced_accepts_iap_header(self):
-        """Verify Google Cloud IAP header authenticates the request."""
+    def test_auth_enforced_rejects_unverified_iap_header(self):
+        """Verify unverified X-Goog-Authenticated-User-Email header alone is rejected (fail closed)."""
         self.settings.ENABLE_API_AUTH = True
         try:
             headers = {"X-Goog-Authenticated-User-Email": "accounts.google.com:admin@example-tre.org"}
             res = self.client.get("/api/v1/rooms", headers=headers)
-            self.assertNotEqual(res.status_code, 401)
+            self.assertEqual(res.status_code, 401)
         finally:
             self.settings.ENABLE_API_AUTH = False
+
+    @patch("google.oauth2.id_token.verify_token")
+    def test_auth_enforced_accepts_verified_iap_jwt(self, mock_verify):
+        """Verify cryptographically validated X-Goog-IAP-JWT-Assertion header authenticates the request."""
+        mock_verify.return_value = {"email": "admin@example-tre.org"}
+        self.settings.ENABLE_API_AUTH = True
+        try:
+            headers = {"X-Goog-IAP-JWT-Assertion": "valid.mock.jwt"}
+            res = self.client.get("/api/v1/rooms", headers=headers)
+            self.assertNotEqual(res.status_code, 401)
+            self.assertEqual(res.status_code, 200)
+        finally:
+            self.settings.ENABLE_API_AUTH = False
+
+    @patch("google.oauth2.id_token.verify_oauth2_token")
+    def test_auth_enforced_oidc_audience_enforcement(self, mock_verify):
+        """Verify OIDC token rejects when OIDC_AUDIENCE is not set, and accepts when set."""
+        mock_verify.return_value = {"email": "sa@example-tre.org"}
+        self.settings.ENABLE_API_AUTH = True
+        self.settings.API_AUTH_TOKEN = None
+        try:
+            # 1. Missing OIDC_AUDIENCE -> rejected with 401
+            self.settings.OIDC_AUDIENCE = None
+            headers = {"Authorization": "Bearer google-oidc-id-token"}
+            res_no_aud = self.client.get("/api/v1/rooms", headers=headers)
+            self.assertEqual(res_no_aud.status_code, 401)
+
+            # 2. Configured OIDC_AUDIENCE -> accepted with 200
+            self.settings.OIDC_AUDIENCE = "https://tre-api.example-tre.org"
+            res_with_aud = self.client.get("/api/v1/rooms", headers=headers)
+            self.assertEqual(res_with_aud.status_code, 200)
+        finally:
+            self.settings.ENABLE_API_AUTH = False
+            self.settings.OIDC_AUDIENCE = None
 
     def test_auth_enforced_accepts_bearer_token(self):
         """Verify valid Bearer token authenticates the request."""

@@ -42,50 +42,53 @@ def extract_iap_user_email(request: Request) -> Optional[str]:
 def verify_iap_jwt(request: Request) -> Optional[str]:
     """Verify cryptographically signed Google Cloud IAP JWT assertion and extract email.
     
-    Validates X-Goog-IAP-JWT-Assertion header using Google IAP public keys.
-    Falls back to inspecting X-Goog-Authenticated-User-Email only in non-production development environments.
+    Strictly validates X-Goog-IAP-JWT-Assertion header using Google IAP public keys.
+    Unverified raw identity headers such as X-Goog-Authenticated-User-Email are never
+    accepted as an authentication mechanism in any environment.
     """
     settings = get_settings()
     iap_jwt = request.headers.get("X-Goog-IAP-JWT-Assertion")
-    
-    if iap_jwt:
-        try:
-            from google.auth.transport import requests as google_requests
-            from google.oauth2 import id_token
-            # Verify IAP JWT signature with Google certificates
-            audience = getattr(settings, "IAP_AUDIENCE", None)
-            decoded = id_token.verify_token(
-                iap_jwt,
-                google_requests.Request(),
-                audience=audience,
-                certs_url="https://www.gstatic.com/iap/verify/public_key-jwk",
-            )
-            email = decoded.get("email")
-            if email:
-                return email.strip()
-        except Exception as e:
-            logger.warning("IAP JWT cryptographic verification failed: %s", e)
-            if settings.ENVIRONMENT != "development":
-                return None
+    if not iap_jwt:
+        return None
 
-    # In development or test environments where IAP proxy is not physically in front:
-    if settings.ENVIRONMENT == "development":
-        raw_email = request.headers.get("X-Goog-Authenticated-User-Email")
-        if raw_email:
-            if ":" in raw_email:
-                return raw_email.split(":", 1)[1].strip()
-            return raw_email.strip()
+    audience = getattr(settings, "IAP_AUDIENCE", None)
+    if settings.ENVIRONMENT != "development" and not audience:
+        logger.error("IAP verification rejected: IAP_AUDIENCE must be configured in non-development environments.")
+        return None
+
+    try:
+        from google.auth.transport import requests as google_requests
+        from google.oauth2 import id_token
+        decoded = id_token.verify_token(
+            iap_jwt,
+            google_requests.Request(),
+            audience=audience,
+            certs_url="https://www.gstatic.com/iap/verify/public_key-jwk",
+        )
+        email = decoded.get("email")
+        if email:
+            return email.strip()
+    except Exception as e:
+        logger.warning("IAP JWT cryptographic verification failed: %s", e)
+        return None
 
     return None
 
 
 def verify_oidc_token(token: str) -> Optional[str]:
-    """Verify Google OIDC / ID token signature against Google public keys."""
+    """Verify Google OIDC / ID token signature against Google public keys.
+    
+    Enforces audience verification (fails closed if OIDC_AUDIENCE is not configured).
+    """
     settings = get_settings()
+    audience = getattr(settings, "OIDC_AUDIENCE", None)
+    if not audience:
+        logger.warning("OIDC token verification rejected: OIDC_AUDIENCE is not configured.")
+        return None
+
     try:
         from google.oauth2 import id_token
         from google.auth.transport import requests as google_requests
-        audience = getattr(settings, "OIDC_AUDIENCE", None)
         claim = id_token.verify_oauth2_token(token, google_requests.Request(), audience=audience)
         return claim.get("email")
     except Exception as e:

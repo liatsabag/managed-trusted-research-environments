@@ -47,7 +47,6 @@ htmlcov/
 .terraform/
 .terraform.lock.hcl
 
-# Article drafts & publication exports
-docs/MEDIUM_ARTICLE.md
+# Article publication exports
 docs/MEDIUM_ARTICLE.pdf
 

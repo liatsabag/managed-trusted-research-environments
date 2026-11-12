@@ -8,7 +8,7 @@
 
 ---
 
-## 1. The Operational Challenge: Transforming Cloud Blueprints into a Unified Research Platform
+## The Operational Challenge: Transforming Cloud Blueprints into a Unified Research Platform
 
 Google Cloud provides foundational building blocks for data analytics and secure collaboration: petabyte-scale analytics in **BigQuery**, zero-copy data sharing via **BQ Sharing**, cryptographic network isolation with **VPC Service Controls (VPC-SC)**, managed notebooks in **Colab Enterprise**, and rich **AI capabilities with Gemini**.
 
@@ -26,7 +26,7 @@ Designed not as a proprietary vendor product, but as an **extensible prototype a
 
 ---
 
-## 2. What Is a "Research Room"?
+## What Is a "Research Room"?
 
 A **Research Room** is an on-demand, isolated cloud workspace provisioned for a specific research study, clinical cohort, or cross-institutional initiative.
 
@@ -55,7 +55,7 @@ The management platform provides distinct visibility for central administrators 
 
 ---
 
-## 3. Master Target Architecture & Global Topology
+## Master Target Architecture & Global Topology
 
 The architecture organizes the Google Cloud environment into a centralized **Hub-and-Spoke topology**, enclosed within a **VPC Service Controls (VPC-SC)** security perimeter:
 
@@ -88,7 +88,7 @@ The architecture organizes the Google Cloud environment into a centralized **Hub
 
 ---
 
-## 4. Implementation Deep Dive: Core Building Blocks
+## Implementation Deep Dive: Core Building Blocks
 
 ### Pillar 1: Zero-Trust Analytical Perimeters & Workspace Ingress
 
@@ -178,7 +178,7 @@ Costs are reconciled across four hierarchical reporting levels: **Fleet**, **Ins
 
 ---
 
-## 5. The Value of Native Google Cloud Capabilities
+## The Value of Native Google Cloud Capabilities
 
 Building this platform natively on Google Cloud provides distinct architectural advantages over traditional custom infrastructure:
 
@@ -190,7 +190,7 @@ Building this platform natively on Google Cloud provides distinct architectural 
 
 ---
 
-## 6. Reusability: An Extensible Blueprint for Regulated Collaboration
+## Reusability: An Extensible Blueprint for Regulated Collaboration
 
 While this platform was engineered around healthcare and biomedical compliance, its architecture is **fully domain-agnostic**:
 
@@ -202,7 +202,7 @@ The repository is modular: BigQuery schemas, Cloud Workflows definitions, FastAP
 
 ---
 
-## 7. Production Hardening: Prototype Scope vs. Enterprise Recommendations
+## Production Hardening: Prototype Scope vs. Enterprise Recommendations
 
 When evaluating this prototype for scaled enterprise adoption, two key architectural enhancements are recommended:
 
@@ -216,7 +216,7 @@ When evaluating this prototype for scaled enterprise adoption, two key architect
 
 ---
 
-## 8. Key Solution Takeaways
+## Key Solution Takeaways
 
 A Trusted Research Environment balances strong security controls with researcher usability:
 
